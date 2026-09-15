@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* 発注側向けの解決事例メディア。信頼感のあるモダンBtoB。深みのある indigo 基調＋
+   成果は emerald で“数字が主役”、余白・影・角丸で上質さを出す。 */
+@theme {
+  --color-ink: #0b1220;        /* 見出し（深いネイビー） */
+  --color-ink2: #1e293b;
+  --color-body: #3b4759;       /* 本文 */
+  --color-muted: #6b7688;      /* 補足 */
+  --color-line: #e7eaf1;       /* 罫線 */
+  --color-line2: #eef1f6;
+  --color-soft: #f6f8fc;       /* 薄い背景 */
+  --color-soft2: #eef2f9;
+
+  --color-brand: #4f46e5;      /* アクセント（indigo＝信頼×先進） */
+  --color-brand2: #6366f1;
+  --color-brand-dark: #4338ca;
+  --color-brand-soft: #eef2ff;
+
+  --color-accent: #059669;     /* 成果の数字（emerald） */
+  --color-accent2: #10b981;
+  --color-accent-soft: #ecfdf5;
+
+  --font-sans: var(--font-geist-sans);
+
+  --shadow-card: 0 1px 2px rgba(16,24,40,.04), 0 4px 16px rgba(16,24,40,.06);
+  --shadow-lift: 0 8px 30px rgba(79,70,229,.12), 0 2px 8px rgba(16,24,40,.06);
+}
+
+:root { color-scheme: light; }
+
+body {
+  background: #ffffff;
+  color: var(--color-body);
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP",
+    "Yu Gothic", "Meiryo", var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 見出し用：システムフォントを太く・詰めて“designed”な印象に */
+.font-display { font-weight: 800; letter-spacing: -.022em; }
+
+/* 数字を主役に見せる：等幅数字＋詰め */
+.tnum { font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+
+a { color: inherit; }
+
+/* カードの持ち上がり */
+.card { box-shadow: var(--shadow-card); transition: box-shadow .2s, transform .2s, border-color .2s; }
+.card:hover { box-shadow: var(--shadow-lift); transform: translateY(-2px); }
+
+/* 薄いドット背景（ヒーロー等の質感） */
+.dotgrid {
+  background-image: radial-gradient(rgba(79,70,229,.10) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* ヒーロー右：具体的な悩みが下から上へ流れる（ホバーで一時停止・上下フェード） */
+@keyframes marqueeUp { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+.marquee-track { animation: marqueeUp var(--dur, 34s) linear infinite; will-change: transform; }
+.marquee-mask:hover .marquee-track { animation-play-state: paused; }
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+}
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }

@@ -1,0 +1,182 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { allCases, getCase } from "../../../lib/cases";
+import { recommendCases } from "../../../lib/recommend";
+import { challengeLabel, industryLabel, productLabel } from "../../../lib/taxonomy";
+import CaseMap from "../../../components/CaseMap";
+import CaseCover from "../../../components/CaseCover";
+import Adoption from "../../../components/Adoption";
+
+export function generateStaticParams() {
+  return allCases().map((c) => ({ id: c.id }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const c = getCase(id);
+  if (!c) return {};
+  return { title: c.title, description: c.summary };
+}
+
+export default async function CasePage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const c = getCase(id);
+  if (!c) notFound();
+  const recs = recommendCases(c, 5);
+
+  return (
+    <article className="mx-auto max-w-3xl px-5 py-10">
+      {/* パンくず的タグ */}
+      {/* og:image があればヒーロー画像として表示（無ければ出さない） */}
+      {c.image && (
+        <div className="mb-5 overflow-hidden rounded-2xl border border-line shadow-[var(--shadow-card)]">
+          <CaseCover c={c} size="banner" />
+        </div>
+      )}
+
+      <div className="mb-4 flex flex-wrap items-center gap-1.5 text-[12px]">
+        <Link href={`/industry/${c.customer.industry}`}
+          className="rounded-md bg-brand-soft px-2 py-0.5 font-semibold text-brand no-underline hover:underline">
+          {industryLabel(c.customer.industry)}
+        </Link>
+        <Link href={`/product/${c.productCategory}`}
+          className="rounded-md bg-soft px-2 py-0.5 text-muted no-underline hover:underline">
+          {productLabel(c.productCategory)}
+        </Link>
+        {c.sample && <span className="rounded-md bg-amber-100 px-2 py-0.5 text-amber-700">サンプル(仮)</span>}
+      </div>
+
+      <h1 className="font-display mb-4 text-2xl leading-tight text-ink sm:text-[32px]">{c.title}</h1>
+
+      {/* 提供（製品）→ 導入（顧客）を一目で */}
+      <div className="mb-6">
+        <Adoption c={c} size="detail" />
+      </div>
+
+      {/* 冒頭：課題 → 解決策 → 成果 の図＋似た組み合わせ */}
+      <CaseMap c={c} similar={recs.slice(0, 4)} />
+
+      <p className="mt-2 text-[15px] leading-relaxed text-body">{c.summary}</p>
+
+      {/* 導入企業 */}
+      <dl className="mt-8 grid grid-cols-1 gap-x-6 gap-y-2 rounded-2xl border border-line bg-soft p-5 text-[13px] sm:grid-cols-2">
+        <Row k="導入企業" v={c.customer.name || "（非公開）"} />
+        <Row k="業種" v={industryLabel(c.customer.industry)} />
+        {c.customer.size && <Row k="規模" v={c.customer.size} />}
+        {c.customer.dept && <Row k="部門" v={c.customer.dept} />}
+        <Row k="解決した製品" v={`${c.product}（${c.vendor}）`} />
+        {c.period && <Row k="期間" v={c.period} />}
+      </dl>
+
+      {/* 課題 → 施策 → 成果 */}
+      <Section title="課題">
+        <p>{c.challengeDetail}</p>
+        {c.background && <p className="mt-2 text-muted">{c.background}</p>}
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {c.challenges.map((ch) => (
+            <Link key={ch} href={`/challenge/${ch}`}
+              className="rounded-md bg-brand-soft px-2 py-0.5 text-[12px] font-semibold text-brand no-underline hover:underline">
+              #{challengeLabel(ch)}
+            </Link>
+          ))}
+        </div>
+      </Section>
+
+      <Section title="やったこと（施策）">
+        <p>{c.actions}</p>
+        {c.alternatives && (
+          <p className="mt-3 rounded-lg bg-soft p-3 text-[13px] text-muted">
+            <b className="text-body">他に検討した選択肢：</b>{c.alternatives}
+          </p>
+        )}
+      </Section>
+
+      <Section title="成果">
+        {c.resultsQualitative && <p>{c.resultsQualitative}</p>}
+        <ul className="mt-3 space-y-1.5">
+          {c.results.map((r, i) => (
+            <li key={i} className="flex items-baseline gap-2">
+              <span className="text-accent">●</span>
+              <span className="text-body">{r.metric}：<b className="text-ink">{r.value}</b></span>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      {/* 出典 */}
+      <div className="mt-8 rounded-2xl border border-line bg-white p-5">
+        <div className="text-[12px] text-muted">この事例の出典（掲載元）</div>
+        <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer"
+          className="mt-1 block break-all font-semibold text-brand no-underline hover:underline">
+          {c.sourceUrl} ↗
+        </a>
+        <p className="mt-2 text-[11px] text-muted">
+          本ページは掲載元の公開事例の要約です。詳細・一次情報は出典元をご確認ください。
+        </p>
+      </div>
+
+      {/* CTA */}
+      <div className="mt-10 rounded-3xl border border-line bg-ink px-6 py-8 text-center text-white">
+        <h2 className="text-lg font-bold">こんな“伝わる事例”を、自社でもつくりたい方へ</h2>
+        <p className="mx-auto mt-2 max-w-xl text-[13px] leading-relaxed text-slate-300">
+          課題と成果が伝わる導入事例は、比較検討で選ばれる最強の営業資料。取材から執筆まで代行します。
+        </p>
+        <Link href="/produce"
+          className="mt-4 inline-block rounded-xl bg-brand px-5 py-2.5 text-[14px] font-semibold text-white no-underline hover:bg-brand-dark">
+          事例制作を相談する
+        </Link>
+      </div>
+
+      {/* ★主役：この事例に興味があるなら（なぜ付きレコメンド） */}
+      {recs.length > 0 && (
+        <div className="mt-12">
+          <h2 className="font-display text-xl text-ink">この事例に興味があるなら</h2>
+          <p className="mt-1 mb-4 text-[13px] text-muted">似た悩み・別の解き方の事例を、おすすめの理由つきで。</p>
+          <div className="flex flex-col gap-3">
+            {recs.map((r) => (
+              <Link key={r.c.id} href={`/cases/${r.c.id}`}
+                className="group rounded-2xl border border-line bg-white p-4 no-underline transition hover:border-brand hover:shadow-md">
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="rounded-md bg-brand-soft px-2 py-0.5 text-[11px] font-semibold text-brand">
+                    {industryLabel(r.c.customer.industry)}
+                  </span>
+                  <span className="rounded-md bg-soft px-2 py-0.5 text-[11px] text-muted">{productLabel(r.c.productCategory)}</span>
+                  {r.c.results[0] && (
+                    <span className="rounded-md bg-accent-soft px-2 py-0.5 text-[11px] font-bold text-accent">
+                      {r.c.results[0].metric} {r.c.results[0].value}
+                    </span>
+                  )}
+                </div>
+                <h3 className="mt-2 text-[15px] font-bold leading-snug text-ink group-hover:text-brand">{r.c.title}</h3>
+                <p className="mt-2 rounded-lg bg-soft px-3 py-2 text-[12.5px] leading-relaxed text-body">
+                  <span className="font-semibold text-brand">💡 おすすめの理由：</span>{r.reason}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </article>
+  );
+}
+
+function Row({ k, v }: { k: string; v: string }) {
+  return (
+    <div className="flex gap-3">
+      <dt className="w-20 shrink-0 text-muted">{k}</dt>
+      <dd className="font-medium text-ink">{v}</dd>
+    </div>
+  );
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section className="mt-8">
+      <h2 className="mb-2.5 flex items-center gap-2 text-lg font-bold text-ink">
+        <span className="h-4 w-1 rounded-full bg-brand" />{title}
+      </h2>
+      <div className="text-[14px] leading-relaxed text-body">{children}</div>
+    </section>
+  );
+}

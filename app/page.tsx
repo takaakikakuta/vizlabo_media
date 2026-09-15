@@ -1,69 +1,169 @@
-import Image from "next/image";
+import Link from "next/link";
+import { CHALLENGES, INDUSTRIES, industryLabel } from "../lib/taxonomy";
+import { allCases, challengeCounts, industryCounts, newestCases, siteStats, tagCounts } from "../lib/cases";
+import { challengeStyle } from "../lib/visuals";
+import CaseCard from "../components/CaseCard";
+import BrowseTabs from "../components/BrowseTabs";
+import { allArticles, articleThumb } from "../lib/articles";
+import CoverImg from "../components/CoverImg";
+import HeroPains from "../components/HeroPains";
 
 export default function Home() {
+  const chCounts = challengeCounts();
+  const indCounts = industryCounts();
+  const s = siteStats();
+  const newest = newestCases(4);
+  const articles = allArticles().slice(0, 3);
+  const browseChallenges = CHALLENGES.map((ch) => ({
+    slug: ch.slug, label: ch.label, desc: ch.desc,
+    count: chCounts[ch.slug] ?? 0, color: challengeStyle(ch.slug).solid,
+  }));
+  const browseIndustries = INDUSTRIES.map((ind) => ({
+    slug: ind.slug, label: ind.label, count: indCounts[ind.slug] ?? 0,
+  }));
+  const browseTags = tagCounts().filter(([, n]) => n >= 3).slice(0, 30)
+    .map(([tag, count]) => ({ tag, count }));
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      {/* ── マストヘッド：題字と掲載規模の数字で誌面の格を出す ── */}
+      <section className="border-b border-ink">
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-14 md:grid-cols-[1.15fr_.85fr] md:py-20">
+          <div>
+            <p className="label flex items-center gap-2.5">
+              <span className="h-px w-8 bg-ink" />課題から探すBtoB導入事例
+            </p>
+            <h1 className="font-display mt-6 text-[34px] leading-[1.36] text-ink sm:text-[46px] sm:leading-[1.3]">
+              その課題、<br />
+              他社はどう解いた？
+            </h1>
+            <p className="mt-6 max-w-xl text-[14.5px] leading-[2] text-body">
+              製品・サービスの選び方から、実際の取り組みまで。<br className="hidden sm:block" />
+              他社の事例から、自社に合う解決策を探す。
+            </p>
+
+            {/* 掲載規模＝この媒体の信頼の根拠 */}
+            <dl className="mt-9 grid grid-cols-2 gap-y-6 border-y border-line py-6 sm:grid-cols-4">
+              <Metric n={s.total} unit="件" k="掲載事例" />
+              <Metric n={s.vendors} unit="社" k="掲載ベンダー" />
+              <Metric n={s.withNumbers} unit="件" k="数値成果あり" />
+              <Metric n={s.industries} unit="業種" k="カバー業種" />
+            </dl>
+
+            <div className="mt-8 flex flex-wrap items-center gap-6">
+              <Link href="/cases"
+                className="border border-ink bg-ink px-6 py-3 text-[14px] font-bold text-white no-underline transition hover:bg-white hover:text-ink">
+                事例を探す
+              </Link>
+              <Link href="/articles"
+                className="border-b border-ink pb-0.5 text-[14px] font-bold text-ink no-underline hover:border-brand hover:text-brand">
+                事例解体新書を読む →
+              </Link>
+            </div>
+          </div>
+
+          {/* 右：具体的な悩みが流れる（クリックでその事例へ） */}
+          <div className="hidden md:block">
+            <p className="label mb-3.5">こんな悩み、解決した会社があります</p>
+            <HeroPains cases={allCases()} />
+          </div>
+        </div>
+      </section>
+
+      {/* ── 新着：直近で掲載した事例を、日付つきで ── */}
+      <section className="mx-auto max-w-6xl px-5 py-16">
+        <SectionHead title="新着の解決事例" sub="直近で掲載した事例。掲載日の新しい順" href="/cases" />
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {newest.map((c) => <CaseCard key={c.id} c={c} showDate />)}
+        </div>
+      </section>
+
+      {/* ── 読みもの：事例の集積からしか書けない記事 ── */}
+      {articles.length > 0 && (
+        <section className="mx-auto max-w-6xl px-5 py-16">
+          <SectionHead title="事例解体新書" sub="1本の事例では分からないことを、400件の横断から解体して書く連載" href="/articles" />
+          <div className="grid gap-x-10 border-t border-line md:grid-cols-3 md:gap-x-8">
+            {articles.map((a) => (
+              <Link key={a.slug} href={`/articles/${a.slug}`}
+                className="row group block border-b border-line2 px-2 py-5 no-underline">
+                <div className="relative mb-3.5 aspect-[5/3] w-full overflow-hidden rounded-[3px] border border-line2 bg-soft">
+                  {articleThumb(a)
+                    ? <CoverImg src={articleThumb(a)!} />
+                    : <span className="num absolute inset-0 grid place-items-center text-[22px] text-muted">#{String(a.no).padStart(3, "0")}</span>}
+                </div>
+                <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 text-[11px] text-muted">
+                  <span className="num text-[12px] text-ink">#{String(a.no).padStart(3, "0")}</span>
+                  {a.sponsored && (
+                    <span className="border border-line px-1.5 py-0.5 text-[8.5px] font-bold tracking-widest">Sponsored</span>
+                  )}
+                </div>
+                <h3 className="font-display mt-2 text-[16px] leading-[1.55] text-ink group-hover:text-brand">
+                  {a.title.join("")}
+                </h3>
+                <p className="mt-2 line-clamp-2 text-[12px] leading-[1.85] text-muted">{a.lead}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── 探す：課題／困りごと／業種をタブで切り替える（縦に長くしない） ── */}
+      <section className="border-y border-line bg-soft">
+        <div className="mx-auto max-w-6xl px-5 py-16">
+          <h2 className="font-display mb-7 text-[24px] text-ink sm:text-[28px]">事例を探す</h2>
+          <BrowseTabs challenges={browseChallenges} tags={browseTags} industries={browseIndustries} />
+        </div>
+      </section>
+
+      {/* ── 事例制作代行 ── */}
+      <section className="mx-auto max-w-6xl px-5 pb-20">
+        <div className="border border-ink bg-ink px-8 py-14 text-center text-white">
+          <p className="label text-white/50">事例制作代行</p>
+          <h2 className="font-display mx-auto mt-4 max-w-2xl text-[24px] leading-[1.5] sm:text-[30px]">
+            自社の事例が、ここで<br className="sm:hidden" />比較されて選ばれる
+          </h2>
+          <p className="mx-auto mt-5 max-w-xl text-[13.5px] leading-[2] text-white/60">
+            課題と成果が伝わる導入事例は、それ自体が最強の営業資料です。
+            取材・構成・執筆まで、比較検討で選ばれる事例制作を代行します。
           </p>
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-6">
+            <Link href="/produce"
+              className="border border-white bg-white px-7 py-3 text-[14px] font-bold text-ink no-underline transition hover:bg-transparent hover:text-white">
+              事例制作を相談する
+            </Link>
+            <Link href="/contact"
+              className="border-b border-white/50 pb-0.5 text-[14px] font-bold text-white no-underline hover:border-white">
+              自社の事例を掲載したい →
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
+    </>
+  );
+}
+
+function Metric({ n, unit, k }: { n: number; unit: string; k: string }) {
+  return (
+    <div>
+      <dd className="flex items-baseline gap-1">
+        <span className="num text-[30px] leading-none text-ink">{n}</span>
+        <span className="text-[12px] text-muted">{unit}</span>
+      </dd>
+      <dt className="label mt-2">{k}</dt>
+    </div>
+  );
+}
+
+function SectionHead({ title, sub, href }: { title: string; sub: string; href: string }) {
+  return (
+    <div className="mb-7 flex items-end justify-between gap-5">
+      <div>
+        <h2 className="font-display text-[24px] text-ink sm:text-[28px]">{title}</h2>
+        <p className="mt-1.5 text-[12.5px] text-muted">{sub}</p>
+      </div>
+      <Link href={href} className="shrink-0 border-b border-ink pb-0.5 text-[12.5px] font-bold text-ink no-underline hover:border-brand hover:text-brand">
+        一覧 →
+      </Link>
     </div>
   );
 }

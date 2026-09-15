@@ -1,0 +1,70 @@
+import Link from "next/link";
+import type { CaseStudy } from "../lib/types";
+import { challengeStyle, primaryChallenge } from "../lib/visuals";
+import { industryLabel } from "../lib/taxonomy";
+
+/* ヒーロー右側：事例から拾った“うちにもある”系の悩みが下から上へ流れる。
+   クリックでその事例へ。課題ごとに共感フレーズを用意し、業種横断でバランスよく出す。 */
+
+// 課題ごとの「うちにもある」と思わせる共感フレーズ（複数から回して変化をつける）。
+const PAINS: Record<string, string[]> = {
+  cost: ["請求書の中身、誰もちゃんと見てない", "なぜか固定費が毎月増えている", "値上げしたいけど、根拠が出せない"],
+  labor: ["ベテランが辞めたら、正直まわらない", "求人を出しても応募がゼロ", "繁忙期は毎晩、誰かが残業している"],
+  efficiency: ["毎朝、コピペで日報を作っている", "同じ数字を3つのシステムに手入力", "探し物に1日30分使っている"],
+  quality: ["出荷前の目視チェックが心臓に悪い", "クレームのたび、原因が分からない", "新人が作ると必ずミスが出る"],
+  leadtime: ["毎月末、請求書作成で残業している", "見積もりを出すのに3日かかる", "『まだですか』の催促が怖い"],
+  standardize: ["退職する◯◯さんの引き継ぎが終わらない", "あの作業、手順書がどこにもない", "担当が休むと、その日は止まる"],
+  data: ["『今月いくら？』に即答できない", "集計するだけで半日つぶれる", "どの商品が儲かってるか、実は曖昧"],
+  sales: ["資料請求は来るのに、商談にならない", "名刺は集まるが、その後が続かない", "追客を忘れて、失注していた"],
+  cs: ["同じ問い合わせに、毎回一から回答", "電話対応で他の仕事が進まない", "対応履歴が担当者の頭の中だけ"],
+  hr: ["採ったばかりの新人が半年で辞めた", "教育が現場任せで、育ちにムラ", "面接の日程調整だけで疲弊"],
+  security: ["退職者のアカウント、消し忘れてない？", "パスワードを付箋で共有している", "監査のたびに資料集めで徹夜"],
+  sustainability: ["電気代の請求書を見て、ため息", "CO2の数字、出せと言われても…", "まだ紙とハンコが回っている"],
+};
+
+type Item = { text: string; href: string; slug: string; industry: string };
+
+export default function HeroPains({ cases }: { cases: CaseStudy[] }) {
+  // 課題ごとに束ねて、課題を跨いでラウンドロビン＝色も悩みもバラけて出す。
+  const byCh: Record<string, CaseStudy[]> = {};
+  for (const c of cases) (byCh[primaryChallenge(c)] ||= []).push(c);
+  const keys = Object.keys(byCh);
+  const rot: Record<string, number> = {};
+  const items: Item[] = [];
+  let guard = 0;
+  while (items.length < 22 && guard < 500) {
+    const k = keys[guard % keys.length];
+    guard++;
+    const c = byCh[k]?.shift();
+    if (!c) continue;
+    const variants = PAINS[k] || [c.title];
+    const text = variants[(rot[k] = (rot[k] || 0) + 1) % variants.length];
+    items.push({ text, href: `/cases/${c.id}`, slug: k, industry: c.customer.industry });
+  }
+
+  if (!items.length) return null;
+
+  return (
+    <div className="marquee-mask relative mx-auto h-[440px] max-w-md overflow-hidden">
+      <div className="marquee-track flex flex-col gap-3" style={{ ["--dur" as string]: "80s" }}>
+        {[...items, ...items].map((it, idx) => (
+          <Chip key={idx} it={it} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Chip({ it }: { it: Item }) {
+  const color = challengeStyle(it.slug).solid;
+  return (
+    <Link href={it.href}
+      className="group flex items-start gap-2.5 rounded-xl border border-line bg-white/90 px-3.5 py-3 no-underline shadow-[var(--shadow-card)] backdrop-blur transition hover:border-brand hover:shadow-[var(--shadow-lift)]">
+      <span className="mt-1 h-2 w-2 shrink-0 rounded-full" style={{ background: color }} />
+      <span className="min-w-0 flex-1">
+        <span className="block text-[13.5px] font-semibold leading-snug text-ink">「{it.text}」</span>
+        <span className="mt-0.5 block text-[10.5px] text-muted">{industryLabel(it.industry)}の解決事例へ →</span>
+      </span>
+    </Link>
+  );
+}

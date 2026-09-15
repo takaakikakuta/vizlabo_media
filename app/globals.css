@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ───────────────────────────────────────────────────────────────
+   事例ナビ / エディトリアル・データ
+   成果の「数字」が主役。紙面のような余白・ヘアライン罫・明朝の見出しで、
+   400件を“比較して読む”ための落ち着いた誌面をつくる。
+   色は原則モノクロ＋1色（成果＝深緑）。課題12色は小さなドットだけに使う。
+   ─────────────────────────────────────────────────────────────── */
+@theme {
+  --color-ink: #16181d;        /* 見出し */
+  --color-ink2: #2b2f38;
+  --color-body: #4a505c;       /* 本文 */
+  --color-muted: #8a9099;      /* 補足・メタ */
+  --color-line: #e3e0d9;       /* ヘアライン罫 */
+  --color-line2: #efece5;      /* さらに薄い罫 */
+  --color-soft: #f7f5f0;       /* 紙の地色 */
+  --color-soft2: #efece5;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-brand: #0f4c81;      /* リンク・見出しの差し色（深い青） */
+  --color-brand2: #1a6fa8;
+  --color-brand-dark: #0b3a63;
+  --color-brand-soft: #eaf1f7;
+
+  --color-accent: #0e6e52;     /* 成果の数字（深緑）＝この誌面の主役 */
+  --color-accent2: #12876a;
+  --color-accent-soft: #e8f2ee;
+
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* 影は使わず、罫と余白で構造をつくる（紙面感） */
+  --shadow-card: 0 0 0 0 rgba(0,0,0,0);
+  --shadow-lift: 0 1px 0 rgba(22,24,29,.06);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+:root { color-scheme: light; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #fdfcfa;
+  color: var(--color-body);
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP",
+    "Yu Gothic", "Meiryo", var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+/* 見出し＝明朝。日本語の誌面らしさはここで決まる（Web/Mac/Windows のシステム明朝） */
+.font-display {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP",
+    "MS PMincho", serif;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+
+/* 数字＝主役。等幅数字で桁を揃え、字面を締める */
+.tnum { font-variant-numeric: tabular-nums; letter-spacing: -.02em; font-feature-settings: "tnum" 1; }
+.num  { font-variant-numeric: tabular-nums; letter-spacing: -.03em; font-weight: 800;
+        font-family: var(--font-geist-sans), "Helvetica Neue", Arial, sans-serif; }
+
+/* 小さなラベル（誌面のキャプション） */
+.label { font-size: 10.5px; font-weight: 700; letter-spacing: .16em; color: var(--color-muted); }
+
+/* a { color: inherit } は書かない：Tailwind の preflight が base レイヤーで同じことをしており、
+   レイヤー外に書くとユーティリティ（text-white 等）より強くなって全リンクの色指定が死ぬ。 */
+
+/* 行＝罫で仕切る。ホバーは色ではなく地色で示す（誌面の落ち着きを保つ） */
+.row { transition: background-color .15s ease; }
+.row:hover { background-color: #f7f5f0; }
+
+/* カードは影ではなく罫。ホバーで罫だけ濃くする */
+.card { transition: border-color .15s ease, background-color .15s ease; }
+.card:hover { border-color: var(--color-ink); }
+
+/* 誌面の細い上罫（課題色のアクセント） */
+.rule-top { border-top-width: 2px; border-top-style: solid; }
+
+/* ヒーロー右：具体的な悩みが下から上へ流れる（ホバーで一時停止・上下フェード） */
+@keyframes marqueeUp { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+.marquee-track { animation: marqueeUp var(--dur, 34s) linear infinite; will-change: transform; }
+.marquee-mask:hover .marquee-track { animation-play-state: paused; }
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+}
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
