@@ -1,13 +1,17 @@
-# Amplify Hosting のビルド定義（Next.js SSR / WEB_COMPUTE）。
-# バックエンドリソースは使わない（フォーム送信は lib/notify.ts のスタブ）。
+# Amplify Hosting のビルド定義（Gen2 フルスタック / Next.js SSR）。
+# backendフェーズで amplify/ の定義をデプロイし、frontendフェーズでNext.jsをビルドする。
+# いまのバックエンドは空（defineBackend({})）。DBを足すときは amplify/data/resource.ts を追加。
 # 環境変数を本番導入するときは、SSRランタイムには届かないため
 # next.config.ts の env で焼き込むこと（ビルド時定数になる点に注意）。
 version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - npm ci --cache .npm --prefer-offline
+        - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
   phases:
-    preBuild:
-      commands:
-        - npm ci
     build:
       commands:
         - npm run build
@@ -17,5 +21,6 @@ frontend:
       - "**/*"
   cache:
     paths:
+      - .npm/**/*
       - node_modules/**/*
       - .next/cache/**/*

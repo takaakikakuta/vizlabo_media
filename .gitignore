@@ -42,3 +42,7 @@ next-env.d.ts
 
 # 作業用バックアップ（リポジトリに含めない）
 /.redesign-backup/
+
+# Amplify Gen2 の生成物
+/amplify_outputs.json
+/.amplify/
