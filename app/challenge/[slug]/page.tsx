@@ -8,8 +8,14 @@ import { bridgeText } from "../../../lib/bridges";
 import { challengeStyle } from "../../../lib/visuals";
 import CaseGrid, { ListHead } from "../../../components/CaseGrid";
 
+/* ビルド出力の肥大化対策（Amplifyの220MB制限）:
+   事前生成をやめ、初回アクセス時に生成してキャッシュするオンデマンドISRにする。
+   revalidate 後は再生成されるので、データ更新はデプロイ or 24時間で反映される。 */
+export const revalidate = 86400; // 24時間
+export const dynamicParams = true;
+
 export function generateStaticParams() {
-  return CHALLENGES.map((c) => ({ slug: c.slug }));
+  return []; // ビルド時は生成しない（オンデマンドで生成）
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

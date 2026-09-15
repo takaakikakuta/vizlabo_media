@@ -15,6 +15,8 @@ frontend:
     build:
       commands:
         - npm run build
+        # ビルドキャッシュは成果物サイズ制限（220MB）に含めない
+        - rm -rf .next/cache
   artifacts:
     baseDirectory: .next
     files:
@@ -23,4 +25,3 @@ frontend:
     paths:
       - .npm/**/*
       - node_modules/**/*
-      - .next/cache/**/*
