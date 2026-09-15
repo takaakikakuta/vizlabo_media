@@ -1,0 +1,21 @@
+# Amplify Hosting のビルド定義（Next.js SSR / WEB_COMPUTE）。
+# バックエンドリソースは使わない（フォーム送信は lib/notify.ts のスタブ）。
+# 環境変数を本番導入するときは、SSRランタイムには届かないため
+# next.config.ts の env で焼き込むこと（ビルド時定数になる点に注意）。
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - node_modules/**/*
+      - .next/cache/**/*
