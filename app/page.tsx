@@ -99,9 +99,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── バナー：note連載への入口。画像は public/banner/note.png を置くだけで反映（4:1、1600×400px推奨） ── */}
+      {/* ── バナー：note連載への入口。画像は public/banner/note.png を置くだけで反映（4:1、1600×400px推奨）。
+           比率は4:1のまま、幅をmax-w-3xlに絞って控えめに置く ── */}
       <section className="mx-auto max-w-6xl px-5 pt-10">
-        {BANNERS.map((b) => <Banner key={b.file} {...b} />)}
+        <div className="mx-auto max-w-3xl">
+          {BANNERS.map((b) => <Banner key={b.file} {...b} />)}
+        </div>
       </section>
 
       {/* ── 新着：直近で掲載した事例を、日付つきで ── */}
