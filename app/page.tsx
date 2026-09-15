@@ -10,29 +10,30 @@ import HeroPains from "../components/HeroPains";
 import fs from "node:fs";
 import path from "node:path";
 
-/* ヒーロー下のバナー2枠。href は企画ページができたら差し替える。
-   画像は public/banner/<file> を置けば自動で表示される（比率3:1・1500×500px推奨）。 */
+/* ヒーロー下のバナー（1枚）。note で連載中の「この事例がスゴイ」「事例コラム」への外部リンク。
+   href に note のURLを入れると新しいタブで開くリンクになる（未設定なら枠のみ）。
+   画像は public/banner/note.png を置けば自動で表示される（比率4:1・1600×400px推奨）。 */
 const BANNERS: { file: string; label: string; note: string; href?: string }[] = [
-  { file: "sugoi.png", label: "この事例がスゴイ", note: "編集部が唸った事例を、理由つきで" },
-  { file: "column.png", label: "事例コラム", note: "事例の読み方・使い方の読みもの" },
+  { file: "note.png", label: "この事例がスゴイ／事例コラム", note: "noteで連載中の2企画" },
 ];
 
 function Banner({ file, label, note, href }: (typeof BANNERS)[number]) {
   const exists = fs.existsSync(path.join(process.cwd(), "public", "banner", file));
   const inner = exists ? (
-    <div className="relative aspect-[3/1] w-full overflow-hidden border border-line">
+    <div className="relative aspect-[4/1] w-full overflow-hidden border border-line">
       <CoverImg src={`/banner/${file}`} />
     </div>
   ) : (
     /* 画像が用意されるまでのプレースホルダー枠 */
-    <div className="flex aspect-[3/1] w-full flex-col items-center justify-center gap-1.5 border border-dashed border-line bg-soft">
+    <div className="flex aspect-[4/1] w-full flex-col items-center justify-center gap-1.5 border border-dashed border-line bg-soft">
       <span className="font-display text-[18px] text-ink">{label}</span>
       <span className="text-[11.5px] text-muted">{note}</span>
-      <span className="text-[10px] text-muted/70">（バナー準備中：/banner/{file}・1500×500）</span>
+      <span className="text-[10px] text-muted/70">（バナー準備中：/banner/{file}・1600×400）</span>
     </div>
   );
   return href
-    ? <Link href={href} className="block no-underline transition hover:opacity-90">{inner}</Link>
+    ? <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
+        className="block no-underline transition hover:opacity-90">{inner}</a>
     : inner;
 }
 
@@ -98,11 +99,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── バナー：企画への入口2枠。画像は public/banner/ に置くだけで反映（3:1、1500×500px推奨） ── */}
+      {/* ── バナー：note連載への入口。画像は public/banner/note.png を置くだけで反映（4:1、1600×400px推奨） ── */}
       <section className="mx-auto max-w-6xl px-5 pt-10">
-        <div className="grid gap-5 sm:grid-cols-2">
-          {BANNERS.map((b) => <Banner key={b.file} {...b} />)}
-        </div>
+        {BANNERS.map((b) => <Banner key={b.file} {...b} />)}
       </section>
 
       {/* ── 新着：直近で掲載した事例を、日付つきで ── */}
