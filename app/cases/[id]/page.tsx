@@ -7,7 +7,6 @@ import { challengeLabel, industryLabel, productLabel } from "../../../lib/taxono
 import { challengeStyle, primaryChallenge } from "../../../lib/visuals";
 import { parseStat, statSize } from "../../../lib/stat";
 import Adoption from "../../../components/Adoption";
-import Tags from "../../../components/Tags";
 import CoverImg from "../../../components/CoverImg";
 
 /* ビルド出力の肥大化対策（Amplifyの220MB制限）:
@@ -92,13 +91,6 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
       <Section no="01" title="課題">
         <p>{c.challengeDetail}</p>
         {c.background && <p className="mt-3 text-muted">{c.background}</p>}
-        {/* 困りごとタグ＝カテゴリより細かい索引。同じ悩みの事例へ横に飛べる */}
-        {(c.tags?.length ?? 0) > 0 && (
-          <div className="mt-5 border-t border-line2 pt-4">
-            <div className="label mb-2.5">この事例の困りごと</div>
-            <Tags c={c} max={8} size="md" />
-          </div>
-        )}
         <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2">
           {c.challenges.map((ch) => (
             <Link key={ch} href={`/challenge/${ch}`}
