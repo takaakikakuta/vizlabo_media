@@ -61,23 +61,19 @@ export function recommendCases(base: CaseStudy, limit = 5): Recommendation[] {
     .slice(0, limit);
 
   return scored.map((x) => {
-    const clauses: string[] = [];
     const badges: string[] = [];
     const chips: RecChip[] = [];
     const sharedPain = x.sharedTags.length > 0 || x.sharedCh.length > 0;
 
     // 悩みの一致は、カテゴリより具体的な困りごとタグを優先して言う
     if (x.sharedTags.length) {
-      clauses.push(`同じ「${x.sharedTags.slice(0, 2).join("」「")}」に悩んだ事例`);
       x.sharedTags.forEach((t) => badges.push(t));
       x.sharedTags.slice(0, 3).forEach((t) => chips.push({ label: `#${t}`, kind: "tag" }));
     } else if (x.sharedCh.length) {
-      clauses.push(`あなたが見た事例と同じ〈${x.sharedCh.map(challengeLabel).join("・")}〉の悩み`);
       x.sharedCh.forEach((ch) => badges.push(challengeLabel(ch)));
       x.sharedCh.slice(0, 2).forEach((ch) => chips.push({ label: `同じ悩み：${challengeLabel(ch)}`, kind: "tag" }));
     }
     if (x.sameIndustry) {
-      clauses.push(`同じ${industryLabel(base.customer.industry)}`);
       chips.push({ label: `同じ${industryLabel(base.customer.industry)}`, kind: "industry" });
     }
 
@@ -86,31 +82,40 @@ export function recommendCases(base: CaseStudy, limit = 5): Recommendation[] {
     const prodName = trunc((x.c.product || "").split(/[（(]/)[0].trim(), 22);
     const catLabel = x.c.productCategory !== "other-product" ? productLabel(x.c.productCategory) : "";
     const solvedWith = [catLabel, prodName].filter(Boolean).join("・");
+    let samePname = false;
     if (sharedPain && !x.sameProduct && solvedWith) {
-      clauses.push(`こちらは別の手（${solvedWith}）で解決している`);
       chips.push({ label: `別の手：${solvedWith}`, kind: "solution" });
     } else if (x.sameProduct) {
-      const samePname = prodName && prodName === trunc((base.product || "").split(/[（(]/)[0].trim(), 22);
-      clauses.push(samePname
-        ? `同じ${prodName}を使った別の現場`
-        : `同じ解き方（${solvedWith}）`);
+      samePname = !!prodName && prodName === trunc((base.product || "").split(/[（(]/)[0].trim(), 22);
       chips.push({ label: samePname ? `同じ${prodName}` : `同じ解き方：${solvedWith}`, kind: "solution" });
     }
 
-    // 同じ指標で成果を出している＝数字を並べて比べられる
-    if (x.sharedMetricName) {
-      const m = x.sharedMetricName.length > 20 ? `${x.sharedMetricName.slice(0, 20)}…` : x.sharedMetricName;
-      clauses.push(`同じ指標「${m}」の成果あり`);
-    }
     if (x.sameSize && x.c.customer.size) {
-      clauses.push(`規模も近い（${trunc(x.c.customer.size, 14)}）`);
       chips.push({ label: `規模が近い（${trunc(x.c.customer.size, 12)}）`, kind: "size" });
     }
     if (x.sharedMetricName) {
       chips.push({ label: `同じ指標：${trunc(x.sharedMetricName, 14)}`, kind: "metric" });
     }
 
-    const reason = clauses.slice(0, 3).join("。") + "。";
+    // 一文＝チップ（事実の列）と重複させず、「この1本を読む意味」を言う
+    const topTag = x.sharedTags[0];
+    let reason: string;
+    if (topTag && !x.sameProduct && solvedWith) {
+      reason = `同じ「${topTag}」を、${solvedWith}という別の入口から解いた1本。`;
+    } else if (x.sameProduct && samePname) {
+      reason = `同じ${prodName}が、別の現場（${industryLabel(x.c.customer.industry)}）でどう効いたかが分かる1本。`;
+    } else if (x.sameProduct) {
+      reason = `同じ${productLabel(x.c.productCategory)}の中で${prodName || "別の製品"}を選んだ会社の、選定の比較材料になる1本。`;
+    } else if (topTag) {
+      reason = `同じ「${topTag}」に向き合った会社の選択を、並べて読める1本。`;
+    } else if (x.sharedCh.length) {
+      reason = `同じ〈${challengeLabel(x.sharedCh[0])}〉の悩みに向き合った会社の選択を、並べて読める1本。`;
+    } else {
+      reason = `近い状況の会社の選択として、並べて読める1本。`;
+    }
+    if (x.sharedMetricName) {
+      reason += `成果は同じ指標なので、数字をそのまま見比べられる。`;
+    }
     return { c: x.c, score: x.score, reason, chips: chips.slice(0, 5), badges: badges.slice(0, 3) };
   });
 }
