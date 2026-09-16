@@ -6,24 +6,18 @@ import CoverImg from "./CoverImg";
 import VendorLogo from "./VendorLogo";
 import { vendorLogo } from "../lib/vendors";
 
-/* ヒーロー右側：事例から拾った“うちにもある”系の悩みが下から上へ流れる。
-   クリックでその事例へ。課題ごとに共感フレーズを用意し、業種横断でバランスよく出す。 */
+/* ヒーロー右側：各事例の「導入前の悩み」が下から上へ流れる。クリックでその事例へ。
+   文言は汎用フレーズではなく、その事例の課題文（当サイト要約）の冒頭を実文で切り出す
+   ——リンク先の中身と必ず一致させるため。 */
 
-// 課題ごとの「うちにもある」と思わせる共感フレーズ（複数から回して変化をつける）。
-const PAINS: Record<string, string[]> = {
-  cost: ["請求書の中身、誰もちゃんと見てない", "なぜか固定費が毎月増えている", "値上げしたいけど、根拠が出せない"],
-  labor: ["ベテランが辞めたら、正直まわらない", "求人を出しても応募がゼロ", "繁忙期は毎晩、誰かが残業している"],
-  efficiency: ["毎朝、コピペで日報を作っている", "同じ数字を3つのシステムに手入力", "探し物に1日30分使っている"],
-  quality: ["出荷前の目視チェックが心臓に悪い", "クレームのたび、原因が分からない", "新人が作ると必ずミスが出る"],
-  leadtime: ["毎月末、請求書作成で残業している", "見積もりを出すのに3日かかる", "『まだですか』の催促が怖い"],
-  standardize: ["退職する◯◯さんの引き継ぎが終わらない", "あの作業、手順書がどこにもない", "担当が休むと、その日は止まる"],
-  data: ["『今月いくら？』に即答できない", "集計するだけで半日つぶれる", "どの商品が儲かってるか、実は曖昧"],
-  sales: ["資料請求は来るのに、商談にならない", "名刺は集まるが、その後が続かない", "追客を忘れて、失注していた"],
-  cs: ["同じ問い合わせに、毎回一から回答", "電話対応で他の仕事が進まない", "対応履歴が担当者の頭の中だけ"],
-  hr: ["採ったばかりの新人が半年で辞めた", "教育が現場任せで、育ちにムラ", "面接の日程調整だけで疲弊"],
-  security: ["退職者のアカウント、消し忘れてない？", "パスワードを付箋で共有している", "監査のたびに資料集めで徹夜"],
-  sustainability: ["電気代の請求書を見て、ため息", "CO2の数字、出せと言われても…", "まだ紙とハンコが回っている"],
-};
+/** 課題文の1文目から、悩みの冒頭を短く切り出す（長ければ読点で切る）。 */
+function painFromCase(c: CaseStudy): string {
+  const first = (c.challengeDetail || c.summary || c.title).split("。")[0];
+  if (first.length <= 36) return first;
+  const cut = first.slice(0, 36);
+  const comma = cut.lastIndexOf("、");
+  return comma >= 14 ? cut.slice(0, comma) : `${cut.slice(0, 33)}…`;
+}
 
 type Item = { text: string; href: string; slug: string; industry: string; image?: string; vendor?: string };
 
@@ -33,7 +27,6 @@ export default function HeroPains({ cases }: { cases: CaseStudy[] }) {
   for (const c of cases) (byCh[primaryChallenge(c)] ||= []).push(c);
   for (const k of Object.keys(byCh)) byCh[k].sort((a, b) => Number(!!b.image) - Number(!!a.image));
   const keys = Object.keys(byCh);
-  const rot: Record<string, number> = {};
   const items: Item[] = [];
   let guard = 0;
   while (items.length < 22 && guard < 500) {
@@ -41,9 +34,7 @@ export default function HeroPains({ cases }: { cases: CaseStudy[] }) {
     guard++;
     const c = byCh[k]?.shift();
     if (!c) continue;
-    const variants = PAINS[k] || [c.title];
-    const text = variants[(rot[k] = (rot[k] || 0) + 1) % variants.length];
-    items.push({ text, href: `/cases/${c.id}`, slug: k, industry: c.customer.industry, image: c.image, vendor: c.vendor });
+    items.push({ text: painFromCase(c), href: `/cases/${c.id}`, slug: k, industry: c.customer.industry, image: c.image, vendor: c.vendor });
   }
 
   if (!items.length) return null;
