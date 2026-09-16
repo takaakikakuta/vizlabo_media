@@ -86,7 +86,7 @@ export default function Home() {
               </Link>
               <Link href="/articles"
                 className="border-b border-ink pb-0.5 text-[14px] font-bold text-ink no-underline hover:border-brand hover:text-brand">
-                特集記事「事例解体新書」を読む →
+                同じ課題で、解き方が分かれた理由を読む →
               </Link>
             </div>
           </div>
