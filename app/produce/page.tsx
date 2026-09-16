@@ -1,11 +1,13 @@
 import Link from "next/link";
+import ContactForm from "../../components/ContactForm";
+import NoteBanner, { NOTE_URL } from "../../components/NoteBanner";
 
 export const metadata = {
   title: "事例制作代行",
   description: "比較検討で選ばれる導入事例を、取材・構成・執筆まで代行します。課題と成果が伝わる事例づくりをお手伝いします。",
 };
 
-const CONTACT = "/contact?topic=produce";
+const CONTACT = "#apply";
 
 export default function ProducePage() {
   return (
@@ -76,21 +78,38 @@ export default function ProducePage() {
         </div>
       </section>
 
-      {/* 締め */}
-      <section className="mx-auto max-w-3xl px-5 py-16 text-center">
-        <h2 className="font-display text-[24px] leading-[1.5] text-ink">まずは無料で相談してみませんか</h2>
-        <p className="mx-auto mt-4 max-w-xl text-[13.5px] leading-[2] text-body">
-          「どの顧客の事例を作るべきか」から一緒に考えます。1本のサンプル構成のご提案も可能です。
+      {/* noteでの発信 */}
+      <section className="mx-auto max-w-3xl px-5 py-16">
+        <h2 className="font-display border-b border-ink pb-4 text-[22px] text-ink">
+          事例の効果とノウハウを、noteで発信しています
+        </h2>
+        <p className="mt-5 text-[13.5px] leading-[2] text-body">
+          「この事例がスゴイ」では成果につながった事例を理由つきで解剖し、
+          「事例コラム」では事例の作り方・読ませ方のノウハウを公開しています。
+          制作をご検討中の方の判断材料としてもお使いください。
         </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
-          <Link href={CONTACT}
-            className="border border-ink bg-ink px-7 py-3 text-[14px] font-bold text-white no-underline transition hover:bg-white hover:text-ink">
-            無料で相談する
-          </Link>
-          <Link href="/cases"
-            className="border-b border-ink pb-0.5 text-[14px] font-bold text-ink no-underline hover:border-brand hover:text-brand">
-            掲載中の事例を見る →
-          </Link>
+        <div className="mt-6">
+          <NoteBanner />
+        </div>
+        <p className="mt-4 text-[13px]">
+          <a href={NOTE_URL} target="_blank" rel="noopener noreferrer"
+            className="border-b border-ink pb-0.5 font-bold text-ink no-underline hover:border-brand hover:text-brand">
+            noteで連載を読む ↗
+          </a>
+        </p>
+      </section>
+
+      {/* 応募フォーム */}
+      <section id="apply" className="scroll-mt-20 border-t border-ink bg-soft">
+        <div className="mx-auto max-w-3xl px-5 py-16">
+          <h2 className="font-display text-[24px] leading-[1.5] text-ink">制作の相談・お申し込み</h2>
+          <p className="mt-4 max-w-xl text-[13.5px] leading-[2] text-body">
+            「どの顧客の事例を作るべきか」から一緒に考えます。1本のサンプル構成のご提案も可能です。
+            内容を確認のうえ、通常2〜3営業日以内にご連絡します。
+          </p>
+          <div className="mt-8">
+            <ContactForm topic="produce" />
+          </div>
         </div>
       </section>
     </div>
