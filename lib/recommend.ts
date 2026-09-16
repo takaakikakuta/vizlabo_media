@@ -32,8 +32,10 @@ export function recommendCases(base: CaseStudy, limit = 5): Recommendation[] {
     .map((c) => {
       const sharedCh = c.challenges.filter((x) => baseCh.has(x));
       const sameIndustry = c.customer.industry === base.customer.industry;
-      const sameSize = !!c.customer.size && c.customer.size === base.customer.size;
-      const sameProduct = c.productCategory === base.productCategory;
+      // 規模は文字列の完全一致ではなく、従業員数などの数値が3倍以内なら「近い」とみなす
+      const sameSize = sizeClose(base.customer.size, c.customer.size);
+      // other-product は雑多の受け皿なので「同じ解き方」とは呼ばない
+      const sameProduct = c.productCategory === base.productCategory && c.productCategory !== "other-product";
       const sharedMetric = c.results.some((r) => baseMetrics.has(r.metric));
       const sharedTags = (c.tags ?? []).filter((x) => baseTags.has(x));
 
@@ -67,12 +69,18 @@ export function recommendCases(base: CaseStudy, limit = 5): Recommendation[] {
     }
     if (x.sameIndustry) clauses.push(`同じ${industryLabel(base.customer.industry)}`);
 
-    // 解き方が同じか違うか（違う＝“別の手”という学び）。カテゴリだけでなく実際の製品名まで言う
-    const prodName = (x.c.product || "").split(/[（(]/)[0].trim();
-    if (sharedPain && !x.sameProduct) {
-      clauses.push(`ただし別の手（${productLabel(x.c.productCategory)}${prodName ? `・${prodName}` : ""}）で解決している`);
+    // 解き方が同じか違うか（違う＝“別の手”という学び）。カテゴリだけでなく実際の製品名まで言う。
+    // other-product のカテゴリ名（「その他」）は情報がないので出さず、製品名だけで語る
+    const prodName = trunc((x.c.product || "").split(/[（(]/)[0].trim(), 22);
+    const catLabel = x.c.productCategory !== "other-product" ? productLabel(x.c.productCategory) : "";
+    const solvedWith = [catLabel, prodName].filter(Boolean).join("・");
+    if (sharedPain && !x.sameProduct && solvedWith) {
+      clauses.push(`こちらは別の手（${solvedWith}）で解決している`);
     } else if (x.sameProduct) {
-      clauses.push(`同じ解き方（${productLabel(x.c.productCategory)}${prodName ? `・${prodName}` : ""}）`);
+      const samePname = prodName && prodName === trunc((base.product || "").split(/[（(]/)[0].trim(), 22);
+      clauses.push(samePname
+        ? `同じ${prodName}を使った別の現場`
+        : `同じ解き方（${solvedWith}）`);
     }
 
     // 同じ指標で成果を出している＝数字を並べて比べられる
@@ -80,9 +88,26 @@ export function recommendCases(base: CaseStudy, limit = 5): Recommendation[] {
       const m = x.sharedMetricName.length > 20 ? `${x.sharedMetricName.slice(0, 20)}…` : x.sharedMetricName;
       clauses.push(`同じ指標「${m}」の成果あり`);
     }
-    if (x.sameSize && x.c.customer.size) clauses.push(`規模も近い（${x.c.customer.size}）`);
+    if (x.sameSize && x.c.customer.size) clauses.push(`規模も近い（${trunc(x.c.customer.size, 14)}）`);
 
     const reason = clauses.slice(0, 3).join("。") + "。";
     return { c: x.c, score: x.score, reason, badges: badges.slice(0, 3) };
   });
+}
+
+function trunc(s: string, n: number): string {
+  return s.length > n ? `${s.slice(0, n)}…` : s;
+}
+
+/** 「従業員45名」「51〜300人」等から先頭の数値を取り、両者が3倍以内なら規模が近いとみなす。 */
+function sizeClose(a?: string, b?: string): boolean {
+  const na = sizeNum(a), nb = sizeNum(b);
+  if (na === null || nb === null) return false;
+  const [lo, hi] = na < nb ? [na, nb] : [nb, na];
+  return lo > 0 && hi / lo <= 3;
+}
+
+function sizeNum(s?: string): number | null {
+  const m = s?.replace(/[,，]/g, "").match(/\d+/);
+  return m ? parseInt(m[0], 10) : null;
 }
