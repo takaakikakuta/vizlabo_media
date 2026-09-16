@@ -6,11 +6,17 @@ import { challengeLabel, industryLabel, productLabel } from "./taxonomy";
    複数の facet（課題/業種/規模/解き方/成果指標/タグ）の一致を重み付けスコアにし、
    一致した観点から人が読める理由文を組み立てる。 */
 
+export type RecChip = {
+  label: string;
+  kind: "tag" | "industry" | "solution" | "metric" | "size";  // 種類ごとに見た目を変える
+};
+
 export type Recommendation = {
   c: CaseStudy;
   score: number;
-  reason: string;   // なぜおすすめか（1〜3節）
-  badges: string[]; // 共有している課題ラベル（チップ表示用）
+  reason: string;   // なぜおすすめか（文章。予備として残す）
+  chips: RecChip[]; // 共通点をチップで見せる（表示の主役）
+  badges: string[]; // 共有している課題ラベル（旧UI互換）
 };
 
 const W = {
@@ -57,17 +63,23 @@ export function recommendCases(base: CaseStudy, limit = 5): Recommendation[] {
   return scored.map((x) => {
     const clauses: string[] = [];
     const badges: string[] = [];
+    const chips: RecChip[] = [];
     const sharedPain = x.sharedTags.length > 0 || x.sharedCh.length > 0;
 
     // 悩みの一致は、カテゴリより具体的な困りごとタグを優先して言う
     if (x.sharedTags.length) {
       clauses.push(`同じ「${x.sharedTags.slice(0, 2).join("」「")}」に悩んだ事例`);
       x.sharedTags.forEach((t) => badges.push(t));
+      x.sharedTags.slice(0, 3).forEach((t) => chips.push({ label: `#${t}`, kind: "tag" }));
     } else if (x.sharedCh.length) {
       clauses.push(`あなたが見た事例と同じ〈${x.sharedCh.map(challengeLabel).join("・")}〉の悩み`);
       x.sharedCh.forEach((ch) => badges.push(challengeLabel(ch)));
+      x.sharedCh.slice(0, 2).forEach((ch) => chips.push({ label: `同じ悩み：${challengeLabel(ch)}`, kind: "tag" }));
     }
-    if (x.sameIndustry) clauses.push(`同じ${industryLabel(base.customer.industry)}`);
+    if (x.sameIndustry) {
+      clauses.push(`同じ${industryLabel(base.customer.industry)}`);
+      chips.push({ label: `同じ${industryLabel(base.customer.industry)}`, kind: "industry" });
+    }
 
     // 解き方が同じか違うか（違う＝“別の手”という学び）。カテゴリだけでなく実際の製品名まで言う。
     // other-product のカテゴリ名（「その他」）は情報がないので出さず、製品名だけで語る
@@ -76,11 +88,13 @@ export function recommendCases(base: CaseStudy, limit = 5): Recommendation[] {
     const solvedWith = [catLabel, prodName].filter(Boolean).join("・");
     if (sharedPain && !x.sameProduct && solvedWith) {
       clauses.push(`こちらは別の手（${solvedWith}）で解決している`);
+      chips.push({ label: `別の手：${solvedWith}`, kind: "solution" });
     } else if (x.sameProduct) {
       const samePname = prodName && prodName === trunc((base.product || "").split(/[（(]/)[0].trim(), 22);
       clauses.push(samePname
         ? `同じ${prodName}を使った別の現場`
         : `同じ解き方（${solvedWith}）`);
+      chips.push({ label: samePname ? `同じ${prodName}` : `同じ解き方：${solvedWith}`, kind: "solution" });
     }
 
     // 同じ指標で成果を出している＝数字を並べて比べられる
@@ -88,10 +102,16 @@ export function recommendCases(base: CaseStudy, limit = 5): Recommendation[] {
       const m = x.sharedMetricName.length > 20 ? `${x.sharedMetricName.slice(0, 20)}…` : x.sharedMetricName;
       clauses.push(`同じ指標「${m}」の成果あり`);
     }
-    if (x.sameSize && x.c.customer.size) clauses.push(`規模も近い（${trunc(x.c.customer.size, 14)}）`);
+    if (x.sameSize && x.c.customer.size) {
+      clauses.push(`規模も近い（${trunc(x.c.customer.size, 14)}）`);
+      chips.push({ label: `規模が近い（${trunc(x.c.customer.size, 12)}）`, kind: "size" });
+    }
+    if (x.sharedMetricName) {
+      chips.push({ label: `同じ指標：${trunc(x.sharedMetricName, 14)}`, kind: "metric" });
+    }
 
     const reason = clauses.slice(0, 3).join("。") + "。";
-    return { c: x.c, score: x.score, reason, badges: badges.slice(0, 3) };
+    return { c: x.c, score: x.score, reason, chips: chips.slice(0, 5), badges: badges.slice(0, 3) };
   });
 }
 

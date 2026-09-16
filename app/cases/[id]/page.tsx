@@ -174,9 +174,17 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
                       </span>
                     )}
                   </div>
-                  <p className="mt-2.5 text-[12.5px] leading-[1.9] text-muted">
-                    <span className="font-bold text-ink2">おすすめの理由：</span>{r.reason}
-                  </p>
+                  {/* 共通点はチップで見せる（困りごとタグ／業界／解き方の対比） */}
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {r.chips.map((chip) => (
+                      <span key={chip.label} className={`border px-2 py-0.5 text-[11px] ${
+                        chip.kind === "tag" ? "border-ink font-bold text-ink"
+                        : chip.kind === "solution" ? "border-line bg-soft text-ink2"
+                        : "border-line2 text-muted"}`}>
+                        {chip.label}
+                      </span>
+                    ))}
+                  </div>
                 </Link>
               );
             })}
