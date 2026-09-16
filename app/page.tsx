@@ -118,7 +118,7 @@ export default function Home() {
       {/* ── 読みもの：事例の集積からしか書けない記事 ── */}
       {articles.length > 0 && (
         <section className="mx-auto max-w-6xl px-5 py-16">
-          <SectionHead title="事例解体新書" sub="1本の事例では分からないことを、400件の横断から解体して書く連載" href="/articles" />
+          <SectionHead title="事例解体新書" sub={`1本の事例では分からないことを、${s.total.toLocaleString()}件の横断から解体して書く連載`} href="/articles" />
           <div className="grid gap-x-10 border-t border-line md:grid-cols-3 md:gap-x-8">
             {articles.map((a) => (
               <Link key={a.slug} href={`/articles/${a.slug}`}

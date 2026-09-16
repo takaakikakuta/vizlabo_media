@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { allArticles, articleThumb } from "../../lib/articles";
+import { siteStats } from "../../lib/cases";
 import CoverImg from "../../components/CoverImg";
 import { ListHead } from "../../components/CaseGrid";
 
@@ -13,7 +14,7 @@ export default function ArticlesPage() {
   return (
     <div className="mx-auto max-w-3xl px-5 py-12">
       <ListHead eyebrow="連載" title="事例解体新書"
-        sub="1本の事例では分からないことを、400件の横断から解体して書く連載。" count={articles.length} />
+        sub={`1本の事例では分からないことを、${siteStats().total.toLocaleString()}件の横断から解体して書く連載。`} count={articles.length} />
       <div className="border-t border-line">
         {articles.map((a) => (
           <Link key={a.slug} href={`/articles/${a.slug}`}
