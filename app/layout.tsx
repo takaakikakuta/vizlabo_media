@@ -34,29 +34,32 @@ function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-line bg-[#fdfcfa]/95 backdrop-blur">
       <div className="h-[3px] bg-ink" />
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5">
-        <Link href="/" className="flex shrink-0 items-baseline gap-2.5 no-underline">
-          <span className="font-display text-[19px] tracking-wide text-ink sm:text-[21px]">{SITE_NAME}</span>
-          <span className="hidden text-[10.5px] tracking-[.14em] text-muted sm:inline">
-            BtoB導入事例データベース
-          </span>
-        </Link>
-        {/* 探す系の細かい導線はトップの「事例を探す」タブに集約。
-            目立たせるのはアクション3つ（メルマガ／事例制作／事例を掲載する）＝アイコン付きで強調 */}
-        <nav className="flex items-center gap-1 text-[12.5px]">
-          <NavLink href="/cases" className="hidden md:block">
-            事例一覧<span className="num ml-1 text-[11px] text-muted">{total}</span>
-          </NavLink>
-          <NavLink href="/articles" className="hidden md:block">事例解体新書</NavLink>
-
+        {/* 左：題字＋メディアメニュー（読む・探す） */}
+        <div className="flex min-w-0 items-center gap-5">
+          <Link href="/" className="flex shrink-0 items-baseline gap-2.5 no-underline">
+            <span className="font-display text-[19px] tracking-wide text-ink sm:text-[21px]">{SITE_NAME}</span>
+            <span className="hidden text-[10.5px] tracking-[.14em] text-muted xl:inline">
+              BtoB導入事例データベース
+            </span>
+          </Link>
+          <nav className="flex items-center gap-0.5 text-[12.5px]">
+            <NavLink href="/cases" className="hidden md:block">
+              事例一覧<span className="num ml-1 text-[11px] text-muted">{total}</span>
+            </NavLink>
+            <NavLink href="/articles" className="hidden md:block">事例解体新書</NavLink>
+          </nav>
+        </div>
+        {/* 右：アクション3つ（メルマガ／事例制作を依頼／事例を掲載する）＝アイコン付きで強調 */}
+        <nav className="flex shrink-0 items-center gap-1 text-[12.5px]">
           <Link href="/newsletter" aria-label="メルマガ"
             className="ml-1 flex shrink-0 items-center gap-1.5 border border-ink px-2.5 py-1.5 text-[12px] font-bold whitespace-nowrap text-ink no-underline transition hover:bg-ink hover:text-white sm:px-3">
             <Mail size={14} strokeWidth={2.2} />
             <span className="hidden sm:inline">メルマガ</span>
           </Link>
-          <Link href="/produce" aria-label="事例制作"
+          <Link href="/produce" aria-label="事例制作を依頼"
             className="flex shrink-0 items-center gap-1.5 border border-ink px-2.5 py-1.5 text-[12px] font-bold whitespace-nowrap text-ink no-underline transition hover:bg-ink hover:text-white sm:px-3">
             <PenLine size={14} strokeWidth={2.2} />
-            <span className="hidden sm:inline">事例制作</span>
+            <span className="hidden sm:inline">事例制作を依頼</span>
           </Link>
           <Link href="/contact"
             className="flex shrink-0 items-center gap-1.5 border border-ink bg-ink px-3 py-1.5 text-[12px] font-bold whitespace-nowrap text-white no-underline transition hover:bg-white hover:text-ink sm:px-3.5 sm:text-[12.5px]">
