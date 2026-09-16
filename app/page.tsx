@@ -14,7 +14,7 @@ import path from "node:path";
    href に note のURLを入れると新しいタブで開くリンクになる（未設定なら枠のみ）。
    画像は public/banner/note.png を置けば自動で表示される（比率4:1・1600×400px推奨）。 */
 const BANNERS: { file: string; label: string; note: string; href?: string }[] = [
-  { file: "note.png", label: "この事例がスゴイ／事例コラム", note: "noteで連載中の2企画" },
+  { file: "note.png", label: "この事例がスゴイ／事例コラム", note: "noteで連載中の2企画", href: "https://note.com/vizlabo" },
 ];
 
 function Banner({ file, label, note, href }: (typeof BANNERS)[number]) {
