@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { siteStats } from "../lib/cases";
+import { Mail, PenLine, FilePlus2 } from "lucide-react";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
@@ -39,16 +40,28 @@ function SiteHeader() {
             BtoB導入事例データベース
           </span>
         </Link>
-        {/* 探す系の細かい導線はトップの「事例を探す」タブに集約。ヘッダーは主要3つ＋窓口だけ */}
-        <nav className="flex items-center gap-0.5 text-[12.5px]">
-          <NavLink href="/cases" className="hidden sm:block">
+        {/* 探す系の細かい導線はトップの「事例を探す」タブに集約。
+            目立たせるのはアクション3つ（メルマガ／事例制作／事例を掲載する）＝アイコン付きで強調 */}
+        <nav className="flex items-center gap-1 text-[12.5px]">
+          <NavLink href="/cases" className="hidden md:block">
             事例一覧<span className="num ml-1 text-[11px] text-muted">{total}</span>
           </NavLink>
-          <NavLink href="/articles" className="hidden sm:block">事例解体新書</NavLink>
-          <NavLink href="/produce" className="hidden md:block">事例制作</NavLink>
+          <NavLink href="/articles" className="hidden md:block">事例解体新書</NavLink>
+
+          <Link href="/newsletter" aria-label="メルマガ"
+            className="ml-1 flex shrink-0 items-center gap-1.5 border border-ink px-2.5 py-1.5 text-[12px] font-bold whitespace-nowrap text-ink no-underline transition hover:bg-ink hover:text-white sm:px-3">
+            <Mail size={14} strokeWidth={2.2} />
+            <span className="hidden sm:inline">メルマガ</span>
+          </Link>
+          <Link href="/produce" aria-label="事例制作"
+            className="flex shrink-0 items-center gap-1.5 border border-ink px-2.5 py-1.5 text-[12px] font-bold whitespace-nowrap text-ink no-underline transition hover:bg-ink hover:text-white sm:px-3">
+            <PenLine size={14} strokeWidth={2.2} />
+            <span className="hidden sm:inline">事例制作</span>
+          </Link>
           <Link href="/contact"
-            className="ml-1.5 shrink-0 border border-ink bg-ink px-3 py-1.5 text-[12px] font-bold whitespace-nowrap text-white no-underline transition hover:bg-white hover:text-ink sm:ml-2 sm:px-3.5 sm:text-[12.5px]">
-            <span className="sm:hidden">掲載を依頼</span>
+            className="flex shrink-0 items-center gap-1.5 border border-ink bg-ink px-3 py-1.5 text-[12px] font-bold whitespace-nowrap text-white no-underline transition hover:bg-white hover:text-ink sm:px-3.5 sm:text-[12.5px]">
+            <FilePlus2 size={14} strokeWidth={2.2} />
+            <span className="sm:hidden">掲載する</span>
             <span className="hidden sm:inline">事例を掲載する</span>
           </Link>
         </nav>
