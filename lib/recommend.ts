@@ -45,7 +45,8 @@ export function recommendCases(base: CaseStudy, limit = 5): Recommendation[] {
         (sharedMetric ? W.metric : 0) +
         sharedTags.length * W.tag;
 
-      return { c, score, sharedCh, sameIndustry, sameSize, sameProduct, sharedMetric };
+      const sharedMetricName = c.results.find((r) => baseMetrics.has(r.metric))?.metric;
+      return { c, score, sharedCh, sameIndustry, sameSize, sameProduct, sharedMetric, sharedTags, sharedMetricName };
     })
     .filter((x) => x.score > 0)
     .sort((a, b) => b.score - a.score)
@@ -54,17 +55,30 @@ export function recommendCases(base: CaseStudy, limit = 5): Recommendation[] {
   return scored.map((x) => {
     const clauses: string[] = [];
     const badges: string[] = [];
+    const sharedPain = x.sharedTags.length > 0 || x.sharedCh.length > 0;
 
-    if (x.sharedCh.length) {
+    // 悩みの一致は、カテゴリより具体的な困りごとタグを優先して言う
+    if (x.sharedTags.length) {
+      clauses.push(`同じ「${x.sharedTags.slice(0, 2).join("」「")}」に悩んだ事例`);
+      x.sharedTags.forEach((t) => badges.push(t));
+    } else if (x.sharedCh.length) {
       clauses.push(`あなたが見た事例と同じ〈${x.sharedCh.map(challengeLabel).join("・")}〉の悩み`);
       x.sharedCh.forEach((ch) => badges.push(challengeLabel(ch)));
     }
     if (x.sameIndustry) clauses.push(`同じ${industryLabel(base.customer.industry)}`);
-    // 解き方が同じか違うか（違う＝“別の手”という学びになる）
-    if (x.sharedCh.length && !x.sameProduct) {
-      clauses.push(`ただし別の手（${productLabel(x.c.productCategory)}）で解決している`);
+
+    // 解き方が同じか違うか（違う＝“別の手”という学び）。カテゴリだけでなく実際の製品名まで言う
+    const prodName = (x.c.product || "").split(/[（(]/)[0].trim();
+    if (sharedPain && !x.sameProduct) {
+      clauses.push(`ただし別の手（${productLabel(x.c.productCategory)}${prodName ? `・${prodName}` : ""}）で解決している`);
     } else if (x.sameProduct) {
-      clauses.push(`同じ解き方（${productLabel(x.c.productCategory)}）`);
+      clauses.push(`同じ解き方（${productLabel(x.c.productCategory)}${prodName ? `・${prodName}` : ""}）`);
+    }
+
+    // 同じ指標で成果を出している＝数字を並べて比べられる
+    if (x.sharedMetricName) {
+      const m = x.sharedMetricName.length > 20 ? `${x.sharedMetricName.slice(0, 20)}…` : x.sharedMetricName;
+      clauses.push(`同じ指標「${m}」の成果あり`);
     }
     if (x.sameSize && x.c.customer.size) clauses.push(`規模も近い（${x.c.customer.size}）`);
 
