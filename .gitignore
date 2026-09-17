@@ -46,3 +46,7 @@ next-env.d.ts
 # Amplify Gen2 の生成物
 /amplify_outputs.json
 /.amplify/
+
+# データのバックアップ（パイプライン生成物）
+data/*.bak
+data/*.tagbak
