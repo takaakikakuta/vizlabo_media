@@ -153,13 +153,32 @@ export type ButaiuraArticle = {
   closing: string;
 };
 
+/* ── 型7：選（テーマ別の事例10選。順位ではなく並列の「選」） ── */
+export type SenArticle = {
+  format: "sen";
+  sponsored?: boolean;  // タイアップ（PR）記事か。未指定＝編集記事
+  thumbnail?: string;   // 一覧・トップで使うサムネイル（未設定なら先頭事例の画像に自動フォールバック）
+  slug: string;
+  no: number;
+  series: string;
+  publishedAt: string;
+  title: string[];
+  lead: string;
+  criteriaNote: string;   // 選定基準と範囲の明示（母数・基準・順位でないこと）
+  items: { caseId: string; headline: string; body: string }[];  // 10本（headline＝見出し、body＝読みどころ2〜3文）
+  outroTitle: string;     // まとめの見出し
+  outro: string;          // まとめ本文（並べて見えたこと・次の一歩）
+  relatedSlugs?: string[]; // 関連する解体新書記事
+};
+
 export type Article =
   | WakaremichiArticle
   | GenbaArticle
   | DounyumaeArticle
   | ChizuArticle
   | EkkyouArticle
-  | ButaiuraArticle;
+  | ButaiuraArticle
+  | SenArticle;
 
 const DIR = path.join(process.cwd(), "content", "articles");
 
@@ -199,6 +218,9 @@ export function articleCaseIds(a: Article): string[] {
     case "butaiura":
       ids = [...a.walls.flatMap((w) => w.caseIds ?? []), ...a.approaches.flatMap((x) => x.caseIds)];
       break;
+    case "sen":
+      ids = a.items.map((x) => x.caseId);
+      break;
   }
   return [...new Set(ids)].filter(Boolean);
 }
@@ -234,5 +256,6 @@ export function articleThumb(a: Article): string | undefined {
   if (a.format === "wakaremichi") return getCase(a.caseA.id)?.image ?? getCase(a.caseB.id)?.image;
   if (a.format === "genba") return getCase(a.axisId)?.image;
   if (a.format === "ekkyou") return getCase(a.caseA.id)?.image ?? getCase(a.caseB.id)?.image;
+  if (a.format === "sen") return a.items.map((x) => getCase(x.caseId)?.image).find(Boolean);
   return undefined;
 }

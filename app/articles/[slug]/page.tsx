@@ -7,6 +7,7 @@ import Dounyumae from "../../../components/articles/Dounyumae";
 import Chizu from "../../../components/articles/Chizu";
 import Ekkyou from "../../../components/articles/Ekkyou";
 import Butaiura from "../../../components/articles/Butaiura";
+import Sen from "../../../components/articles/Sen";
 
 /* オリジナル記事の本番ルート。format に応じてテンプレートを出し分ける。
    記事を1本増やす＝ content/articles/ にJSONを1つ置く、だけ。 */
@@ -41,6 +42,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       return <Ekkyou article={a} />;
     case "butaiura":
       return <Butaiura article={a} />;
+    case "sen":
+      return <Sen article={a} />;
     default:
       notFound();
   }
