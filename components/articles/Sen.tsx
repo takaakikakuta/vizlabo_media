@@ -51,6 +51,17 @@ export default function Sen({ article }: { article: SenArticle }) {
         </figure>
       )}
 
+      {/* 一括問い合わせへの早い導線（詳細は記事末尾の一覧から個別選択も可能） */}
+      <div className="mt-8 flex flex-wrap items-center gap-4">
+        <Link href={`/inquiry?a=${encodeURIComponent(article.slug)}`}
+          className="border border-ink bg-ink px-6 py-3 text-[13.5px] font-bold text-white no-underline transition hover:bg-white hover:text-ink">
+          この記事のサービスすべてに問い合わせる
+        </Link>
+        <p className="text-[11px] leading-relaxed text-muted">
+          登場サービスの提供企業へ、編集部がまとめてお取り次ぎします（次の画面で選択を外せます）。
+        </p>
+      </div>
+
       <Toc items={entries.map((e) => ({
         id: `item${e.i + 1}`, no: String(e.i + 1).padStart(2, "0"), label: e.headline,
       }))} />
