@@ -4,6 +4,8 @@ import { getArticle, articleThumb } from "../../lib/articles";
 import { industryLabel } from "../../lib/taxonomy";
 import { parseStat } from "../../lib/stat";
 import CoverImg from "../CoverImg";
+import VendorLogo from "../VendorLogo";
+import { vendorLogo } from "../../lib/vendors";
 import type { SenArticle } from "../../lib/articles";
 import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
@@ -85,12 +87,21 @@ export default function Sen({ article }: { article: SenArticle }) {
                   })}
                 </div>
               )}
-              <p className="mt-3.5 ml-10 text-[12.5px]">
-                <Link href={`/cases/${c.id}`}
-                  className="border-b border-ink pb-0.5 font-bold text-ink no-underline hover:border-brand hover:text-brand">
-                  この事例の詳細を読む →
-                </Link>
-              </p>
+              {/* 事例への導線＝その事例の画像（無ければ提供元ロゴ）つきのカード */}
+              <Link href={`/cases/${c.id}`}
+                className="row group mt-4 ml-10 flex items-center gap-4 border border-line2 p-2.5 no-underline sm:p-3">
+                <span className="relative block h-20 w-32 shrink-0 overflow-hidden rounded-[3px] border border-line2 bg-soft">
+                  {c.image
+                    ? <CoverImg src={c.image} />
+                    : (vendorLogo(c.vendor) && <VendorLogo src={vendorLogo(c.vendor)!} size={34} />)}
+                </span>
+                <span className="min-w-0">
+                  <span className="block truncate text-[12px] text-muted">{c.title}</span>
+                  <span className="mt-1.5 block text-[13px] font-bold text-ink group-hover:text-brand">
+                    この事例の詳細を読む →
+                  </span>
+                </span>
+              </Link>
             </section>
           );
         })}
