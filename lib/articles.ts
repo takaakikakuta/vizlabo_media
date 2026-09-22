@@ -255,6 +255,7 @@ export function articleServices(a: Article): ArticleService[] {
 
 /** 記事のサムネイル。明示指定 > public/thumbnail/<連番>.png（置くだけで反映） > 記事内の主要事例の og:image。 */
 export function articleThumb(a: Article): string | undefined {
+  if (a.thumbnail === "none") return undefined;  // 番号連動の自動取得も使わない明示指定
   if (a.thumbnail) return a.thumbnail;
   const file = `${String(a.no).padStart(3, "0")}.png`;
   if (fs.existsSync(path.join(process.cwd(), "public", "thumbnail", file))) return `/thumbnail/${file}`;
