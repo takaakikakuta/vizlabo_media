@@ -128,3 +128,7 @@ VSCodeで開けば文法ミスは赤線で出る。壊れたまま保存して�
 このフォルダにJSONを1つ置けば `/articles/（slug）` が生え、一覧にも自動で載る。
 `slug` はUUID（`python -c "import uuid; print(uuid.uuid4())"` で生成）。ファイル名も同じUUIDにする。
 `no`（連番）だけ重複しないように。
+
+## 記事を非公開にするとき
+
+JSONに `"hidden": true` を足すと、一覧・トップ・個別URLのすべてから消える（ファイルは残るので、消せば再公開）。

@@ -171,14 +171,18 @@ export type SenArticle = {
   relatedSlugs?: string[]; // 関連する解体新書記事
 };
 
-export type Article =
+/* 全型共通の任意フィールド。hidden: true で一覧・個別ページとも非公開（データは残る） */
+type ArticleCommon = { hidden?: boolean };
+
+export type Article = (
   | WakaremichiArticle
   | GenbaArticle
   | DounyumaeArticle
   | ChizuArticle
   | EkkyouArticle
   | ButaiuraArticle
-  | SenArticle;
+  | SenArticle
+) & ArticleCommon;
 
 const DIR = path.join(process.cwd(), "content", "articles");
 
@@ -187,6 +191,7 @@ export function allArticles(): Article[] {
   return fs.readdirSync(DIR)
     .filter((f) => f.endsWith(".json"))
     .map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), "utf-8")) as Article)
+    .filter((a) => !a.hidden)  // hidden は公開面から完全に外す
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.no - a.no);
 }
 
