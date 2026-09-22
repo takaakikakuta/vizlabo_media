@@ -32,7 +32,15 @@ export default function Sen({ article }: { article: SenArticle }) {
         )}
       </div>
 
-      {/* ── 扉 ── */}
+      {/* ── 扉（サムネイルは記事トップに置く） ── */}
+      {articleThumb(article) && (
+        <figure className="mt-6">
+          <div className="relative aspect-[5/3] w-full overflow-hidden border border-line bg-soft">
+            <CoverImg src={articleThumb(article)!} />
+          </div>
+        </figure>
+      )}
+
       <header className="mt-6">
         <h1 className="font-display mt-5 text-[27px] leading-[1.45] text-ink sm:text-[34px]">
           {article.title.map((line, i) => (
@@ -42,14 +50,6 @@ export default function Sen({ article }: { article: SenArticle }) {
         <p className="mt-6 text-[14px] leading-[2.1] text-body">{article.lead}</p>
         <p className="mt-5 border border-line2 px-4 py-3 text-[11.5px] leading-[1.9] text-muted">{article.criteriaNote}</p>
       </header>
-
-      {articleThumb(article) && (
-        <figure className="mt-8">
-          <div className="relative aspect-[5/3] w-full overflow-hidden border border-line bg-soft">
-            <CoverImg src={articleThumb(article)!} />
-          </div>
-        </figure>
-      )}
 
       {/* 一括問い合わせへの早い導線（詳細は記事末尾の一覧から個別選択も可能） */}
       <div className="mt-8 flex flex-wrap items-center gap-4">
