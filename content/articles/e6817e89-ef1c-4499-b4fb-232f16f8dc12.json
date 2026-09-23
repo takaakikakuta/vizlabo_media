@@ -1,7 +1,7 @@
 {
   "format": "sen",
   "slug": "e6817e89-ef1c-4499-b4fb-232f16f8dc12",
-  "no": 11,
+  "no": 20,
   "series": "事例解体新書",
   "publishedAt": "2026-09-23",
   "sponsored": false,
@@ -68,5 +68,6 @@
   "relatedSlugs": [
     "c9bf031f-e5ee-4612-8361-c3c9bda34638",
     "9649f101-0a89-47e7-a98b-15d001011190"
-  ]
+  ],
+  "hidden": true
 }

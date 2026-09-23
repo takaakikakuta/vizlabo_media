@@ -13251,7 +13251,7 @@
     "sourceUrl": "https://valueagent.co.jp/interview",
     "collectedAt": "2026-09-02T00:00:00.000Z",
     "customer": {
-      "name": "秀英会様",
+      "name": "秀英会",
       "industry": "education",
       "size": "",
       "dept": ""
@@ -18575,14 +18575,14 @@
   {
     "id": "www-ptengine-jp-casestudies-epson",
     "title": "採用サイトのインターンシップ表記変更とリード獲得ページ改善でコンバージョン向上",
-    "summary": "セイコーとエプソンはWebサイト改善における課題を抱えていました。採用サイトのインターンシップエントリー数増加とリード獲得プロセスの効率化を目指し、Ptengineを用いたA/Bテストを実施。インターンシップページの表記変更による30%の遷移率向上とリード獲得ページの改善により、採用数の増加と業務効率化を実現しました。",
+    "summary": "セイコーエプソンはWebサイト改善における課題を抱えていました。採用サイトのインターンシップエントリー数増加とリード獲得プロセスの効率化を目指し、Ptengineを用いたA/Bテストを実施。インターンシップページの表記変更による30%の遷移率向上とリード獲得ページの改善により、採用数の増加と業務効率化を実現しました。",
     "vendor": "ptengine.jp",
     "product": "Ptengine",
     "productCategory": "saas",
     "sourceUrl": "https://www.ptengine.jp/casestudies/epson/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "セイコーとエプソン株式会社",
+      "name": "セイコーエプソン株式会社",
       "industry": "manufacturing",
       "size": "",
       "dept": "DX推進本部"
