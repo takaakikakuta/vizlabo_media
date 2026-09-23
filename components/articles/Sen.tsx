@@ -27,9 +27,12 @@ export default function Sen({ article }: { article: SenArticle }) {
           <span className="font-display border-b-2 border-ink pb-1 text-[15px] tracking-[.24em] text-ink">{article.series}</span>
           <span className="num text-[13px] text-muted">#{String(article.no).padStart(3, "0")}</span>
         </div>
-        {article.sponsored && (
-          <span className="border border-line px-2 py-0.5 text-[10px] font-bold tracking-widest text-muted">Sponsored</span>
-        )}
+        <div className="flex items-baseline gap-3">
+          {article.sponsored && (
+            <span className="border border-line px-2 py-0.5 text-[10px] font-bold tracking-widest text-muted">Sponsored</span>
+          )}
+          <span className="num text-[11px] text-muted">{article.publishedAt.replace(/-/g, ".")}</span>
+        </div>
       </div>
 
       {/* ── 扉（サムネイルは記事トップに置く） ── */}
