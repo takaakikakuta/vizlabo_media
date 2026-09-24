@@ -10,7 +10,7 @@ import SubscribeForm from "../../components/SubscribeForm";
 
 export const metadata = {
   title: "メルマガ「週刊 事例ナビ」",
-  description: "毎週金曜配信。今週の事例解体新書2本と、新着の解決事例をメールでお届けします。",
+  description: "毎週金曜配信。今週の事例セレクション2本と、新着の解決事例をメールでお届けします。",
 };
 
 export default function NewsletterPage() {
@@ -21,7 +21,7 @@ export default function NewsletterPage() {
   return (
     <div className="mx-auto max-w-3xl px-5 py-12">
       <ListHead eyebrow="メルマガ" title="週刊 事例ナビ"
-        sub={`毎週金曜配信・5分で読める。今週の事例解体新書2本と、${s.total}件のデータベースに加わった新着の解決事例を届けます。`} />
+        sub={`毎週金曜配信・5分で読める。今週の事例セレクション2本と、${s.total}件のデータベースに加わった新着の解決事例を届けます。`} />
 
       {/* 内容を説明してから、末尾のフォームで登録してもらう（フォームは先に出さない） */}
       {/* 何が届くか＝創刊号のプレビュー（実データで組む） */}
@@ -35,7 +35,7 @@ export default function NewsletterPage() {
           </div>
           <div className="space-y-7 px-5 py-6">
             <div>
-              <p className="label">① 今週の事例解体新書（2本）</p>
+              <p className="label">① 今週の事例セレクション（2本）</p>
               <p className="mt-2 text-[13.5px] leading-[1.95] text-body">
                 事例の集積からしか書けない編集部のオリジナル記事を、毎週2本。
               </p>

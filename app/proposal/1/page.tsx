@@ -5,7 +5,7 @@ import { industryLabel, productLabel } from "../../../lib/taxonomy";
 import { hasDigit, parseStat, statSize } from "../../../lib/stat";
 import type { CaseStudy } from "../../../lib/types";
 
-/* ── 事例解体新書 #001「分かれ道」（試作 v4） ─────────────────────────
+/* ── 事例セレクション #001「分かれ道」（試作 v4） ─────────────────────────
    フォーマット：同じ悩みを抱えた2社が、正反対の解決策にたどり着いた。なぜか。
    ・素材（引用・数字・第三の事例）はすべて cases.json の実データ
    ・「なぜ分かれたか」の推理だけが編集部（＝Fable）の書き下ろし。推測であることを明示する
@@ -16,7 +16,7 @@ const B_ID = "www-freee-co-jp-cases-shinagawa-sakurakai";   // 社会福祉法�
 const C_ID = "www-fastaccounting-jp-case-20230116-10010";   // 阪急アクトフォー（検算用）
 
 export const metadata = {
-  title: "事例解体新書 #001｜同じ「紙とハンコ」で、道が分かれた",
+  title: "事例セレクション #001｜同じ「紙とハンコ」で、道が分かれた",
   description: "同じ悩みを抱えた2社が正反対の解決策にたどり着いたのはなぜか。公開事例を突き合わせて読む連載の試作。",
 };
 
@@ -42,7 +42,7 @@ export default function ProposalPage() {
     <article className="mx-auto max-w-3xl px-5 py-12">
       {/* ── 提案メモ（記事の一部ではない） ── */}
       <aside className="mb-12 border-2 border-ink bg-soft p-5">
-        <p className="label">ご提案：「事例解体新書」＝分かれ道フォーマット（試作 v4）</p>
+        <p className="label">ご提案：「事例セレクション」＝分かれ道フォーマット（試作 v4）</p>
         <p className="mt-3 text-[13px] leading-[1.95] text-body">
           <b className="text-ink">同じ課題 → 違う解決策 → なぜ分かれたのか</b>、を1本で解く形式です。
           引用・数字・第三の事例はすべて掲載データの実文。
@@ -54,7 +54,7 @@ export default function ProposalPage() {
       {/* ── 扉 ── */}
       <header>
         <div className="flex items-baseline gap-3">
-          <span className="font-display border-b-2 border-ink pb-1 text-[15px] tracking-[.24em] text-ink">事例解体新書</span>
+          <span className="font-display border-b-2 border-ink pb-1 text-[15px] tracking-[.24em] text-ink">事例セレクション</span>
           <span className="num text-[13px] text-muted">#001</span>
         </div>
         <h1 className="font-display mt-6 text-[27px] leading-[1.45] text-ink sm:text-[34px]">

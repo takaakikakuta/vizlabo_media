@@ -5,7 +5,7 @@ import CoverImg from "../../components/CoverImg";
 import { ListHead } from "../../components/CaseGrid";
 
 export const metadata = {
-  title: "事例解体新書",
+  title: "事例セレクション",
   description: "事例の集積からしか書けないオリジナル連載。課題を解体し、分かれ道の理由と悩みの記録を書く。",
 };
 
@@ -13,7 +13,7 @@ export default function ArticlesPage() {
   const articles = allArticles();
   return (
     <div className="mx-auto max-w-3xl px-5 py-12">
-      <ListHead eyebrow="連載" title="事例解体新書"
+      <ListHead eyebrow="連載" title="事例セレクション"
         sub={`1本の事例では分からないことを、${siteStats().total.toLocaleString()}件の横断から解体して書く連載。`} count={articles.length} />
       <div className="border-t border-line">
         {articles.map((a) => (

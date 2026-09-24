@@ -24,14 +24,14 @@ export default async function InquiryPage({ searchParams }: {
     return (
       <div className="mx-auto max-w-3xl px-5 py-12">
         <ListHead eyebrow="お問い合わせ" title="まとめて問い合わせ"
-          sub="このページは、事例解体新書の記事末尾からご利用いただけます。" />
+          sub="このページは、事例セレクションの記事末尾からご利用いただけます。" />
         <p className="mt-6 text-[13.5px] leading-[2] text-body">
           対象の記事が見つかりませんでした。記事の末尾にある「この記事に登場したサービス」からお進みください。
         </p>
         <div className="mt-8 flex flex-wrap gap-6">
           <Link href="/articles"
             className="border border-ink bg-ink px-6 py-3 text-[13.5px] font-bold text-white no-underline transition hover:bg-white hover:text-ink">
-            事例解体新書の記事一覧へ
+            事例セレクションの記事一覧へ
           </Link>
           <Link href="/contact"
             className="self-center border-b border-ink pb-0.5 text-[13.5px] font-bold text-ink no-underline hover:border-brand hover:text-brand">

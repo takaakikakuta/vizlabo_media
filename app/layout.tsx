@@ -47,7 +47,7 @@ function SiteHeader() {
             <NavLink href="/cases" className="hidden md:block">
               事例一覧<span className="num ml-1 text-[11px] text-muted">{total}</span>
             </NavLink>
-            <NavLink href="/articles" className="hidden md:block">事例解体新書</NavLink>
+            <NavLink href="/articles" className="hidden md:block">事例セレクション</NavLink>
           </nav>
         </div>
         {/* 右：アクション3つ（メルマガ／事例制作を依頼／事例を掲載する）＝アイコン付きで強調 */}
@@ -94,7 +94,7 @@ function SiteFooter() {
           <div className="max-w-md">
             <p className="font-display text-[17px] text-ink">週刊 事例ナビ</p>
             <p className="mt-1.5 text-[12px] leading-relaxed">
-              毎週金曜配信。今週の事例解体新書2本と、新着の解決事例を届けます。
+              毎週金曜配信。今週の事例セレクション2本と、新着の解決事例を届けます。
             </p>
           </div>
           <Link href="/newsletter"
@@ -121,7 +121,7 @@ function SiteFooter() {
               <Link href="/tags" className="no-underline hover:text-ink">困りごとから</Link>
               <Link href="/industries" className="no-underline hover:text-ink">業種から</Link>
               <Link href="/cases" className="no-underline hover:text-ink">すべての事例</Link>
-              <Link href="/articles" className="no-underline hover:text-ink">事例解体新書</Link>
+              <Link href="/articles" className="no-underline hover:text-ink">事例セレクション</Link>
             </div>
             <div className="flex flex-col gap-2">
               <span className="label">サービス</span>
