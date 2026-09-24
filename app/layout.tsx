@@ -36,8 +36,11 @@ function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5">
         {/* 左：題字＋メディアメニュー（読む・探す） */}
         <div className="flex min-w-0 items-center gap-5">
-          <Link href="/" className="flex shrink-0 items-baseline gap-2.5 no-underline">
-            <span className="font-display text-[19px] tracking-wide text-ink sm:text-[21px]">{SITE_NAME}</span>
+          <Link href="/" className="flex shrink-0 items-center gap-2.5 no-underline">
+            {/* ロゴ画像は黒地デザインのため、上下の余白をトリミングした角丸バッジで表示する */}
+            <span className="block h-9 w-[110px] overflow-hidden rounded-[6px]">
+              <img src="/logo.png" alt={SITE_NAME} className="h-full w-full object-cover" />
+            </span>
             <span className="hidden text-[10.5px] tracking-[.14em] text-muted xl:inline">
               BtoB導入事例データベース
             </span>
