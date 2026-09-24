@@ -37,10 +37,8 @@ function SiteHeader() {
         {/* 左：題字＋メディアメニュー（読む・探す） */}
         <div className="flex min-w-0 items-center gap-5">
           <Link href="/" className="flex shrink-0 items-center gap-2.5 no-underline">
-            {/* ロゴ画像は黒地デザインのため、上下の余白をトリミングした角丸バッジで表示する */}
-            <span className="block h-9 w-[110px] overflow-hidden rounded-[6px]">
-              <img src="/logo.png" alt={SITE_NAME} className="h-full w-full object-cover" />
-            </span>
+            {/* 白地の横長ロゴ。mix-blend-multiplyで白をヘッダーの生成り色に馴染ませる */}
+            <img src="/logo-header.png" alt={SITE_NAME} className="h-9 w-auto mix-blend-multiply" />
             <span className="hidden text-[10.5px] tracking-[.14em] text-muted xl:inline">
               BtoB導入事例データベース
             </span>
