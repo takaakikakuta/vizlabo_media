@@ -107,14 +107,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 新着：直近で掲載した事例を、日付つきで ── */}
-      <section className="mx-auto max-w-6xl px-5 py-16">
-        <SectionHead title="新着の解決事例" sub="直近で掲載した事例。掲載日の新しい順" href="/cases" />
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {newest.map((c) => <CaseCard key={c.id} c={c} showDate />)}
-        </div>
-      </section>
-
       {/* ── 読みもの：事例の集積からしか書けない記事 ── */}
       {articles.length > 0 && (
         <section className="mx-auto max-w-6xl px-5 py-16">
@@ -143,6 +135,14 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      {/* ── 新着：直近で掲載した事例を、日付つきで ── */}
+      <section className="mx-auto max-w-6xl px-5 py-16">
+        <SectionHead title="新着の解決事例" sub="直近で掲載した事例。掲載日の新しい順" href="/cases" />
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {newest.map((c) => <CaseCard key={c.id} c={c} showDate />)}
+        </div>
+      </section>
 
       {/* ── 探す：課題／困りごと／業種をタブで切り替える（縦に長くしない） ── */}
       <section className="border-y border-line bg-soft">
