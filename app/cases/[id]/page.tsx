@@ -216,7 +216,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
             こうした解決事例を、週1回メールで
           </h2>
           <p className="mt-3 text-[12.5px] leading-[1.95] text-muted">
-            毎週金曜配信。今週の事例セレクション2本と、新着の解決事例をお届けします。
+            毎週金曜配信。事例セレクション5本と、note連載「この事例がスゴイ」「事例コラム」をお届けします。
           </p>
           <Link href="/newsletter"
             className="mt-6 inline-block border border-ink bg-ink px-7 py-3 text-[13.5px] font-bold text-white no-underline transition hover:bg-white hover:text-ink">
