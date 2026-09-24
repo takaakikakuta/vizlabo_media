@@ -1250,10 +1250,10 @@
   },
   {
     "id": "aucservice-solution-co-jp-works-works1",
-    "title": "車検台数3,000台/年の小規模事業者がオーバーホール・コントロール導入で業務効率化",
-    "summary": "関西地区の小規模車検事業者が、車検機器6台から2台へのリオーバーホール対応により、年間処理台数を増加させ、月平均250件のアプローバル処理を実現。オーバーホール顧客の代替として新規顧客80台を開拓。",
+    "title": "車検満期前のリマインドコール導入で、入庫台数が前年比10%増",
+    "summary": "関西地区の車検フランチャイズ加盟店A社（導入当初の年間車検台数3,000台）は、車検満期6ヶ月前・2ヶ月前のリピートアップコール「常連さん」を導入。月間平均250件のアプローチにより、年間車検入庫台数は前年比10%増、リピート顧客からの代替成約80台を実現した。",
     "vendor": "aucservice-solution.co.jp",
-    "product": "オーバーホール・コントロール",
+    "product": "常連さん（リピートアップコール）",
     "productCategory": "other-product",
     "sourceUrl": "https://aucservice-solution.co.jp/works/works1/",
     "collectedAt": "2026-09-24T00:00:00.000Z",
@@ -1267,37 +1267,36 @@
       "efficiency",
       "leadtime"
     ],
-    "challengeDetail": "車検機器の運用効率が低く、年間車検処理台数が限定されていた。機器のメンテナンス負担が大きい状況だった。",
-    "actions": "車検機器6台から2台へのリオーバーホール対応を実施し、オーバーホール・コントロールを導入することで業務プロセスを最適化した。",
+    "challengeDetail": "車検満期を迎える顧客への継続的なフォローの仕組みがなく、リピート入庫を増やすことが課題だった。",
+    "actions": "車検満期6ヶ月前と2ヶ月前の2回、顧客へリピートアップコール（電話フォロー）を行う「常連さん」を導入し、月間平均250件のアプローチを実施した。",
     "results": [
       {
-        "metric": "月平均アプローバル処理件数",
-        "value": "250件"
+        "metric": "年間車検入庫台数",
+        "value": "前年比10%増"
       },
       {
-        "metric": "新規顧客開拓台数",
+        "metric": "リピート顧客からの代替成約",
         "value": "80台"
       }
     ],
     "scale": [
       {
-        "metric": "年間車検台数",
+        "metric": "導入当初の年間車検台数",
         "value": "3,000台"
       },
       {
-        "metric": "車検機器数（導入後）",
-        "value": "2台"
+        "metric": "月間平均アプローチ件数",
+        "value": "250件"
+      },
+      {
+        "metric": "導入期間",
+        "value": "2年"
       }
     ],
-    "resultsQualitative": "オーバーホール顧客の代替として新規顧客を獲得でき、限られた機器でも処理効率を向上させることに成功した。",
+    "resultsQualitative": "",
     "hasNumbers": true,
     "sample": false,
-    "image": "https://aucservice-solution.co.jp/wp-content/uploads/2020/11/zyourenn.png",
-    "tags": [
-      "検査の目視頼み",
-      "工程管理の難しさ",
-      "サーバ運用の負担"
-    ]
+    "image": "https://aucservice-solution.co.jp/wp-content/uploads/2020/11/zyourenn.png"
   },
   {
     "id": "biz-conct-jp-voice-supplier-taikido",
