@@ -126,23 +126,28 @@ export default function Sen({ article }: { article: SenArticle }) {
         <h2 className="font-display text-[20px] leading-snug text-ink">{article.outroTitle}</h2>
         <p className="mt-4 text-[13.5px] leading-[2.1] text-body">{article.outro}</p>
         {(article.relatedSlugs ?? []).length > 0 && (
-          <div className="mt-7">
-            <p className="label mb-2.5">あわせて読む</p>
-            <ul className="space-y-1.5">
+          <div className="mt-9 border-t border-line pt-6">
+            <p className="label mb-4 flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />あわせて読む</p>
+            <div className="grid gap-5 sm:grid-cols-2">
               {(article.relatedSlugs ?? []).map((s) => {
                 const a = getArticle(s);
                 if (!a) return null;
                 return (
-                  <li key={s}>
-                    <Link href={`/articles/${a.slug}`}
-                      className="text-[13px] leading-relaxed text-body no-underline hover:text-ink">
-                      <span className="num mr-2 text-[11px] text-muted">#{String(a.no).padStart(3, "0")}</span>
-                      <span className="border-b border-line pb-0.5">{a.title.join("")}</span>
-                    </Link>
-                  </li>
+                  <Link key={s} href={`/articles/${a.slug}`}
+                    className="row group block border border-line2 p-3 no-underline transition hover:border-ink">
+                    <div className="relative mb-3 aspect-[5/3] w-full overflow-hidden rounded-[3px] border border-line2 bg-soft">
+                      {articleThumb(a)
+                        ? <CoverImg src={articleThumb(a)!} />
+                        : <span className="num absolute inset-0 grid place-items-center text-[20px] text-muted">#{String(a.no).padStart(3, "0")}</span>}
+                    </div>
+                    <span className="num text-[11px] text-muted">#{String(a.no).padStart(3, "0")}</span>
+                    <span className="font-display mt-1 block text-[15px] leading-[1.55] text-ink group-hover:text-brand">
+                      {a.title.join("")}
+                    </span>
+                  </Link>
                 );
               })}
-            </ul>
+            </div>
           </div>
         )}
       </section>
