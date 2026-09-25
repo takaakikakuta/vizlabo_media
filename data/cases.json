@@ -1330,6 +1330,67 @@
     ]
   },
   {
+    "id": "assured-jp-case-provider-1",
+    "title": "セキュリティチェック対応工数を1/36に削減、Assuredクラウド評価で自動化・属人化解消",
+    "summary": "クラウド録画サービス提供企業が、顧客からのセキュリティチェック対応に月150時間・2名体制で対応していた課題に対し、Assuredクラウド評価を導入。セキュリティ情報を一元化し、対応工数を1件あたり3時間から5分に削減した。",
+    "vendor": "assured.jp",
+    "product": "Assuredクラウド評価",
+    "productCategory": "saas",
+    "sourceUrl": "https://assured.jp/case/provider/1",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "セーフィー株式会社",
+      "industry": "it",
+      "size": "事業成長中（記載なし）",
+      "dept": "カスタマーサービス本部"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "data"
+    ],
+    "challengeDetail": "顧客からのセキュリティチェック依頼対応が月20〜30件で、Excel形式のチェックシートに1件3〜5時間かかり、2名体制で月最大150時間の工数を消費。対応が属人化し、データが一元化されておらず情報検索に時間がかかっていた。",
+    "actions": "Assuredクラウド評価を導入し、セキュリティ情報を一元化・自動化。社内周知・営業部門向け説明会を実施し、HPに新規セキュリティページを立ち上げてAssured経由の依頼窓口を設置した。",
+    "results": [
+      {
+        "metric": "セキュリティチェック対応時間削減",
+        "value": "1件あたり3時間→5分（1/36に削減）"
+      },
+      {
+        "metric": "月間対応依頼件数削減",
+        "value": "20〜30件→20件未満"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入前の月間対応依頼",
+        "value": "20〜30件"
+      },
+      {
+        "metric": "導入前の月間総工数",
+        "value": "最大150時間"
+      },
+      {
+        "metric": "対応体制",
+        "value": "2名"
+      },
+      {
+        "metric": "利用開始までの期間",
+        "value": "初回打ち合わせから1ヶ月以内"
+      }
+    ],
+    "resultsQualitative": "セキュリティ情報が第三者による高精度な評価として顧客に提示でき、セキュリティチェック依頼への回答精度が向上。また、Assuredプラットフォーム上での新規リード獲得も期待でき、属人化が解消されナレッジが組織化された。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/664feca2797e242cac62a8f2/large.png?utime=1716513955",
+    "tags": [
+      "Excel管理の限界",
+      "業務の属人化",
+      "数字の集計に時間",
+      "データが分散"
+    ]
+  },
+  {
     "id": "aucservice-solution-co-jp-works-works1",
     "title": "車検満期前のリマインドコール導入で、入庫台数が前年比10%増",
     "summary": "関西地区の車検フランチャイズ加盟店A社（導入当初の年間車検台数3,000台）は、車検満期6ヶ月前・2ヶ月前のリピートアップコール「常連さん」を導入。月間平均250件のアプローチにより、年間車検入庫台数は前年比10%増、リピート顧客からの代替成約80台を実現した。",
@@ -2815,43 +2876,6 @@
     ]
   },
   {
-    "id": "cloudsign-for-salesforce-jp-casestudy-posts-freee",
-    "title": "CloudSign for Salesforceで契約書処理を自動化、制作から送付までの時間を1～2日短縮",
-    "summary": "freeeは複数の電子契約サービスを使い分けていたため、契約書作成から送付までの管理が煩雑で時間がかかっていた。CloudSign for Salesforceを導入することで、Salesforce上で一元管理でき、契約ステータスをリアルタイム確認できるようになった。結果として制作から送付までの時間が1～2日短縮され、業務効率が向上した。",
-    "vendor": "cloudsign-for-salesforce.jp",
-    "product": "CloudSign for Salesforce",
-    "productCategory": "saas",
-    "sourceUrl": "https://cloudsign-for-salesforce.jp/casestudy/posts/freee",
-    "collectedAt": "2026-09-24T00:00:00.000Z",
-    "customer": {
-      "name": "freee株式会社",
-      "industry": "it",
-      "size": "従業員500名以上",
-      "dept": "ビジネス推進本部"
-    },
-    "challenges": [
-      "efficiency",
-      "standardize"
-    ],
-    "challengeDetail": "複数の電子契約サービスを使用していたため、契約書作成から送付までのプロセスが複雑で、管理も難しかった。Salesforceとの連携が困難であり、契約書作成から送付までに時間がかかっていた。",
-    "actions": "CloudSign for Salesforceを導入し、Salesforce上で契約書の作成・確認・送付を一元管理できるようにした。リアルタイムで契約ステータスを確認できる環境を実現した。",
-    "results": [
-      {
-        "metric": "契約書制作から送付までの時間短縮",
-        "value": "1～2日短縮"
-      }
-    ],
-    "resultsQualitative": "Salesforce上でリアルタイムに契約ステータスが確認できるようになり、次のアクションへのスムーズな移行が実現した。契約書管理が効率化され、業務フローが明確になった。",
-    "hasNumbers": true,
-    "sample": false,
-    "image": "https://storage.googleapis.com/production-os-assets/assets/238acfb7-a89a-4fb8-bb68-d9408c21a4d9",
-    "tags": [
-      "システムの乱立",
-      "請求処理に時間",
-      "進捗が見えない"
-    ]
-  },
-  {
     "id": "cms-racms-jp-jirei",
     "title": "整体院が月3万円の地元紙広告の2倍の効果を実現",
     "summary": "整体院がホームページ業者や高額ソフトでは満足できない課題を抱えていた。ラクマスを導入することで、自分で簡単に更新でき、検索順位が安定して上位になり、集客が安定するようになった。",
@@ -3568,6 +3592,61 @@
       "手作業の転記",
       "数字の集計に時間",
       "請求処理に時間"
+    ]
+  },
+  {
+    "id": "effectual-co-jp-location-connect-interview-share-restaurant",
+    "title": "Googleビジネスプロフィール運用で間借り飲食店の顧客層を拡大、WEB流入1.8倍・ルート照会5倍を実現",
+    "summary": "間借りマッチングプラットフォーム運営のシェアレストランが、加盟店舗向けにGoogleビジネスプロフィール（旧Googleマイビジネス）の運用支援を開始。間借りカレー店「極哩」ではメニューや写真を整備することで、WEBサイト流入が1.8倍、ルート照会が5倍に増加し、SNS経由のみだった顧客層が拡大した。",
+    "vendor": "effectual.co.jp",
+    "product": "Googleビジネスプロフィール（旧Googleマイビジネス）運用サービス",
+    "productCategory": "martech",
+    "sourceUrl": "https://effectual.co.jp/location-connect/interview/share-restaurant/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社シェアレストラン",
+      "industry": "food",
+      "size": "株式会社吉野家ホールディングス子会社",
+      "dept": ""
+    },
+    "challenges": [
+      "sales",
+      "efficiency"
+    ],
+    "challengeDetail": "間借り形式の飲食店は場所が分かりづらく、期間限定のため口コミを集めにくい。SNS中心の集客では、特定の顧客層（SNSフォロワー）のみにリーチしており、潜在顧客へのアプローチが課題だった。",
+    "actions": "Googleビジネスプロフィールのアカウント開設と運用を支援。メニューや写真などの店舗情報を整備し、口コミ投稿を促進。来店客に対して口コミ投稿を積極的に促した。",
+    "results": [
+      {
+        "metric": "WEBサイトへの流入",
+        "value": "1.8倍"
+      },
+      {
+        "metric": "ルート照会数",
+        "value": "5倍"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "口コミ投稿数（3ヶ月間）",
+        "value": "11件"
+      },
+      {
+        "metric": "Googleビジネスプロフィール開設でリーチしたユーザー数",
+        "value": "約13,000"
+      },
+      {
+        "metric": "平均レビュー評価",
+        "value": "4.2"
+      }
+    ],
+    "resultsQualitative": "SNS経由のみだったInstagram中心の顧客層（カレーマニア、音楽関係者）に加え、Googleマップ経由の新たな顧客層が来店するようになり、客層が大幅に拡大した。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://effectual.co.jp/images/location-connect/og-default.png",
+    "tags": [
+      "情報共有の遅れ",
+      "名刺情報の死蔵",
+      "データが分散"
     ]
   },
   {
@@ -6737,6 +6816,101 @@
     ]
   },
   {
+    "id": "manage-coel-inc-jp-case",
+    "title": "数日かかっていた給与計算が1日で完了",
+    "summary": "富士山清水港クルーズは勤怠・工数管理をデジタル化することで、給与計算の期間を短縮し業務効率を向上させた。",
+    "vendor": "coel-inc.jp",
+    "product": "manage（勤怠・工数管理）",
+    "productCategory": "saas",
+    "sourceUrl": "https://manage.coel-inc.jp/case/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "富士山清水港クルーズ株式会社",
+      "industry": "other-industry",
+      "size": "従業員30〜99名",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "給与計算に数日かかっていた。勤怠・工数管理がアナログ運用だった。",
+    "actions": "manageシリーズの勤怠・工数管理アプリを導入し、給与計算プロセスをデジタル化した。",
+    "results": [
+      {
+        "metric": "給与計算期間",
+        "value": "数日→1日"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "30〜99名"
+      }
+    ],
+    "resultsQualitative": "ペーパーレス化を実現し、全社DXの基盤が整備された。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://manage.coel-inc.jp/wp-content/uploads/2026/08/OGP-1.jpg",
+    "tags": [
+      "勤怠管理の手間",
+      "給与計算の手間",
+      "手作業の転記"
+    ]
+  },
+  {
+    "id": "manebi-co-jp-case-2053",
+    "title": "職種別ロードマップで研修を効率化、受講率80%超を達成",
+    "summary": "不動産企業が16拠点に分散する約360名の社員に対し、オフライン研修の非効率性を課題としていた。eラーニングプラットフォームを導入し、管理職研修と内定者研修をオンライン化するとともに、職種別ロードマップを設定。受講と課題提出率が80%を超え、自己啓発利用の申請も複数件獲得した。",
+    "vendor": "manebi.co.jp",
+    "product": "manebi eラーニング",
+    "productCategory": "saas",
+    "sourceUrl": "https://manebi.co.jp/case/2053/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "悠悠ホーム株式会社",
+      "industry": "retail",
+      "size": "従業員約360名",
+      "dept": "人事部、総務課"
+    },
+    "challenges": [
+      "efficiency",
+      "labor",
+      "standardize"
+    ],
+    "challengeDetail": "各拠点から社員を集めるオフライン研修の実施に時間と労力が多大にかかっており、営業以外の社員や中途社員向けの体系的な研修が不足していた。",
+    "actions": "eラーニングプラットフォームを導入し、管理職向けと内定者向けの研修をオンライン化。職種別（営業・設計）のキャリアロードマップを設定し、推奨教材やYouTube動画を組み合わせたコースマップを作成・配信。全社員向けに月ごとのおすすめコースマップを発信し、自己啓発利用を促進。",
+    "results": [
+      {
+        "metric": "受講と課題提出率",
+        "value": "80%超"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "拠点数",
+        "value": "16か所"
+      },
+      {
+        "metric": "対象社員数",
+        "value": "約360名"
+      },
+      {
+        "metric": "自己啓発利用申請者数",
+        "value": "十数名"
+      }
+    ],
+    "resultsQualitative": "各拠点から管理職を集めることなく研修が実施でき、時間と労力が大きく削減された。自己啓発利用者から「空いた時間に学ぶことができた」「楽しく学べた」など良好な反響を得ている。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://manebi.co.jp/wp-content/uploads/2024/05/ebc98f8911c5dc034a4b9bb98e3b6085.webp",
+    "tags": [
+      "研修の負担",
+      "新人教育のばらつき",
+      "多拠点の管理"
+    ]
+  },
+  {
     "id": "marugotoinc-co-jp-interview-spir",
     "title": "スタートアップの採用体制構築｜採用代行で戦略と実行を両立",
     "summary": "SaaS企業Spirは事業拡大に伴い採用ポジションが増加する中、採用専任者が不在だったため、戦略から実行までワンストップで対応できる採用代行サービス「まるごと人事」を3ヶ月導入。新規求人で100名近い応募を獲得し、採用につなげることができた。",
@@ -9228,6 +9402,49 @@
     ]
   },
   {
+    "id": "ritamarketing-co-jp-2021-12-jirei",
+    "title": "広告費0円で売上750万円獲得。ホームページからのリード獲得で実現",
+    "summary": "太陽光発電企業が新人営業の成果不足に課題を抱えていた。マーケティング実践講座で営業戦略を整備し、広告出稿前にホームページからのリード1件を獲得。そこから750万円の売上を達成した。",
+    "vendor": "ritamarketing.co.jp",
+    "product": "利益最大化マーケティング実践講座",
+    "productCategory": "consulting",
+    "sourceUrl": "https://ritamarketing.co.jp/2021/12/jirei/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "energy",
+      "size": "",
+      "dept": "営業"
+    },
+    "challenges": [
+      "sales",
+      "efficiency"
+    ],
+    "challengeDetail": "新人営業マンが新規契約を獲得できず、営業方法が機能していない状態にあった。",
+    "actions": "マーケティング実践講座を受講し、勝つべくして勝つ仕組みを構築。広告出稿前にホームページからのリード獲得体制を整えた。",
+    "results": [
+      {
+        "metric": "売上",
+        "value": "750万円"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "獲得リード数",
+        "value": "1件"
+      }
+    ],
+    "resultsQualitative": "広告費をかける前に講座費用を十分に回収できる成果を達成。その後の広告運用で更なる成果が期待される。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ritamarketing.co.jp/wp-content/uploads/2021/12/0834721690b0bfd46f10a0d289a3c8a5.jpg",
+    "tags": [
+      "追客の漏れ",
+      "新人教育のばらつき",
+      "営業プロセスの属人化"
+    ]
+  },
+  {
     "id": "rpa-technologies-com-case-case039",
     "title": "株式会社フェリシモ：BizRobo!導入でカタログ表記ミスや発注ロス率が大きく低減",
     "summary": "複数ITシステム導入による業務の煩雑化と属人化が課題だったフェリシモ社は、BizRobo!とAI技術を組み合わせた「BrainRoboサービス」を導入。カタログ原稿チェックの自動化と在庫管理業務の効率化により、年間約3,000時間を削減し、業務精度向上とロス率低下を実現した。",
@@ -11580,6 +11797,58 @@
     ]
   },
   {
+    "id": "solution-meitetsucom-co-jp-case-13",
+    "title": "オンライン説明会プラットフォームの一元化により業務効率20%向上とコスト削減を実現",
+    "summary": "大学合同オンライン説明会『ユニフェスOnline』で参加者増加に伴い、複数システムの運用負荷と動画配信コストが課題だった。コミュニティ管理サービス『COMPOTE』を導入し一元管理を実現。業務効率が20%向上し、年間コストを20%削減した。",
+    "vendor": "meitetsucom.co.jp",
+    "product": "COMPOTE（コミュニティ管理サービス）",
+    "productCategory": "saas",
+    "sourceUrl": "https://solution.meitetsucom.co.jp/case/13",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社KEIアドバンス",
+      "industry": "education",
+      "size": "従業員規模不明",
+      "dept": "運営部門"
+    },
+    "challenges": [
+      "efficiency",
+      "cost",
+      "standardize"
+    ],
+    "challengeDetail": "参加者が7倍以上増加したため、受付システムと動画配信システムの2つのシステムを別々に運用する業務が煩雑化。イベントごとに外部から動画配信システムを調達するコストが大きく、顧客情報の一元管理が必要になった。",
+    "actions": "コミュニティ管理サービス『COMPOTE』を導入し、受付から動画配信までの業務を一元化。自社の業務フローに合わせてカスタマイズすることで、システム統合と業務効率化を実現した。",
+    "results": [
+      {
+        "metric": "業務効率向上",
+        "value": "20%削減"
+      },
+      {
+        "metric": "コスト削減",
+        "value": "年間20%削減"
+      },
+      {
+        "metric": "配信事故",
+        "value": "ゼロ"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "システム刷新後の初イベント参加者数",
+        "value": "50,000人"
+      }
+    ],
+    "resultsQualitative": "2つのシステムで行っていたイベント登録と設定が1回で済むようになり、人的業務負荷が大幅に軽減された。配信の安定性が確保され、システム刷新後のイベント開催で事故が一切発生しなかった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/6940b54aa655111fc2b7bdd8/large.png?utime=1765848394",
+    "tags": [
+      "システムの乱立",
+      "顧客情報の一元管理",
+      "動画配信コストの増加"
+    ]
+  },
+  {
     "id": "sonar-ats-jp-case-daiso",
     "title": "採用管理システムの内製化により、最短2週間の迅速な選考と学生満足度向上を実現",
     "summary": "株式会社大創産業は、新卒採用において外部委託していたsonar ATSの運用を約2ヶ月で内製化し、ダッシュボード活用による面接枠の最適化とLINE連携による迅速な学生対応で、最短2週間での内定を実現。学生の不安を先回りする「大創大百科」などの情報発信と組み合わせ、学生満足度の向上と採用活動の高速化を両立させた。",
@@ -12737,6 +13006,56 @@
       "サイト更新ができない",
       "リード獲得の停滞",
       "情報共有の遅れ"
+    ]
+  },
+  {
+    "id": "tks-gifu-jp-case-hotel-v-in17",
+    "title": "ホテルのシャワー節水で年間135万円以上の費用削減を実現",
+    "summary": "高台の温泉ホテルがシャワー流量制限装置「アリアミスト・意地でも節水」を導入。水道料金と昇温費用、加圧ポンプの電気使用量を削減し、予測を大きく上回る成果を達成。",
+    "vendor": "tks-gifu.jp",
+    "product": "アリアミスト・意地でも節水",
+    "productCategory": "other-product",
+    "sourceUrl": "https://tks-gifu.jp/case/hotel/v_in17/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "扇野の里 扇芳閣",
+      "industry": "other-industry",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "sustainability"
+    ],
+    "challengeDetail": "別の節水事業者からの提案は非常に高額で導入が困難。シャワーからの水使用量削減と、高台にある施設の加圧ポンプ・揚水ポンプの電力消費を改善する必要があった。",
+    "actions": "TKSのシャワー流量制限装置「アリアミスト・意地でも節水」を導入。快適性を保ちながら、設置とメンテナンスが簡単な製品を選定。",
+    "results": [
+      {
+        "metric": "年間費用削減額（予測値）",
+        "value": "135万円"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "年間利用者数",
+        "value": "約90,000人"
+      },
+      {
+        "metric": "高低差",
+        "value": "36メートル"
+      },
+      {
+        "metric": "大浴場の階数",
+        "value": "7階"
+      }
+    ],
+    "resultsQualitative": "実際の結果は予測を大きく上回った。加圧ポンプ・揚水ポンプの使用量削減が電気使用量削減に大きく寄与している。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://tks-gifu.jp/hp/contents/uploads/2023/10/sato_img01.jpg",
+    "tags": [
+      "電気代の増加",
+      "水道コスト削減の必要性"
     ]
   },
   {
@@ -17923,6 +18242,56 @@
     ]
   },
   {
+    "id": "www-jackery-jp-blogs-power-station-jirei-yachiyomirai",
+    "title": "ソーラーパネル・ポータブル電源で桜のエコライトアップを実現し、ライトアップ範囲を20本から45本に拡大",
+    "summary": "一般社団法人やちよ未来エネルギーは、毎年増加していたライトアップ費用削減と地球温暖化対策のため、Jackeryのソーラーパネルとポータブル電源を導入。クラウドファンディングで支援の輪を広げ、2023年の桜まつりではポータブル電源21台を活用してエコライトアップを実現した。",
+    "vendor": "jackery.jp",
+    "product": "Jackery ポータブル電源・Jackery SolarSaga（ソーラーパネル）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.jackery.jp/blogs/power-station/jirei_yachiyomirai",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "一般社団法人やちよ未来エネルギー",
+      "industry": "other-industry",
+      "size": "職員11名",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "sustainability"
+    ],
+    "challengeDetail": "毎年増加するライトアップ費用が実行委員会に経費の圧迫をもたらしていた。地球温暖化対策を行いたいという課題もあった。",
+    "actions": "Jackeryのソーラーパネルとポータブル電源を導入し、昼間に太陽光で発電した電力をポータブル電源に蓄電してライトアップを実施。クラウドファンディングで市民の支援を集め、複数台のポータブル電源を確保した。",
+    "results": [
+      {
+        "metric": "ライトアップ対象の桜の本数",
+        "value": "20本→45本"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "新川沿いに植栽された河津桜",
+        "value": "約1000本"
+      },
+      {
+        "metric": "やちよ未来エネルギー所有のポータブル電源",
+        "value": "9台"
+      },
+      {
+        "metric": "使用ポータブル電源台数（2023年）",
+        "value": "21台"
+      }
+    ],
+    "resultsQualitative": "ライトアップがすべて自然エネルギーで賄われるようになった。市民がクラウドファンディングを通じてエコ取り組みに参加する仕組みが構築され、支援の輪が広がった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.jackery.jp/cdn/shop/articles/unnamed_a757bb4f-8512-4b30-864e-7b0f2d17e0fd.jpg?v=1689128448",
+    "tags": [
+      "電気代の増加",
+      "環境負荷への対応"
+    ]
+  },
+  {
     "id": "www-jfe-eng-co-jp-dx-case-2-html",
     "title": "橋梁配筋検査の人員75%削減、AI自動検査システムで省力化と検査信頼性向上を実現",
     "summary": "橋梁工事の配筋検査で多くの人員・労力を要していた課題に対し、ドローン撮影とAI画像解析を組み合わせた自動検査システムを開発。最大75%の省力化を実現し、従来の抜き取り検査より検査の確実性・信頼性が向上。",
@@ -18047,6 +18416,42 @@
     ]
   },
   {
+    "id": "www-kdl-co-jp-case",
+    "title": "生成AI活用セミナーでAIチャット利用を25%増加",
+    "summary": "ミズノ株式会社は、社内での生成AI活用が定着していない課題を抱えていた。KDLが生成AI活用のセミナーを実施したところ、受講後のAIチャット利用数が約25%増加した。",
+    "vendor": "kdl.co.jp",
+    "product": "生成AI活用セミナー",
+    "productCategory": "consulting",
+    "sourceUrl": "https://www.kdl.co.jp/case/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "ミズノ株式会社",
+      "industry": "retail",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency"
+    ],
+    "challengeDetail": "社内における生成AI活用が定着していない状況にあった。",
+    "actions": "KDLが社内生成AI活用の定着化を目的としたセミナーを実施した。",
+    "results": [
+      {
+        "metric": "AIチャット利用数",
+        "value": "約25%増"
+      }
+    ],
+    "resultsQualitative": "",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.kdl.co.jp/wp-content/uploads/2023/09/fffa75c5d0c6571ab0ccc24db3c79d3c.jpg",
+    "tags": [
+      "新人教育のばらつき",
+      "研修の負担",
+      "技能伝承ができない"
+    ]
+  },
+  {
     "id": "www-keywalker-co-jp-tableau-case-study-case-study-02-html",
     "title": "Tableauダッシュボード導入により、データ分析者が約10倍に増加",
     "summary": "アパレル企業アダストリアは、Tableauの特性を活かしたダッシュボード作成が難しい課題を抱えていた。キーウォーカーとのアジャイル開発により見やすいダッシュボードを構築し、数値確認担当者が2～3名から約10倍に増加、データドリブンな組織へ転換。",
@@ -18094,6 +18499,43 @@
     "tags": [
       "数字の集計に時間",
       "データが分散",
+      "業務の属人化"
+    ]
+  },
+  {
+    "id": "www-know-net-co-jp-casestudy",
+    "title": "テスト自動化支援でテストケースの生産性を18分/件向上",
+    "summary": "株式会社日立ソリューションズ東日本は、appSQUARE DXに「テスト自動化支援サービス」を導入。独自のテスト設計技法を活用してテスト自動化を実現し、テストケース1件あたり平均18分の生産性向上を達成。",
+    "vendor": "know-net.co.jp",
+    "product": "テスト自動化支援サービス",
+    "productCategory": "consulting",
+    "sourceUrl": "https://www.know-net.co.jp/casestudy",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社日立ソリューションズ東日本",
+      "industry": "it",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "テスト業務の効率化と工数削減が課題であった。",
+    "actions": "appSQUARE DXに「テスト自動化支援サービス」を導入し、独自のテスト設計技法を活用してテストケースの自動化を実現。",
+    "results": [
+      {
+        "metric": "テストケース1件あたりの生産性向上",
+        "value": "平均18分"
+      }
+    ],
+    "resultsQualitative": "",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/62907cfdf005f14f4e78f0b1/large.png?utime=1653636349",
+    "tags": [
+      "手作業の転記",
+      "数字の集計に時間",
       "業務の属人化"
     ]
   },
@@ -18967,7 +19409,8 @@
       "検査の目視頼み",
       "不良の見逃し",
       "ミスの再発"
-    ]
+    ],
+    "image": "https://www.nr1.co.jp/assets/images/commons/og.jpg"
   },
   {
     "id": "www-ntt-tx-co-jp-case-denso2021",
@@ -19014,7 +19457,8 @@
       "進捗が見えない",
       "データが分散",
       "情報共有の遅れ"
-    ]
+    ],
+    "image": "https://www.ntt-tx.co.jp/case/denso2021/img/Headquaters_5-1-614x409.jpg"
   },
   {
     "id": "www-ntt-tx-co-jp-case-dx2-kaihatsu-202306",
@@ -19120,6 +19564,53 @@
       "業務の属人化",
       "担当者不在で止まる",
       "情報提供の質低下"
+    ]
+  },
+  {
+    "id": "www-orangesoft-co-jp-case-case-ace",
+    "title": "メール添付ファイルの自動暗号化で、情報漏えい防止と作業効率を両立",
+    "summary": "外資系損保会社エース損害保険は、個人情報保護とセキュリティ管理強化のため、メール添付ファイルの自動暗号化ソリューション「safeAttach」を導入。手作業による暗号化作業を廃止し、ワンクリックで安全な送信が可能になり、導入後は大きなトラブルなく期待通りの効果を達成している。",
+    "vendor": "orangesoft.co.jp",
+    "product": "safeAttach",
+    "productCategory": "security",
+    "sourceUrl": "https://www.orangesoft.co.jp/case/case_ace/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "エース損害保険株式会社",
+      "industry": "finance",
+      "size": "従業員約1000名以上（メールサーバー利用者約1000名）",
+      "dept": "情報システム本部 システム運用部"
+    },
+    "challenges": [
+      "security",
+      "efficiency"
+    ],
+    "challengeDetail": "個人情報保護やセキュリティ管理の観点から、メール添付ファイルの情報漏えい防止を強化する必要があった。従来は手作業による暗号化が必要で、作業負担が大きかった。",
+    "actions": "メールサーバー側で添付ファイルを自動的にzip暗号化し、ワンタイムパスワード（ランダムパスワード）を受信者に別途通知する仕組みを導入。テスト用メールサーバーで半年程度の試運用を経て、2009年9月から本格導入した。",
+    "results": [
+      {
+        "metric": "作業時間の削減",
+        "value": "従来の7ステップ（ツール起動→ファイル選択→パスワード指定→保存先指定→ツール終"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対象ユーザー数",
+        "value": "約1000名（社員・契約社員）"
+      },
+      {
+        "metric": "テスト運用期間",
+        "value": "半年程度"
+      }
+    ],
+    "resultsQualitative": "導入後、大きなトラブルなく期待通りの効果を達成。社内で暗号化が習慣化し、個人レベルでの危機管理意識が向上。取引先からも高く評価され、海外本社のグローバルセキュリティ担当者からも問い合わせを受けるなど、グローバル水準の製品として認識されている。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.orangesoft.co.jp/wp-content/uploads/2022/08/case_ace.jpg",
+    "tags": [
+      "情報漏洩リスク",
+      "手作業の転記",
+      "アカウント管理の煩雑さ"
     ]
   },
   {
@@ -20987,6 +21478,53 @@
       "紙図面の保管",
       "システムの乱立",
       "ライセンス費用の重複"
+    ]
+  },
+  {
+    "id": "www-sdki-jp-case-study-synthetic-leather-brand-1",
+    "title": "靴ブランドが合成皮革市場参入で売上6%増加、市場調査支援で5ヶ月で転換実現",
+    "summary": "天然皮革から合成皮革への転換を検討していた靴ブランドが、市場調査とブランド再構築支援を受けて5ヶ月で市場参入。売上6%増加とブランド認知度向上を実現した。",
+    "vendor": "sdki.jp",
+    "product": "SDKI（市場調査・コンサルティング）",
+    "productCategory": "consulting",
+    "sourceUrl": "https://www.sdki.jp/case-study/synthetic-leather-brand/1",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "retail",
+      "size": "日本で人気のブランド",
+      "dept": ""
+    },
+    "challenges": [
+      "sales",
+      "standardize"
+    ],
+    "challengeDetail": "ビジネスモデルの大きな転換に対応する組織構造と市場戦略が不足していた。合成皮革市場での競争環境が激しく、参入時の収益性確保が課題だった。",
+    "actions": "SDKIが市場調査と競合分析、市場予測レポート提供、ブランド再構築支援を実施。定量・定性的な市場調査に基づいた戦略立案と新製品の収益化支援を行った。",
+    "results": [
+      {
+        "metric": "売上増加",
+        "value": "6%"
+      },
+      {
+        "metric": "動物虐待の減少",
+        "value": "20～25%"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "市場参入までの期間",
+        "value": "5ヶ月未満"
+      }
+    ],
+    "resultsQualitative": "ブランドイメージの再構築と合成皮革市場での認知度獲得。5ヶ年の世界的売上拡大計画の策定。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://d1g90b9hygf760.cloudfront.net/s3-uploads/reports/1704282188_5912.%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%20%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%82%BF%E3%83%B3%E3%83%88.webp",
+    "tags": [
+      "進捗が見えない",
+      "データが分散",
+      "リアルタイムに把握できない"
     ]
   },
   {
@@ -24291,6 +24829,127 @@
       "システムの乱立",
       "情報漏洩リスク",
       "監査対応の負担"
+    ]
+  },
+  {
+    "id": "cloudsign-for-salesforce-jp-casestudy-industry-type-it-relat",
+    "title": "freee株式会社がCloudSign for Salesforceで契約締結時間を1.5日に短縮",
+    "summary": "freee株式会社はSalesforceとの連携を重視し、CloudSign for Salesforceを導入。契約書の電子署名プロセスを自動化することで、従来の契約締結時間を平均1.5日まで短縮し、業務フローの次のアクションをより迅速に進められるようになった。",
+    "vendor": "cloudsign-for-salesforce.jp",
+    "product": "CloudSign for Salesforce",
+    "productCategory": "saas",
+    "sourceUrl": "https://cloudsign-for-salesforce.jp/casestudy/industry_type/IT_related",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "freee株式会社",
+      "industry": "it",
+      "size": "従業員500名以上",
+      "dept": "営業部門"
+    },
+    "challenges": [
+      "efficiency",
+      "leadtime"
+    ],
+    "challengeDetail": "Salesforceと連携した契約業務において、紙ベースの契約署名プロセスが業務の遅延を招いていた。契約締結までの時間を短縮することが課題であった。",
+    "actions": "CloudSign for Salesforceを導入し、電子署名機能とSalesforceの統合により、契約書作成から署名までのプロセスを自動化・効率化した。",
+    "results": [
+      {
+        "metric": "契約締結時間",
+        "value": "平均1.5日まで短縮"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "500名以上"
+      }
+    ],
+    "resultsQualitative": "業務フローの次のアクションを確実に進められるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "紙の書類処理",
+      "押印・承認の遅れ",
+      "見積もり作成に時間",
+      "請求処理に時間"
+    ]
+  },
+  {
+    "id": "cloudsign-for-salesforce-jp-casestudy-number-of-employees-10",
+    "title": "Salesforce連携で契約締結までペーパーレス化、処理時間を1.5日に短縮",
+    "summary": "ファシリティ管理企業がCloudSign for Salesforceとmitocoを導入し、社内稟議から顧客との契約締結までの全プロセスをペーパーレス化。契約書処理時間を平均1.5日まで短縮した。",
+    "vendor": "cloudsign-for-salesforce.jp",
+    "product": "CloudSign for Salesforce",
+    "productCategory": "saas",
+    "sourceUrl": "https://cloudsign-for-salesforce.jp/casestudy/number_of_employees/100to500",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "other-industry",
+      "size": "従業員100~500名",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "社内稟議から顧客との契約締結までのプロセスに1週間以上を要していた。契約処理の効率化と標準化が課題だった。",
+    "actions": "CloudSign for SalesforceとmitocoをSalesforceに連携させ、社内稟議から顧客との契約締結までをペーパーレス化、一連のプロセスを自動化した。",
+    "results": [
+      {
+        "metric": "契約締結までの処理時間",
+        "value": "1週間以上→1.5日に短縮"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "100~500名"
+      }
+    ],
+    "resultsQualitative": "Salesforceとの親和性により、ユーザーの利便性と業務生産性の両立を実現。ペーパーレス化により契約業務の電子化を推進。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "紙の書類処理",
+      "押印・承認の遅れ",
+      "業務の属人化"
+    ]
+  },
+  {
+    "id": "cloudsign-for-salesforce-jp-casestudy-posts-freee",
+    "title": "CloudSign for Salesforceで契約書処理を自動化、制作から送付までの時間を1～2日短縮",
+    "summary": "freeeは複数の電子契約サービスを使い分けていたため、契約書作成から送付までの管理が煩雑で時間がかかっていた。CloudSign for Salesforceを導入することで、Salesforce上で一元管理でき、契約ステータスをリアルタイム確認できるようになった。結果として制作から送付までの時間が1～2日短縮され、業務効率が向上した。",
+    "vendor": "cloudsign-for-salesforce.jp",
+    "product": "CloudSign for Salesforce",
+    "productCategory": "saas",
+    "sourceUrl": "https://cloudsign-for-salesforce.jp/casestudy/posts/freee",
+    "collectedAt": "2026-09-24T00:00:00.000Z",
+    "customer": {
+      "name": "freee株式会社",
+      "industry": "it",
+      "size": "従業員500名以上",
+      "dept": "ビジネス推進本部"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "複数の電子契約サービスを使用していたため、契約書作成から送付までのプロセスが複雑で、管理も難しかった。Salesforceとの連携が困難であり、契約書作成から送付までに時間がかかっていた。",
+    "actions": "CloudSign for Salesforceを導入し、Salesforce上で契約書の作成・確認・送付を一元管理できるようにした。リアルタイムで契約ステータスを確認できる環境を実現した。",
+    "results": [
+      {
+        "metric": "契約書制作から送付までの時間短縮",
+        "value": "1～2日短縮"
+      }
+    ],
+    "resultsQualitative": "Salesforce上でリアルタイムに契約ステータスが確認できるようになり、次のアクションへのスムーズな移行が実現した。契約書管理が効率化され、業務フローが明確になった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "システムの乱立",
+      "請求処理に時間",
+      "進捗が見えない"
     ]
   },
   {
@@ -33501,6 +34160,47 @@
     ]
   },
   {
+    "id": "revenue-increase-jp-voice",
+    "title": "介護事業のコンサル導入で稼働率15%向上",
+    "summary": "介護事業所が稼働率向上に課題を抱えていた。コンサルティング支援を導入し、2ヶ月で稼働率を51.7%から66.7%に改善した。",
+    "vendor": "revenue-increase.jp",
+    "product": "介護事業専門の稼働率向上コンサルティング",
+    "productCategory": "consulting",
+    "sourceUrl": "https://revenue-increase.jp/voice",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "デイサービスセンターアクト",
+      "industry": "medical",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency"
+    ],
+    "challengeDetail": "稼働率をどう上げればよいかについて課題を抱えていた。",
+    "actions": "介護事業専門のコンサルタントによるコンサルティング支援を導入した。",
+    "results": [
+      {
+        "metric": "稼働率",
+        "value": "15%向上（51.7%→66.7%）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "実現期間",
+        "value": "2ヶ月"
+      }
+    ],
+    "resultsQualitative": "安定的な稼働率を維持できるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "進捗が見えない",
+      "数字の集計に時間",
+      "業務の属人化"
+    ]
+  },
+  {
     "id": "satori-marketing-case-neosystem-202204",
     "title": "案件管理の属人化を解消。MAツール導入で問い合わせ3倍化、数千万円規模案件を獲得",
     "summary": "システム開発会社が案件管理の属人化と新規顧客獲得の課題に直面していた。MAツール「SATORI」を導入してホームページにポップアップやフォームを設置し、顧客情報の見える化を実現。問い合わせ件数が3倍に増加し、クロスセルによって数千万円規模の案件受注につながった。",
@@ -34687,6 +35387,56 @@
       "経費精算の手間",
       "データが分散",
       "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "web-liveon-ne-jp-case-miyakonojo",
+    "title": "遠隔窓口で行政サービスを14ヶ所に拡大、90種の手続きを支所で実現",
+    "summary": "広大な市域で市役所本庁舎へのアクセスが課題だった都城市が、LiveOn Callを導入してリモート窓口を14ヶ所の支所に開設。本来本庁舎でのみ対応していた90種の相談・手続きが支所で可能になり、市民の移動負担を軽減した。",
+    "vendor": "liveon.ne.jp",
+    "product": "LiveOn Call",
+    "productCategory": "saas",
+    "sourceUrl": "https://web.liveon.ne.jp/case/miyakonojo/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "宮崎県都城市",
+      "industry": "public",
+      "size": "職員1,407名",
+      "dept": "総合政策課"
+    },
+    "challenges": [
+      "efficiency",
+      "leadtime"
+    ],
+    "challengeDetail": "面積653.4㎢と広大な市域から市役所本庁舎への移動に片道1時間近くかかる地域があり、市民の移動負担が大きかった。また支所でできる手続きが限定されていた。",
+    "actions": "2023年10月にLiveOn Callを導入し、総合支所や地区市民センターなど14ヶ所にリモート窓口を開設。本庁舎でのみ対応していた15課90種の相談・手続きを支所で対応可能にした。",
+    "results": [
+      {
+        "metric": "利用者満足度",
+        "value": "9割以上"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "リモート窓口設置拠点数",
+        "value": "14ヶ所"
+      },
+      {
+        "metric": "対応可能になった手続き数",
+        "value": "90種"
+      },
+      {
+        "metric": "対応部課数",
+        "value": "15課"
+      }
+    ],
+    "resultsQualitative": "音声・映像乱れなくスムーズに利用できており、利用者からは「操作が簡単で分かりやすい」「遠い市役所まで行かなくてよいので助かった」といった肯定的な声が得られている。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "移動時間の多さ",
+      "現場と本社の往復",
+      "書類の振り分け"
     ]
   },
   {
@@ -37954,6 +38704,52 @@
     ]
   },
   {
+    "id": "www-d-berry-jp-sample-voice-miyaco-brake",
+    "title": "紙のカタログからWebookへ移行、印刷コストを5分の1に削減",
+    "summary": "ブレーキ製品メーカーが、Excelで管理していた製品情報を毎回PDF化して印刷・配布していた業務を、HTML5 Webookのデジタルカタログに切り替え。印刷コストを大幅削減するとともに、検索機能やリンク設定などの機能で営業効率を向上させた。",
+    "vendor": "d-berry.jp",
+    "product": "Webook",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.d-berry.jp/sample/voice/miyaco-brake/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "マイコオートマティクス株式会社",
+      "industry": "manufacturing",
+      "size": "創業70年超",
+      "dept": "営業・カタログ制作"
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "製品情報をExcelで管理し、毎回PDF化して印刷・配布する手作業が時間がかかっていた。また、紙カタログの印刷コストが1種類につき約200万円程度かかっていた。",
+    "actions": "HTML5 Webookのデジタルカタログを導入。従来の紙カタログの代わりにデジタルカタログを利用し、全文検索やリンク設定、インデックス機能などのオプション機能を活用。",
+    "results": [
+      {
+        "metric": "印刷コスト削減率",
+        "value": "5分の1に削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "カタログ種類数",
+        "value": "6種類"
+      },
+      {
+        "metric": "ページ数",
+        "value": "26～286ページ"
+      }
+    ],
+    "resultsQualitative": "デジタル化により、従来の印刷コストが大幅に削減されるとともに、全文検索機能やリンク設定などでデジタルカタログ内での製品検索が容易になり、営業効率が向上した。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "Excel管理の限界",
+      "手作業の転記",
+      "ペーパーレス化"
+    ]
+  },
+  {
     "id": "www-daikyo-unso-jp-case-study",
     "title": "ミシュランタイヤのリグルーブ導入でタイヤ交換シーズン前の追加購入を廃止",
     "summary": "運送会社がタイヤの寿命が短く、シーズン前に追加購入せざるを得ない課題を抱えていた。ミシュランタイヤのリグルーブ（再溝造技術）を導入し、すり減ったタイヤの溝を掘り足すことで延命を実現。購入費用の抑制と運用サイクルの簡素化を達成した。",
@@ -37987,6 +38783,55 @@
       "在庫の把握不足",
       "発注の手作業",
       "運用サイクルの複雑化"
+    ]
+  },
+  {
+    "id": "www-dgft-jp-cashpost-case-selectsquare-html",
+    "title": "返金業務の工数を1/2に圧縮、返金完了を2週間から2営業日以内に短縮",
+    "summary": "アパレルEC企業が返品に伴う返金処理の複雑な業務プロセスを抱えていた。送金サービス「CASH POST」を導入することで、複数部署の承認フローを簡潔化し、業務工数を半減、返金完了までの日数を大幅短縮、手数料も3割削減を実現した。",
+    "vendor": "dgft.jp",
+    "product": "CASH POST",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.dgft.jp/cashpost/case/selectsquare.html",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社セレクトスクエア",
+      "industry": "retail",
+      "size": "",
+      "dept": "カスタマーチーム"
+    },
+    "challenges": [
+      "efficiency",
+      "cost",
+      "labor"
+    ],
+    "challengeDetail": "返品に伴う返金処理が複雑な業務プロセスで、銀行振込による返金は部署をまたいだ三重の承認が必要。返品件数の増加に伴い、返金完了までに1～2週間要し、手数料も高額だった。",
+    "actions": "送金サービス「CASH POST」を導入し、メールアドレスと金額のみで返金処理を実行できるようにした。デポジット型を採用することで事前承認の仕組みに変更し、カスタマーチームのみでの対応を可能にした。",
+    "results": [
+      {
+        "metric": "業務工数",
+        "value": "1/2に圧縮"
+      },
+      {
+        "metric": "返金完了までの日数",
+        "value": "最大2週間→2営業日以内"
+      },
+      {
+        "metric": "返金手数料",
+        "value": "3割削減"
+      },
+      {
+        "metric": "返品件数増加率",
+        "value": "1.6倍"
+      }
+    ],
+    "resultsQualitative": "複数部署の承認フロー廃止によりメンバーの業務が平準化し、社内の業務負荷が大きく軽減された。オペレーター全員が返金処理を実行可能になり、銀行管理画面への直接アクセスというリスクも排除できた。顧客への返金スピード向上によりリピート率の向上にも期待。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "押印・承認の遅れ",
+      "業務の属人化",
+      "手作業の転記"
     ]
   },
   {
@@ -43178,6 +44023,47 @@
       "押印・承認の遅れ",
       "システムの乱立",
       "申請ミスの頻発"
+    ]
+  },
+  {
+    "id": "www-itszai-jp-voices-achievement",
+    "title": "採用サイト制作で89名の応募から13名を採用成功",
+    "summary": "引っ越し作業スタッフの採用が課題だった企業に対し、イツザイが採用サイトを制作・運用。高品質なサイトと丁寧な運用により、89名の応募から13名の採用を実現。",
+    "vendor": "itszai.jp",
+    "product": "イツザイ",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.itszai.jp/voices/achievement/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "other-industry",
+      "size": "従業員1名〜10名未満",
+      "dept": ""
+    },
+    "challenges": [
+      "hr"
+    ],
+    "challengeDetail": "引っ越し作業スタッフの採用ニーズがあった。",
+    "actions": "イツザイの採用サイト制作・運用サービスを導入。質の高い採用サイトを作成し、公開後の運用を実施。",
+    "results": [
+      {
+        "metric": "採用数",
+        "value": "13名"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "応募数",
+        "value": "89名"
+      }
+    ],
+    "resultsQualitative": "",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "応募が集まらない",
+      "サイト更新ができない",
+      "採用しても定着しない"
     ]
   },
   {
@@ -49206,6 +50092,46 @@
     ]
   },
   {
+    "id": "www-nihon-e-co-jp-service-business-casestudy01-html",
+    "title": "Certinoロギングツール導入で作業工数を大幅削減、教育効率も向上",
+    "summary": "日立製作所グループの物流企業が、携帯端末でのロギング作業の工数削減と作業者教育を課題としていた。Certinoというロギングツールを導入することで、複数人でのチェック作業から自動化による1人対応に変更し、工数を大きく削減した。",
+    "vendor": "nihon-e.co.jp",
+    "product": "Certino",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.nihon-e.co.jp/service/business/casestudy01.html",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社日立物流",
+      "industry": "logistics",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "携帯端末を用いたロギング作業において、作業者によるスキルの差があり、全員への教育が必要だった。従来は5人体制で対応していたが、人員配置が非効率だった。",
+    "actions": "Certinoというロギングツールを導入し、自動化によりロギング作業を効率化した。導入後1ヶ月間はベンダーのエンジニアがオンサイトでサポートを行い、スムーズな運用を実現した。",
+    "results": [
+      {
+        "metric": "作業工数削減",
+        "value": "5人体制から1人対応に削減"
+      },
+      {
+        "metric": "教育効率",
+        "value": "従来は全員教育が必要だったが、操作者1名のみの教育で対応可能に"
+      }
+    ],
+    "resultsQualitative": "操作が簡単になり、スタッフ全員への教育が不要になった。ロギング作業に専門的スキルが不要となった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "手作業の転記",
+      "技能伝承ができない",
+      "新人教育のばらつき"
+    ]
+  },
+  {
     "id": "www-noc-net-co-jp-case-1072",
     "title": "勤怠・給与システム一元化で人事部の工数を75%削減",
     "summary": "アメアスポーツジャパンは、勤怠システムと給与計算システムが連携していない非効率な業務と、急速な人員増加への対応に課題を抱えていました。芙蓉アウトソーシング&コンサルティングの給与・人事アウトソーシングサービスを導入し、勤怠から給与計算まで一貫したシステムを実現。結果として3名で行っていた業務を1名で対応できるまでに工数を削減し、人事部が制度作りなどのコア業務に注力できる体制を構築しました。",
@@ -51568,6 +52494,43 @@
       "勤怠管理の手間",
       "業務の属人化",
       "月末の残業"
+    ]
+  },
+  {
+    "id": "www-otsukakj-jp-med-saas-pock-nu-casestudy-001-index-html",
+    "title": "多職種連携と栄養支援ツールで褥瘡を5ヶ月で治癒",
+    "summary": "在宅療養者の褥瘡ケアにおいて、訪問看護師と管理栄養士が栄養支援ツール「ぽけにゅー」を活用し、多職種で食・栄養データを共有することで、脱水による褥瘡の悪化から約5ヶ月で治癒に至った。",
+    "vendor": "otsukakj.jp",
+    "product": "ぽけにゅー",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.otsukakj.jp/med_saas/pock_nu/casestudy/001/index.html",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "医療法人アスムス（わくわく訪問看護ステーションおやま、認定栄養ケア・ステーションぱくぱく）",
+      "industry": "medical",
+      "size": "",
+      "dept": "訪問看護、栄養ケア"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "data"
+    ],
+    "challengeDetail": "訪問看護と栄養ケアの多職種間で食・栄養情報が共有できず、具体的な食支援方法や栄養データの経時的追跡ができていなかった。看護師と栄養士の視点の違いが統合されておらず、褥瘡ケアの効果が出にくい状況があった。",
+    "actions": "栄養支援ツール「ぽけにゅー」を導入し、訪問看護ステーションと認定栄養ケア・ステーション間で食事摂取、栄養スクリーニング、アセスメント、食に関する利用者の価値観を共有。多職種が同じプラットフォーム上で栄養情報を記録・確認し、連携を強化した。",
+    "results": [
+      {
+        "metric": "褥瘡治癒期間",
+        "value": "約5ヶ月"
+      }
+    ],
+    "resultsQualitative": "多職種が共通認識を持って看護実践を実施できるようになった。栄養データが見える化されることで、食支援に対する意識づけや教育効果が高まった。患者の生活全体が明確に見えるようになり、看護計画への反映が進んだ。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "社外との情報共有",
+      "対応履歴が残らない",
+      "リアルタイムに把握できない"
     ]
   },
   {
@@ -55402,6 +56365,42 @@
     ]
   },
   {
+    "id": "www-seikotrust-jp-case",
+    "title": "人事制度統合による契約業務時間を95%削減",
+    "summary": "人事制度統合に伴う専門職や定年退職後の社員との契約対応が急増。かんたん雇用契約forクラウドを導入し、対応時間を大幅に削減した。",
+    "vendor": "seikotrust.jp",
+    "product": "かんたん雇用契約forクラウド",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://www.seikotrust.jp/case/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "三菱UFJモルガン・スタンレー証券株式会社",
+      "industry": "finance",
+      "size": "",
+      "dept": "人事部門"
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "人事制度の統合に伴い、専門職との契約対応と定年退職後の専任社員との契約業務が急増していた。",
+    "actions": "かんたん雇用契約forクラウドを活用し、契約対応プロセスを効率化した。",
+    "results": [
+      {
+        "metric": "対応時間削減",
+        "value": "95%削減"
+      }
+    ],
+    "resultsQualitative": "",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "紙の書類処理",
+      "手作業の転記",
+      "経費精算の手間"
+    ]
+  },
+  {
     "id": "www-sg-systems-co-jp-casestudy-beso",
     "title": "紙証憑の電子化で人件費30%削減、対応クライアント数1.4倍に拡大",
     "summary": "AI会計自動化ソリューション提供企業のBesoは、紙の領収書・納品書管理による膨大な工数と業務標準化の遅れに課題を抱えていました。SGシステムのバックオフィスサポートサービスを導入し、証憑の集荷からスキャン、電子化までを一貫委託することで、人件費削減と処理効率の大幅向上を実現しました。",
@@ -56260,6 +57259,46 @@
       "紙の書類処理",
       "紙図面の保管",
       "書類の振り分け"
+    ]
+  },
+  {
+    "id": "www-st-creative-co-jp-works-voice",
+    "title": "ホームページ制作とSEO・広告対策でユーザー数月5000組、問い合わせ10倍以上を実現",
+    "summary": "工務店が新規顧客との接点を増やすため、ホームページ制作とPPC広告・SEO対策に取り組んだ。リニューアルと継続的な更新を通じて、月当たりのユーザー数が約5000組に達し、問い合わせ数が10倍以上に増加した。",
+    "vendor": "st-creative.co.jp",
+    "product": "ホームページ制作・SEO・PPC広告管理サービス",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.st-creative.co.jp/works/voice",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社 モリシタ・アット・ホーム、株式会社 モリシタ・アット・リフォーム",
+      "industry": "construction",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "sales",
+      "efficiency"
+    ],
+    "challengeDetail": "新規顧客の見込み客を増やしたい。ウェブからの受注は難しい業界環境下で、集客を強化する必要があった。",
+    "actions": "ホームページ制作・リニューアル、PPC広告出稿・管理、SEO対策、継続的なサイト更新・ブログ発信を実施。データ解析に基づいた改定作業を行った。",
+    "results": [
+      {
+        "metric": "月当たりユーザー数",
+        "value": "5000組"
+      },
+      {
+        "metric": "問い合わせ数増加",
+        "value": "10倍以上"
+      }
+    ],
+    "resultsQualitative": "過去最高の業績を達成。資料請求や問い合わせが毎日コンスタントに発生するようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "リード獲得の停滞",
+      "サイト更新ができない",
+      "商談化しない"
     ]
   },
   {
@@ -58343,6 +59382,48 @@
     ]
   },
   {
+    "id": "adop-co-jp-casestudy-44",
+    "title": "LINEを活用した受発注システムで卸売業の業務効率化と売上アップを実現",
+    "summary": "卸売業がFAXや電話による受発注業務の非効率に課題を抱えていた。L-Pochiを導入しLINEで受注を集約、電話やFAX対応をなくした。受発注業務の効率が向上し、販促活動に時間を確保でき、売上アップにつながった。",
+    "vendor": "adop.co.jp",
+    "product": "L-Pochi",
+    "productCategory": "saas",
+    "sourceUrl": "https://adop.co.jp/casestudy/44/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "retail",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "labor",
+      "sales"
+    ],
+    "challengeDetail": "受発注業務がFAXや電話でのやり取りがメインで業務効率が低下。販売促進のための時間を確保することが難しい状況にあった。",
+    "actions": "L-Pochiを導入し、顧客からの受注をLINEで集約。電話やFAXでの受注対応や入力業務をなくすとともに、LINEを活用した販促活動を行った。",
+    "results": [
+      {
+        "metric": "発注ミス・入力ミス",
+        "value": "減少"
+      },
+      {
+        "metric": "売上",
+        "value": "アップ"
+      }
+    ],
+    "resultsQualitative": "受発注業務の効率が大幅に向上し、販促活動に充てる時間も確保できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://adop.co.jp/wp/wp-content/uploads/2023/12/adop-ogp.jpg",
+    "tags": [
+      "電話・FAX中心",
+      "手作業の転記",
+      "発注の手作業"
+    ]
+  },
+  {
     "id": "afrel-robotics-jp-media-case-post-7637",
     "title": "小型6軸力覚センサーのデモ訴求力を小型ロボットアームで向上、展示会で多数の引き合い獲得",
     "summary": "ミネベアミツミが開発した小型6軸力覚センサーの展示会デモで、従来の静止展示では訴求力が弱かったため、小型ロボットアームにセンサーを搭載し、重量仕分けを実演。製品の利用シーンを明確に伝え、多数の引き合いを獲得した。",
@@ -59408,6 +60489,56 @@
       "情報が分散",
       "進捗が見えない",
       "業務の属人化"
+    ]
+  },
+  {
+    "id": "biz-supporterz-jp-case-relic",
+    "title": "新卒エンジニア採用で組織活性化、知識循環と主体性重視の採用戦略",
+    "summary": "Relicは新卒エンジニア採用に力を入れることで、組織内の知識循環が促進され、怖いもの知らずの新卒が先輩を巻き込む好循環が生まれた。主体性を見極める採用面接と充実したフォローアップ研修で、2023年卒は12名を採用。",
+    "vendor": "supporterz.jp",
+    "product": "サポーターズ（新卒エンジニア採用支援サービス、MATCH DAY）",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://biz.supporterz.jp/case/relic",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社Relic",
+      "industry": "it",
+      "size": "従業員300名",
+      "dept": "採用・人事"
+    },
+    "challenges": [
+      "hr",
+      "labor"
+    ],
+    "challengeDetail": "新卒エンジニア採用の有効性に懐疑的であり、教育コストや中途採用との比較から採用体制を模索していた。優秀な新卒エンジニアの採用をきっかけに、本格的な新卒採用体制の構築が必要になった。",
+    "actions": "新卒エンジニアの採用を本格化させ、スキルアップ委員会による半年のフォローアップ研修と毎週金曜の勉強会で育成体制を整備。サポーターズのMATCH DAYイベントで志向性・主体性・技術レベルを兼ね備えた学生との接点を増やした。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "正社員数（採用対象）",
+        "value": "300名"
+      },
+      {
+        "metric": "エンジニア・デザイナー・PM",
+        "value": "60名"
+      },
+      {
+        "metric": "新卒エンジニア採用数（2021卒）",
+        "value": "4名"
+      },
+      {
+        "metric": "新卒エンジニア採用数（2022卒）",
+        "value": "6名"
+      }
+    ],
+    "resultsQualitative": "新卒エンジニアが質問・知識をシェアすることで組織全体の知識循環が促進され、組織の活性化と血流改善が実現。新卒の主体的なチャレンジが先輩を刺激し、組織全体にポジティブな雰囲気が広がった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/665eab5fe00a3700da743102/large.jpeg?utime=1724141023",
+    "tags": [
+      "採用しても定着しない",
+      "新人教育のばらつき",
+      "技能伝承ができない"
     ]
   },
   {
@@ -61646,6 +62777,44 @@
     ]
   },
   {
+    "id": "cyclo-shi-co-jp-keigan-amr-keigan-ali-case-horizon",
+    "title": "製本機メーカーがKeiganALIとカスタムリフターで工程間搬送を自動化、低コスト実現",
+    "summary": "製本機メーカーの株式会社ホリゾンは、部品加工工場の工程間搬送自動化が課題だった。KeiganALIにカスタム開発したリフターを取り付け、GPIO連携でシステムを構築。既存設備を変更せず、小ロット高頻度搬送の自動化と工程間のリードタイム短縮を実現した。",
+    "vendor": "shi.co.jp",
+    "product": "KeiganALI（自律移動ロボット）",
+    "productCategory": "robot",
+    "sourceUrl": "https://cyclo.shi.co.jp/keigan-amr/keigan-ali/case/horizon/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社ホリゾン",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "製造工場"
+    },
+    "challenges": [
+      "efficiency",
+      "leadtime",
+      "cost"
+    ],
+    "challengeDetail": "部品加工工場の工程間搬送が手作業であり、小ロットかつ高頻度の搬送が課題だった。既存のAMR・AGVはシステムが非公開で、カスタマイズ自由度が低かった。",
+    "actions": "KeiganALIにカスタム開発したリフターを上部アタッチメントとして取り付け、GPIO連携でリフターの昇降指示を送信するシステムを自社開発。中間加工エリアから仕上げ加工機械までの部品運搬を自動化した。",
+    "results": [
+      {
+        "metric": "工程間搬送の自動化達成により",
+        "value": "リードタイム短縮"
+      }
+    ],
+    "resultsQualitative": "既存設備に手を加えることなく、低コストでの自動化を実現。小ロット・高頻度搬送の自動化により、作業効率が向上し、今後はAPIを活用した高機能な自動化への展開を検討中。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://cyclo.shi.co.jp/keigan-amr/keigan-ali/assets/images/ogimage.jpg",
+    "tags": [
+      "手作業の転記",
+      "工程管理の難しさ",
+      "移動時間の多さ"
+    ]
+  },
+  {
     "id": "delfinocare-co-jp-archives-cases-33",
     "title": "コンサートホールにおける施設全体の感染症対策強化",
     "summary": "ミューザ川崎シンフォニーホールは、密閉空間での感染リスク低減を目的に、抗菌・抗ウイルス製品「delfino施設まるごと抗菌」を導入。トイレ、エレベーター、各室内を抗菌コーティングし、来場者に安心して音楽を楽しめる環境を実現した。",
@@ -62366,6 +63535,52 @@
       "データが分散",
       "多拠点の管理",
       "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "enfactory-co-jp-ekkyo-gakushu-case-6550",
+    "title": "金融企業が複業留学で若手社員のキャリア自律と組織エンゲージメントを実現",
+    "summary": "金融環境の変化に対応できる自発的な人材育成を課題とするSMBCコンシューマーファイナンスが、複業留学プログラムを導入。若手社員が他社でのマーケティング経験を通じ、キャリア形成のきっかけを得て、社内異動に手を挙げるなど主体的な行動につながった。",
+    "vendor": "enfactory.co.jp",
+    "product": "複業留学",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://enfactory.co.jp/ekkyo-gakushu/case/6550/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "SMBCコンシューマーファイナンス株式会社",
+      "industry": "finance",
+      "size": "従業員2,217名",
+      "dept": "人事"
+    },
+    "challenges": [
+      "hr",
+      "standardize"
+    ],
+    "challengeDetail": "金融サービスを取り巻く環境が大きく変化する中で、講義中心の研修では不十分であり、自ら殻を破って成長し、自発的に課題を抽出・提案できる人材育成が課題だった。",
+    "actions": "他社での就業経験を通じた越境学習プログラム「複業留学」を導入。若手社員を公募で選定し、外部企業でのマーケティング業務経験と第三者評価を実施。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象者",
+        "value": "若手社員（若干名）"
+      },
+      {
+        "metric": "実施期間",
+        "value": "2021年〜"
+      },
+      {
+        "metric": "参加者の所属部署規模",
+        "value": "300名規模"
+      }
+    ],
+    "resultsQualitative": "留学生が本人のキャリアを考える機会を得て、社内の公募型異動に手を挙げるなど主体的行動につながった。所属長含め周囲が関心を持ち、組織全体で留学生を支援する風土が形成された。また、受入企業からの第三者評価により、当社の強み（コミュニケーション力・業務遂行力）の認識と改善課題（自発的な課題抽出・提案力）の発見が得られた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ekkyo-gakushu-wp-prod-s3.s3.ap-northeast-1.amazonaws.com/ekkyo-gakushu/wp-content/uploads/2025/02/10161611/0a3bb664a3875267790b928c08484698.png",
+    "tags": [
+      "新人教育のばらつき",
+      "研修の負担",
+      "採用しても定着しない"
     ]
   },
   {
@@ -63391,6 +64606,44 @@
     ]
   },
   {
+    "id": "g-gen-co-jp-case-studies-006",
+    "title": "Google CloudのBigQuery・Data Studioで製造業データを可視化・リアルタイム共有",
+    "summary": "MM総研は、新規プロジェクトでクライアント企業との間でデータをリアルタイムに共有・可視化する必要が生じた。Google CloudのBigQueryとData Studio（Looker Studio）を導入することで、顧客ニーズに応えるとともに、チーム内のデータ意識改革も実現した。",
+    "vendor": "g-gen.co.jp",
+    "product": "Google Cloud（BigQuery・Data Studio/Looker Studio）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://g-gen.co.jp/case-studies/006/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社MM総研",
+      "industry": "it",
+      "size": "",
+      "dept": "研究部門"
+    },
+    "challenges": [
+      "efficiency",
+      "data"
+    ],
+    "challengeDetail": "新規プロジェクトにおいて、クライアント企業とのリアルタイムデータ共有と可視化の仕組みが必要だった。従来はローカルシステムでの処理が多く、50万行×70列に及ぶデータの操作が困難だった。",
+    "actions": "Google Cloudの導入支援企業G-genのサポートを受けて、2022年1月からGoogle CloudのBigQueryとData Studioの本格運用を開始。クライアント企業との間でデータをリアルタイムに共有・可視化できる環境を構築し、研究部門内のデータ活用レベルも向上させた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象データ規模",
+        "value": "50万行×70列"
+      }
+    ],
+    "resultsQualitative": "チーム内のデータ意識が向上し、データの一系統化管理が容易になった。研究員がデータ活用方法を深く考えるようになり、クライアント企業からの評価も向上した。Google Workspaceとの連携により、社内コミュニケーションとコラボレーションも円滑化した。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://g-gen.co.jp/case-studies/images/a9e5ec47f32e29fff117d84621bd1dc839993ab2.png",
+    "tags": [
+      "データが分散",
+      "リアルタイムに把握できない",
+      "数字の集計に時間"
+    ]
+  },
+  {
     "id": "g-mist-jp-case-study-nambaorientalhotel",
     "title": "ホテルの消臭課題をジーミストで解決",
     "summary": "なんばオリエンタルホテルではタバコ臭や香水臭など消えにくい臭いが課題だった。次亜塩素酸水のジーミストを導入し、消臭効果を実感した。",
@@ -63450,6 +64703,48 @@
       "社外との情報共有",
       "技能伝承ができない",
       "デジタル活用の知見不足"
+    ]
+  },
+  {
+    "id": "go-goinc-jp-business-case-mitsui-fudosan-realty",
+    "title": "タクシーへの業務転換で若手社員の事故リスク低減と安心・安全な移動を実現",
+    "summary": "建設業の若手社員（20～30代）が運転する営業車による事故リスクが高く、保険料や修繕費が増加していた。営業車の一部をタクシー利用に転換することで、事故リスクを軽減し、社員の走行時間を新たなコミュニケーション機会に変えた。",
+    "vendor": "goinc.jp",
+    "product": "GO BUSINESS",
+    "productCategory": "other-product",
+    "sourceUrl": "https://go.goinc.jp/business/case/mitsui-fudosan-realty",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "不動産ながらしなアルファ株式会社",
+      "industry": "construction",
+      "size": "",
+      "dept": "営業部門"
+    },
+    "challenges": [
+      "labor",
+      "cost",
+      "quality"
+    ],
+    "challengeDetail": "若手社員（20～30代）の運転による事故リスクが高く、自動車保険料や修繕費が増加。営業車1台あたりの事故件数が多く、全国約1,000台の営業車を保有する同社にとって大きな負担となっていた。",
+    "actions": "東京都内の営業車をタクシー利用に転換。社員が営業車を運転する機会を減らし、タクシーを利用することで安心・安全な移動を実現。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "全国営業車保有台数",
+        "value": "約1,000台"
+      },
+      {
+        "metric": "東京都内で転換予定のタクシー台数",
+        "value": "約50台分"
+      }
+    ],
+    "resultsQualitative": "これまでの運転時間が新たなコミュニケーション機会となり、社員の生産性向上や業務効率化に貢献。事故リスクの軽減による安心感が得られた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://images.ctfassets.net/bojfl9ed91o1/1vnNdveyRdooZ2ol5d2hwS/a595751eb765dd33615e05723e486238/ogp_mitsui-fudosan.jpg",
+    "tags": [
+      "移動時間の多さ",
+      "新人教育のばらつき"
     ]
   },
   {
@@ -64642,6 +65937,418 @@
       "サイト更新ができない",
       "リード獲得の停滞",
       "業務との両立困難"
+    ]
+  },
+  {
+    "id": "insightsales-jp-works-2201",
+    "title": "IT企業の営業12名がビジョナリープレゼンテーション研修で決裁者向けプレゼン力を強化",
+    "summary": "IT企業A社の営業担当者は、顧客決裁者へのアプローチ後のプレゼンテーション実施に課題がありました。ビデオ撮影による自己認識と講師の個別指導を含むプレゼンテーション研修を実施。受講生がプレゼンテーション型を体得し、基礎力を向上させました。",
+    "vendor": "insightsales.jp",
+    "product": "ビジョナリープレゼンテーション研修",
+    "productCategory": "consulting",
+    "sourceUrl": "https://insightsales.jp/works/2201/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "中堅ITシステム会社A社",
+      "industry": "it",
+      "size": "約5,000名",
+      "dept": "営業部門"
+    },
+    "challenges": [
+      "sales",
+      "cs"
+    ],
+    "challengeDetail": "営業担当者は顧客決裁者へのアプローチはできるようになったが、ヒアリング内容を踏まえたプレゼンテーション実施に課題が残されていました。",
+    "actions": "ビデオ撮影による視覚化、講師による個別フィードバック、実際の顧客資料を使った本番さながらのトレーニングを組み合わせたプレゼンテーション研修を実施しました。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "受講対象者",
+        "value": "営業担当者12名"
+      },
+      {
+        "metric": "実施年",
+        "value": "2018年"
+      }
+    ],
+    "resultsQualitative": "受講生がビジョナリープレゼンテーションの型を体得し、実践で活かせるようになった。声の大きさ、抑揚、表情などプレゼンテーション基礎力が向上し、受講生に自信が生まれた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://insightsales.jp/wp/wp-content/uploads/2021/11/4fad190b65398292d9d37e6b35b60f2f.jpg",
+    "tags": [
+      "商談化しない",
+      "新人教育のばらつき",
+      "技能伝承ができない"
+    ]
+  },
+  {
+    "id": "insightsales-jp-works-2204",
+    "title": "ITシステム会社の営業12名がアプローチスキル研修で新規開拓スキルを習得",
+    "summary": "ITシステム会社A社は新規顧客開拓が難しく、営業担当者がアポ取得や価値訴求に苦戦していた。アプローチスキル研修（ロールプレイング中心）を実施し、営業担当者がお客様視点での価値を言語化でき、次回訪問の約束を取り付けられるようになった。",
+    "vendor": "insightsales.jp",
+    "product": "アプローチスキル研修",
+    "productCategory": "consulting",
+    "sourceUrl": "https://insightsales.jp/works/2204/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "中堅ITシステムA社",
+      "industry": "it",
+      "size": "約5,000名",
+      "dept": "営業部門"
+    },
+    "challenges": [
+      "sales",
+      "efficiency"
+    ],
+    "challengeDetail": "新規顧客からのアポイントメント取得が難しく、商談を設定できても次の商談につながらない。営業担当者がお客様視点での価値を訴求できていなかった。",
+    "actions": "ロールプレイングを中心とした研修を実施。講師がお客様役を務め、受講生に丁寧なフィードバックを行い、ペアでの学び合いとゲーム感覚での競争を組み合わせた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "受講対象者",
+        "value": "12名"
+      },
+      {
+        "metric": "企業規模",
+        "value": "約5,000名"
+      },
+      {
+        "metric": "実施年",
+        "value": "2018年"
+      }
+    ],
+    "resultsQualitative": "営業担当者がお客様視点での価値を理解し言語化できるようになった。ロールプレイングを通じてPDCAを回す意識が定着し、受講生は新規開拓のヒントを得て実践に取り組む姿勢が見られた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://insightsales.jp/wp/wp-content/uploads/2021/11/3c40b0cf83f994b92650eef955d46179.jpg",
+    "tags": [
+      "リード獲得の停滞",
+      "商談化しない",
+      "追客の漏れ"
+    ]
+  },
+  {
+    "id": "insightsales-jp-works-2207",
+    "title": "ITシステム会社がトップアプローチ研修で決裁者との関係構築を強化",
+    "summary": "ITシステム販売企業が、商品のコモディティ化による価格競争激化に直面。決裁者へのアプローチスキル不足が受注率低下の原因だった。トップアプローチ研修を実施し、決裁者の価値観理解とコミュニケーション手法を体得させた。受講生の理解度が大幅に向上。",
+    "vendor": "insightsales.jp",
+    "product": "トップアプローチ研修",
+    "productCategory": "consulting",
+    "sourceUrl": "https://insightsales.jp/works/2207/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "中堅ITシステムA社様",
+      "industry": "it",
+      "size": "約5,000名",
+      "dept": "営業部門"
+    },
+    "challenges": [
+      "sales",
+      "efficiency"
+    ],
+    "challengeDetail": "商品・サービスのコモディティ化により価格競争が激化し、決裁者へのアプローチがうまくいかないため高額商品の受注が困難になっていた。",
+    "actions": "決裁者なりきりワーク、繰り返しロールプレイング、営業プロからの直接フィードバックを組み込んだトップアプローチ研修を営業担当者12名に実施。決裁者の価値観理解と関心領域に基づいた商談構築スキルを習得させた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "受講対象者",
+        "value": "12名"
+      },
+      {
+        "metric": "顧客企業規模",
+        "value": "約5,000名"
+      },
+      {
+        "metric": "実施年",
+        "value": "2018年"
+      }
+    ],
+    "resultsQualitative": "トップアプローチの技法と意義についての理解が受講前後で大幅に向上。受講生が決裁者の関心領域を理解し、自身で商談を構築できるようになった。決裁者との直接会話が可能になり、上司への依存が減少。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://insightsales.jp/wp/wp-content/uploads/2021/11/002d56e2fd689fd88ae2b59157d49d14.jpg",
+    "tags": [
+      "商談化しない",
+      "追客の漏れ",
+      "新人教育のばらつき"
+    ]
+  },
+  {
+    "id": "insightsales-jp-works-2528",
+    "title": "大手IT企業がオンライン営業研修で営業スキルを体得",
+    "summary": "対面営業が主流だった大手IT企業が、オンライン営業への対応を迫られる中、営業職約100名を対象にオンライン営業研修を実施。実践的なノウハウとロールプレイングを通じ、オンライン商談スキルを習得し、お客様との信頼関係構築能力を向上させた。",
+    "vendor": "insightsales.jp",
+    "product": "オンライン営業研修",
+    "productCategory": "consulting",
+    "sourceUrl": "https://insightsales.jp/works/2528/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "大手IT関連会社A社",
+      "industry": "it",
+      "size": "約3,000名",
+      "dept": "営業部門"
+    },
+    "challenges": [
+      "efficiency",
+      "cs"
+    ],
+    "challengeDetail": "新型コロナウイルスの影響でオンライン営業への転換が急務となったが、営業職がオンライン商談のやり方に不慣れで、お客様との信頼関係構築に課題を抱えていた。",
+    "actions": "オンライン営業に特化した研修を設計・実施。すぐに使えるノウハウ、実践的な戦術やテクニック、ロールプレイングなどを通じて、明日からのオンライン営業で活用できるスキルセットを習得させた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "受講対象者",
+        "value": "約100名"
+      },
+      {
+        "metric": "実施年",
+        "value": "2021年"
+      }
+    ],
+    "resultsQualitative": "受講生がオンライン営業で押さえるべきポイントを理解し、事前準備や我流での課題改善知識を習得。ロールプレイングを通じてオンライン営業を体得し、自身の商談をセルフチェック可能な状態となった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://insightsales.jp/wp/wp-content/uploads/2021/12/iStock-1255917500.jpg",
+    "tags": [
+      "新人教育のばらつき",
+      "技能伝承ができない",
+      "テレワーク対応"
+    ]
+  },
+  {
+    "id": "insightsales-jp-works-2554",
+    "title": "若手営業のモチベーション向上と実践的営業スキル習得を実現したインサイトセールス研修",
+    "summary": "石油製品販売会社の若手営業メンバー（2～5年目）がモチベーション低下に直面していた。インサイトセールス研修を導入し、副支店長との共通言語構築と個社別戦略会議で現場実践を支援。営業への自信回復と手法体得を達成した。",
+    "vendor": "insightsales.jp",
+    "product": "インサイトセールス研修",
+    "productCategory": "consulting",
+    "sourceUrl": "https://insightsales.jp/works/2554/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "大手石油製品の販売グループ関連会社 A社",
+      "industry": "energy",
+      "size": "従業員約300名",
+      "dept": "営業部門（若手営業メンバー・副支店長）"
+    },
+    "challenges": [
+      "hr",
+      "efficiency"
+    ],
+    "challengeDetail": "若手営業メンバー（2～5年目）がポテンシャルの低い代理店を担当することでモチベーションを保てず、営業の楽しさを感じられなくなっていた。自分を過小評価するメンバーが増加していた。",
+    "actions": "インサイトセールス研修を若手営業メンバーと副支店長の両者に実施。個社別戦略会議で重点顧客の攻略作戦を策定し、実践的なスキル習得を支援。ストレングスファインダーを活用した強み志向のメンバー育成も実践した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "受講対象者",
+        "value": "若手営業メンバー（2～5年目）及び副支店長"
+      },
+      {
+        "metric": "実施年",
+        "value": "2021年"
+      }
+    ],
+    "resultsQualitative": "インサイトセールスという共通言語を社内で構築。受講生からは現場実践で顧客からの良好な反応が得られたこと、上司との相談しやすさが報告された。教育担当者からは早速成果が創出されており営業文化の1つにしたいとのコメントを得た。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://insightsales.jp/wp/wp-content/uploads/2021/08/ad3adb14fb06f07d327ac678fbc68e39.jpg",
+    "tags": [
+      "追客の漏れ",
+      "新人教育のばらつき",
+      "営業スキルのばらつき"
+    ]
+  },
+  {
+    "id": "insightsales-jp-works-2655",
+    "title": "マネジメント研修により副支店長のリーダーシップを強化、若手営業メンバーのモチベーション向上を実現",
+    "summary": "石油販売グループの関連会社が、副支店長向けにドラッカーのマネジメント原理原則とセルフリーダーシップを学ぶ研修を実施。1on1ミーティングとストレングスファインダーを組み合わせることで、若手営業メンバーが上司と対話する機会が増え、営業への前向きさが向上した。",
+    "vendor": "insightsales.jp",
+    "product": "マネジメント研修",
+    "productCategory": "consulting",
+    "sourceUrl": "https://insightsales.jp/works/2655/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "大手石油製品販売グループ関連会社A社",
+      "industry": "energy",
+      "size": "従業員約300名",
+      "dept": "営業・マネジメント層"
+    },
+    "challenges": [
+      "hr",
+      "efficiency"
+    ],
+    "challengeDetail": "副支店長がマネジメント教育を受けておらず、育成スタイルがバラバラであった。また、事務業務に追われ部下育成が後回しになり、若手営業メンバーのモチベーションが低下していた。",
+    "actions": "ドラッカーのマネジメント原理原則を学ぶ研修を実施。1on1ミーティングのノウハウ提供とストレングスファインダーによる強み分析を組み合わせ、副支店長が部下の強みを把握して育成する下地を作った。",
+    "results": [
+      {
+        "metric": "若手営業メンバーからの前向きな声",
+        "value": "副支店長との対話機会により営業に前向きになったという報告"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "受講対象者",
+        "value": "全国の副支店長13名"
+      },
+      {
+        "metric": "実施年",
+        "value": "2021年"
+      }
+    ],
+    "resultsQualitative": "ドラッカーのマネジメント理論が座学にとどまらず現場で実践される動きが見られた。受講生から部下の強みへのフォーカスと自身のセルフリーダーシップに対する気づきが得られた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://insightsales.jp/wp/wp-content/uploads/2021/12/iStock-1133375919.jpg",
+    "tags": [
+      "新人教育のばらつき",
+      "業務の属人化",
+      "引き継ぎ困難"
+    ]
+  },
+  {
+    "id": "insightsales-jp-works-3670",
+    "title": "株式会社日本旅行、トップアプローチ研修で経営層との対話スキルと未来志向のヒアリング能力を向上",
+    "summary": "旅行会社が地域の優良企業オーナーとの関係構築を課題とし、トップアプローチ研修を導入。経営視点での対話スキルと未来志向のヒアリング能力を体得させることで、受講生がインサイトセールスの概念を理解し、自らの営業スタイルを見直すまでに至った。",
+    "vendor": "insightsales.jp",
+    "product": "トップアプローチ研修",
+    "productCategory": "consulting",
+    "sourceUrl": "https://insightsales.jp/works/3670/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社日本旅行",
+      "industry": "other-industry",
+      "size": "グループ全体4,414名",
+      "dept": "営業部門"
+    },
+    "challenges": [
+      "efficiency",
+      "cs"
+    ],
+    "challengeDetail": "地域の優良企業オーナーとの対話スキルが不足しており、オーナーとの対等な関係構築ができていなかった。また、未来志向のヒアリング能力も十分ではなかった。",
+    "actions": "1日間のトップアプローチ研修を営業課長約40名に実施。経営者目線での対話観点の理解、ロールプレイングによる実践体得、経営者なりきり体験などを通じて、トップ層との会話スキルを習得させた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "受講対象者",
+        "value": "営業課長約40名"
+      },
+      {
+        "metric": "グループ全体規模",
+        "value": "4,414名"
+      },
+      {
+        "metric": "実施期間",
+        "value": "2021年～2022年"
+      },
+      {
+        "metric": "研修時間",
+        "value": "1日間"
+      }
+    ],
+    "resultsQualitative": "インサイトセールスの概念を理解し、経営層との会話の切り口を体得した。グループ内での意見交換が活発化し、受講生が自身の営業スタイルや会話方法を見直し、今後の改善イメージを持つようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://insightsales.jp/wp/wp-content/uploads/2022/06/iStock-1322679919.jpg",
+    "tags": [
+      "追客の漏れ",
+      "一次対応の属人化",
+      "新人教育のばらつき"
+    ]
+  },
+  {
+    "id": "insightsales-jp-works-4437",
+    "title": "大手飲料メーカー、マネジメント研修でリーダーシップと1on1スキルを習得",
+    "summary": "コロナによる出社減でマネジメント層と部下のコミュニケーション機会が低下し、評価面談を控えた大手飲料メーカー。部長・課長向けのマネジメント研修（インクルーシブリーダーシップ、アンコンシャスバイアス、1on1、目標管理面談）を1,500名に実施。受講者は相互理解や多様性受け入れの重要性を理解し、実践的なノウハウを習得した。",
+    "vendor": "insightsales.jp",
+    "product": "部長・課長向けマネジメント研修 @Zoom",
+    "productCategory": "consulting",
+    "sourceUrl": "https://insightsales.jp/works/4437/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "大手飲料メーカー",
+      "industry": "food",
+      "size": "約10,000名",
+      "dept": "人事・研修部門"
+    },
+    "challenges": [
+      "hr",
+      "standardize"
+    ],
+    "challengeDetail": "コロナの影響で上司部下のコミュニケーション機会が減少し、無意識の思い込み（アンコンシャスバイアス）への組織的対応が不足していた。評価面談を控え、マネジメント層の1on1スキル習得が急務だった。",
+    "actions": "インクルーシブリーダーシップ、アンコンシャスバイアス、1on1ミーティング、目標管理面談の4つをテーマとしたZoom研修を実施。グループワークとディスカッションを交えた参加型で、相互理解や実践的なノウハウを習得させた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "受講対象者",
+        "value": "部門長・課長 約1,500名"
+      },
+      {
+        "metric": "企業規模",
+        "value": "約10,000名"
+      },
+      {
+        "metric": "実施年",
+        "value": "2020年"
+      }
+    ],
+    "resultsQualitative": "受講者からアンコンシャスバイアスと多様性受け入れへの高い関心と自身の気づきが報告された。1on1が「業務面談」ではなく「相互理解」の場であることを理解し、実践的なノウハウを習得。グループワークを通じた他部門との交流と相互理解も促進された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://insightsales.jp/wp/wp-content/uploads/2022/11/kiters-g664d0c58d_1920.jpg",
+    "tags": [
+      "テレワーク対応",
+      "社内コミュニケーション不足",
+      "意思決定の遅れ"
+    ]
+  },
+  {
+    "id": "insightsales-jp-works-4446",
+    "title": "大手IT企業の次期リーダー候補26名向け「7つの習慣®forセールスパーソン研修」導入で営業マインドと習慣を変革",
+    "summary": "大手IT企業X社は、顧客ニーズの深掘りが不得意で個人主義的だった営業チームの課題を抱えていました。次期リーダー候補26名を対象に「7つの習慣®for セールスパーソン研修」をオンライン実施し、参加者が自身の習慣を見直し、チームパフォーマンス向上への視点を獲得しました。",
+    "vendor": "insightsales.jp",
+    "product": "7つの習慣®forセールスパーソン研修",
+    "productCategory": "consulting",
+    "sourceUrl": "https://insightsales.jp/works/4446/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "大手IT企業X社",
+      "industry": "it",
+      "size": "従業員約2,300名",
+      "dept": "営業部門"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "sales"
+    ],
+    "challengeDetail": "顧客ニーズを掘り下げることが苦手で、個人で動くことが多くチーム意識が乏しい。営業の基本や立ち振る舞いに関して学ぶ機会が少なく個々人任せになっていた。",
+    "actions": "次期リーダー候補26名を対象に、3回×4時間の「7つの習慣®forセールスパーソン研修」をオンライン実施。ディスカッションやワークを含め、学んだ習慣を実践するための仕組みづくりと受講生同士の刺激による学びを重視した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "受講者数",
+        "value": "26名"
+      },
+      {
+        "metric": "導入企業規模",
+        "value": "約2,300名"
+      },
+      {
+        "metric": "研修実施期間",
+        "value": "3回×4時間"
+      },
+      {
+        "metric": "実施年",
+        "value": "2020年"
+      }
+    ],
+    "resultsQualitative": "参加者が自身の習慣に向き合い、顧客に価値を与える営業パーソンになるための習慣変革の視点を獲得。チームメンバーや部下へも影響を与える視点でも考えるようになり、次期リーダー候補として他のメンバーに伝えていく重要性を理解した。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://insightsales.jp/wp/wp-content/uploads/2022/10/job-g0b2f2a093_1920.jpg",
+    "tags": [
+      "業務の属人化",
+      "引き継ぎ困難",
+      "新人教育のばらつき"
     ]
   },
   {
@@ -73760,6 +75467,39 @@
     ]
   },
   {
+    "id": "sight-r-sts-inc-co-jp-google-cloud-article-case-study-auto-d",
+    "title": "手動アップロード廃止と自動デプロイ化により運用コスト削減と業務品質向上を実現",
+    "summary": "Webサイトコンテンツの手動アップロード運用による品質ばらつき、運用コスト、リードタイムの課題に対し、Cloud BuildとCloud Runを用いた自動デプロイ機能を導入。手動オペレーションを排除し、業務品質のバラツキ解消と運用コスト削減、リードタイム短縮を実現した。",
+    "vendor": "sts-inc.co.jp",
+    "product": "Google Cloud（Cloud Build、Cloud Run、Cloud Load Balancing、Google Cloud Armor）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://sight-r.sts-inc.co.jp/google_cloud_article/case_study_auto_deploy/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "it",
+      "size": "",
+      "dept": "Web運用部門"
+    },
+    "challenges": [
+      "quality",
+      "labor",
+      "leadtime"
+    ],
+    "challengeDetail": "Webサイトコンテンツの更新をGitHubから手動でダウンロードしてWebサーバへアップロードする運用が課題。手動対応のためミスが起こる可能性があり、オペレーションコストがかかり、リリースまでにリードタイムが発生していた。",
+    "actions": "Cloud BuildとCloud Runを活用し、GitHubからCloudRunへの自動デプロイパイプラインを構築。既存のWebサーバーを経由する形で運用上のレギュレーションに対応し、Cloud ArmourとCloud Load Balancingで特定環境からのアクセスに制限した。",
+    "results": [],
+    "resultsQualitative": "手動アップロードがなくなり業務品質のバラツキが解消。手動アップロードのオペレーションがなくなり運用コストが削減。自動デプロイ化によりアップロードのリードタイムが削減。ダウンタイムなしでのWebサイト更新が可能になり、リクエストに応じた自動スケールでの負荷分散が実現できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://sight-r.sts-inc.co.jp/wp/wp-content/uploads/2023/09/google_cloud_article_thumb_1200x800-1.jpg",
+    "tags": [
+      "手作業の転記",
+      "サイト更新ができない",
+      "ミスの再発"
+    ]
+  },
+  {
     "id": "solution-lmi-ne-jp-hr-development-case-3372",
     "title": "新任管理職研修にサーベイを導入し、3ヶ月の実践で職場改善効果を可視化",
     "summary": "TIS株式会社は新人事制度導入に合わせ、新任管理職向け研修をリンクアンドモチベーションのサーベイを活用して刷新。1回目の研修で部下へのサーベイ結果をフィードバックしアクションプランを策定、3ヶ月後の2回目研修で職場改善の成果を数値で可視化することで、実践したマネージャーの成果が明確に示された。",
@@ -74964,6 +76704,56 @@
       "品質のばらつき",
       "手順書がない",
       "クレームの原因不明"
+    ]
+  },
+  {
+    "id": "trinity-tech-co-jp-oyatoko-works-1",
+    "title": "高齢の両親の不動産共有状態と預金管理を家族信託で解決",
+    "summary": "91歳の父と83歳の母が不動産を共有保有し、認知症発症時の財産管理に不安を抱えていた。家族信託により両親の不動産名義を長女に一元化し、預金も信託口座で管理することで、認知症発症後も財産処分が可能な体制を整備した。",
+    "vendor": "trinity-tech.co.jp",
+    "product": "おやとこ",
+    "productCategory": "other-product",
+    "sourceUrl": "https://trinity-tech.co.jp/oyatoko/works/1/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "加藤様一家（仮名）",
+      "industry": "other-industry",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "security",
+      "data"
+    ],
+    "challengeDetail": "高齢の両親が不動産を共有保有している状況下で、認知症発症時に不動産売却が困難になるリスクがあった。また、銀行預金の管理についても認知症対策が必要だった。",
+    "actions": "父と長女、母と長女それぞれの家族信託契約を締結し、両親の不動産名義を長女に一元化した。また、両親名義の銀行口座の一部預金を長女名義の信託口座で管理するようにした。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "父の年齢",
+        "value": "91歳"
+      },
+      {
+        "metric": "母の年齢",
+        "value": "83歳"
+      },
+      {
+        "metric": "面談回数",
+        "value": "4回"
+      },
+      {
+        "metric": "家族信託契約数",
+        "value": "2件"
+      }
+    ],
+    "resultsQualitative": "不動産の名義が長女に一元化されたことで、両親が認知症になっても不動産売却が可能になった。兄弟間での財産管理状況の透明化により、家族間のトラブルリスクが低減した。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://kokorono.co.jp/images/oyatoko/works/1.webp?171ea2580fd5c574492f276d93a8ff28",
+    "tags": [
+      "紙の書類処理",
+      "手作業の転記",
+      "情報が分散"
     ]
   },
   {
@@ -76592,6 +78382,44 @@
       "多拠点の管理",
       "数字の集計に時間",
       "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "union-company-jp-customer-reviews-okochi-clinic",
+    "title": "漫画動画制作による採用・人材育成の強化",
+    "summary": "クリニックの経営理念とスタッフのキャリアパスを漫画動画で可視化。ヒアリングからストーリー形成、修正まで丁寧に対応することで、採用と人財育成の効果向上を実現。",
+    "vendor": "union-company.jp",
+    "product": "漫画動画制作サービス",
+    "productCategory": "other-product",
+    "sourceUrl": "https://union-company.jp/customer-reviews/okochi-clinic/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "おおこうち内科クリニック",
+      "industry": "medical",
+      "size": "",
+      "dept": "採用・人材育成"
+    },
+    "challenges": [
+      "hr",
+      "sales"
+    ],
+    "challengeDetail": "クリニックの経営理念と人材育成の価値観を、候補者やスタッフに対して均一的かつ効果的に伝える必要があった。",
+    "actions": "クリニックの経営理念を紹介するPR漫画動画と、スタッフのキャリアアップ形成を紹介する漫画動画の2本を制作。ヒアリング、キャラクター設定、ストーリー形成、現場反映、音声選択などを丁寧に対応し、納得いくまで修正を重ねた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "制作動画数",
+        "value": "2本"
+      }
+    ],
+    "resultsQualitative": "クリニックの良さを明確に均一的に伝えられるようになり、採用と人財育成の面で大きく役に立っている。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://union-company.jp/wp/wp-content/uploads/2023/10/logo_oukouchi.png",
+    "tags": [
+      "応募が集まらない",
+      "採用しても定着しない",
+      "新人教育のばらつき"
     ]
   },
   {
@@ -80025,6 +81853,47 @@
     ]
   },
   {
+    "id": "www-conoris-jp-case-kajima",
+    "title": "対話型セキュリティチェックの導入で再確認の手戻りを大幅に削減",
+    "summary": "鹿島建設は、クラウドサービス利用審査のセキュリティチェックをExcelシートからConorisのWebフォームに変更。条件分岐による質問の流れを構築することで、メールでの再確認が大幅に減少し、審査業務の工数を削減した。",
+    "vendor": "conoris.jp",
+    "product": "Conoris",
+    "productCategory": "security",
+    "sourceUrl": "https://www.conoris.jp/case/kajima",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "鹿島建設株式会社",
+      "industry": "construction",
+      "size": "大企業",
+      "dept": "ITソリューション部 情報基盤グループ（CSIRT）"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "クラウドサービス利用審査の相談件数増加に伴い、Excelによるセキュリティチェックシートでは設問に対する認識の齟齬から再確認が何度も発生。申請部署の担当者と情報セキュリティ担当者の負荷が大きくなっていた。",
+    "actions": "セキュリティチェックシートをExcelからConorisのWebフォーム形式に変更。条件分岐による自動質問表示機能を活用して、意図に合わせた質問の流れを構築した。",
+    "results": [
+      {
+        "metric": "再確認の手戻り",
+        "value": "大幅に減少"
+      },
+      {
+        "metric": "審査業務の工数",
+        "value": "削減"
+      }
+    ],
+    "resultsQualitative": "メールでの何往復もの再確認が不要になり、サービス提供事業者にとってもわかりやすい設問設計が実現された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://cdn.prod.website-files.com/634e42e7bd97be83088e8259/661634f83398e9c88ad1d5b1_%E9%B9%BF%E5%B3%B6%E5%BB%BA%E8%A8%AD%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%A7%98%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%93%E3%83%A5%E3%83%BC%E8%A8%98%E4%BA%8B%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB.webp",
+    "tags": [
+      "Excel管理の限界",
+      "手作業の転記",
+      "情報共有の遅れ"
+    ]
+  },
+  {
     "id": "www-data-salvage-jp-about-voice",
     "title": "雷による外付けHDD破損から思い出の写真を完全復旧",
     "summary": "雷による停電で外付けハードディスクが物理的に破損し、大切な思い出の写真が失われる危機に直面。データサルベージのデータ復旧サービスを利用し、物理的な重度復旧にもかかわらず、ほとんどのデータの復旧に成功した。",
@@ -81046,6 +82915,48 @@
       "対応履歴が残らない",
       "数字の集計に時間",
       "一次対応の属人化"
+    ]
+  },
+  {
+    "id": "www-erecta-co-jp-media-case-sekinebakery",
+    "title": "セキネベーカリーが25年愛用するエレクターシェルフで陳列効率化を実現",
+    "summary": "浅草の老舗ベーカリーは限られた店舗スペースでパン陳列の課題を抱えていた。エレクターのワイヤーシェルフを導入し、5段積みで間隔を詰めず、光が透過することでパンを美しく見せながら、25年にわたり耐久性のある陳列環境を実現している。",
+    "vendor": "erecta.co.jp",
+    "product": "エレクターシェルフ スーパーシリーズ",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.erecta.co.jp/media/case/sekinebakery",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "セキネベーカリー",
+      "industry": "food",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "店舗スペースが限られており、パンの効率的な陳列と見栄えの良さを両立させる必要があった。従来の4段積みの棚では対応できていなかった。",
+    "actions": "エレクターのワイヤーシェルフスーパーシリーズを導入。高さを自在に調節でき、5段積みが可能な仕様とした。ワイヤー製の棚板により上からの光が通り、パンが美しく見える環境を実現した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "導入から現在までの使用期間",
+        "value": "25年"
+      },
+      {
+        "metric": "陳列棚の段数",
+        "value": "5段"
+      }
+    ],
+    "resultsQualitative": "四半世紀の使用にも関わらず壊れない堅牢性、ワイヤーシェルフの透光性によるパンの見栄え向上、取り回しのしやすさを実現。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.erecta.co.jp/dcms_media/image/sekine_image_01_2024.jpg",
+    "tags": [
+      "紙図面の保管",
+      "在庫の把握不足",
+      "陳列スペースの最適化"
     ]
   },
   {
@@ -82579,6 +84490,43 @@
       "情報共有の遅れ",
       "業務の属人化",
       "担当者不在で止まる"
+    ]
+  },
+  {
+    "id": "www-i-studio-co-jp-casestudy-hakuhodo-sifm",
+    "title": "メタバース空間で3Dアバター体験を実現し、新しい生活インターフェースを提供",
+    "summary": "生活関連企業が5G・IoT時代の新しいインターフェースとしてメタバースを活用したいという課題に対して、3Dアバターとメタバース空間を組み合わせたハイブリッド体験を設計・実装。多様な職種のスタッフ連携により、技術的に高度なコンセプトを実現した。",
+    "vendor": "i-studio.co.jp",
+    "product": "メタバース空間・3Dアバター体験（i-studioによる企画・制作）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.i-studio.co.jp/casestudy/hakuhodo-sifm/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社朝日新聞社",
+      "industry": "other-industry",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency"
+    ],
+    "challengeDetail": "5GやIoTといった新技術の進展に伴い、全てのデバイスが生活の新しいインターフェースとなることが期待される中、生活者にメタバースという新しい自由と可能性をリアルに示す必要があった。",
+    "actions": "3Dスキャン技術でユーザー自身のアバターを生成し、メタバース空間でキャラクターAIを用いた自然な行動パターンを再現。40台以上のカメラを配置した大規模なMV撮影を実現し、音楽に合わせたリアルタイムレンダリングでアバターのパフォーマンスを実装した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "設置カメラ台数",
+        "value": "40台以上"
+      }
+    ],
+    "resultsQualitative": "来場者が自分自身を新しいキャラクターに体験でき、難易度の高い3Dアバターとメタバース空間の可能性を具体的に示すことができた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.i-studio.co.jp/assets/contentful/2PBML63aZ02DllLYmka0A1-1.jpg",
+    "tags": [
+      "新しい顧客体験の構想困難",
+      "専門知識の不足",
+      "部署間の情報共有"
     ]
   },
   {
@@ -84225,6 +86173,51 @@
     ]
   },
   {
+    "id": "www-ledusvision-jp-case-jikuhana",
+    "title": "フラワーショップの店舗窓に透過型LEDビジョンを設置し、花や商品情報を屋外へ発信",
+    "summary": "フラワーショップが店舗の大きなガラス窓を活用し、透過型LEDビジョン（W3,000mm×H2,000mm）を設置。花や植物の映像を鮮やかに表示することで、店舗や商品を屋外へ効果的にPRできるデジタル看板として活用。",
+    "vendor": "ledusvision.jp",
+    "product": "透過型LEDウィンドウビジョン P3.91",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.ledusvision.jp/case/jikuhana",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社軸花（軸花～jiku-hana～）",
+      "industry": "retail",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "sales"
+    ],
+    "challengeDetail": "店舗の認知度向上と商品PR。花や植物という色彩豊かな商品の魅力を歩行者に効果的に伝える必要があった。",
+    "actions": "店舗のガラス窓に屋内設置型の透過型LEDビジョン（P3.91、W3,000mm×H2,000mm）を導入。花や植物の動画、店舗ロゴ、サービス案内を表示し、窓面を広告媒体として活用。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "LEDビジョンサイズ",
+        "value": "W3,000mm×H2,000mm"
+      },
+      {
+        "metric": "LED素子配置間隔",
+        "value": "P3.91（約3.91mm間隔）"
+      },
+      {
+        "metric": "設置年月",
+        "value": "2023年6月"
+      }
+    ],
+    "resultsQualitative": "透過型LEDビジョンにより、店内の明るさと開放感を保ちながら、花や植物の華やかさ、商品の質感などを動画で印象的に表現。店舗の世界観を生かした情報発信が可能となった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ledusvision.jp/web/wp-content/uploads/2023/07/f8f1a1decabf7a89ea69895c7b424dea.webp",
+    "tags": [
+      "リード獲得の停滞",
+      "サイト更新ができない",
+      "店舗認知度の低さ"
+    ]
+  },
+  {
     "id": "www-lilycolor-co-jp-ss-works-109753",
     "title": "創立50周年を機に、社員アンケートを反映した「集中とリフレッシュの循環」を実現するハイブリッド型オフィスへ移転",
     "summary": "丸紅イノベクシス株式会社は、創立50周年を機にオフィス移転を決定。社員アンケートやワークショップを通じて「Come together as Plax」というコンセプトを策定し、リフレッシュスペース、固定席、ABWスペース、サステナブルな素材を組み合わせたオフィス空間を構築しました。社員の交流が活発化し、新オフィスのシンボルであるPlax Gardenは移転直後から社内イベントの場として活用されています。",
@@ -85026,7 +87019,8 @@
       "介護負担の属人化",
       "ケアの質のばらつき",
       "身体的負担の増加"
-    ]
+    ],
+    "image": "https://www.nichii-kaigo.jp/wp-content/uploads/2015/09/0cd83fea17c4b2d6c712f3ba377ad976.jpg"
   },
   {
     "id": "www-nifs-co-jp-voice-voice-189",
@@ -85063,7 +87057,8 @@
       "協力会社との連携",
       "情報共有の遅れ",
       "手順書がない"
-    ]
+    ],
+    "image": "https://www.nifs.co.jp/wnisshinp/wp-content/uploads/2022/06/九州大学病院様01-scaled.jpg"
   },
   {
     "id": "www-nifs-co-jp-voice-voice-6232",
@@ -85104,7 +87099,8 @@
       "業務の属人化",
       "手順書がない",
       "技能伝承ができない"
-    ]
+    ],
+    "image": "https://www.nifs.co.jp/wnisshinp/wp-content/uploads/2576020de8ada99c7278a6bcf86a4049-1.jpg"
   },
   {
     "id": "www-ntt-tx-co-jp-case-e-design2203",
@@ -85287,7 +87283,8 @@
       "データが分散",
       "老朽化したシステム",
       "対応履歴が残らない"
-    ]
+    ],
+    "image": "https://www.ntt-tx.co.jp/case/SMITjirei_logo.jpg"
   },
   {
     "id": "www-ntt-tx-co-jp-case-sky2203",
@@ -86205,6 +88202,45 @@
       "紙の書類処理",
       "手作業の転記",
       "情報共有の遅れ"
+    ]
+  },
+  {
+    "id": "www-scanbridge-jp-works-582",
+    "title": "大量のポジフィルムをJPEG形式でデジタル化し、研究資料を有効活用",
+    "summary": "四年制大学が保管していた膨大な研究用ポジフィルムをデジタル化。専用機材でJPEG形式に変換し、シート毎のインデックスを作成することで、眠っていた貴重な資料を研究に活用できるようになった。",
+    "vendor": "scanbridge.jp",
+    "product": "文書電子化・スキャン代行サービス（ポジフィルム専用デジタル化）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.scanbridge.jp/works/582/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "education",
+      "size": "四年制大学",
+      "dept": "研究部門"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "data"
+    ],
+    "challengeDetail": "膨大な研究用ポジフィルムが保管スペースを圧迫しており、フィルム状態では資料として活用できず、デジタル化に専用機材が必要で対応困難だった。",
+    "actions": "専用機材を用いてマウント加工されたポジフィルムをJPEG形式でデータ化。光源を下から当ててオーバーヘッドスキャナでスキャンし、シート毎にインデックスを作成して運用しやすいファイル名を付与した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "ポジフィルム収納能力",
+        "value": "スライドファイル1シートあたり最大20枚"
+      }
+    ],
+    "resultsQualitative": "眠っていた貴重な研究資料がデジタル形式で有効活用できるようになり、保管スペースの課題も解決した。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.scanbridge.jp/wp/wp-content/uploads/2026/07/works-ogp-default-1024x576.png",
+    "tags": [
+      "紙図面の保管",
+      "写真の整理作業",
+      "探し物の時間"
     ]
   },
   {
@@ -91464,6 +93500,100 @@
     ]
   },
   {
+    "id": "www-truedata-co-jp-works-kirin-group",
+    "title": "ID-POSデータ分析ツール導入で小売店への提案精度向上、新事業領域の市場理解を実現",
+    "summary": "キリングループは、店舗と市場のID-POSデータを比較するニーズから、Eagle Eyeを導入。年間6,000万人規模のID-POSデータを活用して小売店への提案精度を向上させ、ヘルスサイエンス領域の新事業における顧客像の明確化と戦略立案に成功した。",
+    "vendor": "truedata.co.jp",
+    "product": "Eagle Eye",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.truedata.co.jp/works/kirin_group/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "キリングループ（キリンビール、キリンビバレッジ、メルシャン等）",
+      "industry": "food",
+      "size": "大企業",
+      "dept": "営業、マーケティング、調査分析部門"
+    },
+    "challenges": [
+      "data",
+      "sales"
+    ],
+    "challengeDetail": "小売店から、自店舗の購買データだけでは市場トレンドとの区別が難しく、個別の店舗特性と市場全体の変化を比較分析したいという相談を受けた。また、新規事業領域における市場理解が不足していた。",
+    "actions": "年間6,000万人規模のID-POSデータを扱うEagle Eyeを導入し、店舗データと市場データの比較分析、商品親和性の分析、購買行動パターン分析を実施。営業資料テンプレートの作成や戦略立案に活用した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "ID-POSデータ規模",
+        "value": "年間6,000万人"
+      },
+      {
+        "metric": "年間購買データ総額",
+        "value": "4.8兆円"
+      },
+      {
+        "metric": "導入対象事業会社",
+        "value": "キリンHD、キリンビール、キリンビバレッジ、メルシャン等"
+      },
+      {
+        "metric": "利用期間",
+        "value": "4年以上"
+      }
+    ],
+    "resultsQualitative": "小売店のニーズに即した提案が可能になり、営業担当者の市場理解度が向上した。新事業領域のターゲット顧客像が明確になり、高精度なマーケティングが実現できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.truedata.co.jp/wp-content/uploads/2022/03/Truedata_OGP.png",
+    "tags": [
+      "数字の集計に時間",
+      "データが分散",
+      "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "www-uniadex-co-jp-service-casestudy-tuat2-html",
+    "title": "IDaaS導入でシステム管理負担を軽減、SSOとMFA実装で利便性とセキュリティを両立",
+    "summary": "複数クラウドサービスとオンプレミスシステムの混在により、ID管理が複雑化していた大学が、IDaaS（Extic）を導入。SSOによるユーザー利便性向上と多要素認証によるセキュリティ強化、システム管理負担の軽減を実現。",
+    "vendor": "uniadex.co.jp",
+    "product": "Extic",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.uniadex.co.jp/service/casestudy/tuat2.html",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "東京農工大学",
+      "industry": "education",
+      "size": "学部生約4,000名、大学院生約2,000名",
+      "dept": "総合情報メディアセンター"
+    },
+    "challenges": [
+      "standardize",
+      "security",
+      "labor"
+    ],
+    "challengeDetail": "Google WorkspaceやMicrosoft 365などのクラウドサービスとオンプレミスシステムが混在し、ID認証の統一管理ができていなかった。システム管理者の負担が増加し、セキュリティ対策も不十分だった。",
+    "actions": "ExticというIDaaSを導入し、クラウドサービスとオンプレミスシステム双方のID管理をクラウド認証基盤で統一。SSOにより複数サービスへのシームレスなアクセスを実現し、多要素認証機能でセキュリティを強化。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "学部生数",
+        "value": "約4,000名"
+      },
+      {
+        "metric": "大学院生数",
+        "value": "約2,000名"
+      }
+    ],
+    "resultsQualitative": "システム管理者の負担軽減、ユーザーの利便性向上、セキュリティ強化を実現。オンプレミス環境への投資削減が可能になり、学内システム間の統一的なID管理フローが構築された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://solution.uniadex.co.jp/case/img/tuat2/tuat2_mv.jpg",
+    "tags": [
+      "システムの乱立",
+      "アカウント管理の煩雑さ",
+      "サーバ運用の負担",
+      "情報漏洩リスク"
+    ]
+  },
+  {
     "id": "www-unisys-co-jp-solution-biz-hrd-learningcast-case-nissen-h",
     "title": "eラーニング導入で研修業務を効率化、コンプライアンス教育の質と管理精度を向上",
     "summary": "大規模な金融グループでグループ全体の成長戦略に対応するため、従業員教育の体制強化が急務だった。研修の企画立案から実施、進捗管理まで一元的に運用できるSaaS型eラーニングシステム「LearningCast」を導入し、研修業務の効率化を実現。従業員一人ひとりの学習状況をリアルタイムで把握でき、コンプライアンス教育の質が向上した。",
@@ -92677,6 +94807,54 @@
       "問い合わせ対応の負荷",
       "一次対応の属人化",
       "繁忙期の人員不足"
+    ]
+  },
+  {
+    "id": "zaiko-greenwich-co-jp-case-kokubo",
+    "title": "複数店舗の在庫管理をクラウド化し、コスト削減と作業効率を向上",
+    "summary": "紳士服を扱う株式会社コクボは、従来のオンプレミス在庫管理システムの停止による在庫差異と業務効率の低下が課題だった。らくらく在庫のクラウドシステムを導入し、月額固定の低コストで複数ユーザーからのアクセスが可能となり、在庫差異削減と作業効率向上を実現した。",
+    "vendor": "greenwich.co.jp",
+    "product": "らくらく在庫",
+    "productCategory": "saas",
+    "sourceUrl": "https://zaiko.greenwich.co.jp/case/kokubo",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社コクボ",
+      "industry": "retail",
+      "size": "",
+      "dept": "在庫管理部門"
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "quality"
+    ],
+    "challengeDetail": "オンプレミスの専用PCでシステムを運用していたため、休日に停止して在庫差異が頻繁に発生し、1台のPCで登録するため同時作業ができず更新業務に時間がかかっていた。",
+    "actions": "クラウド型の在庫連動システム「らくらく在庫」に乗り換え。月額固定料金のメガプランを導入し、複数スタッフが各自のPCからアクセス可能にした。",
+    "results": [
+      {
+        "metric": "在庫差異",
+        "value": "削減"
+      },
+      {
+        "metric": "コスト",
+        "value": "大幅削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "店舗数",
+        "value": "8店舗（楽天3、Yahoo!2、Amazon、Wowma、自社1）"
+      }
+    ],
+    "resultsQualitative": "クラウドシステムの安定性により在庫更新間隔が早くなり、ユーザー数制限がないため複数スタッフの同時アクセスで作業効率が向上。入力履歴が残ることでセキュリティが強化された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://zaiko.greenwich.co.jp/wp-content/uploads/ogp_zaiko.jpg",
+    "tags": [
+      "在庫の把握不足",
+      "老朽化したシステム",
+      "サーバ運用の負担"
     ]
   },
   {
@@ -94711,6 +96889,85 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "cloudsign-for-salesforce-jp-casestudy-posts-f-p-i",
+    "title": "契約管理業務をペーパーレス化、業務効率を大幅改善",
+    "summary": "ファシリティ・パートナーズは、社内稟議申請から顧客との契約締結までの業務フローで課題を抱えていた。CloudSign for SalesforceとMitocoを導入し、Salesforce上で一元管理・一貫処理することで、ペーパーレス化と業務効率化を実現した。",
+    "vendor": "cloudsign-for-salesforce.jp",
+    "product": "CloudSign for Salesforce、mitoco",
+    "productCategory": "saas",
+    "sourceUrl": "https://cloudsign-for-salesforce.jp/casestudy/posts/f-p-i",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "ファシリティ・パートナーズ株式会社",
+      "industry": "other-industry",
+      "size": "従業員100～500名未満",
+      "dept": "業務推進部"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "社内稟議申請から顧客との契約締結までの業務で課題を抱えていた。契約の締結業務で対応しており、契約書の郵送に時間を要し、作業効率が悪い状況だった。また、複雑な承認ルートや差し戻し、一覧表示といった不足機能があり、稟議申請から承認の過程でストレスを感じていた。",
+    "actions": "CloudSign for SalesforceとMitocoのワークフロー機能を導入。Salesforceのデータを活用して顧客と契約締結を行い、社内稟議から顧客との契約締結まで、Salesforce上で一元管理・一貫処理できる環境を構築した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "100～500名未満"
+      }
+    ],
+    "resultsQualitative": "ペーパーレス化により業務作業時間が大幅に削減。Salesforceのデータを活用することで、顧客・案件に対してどの企業提案を受けているかが一目で確認でき、契約の落ちこぼれ防止ができるようになった。社内稟議申請から契約業務は二重入力・転記作業がなくなり、社会的コンプライアンスを維持しながら社員稟議と契約行為が一貫処理できるようになった。標準機能で社内稟議を受けるのに必要な機能が揃っているため、ストレスのない運用が可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "紙の書類処理",
+      "押印・承認の遅れ",
+      "業務の属人化",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "cloudsign-for-salesforce-jp-casestudy-posts-horizon-cp",
+    "title": "クラウドサイン for Salesforceで契約書作成業務を自動化し、業務負荷を軽減",
+    "summary": "レンタルサロン・貸し出し事業を展開する企業は、顧客との契約時に必要な情報収集と契約書作成に時間と手間がかかっていた。クラウドサイン for Salesforceのテンプレート機能を導入することで、顧客データの自動差し込みと契約書の完全自動生成を実現し、業務負荷を軽減した。",
+    "vendor": "cloudsign-for-salesforce.jp",
+    "product": "クラウドサイン for Salesforce",
+    "productCategory": "saas",
+    "sourceUrl": "https://cloudsign-for-salesforce.jp/casestudy/posts/horizon-cp",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "プライズコンシェルキャピタルパートナーズ株式会社",
+      "industry": "other-industry",
+      "size": "従業員100名未満",
+      "dept": "営業部門"
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "Salesforceに入力された顧客情報から契約に必要な情報を対面または郵送で得る必要があり、10種類以上の契約書作成に時間と手間がかかっていた。対面や郵送対応は顧客の負担にもなっていた。",
+    "actions": "クラウドサイン for Salesforceのテンプレート機能を利用して、Salesforceに入力された顧客データを契約書に自動差し込みする仕組みを構築。顧客ごとに契約書を作成する作業を廃止し、ワンクリックで契約締結を完了できるようにした。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "100名未満"
+      },
+      {
+        "metric": "契約書の自動生成",
+        "value": "10種類以上の契約書が完全自動化"
+      }
+    ],
+    "resultsQualitative": "完全ペーパーレス化を実現し、Salesforce上で契約書の一元管理が可能になった。対面・郵送対応が不要になり、顧客の負担も軽減された。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "手作業の転記",
+      "見積もり作成に時間",
+      "押印・承認の遅れ"
     ]
   },
   {
@@ -99899,6 +102156,48 @@
     ]
   },
   {
+    "id": "kanagawatoyota-co-jp-business-efficiency-case-study",
+    "title": "自動倉庫導入で物流業務のコスト削減と一貫生産体制を実現",
+    "summary": "パッケージ製造企業が商品管理・在庫管理の課題を抱えていた。自動倉庫とフォークリフトを導入し、1,200パレット対応の自動倉庫で一元管理を実現。物流コスト削減と顧客ファーストな一拠点一貫生産体制を構築した。",
+    "vendor": "kanagawatoyota.co.jp",
+    "product": "自動倉庫、フォークリフト",
+    "productCategory": "other-product",
+    "sourceUrl": "https://kanagawatoyota.co.jp/business/efficiency/case_study/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社横浜リテラ",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "物流・倉庫"
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "パッケージ製造における商品管理・品質管理・在庫管理の最適化が必要であり、物流業務のコスト削減を課題としていた。",
+    "actions": "自動倉庫2機とフォークリフト2台を導入し、約1,200パレット対応の自動倉庫で商品管理・在庫管理・品質管理を一元化した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "自動倉庫容量",
+        "value": "約1,200パレット"
+      },
+      {
+        "metric": "導入設備",
+        "value": "自動倉庫2機、フォークリフト2台"
+      }
+    ],
+    "resultsQualitative": "物流業務のコスト削減を実現し、顧客ファーストな一拠点一貫生産体制を構築した。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "在庫の把握不足",
+      "業務の属人化",
+      "多拠点の管理"
+    ]
+  },
+  {
     "id": "kb2-sbi-bs-co-jp-case-aetcs",
     "title": "経費精算システムとワークフロー導入で、従業員増加と法令対応に対応し業務効率化を実現",
     "summary": "電気設備工事・医療介護事業を展開する株式会社エイテクスは、従業員増加に伴う経費精算業務の負担増加と電子帳簿保存法・インボイス制度への対応が課題でした。経費精算システム「経費BANK」とワークフローシステム「承認TIME」を導入し、紙からデジタルへ移行。プロジェクト別の費用集計が可能になり、総務部の業務負担が大幅に削減され、従業員の利便性も向上しました。",
@@ -101007,6 +103306,132 @@
       "リード獲得の停滞",
       "データが分散",
       "進捗が見えない"
+    ]
+  },
+  {
+    "id": "m2soft-co-jp-case-case-a",
+    "title": "散在した学生データを統合し、証明書発行を自動化・業務効率化",
+    "summary": "外国語学校では、学生データが複数システムに分散し、証明書作成が手作業で負担が大きかった。i-MATRIXを導入してデータを一元管理し、証明書発行を自動化することで、業務効率を大幅に向上させた。",
+    "vendor": "m2soft.co.jp",
+    "product": "AUD Platform（i-MATRIX）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://m2soft.co.jp/case/case-a/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "A学校（外国語学院）",
+      "industry": "education",
+      "size": "",
+      "dept": "事務局"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "data"
+    ],
+    "challengeDetail": "学生データが出欠管理システム、学生情報など複数箇所に分散しており、各種証明書発行のたびに複数ファイルを参照する必要があった。様々なフォーマットでのデータ入力に手間と時間がかかり、発行履歴も記録されていなかった。",
+    "actions": "i-MATRIXを導入し、散在していた学生データ（基本情報、進学情報、学費支払情報、成績・出欠情報等）を一元管理できるようにした。既存のExcelフォーマットをそのままウェブ化し、ワンクリックでの自動書類発行と履歴記録を実現した。",
+    "results": [],
+    "resultsQualitative": "手作業で行っていた書類作成が自動化・システム化され、学校事務局の業務が飛躍的に楽になった。情報検索が容易になり、業務効率が大幅に向上した。学生管理も手軽になり、データの整合性が保たれるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "データが分散",
+      "手作業の転記",
+      "書類の振り分け"
+    ]
+  },
+  {
+    "id": "m2soft-co-jp-case-case-o",
+    "title": "散在したExcelファイルをシステム化し、業務コラボレーションと情報共有を実現",
+    "summary": "製薬会社の生産管理業務で、複数部門に散在するExcelファイルの管理により業務効率が低く、複数人での同時作業も困難だった。i-MATRIXでファイルを中央集中化・システム化し、リアルタイム情報共有と複数人での同時編集を実現。PDCAサイクルの短縮と業務効率性の大幅向上を達成した。",
+    "vendor": "m2soft.co.jp",
+    "product": "i-MATRIX（AUD Platform）",
+    "productCategory": "saas",
+    "sourceUrl": "https://m2soft.co.jp/case/case-o/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "O社",
+      "industry": "other-industry",
+      "size": "",
+      "dept": "生産管理部門"
+    },
+    "challenges": [
+      "efficiency",
+      "data",
+      "standardize"
+    ],
+    "challengeDetail": "複数部門に散在したExcelファイルを使用した生産管理業務が非効率で、複数人での同時共有・修正ができず、リアルタイム情報共有が困難だった。また、ファイルベースのデータ管理のため、蓄積データの二次活用や分析が難しく、基幹システムとの手作業連携によるデータ整合性の課題もあった。",
+    "actions": "i-MATRIXを導入し、散在していたExcelファイルを中央集中化・システム化した。既存のExcelフォーマットをそのままWebシステム化し、基幹システムからのCSVを自動的にデータベースに格納。複数人での同時入力・同時修正と、Webベースのリアルタイム情報共有を実現した。",
+    "results": [
+      {
+        "metric": "PDCAサイクル",
+        "value": "短縮（具体的な数値は記載なし）"
+      }
+    ],
+    "resultsQualitative": "手作業中心の繰返し業務が改善された。On-line Excelシステムによる見える化、情報共有、同時修正により業務効率性が大幅に向上。意思決定のスピードが向上し、より迅速な業務改善が可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "Excel管理の限界",
+      "データが分散",
+      "手作業の転記",
+      "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "m2soft-co-jp-case-case-p",
+    "title": "全国400組織のExcel集計をWebシステム化、事業計画業務の自動化を実現",
+    "summary": "全国約400の現場組織がExcelファイルをメール送受信して集計していた事業計画業務の非効率性が課題。i-MATRIXでExcelフォーマットをそのままWebシステム化し、データ入力を自動集計できるようにした。集計作業の自動化と業務効率の大幅向上を実現。",
+    "vendor": "m2soft.co.jp",
+    "product": "i-MATRIX（AUD Platform）",
+    "productCategory": "saas",
+    "sourceUrl": "https://m2soft.co.jp/case/case-p/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "P社（建設コンサルタント）",
+      "industry": "construction",
+      "size": "全国約400以上の現場組織",
+      "dept": "業務推進部"
+    },
+    "challenges": [
+      "efficiency",
+      "data",
+      "standardize"
+    ],
+    "challengeDetail": "全国約400以上の現場からExcelファイルを5階層の組織を通じてメール送受信・集計する膨大な手間と時間がかかり、データの整合性に欠けていた。ファイルベースのため、データの有効活用も困難だった。",
+    "actions": "i-MATRIXを導入し、既存のExcelフォーマットをそのままWebシステム化。ウェブ上でのデータ入力後、保存ボタンをクリックするだけでデータベースに自動登録される仕組みを構築した。",
+    "results": [
+      {
+        "metric": "データ集計の自動化",
+        "value": "完全自動化"
+      },
+      {
+        "metric": "業務効率",
+        "value": "大幅向上"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対象現場組織数",
+        "value": "約400以上"
+      },
+      {
+        "metric": "計画策定頻度",
+        "value": "年2回"
+      },
+      {
+        "metric": "組織階層数",
+        "value": "5階層"
+      }
+    ],
+    "resultsQualitative": "意思決定の迅速化が可能に。事業計画データをデータベースで一元管理でき、分析やシミュレーションなどデータの有効活用ができるようになった。ネットがあればどこからでもセキュアに計画作業が可能に。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "Excel管理の限界",
+      "数字の集計に時間",
+      "メール中心の連絡",
+      "データが分散"
     ]
   },
   {
@@ -106637,6 +109062,43 @@
     ]
   },
   {
+    "id": "promotion-donuts-ne-jp-case-247",
+    "title": "理系学生向け就活サイトが移動広告で認知度向上、企業・学生双方の獲得に成功",
+    "summary": "大学院生・理系学生向け就活サイト「アカリク」が、渋谷・原宿の繁華街を走行する大画面移動広告を活用し、サービス認知度の向上と企業・学生双方の獲得を実現した。",
+    "vendor": "donuts.ne.jp",
+    "product": "アドトラック",
+    "productCategory": "martech",
+    "sourceUrl": "https://promotion.donuts.ne.jp/case/247/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社アカリク",
+      "industry": "hr-service",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "sales",
+      "data"
+    ],
+    "challengeDetail": "理系学生と採用企業双方の獲得が必要な状況で、ターゲット層へのリーチと認知度向上が課題であった。",
+    "actions": "渋谷・原宿などの繁華街を走行する大画面クリエイティブ×スピーカー搭載の移動広告（アドトラック）を展開。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "実施地域",
+        "value": "渋谷・原宿の繁華街を中心とした都心部"
+      }
+    ],
+    "resultsQualitative": "会社の認知度アップと企業・学生双方の獲得に寄与した",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "リード獲得の停滞",
+      "応募が集まらない",
+      "認知度向上"
+    ]
+  },
+  {
     "id": "raksul-com-magazine-voice-morinaga",
     "title": "森永乳業、チラシ制作の属人化を解消し全国拠点での一元管理を実現",
     "summary": "森永乳業は全国の拠点でチラシ制作業務が属人化し、ナレッジ共有ができておらず、営業活動の時間が圧迫されていた。ラクスルのオンラインデザイン・印刷プラットフォームを導入することで、ブランド統制と現場の自由度を両立させ、効率的な運用体制を構築した。",
@@ -107205,6 +109667,43 @@
     ]
   },
   {
+    "id": "scsksecurity-co-jp-services-ivanti-casestudy",
+    "title": "5,000台超のPC管理に対応、セキュリティパッチを確実に適用",
+    "summary": "総合建設業の安藤・間は、5,000台超の社内PCに対するセキュリティパッチ適用をIvantiで一元管理し、確実な脆弱性対応を実現した。",
+    "vendor": "scsksecurity.co.jp",
+    "product": "Ivanti",
+    "productCategory": "other-product",
+    "sourceUrl": "https://scsksecurity.co.jp/services/ivanti/casestudy/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社安藤・間",
+      "industry": "construction",
+      "size": "従業員3,501名",
+      "dept": ""
+    },
+    "challenges": [
+      "security",
+      "efficiency"
+    ],
+    "challengeDetail": "5,000台超の社内PCへのセキュリティパッチ適用を確実に行う必要があった。",
+    "actions": "Ivantiを導入し、PCのセキュリティパッチ適用を一元管理した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象PC台数",
+        "value": "5,000台超"
+      }
+    ],
+    "resultsQualitative": "確実なセキュリティパッチ適用の実現",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "アカウント管理の煩雑さ",
+      "情報漏洩リスク",
+      "システムの乱立"
+    ]
+  },
+  {
     "id": "secureinc-co-jp-case-case05-html",
     "title": "指紋認証でストレスなくセキュリティを強化、社員の労働意欲向上を実現",
     "summary": "ラクスル株式会社は新オフィス移転時に、社員がストレスを感じない堅固なセキュリティの導入を課題としていました。セキュアの指紋認証システムを導入することで、ICカードのような煩雑な管理が不要になり、社員は認証の煩わしさから解放されつつ、高いセキュリティレベルを実現しました。",
@@ -107468,6 +109967,48 @@
       "移動時間の多さ",
       "現場と本社の往復",
       "電気代の増加"
+    ]
+  },
+  {
+    "id": "shinebright-jp-voice",
+    "title": "事業承継直後の赤字体質から3年で黒字継続へ、取締役会議の機能化で課題解決スピード向上",
+    "summary": "事業承継直後の赤字体質と経営課題の山積により経営不安が続いていた鉄筋加工業が、取締役会議の運営支援と課題解決練習を通じて、3年で黒字決算を継続し、創業家との問題もほぼ解決。経営の不安が軽減された。",
+    "vendor": "shinebright.jp",
+    "product": "課題解決コンサルティング",
+    "productCategory": "consulting",
+    "sourceUrl": "https://shinebright.jp/voice/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "T社",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "経営層"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "事業承継直後、赤字体質、創業家との問題、新役員との協力体制づくりなど問題が山積し、改善の道筋が見えない状況にあった。",
+    "actions": "取締役会議の運営支援と課題解決の練習支援を実施。新経営陣が解決策を自分たちで決め実行するまでの工程を整理した。",
+    "results": [
+      {
+        "metric": "経営状況",
+        "value": "黒字決算を継続"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "支援期間",
+        "value": "3年"
+      }
+    ],
+    "resultsQualitative": "創業家との諸問題がほぼ整理完了、金融機関との関係性が改善、顧客からの信頼が著しく向上、経営の不安が軽減、ビジョンが明確になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "業務の属人化",
+      "引き継ぎ困難",
+      "進捗が見えない"
     ]
   },
   {
@@ -108118,6 +110659,36 @@
       "アカウント管理の煩雑さ",
       "担当者不在で止まる",
       "サーバ運用の負担"
+    ]
+  },
+  {
+    "id": "social-tobutoptours-co-jp-case",
+    "title": "三次市専用AIで行政業務を効率化",
+    "summary": "三次市の行政情報を学習した専用AIを開発。行政データに基づく高い正確性により、職員の業務効率化を実現した。",
+    "vendor": "tobutoptours.co.jp",
+    "product": "行政AI",
+    "productCategory": "ai",
+    "sourceUrl": "https://social.tobutoptours.co.jp/case/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "広島県三次市",
+      "industry": "public",
+      "size": "",
+      "dept": "行政部門"
+    },
+    "challenges": [
+      "efficiency"
+    ],
+    "challengeDetail": "行政職員の業務効率化の必要性がある。",
+    "actions": "三次市の行政情報を学習した専用AIを開発し導入した。",
+    "results": [],
+    "resultsQualitative": "行政データを学習しているため正確性が高く、職員の業務効率化を実現",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "手作業の転記",
+      "問い合わせ対応の負荷",
+      "月末の残業"
     ]
   },
   {
@@ -117992,6 +120563,45 @@
     ]
   },
   {
+    "id": "www-engi-sanix-jp-voice",
+    "title": "太陽光発電PPAモデルでエネルギーコスト削減と脱炭素経営を実現",
+    "summary": "24時間稼働する工場のエネルギーコスト削減が課題だった文化堂印刷。PPAモデルの太陽光発電システムを2工場に導入し、最大電力の削減と電力ピークの時間帯シフトを実現。初期投資ゼロで脱炭素経営を推進できた。",
+    "vendor": "sanix.jp",
+    "product": "太陽光発電システム（PPAモデル）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.engi.sanix.jp/voice",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "文化堂印刷株式会社",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "sustainability"
+    ],
+    "challengeDetail": "24時間稼働する工場において、高騰するエネルギーコストが経営上の最優先課題。節約だけではゼロにできない限界があった。",
+    "actions": "PPAモデル（初期投資ゼロ）の太�leveraging光発電システムを導入。湘南第一工場に395.90kW、湘南第二工場に341.88kWのモジュール容量を設置。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "湘南第一工場モジュール容量",
+        "value": "395.90kW"
+      },
+      {
+        "metric": "湘南第二工場モジュール容量",
+        "value": "341.88kW"
+      }
+    ],
+    "resultsQualitative": "最大電力が大きく減少し、電力使用ピークが昼から日没の時間帯にシフト。パネルによる遮光で室内気温が低下し、従業員の作業環境が改善。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "電気代の増加"
+    ]
+  },
+  {
     "id": "www-esfill-co-jp-case-kenkou-clinic-php",
     "title": "読影医不足に対応、遠隔画像診断サービスで業務負荷を軽減",
     "summary": "年間12万人超の受診者を抱えるクリニックが、読影医の不足と業務量増大に対応するため遠隔画像診断サービスを導入。個人委託から組織的なサービス提供への切り替えにより、コスト削減と柔軟な対応が可能になった。",
@@ -121974,6 +124584,47 @@
     "tags": [
       "在庫の把握不足",
       "工程管理の難しさ",
+      "保管スペースの制約"
+    ]
+  },
+  {
+    "id": "www-goriki-jp-casestudy-1504",
+    "title": "加工前材料と端材の保管効率を向上させるラック導入",
+    "summary": "製造業の顧客が、異なるサイズの材料保管と分散していた端材の置き場課題を抱えていた。ピッカー500ラック2台と立掛けラックを導入し、未活用だった上部空間を活用して保管スペースを集約した。",
+    "vendor": "goriki.jp",
+    "product": "ピッカー500（中量用）、立掛けラック",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.goriki.jp/casestudy/1504/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "A社",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "既存ラックの未活用空間があり、異なるサイズの材料の保管効率が低い。また加工後の端材が各所に分散して置かれており、保管場所が定まっていない状態だった。",
+    "actions": "ピッカー500ラック2台を追加導入し、上部空間を有効活用できる設計に変更。さらに事務所下スペースに立掛けラックを導入し、分散していた端材を一箇所に集約した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "納品機種台数",
+        "value": "2台"
+      },
+      {
+        "metric": "ラックサイズ",
+        "value": "H1800×L1500×S1250"
+      }
+    ],
+    "resultsQualitative": "保管体制の改善、保管場所の明確化、作業性の向上が期待される",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "在庫の把握不足",
+      "情報が分散",
       "保管スペースの制約"
     ]
   },
@@ -126667,6 +129318,47 @@
       "業務の属人化",
       "手作業の転記",
       "勤怠管理の手間"
+    ]
+  },
+  {
+    "id": "www-itscom-co-jp-forbiz-case-01-php",
+    "title": "LINEで完結する無人運営システムで、顧客の自走率を大幅向上",
+    "summary": "コワーキングスペース運営の課題として、無人形態での顧客サポート負担がありました。LINE完結のConnected Space Shareを導入し、予約から決済・鍵操作まで顧客が自走できるシステムを実現。問い合わせが劇的に減り、自走率が大幅に向上しました。",
+    "vendor": "itscom.co.jp",
+    "product": "Connected Space Share（CSS）",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.itscom.co.jp/forbiz/case-01.php",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "チルワーク合同会社",
+      "industry": "other-industry",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "無人形態のコワーキングスペース運営において、顧客サポート負担が大きく、また顧客が自走できるシステムが必要でした。予約・決済・鍵操作などのプロセスを顧客が迷わずに完結できる仕組みが課題でした。",
+    "actions": "LINE完結のConnected Space Shareを導入し、予約から決済、鍵操作までをLINEのみで完結できるシステムを構築。また照明デバイスも連携させ、予約時間終了時に自動で消灯する仕組みを実装しました。",
+    "results": [
+      {
+        "metric": "問い合わせ件数",
+        "value": "劇的に削減"
+      },
+      {
+        "metric": "顧客の自走率",
+        "value": "大幅に向上"
+      }
+    ],
+    "resultsQualitative": "顧客が迷わずに予約から決済までLINEで完結でき、問い合わせが劇的に減少。ほぼ無人形態のコワーキングスペース運営が実現でき、顧客の自走率が大幅に向上した。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "問い合わせ対応の負荷",
+      "一次対応の属人化",
+      "電話・FAX中心"
     ]
   },
   {
@@ -140241,6 +142933,53 @@
     ]
   },
   {
+    "id": "www-necap-co-jp-service-pit-case-fujiyakuhin-html",
+    "title": "複数事業・拠点のIT資産管理を一元化し、重複購買や無駄を削減",
+    "summary": "医薬品製造販売企業が約7,000台のPC等IT資産を複数拠点で分散管理していたため、重複購買や廃棄タイミングの統制が困難だった。NECキャピタルソリューションのITAMサービスでIT資産とライセンスを統一管理し、LCM設計から運用ルール整備を実施。経営層も全体を把握・コントロールできるようになり、予算計上も適切になった。",
+    "vendor": "necap.co.jp",
+    "product": "ITAMサービス",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.necap.co.jp/service/pit/case/fujiyakuhin.html",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社可山製薬",
+      "industry": "medical",
+      "size": "従業員約1,300名の営業拠点と約300名の医療用医薬品事業部など",
+      "dept": "情報システム統括部"
+    },
+    "challenges": [
+      "cost",
+      "data",
+      "standardize"
+    ],
+    "challengeDetail": "複数の事業部・拠点でIT資産を個別に管理していたため、廃棄タイミングの統制が難しく、重複購買や無駄が発生していた。また、IT資産とライセンスの状況把握が困難で、混在状態にあった。",
+    "actions": "NECキャピタルソリューションのITAMサービスを導入し、IT資産の現状可視化、LCM（Life Cycle Management）設計、個別ルール設定、調査方法の見直しと運用体制整備を実施。全国の事業所・店舗とのやり取りを一元管理し、キープリストと端末展開を実施した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "管理対象IT資産",
+        "value": "PC約7,000台、キャッシュレスレジスタ約3,000台、その他機器多数"
+      },
+      {
+        "metric": "対象従業員",
+        "value": "営業拠点約1,300名、医療用医薬品事業部約300名"
+      },
+      {
+        "metric": "導入期間",
+        "value": "2018年度から2019年度"
+      }
+    ],
+    "resultsQualitative": "経営層も含めて全体をコントロールできるようになった。予算計上が適切になり、若手スタッフの育成にも活用されるようになった。必要な予算を計画に基づいて適切に立てられるようになり、コスト予測ができるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "多拠点の管理",
+      "データが分散",
+      "システムの乱立",
+      "在庫の把握不足"
+    ]
+  },
+  {
     "id": "www-nhs-co-jp-sap-cases",
     "title": "三菱電機エンジニアリング、SAP S/4HANA全社導入で電子承認と電帳法対応を同時実現",
     "summary": "SAP S/4HANA新規導入と同時に、Speed-I/WFにより全社主要部門の承認を電子化。さらにPaplesの電帳法対応機能と連携させることで、承認と同時に電帳法に対応した帳票保存が完結できる理想的なWF環境を実現した。",
@@ -143832,6 +146571,153 @@
     ]
   },
   {
+    "id": "www-onesource-co-jp-case-bank",
+    "title": "大手都市銀行が法人営業向けビジネスデータベースを採用",
+    "summary": "大手都市銀行の法人営業部門が、海外非上場企業を含む豊富なデータベースと操作性の良さを評価し、OneSource（D&B Hoovers）を導入。マニュアルレスで利用でき、全上場企業のアナリストレポート収録が活用されている。",
+    "vendor": "onesource.co.jp",
+    "product": "D&B Hoovers / OneSource",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.onesource.co.jp/case/bank/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "大手都市銀行",
+      "industry": "finance",
+      "size": "",
+      "dept": "法人営業部門"
+    },
+    "challenges": [
+      "data",
+      "efficiency"
+    ],
+    "challengeDetail": "法人営業活動に必要な企業情報の取得と、効率的な情報検索・分析。",
+    "actions": "世界最大級のビジネスデータベース（D&B Hoovers）を導入。海外非上場企業を含む豊富な企業データと全上場企業のアナリストレポートを利用可能にし、マニュアルレスで使える操作性の良さを活用。",
+    "results": [],
+    "resultsQualitative": "希望する海外非上場企業のデータ取得が可能になり、時間のない担当者でもマニュアルなしで利用できるようになった。全上場企業のアナリストレポートが参照できるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "名刺情報の死蔵",
+      "リード獲得の停滞",
+      "追客の漏れ",
+      "情報共有の遅れ"
+    ]
+  },
+  {
+    "id": "www-onesource-co-jp-case-case",
+    "title": "海外取引企業の財務情報取得コストを削減、営業・購買用途にも拡大",
+    "summary": "大手総合商社は海外取引企業の財務諸表取得に年間数千件、莫大なコストを費やしていた。D&B Hooversを導入し、企業情報を無制限に取得できる環境を構築。レポート取得コストの削減と時間短縮を実現し、用途を与信管理から営業・購買にも拡大した。",
+    "vendor": "onesource.co.jp",
+    "product": "D&B Hoovers (OneSource)",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.onesource.co.jp/case/case/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "finance",
+      "size": "大企業",
+      "dept": "与信管理、営業、購買"
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "海外取引企業の財務諸表取得のため年間数千件のレポートを購入しており、1件30,000～50,000円のコストが莫大な負担になっていた。また取得に手間がかかっていた。",
+    "actions": "D&B Hooversを導入し、企業情報を無制限に取得できるデータベース環境を構築した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "年間レポート取得件数",
+        "value": "数千件"
+      },
+      {
+        "metric": "データベースカバー率",
+        "value": "70～80%"
+      }
+    ],
+    "resultsQualitative": "レポート取得コストが格段に下がり、時間も削減された。与信管理のみならず営業・購買用途にも利用範囲が拡大した。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "数字の集計に時間",
+      "見積もり作成に時間",
+      "データが分散"
+    ]
+  },
+  {
+    "id": "www-onesource-co-jp-case-case2",
+    "title": "サプライチェーン構築を数ヶ月から数時間に短縮、BCP対応を強化",
+    "summary": "大手製造業がサプライチェーンの分断に対応するため、OneSourceで東南アジアの電子部品メーカーをリスト化。数ヶ月かかっていたサプライヤーロングリスト作成を数時間で完了し、複数拠点での利用により時間短縮と業務改善を実現。",
+    "vendor": "onesource.co.jp",
+    "product": "OneSource（D&B Hoovers）",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.onesource.co.jp/case/case2/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "manufacturing",
+      "size": "一部上場企業",
+      "dept": "サプライチェーン・BCP部門"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "東日本大震災やタイの洪水によるサプライチェーン分断の懸念があり、BCP対策が急務であった。特定地域の供給元企業情報を効率的に収集・管理する必要があった。",
+    "actions": "OneSourceの企業リスト作成機能を活用して、東南アジアの電子部品メーカーをデータベース化。複数の海外拠点に展開し、本社経由を経さない各法人での独立した情報調査を可能にした。",
+    "results": [
+      {
+        "metric": "サプライヤーロングリスト作成時間",
+        "value": "数ヶ月→数時間"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "利用拠点数",
+        "value": "複数の海外拠点"
+      }
+    ],
+    "resultsQualitative": "BCP対策用の強力なツールの確保、現法での独立した情報調査が可能となり、さらなる時間短縮と業務改善を実現",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "データが分散",
+      "多拠点の管理",
+      "協力会社との連携"
+    ]
+  },
+  {
+    "id": "www-onesource-co-jp-case-case3",
+    "title": "大手リース会社が海外投融資の企業情報調査をOneSourceで効率化",
+    "summary": "海外拠点での投融資に際し、企業情報収集に時間がかかり情報精度にばらつきがあった。D&B Hooverのビジネスデータベース「OneSource」を導入し、多くの非上場企業情報を事前確認できるようにしたことで、レポート作成の効率化と精度向上を実現した。",
+    "vendor": "onesource.co.jp",
+    "product": "D&B Hoovers（OneSource）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.onesource.co.jp/case/case3/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "大手リース会社",
+      "industry": "finance",
+      "size": "一部上場企業",
+      "dept": "投融資部門"
+    },
+    "challenges": [
+      "efficiency",
+      "data",
+      "quality"
+    ],
+    "challengeDetail": "海外拠点での投融資レポート作成において、経営者訪問やインターネット検索のみに依存していたため時間がかかり、誤った情報が含まれることがあった。",
+    "actions": "D&B Hooverのビジネスデータベース「OneSource」を導入し、企業レポート作成時にまず同データベースで情報を確認した上で、より深い情報収集を行うプロセスに変更した。",
+    "results": [],
+    "resultsQualitative": "レポート作成プロセスが効率化され、より正確な情報に基づいた迅速な投融資判断が可能になった。非上場企業の豊富な情報カバレッジにより、海外での投融資判断がスムーズになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "情報共有の遅れ",
+      "データが分散",
+      "リアルタイムに把握できない"
+    ]
+  },
+  {
     "id": "www-onesource-co-jp-case-cdi",
     "title": "戦略ファームが定性調査を効率化、複数データベースをD&B Hooversに統一",
     "summary": "戦略コンサルティング企業が、複数のデータベース管理の煩雑さを抱えていた。世界中のニュース・記事・財務情報を一括検索できるD&B Hooversを導入し、企業のポジショニング分析に必要な定性調査を時系列で効率的に実施できるようになった。",
@@ -143874,6 +146760,91 @@
       "データが分散",
       "システムの乱立",
       "情報共有の遅れ"
+    ]
+  },
+  {
+    "id": "www-onesource-co-jp-case-hiroshima-u",
+    "title": "海外企業分析に必要な包括的なビジネスデータベースの導入",
+    "summary": "広島大学大学院国際協力研究科では、アジア地域の企業分析に必要な海外企業データが不足していた。OneSourceを導入することで、複数のデータベースを統合した包括的な企業情報を英語で取得でき、留学生による企業のマイクロ分析が可能になった。",
+    "vendor": "onesource.co.jp",
+    "product": "OneSource（D&B Hoovers）",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.onesource.co.jp/case/hiroshima_u/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "広島大学大学院国際協力研究科",
+      "industry": "education",
+      "size": "",
+      "dept": "国際協力研究科"
+    },
+    "challenges": [
+      "data"
+    ],
+    "challengeDetail": "海外企業の包括的なビジネスデータベースが不足していた。個別企業情報の調査やCD-ROMでの対応では、特定項目の情報を効率的に抽出できなかった。",
+    "actions": "複数のデータベースを統合したOneSourceを導入し、アジア地域企業の財務・企業分析データを英語で提供できる環境を整備した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象地域",
+        "value": "インドネシア、バングラデシュ、ラオス、ベトナム、中国、スリランカなど複数国"
+      }
+    ],
+    "resultsQualitative": "留学生が企業ベースのマイクロ分析を実施可能になり、卒業後の政府政策立案や投資インセンティブの検討に活用される知見が得られるようになった。英語対応により留学生の利便性が向上し、ID追加が安価な点も利点。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "データが分散",
+      "リアルタイムに把握できない",
+      "情報共有の遅れ"
+    ]
+  },
+  {
+    "id": "www-onesource-co-jp-case-skylight",
+    "title": "海外進出支援コンサルティングにおける企業・市場情報の効率的な調査",
+    "summary": "コンサルティング企業が、海外進出案件で企業概要や市場動向の調査に時間を要していた。D&B Hooversの統一形式のレポートと企業リスト作成機能を活用し、調査・集計・分析コストを低減した。",
+    "vendor": "onesource.co.jp",
+    "product": "D&B Hoovers",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.onesource.co.jp/case/skylight/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "スカイライトコンサルティング株式会社",
+      "industry": "other-industry",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "data"
+    ],
+    "challengeDetail": "海外進出案件において、企業概要や事業展開方針、市場動向の調査に時間を要していた。複数の競合企業情報を比較・集計する際のコストが課題であった。",
+    "actions": "D&B Hooversを導入し、統一形式のビジネスレポートと企業リスト作成機能を活用。国・地域・産業・売上規模などで簡単にフィルタリングしたリストを作成できるようにした。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "産業レポート収録数",
+        "value": "約4万件（200カ国200産業分）"
+      },
+      {
+        "metric": "企業情報データベース",
+        "value": "4000万社"
+      },
+      {
+        "metric": "人物情報データベース",
+        "value": "4900万人"
+      },
+      {
+        "metric": "対応産業数",
+        "value": "615産業"
+      }
+    ],
+    "resultsQualitative": "調査・集計・分析コストが低減。競合企業との比較・傾向把握が容易になった。顧客訪問前の事前情報収集が効率化され、お客様への的確なコンサルティングサービス提供が可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "数字の集計に時間",
+      "データが分散",
+      "リアルタイムに把握できない"
     ]
   },
   {
@@ -143953,6 +146924,46 @@
       "情報共有の遅れ",
       "連絡手段の乱立",
       "対応履歴が残らない"
+    ]
+  },
+  {
+    "id": "www-opt-ne-jp-casestudy-268",
+    "title": "オルビスがマーケティングインハウス化で新規顧客接点を大幅拡大、社内にマーケティング意識が浸透",
+    "summary": "化粧品ブランドのオルビスは、顧客ニーズへの対応スピードが課題だったため、オプトの支援を受けてデジタル広告運用をインハウス化。CPAを抑制しながら新規顧客との接点を大きく伸ばし、社内全体にマーケティング意識が浸透した。",
+    "vendor": "opt.ne.jp",
+    "product": "インハウス支援",
+    "productCategory": "consulting",
+    "sourceUrl": "https://www.opt.ne.jp/casestudy/268/",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "オルビス株式会社",
+      "industry": "other-industry",
+      "size": "",
+      "dept": "新規戦略部"
+    },
+    "challenges": [
+      "efficiency",
+      "data"
+    ],
+    "challengeDetail": "2020年頃から新規顧客との接点が減少し、急速に変化する顧客ニーズへのスピーディな対応が課題だった。",
+    "actions": "オプトによるマーケティングインハウス化支援を実施。デジタル広告運用の媒体活用方法、アカウント構成、PDCAの回し方、ティーチング・コーチング、勉強会などを多面的に支援。",
+    "results": [
+      {
+        "metric": "CPA",
+        "value": "抑制"
+      },
+      {
+        "metric": "新規顧客との接点",
+        "value": "大きく伸ばす"
+      }
+    ],
+    "resultsQualitative": "社内全体にマーケティング意識が浸透し、新規メンバーからもインハウス広告運用への参画希望が出るようになった。数字とシビアに向き合う姿勢が組織に定着した。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "リード獲得の停滞",
+      "追客の漏れ",
+      "顧客ニーズへの対応遅れ"
     ]
   },
   {
@@ -146237,6 +149248,43 @@
       "老朽化したシステム",
       "システムの乱立",
       "情報漏洩リスク"
+    ]
+  },
+  {
+    "id": "www-s-line0413-co-jp-reason-voice-html",
+    "title": "マンション共有通路の清掃ムラを高圧洗浄で解決",
+    "summary": "マンション管理会社が共有通路の清掃ムラに悩んでいた。2ヶ月に1回の高圧洗浄機による定期清掃を導入することで、清掃ムラがなくなり均一できれいな状態を維持できるようになった。",
+    "vendor": "s-line0413.co.jp",
+    "product": "高圧洗浄による定期清掃サービス",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.s-line0413.co.jp/reason/voice.html",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "文京区　管理会社様",
+      "industry": "other-industry",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "quality",
+      "standardize"
+    ],
+    "challengeDetail": "既存の清掃会社による共有通路の清掃にムラが発生していた。業者に相談しても改善されず、対応に不満を感じていた。",
+    "actions": "2ヶ月に1回の高圧洗浄機による定期清掃を導入した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "清掃頻度",
+        "value": "2ヶ月に1回"
+      }
+    ],
+    "resultsQualitative": "高圧洗浄法により清掃ムラがなくなり、均一で継続的にきれいな状態を維持できるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "検査の目視頼み",
+      "品質のばらつき",
+      "協力会社との連携"
     ]
   },
   {
@@ -149359,6 +152407,43 @@
     ]
   },
   {
+    "id": "www-sii-co-jp-wsn-example-case-co2-html",
+    "title": "製造ラインのエネルギー使用量を可視化しCO2原単位を算出",
+    "summary": "製造企業がカーボンニュートラル実現とコスト削減を目指し、製造ラインごとに電力量モニタと流量計を設置。電力・エネルギー使用量をリアルタイムで可視化することで、CO2原単位の把握と省エネ対策の実施を実現した。",
+    "vendor": "sii.co.jp",
+    "product": "無線センサネットワーク「ミスター省エネ」",
+    "productCategory": "iot",
+    "sourceUrl": "https://www.sii.co.jp/wsn/example/case-co2.html",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "sustainability",
+      "cost",
+      "data"
+    ],
+    "challengeDetail": "カーボンニュートラルに向けてCO2原単位を可視化する必要があり、サプライチェーン排出量開示のため自社CO2総量の特定が求められていた。また製造ラインごとのエネルギー使用量を把握し省エネにつなげたかった。",
+    "actions": "製造ラインごとに電力量モニタと電力モニタノードを設置して使用電力量を可視化し、水量・蒸気・ガスなど各種流量計とIOノードを組み合わせて電力以外のエネルギー使用量も可視化した。",
+    "results": [
+      {
+        "metric": "コスト削減",
+        "value": "達成"
+      }
+    ],
+    "resultsQualitative": "製造ラインごとに電力・エネルギー使用量をリアルタイムで可視化することで無駄を発見し、省エネ対策を実施。CO2原単位と自社排出CO2総量の算出に成功。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "リアルタイムに把握できない",
+      "データが分散",
+      "数字の集計に時間"
+    ]
+  },
+  {
     "id": "www-skycom-jp-casestudy-skypdf-dai-ichi-life",
     "title": "保全手続き業務のデジタル化で顧客利便性と事務工数削減を同時実現",
     "summary": "第一生命保険は、紙ベースの保全手続き業務で記入漏れ、データ入力コスト、タイムラグなどの課題を抱えていた。SkyPDFのペーパーレス・電子サインソリューションを導入し、タブレット端末での手書きサインと部品化された帳票により、お客様の手続き時間短縮と書類不備削減、後続事務の省略効果を実現した。",
@@ -149486,6 +152571,52 @@
       "請求処理に時間",
       "紙の書類処理",
       "数字の集計に時間"
+    ]
+  },
+  {
+    "id": "www-smfl-co-jp-asp-introduction-interview01-html",
+    "title": "店舗急増に対応した固定資産管理のシステム化と複数会計基準対応",
+    "summary": "チョコレート菓子の製造販売を手掛けるゴディバ ジャパン株式会社は、店舗数の急増に伴う固定資産の管理課題に直面していた。総合資産管理サービスASPを導入し、8,000件超の多種多様な固定資産をシステムで一元管理するとともに、日本国内会計基準とIFRSの双方に対応させることで、業務の効率化とヒューマンエラー削減を実現した。",
+    "vendor": "smfl.co.jp",
+    "product": "総合資産管理サービスASP",
+    "productCategory": "accounting",
+    "sourceUrl": "https://www.smfl.co.jp/asp/introduction/interview01.html",
+    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "customer": {
+      "name": "ゴディバ ジャパン株式会社",
+      "industry": "food",
+      "size": "直営店350店舗",
+      "dept": "管理本部 ファイナンス部"
+    },
+    "challenges": [
+      "efficiency",
+      "data",
+      "standardize"
+    ],
+    "challengeDetail": "店舗数の急増に伴い固定資産が増加し、従来の表計算ソフトでの管理では対応困難になっていた。また、IFRS対応が必要となる中で、複数の会計基準への対応を効率的に行う仕組みが必要だった。",
+    "actions": "総合資産管理サービスASPを導入し、8,000件超の固定資産を一元管理するシステムを構築。データの一括登録機能や帳票自動作成機能を活用し、日本国内会計基準とIFRS双方の対応設定を行った。eLTAX（地方税ポータルシステム）連携による電子申告も実現。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "登録資産件数",
+        "value": "8,000件超"
+      },
+      {
+        "metric": "導入時期",
+        "value": "2011年から"
+      },
+      {
+        "metric": "直営店舗数",
+        "value": "約350店舗"
+      }
+    ],
+    "resultsQualitative": "地方税納税手続きを紙書類からCSV電子申告へ移行。店舗間の資産移動や廃却対応の処理が簡素化され、業務負担が軽減。会計と税務の双方の計算を同一システムで管理することでヒューマンエラーが低減。資産番号の検索や廃却予定資産の簿価自動計算が可能になり、関係者への情報共有が迅速化。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "Excel管理の限界",
+      "データが分散",
+      "手作業の転記"
     ]
   },
   {
