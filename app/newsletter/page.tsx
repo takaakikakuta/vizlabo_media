@@ -7,7 +7,7 @@ import SubscribeForm from "../../components/SubscribeForm";
 /* メルマガのLP。何が届くかを「創刊号のプレビュー」として実データで見せ、購読につなげる。 */
 
 export const metadata = {
-  title: "メルマガ「週刊 事例ナビ」",
+  title: "メルマガ「週刊 事例マニア」",
   description: "毎週金曜配信。事例セレクション5本と、note連載「この事例がスゴイ」「事例コラム」をメールでお届けします。",
 };
 
@@ -31,7 +31,7 @@ export default function NewsletterPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-5 py-12">
-      <ListHead eyebrow="メルマガ" title="週刊 事例ナビ"
+      <ListHead eyebrow="メルマガ" title="週刊 事例マニア"
         sub={`毎週金曜配信・5分で読める。${s.total}件の事例から書いた事例セレクション5本と、note連載「この事例がスゴイ」「事例コラム」を届けます。`} />
 
       {/* 内容を説明してから、末尾のフォームで登録してもらう（フォームは先に出さない） */}
@@ -42,7 +42,7 @@ export default function NewsletterPage() {
         {/* メールのモック */}
         <div className="border-2 border-ink">
           <div className="border-b border-line bg-soft px-5 py-3 text-[11.5px] text-muted">
-            件名：<span className="font-bold text-ink">【週刊 事例ナビ】{latest[0]?.title.join("")}、ほか</span>
+            件名：<span className="font-bold text-ink">【週刊 事例マニア】{latest[0]?.title.join("")}、ほか</span>
           </div>
           <div className="space-y-7 px-5 py-6">
             <div>

@@ -37,7 +37,7 @@ export async function sendMail(subject: string, text: string, to?: string): Prom
     body: JSON.stringify({
       from: {
         email: process.env.MAIL_FROM_EMAIL || "vizlabo@update",
-        name: process.env.MAIL_FROM_NAME || "事例ナビ",
+        name: process.env.MAIL_FROM_NAME || "事例マニア",
       },
       to: to || process.env.CONTACT_TO,
       subject,

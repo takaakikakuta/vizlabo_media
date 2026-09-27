@@ -133,7 +133,7 @@ export function buildSuggestMail(url: string, p: CompanyProfile, s: Suggestions)
     return `■ ${c.title}\n  ${c.customer.name || "導入企業非公開"}（${industryLabel(c.customer.industry)}）${stat}\n  ${SITE}/cases/${c.id}`;
   };
   const parts = [
-    "事例naviをご利用いただきありがとうございます。",
+    "事例マニアをご利用いただきありがとうございます。",
     `ご入力いただいたサイト（${url}）をAIが拝見し、`,
     `「${p.summary}」と理解しました。掲載${allCases().length}件の事例から、貴社に近いものをお送りします。`,
     "",
@@ -155,7 +155,7 @@ export function buildSuggestMail(url: string, p: CompanyProfile, s: Suggestions)
     "※本メールはご入力いただいたアドレスに1回だけお送りしています。",
     "※内容へのご質問・配信のご要望は、このメールへの返信でどうぞ。",
     "",
-    "BtoB導入事例メディア「事例navi」",
+    "BtoB導入事例メディア「事例マニア」",
   );
   return parts.join("\n");
 }

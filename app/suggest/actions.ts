@@ -36,10 +36,10 @@ export async function submitSuggest(_prev: SuggestState, fd: FormData): Promise<
     }
 
     if (mailConfigured()) {
-      await sendMail("【事例navi】貴社に近い導入事例をお送りします", buildSuggestMail(url, profile, suggestions), email);
+      await sendMail("【事例マニア】貴社に近い導入事例をお送りします", buildSuggestMail(url, profile, suggestions), email);
       // 管理者にもリードとして通知
       await sendMail(
-        `【事例navi/URLサジェスト】${email}`,
+        `【事例マニア/URLサジェスト】${email}`,
         [
           "URLサジェスト機能が利用されました。",
           `【メール】${email}`,

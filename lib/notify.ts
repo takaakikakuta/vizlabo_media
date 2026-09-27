@@ -24,7 +24,7 @@ export async function notifyContact(input: ContactInput): Promise<NotifyResult> 
   if (!mailConfigured()) return logOnly("contact", input);
 
   const text = [
-    "事例ナビのお問い合わせフォームから送信がありました。",
+    "事例マニアのお問い合わせフォームから送信がありました。",
     "----------------------------",
     `【ご用件】${topicLabel(input.topic)}`,
     `【会社名】${input.company}`,
@@ -38,7 +38,7 @@ export async function notifyContact(input: ContactInput): Promise<NotifyResult> 
     "----------------------------",
   ].join("\n");
 
-  await sendMail(`【事例ナビ/${topicLabel(input.topic)}】${input.company} ${input.name}様`, text);
+  await sendMail(`【事例マニア/${topicLabel(input.topic)}】${input.company} ${input.name}様`, text);
   return { delivered: true };
 }
 
@@ -53,7 +53,7 @@ export async function notifyInquiry(input: InquiryInput): Promise<NotifyResult> 
     : input.articleSlug || "-";
 
   const text = [
-    "事例ナビの「この記事のサービスすべてに問い合わせる」から送信がありました。",
+    "事例マニアの「この記事のサービスすべてに問い合わせる」から送信がありました。",
     "----------------------------",
     `【出発点の記事】${articleLine}`,
     `【対象サービス】${input.services.length}件`,
@@ -67,7 +67,7 @@ export async function notifyInquiry(input: InquiryInput): Promise<NotifyResult> 
     "----------------------------",
   ].join("\n");
 
-  await sendMail(`【事例ナビ/一括問い合わせ】${input.company} ${input.name}様（${input.services.length}サービス）`, text);
+  await sendMail(`【事例マニア/一括問い合わせ】${input.company} ${input.name}様（${input.services.length}サービス）`, text);
   return { delivered: true };
 }
 
@@ -77,7 +77,7 @@ export async function notifySubscribe(email: string, source: string): Promise<No
   if (!mailConfigured()) return logOnly("newsletter", { email, source });
 
   const text = [
-    "事例ナビのメルマガ購読フォームから登録がありました。",
+    "事例マニアのメルマガ購読フォームから登録がありました。",
     "----------------------------",
     `【メールアドレス】${email}`,
     `【登録元】${source}`,
@@ -86,6 +86,6 @@ export async function notifySubscribe(email: string, source: string): Promise<No
     "※購読者リストは未整備。このメールが登録記録です。",
   ].join("\n");
 
-  await sendMail(`【事例ナビ/メルマガ登録】${email}`, text);
+  await sendMail(`【事例マニア/メルマガ登録】${email}`, text);
   return { delivered: true };
 }

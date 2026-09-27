@@ -8,7 +8,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
-const SITE_NAME = "事例ナビ";
+const SITE_NAME = "事例マニア";
 
 export const metadata: Metadata = {
   title: { default: `${SITE_NAME}｜課題から探すBtoB導入事例`, template: `%s｜${SITE_NAME}` },
@@ -95,7 +95,7 @@ function SiteFooter() {
         {/* メルマガ＝読者を自分の資産にする導線。全ページの足元に置く */}
         <div className="mb-10 flex flex-wrap items-end justify-between gap-6 border-b border-line pb-10">
           <div className="max-w-md">
-            <p className="font-display text-[17px] text-ink">週刊 事例ナビ</p>
+            <p className="font-display text-[17px] text-ink">週刊 事例マニア</p>
             <p className="mt-1.5 text-[12px] leading-relaxed">
               毎週金曜配信。事例セレクション5本と、note連載「この事例がスゴイ」「事例コラム」を届けます。
             </p>

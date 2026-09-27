@@ -8,7 +8,7 @@ import { ListHead } from "../../components/CaseGrid";
 
 export const metadata: Metadata = {
   title: "まとめて問い合わせ",
-  description: "記事に登場したサービスの提供企業へ、事例ナビ編集部がまとめてお取り次ぎします。",
+  description: "記事に登場したサービスの提供企業へ、事例マニア編集部がまとめてお取り次ぎします。",
 };
 
 /* 記事に登場したサービスへの一括問い合わせ。?a=<記事slug> で対象記事を受け取り、

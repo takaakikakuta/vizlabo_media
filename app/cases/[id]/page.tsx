@@ -211,7 +211,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
       {/* メルマガ（読者向けの最後のコンバージョン）。入力はさせず、内容説明つきの登録ページへ渡す */}
       <div className="mt-10 border-y-2 border-ink py-9">
         <div className="mx-auto max-w-xl text-center">
-          <p className="label">週刊 事例ナビ</p>
+          <p className="label">週刊 事例マニア</p>
           <h2 className="font-display mt-3 text-[19px] leading-[1.6] text-ink">
             こうした解決事例を、週1回メールで
           </h2>

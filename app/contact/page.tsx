@@ -6,7 +6,7 @@ import ContactForm from "../../components/ContactForm";
 export const metadata = {
   title: "掲載のお問い合わせ",
   description:
-    "自社の導入事例を事例ナビに掲載したい企業さま向けの窓口です。掲載のご依頼、事例制作のご相談、掲載内容の修正・削除のご依頼を受け付けています。",
+    "自社の導入事例を事例マニアに掲載したい企業さま向けの窓口です。掲載のご依頼、事例制作のご相談、掲載内容の修正・削除のご依頼を受け付けています。",
 };
 
 export default async function ContactPage({ searchParams }:

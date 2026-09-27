@@ -44,7 +44,7 @@ export default function SuggestPage() {
           </div>
           <div>
             <dt className="font-bold text-ink">入力した情報はどう扱われますか？</dt>
-            <dd className="mt-1 text-body">サジェストの生成と、事例naviからのご案内以外には使用しません。</dd>
+            <dd className="mt-1 text-body">サジェストの生成と、事例マニアからのご案内以外には使用しません。</dd>
           </div>
         </dl>
       </section>
