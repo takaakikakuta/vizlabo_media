@@ -45,8 +45,8 @@ function facetKey(c: CaseStudy): string {
   ].join(" ");
 }
 
-/* 検索窓（CaseSearch）が照合する索引文字列。行に埋め込んでクライアントで絞る */
-function searchKey(c: CaseStudy): string {
+/* 検索用の索引文字列。/cases のサーバー絞り込みでも使う */
+export function searchKey(c: CaseStudy): string {
   return [
     c.title, c.summary, c.product, c.customer.name, c.vendor,
     industryLabel(c.customer.industry), productLabel(c.productCategory),
