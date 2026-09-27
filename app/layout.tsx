@@ -4,6 +4,7 @@ import Link from "next/link";
 import "./globals.css";
 import { siteStats } from "../lib/cases";
 import { Mail, PenLine, FilePlus2 } from "lucide-react";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
@@ -22,6 +23,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
+        {/* vizlabo本体と同じGTMコンテナ。分けたくなったらIDを差し替える */}
+        <GoogleTagManager gtmId="GTM-MHP5FFXB" />
       </body>
     </html>
   );
