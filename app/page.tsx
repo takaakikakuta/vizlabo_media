@@ -99,20 +99,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── AI事例サジェストへの入口バナー（ヒーロー直下・全幅の帯） ── */}
+      {/* ── AI事例サジェストへの入口バナー（ヒーロー直下）。
+           public/ai_suggest.png を置けば画像バナーに自動で切り替わる ── */}
       <section className="mx-auto max-w-6xl px-5 pt-10">
-        <Link href="/suggest"
-          className="group flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-2 border-ink bg-ink px-6 py-5 no-underline transition hover:bg-white sm:px-8">
-          <div className="min-w-0">
-            <p className="text-[10.5px] font-bold tracking-[.2em] text-white/60 group-hover:text-muted">AI事例サジェスト（無料）</p>
-            <p className="font-display mt-1.5 text-[17px] leading-snug text-white group-hover:text-ink sm:text-[20px]">
-              貴社のURLを入れるだけ。AIが「同じ業界・同じ困りごと」の事例を選んでメールで届けます
-            </p>
-          </div>
-          <span className="shrink-0 border border-white px-5 py-2.5 text-[13px] font-bold text-white transition group-hover:border-ink group-hover:text-ink">
-            試してみる →
-          </span>
-        </Link>
+        {fs.existsSync(path.join(process.cwd(), "public", "ai_suggest.png")) ? (
+          <Link href="/suggest" aria-label="AI事例サジェスト（無料）"
+            className="block no-underline transition hover:opacity-90">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/ai_suggest.png" alt="AI事例サジェスト：貴社のURLを入れるだけで、似た事例をメールでお届け"
+              className="h-auto w-full border border-line" />
+          </Link>
+        ) : (
+          <Link href="/suggest"
+            className="group flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-2 border-ink bg-ink px-6 py-5 no-underline transition hover:bg-white sm:px-8">
+            <div className="min-w-0">
+              <p className="text-[10.5px] font-bold tracking-[.2em] text-white/60 group-hover:text-muted">AI事例サジェスト（無料）</p>
+              <p className="font-display mt-1.5 text-[17px] leading-snug text-white group-hover:text-ink sm:text-[20px]">
+                貴社のURLを入れるだけ。AIが「同じ業界・同じ困りごと」の事例を選んでメールで届けます
+              </p>
+            </div>
+            <span className="shrink-0 border border-white px-5 py-2.5 text-[13px] font-bold text-white transition group-hover:border-ink group-hover:text-ink">
+              試してみる →
+            </span>
+          </Link>
+        )}
       </section>
 
       {/* ── バナー：note連載への入口。画像は public/banner/note.png を置くだけで反映（4:1、1600×400px推奨）。
