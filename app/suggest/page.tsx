@@ -1,6 +1,10 @@
+import Link from "next/link";
 import { siteStats } from "../../lib/cases";
+import { industryLabel } from "../../lib/taxonomy";
+import { matchCases } from "../../lib/suggest";
 import { ListHead } from "../../components/CaseGrid";
 import SuggestForm from "../../components/SuggestForm";
+import type { CaseStudy } from "../../lib/types";
 
 /* URLサジェストの専用LP。トップのバナーと記事内の枠から流入する。 */
 
@@ -17,6 +21,9 @@ export default function SuggestPage() {
         sub={`会社サイトのURLを入れるだけ。AIが貴社の事業を読み取り、${s.total.toLocaleString()}件の掲載事例から「同じ業界の事例」と「同じ困りごとを解決した事例」を選んで、その場でメールにまとめてお送りします。無料・1通だけ。`} />
 
       <SuggestForm source="suggest-lp" />
+
+      {/* 届くメールのサンプル（架空の製造業プロフィールで、実データからマッチングした本物の事例を表示） */}
+      <SampleMail />
 
       {/* 仕組みの説明（安心材料） */}
       <section className="mt-14">
@@ -49,5 +56,57 @@ export default function SuggestPage() {
         </dl>
       </section>
     </div>
+  );
+}
+
+/* 届くメールのサンプル。架空のプロフィール（金属加工の中小メーカー）で
+   実際のマッチングロジックを走らせ、本物の掲載事例を使って組み立てる。 */
+function SampleMail() {
+  const sample = matchCases({
+    summary: "金属部品の受託加工を手がける中小メーカー",
+    industry: "manufacturing",
+    tags: ["手作業の転記", "業務の属人化", "紙の書類処理"],
+    keywords: ["金属加工", "製造", "工場"],
+  });
+  const rows = (cs: CaseStudy[]) => cs.slice(0, 3).map((c) => {
+    const r = c.results.find((x) => /\d/.test(x.value)) ?? c.results[0];
+    return (
+      <Link key={c.id} href={`/cases/${c.id}`}
+        className="block border-b border-line2 py-2.5 no-underline">
+        <span className="block truncate text-[12.5px] text-body hover:text-ink">■ {c.title}</span>
+        <span className="mt-0.5 block text-[11px] text-muted">
+          {c.customer.name || "導入企業非公開"}（{industryLabel(c.customer.industry)}）
+          {r && <span className="num ml-2 text-accent">{r.metric}: {r.value}</span>}
+        </span>
+      </Link>
+    );
+  });
+
+  return (
+    <section className="mt-14">
+      <p className="label mb-4 flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />届くメールのサンプル</p>
+      <div className="border-2 border-ink">
+        <div className="border-b border-line bg-soft px-5 py-3 text-[11.5px] text-muted">
+          件名：<span className="font-bold text-ink">【事例マニア】貴社に近い導入事例をお送りします</span>
+        </div>
+        <div className="space-y-6 px-5 py-6">
+          <p className="text-[12.5px] leading-[1.9] text-body">
+            ご入力いただいたサイトをAIが拝見し、<span className="font-bold text-ink">「金属部品の受託加工を手がける中小メーカー」</span>と理解しました。
+            掲載事例から、貴社に近いものをお送りします。
+          </p>
+          <div>
+            <p className="label">▼ 同じ業界（{industryLabel("manufacturing")}）の会社が解決した事例</p>
+            <div className="mt-2 border-t border-line2">{rows(sample.sameIndustry)}</div>
+          </div>
+          <div>
+            <p className="label">▼ 業界は違っても、同じ困りごとを解決した事例</p>
+            <div className="mt-2 border-t border-line2">{rows(sample.similar)}</div>
+          </div>
+        </div>
+      </div>
+      <p className="mt-3 text-[11px] leading-relaxed text-muted">
+        ※サンプルは「金属加工の中小メーカー」という架空のプロフィールで実際の選定ロジックを動かした結果です。事例はすべて実在の掲載事例で、リンクから読めます。
+      </p>
+    </section>
   );
 }
