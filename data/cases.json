@@ -3698,7 +3698,6 @@
     "resultsQualitative": "手作業が削減され、円滑な業務運営が実現",
     "hasNumbers": true,
     "sample": false,
-    "image": "https://creato-c.jp/images/top/recruit/recruit-image.jpg",
     "tags": [
       "Excel管理の限界",
       "手作業の転記",
@@ -3786,8 +3785,7 @@
     "tags": [
       "新人教育のばらつき",
       "研修の負担"
-    ],
-    "image": "https://eigosapuri-biz.jp/assets/images/commons/social/shareimage2023.jpg"
+    ]
   },
   {
     "id": "eimons-jp-works-inoue-winery",
@@ -5832,8 +5830,7 @@
       "経費精算の手間",
       "写真の整理作業",
       "手作業の転記"
-    ],
-    "image": "https://images.ctfassets.net/bojfl9ed91o1/1XbM7TTGIzuBnkmnF5LGS8/d4847dab6a9b8ba7c2df6596efffbbe5/Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã¦__.jpg"
+    ]
   },
   {
     "id": "go-goinc-jp-business-case-digitalgrid",
@@ -5873,8 +5870,7 @@
     "tags": [
       "経費精算の手間",
       "紛失リスク"
-    ],
-    "image": "https://images.ctfassets.net/bojfl9ed91o1/2PYXHeK1tC8ifWgCuRnIvm/3bdac19a6b20557709452bf6442181f5/Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£_ÂªÃ£__Ã£__Ã£__Ã£__Ã£__.jpg"
+    ]
   },
   {
     "id": "go-goinc-jp-business-case-logos-holdings",
@@ -5920,8 +5916,7 @@
       "経費精算の手間",
       "リアルタイムに把握できない",
       "業務の属人化"
-    ],
-    "image": "https://images.ctfassets.net/bojfl9ed91o1/31sBXF9nPVW5SRH8QvJtP9/7cb0c9a4209187a1210f596eb09c0bec/Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__Ã£__-1.jpg"
+    ]
   },
   {
     "id": "go-goinc-jp-business-case-maruho",
@@ -8269,8 +8264,7 @@
       "医師の業務負担",
       "内製リソース不足",
       "検査機器運用の不確実さ"
-    ],
-    "image": "https://test-medical.secom.co.jp/mt-static/support/theme_static/rainier/img/siteicon-sample.png"
+    ]
   },
   {
     "id": "meo-so-mi-co-jp-case",
@@ -8707,8 +8701,7 @@
       "サイト更新ができない",
       "リード獲得の停滞",
       "商談化しない"
-    ],
-    "image": "https://micreate.jp/imgs/webclip.png"
+    ]
   },
   {
     "id": "miitus-jp-cases-2022-08",
@@ -8790,8 +8783,7 @@
       "テレワーク対応",
       "情報共有の遅れ",
       "社内コミュニケーション不足"
-    ],
-    "image": "http://office.uchida.co.jp/common/images/case/agrex/ogp_agrex_1200_600.png"
+    ]
   },
   {
     "id": "office-uchida-co-jp-case-anterio-html",
@@ -13007,8 +12999,7 @@
       "業務の属人化",
       "システムの乱立",
       "手順書がない"
-    ],
-    "image": "https://service.shiftinc.jp/wp/wp-content/uploads/2026/08/de4969c19c2b3d7d647e0cfd5f415127.jpg.webp"
+    ]
   },
   {
     "id": "service-shippio-io-case-aisin",
@@ -16558,8 +16549,7 @@
       "数字の集計に時間",
       "進捗が見えない",
       "分析業務の属人化"
-    ],
-    "image": "https://ui.userlocal.jp/files/casestudy_hankyu_image_001.webp"
+    ]
   },
   {
     "id": "ui-userlocal-jp-document-casestudy-i-house",
@@ -19708,8 +19698,7 @@
       "サイト更新ができない",
       "業務の属人化",
       "リード獲得の停滞"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_dic.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20220418154724-html",
@@ -19756,8 +19745,7 @@
       "サイト更新ができない",
       "システムの乱立",
       "データが分散"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_paris-miki.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20240517190442-html",
@@ -19806,8 +19794,7 @@
     "tags": [
       "サイト更新ができない",
       "多言語対応の負担"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_apu.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20240521171951-html",
@@ -19863,8 +19850,7 @@
       "システムの乱立",
       "多拠点の管理",
       "情報共有の遅れ"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_dcm.jpg"
+    ]
   },
   {
     "id": "www-conoris-jp-case-hammock",
@@ -19937,8 +19923,7 @@
       "紙図面の保管",
       "押印・承認の遅れ",
       "手作業の転記"
-    ],
-    "image": "https://www.createwebflow.jp/case/ogimage.jpg"
+    ]
   },
   {
     "id": "www-crowdlog-jp-case-dps",
@@ -20931,8 +20916,7 @@
       "電話・FAX中心",
       "問い合わせ対応の負荷",
       "一次対応の属人化"
-    ],
-    "image": "https://www.dental-access.jp/images/ogimage.jpg"
+    ]
   },
   {
     "id": "www-dga-co-jp-case-study-manufacture-dainichiseika",
@@ -21482,8 +21466,7 @@
       "データが分散",
       "サイト更新ができない",
       "手作業の転記"
-    ],
-    "image": "https://digital-business.exa-corp.co.jp/blog/uploads/exa-logo.png"
+    ]
   },
   {
     "id": "www-fastaccounting-jp-case-20200821-811",
@@ -21931,8 +21914,7 @@
       "進捗が見えない",
       "工程管理の難しさ",
       "繁忙期の人員不足"
-    ],
-    "image": "https://www.fielding.co.jp/jirei/images/167_ogp.png"
+    ]
   },
   {
     "id": "www-fielding-co-jp-jirei-168-html",
@@ -22534,8 +22516,7 @@
       "業務の属人化",
       "引き継ぎ困難",
       "数字の集計に時間"
-    ],
-    "image": "https://images.ctfassets.net/9n4tetpf9eny/2JlzFS6t2c6YBRZ5FWR7rD/e038ebbda6dcee3ca61bc717403df9d7/ogp33bank20260216.png?fit=fill&amp;w=1200&amp;h=630&amp;q=50"
+    ]
   },
   {
     "id": "www-hrbrain-jp-case-freedom",
@@ -22590,8 +22571,7 @@
       "Excel管理の限界",
       "数字の集計に時間",
       "業務の属人化"
-    ],
-    "image": "https://images.ctfassets.net/9n4tetpf9eny/2YpmwdUX96rr1maihQMX3V/948c29310bc7587b7956379849f9413d/freedomogp20260907.png?fit=fill&amp;w=1200&amp;h=630&amp;q=50"
+    ]
   },
   {
     "id": "www-hrbrain-jp-case-human-adjust",
@@ -22643,8 +22623,7 @@
       "数字の集計に時間",
       "データが分散",
       "情報漏洩リスク"
-    ],
-    "image": "https://images.ctfassets.net/9n4tetpf9eny/7KRVrVqJ51JIcIPAOFkYfB/d8a79674c047a96100397f97e09f9645/case-ogp_humanadjust-1200x630-20260116__1_.png?fit=fill&amp;w=1200&amp;h=630&amp;q=50"
+    ]
   },
   {
     "id": "www-hrbrain-jp-case-pola",
@@ -22692,8 +22671,7 @@
       "Excel管理の限界",
       "業務の属人化",
       "問い合わせ対応の負荷"
-    ],
-    "image": "https://images.ctfassets.net/9n4tetpf9eny/2O1eANhksfSevPv3WE7j6V/88b2a317408417d2ff287d6fe4bde739/polaogp20260904.png?fit=fill&amp;w=1200&amp;h=630&amp;q=50"
+    ]
   },
   {
     "id": "www-i-studio-co-jp-casestudy-harekaze-action",
@@ -23219,8 +23197,7 @@
       "検査の目視頼み",
       "不良の見逃し",
       "紙図面の保管"
-    ],
-    "image": "https://www.jfe-eng.co.jp/dx/mv.jpg"
+    ]
   },
   {
     "id": "www-jnovel-co-jp-service-epcus-jirei-jirei1-html",
@@ -25866,8 +25843,7 @@
       "サイト更新ができない",
       "データが分散",
       "仮説検証の非効率性"
-    ],
-    "image": "https://image.ptengine.com/wp-content/uploads/2021/06/ã¹ã¯ãªã¼ã³ã·ã§ãã-0003-07-08-16.45.29.png"
+    ]
   },
   {
     "id": "www-ptengine-jp-casestudies-epson",
@@ -25915,8 +25891,7 @@
       "リード獲得の停滞",
       "応募が集まらない",
       "意思決定の遅れ"
-    ],
-    "image": "https://wwwtestwp.ptengine.jp/wp-content/uploads/2024/10/ç»æ¿-1@1.5x-1.jpg"
+    ]
   },
   {
     "id": "www-ptengine-jp-casestudies-irep-3",
@@ -26010,8 +25985,7 @@
       "追客の漏れ",
       "進捗が見えない",
       "テスト結果の可視化の遅れ"
-    ],
-    "image": "https://image.ptengine.com/wp-content/uploads/2021/03/ã¹ã¯ãªã¼ã³ã·ã§ãã-0003-03-24-15.48.28.png"
+    ]
   },
   {
     "id": "www-ptengine-jp-casestudies-smart-camp",
@@ -26134,7 +26108,6 @@
     "resultsQualitative": "在庫拠点の把握が明確になり、拠点間移動の管理が可能に。紙ベース管理が廃止され、情報検索が迅速化。複数端末での同時アクセスが可能になり、システムロックが解消。引き継ぎ業務がスムーズに。出荷判断や直送業務の効率化が実現。残業削減の効果も報告されている。",
     "hasNumbers": true,
     "sample": false,
-    "image": "https://www.r-info.co.jp/images/library/Image/category01/01-02-img-logo.png",
     "tags": [
       "数字の集計に時間",
       "在庫の把握不足",
@@ -26183,7 +26156,6 @@
     "resultsQualitative": "年次有給休暇の残数管理が自動化され、管理者側の事務作業がほぼなくなった。タイムカードのExcel転記作業が不要になり、給与計算の準備作業が短縮された。勤怠表のチェックが従業員と管理者で並行して実施できるようになり、確認作業の誤りが減少した。",
     "hasNumbers": true,
     "sample": false,
-    "image": "https://www.rakus.co.jp/rakurakucloud/kintai/assets/image/figure/logo_sns.webp",
     "tags": [
       "システムの乱立",
       "勤怠管理の手間",
@@ -26252,7 +26224,6 @@
     "resultsQualitative": "請求書の紙発行・郵送作業が不要になり、WEB上で顧客が請求書をダウンロード確認できるようになったため、請求書紛失・未着のリスクが解消されました。導入前後でのサポートも丁寧で、移行がスムーズに進みました。",
     "hasNumbers": true,
     "sample": false,
-    "image": "https://www.rakus.co.jp/rakurakucloud/meisai/assets/image/figure/ogp_img.webp",
     "tags": [
       "紙の書類処理",
       "請求処理に時間",
@@ -26670,7 +26641,6 @@
     "resultsQualitative": "「自己解決できる世界」を実現",
     "hasNumbers": true,
     "sample": false,
-    "image": "https://www.science.co.jp/wordpress/wp-content/uploads/2023/06/P1059348-1024x683-1-300x200.jpg",
     "tags": [
       "手順書がない",
       "問い合わせ対応の負荷",
@@ -28519,8 +28489,7 @@
       "多拠点の管理",
       "業務の属人化",
       "繁忙期の人員不足"
-    ],
-    "image": "https://www.tele-nishi.co.jp/img/biz/ittenko/product/case/jirei28_01.jpg"
+    ]
   },
   {
     "id": "www-terrasky-co-jp-case-post-34-php",
@@ -29019,8 +28988,7 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "テレワーク対応"
-    ],
-    "image": "https://www.vtv.co.jp/casestudy/wp-content/uploads/img_yamauchi.webp"
+    ]
   },
   {
     "id": "www-wex-co-jp-customer-customer04-html",
@@ -71836,8 +71804,7 @@
       "データが分散",
       "社外との情報共有",
       "リアルタイムに把握できない"
-    ],
-    "image": "http://cloud.watch.impress.co.jpnull"
+    ]
   },
   {
     "id": "cocolomi-co-jp-business-forbiz-customers-systemcompany",
@@ -76382,8 +76349,7 @@
       "移動時間の多さ",
       "属人化した提案業務",
       "商材情報の分散"
-    ],
-    "image": "http://b.st-hatena.com/images/entry-button/button-only.gif"
+    ]
   },
   {
     "id": "handbook-jp-case-workstyle",
@@ -82414,8 +82380,7 @@
       "紙図面の保管",
       "点検対応の属人化",
       "工程管理の難しさ"
-    ],
-    "image": "http://miraie.srigroup.co.jp/cms/wp-content/themes/miraie/img/home/bg_mv01-pc.png"
+    ]
   },
   {
     "id": "mjbank-jp-case-case1",
@@ -85496,8 +85461,7 @@
       "紙図面の保管",
       "組織横断的コミュニケーション不足",
       "老朽化したシステム"
-    ],
-    "image": "http://office.uchida.co.jp/common/images/case/tamashin/ogp_tamashin_1200_600.png"
+    ]
   },
   {
     "id": "office-uchida-co-jp-case-tatsuno-html",
@@ -88742,8 +88706,7 @@
       "情報漏洩リスク",
       "監査対応の負担",
       "社外との情報共有"
-    ],
-    "image": "https://service.shiftinc.jp/wp/wp-content/uploads/2020/10/nissen_ogp.png.webp"
+    ]
   },
   {
     "id": "service-shiftinc-jp-case-unitechsystem",
@@ -88789,8 +88752,7 @@
       "老朽化したシステム",
       "システムの乱立",
       "テレワーク対応"
-    ],
-    "image": "https://service.shiftinc.jp/wp/wp-content/uploads/2026/07/f726fad8f9f9db11f7e78705b58cae85.jpg.webp"
+    ]
   },
   {
     "id": "service-shippio-io-case-daifuku",
@@ -90089,8 +90051,7 @@
       "手作業の転記",
       "新人教育のばらつき",
       "品質のばらつき"
-    ],
-    "image": "http://tablet.wacom.co.jp/static/casebook/images/case09/main.jpg"
+    ]
   },
   {
     "id": "tabletcart-jp-case-hirao-shogakko",
@@ -91614,8 +91575,7 @@
       "電話・FAX中心",
       "情報共有の遅れ",
       "対応履歴が残らない"
-    ],
-    "image": "https://u-s-d.co.jp/bdflashinfo/thumbnail_case50.jpg"
+    ]
   },
   {
     "id": "u-s-d-co-jp-case-case-51-shtml",
@@ -91665,8 +91625,7 @@
       "問い合わせ対応の負荷",
       "対応履歴が残らない",
       "一次対応の属人化"
-    ],
-    "image": "https://u-s-d.co.jp/bdflashinfo/thumbnail_case51.jpg"
+    ]
   },
   {
     "id": "u-s-d-co-jp-case-case-52-shtml",
@@ -91706,8 +91665,7 @@
       "電話・FAX中心",
       "情報共有の遅れ",
       "部署間の情報共有"
-    ],
-    "image": "https://u-s-d.co.jp/bdflashinfo/thumbnail_case52.jpg"
+    ]
   },
   {
     "id": "u-s-d-co-jp-case-case-53-shtml",
@@ -91747,8 +91705,7 @@
       "問い合わせ対応の負荷",
       "対応履歴が残らない",
       "一次対応の属人化"
-    ],
-    "image": "https://u-s-d.co.jp/bdflashinfo/thumbnail_case53.jpg"
+    ]
   },
   {
     "id": "u-s-d-co-jp-case-case-54-shtml",
@@ -91794,8 +91751,7 @@
       "問い合わせ対応の負荷",
       "対応履歴が残らない",
       "一次対応の属人化"
-    ],
-    "image": "https://u-s-d.co.jp/bdflashinfo/thumbnail_case54.jpg"
+    ]
   },
   {
     "id": "u-s-d-co-jp-case-case-55-shtml",
@@ -91832,8 +91788,7 @@
       "問い合わせ対応の負荷",
       "診察環境の質低下",
       "患者の不安解消の難しさ"
-    ],
-    "image": "https://u-s-d.co.jp/bdflashinfo/thumbnail_case55.jpg"
+    ]
   },
   {
     "id": "u-s-d-co-jp-case-case-56-shtml",
@@ -91870,8 +91825,7 @@
       "情報共有の遅れ",
       "対応履歴が残らない",
       "一次対応の属人化"
-    ],
-    "image": "https://u-s-d.co.jp/bdflashinfo/thumbnail_case56.jpg"
+    ]
   },
   {
     "id": "u-s-d-co-jp-case-case-sonority01-shtml",
@@ -96302,8 +96256,7 @@
       "社外との情報共有",
       "連絡手段の乱立",
       "老朽化したシステム"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_aderans.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20210705101251-html",
@@ -96342,8 +96295,7 @@
       "サイト更新ができない",
       "データが分散",
       "追客の漏れ"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_ushio.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20210705102807-html",
@@ -96393,8 +96345,7 @@
       "サイト更新ができない",
       "情報共有の遅れ",
       "社外との情報共有"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_pokka.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20210705104410-html",
@@ -96431,8 +96382,7 @@
       "サイト更新ができない",
       "データが分散",
       "情報共有の遅れ"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_nishikawa.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20210705104741-html",
@@ -96477,8 +96427,7 @@
       "多拠点の管理",
       "サイト更新ができない",
       "システムの乱立"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_teraoka.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20210705104915-html",
@@ -96514,8 +96463,7 @@
       "サイト更新ができない",
       "情報共有の遅れ",
       "会員情報の一元管理"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_sony-music.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20220418161213-html",
@@ -96547,8 +96495,7 @@
       "サイト更新ができない",
       "デジタル世代へのリーチ困難",
       "内製リソース不足"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_saison-am.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20220425154417-html",
@@ -96579,8 +96526,7 @@
       "サイト更新ができない",
       "リード獲得の停滞",
       "名刺情報の死蔵"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_adsec.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20240521190432-html",
@@ -96618,8 +96564,7 @@
       "データが分散",
       "リアルタイムに把握できない",
       "追客の漏れ"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_mynavi.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20240722111739-html",
@@ -96665,8 +96610,7 @@
       "サイト更新ができない",
       "情報共有の遅れ",
       "多言語対応の負担"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/cmsod_case_logo_t-tech.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20250311180232-html",
@@ -96707,8 +96651,7 @@
       "サイト更新ができない",
       "多言語対応の負担",
       "連絡手段の乱立"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/20240904125213_01.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20250311181622-html",
@@ -96753,8 +96696,7 @@
       "サイト更新ができない",
       "情報が分散",
       "情報共有の遅れ"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/20240904123708_01.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20250311183431-html",
@@ -96792,8 +96734,7 @@
       "老朽化したシステム",
       "サイト更新ができない",
       "情報漏洩リスク"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/20250210102215_01.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20250311183527-html",
@@ -96847,8 +96788,7 @@
       "サイト更新ができない",
       "データが分散",
       "多拠点の管理"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/20250218175542_01.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20250311183616-html",
@@ -96895,8 +96835,7 @@
       "サイト更新ができない",
       "老朽化したシステム",
       "リード獲得の停滞"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/20250226180811_01.jpg"
+    ]
   },
   {
     "id": "www-connecty-co-jp-case-20250313131710-html",
@@ -96934,8 +96873,7 @@
       "サイト更新ができない",
       "データが分散",
       "多拠点の管理"
-    ],
-    "image": "https://www.connecty.co.jp/cmsod/case/case_file/file/20250311171025_01.jpg"
+    ]
   },
   {
     "id": "www-conoris-jp-case-interbeing",
@@ -100621,8 +100559,7 @@
       "進捗が見えない",
       "業務の属人化",
       "評価基準のばらつき"
-    ],
-    "image": "https://images.ctfassets.net/9n4tetpf9eny/1dQjPmRBMm05wICtJPnIv0/3c0e37d6a4a5b75a799447c4e5b08530/gw-thumb.jpg?fit=fill&amp;w=1200&amp;h=630&amp;q=50"
+    ]
   },
   {
     "id": "www-hrbrain-jp-case-ja-chuetsu",
@@ -100682,8 +100619,7 @@
       "業務の属人化",
       "引き継ぎ困難",
       "多拠点の管理"
-    ],
-    "image": "https://images.ctfassets.net/9n4tetpf9eny/6hY6qGwHaeWC3CQVk8RAQ0/52ddeca04f0a6c8e47f997d3fd6e15bd/jachuetsu_gpt.png?fit=fill&amp;w=1200&amp;h=630&amp;q=50"
+    ]
   },
   {
     "id": "www-hrbrain-jp-case-netss",
@@ -100729,8 +100665,7 @@
       "データが分散",
       "Excel管理の限界",
       "従業員情報の一元管理困難"
-    ],
-    "image": "https://images.ctfassets.net/9n4tetpf9eny/5NrOHeOWZVdyiFXpVnGpz8/c849e049455647ff9151e92935abe5ab/netss_ogp_20251017.png?fit=fill&amp;w=1200&amp;h=630&amp;q=50"
+    ]
   },
   {
     "id": "www-hypercollaboration-co-jp-post-customer-hypertm-daiwahous",
@@ -101412,8 +101347,7 @@
       "システムの乱立",
       "アカウント管理の煩雑さ",
       "老朽化したシステム"
-    ],
-    "image": "https://www.intercom.co.jp/malion/casestudy/tbs-servic/images/jsonld-16x9.jpg"
+    ]
   },
   {
     "id": "www-intercom-co-jp-malion-casestudy-tenboshi-seiyu",
@@ -102010,8 +101944,7 @@
       "部署間の情報共有",
       "進捗が見えない",
       "多拠点の管理"
-    ],
-    "image": "https://157.205.174.85/wordpress/wp-content/uploads/2021/07/logo.png"
+    ]
   },
   {
     "id": "www-jyot-co-jp-case-case-2",
@@ -102053,8 +101986,7 @@
       "手作業の転記",
       "進捗が見えない",
       "勤怠管理の手間"
-    ],
-    "image": "http://../../images/case/2/info-img.jpg"
+    ]
   },
   {
     "id": "www-jyot-co-jp-case-case-4",
@@ -102097,8 +102029,7 @@
       "業務の属人化",
       "品質のばらつき",
       "繁忙期の人員不足"
-    ],
-    "image": "http://../../images/case/4/info-img.jpg"
+    ]
   },
   {
     "id": "www-kakimacho-jp-diary-case-002-php",
@@ -102326,8 +102257,7 @@
       "紙の書類処理",
       "手作業の転記",
       "現場と本社の往復"
-    ],
-    "image": "https://www.lage.co.jp/wp/wp/images/case002-004.jpg"
+    ]
   },
   {
     "id": "www-lage-co-jp-case-c012",
@@ -102368,8 +102298,7 @@
       "写真の整理作業",
       "手作業の転記",
       "業務の属人化"
-    ],
-    "image": "https://www.lage.co.jp/wp/wp/images/case012-006.jpg"
+    ]
   },
   {
     "id": "www-lage-co-jp-case-c016",
@@ -102411,8 +102340,7 @@
       "リード獲得の停滞",
       "追客の漏れ",
       "定量データの不足"
-    ],
-    "image": "https://www.lage.co.jp/wp/wp/images/case016-009.jpg"
+    ]
   },
   {
     "id": "www-lage-co-jp-case-c017",
@@ -102443,8 +102371,7 @@
       "紙の書類処理",
       "写真の整理作業",
       "情報共有の遅れ"
-    ],
-    "image": "https://www.lage.co.jp/wp/wp/images/case017-005.jpg"
+    ]
   },
   {
     "id": "www-lage-co-jp-case-c019",
@@ -102475,8 +102402,7 @@
       "業務の属人化",
       "保護者間の情報共有不足",
       "学校と保護者の連携機会の不足"
-    ],
-    "image": "https://www.lage.co.jp/wp/wp/images/faa9a5754b19217bf43120708510708c.jpg"
+    ]
   },
   {
     "id": "www-ledusvision-jp-case-jikuhana",
@@ -103578,8 +103504,7 @@
       "問い合わせ対応の負荷",
       "対応履歴が残らない",
       "テレワーク対応"
-    ],
-    "image": "https://www.ntt-tx.co.jp/nisshinfire_2011/img/1654.jpg"
+    ]
   },
   {
     "id": "www-ntt-tx-co-jp-case-shi-ion",
@@ -104594,8 +104519,7 @@
       "リード獲得の停滞",
       "商談化しない",
       "サイト更新ができない"
-    ],
-    "image": "https://image.ptengine.com/wp-content/uploads/2024/01/æ¾äºè¨¼å¸-Ptengine.jpg"
+    ]
   },
   {
     "id": "www-ptengine-jp-casestudies-proactiv",
@@ -104683,8 +104607,7 @@
       "システムの乱立",
       "サーバ運用の負担",
       "老朽化したシステム"
-    ],
-    "image": "https://on-pre.qualitia.com/jp/uploads/2022/01/logo_img001.png"
+    ]
   },
   {
     "id": "www-re-products-co-jp-media-case-a26",
@@ -104712,7 +104635,6 @@
     "resultsQualitative": "毎日の粉塵が効果的に除去され、取引先（プラントのオーナー）から「こんなに綺麗に管理されている現場は見たことが無い」と評価された。作業者の転倒リスクが低減した。レンタル形式により工事が無い期間は返却でき経費削減も実現。",
     "hasNumbers": false,
     "sample": false,
-    "image": "https://www.re-products.co.jp/wp-content/uploads/2021/06/a26_img.jpg",
     "tags": [
       "紙の書類処理",
       "手作業の転記",
@@ -105934,7 +105856,6 @@
     "resultsQualitative": "担当者が本来業務（製品導入時のサポート、製品セミナー、運用保守など）に集中できるようになった。マニュアルの高級感・作りこみ感が向上し、品質が改善された。派遣スタッフによる常駐ディレクションを通じて、マニュアル制作プロセスの改善提案も得られた。",
     "hasNumbers": false,
     "sample": false,
-    "image": "https://www.science.co.jp/wordpress/wp-content/uploads/2012/04/tokyo-shoseki-300x259.png",
     "tags": [
       "手作業の転記",
       "業務の属人化",
@@ -106595,7 +106516,6 @@
     "resultsQualitative": "ほぼミスマッチなく顧客の要望を実現し、顧客は開発会社をシステム開発パートナーではなく「ビジネス上のパートナー」と評価。ビジネス意図を背景から理解した提案と、継続的なサポート・運用保守により高い満足度を得られた。",
     "hasNumbers": false,
     "sample": false,
-    "image": "https://www.science.co.jp/wordpress/wp-content/uploads/2013/09/profession-net-300x259.png",
     "tags": [
       "サイト更新ができない",
       "システムの乱立"
@@ -106874,8 +106794,7 @@
       "繁忙期の人員不足",
       "品質のばらつき",
       "業務の属人化"
-    ],
-    "image": "https://www.science.co.jp/wordpress/wp-content/uploads/2023/10/IMG_0068-300x225.jpg"
+    ]
   },
   {
     "id": "www-science-co-jp-case-seibugas-manual-2",
@@ -106956,8 +106875,7 @@
       "品質のばらつき",
       "技能伝承ができない",
       "業務の属人化"
-    ],
-    "image": "https://www.science.co.jp/wordpress/wp-content/uploads/2023/07/住友重機械工業_因藤様-300x210.jpg"
+    ]
   },
   {
     "id": "www-science-co-jp-case-sompo-japan-manual",
@@ -108545,8 +108463,7 @@
       "電話・FAX中心",
       "連絡手段の乱立",
       "法改正への対応"
-    ],
-    "image": "https://jp.tdsynnex.com/wp-content/uploads/2020/10/蜍晄ｲｼ繝翫・繧ｷ繝ｳ繧ｯ繧吶そ繝ｳ繧ｿ繝ｼAVAYA莠倶ｾ狗ｴｹ莉九メ繝ｩ繧ｷ-1-窶・1.jpg"
+    ]
   },
   {
     "id": "www-takumi-ose-co-jp-products-cases",
@@ -110053,8 +109970,7 @@
     "tags": [
       "情報共有の遅れ",
       "多拠点の管理"
-    ],
-    "image": "https://www.towaeng.co.jp/assets/images/ca01_p165.jpg"
+    ]
   },
   {
     "id": "www-towaeng-co-jp-case-study-case166",
@@ -110566,8 +110482,7 @@
       "映像・音声品質の低下",
       "会議室利用の低迷",
       "老朽化したシステム"
-    ],
-    "image": "https://www.vtv.co.jp/casestudy/wp-content/uploads/img_ex-networks_top.webp"
+    ]
   },
   {
     "id": "www-vtv-co-jp-casestudy-general-contractor-html",
@@ -110612,8 +110527,7 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "多拠点の管理"
-    ],
-    "image": "https://www.vtv.co.jp/casestudy/wp-content/uploads/img_genecon_top.webp"
+    ]
   },
   {
     "id": "www-vtv-co-jp-casestudy-guarantee-c-html",
@@ -110664,8 +110578,7 @@
       "音声の聞き取り困難",
       "議事録作成に時間",
       "情報漏洩リスク"
-    ],
-    "image": "https://www.vtv.co.jp/casestudy/wp-content/uploads/img_gurantee_c_top.webp"
+    ]
   },
   {
     "id": "www-vtv-co-jp-casestudy-infrastructure-company-html",
@@ -110706,8 +110619,7 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "多拠点の管理"
-    ],
-    "image": "https://www.vtv.co.jp/casestudy/wp-content/uploads/img_infrastructure_top.webp"
+    ]
   },
   {
     "id": "www-vtv-co-jp-casestudy-itconsulting-html",
@@ -110797,8 +110709,7 @@
       "電話・FAX中心",
       "メール中心の連絡",
       "情報共有の遅れ"
-    ],
-    "image": "https://www.vtv.co.jp/casestudy/wp-content/uploads/img_kowa-assist_top.webp"
+    ]
   },
   {
     "id": "www-vtv-co-jp-casestudy-kurasushi-html",
@@ -110847,8 +110758,7 @@
       "オンライン会議の音声品質",
       "会議準備時間の多さ",
       "音響設備の老朽化"
-    ],
-    "image": "https://www.vtv.co.jp/casestudy/wp-content/uploads/img_kurasushi_top.webp"
+    ]
   },
   {
     "id": "www-vtv-co-jp-casestudy-ngk-sparkplug-html",
@@ -111024,8 +110934,7 @@
       "データが分散",
       "監査対応の負担",
       "老朽化したシステム"
-    ],
-    "image": "https://www.wanbishi.co.jp/a.jpg"
+    ]
   },
   {
     "id": "www-wasay-co-jp-casestudy-phantosys-html",
