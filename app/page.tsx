@@ -100,13 +100,13 @@ export default function Home() {
       </section>
 
       {/* ── AI事例サジェストへの入口バナー（ヒーロー直下）。
-           public/ai_suggest.png を置けば画像バナーに自動で切り替わる ── */}
+           画像は public/ai_suggest.jpg（1600px幅推奨）。noteバナーと同じ幅で控えめに ── */}
       <section className="mx-auto max-w-6xl px-5 pt-10">
-        {fs.existsSync(path.join(process.cwd(), "public", "ai_suggest.png")) ? (
+        {fs.existsSync(path.join(process.cwd(), "public", "ai_suggest.jpg")) ? (
           <Link href="/suggest" aria-label="AI事例サジェスト（無料）"
-            className="block no-underline transition hover:opacity-90">
+            className="mx-auto block max-w-3xl no-underline transition hover:opacity-90">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/ai_suggest.png" alt="AI事例サジェスト：貴社のURLを入れるだけで、似た事例をメールでお届け"
+            <img src="/ai_suggest.jpg" alt="AI事例サジェスト：貴社のURLを入れるだけで、似た事例をメールでお届け"
               className="h-auto w-full border border-line" />
           </Link>
         ) : (
