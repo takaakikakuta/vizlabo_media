@@ -171,8 +171,11 @@ export type SenArticle = {
   relatedSlugs?: string[]; // 関連する解体新書記事
 };
 
-/* 全型共通の任意フィールド。hidden: true で一覧・個別ページとも非公開（データは残る） */
-type ArticleCommon = { hidden?: boolean };
+/* 全型共通の任意フィールド。
+   hidden: true … 退役した旧記事の非公開（データは残す）
+   draft: true  … 公開前の下書き。公開するときはこの行を消して（または false にして）push する。
+                  あわせて publishedAt を公開日に更新すると、一覧の並びと題字の日付が正しくなる */
+type ArticleCommon = { hidden?: boolean; draft?: boolean };
 
 export type Article = (
   | WakaremichiArticle
@@ -191,7 +194,7 @@ export function allArticles(): Article[] {
   return fs.readdirSync(DIR)
     .filter((f) => f.endsWith(".json"))
     .map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), "utf-8")) as Article)
-    .filter((a) => !a.hidden)  // hidden は公開面から完全に外す
+    .filter((a) => !a.hidden && !a.draft)  // hidden・draft は公開面から完全に外す
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.no - a.no);
 }
 
