@@ -50,3 +50,9 @@ next-env.d.ts
 # データのバックアップ（パイプライン生成物）
 data/*.bak
 data/*.tagbak
+
+# 収集パイプラインのバックアップは配信しない
+data/*.bak
+data/*.imgbak
+data/*.resbak
+data/*.tagbak

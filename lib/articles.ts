@@ -256,12 +256,15 @@ export function articleServices(a: Article): ArticleService[] {
   return out;
 }
 
-/** 記事のサムネイル。明示指定 > public/thumbnail/<連番>.png（置くだけで反映） > 記事内の主要事例の og:image。 */
+/** 記事のサムネイル。明示指定 > public/thumbnail/<連番>.jpg|.png（置くだけで反映） > 記事内の主要事例の og:image。
+    ビルド容量の制約（Amplify 220MB）があるので、画像は幅1400px程度のJPEG推奨。 */
 export function articleThumb(a: Article): string | undefined {
   if (a.thumbnail === "none") return undefined;  // 番号連動の自動取得も使わない明示指定
   if (a.thumbnail) return a.thumbnail;
-  const file = `${String(a.no).padStart(3, "0")}.png`;
-  if (fs.existsSync(path.join(process.cwd(), "public", "thumbnail", file))) return `/thumbnail/${file}`;
+  for (const ext of ["jpg", "png"]) {
+    const file = `${String(a.no).padStart(3, "0")}.${ext}`;
+    if (fs.existsSync(path.join(process.cwd(), "public", "thumbnail", file))) return `/thumbnail/${file}`;
+  }
   if (a.format === "wakaremichi") return getCase(a.caseA.id)?.image ?? getCase(a.caseB.id)?.image;
   if (a.format === "genba") return getCase(a.axisId)?.image;
   if (a.format === "ekkyou") return getCase(a.caseA.id)?.image ?? getCase(a.caseB.id)?.image;
