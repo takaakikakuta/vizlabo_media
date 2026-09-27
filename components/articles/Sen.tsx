@@ -9,6 +9,7 @@ import { vendorLogo } from "../../lib/vendors";
 import type { SenArticle } from "../../lib/articles";
 import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
+import SuggestForm from "../SuggestForm";
 
 /* 「選」テンプレート（テーマ別の事例10選）。順位ではなく並列の選として組む。
    各項目は〈書き下ろしの見出し＋読みどころ〉＋〈事例データから自動で出すカルテと成果数字〉。
@@ -151,6 +152,11 @@ export default function Sen({ article }: { article: SenArticle }) {
           </div>
         )}
       </section>
+
+      {/* 読み終わりの読者に、自社ごと化してもらう仕掛け（メール獲得を兼ねる） */}
+      <div className="mt-12">
+        <SuggestForm source={`article:${article.slug}`} />
+      </div>
 
       <FeaturedServices article={article} />
 

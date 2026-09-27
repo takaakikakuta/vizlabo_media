@@ -26,8 +26,8 @@ function bearerToken(): string {
   return Buffer.from(hash).toString("base64");
 }
 
-/** 管理者宛（CONTACT_TO）に通知メールを1通送る。失敗は throw する。 */
-export async function sendMail(subject: string, text: string): Promise<void> {
+/** メールを1通送る。宛先省略時は管理者（CONTACT_TO）。失敗は throw する。 */
+export async function sendMail(subject: string, text: string, to?: string): Promise<void> {
   const res = await fetch(ENDPOINT, {
     method: "POST",
     headers: {
@@ -39,7 +39,7 @@ export async function sendMail(subject: string, text: string): Promise<void> {
         email: process.env.MAIL_FROM_EMAIL || "vizlabo@update",
         name: process.env.MAIL_FROM_NAME || "事例ナビ",
       },
-      to: process.env.CONTACT_TO,
+      to: to || process.env.CONTACT_TO,
       subject,
       text_part: text,
     }),
