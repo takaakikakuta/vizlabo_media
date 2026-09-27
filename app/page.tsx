@@ -99,9 +99,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── AI事例サジェストへの入口バナー（ヒーロー直下・全幅の帯） ── */}
+      <section className="mx-auto max-w-6xl px-5 pt-10">
+        <Link href="/suggest"
+          className="group flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-2 border-ink bg-ink px-6 py-5 no-underline transition hover:bg-white sm:px-8">
+          <div className="min-w-0">
+            <p className="text-[10.5px] font-bold tracking-[.2em] text-white/60 group-hover:text-muted">AI事例サジェスト（無料）</p>
+            <p className="font-display mt-1.5 text-[17px] leading-snug text-white group-hover:text-ink sm:text-[20px]">
+              貴社のURLを入れるだけ。AIが「同じ業界・同じ困りごと」の事例を選んでメールで届けます
+            </p>
+          </div>
+          <span className="shrink-0 border border-white px-5 py-2.5 text-[13px] font-bold text-white transition group-hover:border-ink group-hover:text-ink">
+            試してみる →
+          </span>
+        </Link>
+      </section>
+
       {/* ── バナー：note連載への入口。画像は public/banner/note.png を置くだけで反映（4:1、1600×400px推奨）。
            比率は4:1のまま、幅をmax-w-3xlに絞って控えめに置く ── */}
-      <section className="mx-auto max-w-6xl px-5 pt-10">
+      <section className="mx-auto max-w-6xl px-5 pt-8">
         <div className="mx-auto max-w-3xl">
           {BANNERS.map((b) => <Banner key={b.file} {...b} />)}
         </div>
