@@ -27,7 +27,8 @@ const NOTE_SERIES = [
 
 export default function NewsletterPage() {
   const s = siteStats();
-  const latest = allArticles().slice(0, 5);
+  // サンプルは#001〜#005に固定（プレビューの並びを安定させる）
+  const latest = allArticles().filter((a) => a.no >= 1 && a.no <= 5).sort((a, b) => a.no - b.no);
 
   return (
     <div className="mx-auto max-w-3xl px-5 py-12">
