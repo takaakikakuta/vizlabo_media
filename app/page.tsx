@@ -7,6 +7,7 @@ import BrowseTabs from "../components/BrowseTabs";
 import { allArticles, articleThumb } from "../lib/articles";
 import CoverImg from "../components/CoverImg";
 import HeroPains from "../components/HeroPains";
+import { SUGGEST_ENABLED } from "../lib/flags";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -98,9 +99,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── AI事例サジェストへの入口バナー（ヒーロー直下）。
+      {/* ── AI事例サジェストへの入口バナー（ヒーロー直下）。SUGGEST_ENABLEDで表示制御。
            画像は public/ai_suggest.jpg（1600px幅推奨）。noteバナーと同じ幅で控えめに ── */}
-      <section className="mx-auto max-w-6xl px-5 pt-10">
+      {SUGGEST_ENABLED && <section className="mx-auto max-w-6xl px-5 pt-10">
         {fs.existsSync(path.join(process.cwd(), "public", "ai_suggest.jpg")) ? (
           <Link href="/suggest" aria-label="AI事例サジェスト（無料）"
             className="mx-auto block max-w-3xl no-underline transition hover:opacity-90">
@@ -122,7 +123,7 @@ export default function Home() {
             </span>
           </Link>
         )}
-      </section>
+      </section>}
 
       {/* ── バナー：note連載への入口。画像は public/banner/note.png を置くだけで反映（4:1、1600×400px推奨）。
            比率は4:1のまま、幅をmax-w-3xlに絞って控えめに置く ── */}

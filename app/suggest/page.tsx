@@ -4,6 +4,7 @@ import { industryLabel } from "../../lib/taxonomy";
 import { matchCases } from "../../lib/suggest";
 import { ListHead } from "../../components/CaseGrid";
 import SuggestForm from "../../components/SuggestForm";
+import { SUGGEST_ENABLED } from "../../lib/flags";
 import type { CaseStudy } from "../../lib/types";
 
 /* URLサジェストの専用LP。トップのバナーと記事内の枠から流入する。 */
@@ -20,7 +21,14 @@ export default function SuggestPage() {
       <ListHead eyebrow="AI事例サジェスト" title="貴社に近い事例を、AIが探して届けます"
         sub={`会社サイトのURLを入れるだけ。AIが貴社の事業を読み取り、${s.total.toLocaleString()}件の掲載事例から「同じ業界の事例」と「同じ困りごとを解決した事例」を選んで、その場でメールにまとめてお送りします。無料・1通だけ。`} />
 
-      <SuggestForm source="suggest-lp" />
+      {SUGGEST_ENABLED ? (
+        <SuggestForm source="suggest-lp" />
+      ) : (
+        <div className="border-2 border-ink bg-soft px-6 py-8 text-center">
+          <p className="font-display text-[17px] text-ink">現在、準備中です</p>
+          <p className="mt-2 text-[12.5px] leading-relaxed text-muted">近日公開予定です。公開のお知らせはメルマガでお送りします。</p>
+        </div>
+      )}
 
       {/* 届くメールのサンプル（架空の製造業プロフィールで、実データからマッチングした本物の事例を表示） */}
       <SampleMail />
