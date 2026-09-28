@@ -4,6 +4,7 @@ import { headers } from "next/headers";
 import { guardForm } from "../../lib/ratelimit";
 import { fetchSiteText, analyzeCompany, matchCases, buildSuggestMail, buildSuggestMailHtml } from "../../lib/suggest";
 import { mailConfigured, sendMail } from "../../lib/mail";
+import { notifySubscribe } from "../../lib/notify";
 
 /* URLサジェスト（会社URL＋メール → AIが似た事例をメールで送る）のサーバー処理。
    同期実行（サイト取得6秒＋Haiku数秒＋メール送信）で、ユーザーは10秒前後待つ。 */
@@ -11,7 +12,8 @@ import { mailConfigured, sendMail } from "../../lib/mail";
 export type SuggestState = {
   status: "idle" | "ok" | "error";
   error?: string;
-  matched?: number;   // 成功時に見つけた件数（画面表示用）
+  matched?: number;    // 成功時に見つけた件数（画面表示用）
+  subscribed?: boolean; // メルマガ登録も受け付けたか（画面表示用）
 };
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -22,6 +24,8 @@ export async function submitSuggest(_prev: SuggestState, fd: FormData): Promise<
 
   let url = String(fd.get("url") ?? "").trim();
   const email = String(fd.get("email") ?? "").trim();
+  const wantsNewsletter = fd.get("newsletter") != null;
+  const source = String(fd.get("source") ?? "suggest").trim();
 
   if (!url) return { status: "error", error: "会社サイトのURLを入力してください。" };
   if (!/^https?:\/\//.test(url)) url = `https://${url}`;
@@ -53,13 +57,25 @@ export async function submitSuggest(_prev: SuggestState, fd: FormData): Promise<
           `【AIの理解】${profile.summary}（業種: ${profile.industry}）`,
           `【推定タグ】${profile.tags.join("、") || "-"}`,
           `【提示事例数】${total}件`,
+          `【メルマガ】${wantsNewsletter ? "登録希望あり（別途登録メールも送信）" : "希望なし"}`,
         ].join("\n"),
       );
     } else {
-      console.info("[suggest] メール未設定のためログのみ", JSON.stringify({ email, url, total }));
+      console.info("[suggest] メール未設定のためログのみ", JSON.stringify({ email, url, total, wantsNewsletter }));
     }
 
-    return { status: "ok", matched: total };
+    // メルマガ登録（サジェスト本体は成功しているので、登録の失敗で全体を失敗にしない）
+    let subscribed = false;
+    if (wantsNewsletter) {
+      try {
+        await notifySubscribe(email, `suggest:${source}`);
+        subscribed = true;
+      } catch (err) {
+        console.error("[suggest] メルマガ登録通知に失敗", err);
+      }
+    }
+
+    return { status: "ok", matched: total, subscribed };
   } catch (err) {
     console.error("[suggest] 失敗", err);
     return {
