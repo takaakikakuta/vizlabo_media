@@ -1,5 +1,7 @@
 "use server";
 
+import { headers } from "next/headers";
+import { guardForm } from "../../lib/ratelimit";
 import { fetchSiteText, analyzeCompany, matchCases, buildSuggestMail, buildSuggestMailHtml } from "../../lib/suggest";
 import { mailConfigured, sendMail } from "../../lib/mail";
 
@@ -25,6 +27,10 @@ export async function submitSuggest(_prev: SuggestState, fd: FormData): Promise<
   if (!/^https?:\/\//.test(url)) url = `https://${url}`;
   try { new URL(url); } catch { return { status: "error", error: "URLの形式が正しくありません。" }; }
   if (!email || !EMAIL.test(email)) return { status: "error", error: "メールアドレスの形式が正しくありません。" };
+
+  const ip = (await headers()).get("x-forwarded-for")?.split(",")[0]?.trim() ?? null;
+  const blocked = guardForm("suggest", ip, email);
+  if (blocked) return { status: "error", error: blocked };
 
   try {
     const text = await fetchSiteText(url);

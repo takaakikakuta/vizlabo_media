@@ -2,6 +2,8 @@
 
 import { validateEmail, type SubscribeState } from "../../lib/newsletter";
 import { notifySubscribe } from "../../lib/notify";
+import { headers } from "next/headers";
+import { guardForm } from "../../lib/ratelimit";
 
 export async function subscribe(_prev: SubscribeState, fd: FormData): Promise<SubscribeState> {
   // ハニーポット: ボットが埋めたら黙って成功扱いで捨てる
@@ -12,6 +14,10 @@ export async function subscribe(_prev: SubscribeState, fd: FormData): Promise<Su
 
   const err = validateEmail(email);
   if (err) return { status: "error", error: err, email };
+
+  const ip = (await headers()).get("x-forwarded-for")?.split(",")[0]?.trim() ?? null;
+  const blocked = guardForm("newsletter", ip, email);
+  if (blocked) return { status: "error", error: blocked, email };
 
   try {
     await notifySubscribe(email, source);

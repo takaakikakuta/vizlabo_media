@@ -2,6 +2,8 @@
 
 import { readContact, validateContact, type ContactState } from "../../lib/contact";
 import { notifyContact } from "../../lib/notify";
+import { headers } from "next/headers";
+import { guardForm } from "../../lib/ratelimit";
 
 export async function submitContact(_prev: ContactState, fd: FormData): Promise<ContactState> {
   // ハニーポット: 人間には見えない項目。埋まっていたら黙って成功として捨てる。
@@ -12,6 +14,10 @@ export async function submitContact(_prev: ContactState, fd: FormData): Promise<
   if (Object.keys(errors).length) {
     return { status: "error", errors, values };
   }
+
+  const ip = (await headers()).get("x-forwarded-for")?.split(",")[0]?.trim() ?? null;
+  const blocked = guardForm("contact", ip, values.email);
+  if (blocked) return { status: "error", values, formError: blocked };
 
   try {
     await notifyContact(values);
