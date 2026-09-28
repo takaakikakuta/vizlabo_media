@@ -25,8 +25,8 @@ function fromAddress(): string {
   return f || "事例マニア <noreply@send.vizlabo.com>";
 }
 
-/** メールを1通送る。宛先省略時は管理者（CONTACT_TO）。失敗は throw する。 */
-export async function sendMail(subject: string, text: string, to?: string): Promise<void> {
+/** メールを1通送る。宛先省略時は管理者（CONTACT_TO）。htmlを渡すとHTMLメール（textは受信環境向けの代替文）。失敗は throw する。 */
+export async function sendMail(subject: string, text: string, to?: string, html?: string): Promise<void> {
   const dest = to || process.env.CONTACT_TO!;
   const key = resendKey();
 
@@ -34,7 +34,7 @@ export async function sendMail(subject: string, text: string, to?: string): Prom
     const res = await fetch(RESEND_ENDPOINT, {
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ from: fromAddress(), to: [dest], subject, text }),
+      body: JSON.stringify({ from: fromAddress(), to: [dest], subject, text, ...(html ? { html } : {}) }),
     });
     if (!res.ok) {
       const body = await res.text().catch(() => "");

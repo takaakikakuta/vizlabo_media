@@ -123,7 +123,7 @@ export function matchCases(p: CompanyProfile): Suggestions {
   return { sameIndustry, similar };
 }
 
-const SITE = "https://main.d1aevqtzq18hw.amplifyapp.com";
+const SITE = "https://vizlabo.com";
 
 /** 訪問者へ送るサジェストメールの本文 */
 export function buildSuggestMail(url: string, p: CompanyProfile, s: Suggestions): string {
@@ -158,4 +158,90 @@ export function buildSuggestMail(url: string, p: CompanyProfile, s: Suggestions)
     "BtoB導入事例メディア「事例マニア」",
   );
   return parts.join("\n");
+}
+
+/* ── HTMLメール版 ──
+   メールクライアント互換のため、スタイルはすべてインライン・構造は素直なdivで組む。
+   サイトの誌面トーン（インク色・罫線・成果数字の強調）を踏襲。 */
+
+const C = {
+  ink: "#1a1a1a",
+  body: "#374151",
+  muted: "#6b7280",
+  line: "#e5e1da",
+  soft: "#f7f5f1",
+  accent: "#e2590b",
+  bg: "#fdfcfa",
+};
+
+function esc(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function caseCardHtml(c: CaseStudy): string {
+  const r = c.results.find((x) => /\d/.test(x.value)) ?? c.results[0];
+  const stat = r
+    ? `<div style="margin-top:6px;font-size:12px;color:${C.muted};">${esc(r.metric)}：<span style="color:${C.accent};font-weight:bold;font-size:14px;">${esc(r.value)}</span></div>`
+    : "";
+  return `
+  <div style="border-bottom:1px solid ${C.line};padding:14px 0;">
+    <a href="${SITE}/cases/${c.id}" style="color:${C.ink};font-size:14px;font-weight:bold;line-height:1.6;text-decoration:none;">${esc(c.title)}</a>
+    <div style="margin-top:4px;font-size:12px;color:${C.muted};">${esc(c.customer.name || "導入企業非公開")}（${esc(industryLabel(c.customer.industry))}）</div>
+    ${stat}
+    <div style="margin-top:8px;"><a href="${SITE}/cases/${c.id}" style="font-size:12px;color:${C.ink};text-decoration:underline;">この事例の詳細を読む →</a></div>
+  </div>`;
+}
+
+function sectionHtml(label: string, cs: CaseStudy[]): string {
+  if (!cs.length) return "";
+  return `
+  <div style="margin-top:28px;">
+    <div style="font-size:11px;font-weight:bold;letter-spacing:.18em;color:${C.muted};border-bottom:2px solid ${C.ink};padding-bottom:8px;">${esc(label)}</div>
+    ${cs.map(caseCardHtml).join("")}
+  </div>`;
+}
+
+/** 訪問者へ送るサジェストメール（HTML版） */
+export function buildSuggestMailHtml(url: string, p: CompanyProfile, s: Suggestions): string {
+  return `<!doctype html>
+<html lang="ja"><body style="margin:0;padding:0;background:${C.bg};">
+<div style="max-width:600px;margin:0 auto;padding:28px 20px;font-family:-apple-system,'Hiragino Sans','Yu Gothic',Meiryo,sans-serif;color:${C.body};">
+
+  <div style="border-top:3px solid ${C.ink};padding-top:16px;">
+    <a href="${SITE}" style="text-decoration:none;color:${C.ink};font-size:18px;font-weight:bold;letter-spacing:.08em;">事例マニア</a>
+    <span style="font-size:10px;color:${C.muted};letter-spacing:.14em;margin-left:10px;">BtoB導入事例データベース</span>
+  </div>
+
+  <p style="margin:24px 0 0;font-size:13.5px;line-height:2;">
+    事例マニアのAI事例サジェストをご利用いただきありがとうございます。<br>
+    ご入力いただいたサイトを拝見し、貴社を
+  </p>
+  <div style="margin-top:12px;border:1px solid ${C.line};background:${C.soft};padding:14px 16px;font-size:14px;font-weight:bold;color:${C.ink};line-height:1.8;">
+    「${esc(p.summary)}」
+  </div>
+  <p style="margin:12px 0 0;font-size:13.5px;line-height:2;">
+    と理解しました。掲載事例の中から、貴社に近いものをお送りします。
+  </p>
+
+  ${sectionHtml(`同じ業界（${industryLabel(p.industry)}）の会社が解決した事例`, s.sameIndustry)}
+  ${sectionHtml("業界は違っても、同じ困りごとを解決した事例", s.similar)}
+
+  <div style="margin-top:32px;text-align:center;">
+    <a href="${SITE}/cases" style="display:inline-block;background:${C.ink};color:#ffffff;font-size:13px;font-weight:bold;text-decoration:none;padding:12px 28px;">もっと事例を探す →</a>
+    <div style="margin-top:10px;font-size:11.5px;color:${C.muted};">課題・業種・困りごとから検索できます</div>
+  </div>
+
+  <div style="margin-top:32px;border:1px solid ${C.line};padding:16px;text-align:center;">
+    <div style="font-size:13px;font-weight:bold;color:${C.ink};">週刊 事例マニア（毎週金曜配信）</div>
+    <div style="margin-top:6px;font-size:12px;color:${C.body};line-height:1.9;">事例セレクション5本と、note連載2本をメールで届けます</div>
+    <a href="${SITE}/newsletter" style="display:inline-block;margin-top:10px;font-size:12.5px;color:${C.ink};text-decoration:underline;">メルマガの内容を見る →</a>
+  </div>
+
+  <div style="margin-top:28px;border-top:1px solid ${C.line};padding-top:14px;font-size:11px;color:${C.muted};line-height:1.9;">
+    ※本メールはご入力いただいたアドレスに1回だけお送りしています。<br>
+    ※内容へのご質問・配信のご要望は、このメールへの返信でどうぞ。<br>
+    BtoB導入事例メディア「事例マニア」 <a href="${SITE}" style="color:${C.muted};">${SITE.replace("https://", "")}</a>
+  </div>
+</div>
+</body></html>`;
 }

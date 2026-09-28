@@ -1,6 +1,6 @@
 "use server";
 
-import { fetchSiteText, analyzeCompany, matchCases, buildSuggestMail } from "../../lib/suggest";
+import { fetchSiteText, analyzeCompany, matchCases, buildSuggestMail, buildSuggestMailHtml } from "../../lib/suggest";
 import { mailConfigured, sendMail } from "../../lib/mail";
 
 /* URLサジェスト（会社URL＋メール → AIが似た事例をメールで送る）のサーバー処理。
@@ -36,7 +36,7 @@ export async function submitSuggest(_prev: SuggestState, fd: FormData): Promise<
     }
 
     if (mailConfigured()) {
-      await sendMail("【事例マニア】貴社に近い導入事例をお送りします", buildSuggestMail(url, profile, suggestions), email);
+      await sendMail("【事例マニア】貴社に近い導入事例をお送りします", buildSuggestMail(url, profile, suggestions), email, buildSuggestMailHtml(url, profile, suggestions));
       // 管理者にもリードとして通知
       await sendMail(
         `【事例マニア/URLサジェスト】${email}`,
