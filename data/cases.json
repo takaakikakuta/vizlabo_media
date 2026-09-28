@@ -197931,5 +197931,347 @@
       "一次対応の属人化",
       "繁忙期の人員不足"
     ]
+  },
+  {
+    "id": "ip3-co-jp-case-2625",
+    "title": "約4万5千人が使う共通認証システムにFIDO認証を追加導入、パスワードレスで利便性向上",
+    "summary": "全学約4万5千人が使う認証基盤を持つ近畿大学は、2018年に2段階認証とSSOを導入。2023年4月にFIDO認証（パスキー）を追加導入し、パスワード入力不要で生体認証による利便性の向上を実現した。",
+    "vendor": "ip3.co.jp",
+    "product": "AuthWay FIDO サーバ、CloudLink",
+    "productCategory": "security",
+    "sourceUrl": "https://ip3.co.jp/case/2625/",
+    "collectedAt": "2026-09-27T00:00:00.000Z",
+    "customer": {
+      "name": "学校法人近畿大学",
+      "industry": "education",
+      "size": "学生約3万5千人、教職員約1万人、対応可能ユーザ約8万人",
+      "dept": "経営戦略本部 デジタル戦略室"
+    },
+    "challenges": [
+      "security",
+      "efficiency"
+    ],
+    "challengeDetail": "情報セキュリティの強化とともに、利用者の利便性向上が求められていた。パスワード認証による情報流出やなりすましのリスクを低減し、いつでもどこでも学習・業務ができる環境が必要だった。",
+    "actions": "2018年に2段階認証とシングルサインオン（SSO）を導入した既設システムに対し、2023年4月にFIDO認証（パスキー）を追加導入。スマートフォンの生体認証を使用してパスワードレス認証を実現した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対応ユーザ数",
+        "value": "約8万人"
+      },
+      {
+        "metric": "学生数",
+        "value": "約3万5千人"
+      },
+      {
+        "metric": "教職員数",
+        "value": "約1万人"
+      },
+      {
+        "metric": "教職員のシステム移行率",
+        "value": "ほぼ100%"
+      }
+    ],
+    "resultsQualitative": "パスワード入力が不要になり、指紋または顔の生体認証で数秒で認証完了。利便性が大きく向上し、ユーザが通勤途中など様々なシーンでストレスなくシステムにアクセスできるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ip3.co.jp/wp2024/wp-content/uploads/2025/02/kindai_fidojirei.jpg"
+  },
+  {
+    "id": "ip3-co-jp-case-966",
+    "title": "ワンタイムパスワードによる2段階認証でセキュリティ強化、約4万7千人が利用する共通認証基盤を構築",
+    "summary": "近畿大学は、パスワード認証のみでは不正ログイン防止に限界があり、利用者負担を増やさないセキュリティ強化が課題だった。AuthWayとCloudLinkを組み合わせたワンタイムパスワード2段階認証を導入し、SAML連携による共通認証基盤を実現。学生・教職員のセキュリティ意識向上にもつながった。",
+    "vendor": "ip3.co.jp",
+    "product": "AuthWay / CloudLink",
+    "productCategory": "security",
+    "sourceUrl": "https://ip3.co.jp/case/966/",
+    "collectedAt": "2026-09-27T00:00:00.000Z",
+    "customer": {
+      "name": "学校法人近畿大学",
+      "industry": "education",
+      "size": "約4万7千人（学生・教職員）",
+      "dept": "総合情報システム部"
+    },
+    "challenges": [
+      "security",
+      "standardize"
+    ],
+    "challengeDetail": "パスワード認証のみでは運用や管理を強化してもセキュリティ確保に限界があり、不正ログインを防ぐ必要があった。同時に、利用者の負担を増やさずにセキュリティレベルを高める必要があった。",
+    "actions": "AuthWayのワンタイムパスワード2段階認証とCloudLinkのシングルサインオンを組み合わせ、SAML連携ベースで学内・学外システムの共通認証基盤を構築。利用者が選択できるOTP方式（スマホアプリ/メール）と、同一デバイスなら最大30日間認証を省略する機能、デバイス紛失時の一時切り換え機能などを提供。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象ユーザー数",
+        "value": "約4万7千人"
+      },
+      {
+        "metric": "キャンパス数",
+        "value": "6カ所"
+      },
+      {
+        "metric": "サービス導入時期",
+        "value": "2018年3月"
+      },
+      {
+        "metric": "SAML連携済みシステム数",
+        "value": "12システム（事務系3、教育系5、学認サービス4）"
+      }
+    ],
+    "resultsQualitative": "学内・学外システムへの一元的な認証を担う共通認証基盤を構築。学生・教職員のセキュリティ意識が向上。機能追加やアプリケーション連携が容易になり、今後のサービス拡大が可能に。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ip3.co.jp/wp2024/wp-content/uploads/2024/08/kindai.jpg"
+  },
+  {
+    "id": "ip3-co-jp-case-3378",
+    "title": "ID管理の運用時間を1時間から5分に短縮、EntryMasterで複雑な社内システム連携を自動化",
+    "summary": "近畿労働金庫は、増加した社内システムのID管理を手作業で行っており運用負荷が増大していた。EntryMasterを導入して複数システム間の連携をほぼ自動化し、日々のID管理作業を1時間から5分に短縮した。",
+    "vendor": "ip3.co.jp",
+    "product": "EntryMaster",
+    "productCategory": "saas",
+    "sourceUrl": "https://ip3.co.jp/case/3378/",
+    "collectedAt": "2026-09-27T00:00:00.000Z",
+    "customer": {
+      "name": "近畿労働金庫",
+      "industry": "finance",
+      "size": "従業員1500～1600人（利用者規模）",
+      "dept": "デジタル推進部"
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "メール、グループウェア、ワークフローなど社内システムの増加とともにID管理の連携パターンが複雑化し、権限管理システムとActive Directoryの連携は手動作業が中心で、運用管理の負荷が増大していた。",
+    "actions": "EntryMasterを導入し、複数の社内システムとのID情報連携をほぼすべて自動化した。権限管理システム、Active Directory、メール、ワークフローなど各種システム間のデータ連携を自動処理化し、予約登録機能を活用して定期的な処理を夜間に実行させた。",
+    "results": [
+      {
+        "metric": "日々のID管理作業時間",
+        "value": "1時間→5分"
+      },
+      {
+        "metric": "人事異動時の集中作業時間",
+        "value": "前日夜間9時間（17時～翌2時）→業務時間内3時間"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "利用者数",
+        "value": "1500～1600人"
+      },
+      {
+        "metric": "本稼働開始時期",
+        "value": "2022年9月"
+      }
+    ],
+    "resultsQualitative": "人事異動前日の深夜作業が廃止され、運用管理者の手動作業がほぼなくなった。予約登録機能により、時間のかかる処理が自動で夜間実行される。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ip3.co.jp/wp2024/wp-content/uploads/2024/08/kinkirokin.jpg"
+  },
+  {
+    "id": "ip3-co-jp-case-8556",
+    "title": "約3万人の従業員がSSO導入により、9システムを1つのID/パスワードで利用可能に",
+    "summary": "サイゼリヤは、システム増加に伴うパスワード管理の負荷増大と利用者拡大の課題を抱えていた。CloudLinkでSSO認証基盤を構築し、従業員約3万人がクラウド/オンプレ計9システムを1つのIDで利用できるようにした。利便性向上、パスワード管理負荷軽減、セキュリティレベル向上を実現。",
+    "vendor": "ip3.co.jp",
+    "product": "CloudLink",
+    "productCategory": "saas",
+    "sourceUrl": "https://ip3.co.jp/case/8556/",
+    "collectedAt": "2026-09-27T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社サイゼリヤ",
+      "industry": "food",
+      "size": "従業員約3万人",
+      "dept": "グローバルDX本部 情報システム部"
+    },
+    "challenges": [
+      "efficiency",
+      "security",
+      "labor"
+    ],
+    "challengeDetail": "システムの増加に伴い、複数のID/パスワード管理が増大し、利用者の負荷と情報システム部の管理負荷が増加していた。利用者拡大やBYOD対応への要求に対応しながら、認証管理の効率化が必要だった。",
+    "actions": "既存のLDAP Managerと親和性の高いCloudLinkを導入してSSO認証基盤を構築。約半年間の導入期間を経て、2021年にSSO認証をスタートさせ、従業員が1つのID/パスワードで複数システムにアクセスできる環境を実現。",
+    "results": [
+      {
+        "metric": "パスワード再発行依頼の削減",
+        "value": "激減（1日数件から激減）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入対象ユーザー数",
+        "value": "約3万人"
+      },
+      {
+        "metric": "連携システム数",
+        "value": "9システム（情報システム5つ、クラウドサービス4つ）"
+      },
+      {
+        "metric": "導入期間",
+        "value": "約半年間"
+      }
+    ],
+    "resultsQualitative": "利用者は目的のシステムへすばやくアクセスでき、利便性が大幅に向上。情報システム部はID/パスワード管理の手間が不要となり、アルバイトの入退社時のアクセス管理も自動化された。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ip3.co.jp/wp2024/wp-content/uploads/2026/07/thumnail_saizeriya.jpg"
+  },
+  {
+    "id": "ip3-co-jp-case-242",
+    "title": "クラウド・オンプレ統合認証基盤を短期開発・提供開始、2,000ユーザが5～6システムをSSO利用",
+    "summary": "日本システムウエアは、クラウドサービスとオンプレミスシステムの双方をシームレスに統合するIDaaS「NSW-BizIAM」を開発・提供開始。AuthWayとCloudLinkの組み合わせにより認証基盤を短期構築し、既存システム改修なしにシングルサインオンを実現。",
+    "vendor": "ip3.co.jp",
+    "product": "NSW-BizIAM（CloudLink、AuthWay、CloudIdentity Managerの組み合わせ）",
+    "productCategory": "saas",
+    "sourceUrl": "https://ip3.co.jp/case/242/",
+    "collectedAt": "2026-09-27T00:00:00.000Z",
+    "customer": {
+      "name": "日本システムウエア株式会社",
+      "industry": "it",
+      "size": "大企業",
+      "dept": "ITソリューション事業本部"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "security"
+    ],
+    "challengeDetail": "クラウドサービスとオンプレミスシステムの双方が混在する環境において、ID管理の手間が増大し、マルチデバイス化が進むなか、情報システム部門がコントロールしきれなくなっていた。",
+    "actions": "AuthWay（多要素認証）とCloudLink（シングルサインオン）、CloudIdentity Manager（ID統合管理）の3製品を組み合わせた統合認証基盤を開発。クラウドデータセンターでID情報をセキュアに管理しながら、SAML対応の外部クラウドサービスと未対応の既存アプリケーションの両方をシームレスにカバーするIDaaSを提供開始。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "内部ユーザ数",
+        "value": "約2,000ユーザ（連結社員全員）"
+      },
+      {
+        "metric": "統合システム数",
+        "value": "5～6システム"
+      }
+    ],
+    "resultsQualitative": "既存システムを改修することなく統合可能。クライアント側へのエージェントインストール不要のため配布作業が不要で、アップデートの手間もかからない。低料金で先進的なIDaaS機能を提供。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ip3.co.jp/wp2024/wp-content/uploads/2024/08/nsw.jpg"
+  },
+  {
+    "id": "ip3-co-jp-case-3834",
+    "title": "富士通のクラウドサービス認証基盤を4ヶ月の短期間で構築",
+    "summary": "富士通は新規クラウドサービス「K5」の認証基盤を、強固で拡張性の高いものにする必要がありました。AuthWayとCloudLinkを組み合わせ、アイピーキューブのシステムインテグレーション支援により、実質4ヶ月という短期間での開発に成功しました。",
+    "vendor": "ip3.co.jp",
+    "product": "CloudLink、AuthWay",
+    "productCategory": "security",
+    "sourceUrl": "https://ip3.co.jp/case/3834/",
+    "collectedAt": "2026-09-27T00:00:00.000Z",
+    "customer": {
+      "name": "富士通株式会社",
+      "industry": "it",
+      "size": "大企業（資本金3,246億円）",
+      "dept": "デジタルビジネスプラットフォーム事業本部"
+    },
+    "challenges": [
+      "security",
+      "efficiency"
+    ],
+    "challengeDetail": "新規クラウドサービスの認証基盤を、強固でありながら相互接続性を確保し、スピード感をもって開発する必要がありました。シングルサインオン、電子証明書認証、多要素認証など多様な機能を信頼性の高い事業基盤として実現する必要がありました。",
+    "actions": "AuthWayとCloudLinkを組み合わせることで、世界標準のLDAP認証とSAML認証連携を2本柱とした認証基盤を構築しました。アイピーキューブがシステムインテグレーション支援を行い、POC段階から技術者が立ち会い、必要に応じて代理認証機能の開発を前倒しするなど、柔軟に対応しました。",
+    "results": [
+      {
+        "metric": "認証基盤の開発期間",
+        "value": "実質4ヶ月"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "移行対象システム規模",
+        "value": "約640システム、サーバー約13,000台"
+      }
+    ],
+    "resultsQualitative": "強固かつ柔軟な認証基盤を構築でき、レガシーシステムを含むすべてのサービスの共通認証基盤として機能することに成功。今後の新規サービスへもスムーズに適用可能になりました。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ip3.co.jp/wp2024/wp-content/uploads/2024/08/fujitsu.jpg"
+  },
+  {
+    "id": "ip3-co-jp-case-248",
+    "title": "富士通のV-DaaS、AuthWayで多要素認証を実現しセキュリティ強化と競争力向上を実現",
+    "summary": "富士通の仮想デスクトップサービス「V-DaaS」は、インターネットVPN接続のセキュリティ強化が課題だった。AuthWayによるワンタイムパスワード機能で多要素認証を導入し、低コストかつ柔軟な認証環境を実現。セキュリティオプションメニュー充実により競争力強化に貢献した。",
+    "vendor": "ip3.co.jp",
+    "product": "AuthWay",
+    "productCategory": "security",
+    "sourceUrl": "https://ip3.co.jp/case/248/",
+    "collectedAt": "2026-09-27T00:00:00.000Z",
+    "customer": {
+      "name": "富士通株式会社",
+      "industry": "it",
+      "size": "大企業",
+      "dept": "マネージドインフラサービス事業本部 エンドユーザサービス統括部"
+    },
+    "challenges": [
+      "security",
+      "cost"
+    ],
+    "challengeDetail": "V-DaaSのインターネットVPN接続において、IDとパスワードのみでは官公庁や金融機関などの顧客のセキュリティポリシーを満たせず、より高度なセキュリティレベルが必要だった。",
+    "actions": "AuthWayのワンタイムパスワード機能を導入し、ID+パスワード+ワンタイムパスワードによる多要素認証を実現。トークンレスOTP対応により利用者の携帯やスマートフォンへのメール送信で利便性を確保。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "V-DaaS契約企業数",
+        "value": "約70社"
+      },
+      {
+        "metric": "V-DaaS契約ID数",
+        "value": "約2万ID"
+      },
+      {
+        "metric": "最小契約ユーザ数",
+        "value": "20ユーザ以上"
+      }
+    ],
+    "resultsQualitative": "セキュリティ強化のオプションメニューをいち速く提供でき、官公庁や金融機関でも安心してインターネットVPN接続を使用できる高度なセキュリティレベルを実現。構築コスト抑制によりライセンス料金を低く設定でき、V-DaaSの競争力強化に貢献した。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ip3.co.jp/wp2024/wp-content/uploads/2024/08/fujitsu2.jpg"
+  },
+  {
+    "id": "ip3-co-jp-case-8122",
+    "title": "佛教大学がAuthWayを導入、VDI環境のリモートアクセス認証を刷新しユーザサポート負荷を軽減",
+    "summary": "佛教大学は、VDI経由のリモートアクセスで従来のソフトウェアトークンを使った多要素認証システムから、AuthWayに入れ替えた。Google Authenticatorの対応や管理画面の使いやすさにより、スマートフォン機種変更時のトラブル対応が不要になるなど、運用・サポート負荷が軽減された。",
+    "vendor": "ip3.co.jp",
+    "product": "AuthWay",
+    "productCategory": "security",
+    "sourceUrl": "https://ip3.co.jp/case/8122/",
+    "collectedAt": "2026-09-27T00:00:00.000Z",
+    "customer": {
+      "name": "佛教大学",
+      "industry": "education",
+      "size": "在学生数約6,200名",
+      "dept": "管財部情報システム課"
+    },
+    "challenges": [
+      "security",
+      "labor"
+    ],
+    "challengeDetail": "事務職員のVDIへのリモートアクセス時にセキュリティを確保する必要があった。また、従来の多要素認証システムではスマートフォン機種変更時に利用者からのサポート要望が頻繁に発生していた。",
+    "actions": "既設のVDI（Omnissa Horizon）と連携可能で、ワンタイムパスワード機能に特化した多要素認証システムAuthWayを導入。Google Authenticatorをソフトウェアトークンとして利用できる仕様にした。",
+    "results": [
+      {
+        "metric": "スマートフォン機種変更時の利用者からのサポート電話",
+        "value": "月数回→ゼロ件"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "VDI導入規模",
+        "value": "学内教室など多数箇所+事務系端末約200台"
+      },
+      {
+        "metric": "導入時期",
+        "value": "2025年5月末"
+      }
+    ],
+    "resultsQualitative": "管理画面がシンプルでわかりやすく、QRコード再送などの操作がマニュアルなしで対応可能になった。年間保守料金が若干低下し、ユーザ対応の負荷軽減を含めると総体的な維持コストが削減された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ip3.co.jp/wp2024/wp-content/uploads/2025/10/bukkyologo.jpg"
   }
 ]
