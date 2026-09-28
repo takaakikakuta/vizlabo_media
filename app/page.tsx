@@ -72,10 +72,9 @@ export default function Home() {
             </p>
 
             {/* 掲載規模＝この媒体の信頼の根拠 */}
-            <dl className="mt-9 grid grid-cols-2 gap-y-6 border-y border-line py-6 sm:grid-cols-4">
+            <dl className="mt-9 grid grid-cols-3 gap-y-6 border-y border-line py-6">
               <Metric n={s.total} unit="件" k="掲載事例" />
               <Metric n={s.vendors} unit="社" k="掲載ベンダー" />
-              <Metric n={s.withNumbers} unit="件" k="数値成果あり" />
               <Metric n={s.industries} unit="業種" k="カバー業種" />
             </dl>
 
