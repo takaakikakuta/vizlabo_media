@@ -43091,15 +43091,15 @@
   },
   {
     "id": "pandora-climber-jp-cases-ati-html",
-    "title": "kintone・ClimberCloud・AI-OCR・RPA連携で請求業務のペーパーレス化と電子帳簿対応を実現",
-    "summary": "右の字トレーディングは、毎月の請求関連業務でペーパーレス対応が進まず電子帳簿法への新規対応も課題だった。ClimberCloudとkintoneをAPI連携し、AI-OCR・RPA・DX-Suiteで請求書の自動読み込みから承認まで自動化することで、ペーパーレス化と電子帳簿法完全対応を実現した。",
+    "title": "kintone・ClimberCloud・AI-OCR・RPA連携で支払処理のペーパーレス化と電帳法対応を実現",
+    "summary": "味の素トレーディングは、支払関連処理に紙伝票が残りコロナ禍でも出社対応が必要で、電子帳簿保存法への対応環境の整備も課題だった。ClimberCloudとkintoneをAPI連携し、AI-OCR（DX-Suite）とRPA（WinActor）で支払依頼書の読み取りからkintone登録・支払承認までを自動化することで、新たな業務負担なしにペーパーレス化と電帳法対応を実現した。",
     "vendor": "pandora-climber.jp",
     "product": "ClimberCloud、kintone、DX-Suite、WinActor",
     "productCategory": "saas",
     "sourceUrl": "https://pandora-climber.jp/cases/ati.html",
     "collectedAt": "2026-09-22T00:00:00.000Z",
     "customer": {
-      "name": "右の字トレーディング株式会社",
+      "name": "味の素トレーディング株式会社",
       "industry": "other-industry",
       "size": "従業員70名",
       "dept": "財務部門"
@@ -43109,11 +43109,11 @@
       "standardize",
       "security"
     ],
-    "challengeDetail": "毎月の請求関連業務はコロナ禍での業務拡大に伴い、結果部門のテレワーク強化が必要だった。電子帳簿法（電子保存法）への新規対応環境も整備が急務で、ペーパーレス化が進まない状況だった。",
-    "actions": "ClimberCloudは電子データ保存・スキャン保存などに対応しAPIでkintoneと連携。AI-OCR（DX-Suite）で請求書を自動読み込みし、RPA（WinActor）で帳票データを自動抽出後、kintoneに自動登録して請求承認まで自動化した。",
+    "challengeDetail": "支払関連処理に紙伝票が残り、コロナ禍でも出社して対応することがあった。経理部門のテレワーク強化が急務で、電子帳簿保存法に対応した環境の新規整備も課題だった。",
+    "actions": "ClimberCloudは電子データ保存・スキャン保存などに幅広く対応し、API公開でkintoneと連携できる。WinActorの夜間バッチで支払依頼書の伝票番号・日付・取引先・金額・通貨をAI-OCR（DX-Suite）で読み取ってkintoneに自動登録し、支払承認までをペーパーレスで行い、データをClimberCloudに連携・保存して電帳法に対応した。",
     "results": [
       {
-        "metric": "請求書読み込み精度",
+        "metric": "支払依頼書の読取率",
         "value": "100%"
       }
     ],
@@ -43123,7 +43123,7 @@
         "value": "70名"
       }
     ],
-    "resultsQualitative": "請求関連業務のペーパーレス化を実現、電子帳簿法に完全対応。自動化により業務負荷を軽減し、新規業務にリソースを配分可能になった。",
+    "resultsQualitative": "支払関連処理のペーパーレス化を実現し、電子帳簿保存法に完全対応。自動化により新たな業務負担なしで運用でき、経理部門のテレワークを推進できた。",
     "hasNumbers": true,
     "sample": false,
     "tags": [
