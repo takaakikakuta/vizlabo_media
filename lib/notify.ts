@@ -20,6 +20,27 @@ function logOnly(kind: string, payload: unknown): NotifyResult {
   return { delivered: false };
 }
 
+const ACK_FOOTER = [
+  "",
+  "────────────────────",
+  "事例マニア（導入事例の専門メディア）",
+  "https://vizlabo.com",
+  "",
+  "※このメールは送信専用アドレスから自動送信しています。",
+  "　ご返信は届きませんので、ご用の際はお問い合わせフォームをご利用ください。",
+  "　https://vizlabo.com/contact",
+].join("\n");
+
+/* 送信者本人への受付確認（自動返信）。
+   管理者宛が唯一の記録なのに対し、こちらは失敗しても全体を失敗にしない。 */
+async function sendAck(to: string, subject: string, body: string): Promise<void> {
+  try {
+    await sendMail(subject, body + ACK_FOOTER, to);
+  } catch (err) {
+    console.error("[ack] 受付確認メールの送信に失敗", to, err);
+  }
+}
+
 export async function notifyContact(input: ContactInput): Promise<NotifyResult> {
   if (!mailConfigured()) return logOnly("contact", input);
 
@@ -39,6 +60,22 @@ export async function notifyContact(input: ContactInput): Promise<NotifyResult> 
   ].join("\n");
 
   await sendMail(`【事例マニア/${topicLabel(input.topic)}】${input.company} ${input.name}様`, text);
+
+  await sendAck(input.email, "【事例マニア】お問い合わせを受け付けました", [
+    `${input.name} 様`,
+    "",
+    "事例マニアへのお問い合わせありがとうございます。",
+    "以下の内容で受け付けました。担当より順次ご連絡いたします。",
+    "",
+    "----------------------------",
+    `【ご用件】${topicLabel(input.topic)}`,
+    `【会社名】${input.company}`,
+    `【お名前】${input.name}`,
+    "【ご相談内容】",
+    input.message,
+    "----------------------------",
+  ].join("\n"));
+
   return { delivered: true };
 }
 
@@ -68,6 +105,21 @@ export async function notifyInquiry(input: InquiryInput): Promise<NotifyResult> 
   ].join("\n");
 
   await sendMail(`【事例マニア/一括問い合わせ】${input.company} ${input.name}様（${input.services.length}サービス）`, text);
+
+  await sendAck(input.email, "【事例マニア】一括問い合わせを受け付けました", [
+    `${input.name} 様`,
+    "",
+    "事例マニアの「この記事のサービスすべてに問い合わせる」をご利用いただき、ありがとうございます。",
+    "以下の内容で受け付けました。編集部より各サービスへお取り次ぎのうえ、順次ご連絡いたします。",
+    "",
+    "----------------------------",
+    `【対象サービス】${input.services.length}件`,
+    ...input.services.map((s) => `  ・${s}`),
+    `【会社名】${input.company}`,
+    `【お名前】${input.name}`,
+    "----------------------------",
+  ].join("\n"));
+
   return { delivered: true };
 }
 
@@ -87,5 +139,16 @@ export async function notifySubscribe(email: string, source: string): Promise<No
   ].join("\n");
 
   await sendMail(`【事例マニア/メルマガ登録】${email}`, text);
+
+  await sendAck(email, "【事例マニア】メルマガのご登録ありがとうございます", [
+    "メルマガ「週刊 事例マニア」にご登録いただき、ありがとうございます。",
+    "毎週金曜に、事例セレクション5本とnote連載「この事例がスゴイ」「事例コラム」をお届けします。",
+    "",
+    "配信までの間は、サイトで最新の事例セレクションをご覧いただけます。",
+    "https://vizlabo.com/articles",
+    "",
+    "配信の停止をご希望の場合は、お手数ですがお問い合わせフォームからご連絡ください。",
+  ].join("\n"));
+
   return { delivered: true };
 }
