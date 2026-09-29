@@ -134,7 +134,10 @@ function SiteFooter() {
             </div>
           </div>
         </div>
-        <div className="mt-10 border-t border-line pt-5 text-[11px]">© {new Date().getFullYear()} {SITE_NAME}</div>
+        <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-line pt-5 text-[11px]">
+          <span>© {new Date().getFullYear()} {SITE_NAME}</span>
+          <Link href="/privacy" className="no-underline hover:text-ink">プライバシーポリシー</Link>
+        </div>
       </div>
     </footer>
   );

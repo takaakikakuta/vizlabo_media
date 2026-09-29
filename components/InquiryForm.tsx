@@ -96,8 +96,11 @@ export default function InquiryForm({ services, articleSlug }: {
 
       <div className="flex flex-wrap items-center gap-6 py-8">
         <Submit />
-        <p className="text-[11.5px] leading-relaxed text-muted">
-          入力内容と連絡先は、選択されたサービスの提供企業への取次にのみ使用します。
+        <p className="max-w-md text-[11.5px] leading-relaxed text-muted">
+          送信により、入力内容（会社名・氏名・連絡先・相談内容）を選択されたサービスの提供企業へ提供することに同意いただいたものとします。
+          各社から直接ご連絡が届くことがあります。詳しくは
+          <Link href="/privacy" className="underline hover:text-ink">プライバシーポリシー</Link>
+          をご覧ください。
         </p>
       </div>
     </form>
