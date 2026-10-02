@@ -153,7 +153,10 @@ export type ButaiuraArticle = {
   closing: string;
 };
 
-/* ── 型7：選（テーマ別の事例10選。順位ではなく並列の「選」） ── */
+/* ── 型7：選（テーマ別の事例10選／3選。順位ではなく並列の「選」） ──
+   items の本数で誌面が変わる。SEN_SHORT_MAX 本以下なら「3選」用の深掘りレイアウト
+   （漢数字・事例画像・成果4つ・顔ぶれカード）、それより多ければ「10選」用の一覧レイアウト（01〜10・目次）。 */
+export const SEN_SHORT_MAX = 5;
 export type SenArticle = {
   format: "sen";
   sponsored?: boolean;  // タイアップ（PR）記事か。未指定＝編集記事
@@ -165,7 +168,7 @@ export type SenArticle = {
   title: string[];
   lead: string;
   criteriaNote: string;   // 選定基準と範囲の明示（母数・基準・順位でないこと）
-  items: { caseId: string; headline: string; body: string }[];  // 10本（headline＝見出し、body＝読みどころ2〜3文）
+  items: { caseId: string; headline: string; body: string }[];  // 10本または3本（headline＝見出し、body＝読みどころ。10選は2〜3文、3選は4〜6文）
   outroTitle: string;     // まとめの見出し
   outro: string;          // まとめ本文（並べて見えたこと・次の一歩）
   relatedSlugs?: string[]; // 関連する解体新書記事
@@ -186,6 +189,16 @@ export type Article = (
   | ButaiuraArticle
   | SenArticle
 ) & ArticleCommon;
+
+/** 「3選」（深掘りレイアウト）か。本数だけで決まるので、JSONに専用フラグは要らない。 */
+export function senIsShort(a: SenArticle): boolean {
+  return a.items.length <= SEN_SHORT_MAX;
+}
+
+/** 選記事の本数表記（「10選」「3選」）。一覧のチップと題字に使う。 */
+export function senCountLabel(a: SenArticle): string {
+  return `${a.items.length}選`;
+}
 
 const DIR = path.join(process.cwd(), "content", "articles");
 

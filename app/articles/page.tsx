@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { allArticles, articleThumb } from "../../lib/articles";
+import { allArticles, articleThumb, senCountLabel, senIsShort } from "../../lib/articles";
 import { siteStats } from "../../lib/cases";
 import CoverImg from "../../components/CoverImg";
 import { ListHead } from "../../components/CaseGrid";
@@ -28,6 +28,11 @@ export default function ArticlesPage() {
             <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[11.5px] text-muted">
               <span className="num text-[12px] text-ink">#{String(a.no).padStart(3, "0")}</span>
+              {a.format === "sen" && (
+                <span className={`border px-1.5 py-0.5 text-[9px] font-bold tracking-widest ${senIsShort(a) ? "border-ink text-ink" : "border-line"}`}>
+                  {senCountLabel(a)}
+                </span>
+              )}
               {a.sponsored && (
                 <span className="border border-line px-1.5 py-0.5 text-[9px] font-bold tracking-widest">Sponsored</span>
               )}

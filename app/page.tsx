@@ -4,7 +4,7 @@ import { allCases, challengeCounts, industryCounts, newestCases, siteStats, tagC
 import { challengeStyle } from "../lib/visuals";
 import CaseCard from "../components/CaseCard";
 import BrowseTabs from "../components/BrowseTabs";
-import { allArticles, articleThumb } from "../lib/articles";
+import { allArticles, articleThumb, senCountLabel, senIsShort } from "../lib/articles";
 import CoverImg from "../components/CoverImg";
 import HeroPains from "../components/HeroPains";
 import { SUGGEST_ENABLED } from "../lib/flags";
@@ -148,6 +148,11 @@ export default function Home() {
                 </div>
                 <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 text-[11px] text-muted">
                   <span className="num text-[12px] text-ink">#{String(a.no).padStart(3, "0")}</span>
+                  {a.format === "sen" && (
+                    <span className={`border px-1.5 py-0.5 text-[8.5px] font-bold tracking-widest ${senIsShort(a) ? "border-ink text-ink" : "border-line"}`}>
+                      {senCountLabel(a)}
+                    </span>
+                  )}
                   {a.sponsored && (
                     <span className="border border-line px-1.5 py-0.5 text-[8.5px] font-bold tracking-widest">Sponsored</span>
                   )}

@@ -7,7 +7,7 @@
 - 課題の攻略地図型: [WRITING-chizu.md](WRITING-chizu.md)
 - 業界を越える事例型: [WRITING-ekkyou.md](WRITING-ekkyou.md)
 - 導入の舞台裏型: [WRITING-butaiura.md](WRITING-butaiura.md)
-- 選（事例10選）型: [WRITING-sen.md](WRITING-sen.md)
+- 選（事例10選／3選）型: [WRITING-sen.md](WRITING-sen.md) — 本数で誌面が変わる（5本以下＝3選の深掘りレイアウト）
 - 事例単体（/cases/…）: [WRITING-case.md](WRITING-case.md) — 説明はさらっと（カルテ。自動生成＋手直しの作法）
 
 記事の「書かれた部分」はこのフォルダのJSONにある。文章を直す＝JSONの値を書き換えるだけ。
@@ -95,13 +95,13 @@
 | `prep[]` | 「四 自社で準備すること」 |
 | `closing` | 結び |
 
-## どのフィールドが記事のどこか（選＝事例10選型）
+## どのフィールドが記事のどこか（選＝事例10選／3選型）
 
 | フィールド | 記事上の場所 |
 |---|---|
 | `title` / `lead` | 扉 |
 | `criteriaNote` | リード直下の枠（母数・選定基準・順位でないことの明示） |
-| `items[]` | 01〜10（caseId＝事例、headline＝見出し、body＝読みどころ2〜3文。カルテ・成果チップ・リンクは自動） |
+| `items[]` | 01〜10（caseId＝事例、headline＝見出し、body＝読みどころ2〜3文。カルテ・成果チップ・リンクは自動）。**5本以下なら3選扱い**になり、一〜三の漢数字・事例画像・カルテ4項目・成果4つの深掘りレイアウトに自動で切り替わる（bodyは4〜6文で） |
 | `outroTitle` / `outro` | まとめ（並べて見えた共通項＋次の一歩） |
 | `relatedSlugs` | 「あわせて読む」への記事slug |
 
