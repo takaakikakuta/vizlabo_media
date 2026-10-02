@@ -4,7 +4,7 @@ import { allCases, challengeCounts, industryCounts, newestCases, siteStats, tagC
 import { challengeStyle } from "../lib/visuals";
 import CaseCard from "../components/CaseCard";
 import BrowseTabs from "../components/BrowseTabs";
-import { allArticles, articleThumb, senCountLabel, senIsShort } from "../lib/articles";
+import { allArticles, articleThumb, senCountLabel, senIsShort, titleBadge } from "../lib/articles";
 import CoverImg from "../components/CoverImg";
 import HeroPains from "../components/HeroPains";
 import { SUGGEST_ENABLED } from "../lib/flags";
@@ -158,6 +158,9 @@ export default function Home() {
                   )}
                 </div>
                 <h3 className="font-display mt-2 text-[16px] leading-[1.55] text-ink group-hover:text-brand">
+                  {titleBadge(a) && (
+                    <span className="mr-2 inline-block translate-y-[-2px] border border-ink px-1.5 py-px align-middle text-[10px] tracking-[.18em]">{titleBadge(a)}</span>
+                  )}
                   {a.title.join("")}
                 </h3>
                 <p className="mt-2 line-clamp-2 text-[12px] leading-[1.85] text-muted">{a.lead}</p>

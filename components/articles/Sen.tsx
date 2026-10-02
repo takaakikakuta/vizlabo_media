@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getCase } from "../../lib/cases";
-import { getArticle, articleThumb, senIsShort, senCountLabel } from "../../lib/articles";
+import { getArticle, articleThumb, senIsShort, senCountLabel, titleBadge } from "../../lib/articles";
 import { industryLabel, productLabel } from "../../lib/taxonomy";
 import { parseStat } from "../../lib/stat";
 import CoverImg from "../CoverImg";
@@ -63,6 +63,11 @@ export default function Sen({ article }: { article: SenArticle }) {
 
       <header className="mt-6">
         <h1 className="font-display mt-5 text-[27px] leading-[1.45] text-ink sm:text-[34px]">
+          {titleBadge(article) && (
+            <span className="mr-3 inline-block translate-y-[-3px] border-2 border-ink px-2.5 py-0.5 align-middle text-[15px] leading-[1.4] tracking-[.2em] sm:text-[17px]">
+              {titleBadge(article)}
+            </span>
+          )}
           {article.title.map((line, i) => (
             <span key={i}>{line}{i < article.title.length - 1 && <br />}</span>
           ))}

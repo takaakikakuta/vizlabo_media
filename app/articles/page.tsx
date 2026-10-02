@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { allArticles, articleThumb, senCountLabel, senIsShort } from "../../lib/articles";
+import { allArticles, articleThumb, senCountLabel, senIsShort, titleBadge } from "../../lib/articles";
 import { siteStats } from "../../lib/cases";
 import CoverImg from "../../components/CoverImg";
 import { ListHead } from "../../components/CaseGrid";
@@ -39,6 +39,9 @@ export default function ArticlesPage() {
               <span className="num ml-auto">{a.publishedAt.replace(/-/g, ".")}</span>
             </div>
             <h2 className="font-display mt-2 text-[19px] leading-[1.5] text-ink group-hover:text-brand">
+              {titleBadge(a) && (
+                <span className="mr-2 inline-block translate-y-[-2px] border border-ink px-1.5 py-px align-middle text-[11px] tracking-[.18em]">{titleBadge(a)}</span>
+              )}
               {a.title.join("")}
             </h2>
             <p className="mt-2.5 line-clamp-2 text-[12.5px] leading-[1.9] text-muted">{a.lead}</p>

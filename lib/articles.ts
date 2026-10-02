@@ -200,6 +200,14 @@ export function senCountLabel(a: SenArticle): string {
   return `${a.items.length}選`;
 }
 
+/** 3選のタイトルの頭に付ける札。文言を変えたいときはここだけ直す。 */
+export const SEN_SHORT_LABEL = "特選";
+
+/** タイトルの頭に付ける札（3選なら「特選」、それ以外は無し）。記事ページ・一覧・ページタイトルで共用。 */
+export function titleBadge(a: Article): string | undefined {
+  return a.format === "sen" && senIsShort(a) ? SEN_SHORT_LABEL : undefined;
+}
+
 const DIR = path.join(process.cwd(), "content", "articles");
 
 export function allArticles(): Article[] {

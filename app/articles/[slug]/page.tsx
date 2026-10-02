@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { allArticles, getArticle } from "../../../lib/articles";
+import { allArticles, getArticle, titleBadge } from "../../../lib/articles";
 import Wakaremichi from "../../../components/articles/Wakaremichi";
 import Genba from "../../../components/articles/Genba";
 import Dounyumae from "../../../components/articles/Dounyumae";
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const a = getArticle(decodeURIComponent((await params).slug));
   if (!a) return {};
   return {
-    title: `${a.series} #${String(a.no).padStart(3, "0")}｜${a.title.join("")}`,
+    title: `${a.series} #${String(a.no).padStart(3, "0")}｜${titleBadge(a) ? `${titleBadge(a)} ` : ""}${a.title.join("")}`,
     description: a.lead.slice(0, 120),
   };
 }
