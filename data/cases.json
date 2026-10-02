@@ -27504,8 +27504,8 @@
   },
   {
     "id": "www-intercom-co-jp-malion-casestudy-agrex",
-    "title": "IT資産管理の業務時間を1週間から1時間に削減",
-    "summary": "SI事業部門でIT資産管理と情報漏洩対策に課題を抱えていた株式会社アグレックス。MaLionを導入することで、これまで1週間かかっていたIT資産の正確な業務を1時間で実現でき、業務時間の大幅な短縮につながった。",
+    "title": "IT資産の棚卸業務を1週間から1時間に削減",
+    "summary": "SI事業部門でIT資産管理と情報漏洩対策に課題を抱えていた株式会社アグレックス。MaLionを導入することで、これまで1週間かかっていたIT資産の棚卸業務を1時間で実現でき、業務時間の大幅な短縮につながった。",
     "vendor": "intercom.co.jp",
     "product": "MaLion",
     "productCategory": "other-product",
@@ -27522,18 +27522,18 @@
       "efficiency",
       "security"
     ],
-    "challengeDetail": "IT資産の正確な業務運用に1週間を要していた。また、USB等の持ち出しに関する情報漏洩対策が不十分で、300台以上のPC端末に対して個別の設定作業が必要であり、現実的ではなかった。",
-    "actions": "MaLionを導入し、正確な運用設計書に基づいた資産管理体制を構築。管理グループによる6部門の管理担当者に対して、毎月3営業日までに3種類のレポートを自動発行し、注意喚起と是正を行うサイクルを確立。",
+    "challengeDetail": "IT資産の棚卸業務に1週間を要していた。また、SI事業部の社員の半数以上がPCを社外に持ち出しており、USB等の持ち出しに関する情報漏洩対策が不十分で、300台以上のPC端末に対して個別の設定作業が必要であり、現実的ではなかった。",
+    "actions": "MaLionを導入し、運用設計書に基づいた資産管理体制を構築。管理グループによる6部門の管理担当者に対して、毎月3営業日までに3種類のレポートを自動発行し、注意喚起と是正を行うサイクルを確立。",
     "results": [
       {
-        "metric": "IT資産業務処理時間",
+        "metric": "IT資産の棚卸業務時間",
         "value": "1週間→1時間に短縮"
       }
     ],
     "scale": [
       {
         "metric": "導入PC台数",
-        "value": "310台（Windows 308台、Mac 2台）"
+        "value": "310台（Win/Mac）"
       },
       {
         "metric": "導入期間",
@@ -27604,14 +27604,14 @@
   {
     "id": "www-intercom-co-jp-malion-casestudy-gransucceed",
     "title": "Windows 7→10移行とクラウド化で、118台のPC管理を3人体制に集約",
-    "summary": "複数拠点で異なるシステムを管理していた組織が、Windows 10へのOSアップデートとクラウド移行の機会に、情報資産の確実な保護と労務管理の強化を課題として認識。MaLionクラウドを導入し、PCログの一元化とKING OF TIMEとの連携により、個別設定の手作業を削減し、管理負荷を大幅に軽減した。",
+    "summary": "複数拠点で異なるシステムを管理していた組織が、Windows 10へのOSアップデートとクラウド移行の機会に、情報資産の確実な保護と労務管理の強化を課題として認識。MaLionCloudを導入し、PCログの一元化とKING OF TIMEとの連携により、個別設定の手作業を削減し、管理負荷を大幅に軽減した。",
     "vendor": "intercom.co.jp",
     "product": "MaLion",
     "productCategory": "cloud",
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/gransucceed/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "株式会社グランサクシー",
+      "name": "株式会社グランサクシード",
       "industry": "other-industry",
       "size": "",
       "dept": "ICT戦略事業本部"
@@ -27622,15 +27622,15 @@
       "security"
     ],
     "challengeDetail": "全国7拠点の複数オフィスで異なるシステム・ネットワーク環境を管理しており、クラウド移行時に情報資産の確実な保護が課題。また、労務管理改革に対応する中で、時間外労働の適切な管理と内部統制の強化が必要だった。",
-    "actions": "MaLionクラウドを導入し、USBメモリなど外部媒体の接続管理、PCログの一元化、KING OF TIMEとの連携による勤務時間管理を実現。セキュリティポリシーを会社全体・部門別・個人別に段階的に適用し、管理コンソール画面で一括設定できる環境を構築した。",
+    "actions": "MaLionCloudを導入し、USBメモリなど外部媒体の接続管理、PCログの一元化、KING OF TIMEとの連携による勤務時間管理を実現。セキュリティポリシーを会社全体・部門別・個人別に段階的に適用し、管理コンソール画面で一括設定できる環境を構築した。",
     "results": [
       {
         "metric": "PC管理者の作業負荷削減",
-        "value": "個別設定から一括管理への転換により工数を大幅削減"
+        "value": "118台のPCを3人で管理"
       },
       {
         "metric": "許可のない残業の検出",
-        "value": "営業時間15分超過時に申請要否をアラート表示し、営業終了時にPC自動シャットダウ"
+        "value": "営業時間15分超過時に申請要否をアラート表示し、営業終了時にPCを自動シャットダウン"
       }
     ],
     "scale": [
@@ -27660,8 +27660,8 @@
   },
   {
     "id": "www-intercom-co-jp-malion-casestudy-insight-lab",
-    "title": "ITアセット管理とセキュリティ強化で業務効率化 - MaLion導入により正査業務を1ヶ月→1週間に短縮",
-    "summary": "INSIGHT LAB株式会社は、企業規模拡大に伴うIT資産管理の課題とセキュリティ対策の必要性に直面していました。MDMを含むIT資産管理ツール「MaLion」を導入することで、PC正査業務の大幅な効率化と、プロジェクト管理ツールとの連携による業務改善を実現しました。",
+    "title": "IT資産管理とセキュリティ強化で業務効率化 - MaLion導入により棚卸業務を1ヶ月→1週間に短縮",
+    "summary": "INSIGHT LAB株式会社は、企業規模拡大に伴うIT資産管理の課題とセキュリティ対策の必要性に直面していました。MDMを含むIT資産管理ツール「MaLion」を導入することで、PC棚卸業務の大幅な効率化と、勤怠管理システムとの連携による業務改善を実現しました。",
     "vendor": "intercom.co.jp",
     "product": "MaLion",
     "productCategory": "saas",
@@ -27678,16 +27678,16 @@
       "security",
       "standardize"
     ],
-    "challengeDetail": "企業規模拡大に伴い、従業員のPCデバイスの一元管理が困難化。BYOD環境下でのセキュリティ対策の必要性が増し、個人端末の不正プログラム対策や情報漏洩対策が課題となっていました。また、PC正査業務が属人的で手作業が多く、非効率な状態が続いていました。",
-    "actions": "MaLionを導入し、155台のMac・Windows端末と130台のiPhoneを一元管理。プロジェクト管理ツール（ジョブ楽頭）との連携により、正査データの自動取り込みと業務フローの効率化を実現。MDM機能により全端末のセキュリティ対策を統一的に実施。",
+    "challengeDetail": "企業規模拡大に伴い、従業員のPCデバイスの一元管理が困難化。リモートワーク環境では従業員と連絡が取りづらく、棚卸データの提出遅れや提出内容の誤りが発生するなど、棚卸業務が属人的で非効率な状態が続いていました。",
+    "actions": "MaLionを導入し、155台のMac・Windows端末と130台のiPhoneを一元管理。インベントリ情報を管理側で直接確認できるようにして棚卸業務を効率化し、勤怠管理システム「ジョブカン」との連携で残業時間の可視化も実現。MDM機能により全端末のセキュリティ対策を統一的に実施。",
     "results": [
       {
-        "metric": "PC正査業務期間",
+        "metric": "PC棚卸業務期間",
         "value": "1ヶ月→1週間に短縮"
       },
       {
-        "metric": "正査確認件数削減",
-        "value": "複数件→1件に削減"
+        "metric": "棚卸時の従業員への問い合わせ",
+        "value": "直近の棚卸では1件のみ"
       }
     ],
     "scale": [
@@ -27700,7 +27700,7 @@
         "value": "130台"
       }
     ],
-    "resultsQualitative": "業務フロー全体がスムーズになり、従業員が正査業務に割く必要がなくなったことで全社的な業務効率向上を実現。ジョブ楽頭との連携により、必要な情報確認が事前に可能となり、予期しない遅延がなくなった。",
+    "resultsQualitative": "情報システムグループが従業員の回答を待たずに必要な情報を確認して棚卸を進められるようになり、突き合わせ作業がスムーズになった。ジョブカンとの連携により残業時間が可視化され、働き方改革の取り組みにもつながった。",
     "hasNumbers": true,
     "sample": false,
     "image": "https://www.intercom.co.jp/malion/casestudy/insight-lab/images/jsonld-16x9.jpg",
@@ -27713,17 +27713,17 @@
   },
   {
     "id": "www-intercom-co-jp-malion-casestudy-kanto-shoji",
-    "title": "製造業の長時間残業を削減、PC利用時間管理で平均60時間→30時間に",
-    "summary": "製造・製品卸業を営む関東系の企業では、営業時間外のPC利用管理が個人任せで長時間残業が常態化していました。MaLionを導入してPC利用時間を社員ごとに設定・管理することで、業務終了後の適切なシャットダウンが実現でき、平均残業時間を大幅に削減しました。",
+    "title": "営業担当者の残業を約50%削減、PC利用時間の管理で長時間労働を是正",
+    "summary": "製菓・製パン業界向けの商社である関東商事では、営業時間外のPC利用が個人の裁量に任され、長時間残業が常態化していました。MaLionを導入し、強制シャットダウン機能でPCの利用時間を管理することで、営業担当者の残業時間を約50%削減。各拠点で利用時間を延長できる運用にしたことで、本社の管理負担も軽減されました。",
     "vendor": "intercom.co.jp",
     "product": "MaLion",
     "productCategory": "other-product",
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/kanto-shoji/",
     "collectedAt": "2026-09-14T00:00:00.000Z",
     "customer": {
-      "name": "関東系事業株式会社",
-      "industry": "manufacturing",
-      "size": "従業員規模50名程度",
+      "name": "関東商事株式会社",
+      "industry": "food",
+      "size": "",
       "dept": "全社"
     },
     "challenges": [
@@ -27731,25 +27731,21 @@
       "efficiency",
       "standardize"
     ],
-    "challengeDetail": "営業時間外のPC利用管理が個人の裁量に任されており、長時間残業が常態化していました。適切なPC管理ツールがなく、業務終了後の対応に対応できない状況でした。",
-    "actions": "MaLionを導入し、7拠点・約110台のWindowsPCを一元管理。社員ごとにPC利用可能時間を設定・延長でき、業務の状況に応じて柔軟に対応できる体制を構築しました。",
+    "challengeDetail": "営業時間外のPC利用が個人の裁量に任されており、長時間残業が常態化していました。勤務時間を適正化するために、PCの利用時間そのものを管理する仕組みが必要でした。",
+    "actions": "MaLionを導入し、Windows PC 110台を一元管理。強制シャットダウン機能でPCの利用可能時間を管理し、業務の状況に応じて各拠点で利用時間を延長できる運用にしました。",
     "results": [
       {
-        "metric": "平均残業時間",
-        "value": "60時間→30時間に削減"
+        "metric": "営業担当者の残業時間",
+        "value": "約50%削減"
       }
     ],
     "scale": [
       {
         "metric": "管理対象PC数",
-        "value": "約110台"
-      },
-      {
-        "metric": "管理拠点数",
-        "value": "7拠点（営業所5・工場1）"
+        "value": "110台（Windows）"
       }
     ],
-    "resultsQualitative": "社員が業務終了時間を意識して業務を進めるようになり、部門全体の働き方改善と管理者の負担軽減につながりました。遠隔コントロール機能でPC問題への対応時間も短縮されました。",
+    "resultsQualitative": "強制シャットダウンにより社員が業務終了時間を意識して仕事を進めるようになり、長時間労働の是正につながりました。利用時間の延長を各拠点で行える運用にしたことで、本社の管理負担も軽減されています。",
     "hasNumbers": true,
     "sample": false,
     "image": "https://www.intercom.co.jp/malion/casestudy/kanto-shoji/images/jsonld-16x9.jpg",
@@ -123900,15 +123896,15 @@
   {
     "id": "www-intercom-co-jp-malion-casestudy-avance-life-support",
     "title": "Excel資産管理から専用ツールへ移行、確認作業の負担を大幅削減",
-    "summary": "施設管理・介護サービスを行う企業がExcelでのIT資産管理に伴う入力ミスやデータ散在、確認作業の負担に直面していた。MaLionを導入することで、資産情報の自動更新と一元管理を実現し、確認作業時間を削減、情報セキュリティも強化された。",
+    "summary": "介護事業を営むアバンセライフサポートは、ExcelでのIT資産管理に伴う入力ミスや記録漏れ、確認作業の負担に直面していた。MaLionを導入することで、資産情報の自動更新と一元管理を実現し、外部記憶媒体の確実な制御により情報漏洩対策も強化された。",
     "vendor": "intercom.co.jp",
     "product": "MaLion",
     "productCategory": "other-product",
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/avance-life-support/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "株式会社アポン・ライフサポート",
-      "industry": "hr-service",
+      "name": "株式会社アバンセライフサポート",
+      "industry": "medical",
       "size": "",
       "dept": "管理部"
     },
@@ -123917,7 +123913,7 @@
       "data",
       "security"
     ],
-    "challengeDetail": "Excelでの資産管理により、入力ミスやデータ散在が発生し、確認作業に多くの時間を要していた。また、情報漏洩対策が十分でなく、人為的なミスによる情報漏洩のリスクが懸念されていた。",
+    "challengeDetail": "Excelでの資産管理により、入力ミスや記録漏れが発生し、確認作業に多くの時間を要していた。また、情報漏洩対策が注意喚起にとどまり、外部記憶媒体の制御が不十分でリスクが残っていた。",
     "actions": "MaLionを導入し、資産情報の自動更新と一元管理を実現。デバイス・Webアクセス・無線LANの制御を一本で行い、外部メディアの利用制限やリモートコントロール機能により、セキュリティ強化を図った。",
     "results": [
       {
@@ -123928,7 +123924,7 @@
     "scale": [
       {
         "metric": "管理対象PC台数",
-        "value": "177台"
+        "value": "177台（Windows）"
       },
       {
         "metric": "拠点数",
@@ -123956,16 +123952,16 @@
   },
   {
     "id": "www-intercom-co-jp-malion-casestudy-cira-foundation",
-    "title": "京都大学iPS細胞研究所がMaLionで内部統制とセキュリティを強化",
-    "summary": "iPS細胞研究財団は、医療関連の法的要件を満たしながら、研究データの厳格な管理と不正アクセス防止が課題でした。クラウドベースのセキュリティソリューション「MaLion」を導入し、データ漏洩対策、操作ログの完全記録、ライセンス管理を実現しました。",
+    "title": "京都大学iPS細胞研究財団がMaLionCloudで内部統制とセキュリティを強化",
+    "summary": "京都大学iPS細胞研究財団は、医療関連の法的要件を満たしながら、研究・製造データの厳格な管理と不正アクセス防止が課題でした。クラウド型の「MaLionCloud」を導入し、データ漏洩対策、操作ログの完全記録、ライセンス管理を実現しました。",
     "vendor": "intercom.co.jp",
     "product": "MaLion",
     "productCategory": "security",
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/cira-foundation/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "公立財団法人京都大学iPS細胞研究財団",
-      "industry": "education",
+      "name": "公益財団法人京都大学iPS細胞研究財団",
+      "industry": "medical",
       "size": "従業員数不明",
       "dept": "製造部門 イノベーションチーム"
     },
@@ -123975,12 +123971,16 @@
       "data"
     ],
     "challengeDetail": "医療関連の法的要件（帰属性、監査性、一貫性、完全性、正確性）を満たしながら、iPS細胞研究データの厳格な管理と、データ漏洩防止、不正アクセス対策が必要でした。",
-    "actions": "内部統制のセキュリティ要件に対応するクラウドサービスMaLionを導入。クラウド上でデータ漏洩防止、操作ログの記録、アクセス制御、ライセンス管理を実施しました。",
+    "actions": "内部統制のセキュリティ要件に対応するクラウドサービスMaLionCloudを導入。クラウド上でデータ漏洩防止、操作ログの記録、アクセス制御、ライセンス管理を実施。Webサーバーや業務システムとあわせてクラウドで運用することで、コストと人的リソースを抑えました。",
     "results": [],
     "scale": [
       {
         "metric": "設置台数",
         "value": "約100台（Windows）"
+      },
+      {
+        "metric": "管理人数",
+        "value": "2名"
       },
       {
         "metric": "導入時期",
@@ -124001,15 +124001,15 @@
   {
     "id": "www-intercom-co-jp-malion-casestudy-dartslive",
     "title": "Windows 7 64ビット対応と使いやすさで、IT資産管理ツールをMaLionに統一",
-    "summary": "ゲームソフト開発企業が、Windows OSのリリースに伴う新しいIT資産管理ツール導入の必要性と、既存ツールの64ビット非対応という課題を抱えていました。操作性、価格、サポート対応の良さなどを評価してMaLionを導入し、効率的なライセンス管理とセキュリティ対策を実現しました。",
+    "summary": "エレクトロニックダーツ市場をリードするダーツライブは、Windows OSの更新に伴う新しいIT資産管理ツール導入の必要性と、既存ツールの64ビット非対応という課題を抱えていました。操作性、価格、サポート対応の良さなどを評価してMaLionを導入し、効率的なライセンス管理とセキュリティ対策を実現しました。",
     "vendor": "intercom.co.jp",
     "product": "MaLion",
     "productCategory": "other-product",
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/dartslive/",
     "collectedAt": "2026-09-02T00:00:00.000Z",
     "customer": {
-      "name": "株式会社ポートブレイ株式会社",
-      "industry": "it",
+      "name": "株式会社ダーツライブ",
+      "industry": "other-industry",
       "size": "",
       "dept": "情報システム課"
     },
@@ -124043,14 +124043,14 @@
   {
     "id": "www-intercom-co-jp-malion-casestudy-fcctechno",
     "title": "クラウド移行とリモートワーク対応で、Mac/Windows混在環境を統一管理",
-    "summary": "コロナ禍とリモートワーク推進により従業員が自宅から様々なOSのPCを使用する課題を抱えていた。MaLionを導入してクラウドベースでリアルタイムにPC操作ログと端末稼働状況を一元管理し、セキュリティ対策と業務負担の軽減を実現した。",
+    "summary": "福岡の独立系SI企業であるFCCテクノは、コロナ禍とリモートワーク推進により従業員が自宅から様々なOSのPCを使用する課題を抱えていた。MaLionCloudを導入してクラウドベースでリアルタイムにPC操作ログと端末稼働状況を一元管理し、セキュリティ対策と業務負担の軽減を実現した。",
     "vendor": "intercom.co.jp",
     "product": "MaLion",
     "productCategory": "security",
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/fcctechno/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "株式会社FCCネット",
+      "name": "株式会社FCCテクノ",
       "industry": "it",
       "size": "従業員数不明",
       "dept": "Administration部（システム管理）"
@@ -124061,7 +124061,7 @@
       "labor"
     ],
     "challengeDetail": "リモートワーク推進に伴い、従業員がMac/Windowsを混在して使用するようになり、複数のオンプレミス管理ツールではリアルタイムログの確認ができない課題と、異なるOSを統一管理できない問題が発生。",
-    "actions": "クラウドベースのMaLionを導入し、Mac・Windows両OSのPC約200台を4部門4階層で一元管理。全端末の操作ログ、稼働状況、セキュリティ情報をクラウド上で統一的に監視・管理できる体制を構築。",
+    "actions": "クラウドベースのMaLionCloudを導入し、本社・テレワーク・出向先で使われるMac・Windows両OSのPC約200台を、システム管理者4名で一元管理。全端末の操作ログ、稼働状況、セキュリティ情報をクラウド上で統一的に監視・管理できる体制を構築。",
     "results": [],
     "scale": [
       {
@@ -124069,12 +124069,12 @@
         "value": "約200台（Mac・Windows混在）"
       },
       {
-        "metric": "導入部門",
-        "value": "本社・ネットワーク・拠点の3組織"
+        "metric": "利用場所",
+        "value": "本社・テレワーク・出向先"
       },
       {
-        "metric": "管理階層",
-        "value": "4階層"
+        "metric": "システム管理者",
+        "value": "4名"
       },
       {
         "metric": "導入時期",
@@ -124104,7 +124104,7 @@
     "customer": {
       "name": "G2 Studios株式会社",
       "industry": "it",
-      "size": "従業員数不詳（Windows約320台、Mac約120台の規模）",
+      "size": "",
       "dept": "システム部"
     },
     "challenges": [
@@ -124118,10 +124118,6 @@
       {
         "metric": "導入台数",
         "value": "440台（Windows約320台、Mac約120台）"
-      },
-      {
-        "metric": "導入部門",
-        "value": "システム部情報システム課の5つの部制"
       },
       {
         "metric": "ログ保管期間",
@@ -124141,7 +124137,7 @@
   {
     "id": "www-intercom-co-jp-malion-casestudy-ine",
     "title": "従業員の居残業を削減しPC管理を強化 - MaLion導入で業務効率化を実現",
-    "summary": "エンロジーフランチャイズとWebマーケティング事業を展開するINE社は、従業員の居残業削減と社内PC管理の強化が課題でした。PC強制シャットダウン機能とIT資産管理機能を備えたMaLionを導入することで、定時での帰社を徹底し、PC利用状況の一元管理によるIT業務の効率化を実現しました。",
+    "summary": "エコロジープランニングとWebマーケティング事業を手掛けるINEは、従業員の居残業削減と社内PC管理の強化が課題でした。PC強制シャットダウン機能とIT資産管理機能を備えたMaLionを導入することで、定時での退社を徹底し、PC利用状況の一元管理によるIT業務の効率化を実現しました。",
     "vendor": "intercom.co.jp",
     "product": "MaLion",
     "productCategory": "other-product",
@@ -124149,15 +124145,15 @@
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
       "name": "株式会社INE",
-      "industry": "it",
-      "size": "従業員227台（Windows端末）",
-      "dept": "全社IT部"
+      "industry": "other-industry",
+      "size": "",
+      "dept": "総務部"
     },
     "challenges": [
       "labor",
       "efficiency"
     ],
-    "challengeDetail": "従業員の居残業が多く、側面管理の強化とワークライフバランスの改善が課題でした。また、複数の拠点にある共有PCの利用状況把握が難しく、誰がどのPCを使用しているかの把握が困難でした。",
+    "challengeDetail": "従業員の居残業が多く、労務管理の強化とワークライフバランスの改善が課題でした。また、複数の拠点にある共有PCの利用状況把握が難しく、誰がどのPCを使用しているかの把握が困難でした。",
     "actions": "PC強制シャットダウン機能により定時にPCを強制終了し、IT資産管理機能でPCユーザーを一元管理、Web監視機能で業務に不要なサイトへのアクセスを制限、リモートコントロール機能で支社従業員のサポートを実施しました。",
     "results": [],
     "scale": [
@@ -124166,11 +124162,11 @@
         "value": "227台（Windows）"
       },
       {
-        "metric": "管理拠点数",
-        "value": "東京本社および全支店"
+        "metric": "管理人数",
+        "value": "総務部2名"
       }
     ],
-    "resultsQualitative": "居残業が削減され、定時以降での帰社が徹底されました。IT資産管理業務が大幅に効率化され、PCの利用者が一目で分かるようになりました。遠隔地のトラブル対応がリモートコントロール機能により簡便化されました。",
+    "resultsQualitative": "居残業が削減され、定時での退社が徹底されました。IT資産管理業務が大幅に効率化され、PCの利用者が一目で分かるようになりました。遠隔地のトラブル対応がリモートコントロール機能により簡便化されました。",
     "hasNumbers": false,
     "sample": false,
     "image": "https://www.intercom.co.jp/malion/casestudy/ine/images/jsonld-16x9.jpg",
@@ -124190,7 +124186,7 @@
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/matsumura-gumi/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "株式会社松江組",
+      "name": "株式会社松村組",
       "industry": "construction",
       "size": "大企業",
       "dept": "情報システム課"
@@ -124239,7 +124235,7 @@
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
       "name": "株式会社MJE",
-      "industry": "it",
+      "industry": "other-industry",
       "size": "",
       "dept": "情報システム部"
     },
@@ -124254,11 +124250,19 @@
     "scale": [
       {
         "metric": "管理対象PC台数",
-        "value": "370台"
+        "value": "370台（Windows）"
       },
       {
         "metric": "管理拠点数",
-        "value": "5拠点"
+        "value": "国内5拠点"
+      },
+      {
+        "metric": "管理者",
+        "value": "情報システム部7名"
+      },
+      {
+        "metric": "導入時期",
+        "value": "2015年6月購入、2016年1月から各拠点へ順次展開"
       }
     ],
     "resultsQualitative": "PC操作ログの一元的な追跡管理が実現し、不正なデータアクセスや情報漏洩経路の早期発見が可能になりました。また、インベントリ情報の自動配分により従業員ごとのPCスペック把握が効率化され、新規PC配置時の計画策定がスムーズになりました。",
@@ -124282,7 +124286,7 @@
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/pca/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "ドース・シー・エー株式会社",
+      "name": "ピー・シー・エー株式会社",
       "industry": "it",
       "size": "従業員450名程度",
       "dept": "情報システム部"
@@ -124325,7 +124329,7 @@
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/polygon-pictures/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "株式会社オリゴン・セックミュアズ",
+      "name": "株式会社ポリゴン・ピクチュアズ",
       "industry": "it",
       "size": "",
       "dept": "システム部門"
@@ -124348,12 +124352,8 @@
         "value": "745台（Win/Mac）"
       },
       {
-        "metric": "導入時期",
+        "metric": "取材時期",
         "value": "2016年10月"
-      },
-      {
-        "metric": "導入から現在までの期間",
-        "value": "約1年"
       }
     ],
     "resultsQualitative": "ソフトウェア資産の管理が正確かつ効率的になり、監視対象端末の情報自動送信の問題が解決された。ユーザーサポートの質が優れており、メール対応での返信速度が速く、根因究明のための提案が適切で、サポート面でのていねいさが評価された。",
@@ -124377,7 +124377,7 @@
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
       "name": "株式会社TBSサービス（現：株式会社TBSグロウディア）",
-      "industry": "it",
+      "industry": "other-industry",
       "size": "",
       "dept": "経営システム部"
     },
@@ -124411,15 +124411,15 @@
   {
     "id": "www-intercom-co-jp-malion-casestudy-tenboshi-seiyu",
     "title": "38台のPC管理を1人で効率化、セキュリティ対策も強化",
-    "summary": "天松製油は産業廃棄物処理業を営み、複数拠点で38台のWindowsパソコンを管理していたが、不正利用防止とIT資産管理が課題だった。MaLionを導入することで、PC操作ログの一元管理、リモートコントロール、USBデバイス制限など複数の機能を活用し、1人でも効率的なセキュリティ体制を実現した。",
+    "summary": "天星製油は産業廃棄物処理業を営み、複数拠点で38台のWindowsパソコンを管理していたが、不正利用防止とIT資産管理が課題だった。MaLionを導入することで、PC操作ログの一元管理、リモートコントロール、USBデバイス制限など複数の機能を活用し、1人でも効率的なセキュリティ体制を実現した。",
     "vendor": "intercom.co.jp",
     "product": "MaLion",
     "productCategory": "security",
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/tenboshi-seiyu/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "天松製油株式会社",
-      "industry": "other-industry",
+      "name": "天星製油株式会社",
+      "industry": "energy",
       "size": "",
       "dept": "IT関連部門"
     },
@@ -124470,17 +124470,17 @@
   },
   {
     "id": "www-intercom-co-jp-malion-casestudy-yamashita-pmc",
-    "title": "施設建設のPM企業が、IT資産管理をMaLionからMaLion Cloudへ移行し、リモートワーク対応と一元管理を実現",
-    "summary": "施設建設のPM・CM企業である山田PMCは、従来のオンプレミスのMaLionでIT資産管理を行っていましたが、リモートワーク拡大に伴い、クラウドでの一元的な資産管理の必要性が高まりました。MaLion Cloudへの移行により、ネットワークが断絶した状況での遠隔操作や、柔軟なセキュリティ対策が可能になり、IT資産管理がより効率的かつ安全になりました。",
+    "title": "施設建設のPM企業が、IT資産管理をMaLionからMaLionCloudへ移行し、リモートワーク対応と一元管理を実現",
+    "summary": "施設建設のPM・CM企業である山下PMCは、従来のオンプレミスのMaLionでIT資産管理を行っていましたが、リモートワーク拡大に伴い、クラウドでの一元的な資産管理の必要性が高まりました。MaLionCloudへの移行により、ネットワークが断絶した状況での遠隔操作や、柔軟なセキュリティ対策が可能になり、IT資産管理がより効率的かつ安全になりました。",
     "vendor": "intercom.co.jp",
     "product": "MaLion Cloud",
     "productCategory": "other-product",
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/yamashita-pmc/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "株式会社山田PMC",
+      "name": "株式会社山下PMC",
       "industry": "construction",
-      "size": "従業員6部門規模",
+      "size": "",
       "dept": "経営戦略本部 BPM・IT部"
     },
     "challenges": [
@@ -124489,7 +124489,7 @@
       "labor"
     ],
     "challengeDetail": "従来のExcelを使った小規模な資産台帳管理では、従業員数増加に伴い管理が煩雑化していました。また、セキュリティ面で操作ログ取得の要件が新たに発生し、リモートワーク拡大に伴いオンプレミス環境での運用では対応が困難になっていました。サーバーの老朽化も課題でした。",
-    "actions": "従来のMaLionからクラウドベースのMaLion Cloudへ移行しました。これにより、ネットワークが断絶した状況でもリモート制御が可能になり、外部からの管理・制御が実現できるようになりました。また、ファイル転送機能でセキュリティソフトを遠隔インストール可能にし、Windows 10のオンプレミス環境を活かしながらクラウドの利便性を取り込みました。",
+    "actions": "従来のMaLionからクラウドベースのMaLionCloudへ移行しました。これにより、ネットワークが断絶した状況でもリモート制御が可能になり、外部からの管理・制御が実現できるようになりました。また、ファイル転送機能でセキュリティソフトを遠隔インストール可能にし、Windows 10のオンプレミス環境を活かしながらクラウドの利便性を取り込みました。",
     "results": [],
     "scale": [
       {
@@ -124501,7 +124501,7 @@
         "value": "296台（Win/Mac）"
       }
     ],
-    "resultsQualitative": "MaLion Cloudの導入により、万が一コンピュータが故障しても遠隔対応が可能になり、安心感が生まれました。社外への持ち出しにも不安のない対応ができるようになったことが大きな導入効果です。",
+    "resultsQualitative": "MaLionCloudの導入により、万が一コンピュータが故障しても遠隔対応が可能になり、安心感が生まれました。社外への持ち出しにも不安のない対応ができるようになったことが大きな導入効果です。",
     "hasNumbers": false,
     "sample": false,
     "image": "https://www.intercom.co.jp/malion/casestudy/yamashita-pmc/images/jsonld-16x9.jpg",
@@ -124516,16 +124516,16 @@
   {
     "id": "www-intercom-co-jp-malion-casestudy-yodoko-shoji",
     "title": "複数システムの自動連携で勤務管理の課題を解決、PC操作ログと実績データの差異を可視化",
-    "summary": "エトピ工業では、勤務実績申告とPC操作ログの差異確認や異常な残業検出に時間がかかっていた。MaLionと勤務管理システムRocoTimeを自動連携させることで、両システムのデータを自動で統合し、差異を即座に可視化。部門長への報告業務が効率化され、従業員の勤務状況把握が改善された。",
+    "summary": "鉄鋼製品・建材を扱う商社のヨドコウ商事では、勤務実績申告とPC操作ログの差異確認や異常な残業検出に時間がかかっていた。MaLionと勤務管理システムRocoTimeを自動連携させることで、両システムのデータを自動で統合し、差異を即座に可視化。部門長への報告業務が効率化され、従業員の勤務状況把握が改善された。",
     "vendor": "intercom.co.jp",
     "product": "MaLion、RocoTime",
     "productCategory": "other-product",
     "sourceUrl": "https://www.intercom.co.jp/malion/casestudy/yodoko-shoji/",
     "collectedAt": "2026-09-10T00:00:00.000Z",
     "customer": {
-      "name": "エトピ工業株式会社",
-      "industry": "manufacturing",
-      "size": "従業員数不明（PC150台を管理）",
+      "name": "ヨドコウ商事株式会社",
+      "industry": "other-industry",
+      "size": "",
       "dept": "総務部"
     },
     "challenges": [
@@ -124546,7 +124546,7 @@
         "value": "4部門"
       }
     ],
-    "resultsQualitative": "勤務実績と申告の差異が即座に発見できるようになり、従業員の勤務状況把握が改善された。手作業による差異確認の業務がなくなり、タイムラグが解消された。",
+    "resultsQualitative": "勤務実績と申告の差異が即座に発見でき、異常があれば24時間以内に把握できるようになった。手作業による差異確認の業務がなくなり、タイムラグが解消された。",
     "hasNumbers": false,
     "sample": false,
     "image": "https://www.intercom.co.jp/malion/casestudy/yodoko-shoji/images/jsonld-16x9.jpg",
