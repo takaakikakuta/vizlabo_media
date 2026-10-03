@@ -132,3 +132,16 @@ VSCodeで開けば文法ミスは赤線で出る。壊れたまま保存して�
 ## 記事を非公開にするとき
 
 JSONに `"hidden": true` を足すと、一覧・トップ・個別URLのすべてから消える（ファイルは残るので、消せば再公開）。
+
+## 文章のAIっぽさ検査（yomiyasu）
+
+記事本文を書いたら、公開前に `.claude/skills/yomiyasu`（[nanaism/yomiyasu](https://github.com/nanaism/yomiyasu)・MIT）で推敲する。
+Claude Code では「この文章を読みやすくして」「AI臭さを消して」と頼むとスキルが呼ばれる。数値だけ見たいときはリンターを直接回す。
+
+```bash
+# JSONの本文を抜き出して検査する例（lead・criteriaNote・items・outro）
+node -e 'const a=require("./content/articles/<記事>.json");console.log([a.lead,a.criteriaNote,...a.items.map(i=>i.headline+"\n\n"+i.body),a.outro].join("\n\n"))' > /tmp/article.md
+python3 .claude/skills/yomiyasu/scripts/yomiyasu_lint.py /tmp/article.md
+```
+
+リンターの「AではなくB」「装置」などの指摘は機械的な検出なので、意味や比重を担っている否定や、文字どおりの語（助力装置など）は残してよい。
