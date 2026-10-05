@@ -18,12 +18,12 @@ export default function ArticlesPage() {
       <div className="border-t border-line">
         {articles.map((a) => (
           <Link key={a.slug} href={`/articles/${a.slug}`}
-            className="row group flex gap-5 border-b border-line2 px-2 py-6 no-underline">
-            {/* サムネイル（thumbnail 指定 > 記事内事例の画像 > 号数タイル） */}
-            <div className="relative hidden aspect-[5/3] w-40 shrink-0 self-start overflow-hidden rounded-[3px] border border-line2 bg-soft sm:block">
+            className="row group flex flex-col gap-4 border-b border-line2 px-2 py-6 no-underline sm:flex-row sm:gap-5">
+            {/* サムネイル（thumbnail 指定 > 記事内事例の画像 > 号数タイル）。スマホは本文の上に全幅、sm以上は左に並べる */}
+            <div className="relative aspect-[5/3] w-full shrink-0 self-start overflow-hidden rounded-[3px] border border-line2 bg-soft sm:w-40">
               {articleThumb(a)
                 ? <CoverImg src={articleThumb(a)!} />
-                : <span className="num absolute inset-0 grid place-items-center text-[15px] text-muted">#{String(a.no).padStart(3, "0")}</span>}
+                : <span className="num absolute inset-0 grid place-items-center text-[22px] text-muted sm:text-[15px]">#{String(a.no).padStart(3, "0")}</span>}
             </div>
             <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[11.5px] text-muted">
