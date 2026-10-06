@@ -12,7 +12,8 @@ import FeaturedServices from "./FeaturedServices";
 import SuggestForm from "../SuggestForm";
 import { SUGGEST_ENABLED } from "../../lib/flags";
 
-/* 「選」テンプレート（テーマ別の事例10選）。順位ではなく並列の選として組む。
+/* 「選」テンプレート（テーマ別の事例10選・3選）。順位ではなく並列の選として組む。
+   3選では任意の compare（比べる表）を items の後に置ける。
    各項目は〈書き下ろしの見出し＋読みどころ〉＋〈事例データから自動で出すカルテと成果数字〉。
    選定基準と範囲は criteriaNote で冒頭に明示する。 */
 
@@ -20,6 +21,7 @@ export default function Sen({ article }: { article: SenArticle }) {
   const entries = article.items
     .map((it, i) => ({ ...it, i, c: getCase(it.caseId) }))
     .filter((e) => e.c);
+  const compare = article.compare && article.compare.rows.length > 0 ? article.compare : undefined;
 
   return (
     <article className="mx-auto max-w-3xl px-5 py-12">
@@ -67,11 +69,14 @@ export default function Sen({ article }: { article: SenArticle }) {
         </p>
       </div>
 
-      <Toc items={entries.map((e) => ({
-        id: `item${e.i + 1}`, no: String(e.i + 1).padStart(2, "0"), label: e.headline,
-      }))} />
+      <Toc items={[
+        ...entries.map((e) => ({
+          id: `item${e.i + 1}`, no: String(e.i + 1).padStart(2, "0"), label: e.headline,
+        })),
+        ...(compare ? [{ id: "compare", no: "比", label: compare.title ?? `${entries.length}社を比べる` }] : []),
+      ]} />
 
-      {/* ── 10本 ── */}
+      {/* ── 10本（3選なら3本） ── */}
       <div className="mt-4">
         {entries.map((e) => {
           const c = e.c!;
@@ -122,6 +127,48 @@ export default function Sen({ article }: { article: SenArticle }) {
           );
         })}
       </div>
+
+      {/* ── 比べる（任意。3選で、読者が自社の位置を判定するための表） ── */}
+      {compare && (
+        <section id="compare" className="mt-14 scroll-mt-20 border-t-2 border-ink pt-6">
+          <h2 className="font-display text-[20px] leading-snug text-ink">{compare.title ?? `${entries.length}社を比べる`}</h2>
+          {compare.intro && <p className="mt-4 text-[13.5px] leading-[2.1] text-body">{compare.intro}</p>}
+          <div className="mt-6 overflow-x-auto">
+            <table className="w-full min-w-[560px] border-collapse text-left">
+              <thead>
+                <tr className="border-b-2 border-ink">
+                  <th className="label py-2.5 pr-3 font-normal"> </th>
+                  {entries.map((e) => (
+                    <th key={e.caseId} className="py-2.5 pr-3 align-bottom">
+                      <a href={`#item${e.i + 1}`} className="no-underline">
+                        <span className="num block text-[11px] text-muted">{String(e.i + 1).padStart(2, "0")}</span>
+                        <span className="label mt-1 block normal-case tracking-normal text-ink">{e.c!.customer.name || "導入企業（非公開）"}</span>
+                      </a>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {compare.rows.map((row, i) => (
+                  <tr key={i} className="border-b border-line2 align-top">
+                    <th className="w-28 py-3.5 pr-3 text-[12px] font-bold leading-relaxed text-ink2">{row.label}</th>
+                    {entries.map((e, j) => (
+                      <td key={e.caseId} className="py-3.5 pr-3 text-[12.5px] leading-[1.9] text-body">{row.values[j] ?? "—"}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {compare.fit && (
+            <div className="mt-6 border border-line2 px-4 py-3.5">
+              <p className="label mb-2">自社に近いのは</p>
+              <p className="text-[13.5px] leading-[2.1] text-body">{compare.fit}</p>
+            </div>
+          )}
+          {compare.note && <p className="mt-5 text-[11.5px] leading-[1.9] text-muted">{compare.note}</p>}
+        </section>
+      )}
 
       {/* ── まとめ ── */}
       <section className="mt-14 border-t-2 border-ink pt-6">
