@@ -165,7 +165,14 @@ export type SenArticle = {
   title: string[];
   lead: string;
   criteriaNote: string;   // 選定基準と範囲の明示（母数・基準・順位でないこと）
-  items: { caseId: string; headline: string; body: string }[];  // 10本（headline＝見出し、body＝読みどころ2〜3文）
+  items: { caseId: string; headline: string; body: string }[];  // 10本または3本（headline＝見出し、body＝読みどころ2〜3文）
+  compare?: {             // 任意。3選向けの「比べる」パート（items と同じ順に並べて、読者が自社の位置を判定する表）
+    title?: string;       // 見出し（既定「3社を比べる」）
+    intro?: string;       // 表の前の導入（何を軸に並べたか）
+    rows: { label: string; values: string[] }[];  // 行＝条件（規模・予算・現場の制約・選んだ手・成果など）。values は items と同順
+    fit?: string;         // 表の後の「自社に近いのはどれか」の判定の手がかり
+    note?: string;        // 限界の断り（3本の範囲でしか言えないこと）
+  };
   outroTitle: string;     // まとめの見出し
   outro: string;          // まとめ本文（並べて見えたこと・次の一歩）
   relatedSlugs?: string[]; // 関連する解体新書記事
