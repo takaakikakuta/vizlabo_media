@@ -51,6 +51,7 @@ function SiteHeader() {
               事例一覧<span className="num ml-1 text-[11px] text-muted">{total}</span>
             </NavLink>
             <NavLink href="/articles" className="hidden md:block">事例セレクション</NavLink>
+            <NavLink href="/finder" className="hidden md:block">質問で探す</NavLink>
           </nav>
         </div>
         {/* 右：アクション3つ（メルマガ／事例制作を依頼／事例を掲載する）＝アイコン付きで強調 */}
@@ -123,6 +124,7 @@ function SiteFooter() {
               <Link href="/challenges" className="no-underline hover:text-ink">課題から</Link>
               <Link href="/tags" className="no-underline hover:text-ink">困りごとから</Link>
               <Link href="/industries" className="no-underline hover:text-ink">業種から</Link>
+              <Link href="/finder" className="no-underline hover:text-ink">質問に答えて</Link>
               <Link href="/cases" className="no-underline hover:text-ink">すべての事例</Link>
               <Link href="/articles" className="no-underline hover:text-ink">事例セレクション</Link>
             </div>

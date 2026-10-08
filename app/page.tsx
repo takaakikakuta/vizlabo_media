@@ -125,6 +125,22 @@ export default function Home() {
         )}
       </section>}
 
+      {/* ── 事例ファインダーへの入口。質問に答えるだけで候補が絞れる（URLも登録も不要） ── */}
+      <section className="mx-auto max-w-6xl px-5 pt-8">
+        <Link href="/finder"
+          className="group mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-x-6 gap-y-3 border border-ink bg-white px-6 py-5 no-underline transition hover:bg-soft sm:px-8">
+          <div className="min-w-0">
+            <p className="label">事例ファインダー</p>
+            <p className="font-display mt-1.5 text-[17px] leading-snug text-ink group-hover:text-brand sm:text-[20px]">
+              業種・部門・ほしい成果を順に選ぶだけ。{s.total.toLocaleString()}件から自社に近い事例へ
+            </p>
+          </div>
+          <span className="shrink-0 border border-ink px-5 py-2.5 text-[13px] font-bold text-ink transition group-hover:bg-ink group-hover:text-white">
+            質問に答えて探す →
+          </span>
+        </Link>
+      </section>
+
       {/* ── バナー：note連載への入口。画像は public/banner/note.png を置くだけで反映（4:1、1600×400px推奨）。
            比率は4:1のまま、幅をmax-w-3xlに絞って控えめに置く ── */}
       <section className="mx-auto max-w-6xl px-5 pt-8">
