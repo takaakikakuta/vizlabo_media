@@ -1,10 +1,14 @@
 import type { CaseStudy } from "./types";
 import raw from "../data/cases.json";
+import blocked from "../data/blocked_vendors.json";
 
 /* 事例データの読み込み・絞り込み。今はリポジトリ内 JSON を静的に読む（SEO重視・DB不要）。
    件数が増えたら DB/CMS に差し替えても、この関数群のIFを保てば上位は変えずに済む。 */
 
-const ALL = raw as CaseStudy[];
+/** 掲載禁止ベンダー（削除依頼を受けた先）。データ更新で事例が再び混入しても、ここで落とす。 */
+const BLOCKED_VENDORS = new Set(blocked.vendors.map((v) => v.domain));
+
+const ALL = (raw as CaseStudy[]).filter((c) => !BLOCKED_VENDORS.has(c.vendor));
 
 /** 数字あり優先 → 収集日の新しい順 → ID順。
     同日が多数あるため、最後のID順まで決めておかないと
