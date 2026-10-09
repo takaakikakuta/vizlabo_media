@@ -7,6 +7,7 @@ import { relatedChallenges } from "../../../lib/affinity";
 import { bridgeText } from "../../../lib/bridges";
 import { challengeStyle } from "../../../lib/visuals";
 import CaseGrid, { ListHead } from "../../../components/CaseGrid";
+import { TrackView } from "../../../components/Track";
 
 /* ビルド出力の肥大化対策（Amplifyの220MB制限）:
    事前生成をやめ、初回アクセス時に生成してキャッシュするオンデマンドISRにする。
@@ -43,6 +44,8 @@ export default async function ChallengePage({ params }: { params: Promise<{ slug
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-12">
+      {/* 課題別の閲覧数（スポンサー営業の根拠）。ISRのためブラウザ側で数える */}
+      <TrackView kind="view:challenge" target={slug} />
       <ListHead eyebrow="課題から探す" title={`${t.label}の解決事例`} sub={t.desc} count={cases.length} />
 
       {/* 隣の課題＝この誌面ならではの気づき */}
