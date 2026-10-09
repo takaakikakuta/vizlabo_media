@@ -6,6 +6,7 @@ import type { ButaiuraArticle } from "../../lib/articles";
 import { articleThumb } from "../../lib/articles";
 import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
+import FinderBanner from "../FinderBanner";
 
 /* 「導入の舞台裏」テンプレート。事例群の導入・定着の記述を横断し、
    〈ぶつかった壁 → 各社が取った対応 → 対応が違った条件 → 自社で準備すること〉で書く。
@@ -144,6 +145,7 @@ export default function Butaiura({ article }: { article: ButaiuraArticle }) {
       </Sec>
 
       <FeaturedServices article={article} />
+      <FinderBanner />
 
       {/* ── ポリシー表記 ── */}
       <footer className="mt-14 border-t border-line pt-5">

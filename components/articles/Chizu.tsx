@@ -6,6 +6,7 @@ import type { ChizuArticle } from "../../lib/articles";
 import { articleThumb } from "../../lib/articles";
 import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
+import FinderBanner from "../FinderBanner";
 
 /* 「課題の攻略地図」テンプレート。1つの悩みタグを対象に、事例群から
    〈悩みの輪郭 → 手の入れ方の地図（ルート＋代表事例） → 自社ではどこから調べるか〉で書く。
@@ -147,6 +148,7 @@ export default function Chizu({ article }: { article: ChizuArticle }) {
       </Sec>
 
       <FeaturedServices article={article} />
+      <FinderBanner />
 
       {/* ── ポリシー表記 ── */}
       <footer className="mt-14 border-t border-line pt-5">

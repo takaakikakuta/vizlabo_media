@@ -6,6 +6,7 @@ import { articleThumb } from "../../lib/articles";
 import CoverImg from "../CoverImg";
 import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
+import FinderBanner from "../FinderBanner";
 
 /* 「導入前の日本」（アンソロジー）テンプレート。
    1つの困りごとタグを対象に、該当事例の「導入前」の記述を編む。
@@ -223,6 +224,7 @@ export default function Dounyumae({ article }: { article: DounyumaeArticle }) {
       </section>
 
       <FeaturedServices article={article} />
+      <FinderBanner />
     </article>
   );
 }

@@ -9,6 +9,7 @@ import { vendorLogo } from "../../lib/vendors";
 import type { SenArticle } from "../../lib/articles";
 import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
+import FinderBanner from "../FinderBanner";
 import SuggestForm from "../SuggestForm";
 import { SUGGEST_ENABLED } from "../../lib/flags";
 
@@ -209,6 +210,7 @@ export default function Sen({ article }: { article: SenArticle }) {
       )}
 
       <FeaturedServices article={article} />
+      <FinderBanner />
 
       {/* ── ポリシー表記 ── */}
       <footer className="mt-14 border-t border-line pt-5">

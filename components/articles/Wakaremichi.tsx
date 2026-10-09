@@ -9,6 +9,7 @@ import { articleThumb } from "../../lib/articles";
 import CoverImg from "../CoverImg";
 import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
+import FinderBanner from "../FinderBanner";
 
 /* 「分かれ道」型のテンプレート。
    書かれた部分は article（content/articles/*.json）から、
@@ -167,6 +168,7 @@ export default function Wakaremichi({ article }: { article: WakaremichiArticle }
       </section>
 
       <FeaturedServices article={article} />
+      <FinderBanner />
     </article>
   );
 }

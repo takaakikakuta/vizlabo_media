@@ -9,6 +9,7 @@ import type { GenbaArticle } from "../../lib/articles";
 import { articleThumb } from "../../lib/articles";
 import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
+import FinderBanner from "../FinderBanner";
 
 /* 「導入の現場から」テンプレート。1社の事例を軸に、同じ課題を扱う事例群と照らしながら
    〈いくつかの道 → 軸事例 → 特徴の読み → 参考になる条件 → 自社と照らす〉で書く。
@@ -253,6 +254,7 @@ export default function Genba({ article }: { article: GenbaArticle }) {
       </Sec>
 
       <FeaturedServices article={article} />
+      <FinderBanner />
 
       {/* ── PRポリシー表記 ── */}
       <footer className="mt-14 border-t border-line pt-5">

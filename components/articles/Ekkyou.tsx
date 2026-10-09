@@ -7,6 +7,7 @@ import type { EkkyouArticle, EkkyouScene } from "../../lib/articles";
 import { articleThumb } from "../../lib/articles";
 import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
+import FinderBanner from "../FinderBanner";
 
 /* 「業界を越える事例」テンプレート。一見遠い2つの現場を並べ、
    〈2つの現場 → 共通する仕事の構造 → 借りられる工夫 → 持ち込めない条件〉で書く。
@@ -138,6 +139,7 @@ export default function Ekkyou({ article }: { article: EkkyouArticle }) {
       </Sec>
 
       <FeaturedServices article={article} />
+      <FinderBanner />
 
       {/* ── ポリシー表記 ── */}
       <footer className="mt-14 border-t border-line pt-5">
