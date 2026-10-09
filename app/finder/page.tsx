@@ -3,6 +3,7 @@ import { siteStats } from "../../lib/cases";
 import { AXES, SKIP, answerLabel, axisShort, finderHref, finderState, parseAnswers, type Answers } from "../../lib/finder";
 import { SUGGEST_ENABLED } from "../../lib/flags";
 import CaseGrid, { ListHead } from "../../components/CaseGrid";
+import { TrackFinder } from "../../components/Track";
 
 /* 事例ファインダー。質問に1つずつ答えると候補が絞られ、最後に自社に近い事例が並ぶ。
    状態はすべてURLクエリ（ind/sub/dept/eff/size/prod）に持つ：
@@ -35,6 +36,9 @@ export default async function FinderPage({ searchParams }: {
 
   return (
     <div className="mx-auto max-w-4xl px-5 py-12">
+      {/* 回答と結果到達を計測（「いま企業が困っていること」の一次データ）。
+          自動スキップされた軸は数えないよう、URLにあった回答（answers）だけを渡す */}
+      <TrackFinder answers={answers} showResults={done || showResults} count={st.candidates.length} />
       <ListHead eyebrow="事例ファインダー" title="質問に答えるだけで、自社に近い事例へ"
         sub={`業種・部門・ほしい成果・規模を順に選ぶだけ。${s.total.toLocaleString()}件の掲載事例から、あなたの会社に近い導入事例を絞り込みます。`} />
 

@@ -75,6 +75,7 @@ function SampleMail() {
     industry: "manufacturing",
     tags: ["手作業の転記", "業務の属人化", "紙の書類処理"],
     keywords: ["金属加工", "製造", "工場"],
+    challenges: ["efficiency", "standardize"],
   });
   const rows = (cs: CaseStudy[]) => cs.slice(0, 3).map((c) => {
     const r = c.results.find((x) => /\d/.test(x.value)) ?? c.results[0];
