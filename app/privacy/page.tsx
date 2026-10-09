@@ -22,6 +22,10 @@ const SECTIONS: { heading: string; body: React.ReactNode }[] = [
         <p className="mt-3">
           また、サービス改善のためGoogle タグマネージャー等を利用してアクセス情報（Cookie等）を取得します。
         </p>
+        <p className="mt-3">
+          あわせて当サイトでは、<strong className="font-bold text-ink">サイト内の閲覧状況（どの課題ページ・事例ページが閲覧されたか）と、
+          事例ファインダー・AI事例サジェストへの入力内容（選択した業種・部門・成果等、入力された会社サイトのURL、AIによる推定結果）</strong>を記録します。
+        </p>
       </>
     ),
   },
@@ -34,6 +38,7 @@ const SECTIONS: { heading: string; body: React.ReactNode }[] = [
         <li>メルマガ「週刊 事例マニア」の配信</li>
         <li>AI事例サジェストのメール送付、および関連する事例のご案内</li>
         <li>サイトの利用状況の分析・改善</li>
+        <li>閲覧状況・入力内容の集計結果の、掲載企業および広告主への提供（次項参照）</li>
       </ul>
     ),
   },
@@ -45,6 +50,11 @@ const SECTIONS: { heading: string; body: React.ReactNode }[] = [
           「まとめて問い合わせ」（一括問い合わせ）をご利用の場合、ご入力いただいた情報（会社名、氏名、メールアドレス、電話番号、ご相談内容）を、
           <strong className="font-bold text-ink">お客様が選択されたサービスの提供企業へ提供します</strong>。
           提供先の各企業から、ご入力の連絡先へ直接ご連絡が届くことがあります。
+        </p>
+        <p className="mt-3">
+          また、サイト内の閲覧状況と事例ファインダー・AI事例サジェストへの入力内容は、
+          <strong className="font-bold text-ink">個人や特定の会社を識別できない集計・統計の形</strong>（例: 課題ごとの閲覧数、各掲載企業の事例の閲覧数、業種や課題の分布）で、
+          掲載企業および広告主に提供することがあります。メールアドレスや入力された会社サイトのURLそのものを、この目的で提供することはありません。
         </p>
         <p className="mt-3">
           上記のほかは、ご本人の同意がある場合または法令に基づく場合を除き、取得した個人情報を第三者に提供しません。
@@ -99,7 +109,7 @@ export default function PrivacyPage() {
         ))}
       </div>
 
-      <p className="mt-12 border-t border-line pt-5 text-[11.5px] text-muted">制定: 2026年9月30日</p>
+      <p className="mt-12 border-t border-line pt-5 text-[11.5px] text-muted">制定: 2026年9月30日　改定: 2026年10月9日</p>
     </div>
   );
 }
