@@ -2312,7 +2312,6 @@
   "service-plainer-co-jp-case-softbrain": {"dept": ["sales"], "effects": ["time", "standard"], "size": "s3", "sizeBasis": "stated"},
   "service-plainer-co-jp-case-teachmebiz": {"dept": ["sales", "marketing"], "effects": ["time", "sales"], "size": "unknown", "sizeBasis": "none"},
   "service-plainer-co-jp-case-wevox": {"dept": ["marketing"], "effects": ["sales", "visibility"], "size": "s3", "sizeBasis": "stated"},
-  "service-shiftinc-jp-case-algo-artis": {"dept": ["production"], "effects": ["standard", "time"], "size": "s4", "sizeBasis": "stated"},
   "service-shiftinc-jp-case-au-cl": {"dept": ["it", "sales"], "effects": ["time", "quality"], "size": "s4", "sizeBasis": "stated"},
   "service-shiftinc-jp-case-hitachi-hightech-hfd": {"dept": ["it", "production"], "effects": ["time", "standard"], "size": "s5", "sizeBasis": "stated"},
   "service-shiftinc-jp-case-itamiarts": {"dept": ["it"], "effects": ["risk"], "size": "s4", "sizeBasis": "stated"},
