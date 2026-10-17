@@ -1,6 +1,6 @@
 import { BedrockRuntimeClient, ConverseCommand } from "@aws-sdk/client-bedrock-runtime";
 import { allCases, tagCounts } from "./cases";
-import { INDUSTRIES, industryLabel } from "./taxonomy";
+import { CHALLENGES, CHALLENGE_MAP, INDUSTRIES, industryLabel } from "./taxonomy";
 import type { CaseStudy } from "./types";
 import { searchKey } from "../components/CaseGrid";
 
@@ -28,6 +28,7 @@ export type CompanyProfile = {
   industry: string;     // 当サイトの業種slug
   tags: string[];       // 当サイトの困りごとタグから最大5つ
   keywords: string[];   // 事例検索用キーワード（3〜6語）
+  challenges: string[]; // 当サイトの課題カテゴリ（CHALLENGES の slug）から最大3つ。計測（課題別集計）用
 };
 
 /** 相手サイトを取得して本文テキストに落とす（6秒であきらめる） */
@@ -60,11 +61,12 @@ export async function fetchSiteText(url: string): Promise<string> {
 export async function analyzeCompany(siteText: string): Promise<CompanyProfile> {
   const industries = INDUSTRIES.map((i) => `${i.slug}（${i.label}）`).join(", ");
   const topTags = tagCounts().slice(0, 60).map(([t]) => t).join(", ");
+  const challenges = CHALLENGES.map((c) => `${c.slug}（${c.label}）`).join(", ");
 
   const prompt = [
     "あなたはBtoB導入事例データベースの分析係です。以下の会社サイトの本文から、この会社のプロフィールを推定してください。",
     "必ず次のJSONだけを出力してください（説明文は不要）:",
-    `{"summary":"何をしている会社かを50字以内で","industry":"次のslugから最も近い1つ: ${industries}","tags":["次の語彙から、この会社が抱えていそうな業務課題を最大5つ: ${topTags}"],"keywords":["この会社に似た導入事例を探すための検索語を3〜6個（業種名・業務名など短い日本語）"]}`,
+    `{"summary":"何をしている会社かを50字以内で","industry":"次のslugから最も近い1つ: ${industries}","tags":["次の語彙から、この会社が抱えていそうな業務課題を最大5つ: ${topTags}"],"keywords":["この会社に似た導入事例を探すための検索語を3〜6個（業種名・業務名など短い日本語）"],"challenges":["次のslugから、この会社が抱えていそうな課題を近い順に最大3つ: ${challenges}"]}`,
     "--- サイト本文 ---",
     siteText,
   ].join("\n");
@@ -83,6 +85,9 @@ export async function analyzeCompany(siteText: string): Promise<CompanyProfile> 
     industry: String(j.industry ?? "").split("（")[0].trim(),
     tags: Array.isArray(j.tags) ? j.tags.map(String).slice(0, 5) : [],
     keywords: Array.isArray(j.keywords) ? j.keywords.map(String).slice(0, 6) : [],
+    challenges: Array.isArray(j.challenges)
+      ? j.challenges.map((c: unknown) => String(c).split("（")[0].trim()).filter((c: string) => CHALLENGE_MAP[c]).slice(0, 3)
+      : [],
   };
 }
 

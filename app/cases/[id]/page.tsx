@@ -8,6 +8,7 @@ import { challengeStyle, primaryChallenge } from "../../../lib/visuals";
 import { parseStat, statSize } from "../../../lib/stat";
 import Adoption from "../../../components/Adoption";
 import CoverImg from "../../../components/CoverImg";
+import { TrackView } from "../../../components/Track";
 
 /* ビルド出力の肥大化対策（Amplifyの220MB制限）:
    事前生成をやめ、初回アクセス時に生成してキャッシュするオンデマンドISRにする。
@@ -35,6 +36,8 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 
   return (
     <article className="mx-auto max-w-3xl px-5 py-12">
+      {/* 事例別・ベンダー別・課題別の閲覧数（掲載企業への特典データ）。ISRのためブラウザ側で数える */}
+      <TrackView kind="view:case" target={c.id} />
       {/* 見出し周り＝記事の扉 */}
       <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[11.5px]">
         <span className="inline-flex items-center gap-1.5 font-bold text-ink2">

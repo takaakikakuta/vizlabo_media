@@ -5,6 +5,7 @@ import { guardForm } from "../../lib/ratelimit";
 import { fetchSiteText, analyzeCompany, matchCases, buildSuggestMail, buildSuggestMailHtml } from "../../lib/suggest";
 import { mailConfigured, sendMail } from "../../lib/mail";
 import { notifySubscribe } from "../../lib/notify";
+import { recordEvent } from "../../lib/analytics";
 
 /* URLサジェスト（会社URL＋メール → AIが似た事例をメールで送る）のサーバー処理。
    同期実行（サイト取得6秒＋Haiku数秒＋メール送信）で、ユーザーは10秒前後待つ。 */
@@ -41,6 +42,28 @@ export async function submitSuggest(_prev: SuggestState, fd: FormData): Promise<
     const profile = await analyzeCompany(text);
     const suggestions = matchCases(profile);
     const total = suggestions.sameIndustry.length + suggestions.similar.length;
+
+    // 一次データとして記録（入力サイト・AIの理解・推定した業種/タグ/課題・提示件数）。
+    // 計測の失敗で本体を失敗にはしない
+    try {
+      await recordEvent({
+        kind: "suggest",
+        target: new URL(url).hostname.replace(/^www\./, ""),
+        meta: {
+          url, email, source,
+          summary: profile.summary,
+          industry: profile.industry,
+          tags: profile.tags,
+          keywords: profile.keywords,
+          challenges: profile.challenges,
+          matched: total,
+          newsletter: wantsNewsletter,
+        },
+      });
+    } catch (err) {
+      console.error("[analytics] URL診断の記録に失敗", err);
+    }
+
     if (total === 0) {
       return { status: "error", error: "近い事例を見つけられませんでした。業種やキーワードで直接お探しください。" };
     }

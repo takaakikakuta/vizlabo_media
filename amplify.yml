@@ -1,6 +1,7 @@
 # Amplify Hosting のビルド定義（Gen2 フルスタック / Next.js SSR）。
 # backendフェーズで amplify/ の定義をデプロイし、frontendフェーズでNext.jsをビルドする。
-# いまのバックエンドは空（defineBackend({})）。DBを足すときは amplify/data/resource.ts を追加。
+# バックエンドは課題別計測用の DynamoDB テーブル1つ（amplify/backend.ts）。
+# テーブル名は vizlabo-media-analytics-$AWS_BRANCH。next.config.ts が同じ名前を ANALYTICS_TABLE に焼き込む。
 # 環境変数を本番導入するときは、SSRランタイムには届かないため
 # next.config.ts の env で焼き込むこと（ビルド時定数になる点に注意）。
 version: 1
