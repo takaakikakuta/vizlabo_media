@@ -8,7 +8,9 @@ import blocked from "../data/blocked_vendors.json";
 /** 掲載禁止ベンダー（削除依頼を受けた先）。データ更新で事例が再び混入しても、ここで落とす。 */
 const BLOCKED_VENDORS = new Set(blocked.vendors.map((v) => v.domain));
 
-const ALL = (raw as CaseStudy[]).filter((c) => !BLOCKED_VENDORS.has(c.vendor));
+/** 公開対象の事例。hidden: true（削除依頼を受けた事例。データは残す）と
+    禁止ベンダーの事例は、ここで外すので上位のどの関数からも見えない。 */
+const ALL = (raw as CaseStudy[]).filter((c) => !c.hidden && !BLOCKED_VENDORS.has(c.vendor));
 
 /** 数字あり優先 → 収集日の新しい順 → ID順。
     同日が多数あるため、最後のID順まで決めておかないと

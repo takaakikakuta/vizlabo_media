@@ -41,4 +41,5 @@ export type CaseStudy = {
   sample?: boolean;    // サンプル(仮)データの目印。実データ投入時は付けない
   tags?: string[];     // 補助タグ（自由）
   image?: string;      // 出典ページの og:image（あれば実画像・無ければ生成カバー）
+  hidden?: boolean;    // 非公開（ベンダーからの削除依頼など）。データは残すがサイトには一切出さない
 };
