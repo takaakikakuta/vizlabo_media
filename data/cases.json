@@ -19283,6 +19283,45 @@
     ]
   },
   {
+    "id": "it-renovation-cec-ltd-co-jp-case-case08-html",
+    "title": "Visual Basic 6.0業務システムをVB .NETへ移行、後続機能を100%再現しWindows 10で安定稼働を実現",
+    "summary": "ラジオメーター株式会社は、Visual Basic 6.0で開発された業務システムの老朽化に伴い、Windows 10環境での安定稼働とセキュリティ確保が課題でした。シーイーシーのVBマイグレーションサービス「Re@nove」により、VB .NETへのコンバージョンを実施。既存機能の100%再現を達成し、Windows 10環境での確実な稼働を実現しました。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@nove（VBマイグレーションサービス）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case08.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "ラジオメーター株式会社",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "管理統括本部 インフラシステム部"
+    },
+    "challenges": [
+      "standardize",
+      "security",
+      "efficiency"
+    ],
+    "challengeDetail": "Visual Basic 6.0で開発された業務システムの大多数が、現在のWindows 10環境で安定稼働できず、セキュリティリスクが存在していました。既存システムのVB .NETへのコンバージョンは膨大な工数と費用がかかることから、内部リソースでの対応が不可能と判断されていました。",
+    "actions": "シーイーシーのVBマイグレーションサービス「Re@nove」を導入し、VB 6.0で開発された業務システムをVB .NETへコンバージョン。マイグレーションツールと専門知識を活用することで、効率的な移行を実現しました。また、1社限定の専用VBマイグレーション相談会を開催し、移行の可能性、工数、費用の3点をクリアにしました。",
+    "results": [
+      {
+        "metric": "後続機能の再現率",
+        "value": "100%"
+      }
+    ],
+    "resultsQualitative": "既存機能の100%再現が達成され、Windows 10環境での安定稼働が確実になりました。セキュリティリスクが解消され、長期的なシステム運用体制が構築されました。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://it-renovation.cec-ltd.co.jp/case/img/case_c08_img_ogp.jpg",
+    "tags": [
+      "老朽化したシステム",
+      "情報漏洩リスク",
+      "システムの乱立"
+    ],
+    "hidden": true
+  },
+  {
     "id": "itochu-cable-systems-jp-case-aab-tv-html",
     "title": "放送局の編集ワークフロー効率化：Media Composer最新環境への更新で処理速度が大幅改善",
     "summary": "秋田朝日放送はAvid Media Composerを2018.12から2025.6へ更新した。素材の読み込みやトランスコード、書き出し処理が遅く、編集開始の遅延が課題だったが、更新によって処理速度が劇的に改善され、作業テンポが向上した。",
@@ -96462,6 +96501,317 @@
       "技能伝承ができない",
       "引き継ぎ困難"
     ]
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case01-html",
+    "title": "クラウド基盤への移行で開発費用50%削減とサーバー保守コストの最適化を実現",
+    "summary": "製造業A社は10システムの運用保守にかかる費用増加と現行サーバー保守の負担に直面していました。無料診断サービスで移行インパクトを可視化した上で、ビッグレーション戦略を採択し、クラウド基盤への最適な移行を実現することで、開発費用の大幅削減と運用コストの改善を達成しました。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@nove（リノーベ）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case01.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "A社",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "現行サーバーの保守費用が次年度以降大幅に増加する見込みであり、10システムの運用保守に伴う複数ベンダーとの調整負担が増していました。",
+    "actions": "無料診断サービスでソースコード解析を実施し、移行前後のプラットフォームへの影響分析と参考価格を算出。調査フェーズで移行リスクを特定し、カスタム変換ツールで変換工数をスリムに、有効資産の洗い出し調査を実施した上で、ビッグレーション戦略によるクラウド基盤への最適な移行を実行しました。",
+    "results": [
+      {
+        "metric": "開発費用削減",
+        "value": "50%削減"
+      },
+      {
+        "metric": "移行時間削減",
+        "value": "70%削減"
+      },
+      {
+        "metric": "運用コスト削減",
+        "value": "30%削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対象システム数",
+        "value": "10システム"
+      },
+      {
+        "metric": "対象システム規模",
+        "value": "500KS"
+      }
+    ],
+    "resultsQualitative": "サーバー保守費用の増加リスクを回避し、クラウド基盤への移行により従来の運用コストの大幅削減が実現できた。ユーザー部門は移行後のQCD（品質・コスト・納期）で計画通りプロジェクトを完了できた。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "システムの乱立"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case02-html",
+    "title": "VB 6.0からVB .NETへの移行で開発コスト・期間を70%削減",
+    "summary": "VB 6.0のサポート終了に伴い、情報系システムのVB .NETへの移行が必要だった企業。Re@nove VBマイグレーションサービスを採用し、無料診断による正確な費用把握と高度な自動変換により、開発コスト・期間を70%削減し、スムーズな移行を実現。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@nove VBマイグレーションサービス",
+    "productCategory": "dev",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case02.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "B社",
+      "industry": "other-industry",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "leadtime",
+      "cost",
+      "standardize"
+    ],
+    "challengeDetail": "VB 6.0のサポート終了に伴い、システムをVB .NETに移行する必要があった。移行対象システムが多く、従来の手作業による移行では予算超過や長期化のリスクがあった。",
+    "actions": "Re@nove VBマイグレーションサービスを採用。無料診断で正確な費用・スケジュールを把握し、高度な自動変換ツールを活用してエラーを削減。段階的に複数システムを移行。",
+    "results": [
+      {
+        "metric": "開発コスト・期間削減",
+        "value": "70%削減"
+      },
+      {
+        "metric": "コンパイルエラー数削減",
+        "value": "1/10以下"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対象ステップ数",
+        "value": "300,000ステップ"
+      },
+      {
+        "metric": "VB 6.0マイグレーション実績",
+        "value": "60社以上"
+      }
+    ],
+    "resultsQualitative": "無料診断サービスにより正確な費用・スケジュールを把握でき、顧客での予算未置の懸念をスムーズに解決。高い自動変換機能により手作業による修正が大幅に削減され、高品質な移行を実現。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "システムの乱立",
+      "サーバ運用の負担"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case03-html",
+    "title": "メインフレームからオープンシステムへの移行により、TCO削減と業務対応の柔軟性を実現",
+    "summary": "大手家電販売企業YAMAGIWAは、20年利用してきたメインフレームプラットフォームの老朽化と業務変化への対応困難が課題だった。オープンプラットフォームへの移行を決定し、OpenFrameとMicro Focus Server Expressを活用した段階的なシステム移行を実施。その結果、オンライン処理のレスポンス時間20%短縮、システム維持コスト3割削減を達成し、将来の事業展開に対応できる柔軟なシステム基盤を構築した。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "OpenFrame、Micro Focus Server Express",
+    "productCategory": "other-product",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case03.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社YAMAGIWA",
+      "industry": "retail",
+      "size": "",
+      "dept": "システム部門"
+    },
+    "challenges": [
+      "efficiency",
+      "cost",
+      "standardize"
+    ],
+    "challengeDetail": "20年利用してきたメインフレームプラットフォームは老朽化し、機能追加や統合に際して複雑で保守が困難になっていた。また、事業の多角化（メーカー機能と小売機能の両立）に対応できる柔軟なシステムが存在しなかった。",
+    "actions": "メインフレーム上で稼働中の複雑なシステムをオープンプラットフォームへ段階的に移行。OpenFrameというリストリクション型ソリューション製品とMicro Focus Server ExpressというオープンCOBOL製品の2つのパッケージを活用し、日本ベルシステム株式会社とマイクロフォーカスジャパン株式会社による技術サポートを受けながら実施。",
+    "results": [
+      {
+        "metric": "オンライン処理レスポンス時間",
+        "value": "20%短縮"
+      },
+      {
+        "metric": "システム維持コスト",
+        "value": "3割削減"
+      }
+    ],
+    "resultsQualitative": "事業環境の変化にシステムが迅速に対応できるようになり、21世紀の経営戦略に柔軟に対応できるオープンシステム環境を実現。今後の成長に向けて、ノンストップコンピュータンスを活かした柔軟なシステム構築が可能になった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "システムの乱立",
+      "法改正への対応"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case04-html",
+    "title": "金融機関のシステム統合データ移行を、移行テンプレート活用で高品質・短納期で実現",
+    "summary": "金融機関の企業合併に伴うシステム統合計画で、移行制御の遅延が発生していた。CEC社のデータ移行サービスで移行テンプレートを適用し、業界別開発も含めた移行プロセスを標準化することで、高品質な移行計画書を短期間で策定し、業務推進を加速させた。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@nove（データ移行サービス）",
+    "productCategory": "consulting",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case04.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "finance",
+      "size": "",
+      "dept": "システム部門、ユーザー部門"
+    },
+    "challenges": [
+      "leadtime",
+      "standardize",
+      "efficiency"
+    ],
+    "challengeDetail": "システム統合要件の業界調整に時間を要し、大幅な計画遅延が発生。既存システムの業界別スキルが不足し、移行作業が属人的になっていた。",
+    "actions": "移行テンプレート（移行計画書・移行WBS）を顧客要件に合わせてカスタマイズして適用し、業界横断でデータ移行を推進。既存システムのスキル者を移行作業から解放し、移行専任体制で進めた。",
+    "results": [
+      {
+        "metric": "テンプレート網羅率",
+        "value": "70%"
+      },
+      {
+        "metric": "業界横断推進による業務維持者の移行作業参加削減",
+        "value": "50%削減"
+      },
+      {
+        "metric": "生産性向上",
+        "value": "20%向上"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対象システム数",
+        "value": "40サブシステム"
+      },
+      {
+        "metric": "対象テーブル数",
+        "value": "350TBL（SQL Server）"
+      },
+      {
+        "metric": "開発人数",
+        "value": "110人"
+      },
+      {
+        "metric": "移行計画書のセクション数",
+        "value": "約50章"
+      }
+    ],
+    "resultsQualitative": "移行テンプレートと業界別開発による標準化により、顧客要件に沿った高品質な移行計画書を短期間で策定でき、スケジュール遅延を解消した。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "業務の属人化",
+      "システムの乱立",
+      "老朽化したシステム",
+      "引き継ぎ困難"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case06-html",
+    "title": "金融システムのクラウド移行で保守期間を最短2週間に短縮、セキュリティ基準もクリア",
+    "summary": "中堅HCキャピタルITパートナーズは、老朽化した基幹システムDREAMS DBのメンテナンス負荷と機能拡張の困難さに直面していました。シーイーシーのRe@noveを活用してAzure上へクラウド移行し、機能追加・修正期間を大幅短縮、金融機関向けセキュリティ基準をクリアしました。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@nove",
+    "productCategory": "cloud",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case06.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "中堅HCキャピタルITパートナーズ株式会社",
+      "industry": "finance",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "security"
+    ],
+    "challengeDetail": "親会社のシステムと密結合した既存DBは短時間での機能追加・修正が困難で、10年以上前の老朽化したUIが問題となっていました。また、金融機関向けのセキュリティ基準への対応が課題でした。",
+    "actions": "Re@noveを活用してDREAMS DBをAzure上にクラウド移行し、Apache HTTP Server、JBoss Application Server、SQL Serverを含む新しい基幹システム環境を構築しました。セキュリティについても、Cyber NEXTの観点から包括的に検討し、設計・構築から運用監視まで対応しました。",
+    "results": [
+      {
+        "metric": "機能追加・修正期間",
+        "value": "最短2週間に短縮"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "要件実装完了",
+        "value": "2016年5月"
+      },
+      {
+        "metric": "クラウド開発・テスト開始",
+        "value": "2016年9月"
+      },
+      {
+        "metric": "データ移行完了・新システムサービス開始",
+        "value": "2017年5月"
+      }
+    ],
+    "resultsQualitative": "既存コードを最大限に活用しながら新環境へ移行。ユーザーフレンドリーなUI画面へリニューアル。金融機関向けセキュリティ基準をクリア。クラウドの柔軟性により必要に応じてスタックを容易に変更可能。セルフサービス機能の拡張により、顧客自身がオンライン機能を利用できるようになり、運用効率が向上。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "監査対応の負担"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case14-html",
+    "title": "古いCOBOLシステムの移行リスクを資産棚卸で可視化し、23%の資産削減を実現",
+    "summary": "大型タイヤメーカーが2031年のレガシーシステムのサービス終了を控え、現行資産の全体像が把握できていない課題に直面していた。シーイェシーがオープン化移行サービス「Re@nove」を提供し、資産棚卸で不要・重複・未使用資産を徹底調査。COBOL資産だけで23%の削減を実現し、移行コスト削減と業務効率化を同時に達成した。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@nove（オープン化・マイグレーションサービス）",
+    "productCategory": "consulting",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case14.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "大日ポリマック株式会社",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "システム部門"
+    },
+    "challenges": [
+      "efficiency",
+      "cost",
+      "data"
+    ],
+    "challengeDetail": "2031年3月にレガシーシステムのサービス終了を控え、現行システムのボトルネックやリスク、資産全体が把握できていない状態。長年の運用によってCOBOL資産が混在しており、実際に使用されている資産と未使用資産の区別がつかない。",
+    "actions": "シーイェシーの資産棚卸サービスにより、COBOL資産の抽出・調査を実施。不足資産・重複資産・未使用資産を分類し、COBOL階層図を作成。これにより実際に使用されている資産を特定し、COBOLからNetCOBOLへの移行計画を策定した。",
+    "results": [
+      {
+        "metric": "COBOL資産削減率",
+        "value": "23%削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対象COBOL資産",
+        "value": "23%分の削減対象資産を特定"
+      }
+    ],
+    "resultsQualitative": "資産棚卸によって現行資産の全体像が可視化され、後続工程での未然防止が可能になった。移行コスト削減と業務効率化を同時に実現し、将来システム基盤への円滑な移行が見通せるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "システムの乱立",
+      "データが分散",
+      "リアルタイムに把握できない"
+    ],
+    "hidden": true
   },
   {
     "id": "j-cleantec-co-jp-voice",
@@ -192101,6 +192451,263 @@
       "不良の見逃し",
       "リアルタイムに把握できない"
     ]
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case09-html",
+    "title": "Apache Struts1からSpring MVCへのマイグレーション。セキュリティ脆弱性を解決し、10年以上保守されていないシステムを近代化",
+    "summary": "購買部門が運用するEDI受発注システムがApache Struts1の脆弱性診断で大きな問題を指摘された。セキュリティ製品導入やWAF導入など複数の対策案があったが、根本的な解決にはならず、Re@noveのStrutsマイグレーションサービスでStruts1からSpring MVCへ移行。セキュリティ脆弱性を解決しつつ、システムの使用感を維持したまま近代化を実現した。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@nove Strutsマイグレーション",
+    "productCategory": "dev",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case09.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "シーイーシー",
+      "industry": "it",
+      "size": "大企業",
+      "dept": "購買部門"
+    },
+    "challenges": [
+      "security",
+      "quality"
+    ],
+    "challengeDetail": "2020年4月の脆弱性診断によってApache Struts1で開発されたEDI受発注システムの根本的な脆弱性が発見された。Struts1は2013年4月にサポートが終了しており、Struts2でも多くの脆弱性が報告されている。セキュリティ対策製品の導入やWAFの導入などの対策案があったが、いずれも根本的な解決ではなかった。",
+    "actions": "Re@noveのStrutsマイグレーションサービスを採用し、Struts1からSpring MVCへのマイグレーションを実施。システムの中身のロジックはそのままに、脆弱性だけを解決する形で移行。Re@nove独自の変換ツールで自動変換を行い、自動変換できない部分は手動で変換。移行前後のシステムで比較・検証を行い、同じ動作を保証。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "システム運用期間",
+        "value": "10年以上"
+      }
+    ],
+    "resultsQualitative": "Apache Struts1の脆弱性が解決され、セキュリティリスクが排除された。使用感（画面の見た目）は変わらず、ユーザーの負担がなく引き続き利用可能。マルチブラウザ対応（Internet Explorer依存から解放）により、すべてのパートナー企業が利用可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://it-renovation.cec-ltd.co.jp/case/img/case_c09_img_ogp.png",
+    "tags": [
+      "老朽化したシステム",
+      "情報漏洩リスク",
+      "サーバ運用の負担"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case10-html",
+    "title": "IBMメインフレームのオープン化によるCOBOL既存ロジック維持とエンジニア確保",
+    "summary": "IBMメインフレーム（COBOL）からのオープン化移行が進まない中、既存ロジックの崩壊リスク対応とエンジニア確保が課題だった。オープン系COBOLへの段階的な移行とRe@noveを活用した継続的改善により、3年の構築期間を経て2021年3月に運用開始。既存処理性能を維持しながらメジャーな開発環境での保守・開発を実現した。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@nove（オープン系COBOL環境）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case10.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "シーイェイサー（SBC日興証券グループの証券会社）",
+      "industry": "finance",
+      "size": "大企業",
+      "dept": "証券業務システム部門"
+    },
+    "challenges": [
+      "labor",
+      "standardize",
+      "quality"
+    ],
+    "challengeDetail": "長年稼働しているIBMメインフレームのCOBOLロジックが複雑化・レガシー化し、そのロジックを理解するエンジニア不足が深刻化していた。また、メインフレームの縮小方針により、既存ロジックを無視したオープン化では業務プロセスの大幅改変が必要になるリスクがあった。",
+    "actions": "IBMメインフレームで稼働している規制関連の既存ロジックをCOBOLからオープン系COBOLへの段階的移行を実施。事前調査・PoC・要件定義を徹底し、実際のオープン系COBOLへの変換可能性を検証した上で、Micro Focus Enterprise Server（現Rocket Enterprise Server）を活用したRe@noveでのオープン化を採用。",
+    "results": [
+      {
+        "metric": "処理性能",
+        "value": "既存と新規の処理性能を継続的改善により満たす状態を実現"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "プログラム数",
+        "value": "1,000本以上"
+      },
+      {
+        "metric": "PoC・要件定義期間",
+        "value": "事前調査から要件確定まで実施"
+      },
+      {
+        "metric": "構築期間",
+        "value": "3年で完成・2021年3月運用開始"
+      },
+      {
+        "metric": "既存COBOL処理の維持率",
+        "value": "9割（1割はPL/IとアセンブラからCOBOLに新規対応）"
+      }
+    ],
+    "resultsQualitative": "既存ロジックの品質を確保しながらオープン系COBOLでのメジャーな開発環境での保守・開発が可能に。エンジニア確保の見通しが立った。本番環境での大規模データ処理と既存・新規処理の性能を両立させ、業務影響を与えない処理性能を実現できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://it-renovation.cec-ltd.co.jp/case/img/case_c10_img_ogp.png",
+    "tags": [
+      "老朽化したシステム",
+      "技能伝承ができない",
+      "業務の属人化",
+      "システムの乱立"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case11-html",
+    "title": "Oracle DatabaseからAmazon RDSへの移行でデータベース運用負荷を軽減",
+    "summary": "東京都行政書士会は、業務アプリケーションシステムの全体最適化に伴い、Oracle Databaseの運用負荷軽減が課題でした。Re@nove Amazon RDSマイグレーションサービスを採用し、既存のOracle DatabaseをAmazon RDSへ移行することで、マルチテナント化によるユーザビリティ向上と継続的な保守対応を実現しました。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@nove Amazon RDSマイグレーションサービス",
+    "productCategory": "cloud",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case11.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "東京都行政書士会",
+      "industry": "other-industry",
+      "size": "会員数7,331名（個人会員）、法人会員229法人（2021年10月1日現在）",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "業務アプリケーションシステム全体の最適化に伴い、Oracle Databaseの運用負荷軽減が課題でした。複数に分散している業務アプリケーションシステムの統合と、安心して継続的に保守対応できる体制が必要でした。",
+    "actions": "Re@nove Amazon RDSマイグレーションサービスを採用し、既存のOracle DatabaseをAmazon RDSへ移行。AWSクラウド環境でOracle Databaseを利用継続しながらマルチテナント化を実現し、ユーザビリティを向上させました。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "テーブル数",
+        "value": "230テーブル"
+      },
+      {
+        "metric": "クエリ数",
+        "value": "210クエリ"
+      },
+      {
+        "metric": "プロシージャ数",
+        "value": "280プロシージャ"
+      },
+      {
+        "metric": "レポート数",
+        "value": "150報"
+      }
+    ],
+    "resultsQualitative": "Oracle Databaseの利用を継続しながらマルチテナント化によるユーザビリティ向上を実現。アプリケーションを統合してマルチテナント設計に統一し、ユーザー操作の一元化と画面利便性の向上を達成。AWSパートナーでのワンストップ保守対応が可能となりました。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://it-renovation.cec-ltd.co.jp/case/img/case_c11_img_ogp.png",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "システムの乱立"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case12-html",
+    "title": "Internet Explorer廃止に伴うWebシステムのマルチブラウザ対応を自動変換ツールで短期実現",
+    "summary": "50年以上続く企業が、IE廃止に伴うセキュリティリスクと業務システムの互換性の問題に直面。シーイェシーが自動変換ツールと「レガシーシステム IE更新サービス」を活用し、3種類のブラウザ対応を短期間で実現した。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@noveレガシーシステム IE更新サービス",
+    "productCategory": "other-product",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case12.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "other-industry",
+      "size": "創業50年以上",
+      "dept": "情報部門"
+    },
+    "challenges": [
+      "security",
+      "cost",
+      "leadtime"
+    ],
+    "challengeDetail": "Internet Explorerのサポート終了に伴い、セキュリティリスク、IE以外のブラウザとの互換性問題、ブラウザ移行の工数と費用が課題。IEで開発された業務システムと顧客管理・売上管理などの重要なシステムが正常に動作しない可能性があった。",
+    "actions": "自動変換ツールを活用した効率的なコード変換と、独自開発の「レガシーシステム IE更新サービス」によるMicrosoft Edge、Google Chrome、Internet Explorerの3種類のマルチブラウザ対応を実施。約50画面を対象に調査・分析を1ヶ月で実施し、現行コード比較テストを4ヶ月で完了。",
+    "results": [
+      {
+        "metric": "工数削減",
+        "value": "短期実現"
+      },
+      {
+        "metric": "費用削減",
+        "value": "工数削減により実現"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対象画面数",
+        "value": "約50画面"
+      },
+      {
+        "metric": "調査・分析期間",
+        "value": "1ヶ月"
+      },
+      {
+        "metric": "テスト完了期間",
+        "value": "4ヶ月"
+      }
+    ],
+    "resultsQualitative": "高い可読性と保守性を備えたプログラムへの変換により、拡張性と保守性が確保された。修正後の確認がスムーズに行われ、ユーザーへのストレスなくブラウザ移行が実現。プロジェクト全体の品質が向上し、ブラウザ移行が無事にリリースされた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://it-renovation.cec-ltd.co.jp/case/img/case_c12_img_ogp.png",
+    "tags": [
+      "老朽化したシステム",
+      "情報漏洩リスク",
+      "システムの乱立"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case13-html",
+    "title": "大規模オンプレミスシステムのクラウド移行で性能・運用効率を大幅向上",
+    "summary": "JECCが保有する大規模業務システム「JINNOS」をクラウドに移行するにあたり、高い技術力と経験を備えたベンダーが必要でした。シーイェーシーのバイグレーションサービス「Re@nove」を採用し、2020年8月～2022年11月の期間で移行を完了。性能検証なしでプログラムのチューニングを実施し、処理速度の向上とオンライン処理の高速化を実現しました。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "Re@nove（バイグレーションサービス）",
+    "productCategory": "consulting",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case13.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社JECC",
+      "industry": "it",
+      "size": "",
+      "dept": "情報システム部"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "大規模なオンプレミスシステムをクラウドに移行するには、高い技術力と経験豊富なベンダーの協働が必要でした。既存システムの性能を維持しながらクラウド移行を実現し、機能改善を行う必要がありました。",
+    "actions": "シーイェーシーのバイグレーションサービス「Re@nove」を導入し、コンサルティング会社と協働でシステム移行を実施しました。性能検証のもとでシーイェーシーがプログラムのチューニングを行い、処理速度の高速化を実現しました。",
+    "results": [
+      {
+        "metric": "処理速度（オンライン処理）",
+        "value": "高速化を実現"
+      },
+      {
+        "metric": "ユーザビリティ",
+        "value": "複数の操作画面を統合メニューで管理可能に改善"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "バイグレーション期間",
+        "value": "2020年8月～2022年11月（約27ヶ月）"
+      },
+      {
+        "metric": "プロジェクト規模",
+        "value": "数百人規模"
+      }
+    ],
+    "resultsQualitative": "性能検証なしでプログラムのチューニングを実施。処理速度の高速化に加え、Internet ExplorerからEdgeへの置き換えなどブラウザ対応も完了。オンライン処理がほぼ高速化され、業務の効率化が実現されました。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://it-renovation.cec-ltd.co.jp/case/img/case_c13_img_ogp.jpg",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "システムの乱立"
+    ],
+    "hidden": true
   },
   {
     "id": "itochu-cable-systems-jp-case-arkbell-html",
@@ -298807,6 +299414,38 @@
       "業務の属人化",
       "進捗が見えない"
     ]
+  },
+  {
+    "id": "it-renovation-cec-ltd-co-jp-case-case05-html",
+    "title": "レガシーシステムからのマイグレーション時のデータ正確性を保証",
+    "summary": "20年以上稼働していた基幹システムからオープン系システムへのマイグレーションにおいて、データ品質の低下と移行リスクが課題だった。DMS-VSA（データ移行サービス・ベリフィケーション・システムズ・アプローチ）を導入し、移行データの正確性を可視化・保証することで、移行直後に安心して業務を継続できる環境を実現した。",
+    "vendor": "cec-ltd.co.jp",
+    "product": "DMS-VSA（データ移行サービス・ベリフィケーション・システムズ・アプローチ）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://it-renovation.cec-ltd.co.jp/case/case05.html",
+    "collectedAt": "2026-09-02T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "finance",
+      "size": "",
+      "dept": "システム企画部"
+    },
+    "challenges": [
+      "data",
+      "quality"
+    ],
+    "challengeDetail": "20年以上稼働していた基幹システムの老朽化に伴い、オープン系システムへのマイグレーションが必要だった。ただし、移行データの品質低下とプログラム変換によるエラーのリスクが懸念され、移行データの正確性の定義がされていなかった。",
+    "actions": "DMS-VSAを導入し、テスト環境とオープン環境で別々にデータ移行プロセスを構築。テスト仕様に合わせて検証システムを構築し、変換仕様・コード制御に潜在していた不具合をすべて抽出することで、移行データの正確性を保証する仕組みを確立した。",
+    "results": [],
+    "resultsQualitative": "移行データの正確性を可視化・保証することで、移行直後に安心して業務を継続できるようになった。プロジェクト全体の品質が格段に向上し、高品質な本番運用を実現した。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "システムの乱立",
+      "データが分散"
+    ],
+    "hidden": true
   },
   {
     "id": "itochu-cable-systems-jp-case-ntv-html",
