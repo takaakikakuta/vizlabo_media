@@ -11,8 +11,8 @@ import CoverImg from "../../../components/CoverImg";
 
 /* ビルド出力の肥大化対策（Amplifyの220MB制限）:
    事前生成をやめ、初回アクセス時に生成してキャッシュするオンデマンドISRにする。
-   revalidate 後は再生成されるので、データ更新はデプロイ or 24時間で反映される。 */
-export const revalidate = 86400; // 24時間
+   一度生成したページは次のデプロイまで保持する（毎日の再生成はSSR費用になるだけなので、2026-10 に 24時間→無期限へ変更）。 */
+export const revalidate = false; // 次のデプロイまでキャッシュ（データはデプロイでしか変わらない）
 export const dynamicParams = true;
 
 export function generateStaticParams() {
