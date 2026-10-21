@@ -1,41 +1,31 @@
 import Link from "next/link";
-import { CHALLENGES, INDUSTRIES, industryLabel } from "../lib/taxonomy";
-import { allCases, challengeCounts, industryCounts, newestCases, siteStats, tagCounts } from "../lib/cases";
+import { CHALLENGES, INDUSTRIES } from "../lib/taxonomy";
+import { challengeCounts, industryCounts, newestCases, siteStats, tagCounts } from "../lib/cases";
 import { challengeStyle } from "../lib/visuals";
 import CaseCard from "../components/CaseCard";
 import BrowseTabs from "../components/BrowseTabs";
 import { allArticles, articleThumb } from "../lib/articles";
 import CoverImg from "../components/CoverImg";
-import HeroPains from "../components/HeroPains";
 import { SUGGEST_ENABLED } from "../lib/flags";
 import fs from "node:fs";
 import path from "node:path";
 
-/* ヒーロー下のバナー（1枚）。note で連載中の「この事例がスゴイ」「事例コラム」への外部リンク。
-   href に note のURLを入れると新しいタブで開くリンクになる（未設定なら枠のみ）。
-   画像は public/banner/note.png を置けば自動で表示される（比率4:1・1600×400px推奨）。 */
-const BANNERS: { file: string; label: string; note: string; href?: string }[] = [
-  { file: "note.png", label: "この事例がスゴイ／事例コラム", note: "noteで連載中の2企画", href: "https://note.com/vizlabo" },
-];
-
-function Banner({ file, label, note, href }: (typeof BANNERS)[number]) {
-  const exists = fs.existsSync(path.join(process.cwd(), "public", "banner", file));
-  const inner = exists ? (
-    <div className="relative aspect-[4/1] w-full overflow-hidden border border-line">
-      <CoverImg src={`/banner/${file}`} />
-    </div>
-  ) : (
-    /* 画像が用意されるまでのプレースホルダー枠 */
-    <div className="flex aspect-[4/1] w-full flex-col items-center justify-center gap-1.5 border border-dashed border-line bg-soft">
-      <span className="font-display text-[18px] text-ink">{label}</span>
-      <span className="text-[11.5px] text-muted">{note}</span>
-      <span className="text-[10px] text-muted/70">（バナー準備中：/banner/{file}・1600×400）</span>
-    </div>
+/* ヒーロー右側の入口カード。外部リンク（note）は新しいタブで開く。 */
+function HeroEntry({ href, eyebrow, title, desc, cta, external }: {
+  href: string; eyebrow: string; title: string; desc: string; cta: string; external?: boolean;
+}) {
+  const cls = "group block border border-ink bg-white px-5 py-4 no-underline transition hover:bg-soft";
+  const inner = (
+    <>
+      <p className="label">{eyebrow}</p>
+      <p className="font-display mt-1 text-[16px] leading-snug text-ink group-hover:text-brand sm:text-[17px]">{title}</p>
+      <p className="mt-1.5 text-[12px] leading-[1.8] text-muted">{desc}</p>
+      <p className="mt-2 text-[12.5px] font-bold text-ink">{cta} →</p>
+    </>
   );
-  return href
-    ? <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
-        className="block no-underline transition hover:opacity-90">{inner}</a>
-    : inner;
+  return external
+    ? <a href={href} target="_blank" rel="noopener noreferrer" className={cls}>{inner}</a>
+    : <Link href={href} className={cls}>{inner}</Link>;
 }
 
 export default function Home() {
@@ -91,10 +81,16 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 右：具体的な悩みが流れる（クリックでその事例へ） */}
-          <div className="hidden md:block">
-            <p className="label mb-3.5">こんな悩み、解決した会社があります</p>
-            <HeroPains cases={allCases()} />
+          {/* 右：3つの入口（メルマガ／事例ファインダー／note連載）。
+               以前はここに「こんな悩み、解決した会社があります」（HeroPains）を置いていたが、
+               2026-10 に入口の案内へ差し替えた。HeroPains は components に残してある。 */}
+          <div className="flex flex-col gap-3.5 md:justify-center">
+            <HeroEntry href="/newsletter" eyebrow="メルマガ" title="週刊 事例マニア"
+              desc="毎週金曜配信。事例セレクション5本と、note連載2本をメールで届けます" cta="登録する" />
+            <HeroEntry href="/finder" eyebrow="事例ファインダー" title="質問に答えるだけで、自社に近い事例へ"
+              desc={`業種・部門・ほしい成果を順に選ぶだけ。${s.total.toLocaleString()}件から絞り込む`} cta="質問に答えて探す" />
+            <HeroEntry href="https://note.com/vizlabo" external eyebrow="note連載" title="この事例がスゴイ／事例コラム"
+              desc="掲載事例の中から、編集部が唸った1本を読み解く連載。noteで公開中" cta="noteで読む" />
           </div>
         </div>
       </section>
@@ -125,29 +121,7 @@ export default function Home() {
         )}
       </section>}
 
-      {/* ── 事例ファインダーへの入口。質問に答えるだけで候補が絞れる（URLも登録も不要） ── */}
-      <section className="mx-auto max-w-6xl px-5 pt-8">
-        <Link href="/finder"
-          className="group mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-x-6 gap-y-3 border border-ink bg-white px-6 py-5 no-underline transition hover:bg-soft sm:px-8">
-          <div className="min-w-0">
-            <p className="label">事例ファインダー</p>
-            <p className="font-display mt-1.5 text-[17px] leading-snug text-ink group-hover:text-brand sm:text-[20px]">
-              業種・部門・ほしい成果を順に選ぶだけ。{s.total.toLocaleString()}件から自社に近い事例へ
-            </p>
-          </div>
-          <span className="shrink-0 border border-ink px-5 py-2.5 text-[13px] font-bold text-ink transition group-hover:bg-ink group-hover:text-white">
-            質問に答えて探す →
-          </span>
-        </Link>
-      </section>
-
-      {/* ── バナー：note連載への入口。画像は public/banner/note.png を置くだけで反映（4:1、1600×400px推奨）。
-           比率は4:1のまま、幅をmax-w-3xlに絞って控えめに置く ── */}
-      <section className="mx-auto max-w-6xl px-5 pt-8">
-        <div className="mx-auto max-w-3xl">
-          {BANNERS.map((b) => <Banner key={b.file} {...b} />)}
-        </div>
-      </section>
+      {/* 事例ファインダーと note連載の入口は、2026-10 にヒーロー右側（HeroEntry）へ移した */}
 
       {/* ── 読みもの：事例の集積からしか書けない記事 ── */}
       {articles.length > 0 && (
