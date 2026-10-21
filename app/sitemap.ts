@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { allCases, navigableTags } from "../lib/cases";
 import { allArticles } from "../lib/articles";
+import { allDays } from "../lib/days";
 import { CHALLENGES, INDUSTRIES, PRODUCT_CATEGORIES } from "../lib/taxonomy";
 
 /* サイトマップ。検索エンジンに巡回先を渡して、無駄な巡回（存在しないURLの探索）を減らす。
@@ -31,6 +32,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const days: MetadataRoute.Sitemap = allDays().map((d) => ({
+    url: `${SITE}/days/${d.date}`,
+    lastModified: now,
+    changeFrequency: "yearly",
+    priority: 0.6,
+  }));
+  if (days.length) fixed.push({ url: `${SITE}/days`, lastModified: now, changeFrequency: "weekly", priority: 0.7 });
+
   const taxonomy: MetadataRoute.Sitemap = [
     ...CHALLENGES.map((t) => `${SITE}/challenge/${t.slug}`),
     ...INDUSTRIES.map((t) => `${SITE}/industry/${t.slug}`),
@@ -51,5 +60,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...fixed, ...articles, ...taxonomy, ...tags, ...cases];
+  return [...fixed, ...articles, ...days, ...taxonomy, ...tags, ...cases];
 }

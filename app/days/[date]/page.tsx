@@ -1,0 +1,113 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { allDays, dayCases, dayImage, dayLabel, dayPostText, getDay, neighborDays } from "../../../lib/days";
+import CaseCard from "../../../components/CaseCard";
+import CopyText from "../../../components/CopyText";
+
+/* 記念日ページ。content/days/MM-DD.json を置けば生える。全日をビルド時に静的生成する（最大365ページ） */
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return allDays().map((d) => ({ date: d.date }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ date: string }> }): Promise<Metadata> {
+  const d = getDay((await params).date);
+  if (!d) return {};
+  const img = dayImage(d);
+  const title = `${dayLabel(d.date)}は${d.name}。${d.title.join("")}`;
+  return {
+    title,
+    description: `${d.body} ${d.theme}を3つ紹介。`,
+    openGraph: { title, description: d.body, type: "article", ...(img ? { images: [{ url: img }] } : {}) },
+    twitter: { card: img ? "summary_large_image" : "summary" },
+  };
+}
+
+export default async function DayPage({ params }: { params: Promise<{ date: string }> }) {
+  const { date } = await params;
+  const d = getDay(date);
+  if (!d) notFound();
+  const img = dayImage(d);
+  const cases = dayCases(d);
+  const { prev, next } = neighborDays(date);
+  const post = dayPostText(d);
+
+  return (
+    <article className="mx-auto max-w-3xl px-5 py-12">
+      {/* 扉 */}
+      <p className="label flex items-center gap-2.5">
+        <Link href="/days" className="no-underline hover:text-ink">事例で読む記念日</Link>
+        <span className="h-px w-6 bg-line" />
+        <span className="num text-[12px] text-ink">{dayLabel(d.date)}</span>
+        <span>{d.name}</span>
+      </p>
+
+      {img && (
+        <div className="mt-6 overflow-hidden rounded-[3px] border border-line2 bg-soft">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={img} alt={`${d.name}のイラスト`} className="h-auto w-full" />
+        </div>
+      )}
+
+      <h1 className="font-display mt-8 text-[26px] leading-[1.5] text-ink sm:text-[32px]">
+        {d.title.map((line, i) => <span key={i} className="block">{line}</span>)}
+      </h1>
+      <p className="mt-5 text-[15px] leading-[2] text-body">{d.body}</p>
+      <p className="mt-5 border-l-2 border-ink pl-4 text-[14px] leading-[1.9] text-ink">
+        {dayLabel(d.date)}は「{d.name}」。{d.theme}を{cases.length}つ。
+      </p>
+
+      {/* 事例3本：ポストの一言＋事例カード（会社名・数字・リンクはカードが出す） */}
+      <div className="mt-10 border-t border-ink">
+        {cases.map(({ item, c }, i) => (
+          <div key={c.id} className="border-b border-line2 py-6">
+            <p className="flex items-baseline gap-3 text-[13.5px] leading-[1.8] text-ink">
+              <span className="num shrink-0 text-[12px] text-muted">{String(i + 1).padStart(2, "0")}</span>
+              <span>{d.emoji ? `${d.emoji} ` : ""}{item.note}</span>
+            </p>
+            <div className="mt-3"><CaseCard c={c} /></div>
+          </div>
+        ))}
+      </div>
+
+      {d.more && (
+        <p className="mt-8">
+          <Link href={d.more.href}
+            className="border-b border-ink pb-0.5 text-[14px] font-bold text-ink no-underline hover:border-brand hover:text-brand">
+            {d.more.label} →
+          </Link>
+        </p>
+      )}
+
+      {/* 前の日／次の日 */}
+      {(prev || next) && (
+        <nav className="mt-12 flex items-stretch justify-between gap-4 border-y border-line py-5 text-[13px]">
+          {prev ? (
+            <Link href={`/days/${prev.date}`} className="group min-w-0 no-underline">
+              <span className="label">← 前の記念日</span>
+              <span className="mt-1 block truncate text-ink group-hover:text-brand"><span className="num">{dayLabel(prev.date)}</span> {prev.name}</span>
+            </Link>
+          ) : <span />}
+          {next ? (
+            <Link href={`/days/${next.date}`} className="group min-w-0 text-right no-underline">
+              <span className="label">次の記念日 →</span>
+              <span className="mt-1 block truncate text-ink group-hover:text-brand"><span className="num">{dayLabel(next.date)}</span> {next.name}</span>
+            </Link>
+          ) : <span />}
+        </nav>
+      )}
+
+      {/* ポスト用テキスト：本文とリプ欄。編集部がSNSに貼る用（読者にも見える） */}
+      <section className="mt-12">
+        <div className="flex items-center justify-between">
+          <p className="label">ポスト用テキスト</p>
+          <CopyText text={`${post.main}\n\n【リプ】\n${post.reply}`} label="本文とリプ欄をコピー" />
+        </div>
+        <pre className="mt-3 whitespace-pre-wrap border border-line bg-soft p-4 text-[12.5px] leading-[1.9] text-body">{post.main}</pre>
+        <pre className="mt-2 whitespace-pre-wrap border border-line bg-soft p-4 text-[12.5px] leading-[1.9] text-body">{post.reply}</pre>
+      </section>
+    </article>
+  );
+}
