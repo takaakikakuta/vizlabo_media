@@ -3,14 +3,14 @@ import path from "node:path";
 import { getCase } from "./cases";
 import type { CaseStudy } from "./types";
 
-/* 記念日ページ（/days/MM-DD）。SNSの記念日ポストを、1日1ページの読みものとして残す。
-   データは content/days/MM-DD.json（1日1ファイル）。イラストは public/days/MM-DD.jpg|png を置くだけで反映。
+/* 記念日ページ（/days/YYYY-MM-DD）。SNSの記念日ポストを、1日1ページの読みものとして残す。
+   データは content/days/YYYY-MM-DD.json（1日1ファイル）。イラストは public/days/YYYY-MM-DD.jpg|png を置くだけで反映。
    事例の本文・会社名・数字はテンプレートが cases.json から引くので、JSONには事例IDと一言だけを書く。 */
 
 export type DayItem = { caseId: string; note: string };
 
 export type DayPost = {
-  date: string;            // "MM-DD"
+  date: string;            // "YYYY-MM-DD"（年ごとに内容を変えられるよう、年を含める）
   name: string;            // 記念日の名前（例: 世界パスタデー）
   emoji?: string;          // リプ欄の行頭に付ける絵文字（任意）
   title: string[];         // 書き出し（行ごと。SNSポストの1〜2文目）
@@ -18,7 +18,7 @@ export type DayPost = {
   theme: string;           // 3本の括り（例: 手仕事の食品づくりを機械に任せた事例）
   items: DayItem[];        // 事例3本（caseId と一言）
   more?: { label: string; href: string };  // 「もっと見る」導線（任意）
-  image?: string;          // イラストの明示指定（未指定なら public/days/MM-DD.jpg|png を自動検出）
+  image?: string;          // イラストの明示指定（未指定なら public/days/YYYY-MM-DD.jpg|png を自動検出）
   draft?: boolean;         // 公開前の下書き
 };
 
@@ -27,7 +27,7 @@ const DIR = path.join(process.cwd(), "content", "days");
 export function allDays(): DayPost[] {
   if (!fs.existsSync(DIR)) return [];
   return fs.readdirSync(DIR)
-    .filter((f) => /^\d{2}-\d{2}\.json$/.test(f))
+    .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
     .map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), "utf-8")) as DayPost)
     .filter((d) => !d.draft)
     .sort((a, b) => a.date.localeCompare(b.date));
@@ -45,7 +45,7 @@ export function neighborDays(date: string): { prev?: DayPost; next?: DayPost } {
   return { prev: days[(i - 1 + days.length) % days.length], next: days[(i + 1) % days.length] };
 }
 
-/** イラスト。明示指定 > public/days/MM-DD.jpg|png > なし */
+/** イラスト。明示指定 > public/days/YYYY-MM-DD.jpg|png > なし */
 export function dayImage(d: DayPost): string | undefined {
   if (d.image) return d.image;
   for (const ext of ["jpg", "png", "webp"]) {
@@ -54,9 +54,18 @@ export function dayImage(d: DayPost): string | undefined {
   return undefined;
 }
 
-export function dayLabel(date: string): string {
-  const [m, d] = date.split("-").map((s) => parseInt(s, 10));
-  return `${m}月${d}日`;
+/** "YYYY-MM-DD" → "10月25日"（年は withYear で "2026年10月25日"） */
+export function dayLabel(date: string, withYear = false): string {
+  const [y, m, d] = date.split("-").map((s) => parseInt(s, 10));
+  return withYear ? `${y}年${m}月${d}日` : `${m}月${d}日`;
+}
+
+export function dayYear(date: string): number {
+  return parseInt(date.slice(0, 4), 10);
+}
+
+export function dayMonth(date: string): number {
+  return parseInt(date.slice(5, 7), 10);
 }
 
 /** 事例3本を cases.json から引く（hidden・禁止ベンダーは getCase が除くので、その場合は落ちる） */

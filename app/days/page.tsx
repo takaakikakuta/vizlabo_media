@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { allDays, dayImage, dayLabel } from "../../lib/days";
+import { allDays, dayImage, dayLabel, dayMonth, dayYear } from "../../lib/days";
 import CoverImg from "../../components/CoverImg";
 import { ListHead } from "../../components/CaseGrid";
 
@@ -9,17 +9,20 @@ export const metadata = {
 };
 
 export default function DaysPage() {
+  // 年ごとに内容を変えられるよう日付は YYYY-MM-DD。一覧は新しい年から、月の順に並べる
   const days = allDays();
-  const months = Array.from({ length: 12 }, (_, i) => i + 1)
-    .map((m) => ({ m, days: days.filter((d) => parseInt(d.date.slice(0, 2), 10) === m) }))
-    .filter((x) => x.days.length > 0);
+  const years = Array.from(new Set(days.map((d) => dayYear(d.date)))).sort((a, b) => b - a);
+  const months = years.flatMap((y) =>
+    Array.from({ length: 12 }, (_, i) => i + 1)
+      .map((m) => ({ y, m, days: days.filter((d) => dayYear(d.date) === y && dayMonth(d.date) === m) }))
+      .filter((x) => x.days.length > 0));
   return (
     <div className="mx-auto max-w-5xl px-5 py-12">
       <ListHead eyebrow="連載" title="事例で読む記念日"
         sub="その日の記念日にちなんで、掲載事例から3本を選んで紹介する。SNSで配信した記念日ポストを、1日1ページで。" count={days.length} />
-      {months.map(({ m, days: ds }) => (
-        <section key={m} className="mt-10">
-          <h2 className="label border-b border-ink pb-2">{m}月</h2>
+      {months.map(({ y, m, days: ds }) => (
+        <section key={`${y}-${m}`} className="mt-10">
+          <h2 className="label border-b border-ink pb-2">{y}年{m}月</h2>
           <div className="grid gap-x-6 gap-y-8 pt-6 sm:grid-cols-2 md:grid-cols-3">
             {ds.map((d) => {
               const img = dayImage(d);
