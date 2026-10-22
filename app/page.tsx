@@ -7,8 +7,6 @@ import BrowseTabs from "../components/BrowseTabs";
 import { allArticles, articleThumb } from "../lib/articles";
 import CoverImg from "../components/CoverImg";
 import { SUGGEST_ENABLED } from "../lib/flags";
-import fs from "node:fs";
-import path from "node:path";
 
 /* ヒーロー右側の入口カード。外部リンク（note）は新しいタブで開く。 */
 function HeroEntry({ href, eyebrow, title, desc, cta, external }: {
@@ -81,12 +79,16 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 右：3つの入口（メルマガ／事例ファインダー／note連載）。
+          {/* 右：3つの入口（AI事例サジェスト／事例ファインダー／note連載）。
                以前はここに「こんな悩み、解決した会社があります」（HeroPains）を置いていたが、
-               2026-10 に入口の案内へ差し替えた。HeroPains は components に残してある。 */}
+               2026-10 に入口の案内へ差し替えた。HeroPains は components に残してある。
+               サジェストは SUGGEST_ENABLED が false のときメルマガの入口に差し替わる。 */}
           <div className="flex flex-col gap-3.5 md:justify-center">
-            <HeroEntry href="/newsletter" eyebrow="メルマガ" title="週刊 事例マニア"
-              desc="毎週金曜配信。事例セレクション5本と、note連載2本をメールで届けます" cta="登録する" />
+            {SUGGEST_ENABLED
+              ? <HeroEntry href="/suggest" eyebrow="AI事例サジェスト（無料）" title="貴社のURLを入れるだけで、似た事例が届く"
+                  desc="AIが同じ業界・同じ困りごとの事例を選んで、メールでお届けします" cta="試してみる" />
+              : <HeroEntry href="/newsletter" eyebrow="メルマガ" title="週刊 事例マニア"
+                  desc="毎週金曜配信。事例セレクション5本と、note連載2本をメールで届けます" cta="登録する" />}
             <HeroEntry href="/finder" eyebrow="事例ファインダー" title="質問に答えるだけで、自社に近い事例へ"
               desc={`業種・部門・ほしい成果を順に選ぶだけ。${s.total.toLocaleString()}件から絞り込む`} cta="質問に答えて探す" />
             <HeroEntry href="https://note.com/vizlabo" external eyebrow="note連載" title="この事例がスゴイ／事例コラム"
@@ -95,31 +97,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── AI事例サジェストへの入口バナー（ヒーロー直下）。SUGGEST_ENABLEDで表示制御。
-           画像は public/ai_suggest.jpg（1600px幅推奨）。noteバナーと同じ幅で控えめに ── */}
-      {SUGGEST_ENABLED && <section className="mx-auto max-w-6xl px-5 pt-10">
-        {fs.existsSync(path.join(process.cwd(), "public", "ai_suggest.jpg")) ? (
-          <Link href="/suggest" aria-label="AI事例サジェスト（無料）"
-            className="mx-auto block max-w-3xl no-underline transition hover:opacity-90">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/ai_suggest.jpg" alt="AI事例サジェスト：貴社のURLを入れるだけで、似た事例をメールでお届け"
-              className="h-auto w-full border border-line" />
-          </Link>
-        ) : (
-          <Link href="/suggest"
-            className="group flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-2 border-ink bg-ink px-6 py-5 no-underline transition hover:bg-white sm:px-8">
-            <div className="min-w-0">
-              <p className="text-[10.5px] font-bold tracking-[.2em] text-white/60 group-hover:text-muted">AI事例サジェスト（無料）</p>
-              <p className="font-display mt-1.5 text-[17px] leading-snug text-white group-hover:text-ink sm:text-[20px]">
-                貴社のURLを入れるだけ。AIが「同じ業界・同じ困りごと」の事例を選んでメールで届けます
-              </p>
-            </div>
-            <span className="shrink-0 border border-white px-5 py-2.5 text-[13px] font-bold text-white transition group-hover:border-ink group-hover:text-ink">
-              試してみる →
-            </span>
-          </Link>
-        )}
-      </section>}
+      {/* AI事例サジェストの入口は、2026-10 にヒーロー右側（HeroEntry）へ移した */}
 
       {/* 事例ファインダーと note連載の入口は、2026-10 にヒーロー右側（HeroEntry）へ移した */}
 
