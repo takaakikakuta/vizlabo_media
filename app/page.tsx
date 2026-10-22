@@ -66,7 +66,7 @@ export default function Home() {
   const s = siteStats();
   const newest = newestCases(4);
   const articles = allArticles().slice(0, 3);
-  const today = todayDay();  // 今日の記念日（無ければ次の記念日、それも無ければ直近に過ぎた記念日）
+  const today = todayDay();  // 今日の記念日 → 同じ月日の昨年以前 → 次の記念日 → 直近に過ぎた記念日
   const browseChallenges = CHALLENGES.map((ch) => ({
     slug: ch.slug, label: ch.label, desc: ch.desc,
     count: chCounts[ch.slug] ?? 0, color: challengeStyle(ch.slug).solid,
@@ -135,7 +135,7 @@ export default function Home() {
               desc={`業種・部門・ほしい成果を順に選ぶだけ。${s.total.toLocaleString()}件から絞り込む`} cta="質問に答えて探す" />
             {/* 3枚目：記念日ポスト（/days）。最新の記念日があればその名前を出す */}
             <HeroEntry href={today ? `/days/${today.day.date}` : "/days"}
-              eyebrow={today?.when === "today" ? "きょうの記念日" : today?.when === "next" ? "次の記念日" : "記念日ポスト"}
+              eyebrow={today?.when === "today" || today?.when === "lastYear" ? "きょうの記念日" : today?.when === "next" ? "次の記念日" : "記念日ポスト"}
               title={today ? `${dayLabel(today.day.date)}は${today.day.name}` : "事例で読む記念日"}
               desc={today ? `${today.day.theme}を3本。SNSで配信した記念日ポストを、1日1ページで` : "その日の記念日にちなんで、掲載事例から3本を紹介"}
               cta="記念日を読む" />

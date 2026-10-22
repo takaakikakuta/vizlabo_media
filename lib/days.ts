@@ -60,12 +60,18 @@ export function todayJST(): string {
   return new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
 }
 
-/** 今日の記念日。無ければ次に来る記念日、それも無ければ直近に過ぎた記念日（トップの入口カードで使う） */
-export function todayDay(): { day: DayPost; when: "today" | "next" | "past" } | undefined {
+/** 今日の記念日（トップの入口カードで使う）。解決の順番：
+    1. 今日の日付そのもの（YYYY-MM-DD が一致）
+    2. 同じ月日の過去の年（例: 2026-10-25 が無ければ 2025-10-25）。新しい年を優先
+    3. 次に来る記念日
+    4. 直近に過ぎた記念日 */
+export function todayDay(): { day: DayPost; when: "today" | "lastYear" | "next" | "past" } | undefined {
   const today = todayJST();
   const days = allDays();
   const exact = days.find((d) => d.date === today);
   if (exact) return { day: exact, when: "today" };
+  const sameDay = days.filter((d) => d.date.slice(5) === today.slice(5) && d.date < today).at(-1);
+  if (sameDay) return { day: sameDay, when: "lastYear" };
   const next = days.find((d) => d.date > today);
   if (next) return { day: next, when: "next" };
   const past = days.filter((d) => d.date < today).at(-1);
