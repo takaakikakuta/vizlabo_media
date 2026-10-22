@@ -55,6 +55,23 @@ export function dayImage(d: DayPost): string | undefined {
   return undefined;
 }
 
+/** 日本時間の今日（"YYYY-MM-DD"） */
+export function todayJST(): string {
+  return new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
+/** 今日の記念日。無ければ次に来る記念日、それも無ければ直近に過ぎた記念日（トップの入口カードで使う） */
+export function todayDay(): { day: DayPost; when: "today" | "next" | "past" } | undefined {
+  const today = todayJST();
+  const days = allDays();
+  const exact = days.find((d) => d.date === today);
+  if (exact) return { day: exact, when: "today" };
+  const next = days.find((d) => d.date > today);
+  if (next) return { day: next, when: "next" };
+  const past = days.filter((d) => d.date < today).at(-1);
+  return past ? { day: past, when: "past" } : undefined;
+}
+
 /** "YYYY-MM-DD" → "10月25日"（年は withYear で "2026年10月25日"） */
 export function dayLabel(date: string, withYear = false): string {
   const [y, m, d] = date.split("-").map((s) => parseInt(s, 10));

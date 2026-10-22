@@ -5,7 +5,7 @@ import { challengeStyle } from "../lib/visuals";
 import CaseCard from "../components/CaseCard";
 import BrowseTabs from "../components/BrowseTabs";
 import { allArticles, articleThumb } from "../lib/articles";
-import { allDays, dayLabel } from "../lib/days";
+import { dayLabel, todayDay } from "../lib/days";
 import CoverImg from "../components/CoverImg";
 import { SUGGEST_ENABLED } from "../lib/flags";
 import fs from "node:fs";
@@ -56,13 +56,17 @@ function HeroEntry({ href, eyebrow, title, desc, cta, external }: {
     : <Link href={href} className={cls}>{inner}</Link>;
 }
 
+/* トップは「今日の記念日」を出すため、1時間ごとに作り直す（ISR）。
+   静的のままだとビルド時の日付で固まる。1日24回の再生成なのでSSR費用はごくわずか。 */
+export const revalidate = 3600;
+
 export default function Home() {
   const chCounts = challengeCounts();
   const indCounts = industryCounts();
   const s = siteStats();
   const newest = newestCases(4);
   const articles = allArticles().slice(0, 3);
-  const latestDay = allDays().at(-1);  // 日付順の最後＝いちばん新しい記念日ポスト
+  const today = todayDay();  // 今日の記念日（無ければ次の記念日、それも無ければ直近に過ぎた記念日）
   const browseChallenges = CHALLENGES.map((ch) => ({
     slug: ch.slug, label: ch.label, desc: ch.desc,
     count: chCounts[ch.slug] ?? 0, color: challengeStyle(ch.slug).solid,
@@ -130,9 +134,10 @@ export default function Home() {
             <HeroEntry href="/finder" eyebrow="事例ファインダー" title="質問に答えるだけで、自社に近い事例へ"
               desc={`業種・部門・ほしい成果を順に選ぶだけ。${s.total.toLocaleString()}件から絞り込む`} cta="質問に答えて探す" />
             {/* 3枚目：記念日ポスト（/days）。最新の記念日があればその名前を出す */}
-            <HeroEntry href={latestDay ? `/days/${latestDay.date}` : "/days"} eyebrow="記念日ポスト"
-              title={latestDay ? `${dayLabel(latestDay.date)}は${latestDay.name}` : "事例で読む記念日"}
-              desc={latestDay ? `${latestDay.theme}を3本。SNSで配信した記念日ポストを、1日1ページで` : "その日の記念日にちなんで、掲載事例から3本を紹介"}
+            <HeroEntry href={today ? `/days/${today.day.date}` : "/days"}
+              eyebrow={today?.when === "today" ? "きょうの記念日" : today?.when === "next" ? "次の記念日" : "記念日ポスト"}
+              title={today ? `${dayLabel(today.day.date)}は${today.day.name}` : "事例で読む記念日"}
+              desc={today ? `${today.day.theme}を3本。SNSで配信した記念日ポストを、1日1ページで` : "その日の記念日にちなんで、掲載事例から3本を紹介"}
               cta="記念日を読む" />
           </div>
         </div>
