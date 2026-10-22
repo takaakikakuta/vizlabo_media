@@ -5,12 +5,40 @@ import { challengeStyle } from "../lib/visuals";
 import CaseCard from "../components/CaseCard";
 import BrowseTabs from "../components/BrowseTabs";
 import { allArticles, articleThumb } from "../lib/articles";
+import { allDays, dayLabel } from "../lib/days";
 import CoverImg from "../components/CoverImg";
 import { SUGGEST_ENABLED } from "../lib/flags";
 import fs from "node:fs";
 import path from "node:path";
 
-/* ヒーロー右側の入口カード。外部リンク（note）は新しいタブで開く。 */
+/* ヒーロー下のバナー（1枚）。note で連載中の「この事例がスゴイ」「事例コラム」への外部リンク。
+   href に note のURLを入れると新しいタブで開くリンクになる（未設定なら枠のみ）。
+   画像は public/banner/note.png を置けば自動で表示される（比率4:1・1600×400px推奨）。 */
+const BANNERS: { file: string; label: string; note: string; href?: string }[] = [
+  { file: "note.png", label: "この事例がスゴイ／事例コラム", note: "noteで連載中の2企画", href: "https://note.com/vizlabo" },
+];
+
+function Banner({ file, label, note, href }: (typeof BANNERS)[number]) {
+  const exists = fs.existsSync(path.join(process.cwd(), "public", "banner", file));
+  const inner = exists ? (
+    <div className="relative aspect-[4/1] w-full overflow-hidden border border-line">
+      <CoverImg src={`/banner/${file}`} />
+    </div>
+  ) : (
+    /* 画像が用意されるまでのプレースホルダー枠 */
+    <div className="flex aspect-[4/1] w-full flex-col items-center justify-center gap-1.5 border border-dashed border-line bg-soft">
+      <span className="font-display text-[18px] text-ink">{label}</span>
+      <span className="text-[11.5px] text-muted">{note}</span>
+      <span className="text-[10px] text-muted/70">（バナー準備中：/banner/{file}・1600×400）</span>
+    </div>
+  );
+  return href
+    ? <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
+        className="block no-underline transition hover:opacity-90">{inner}</a>
+    : inner;
+}
+
+/* ヒーロー右側の入口カード。外部リンクは新しいタブで開く。 */
 function HeroEntry({ href, eyebrow, title, desc, cta, external }: {
   href: string; eyebrow: string; title: string; desc: string; cta: string; external?: boolean;
 }) {
@@ -34,6 +62,7 @@ export default function Home() {
   const s = siteStats();
   const newest = newestCases(4);
   const articles = allArticles().slice(0, 3);
+  const latestDay = allDays().at(-1);  // 日付順の最後＝いちばん新しい記念日ポスト
   const browseChallenges = CHALLENGES.map((ch) => ({
     slug: ch.slug, label: ch.label, desc: ch.desc,
     count: chCounts[ch.slug] ?? 0, color: challengeStyle(ch.slug).solid,
@@ -100,15 +129,22 @@ export default function Home() {
                   desc="毎週金曜配信。事例セレクション5本と、note連載2本をメールで届けます" cta="登録する" />}
             <HeroEntry href="/finder" eyebrow="事例ファインダー" title="質問に答えるだけで、自社に近い事例へ"
               desc={`業種・部門・ほしい成果を順に選ぶだけ。${s.total.toLocaleString()}件から絞り込む`} cta="質問に答えて探す" />
-            <HeroEntry href="https://note.com/vizlabo" external eyebrow="note連載" title="この事例がスゴイ／事例コラム"
-              desc="掲載事例の中から、編集部が唸った1本を読み解く連載。noteで公開中" cta="noteで読む" />
+            {/* 3枚目：記念日ポスト（/days）。最新の記念日があればその名前を出す */}
+            <HeroEntry href={latestDay ? `/days/${latestDay.date}` : "/days"} eyebrow="記念日ポスト"
+              title={latestDay ? `${dayLabel(latestDay.date)}は${latestDay.name}` : "事例で読む記念日"}
+              desc={latestDay ? `${latestDay.theme}を3本。SNSで配信した記念日ポストを、1日1ページで` : "その日の記念日にちなんで、掲載事例から3本を紹介"}
+              cta="記念日を読む" />
           </div>
         </div>
       </section>
 
-      {/* AI事例サジェストの画像バナーは、2026-10 にヒーロー右側の1枚目へ移した */}
-
-      {/* 事例ファインダーと note連載の入口は、2026-10 にヒーロー右側（HeroEntry）へ移した */}
+      {/* ── バナー：note連載への入口（ヒーロー直下）。画像は public/banner/note.png を置くだけで反映（4:1、1600×400px推奨）。
+           比率は4:1のまま、幅をmax-w-3xlに絞って控えめに置く ── */}
+      <section className="mx-auto max-w-6xl px-5 pt-10">
+        <div className="mx-auto max-w-3xl">
+          {BANNERS.map((b) => <Banner key={b.file} {...b} />)}
+        </div>
+      </section>
 
       {/* ── 読みもの：事例の集積からしか書けない記事 ── */}
       {articles.length > 0 && (
