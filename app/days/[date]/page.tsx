@@ -59,16 +59,12 @@ export default async function DayPage({ params }: { params: Promise<{ date: stri
         </div>
       )}
 
-      <h1 className="font-display mt-8 text-[26px] leading-[1.5] text-ink sm:text-[32px]">
-        {d.title.map((line, i) => <span key={i} className="block">{line}</span>)}
-      </h1>
-      <p className="mt-5 text-[15px] leading-[2] text-body">{d.body}</p>
-      <p className="mt-5 border-l-2 border-ink pl-4 text-[14px] leading-[1.9] text-ink">
-        {dayLabel(d.date)}は「{d.name}」。{d.theme}を{cases.length}つ。
-      </p>
+      {/* 書き出し（title/body）はページには出さない。OGPのタイトルと一覧の見出しにだけ使う */}
+      <h1 className="sr-only">{dayLabel(d.date)}は{d.name}。{d.title.join("")}</h1>
 
       {/* 事例3本：ポストの一言＋事例カード（会社名・数字・リンクはカードが出す） */}
-      <div className="mt-10 border-t border-ink">
+      <p className="label mt-10">{d.theme}、{cases.length}本</p>
+      <div className="mt-3 border-t border-ink">
         {cases.map(({ item, c }, i) => (
           <div key={c.id} className="border-b border-line2 py-6">
             <p className="flex items-baseline gap-3 text-[13.5px] leading-[1.8] text-ink">
