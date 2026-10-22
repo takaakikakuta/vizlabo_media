@@ -97,3 +97,25 @@ export function dayCases(d: DayPost): { item: DayItem; c: CaseStudy }[] {
   return d.items.map((item) => ({ item, c: getCase(item.caseId) }))
     .filter((x): x is { item: DayItem; c: CaseStudy } => Boolean(x.c));
 }
+
+/* ── 一覧（/days）がカレンダーを組むための暦の道具。タイムゾーンに依らないよう UTC で日付だけを扱う ── */
+
+export const WEEKDAYS_JA = ["日", "月", "火", "水", "木", "金", "土"] as const;
+
+/** "YYYY-MM-DD" → 曜日（0=日 … 6=土） */
+export function dayWeekday(date: string): number {
+  const [y, m, d] = date.split("-").map((s) => parseInt(s, 10));
+  return new Date(Date.UTC(y, m - 1, d)).getUTCDay();
+}
+
+/** その月の日数 */
+export function daysInMonth(y: number, m: number): number {
+  return new Date(Date.UTC(y, m, 0)).getUTCDate();
+}
+
+/** from から to までの日数（to が過去なら負）。"YYYY-MM-DD" 同士 */
+export function daysBetween(from: string, to: string): number {
+  const ms = Date.UTC(dayYear(to), dayMonth(to) - 1, parseInt(to.slice(8, 10), 10))
+    - Date.UTC(dayYear(from), dayMonth(from) - 1, parseInt(from.slice(8, 10), 10));
+  return Math.round(ms / 86_400_000);
+}
