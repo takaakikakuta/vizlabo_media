@@ -67,11 +67,14 @@ export default async function DayPage({ params }: { params: Promise<{ date: stri
       <div className="mt-3 border-t border-ink">
         {cases.map(({ item, c }, i) => (
           <div key={c.id} className="border-b border-line2 py-6">
-            <p className="flex items-baseline gap-3 text-[13.5px] leading-[1.8] text-ink">
-              <span className="num shrink-0 text-[12px] text-muted">{String(i + 1).padStart(2, "0")}</span>
-              <span>{d.emoji ? `${d.emoji} ` : ""}{item.note}</span>
-            </p>
-            <div className="mt-3"><CaseCard c={c} /></div>
+            {/* ポストの一言＝この事例の見出し。カードより目立つように大きく太く */}
+            <h2 className="flex items-start gap-3">
+              <span className="num mt-1.5 shrink-0 text-[12px] text-muted">{String(i + 1).padStart(2, "0")}</span>
+              <span className="font-display text-[19px] leading-[1.55] text-ink sm:text-[21px]">
+                {d.emoji && <span className="mr-1.5">{d.emoji}</span>}{item.note}
+              </span>
+            </h2>
+            <div className="mt-4"><CaseCard c={c} /></div>
           </div>
         ))}
       </div>
