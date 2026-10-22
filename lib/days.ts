@@ -13,6 +13,7 @@ export type DayPost = {
   date: string;            // "YYYY-MM-DD"（年ごとに内容を変えられるよう、年を含める）
   name: string;            // 記念日の名前（例: 世界パスタデー）
   emoji?: string;          // リプ欄の行頭に付ける絵文字（任意）
+  intro?: string[];        // 冒頭の説明（段落ごと）。この日が記念日になった由来と、事例との関連
   title: string[];         // 書き出し（行ごと。SNSポストの1〜2文目）
   body: string;            // 本文（ポストの続き。1段落）
   theme: string;           // 3本の括り（例: 手仕事の食品づくりを機械に任せた事例）
@@ -72,16 +73,4 @@ export function dayMonth(date: string): number {
 export function dayCases(d: DayPost): { item: DayItem; c: CaseStudy }[] {
   return d.items.map((item) => ({ item, c: getCase(item.caseId) }))
     .filter((x): x is { item: DayItem; c: CaseStudy } => Boolean(x.c));
-}
-
-/** SNSポストの文面を組み立てる（本文＋リプ欄）。ページの「ポスト用テキスト」に出す */
-export function dayPostText(d: DayPost, site = "https://vizlabo.com"): { main: string; reply: string } {
-  const e = d.emoji ?? "・";
-  const main = [...d.title, d.body, `${dayLabel(d.date)}は「${d.name}」。`, `${d.theme}を${d.items.length}つ、リプ欄に。`].join("\n");
-  const lines = dayCases(d).map(({ item, c }) => {
-    const who = c.customer?.name ? `${c.customer.name}: ` : "";
-    return `${e} ${who}${item.note}\n${site}/cases/${c.id}`;
-  });
-  if (d.more) lines.push(`${d.more.label}→ ${site}${d.more.href}`);
-  return { main, reply: lines.join("\n") };
 }

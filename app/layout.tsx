@@ -11,6 +11,8 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const SITE_NAME = "事例マニア";
 
 export const metadata: Metadata = {
+  // OGP画像など相対URLの基準。未設定だとビルド時に localhost で絶対化され、SNSカードに画像が出ない
+  metadataBase: new URL("https://vizlabo.com"),
   title: { default: `${SITE_NAME}｜課題から探すBtoB導入事例`, template: `%s｜${SITE_NAME}` },
   description:
     "各社サイトの導入事例を「課題」から横断検索。人手不足・コスト削減・品質改善など、あなたと同じ課題を何でどう解決したかを、成果の数字つきで比較できます。",

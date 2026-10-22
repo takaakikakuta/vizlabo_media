@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { allDays, dayCases, dayImage, dayLabel, dayPostText, getDay, neighborDays } from "../../../lib/days";
+import { allDays, dayCases, dayImage, dayLabel, getDay, neighborDays } from "../../../lib/days";
 import CaseCard from "../../../components/CaseCard";
-import CopyText from "../../../components/CopyText";
 
 /* 記念日ページ。content/days/MM-DD.json を置けば生える。全日をビルド時に静的生成する（最大365ページ） */
 export const dynamicParams = false;
@@ -32,7 +31,6 @@ export default async function DayPage({ params }: { params: Promise<{ date: stri
   const img = dayImage(d);
   const cases = dayCases(d);
   const { prev, next } = neighborDays(date);
-  const post = dayPostText(d);
 
   return (
     <article className="mx-auto max-w-3xl px-5 py-12">
@@ -48,6 +46,16 @@ export default async function DayPage({ params }: { params: Promise<{ date: stri
         <div className="mt-6 overflow-hidden rounded-[3px] border border-line2 bg-soft">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={img} alt={`${d.name}のイラスト`} className="h-auto w-full" />
+        </div>
+      )}
+
+      {/* 冒頭：この日が記念日になった由来と、なぜこの事例を選んだか（intro。段落ごとに配列） */}
+      {d.intro && d.intro.length > 0 && (
+        <div className="mt-8 border-y border-line py-5">
+          <p className="label">{dayLabel(d.date)}が「{d.name}」なのは</p>
+          {d.intro.map((p, i) => (
+            <p key={i} className="mt-3 text-[14px] leading-[2] text-body">{p}</p>
+          ))}
         </div>
       )}
 
@@ -99,15 +107,6 @@ export default async function DayPage({ params }: { params: Promise<{ date: stri
         </nav>
       )}
 
-      {/* ポスト用テキスト：本文とリプ欄。編集部がSNSに貼る用（読者にも見える） */}
-      <section className="mt-12">
-        <div className="flex items-center justify-between">
-          <p className="label">ポスト用テキスト</p>
-          <CopyText text={`${post.main}\n\n【リプ】\n${post.reply}`} label="本文とリプ欄をコピー" />
-        </div>
-        <pre className="mt-3 whitespace-pre-wrap border border-line bg-soft p-4 text-[12.5px] leading-[1.9] text-body">{post.main}</pre>
-        <pre className="mt-2 whitespace-pre-wrap border border-line bg-soft p-4 text-[12.5px] leading-[1.9] text-body">{post.reply}</pre>
-      </section>
     </article>
   );
 }
