@@ -36,7 +36,7 @@ export default async function DayPage({ params }: { params: Promise<{ date: stri
     <article className="mx-auto max-w-3xl px-5 py-12">
       {/* 扉 */}
       <p className="label flex items-center gap-2.5">
-        <Link href="/days" className="no-underline hover:text-ink">事例で読む記念日</Link>
+        <Link href="/days" className="border-b border-line no-underline hover:border-ink hover:text-ink">← 事例で読む記念日（一覧）</Link>
         <span className="h-px w-6 bg-line" />
         <span className="num text-[12px] text-ink">{dayLabel(d.date)}</span>
         <span>{d.name}</span>
@@ -106,6 +106,20 @@ export default async function DayPage({ params }: { params: Promise<{ date: stri
         </nav>
       )}
 
+      {/* 一覧への入口：前後の日だけでなく、暦（カレンダー）から他の日を選べることをはっきり示す */}
+      <section className="mt-8 flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border border-ink bg-soft px-6 py-5">
+        <div className="min-w-0">
+          <p className="label">事例で読む記念日</p>
+          <p className="font-display mt-1 text-[16px] leading-snug text-ink sm:text-[17px]">
+            ほかの日の記念日も読む。カレンダーから日付で選べます
+          </p>
+          <p className="mt-1 text-[12px] text-muted">公開中 <span className="num text-ink">{allDays().length}</span> 日分</p>
+        </div>
+        <Link href="/days"
+          className="shrink-0 border border-ink bg-ink px-5 py-2.5 text-[13px] font-bold text-white no-underline transition hover:bg-white hover:text-ink">
+          記念日の一覧へ →
+        </Link>
+      </section>
     </article>
   );
 }
