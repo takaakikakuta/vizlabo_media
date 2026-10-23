@@ -24,12 +24,18 @@ export default function DaysPage() {
   const today = todayJST();
   const feature = todayDay();  // きょう → 同じ月日の昨年以前 → 次の記念日 → 直近に過ぎた記念日
 
-  // 年ごとに内容を変えられるよう日付は YYYY-MM-DD。新しい年を先に、年の中は暦の順（1月→12月）に並べる
-  const years = Array.from(new Set(days.map((d) => dayYear(d.date)))).sort((a, b) => b - a);
-  const months = years.flatMap((y) =>
-    Array.from({ length: 12 }, (_, i) => i + 1)
-      .map((m) => ({ y, m, days: days.filter((d) => dayYear(d.date) === y && dayMonth(d.date) === m) }))
-      .filter((x) => x.days.length > 0));
+  // 年ごとに内容を変えられるよう日付は YYYY-MM-DD。
+  // 月の並びは「今月 → 来月以降（近い順）→ 過去の月（新しい順）」。開いた人がまず今月の暦を見られるようにする。
+  // 月は "YYYY-MM" の文字列で比べる（todayJST() が YYYY-MM-DD なので先頭7文字が今月）。
+  const thisMonth = today.slice(0, 7);
+  const monthKeys = Array.from(new Set(days.map((d) => d.date.slice(0, 7))));
+  const upcoming = monthKeys.filter((k) => k >= thisMonth).sort();                 // 今月・来月以降は近い順
+  const past = monthKeys.filter((k) => k < thisMonth).sort((a, b) => b.localeCompare(a)); // 過去は新しい順
+  const months = [...upcoming, ...past].map((k) => ({
+    y: parseInt(k.slice(0, 4), 10),
+    m: parseInt(k.slice(5, 7), 10),
+    days: days.filter((d) => d.date.startsWith(k)),
+  }));
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-12">
