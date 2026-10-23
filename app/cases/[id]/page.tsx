@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import type { CaseStudy } from "../../../lib/types";
 import { allCases, getCase } from "../../../lib/cases";
 import { recommendCases } from "../../../lib/recommend";
 import { challengeLabel, industryLabel, productLabel } from "../../../lib/taxonomy";
@@ -59,6 +60,11 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
       <p className="mt-6 border-l-2 border-ink pl-5 text-[15px] leading-[2.05] text-body">
         {c.summary}
       </p>
+
+      {/* 公式の元記事への導線（冒頭）。要約を読んで「詳しく知りたい」と思った人をすぐ送る */}
+      <div className="mt-6">
+        <SourceButton c={c} position="top" />
+      </div>
 
       {/* 出典画像があれば扉の写真として。無い事例も成立する組みにしてある */}
       {c.image && (
@@ -131,13 +137,13 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
         {c.resultsQualitative && <p className="mt-5">{c.resultsQualitative}</p>}
       </Section>
 
-      {/* 出典 */}
-      <div className="mt-12 border-t border-line pt-5">
+      {/* 出典（末尾）。読み終えた人を公式の元記事へ送る、2つ目の導線 */}
+      <div className="mt-12 border-t border-line pt-6">
         <div className="label">この事例の出典（掲載元）</div>
-        <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer"
-          className="mt-2.5 block break-all border-b border-line pb-1 text-[13.5px] font-bold text-brand no-underline hover:border-brand">
-          {c.sourceUrl} ↗
-        </a>
+        <div className="mt-3">
+          <SourceButton c={c} position="bottom" />
+        </div>
+        <p className="mt-3 break-all text-[11px] text-muted">{c.sourceUrl}</p>
         <p className="mt-3 text-[11.5px] leading-relaxed text-muted">
           本ページは掲載元の公開事例の要約です。詳細・一次情報は出典元をご確認ください。
           掲載内容の修正・削除のご依頼は
@@ -225,6 +231,33 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
         </div>
       </div>
     </article>
+  );
+}
+
+/** 出典URLに UTM を付ける。掲載元の解析で「事例マニアの事例ページの冒頭／末尾から来た」と分かるようにする。
+    既にクエリやハッシュがあっても壊さないよう URL オブジェクトで組む。 */
+function withUtm(url: string, position: "top" | "bottom"): string {
+  try {
+    const u = new URL(url);
+    u.searchParams.set("utm_source", "jirei-mania");
+    u.searchParams.set("utm_medium", "referral");
+    u.searchParams.set("utm_campaign", "case_detail");
+    u.searchParams.set("utm_content", position);
+    return u.toString();
+  } catch {
+    return url;
+  }
+}
+
+/** 公式の元記事へのボタン。文言に会社名を入れて「どこに飛ぶか」を具体的にする（導入企業名、無ければ掲載元ドメイン） */
+function SourceButton({ c, position }: { c: CaseStudy; position: "top" | "bottom" }) {
+  const name = c.customer.name || c.vendor;
+  return (
+    <a href={withUtm(c.sourceUrl, position)} target="_blank" rel="noopener"
+      className="group inline-flex max-w-full flex-col border border-ink bg-ink px-5 py-3 text-white no-underline transition hover:bg-white hover:text-ink">
+      <span className="text-[14px] font-bold leading-snug">元の事例を読む（{name}）↗</span>
+      <span className="mt-0.5 text-[11px] text-white/70 group-hover:text-muted">掲載元：{c.vendor} の公式サイト</span>
+    </a>
   );
 }
 
