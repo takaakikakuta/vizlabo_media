@@ -12456,51 +12456,6 @@
     ]
   },
   {
-    "id": "ev-charge-enechange-jp-case-ichikawa-bil-chiba",
-    "title": "商業施設がEV充電器導入で利便性向上と地域貢献を実現",
-    "summary": "商業施設を運営する市川ビルは、EV市場の不透明さなど懸念を抱えていたが、補助金活用とEV充電エネチェンジの導入実績を判断材料に導入を決定。告知活動により利用が増加し、テナント売上向上にもつながった。",
-    "vendor": "ev-charge-enechange.jp",
-    "product": "EV充電エネチェンジ",
-    "productCategory": "other-product",
-    "sourceUrl": "https://ev-charge-enechange.jp/case/ichikawa-bil_chiba/",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "株式会社市川ビル",
-      "industry": "retail",
-      "size": "中堅企業",
-      "dept": "業務効率向上室"
-    },
-    "challenges": [
-      "efficiency",
-      "sustainability"
-    ],
-    "challengeDetail": "商業施設の利便性向上と地域への貢献を課題としており、EV市場の不透明さに対するリスク懸念があった。",
-    "actions": "EV充電エネチェンジを導入し、補助金でイニシャルコストをカバー。導入当初の低利用率に対し、デジタルサイネージやポスターで告知活動を実施した。",
-    "results": [
-      {
-        "metric": "利用実績",
-        "value": "告知活動後1カ月で利用が伸長"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "導入箇所",
-        "value": "ターミナルシティ本八幡アイビス4口"
-      },
-      {
-        "metric": "運用開始時期",
-        "value": "2024年11月"
-      }
-    ],
-    "resultsQualitative": "テナント売上向上につながり、社内からも導入に肯定的な声が上がった。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "リード獲得の停滞",
-      "情報共有の遅れ"
-    ]
-  },
-  {
     "id": "exawizards-com-works-20297",
     "title": "ヤマト運輸、MLOps導入で機械学習モデルの運用を高速化し精度改善サイクルを10倍以上に加速",
     "summary": "宅配業界最大手のヤマト運輸は、コロナ禍による需要増大への対応と従来手法の限界を課題に、MLOps（Machine Learning Operations）を導入。機械学習パイプラインの自動化により、月次運用の高速化と運用工数の大幅削減を実現し、精度改善サイクルが月1回から月10回以上へと加速した。",
@@ -31055,6 +31010,59 @@
     ]
   },
   {
+    "id": "recop-jp-case-torikizoku",
+    "title": "採用ホームページ強化でホームページ経由応募者2.5倍増、有料求人メディア依存から脱却",
+    "summary": "採用市場の変化で有料求人メディア頼みの採用が限界を迎えていた。リクオプの導入で採用ホームページをリニューアルし、応募者対応を自動化することで、ホームページ経由の応募者を2.5倍に増やすことができた。",
+    "vendor": "recop.jp",
+    "product": "リクオプ",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://recop.jp/case/torikizoku/",
+    "collectedAt": "2026-09-17T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社鳥貴族",
+      "industry": "food",
+      "size": "従業員9,902名（グループ全体・パート・アルバイト含む）",
+      "dept": "採用部門"
+    },
+    "challenges": [
+      "labor",
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "コロナ禍明けで採用人数を増やす必要があったが、有料求人メディアへの出稿費用が見合わず、応募単価・採用単価が悪化していた。また、応募者対応フローが煩雑で時間がかかっていた。",
+    "actions": "自社採用ホームページのリニューアルと採用管理システムの刷新を行い、チャットボットなどの自動化機能を活用して応募者対応と面接調整を自動化した。",
+    "results": [
+      {
+        "metric": "ホームページ経由応募者数",
+        "value": "2.5倍増"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "直営店舗数",
+        "value": "654店舗"
+      },
+      {
+        "metric": "導入期間",
+        "value": "約5ヶ月（2023年3月末公開運用開始）"
+      },
+      {
+        "metric": "フランチャイズ導入ATS台数",
+        "value": "十数社"
+      }
+    ],
+    "resultsQualitative": "応募単価・採用単価が高水準となり、有料求人メディアへの出稿量を最小限に抑えられる店舗が増えた。現場からの戸惑いを乗り越え、月1回の定例会議を通じた継続的な分析・改善が進んでいる。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "http://recop.jp/assets/uploads/2023/09/torikizoku_kvpng.png",
+    "tags": [
+      "応募が集まらない",
+      "一次対応の属人化",
+      "問い合わせ対応の負荷"
+    ],
+    "hidden": true
+  },
+  {
     "id": "resource-sharing-co-jp-case-study-fete-du-cafe",
     "title": "CS-Cart国際版でコーヒー専門マーケットプレイスを5,000ユーロで立ち上げ、6ヶ月で商品数2,500を達成",
     "summary": "オランダの起業家が、ゼロから構築する場合に10万ユーロ必要となるコーヒー専門マーケットプレイスを、CS-Cart国際版を導入することで5,000ユーロで実現。6ヶ月の開発後、数ヶ月で商品数をゼロから2,500に拡大し、オランダ最大のコーヒー専門ECサイトとなった。",
@@ -47805,6 +47813,61 @@
     ]
   },
   {
+    "id": "www-amc-rocketsoftware-co-jp-mfproducts-cobol-cases-hokudens",
+    "title": "オフコン資産のCOBOL to COBOL移行でオープン環境へ完全移行、ファイル処理を10分から1分以内に短縮",
+    "summary": "東芝製フレームワークTPcareのサービス終了に直面した北陸電機商会は、40年蓄積したCOBOL資産（2,800本のプログラム）を維持しながらMicro Focus Visual COBOLへのストレート移行を実施。完全オープン環境への移行に成功し、周辺システム連携の柔軟性向上とパフォーマンス大幅改善を実現。",
+    "vendor": "rocketsoftware.co.jp",
+    "product": "Micro Focus Visual COBOL",
+    "productCategory": "dev",
+    "sourceUrl": "https://www.amc.rocketsoftware.co.jp/mfproducts/COBOL/cases/hokudensho/",
+    "collectedAt": "2026-09-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社北陸電機商会",
+      "industry": "retail",
+      "size": "従業員248名",
+      "dept": "情報システム部"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "採用していた東芝製フレームワークTPcareのサービス終了が2022年に発表され、40年蓄積したCOBOL資産2,800本を維持しながらシステム移行する必要が生じた。業務フローの変更を避けるため、スクラッチ開発やパッケージ導入は選択できず、COBOL to COBOLのストレート移行を検討。",
+    "actions": "東京システムハウスのマイグレーション用ツールAJTOOLとMicro Focus Visual COBOLを採用し、COBOL資産のストレート移行を実施。情報システム部の5名が主導してプロジェクトを管理し、資産整理・調査分析・プログラム変換・各種テストを実施。2021年3月にプロジェクト開始、2022年7月に本番稼働。",
+    "results": [
+      {
+        "metric": "ファイル処理時間",
+        "value": "10分→1分以内"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "COBOLプログラム数",
+        "value": "2,800本"
+      },
+      {
+        "metric": "JCL数",
+        "value": "2,000本"
+      },
+      {
+        "metric": "RDBデータ数",
+        "value": "60本"
+      },
+      {
+        "metric": "プロジェクト期間",
+        "value": "2021年3月～2022年7月（16ヶ月）"
+      }
+    ],
+    "resultsQualitative": "サービス終了前にストレート移行を完了し、蓄積したCOBOL資産を維持したまま完全オープン環境への移行に成功。周辺システム連携が柔軟になり、帳票基盤と運用管理にサードパーティー製品を導入可能に。エンドユーザーからシステム高速化への肯定的フィードバック獲得。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.amc.rocketsoftware.co.jp/img/products/COBOL/cases/hokudensho/hokudensho_p01.jpg",
+    "tags": [
+      "老朽化したシステム",
+      "システムの乱立",
+      "周辺システムとの連携困難"
+    ]
+  },
+  {
     "id": "www-appguard-co-jp-case-enterprise-case20",
     "title": "JTB、AppGuardで未知の脅威対策を強化し夜間休日対応工数を3分の1削減",
     "summary": "旅行業界の大手JTBは、巧妙化する未知の脅威への対策が課題だった。AppGuardの「侵入されても発症させない」というアプローチに着目し導入。アラート対応が効率化され、夜間休日対応工数が約3分の1削減された。",
@@ -48603,60 +48666,6 @@
       "システムの乱立",
       "データが分散",
       "手作業の転記"
-    ]
-  },
-  {
-    "id": "www-bungu-navi-or-jp-case-study-interview-2",
-    "title": "SEDIO-VAN導入で1年でFAX件数50%削減、年間コスト1,000万円削減を実現",
-    "summary": "キヤノンマーケティングジャパンは、FAX・メール主体の受発注業務の効率化が急務だった。SEDIO-VANを導入し、16社の取引先と共通フォーマットのEDIに切り替えることで、1年でFAX件数約50%削減、業務コスト約1,000万円の削減を達成した。",
-    "vendor": "bungu-navi.or.jp",
-    "product": "SEDIO-VAN",
-    "productCategory": "other-product",
-    "sourceUrl": "https://www.bungu-navi.or.jp/case-study/interview-2",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "キヤノンマーケティングジャパン株式会社",
-      "industry": "it",
-      "size": "",
-      "dept": "IT本部、コンスーマ事業推進部"
-    },
-    "challenges": [
-      "efficiency",
-      "cost"
-    ],
-    "challengeDetail": "全社的なDX化に伴い、手作業を伴うFAXやメールでの受注業務の負荷が高く削減が急務。複数業界の取引先ごとに異なるEDIに個別対応することの非効率性があった。",
-    "actions": "SEDIO-VANを導入し、SEDIO会員である取引先16社と共通フォーマットのEDI経由での受発注業務に切り替えた。2023年4月から調整を開始し、2024年2月現在で15社が切り替え完了している。",
-    "results": [
-      {
-        "metric": "FAX件数削減",
-        "value": "約50%削減"
-      },
-      {
-        "metric": "業務コスト削減（年間）",
-        "value": "約1,000万円削減"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "切替対象取引先数",
-        "value": "16社"
-      },
-      {
-        "metric": "実施時点での切替完了数",
-        "value": "15社（2024年2月現在）"
-      },
-      {
-        "metric": "導入から成果測定までの期間",
-        "value": "1年"
-      }
-    ],
-    "resultsQualitative": "システム部門と営業部門の連携により、受発注業務の改善が実現。新規取引先拡大への可能性が広がった。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "電話・FAX中心",
-      "手作業の転記",
-      "協力会社との連携"
     ]
   },
   {
@@ -49625,6 +49634,48 @@
       "商談化しない",
       "追客の漏れ",
       "サイト更新ができない"
+    ]
+  },
+  {
+    "id": "www-cognex-com-ja-why-cognex-customer-success-stories-cognex",
+    "title": "ポリ袋入りの返品商品の再在庫を自動化、1時間あたり500ユニットを連続処理・読み取り率99.9%",
+    "summary": "ドイツの大手アパレル・アクセサリー小売業者は、返品された商品を在庫に戻す再在庫プロセスを手作業で行っていた。Soft Roboticsが三次元画像処理・AI・ソフトグリッパーを使ったピッキングロボットにコグネックスの固定式バーコードリーダを組み合わせて自動化し、扱いにくいポリ袋入りの商品でも1時間あたり500ユニットを連続処理、読み取り率99.9%を達成した。",
+    "vendor": "cognex.com",
+    "product": "固定式バーコードリーダ（Soft Roboticsのピッキングロボットと組み合わせ）",
+    "productCategory": "robot",
+    "sourceUrl": "https://www.cognex.com/ja/why-cognex/customer-success-stories/cognex-and-soft-robotics-overcome-polybag-challenges-during-reinventory-process",
+    "collectedAt": "2026-10-23T00:00:00.000Z",
+    "customer": {
+      "name": "ドイツの大手アパレル・アクセサリー小売業者（Soft Robotics経由）",
+      "industry": "retail",
+      "size": "大手",
+      "dept": "物流（返品の再在庫）"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "cost"
+    ],
+    "challengeDetail": "返品された商品を在庫に戻す再在庫プロセスを手作業で行っていた。商品は扱いにくいポリ袋に入っており、手作業の手間とコストがかかっていた。",
+    "actions": "Soft Roboticsが、三次元画像処理・人工知能・ソフトグリッパーを使った検査・ピッキング用の自動化ソリューションを構築。コグネックスの固定式バーコードリーダと組み合わせ、ポリ袋入りの商品のピッキングと識別を自動化した。",
+    "results": [
+      {
+        "metric": "処理能力",
+        "value": "1時間あたり500ユニットを連続処理"
+      },
+      {
+        "metric": "バーコード読み取り率",
+        "value": "99.9%"
+      }
+    ],
+    "resultsQualitative": "手作業に比べてコストを節約し、作業品質も向上した。読み取りの失敗による手作業の手直しのコストと時間が大幅に減った。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://cog-p-001.sitecorecontenthub.cloud/api/public/content/798f98fce50641128cc0a971b21a7cf9?v=74488304",
+    "tags": [
+      "手作業の転記",
+      "在庫の把握不足",
+      "検査の目視頼み"
     ]
   },
   {
@@ -56516,6 +56567,54 @@
     ]
   },
   {
+    "id": "www-hitachi-ies-co-jp-products-cmp-case-202107-01-html",
+    "title": "食品製造工場のコンプレッサー停止問題を、オイルフリーコンプレッサーと遠隔監視で解決",
+    "summary": "食品製造工場Bでは、設置されたコンプレッサー8台が頻繁に停止し、生産が中断される課題を抱えていました。日立産機システムは、最新のオイルフリーコンプレッサーDSP-NEXT®4台への置き換えと、クラウド監視ツールFitLive®による遠隔監視を導入。その結果、消費電力を18.8%削減し、稼働状況を24時間365日リアルタイム把握できるようになりました。",
+    "vendor": "hitachi-ies.co.jp",
+    "product": "DSP-NEXT®（オイルフリースクリュー圧縮機）、FitLive®（遠隔監視システム）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.hitachi-ies.co.jp/products/cmp/case/202107_01.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "B社（食品製造業）",
+      "industry": "food",
+      "size": "",
+      "dept": "製造部"
+    },
+    "challenges": [
+      "efficiency",
+      "cost",
+      "quality"
+    ],
+    "challengeDetail": "設置されたコンプレッサー8台が屋外の暑さの影響で頻繁に停止し、生産が一時的に中断される。また複雑な管理体制により、点検時期の管理が困難で、不意の停止によって生産ロスと相当な電力消費が発生していました。",
+    "actions": "現在の8台のコンプレッサーのうち、最新のオイルフリースクリュー圧縮機DSP-NEXT®4台に置き換えし、残り4台は小数制御装置で無駄のない運用管理を実施。設置場所を最適化し、クラウド監視ツールFitLive®を導入して24時間365日リアルタイムに稼働状況を把握できる体制を構築しました。",
+    "results": [
+      {
+        "metric": "消費電力削減",
+        "value": "18.8%削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "置き換えたコンプレッサー台数",
+        "value": "4台"
+      },
+      {
+        "metric": "小数制御装置で管理する台数",
+        "value": "4台"
+      }
+    ],
+    "resultsQualitative": "コンプレッサーの停止リスクが大幅に低減され、遠隔監視により不意の停止に対応可能になり、生産の安定性が向上しました。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "進捗が見えない",
+      "リアルタイムに把握できない",
+      "工程管理の難しさ"
+    ],
+    "image": "https://www.hitachi-ies.co.jp/products/cmp/image/image_cmp_case_202107_1.png"
+  },
+  {
     "id": "www-i-abs-co-jp-case-introduction02",
     "title": "給与計算・勤務管理を統合システムで一元化し、400名超の従業員管理を効率化",
     "summary": "海運企業は自社システムと給与計算システムの二重管理と、法令対応のための多数のシステム改修に対応する負担を抱えていた。給与計算・勤務管理を一元管理できるクラウドサービスCYBER XEEDを導入し、システム改修が不要となり、給与担当者の業務効率が向上した。",
@@ -57007,6 +57106,56 @@
       "対応履歴が残らない",
       "データが分散"
     ]
+  },
+  {
+    "id": "www-intra-mart-jp-case-study-006481-01-html",
+    "title": "グローバルなクレームマネジメントシステムで95％以上の案件を5日以内に迅速対応",
+    "summary": "制御機器メーカーのIDEC株式会社は、旧システムの老朽化と国内外拠点間の情報分断により、クレーム対応に遅延と二重入力が発生していた。intra-martを基盤とした「ECOASクレームマネジメント」を導入し、Salesforce・Microsoft Teamsと連携させることで、グローバルなリアルタイム情報共有と重大クレームの自動分岐を実現。95％以上の案件で初回回答を5日以内に迅速化し、月次集計の残業を解消した。",
+    "vendor": "intra-mart.jp",
+    "product": "ECOASクレームマネジメント（intra-martパートナーソリューション）",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.intra-mart.jp/case-study/006481-01.html",
+    "collectedAt": "2026-09-10T00:00:00.000Z",
+    "customer": {
+      "name": "IDEC株式会社",
+      "industry": "manufacturing",
+      "size": "グローバル企業（複数の国内外拠点）",
+      "dept": "品質部門、営業部門、生産部門"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "data"
+    ],
+    "challengeDetail": "旧システムの老朽化により、Salesforceとのシステム分断で営業担当者がクレーム情報を二重入力する必要があった。また、紙ベースの再発防止依頼書運用と文字コード制約のため、海外拠点からは中国語など多言語での入力ができず、手書きPDF化での運用になっていた。さらに月次集計運用により、経営層が重大クレームを迅速に把握できず事業リスクに対応困難な状況にあった。",
+    "actions": "intra-martを基盤とした「ECOASクレームマネジメント」を導入し、SalesforceおよびMicrosoft Teamsとの連携を実現。全拠点でのリアルタイムな情報共有体制を構築し、重大クレームを自動で別ルートへ分岐するワークフローを設定した。",
+    "results": [
+      {
+        "metric": "初回回答の迅速化",
+        "value": "95％以上の案件で5日以内"
+      },
+      {
+        "metric": "月次集計業務の残業",
+        "value": "解消"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "拠点規模",
+        "value": "世界各地の複数拠点"
+      }
+    ],
+    "resultsQualitative": "二重入力が廃止され、Salesforce・Teams連携による業務効率化を実現。経営層が重大クレームを即座に把握できる体制が構築された。グローバル規模での情報連携が迅速化され、現場の属人性が低減した。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "二重入力",
+      "多拠点の管理",
+      "リアルタイムに把握できない",
+      "月末の残業"
+    ],
+    "image": "https://www.intra-mart.jp/dcms_media/image/case-study_006481_img_top-cover.png"
   },
   {
     "id": "www-is1-co-jp-works-c-hokuetsu-html",
@@ -61154,6 +61303,58 @@
       "情報共有の遅れ",
       "多拠点の管理"
     ]
+  },
+  {
+    "id": "www-mmeg-co-jp-case-2021-20210901-210-html",
+    "title": "IoTダッシュボードで生産プロセスを可視化し、夜間作業の効率化と不稼働時間削減を実現",
+    "summary": "精密部品加工企業が24時間稼働する生産現場で、機械の稼働状況を把握できず無駄な時間が発生していた。iQ Care Remote4Uのダッシュボード機能とメール通知機能を導入し、生産プロセスを可視化・リアルタイム監視することで、故障対応の迅速化と作業指示の精度向上を実現。",
+    "vendor": "mmeg.co.jp",
+    "product": "iQ Care Remote4U",
+    "productCategory": "iot",
+    "sourceUrl": "https://www.mmeg.co.jp/case/2021/20210901-210.html",
+    "collectedAt": "2026-09-14T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社東部精工",
+      "industry": "manufacturing",
+      "size": "従業員数不明",
+      "dept": "生産・製造部門"
+    },
+    "challenges": [
+      "efficiency",
+      "data"
+    ],
+    "challengeDetail": "24時間稼働する生産現場で、機械の稼働状況や故障・トラブル発生状況をリアルタイムで把握できず、無駄な時間が多く発生していた。特に夜間作業では現場の状況が見えないため、対応が遅れていた。",
+    "actions": "iQ Care Remote4Uのダッシュボード機能により、加工機の稼働情報・加工予測・予防保全などのリアルタイムデータをPC・タブレット・スマートフォンから一目で確認できる環境を構築。メール通知機能により、機械停止やトラブルを即座に把握し、迅速な対応が可能に。生産プロセスの詳細な可視化により、作業指示マニュアルを改善し、作業員の実績値に基づいた現実的な目標値を設定。",
+    "results": [
+      {
+        "metric": "稼働率改善目標",
+        "value": "稼働率80%以上を達成目標として改善を推進"
+      },
+      {
+        "metric": "故障対応時間",
+        "value": "機械停止時の対応が迅速化"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入期間",
+        "value": "2021年7月より新サービスとして開始"
+      },
+      {
+        "metric": "稼働形態",
+        "value": "24時間稼働"
+      }
+    ],
+    "resultsQualitative": "これまでは稼働時間に対する成果（完成品）のみが見えていたが、ダッシュボードにより結果に至るまでのプロセスが可視化され、夜間作業を含む詳細な生産プロセスが把握できるようになった。トラブル対応や予防保全を含めた詳細な作業データの蓄積により、より効率的でロスの少ない生産パターン発見が可能となり、作業指示マニュアルの大幅な改善が進展している。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "進捗が見えない",
+      "リアルタイムに把握できない",
+      "現場と本社の往復",
+      "夜間対応の遅れ"
+    ],
+    "image": "https://www.mmeg.co.jp/case/2021/uploads/hattori-seiko_05.jpg"
   },
   {
     "id": "www-mr-m-co-jp-case-study-80skip",
@@ -69537,6 +69738,107 @@
     ]
   },
   {
+    "id": "www-sato-co-jp-case-niime-html",
+    "title": "4～5万点の在庫をRFIDで管理、棚卸し工数を10分の1に削減",
+    "summary": "アパレル企業がQRコード管理から RFID システムへ移行。4～5万点の作品管理において、棚卸し工数を 20名・1週間から 2名・1日に短縮し、作品探索も効率化。",
+    "vendor": "sato.co.jp",
+    "product": "RFIDシステム（スキャントロニクスCL4NX-J Plusシリーズ）",
+    "productCategory": "iot",
+    "sourceUrl": "https://www.sato.co.jp/case/niime.html",
+    "collectedAt": "2026-09-17T00:00:00.000Z",
+    "customer": {
+      "name": "有限会社玉木新雌",
+      "industry": "retail",
+      "size": "従業員98名",
+      "dept": "倉庫・在庫管理"
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "QRコードによる在庫管理では作品探索に膨大な時間を要し、棚卸しは 20名体制で 1週間必要だった。売上拡大に伴いピッキング工数も増加していた。",
+    "actions": "既存管理システムを継続しつつ、RFIDシステムを導入。ハンディターミナルで作品所在を把握し、RFIDラベルプリンターで必要分を 1枚ずつ印字する運用に変更。",
+    "results": [
+      {
+        "metric": "棚卸し工数",
+        "value": "10分の1に削減（20名・1週間→2名・1日）"
+      },
+      {
+        "metric": "作品ピックアップ時間",
+        "value": "激減（段ボール外からの一括読み取り対応）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "在庫点数",
+        "value": "4～5万点"
+      },
+      {
+        "metric": "従業員数",
+        "value": "98名"
+      }
+    ],
+    "resultsQualitative": "作品探索の判断基準が明確になり次のアクション決断が迅速化。デザインなど本来業務に時間を割けるようになった。ラベル印字スピードに課題がなく、1日200～300枚印字可能。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "在庫の把握不足",
+      "探し物の時間",
+      "繁忙期の人員不足"
+    ],
+    "image": "https://www.sato.co.jp/case/img/img_niime_01.jpg"
+  },
+  {
+    "id": "www-satotekko-cfs-jp-voice-voice02",
+    "title": "冷蔵庫破砕の安全性向上：窒素置換CFS導入で火災ゼロを11年継続",
+    "summary": "冷蔵庫の断熱材に使用されるシクロペンタンガスによる爆発・引火リスクが課題だった。準密閉構造で窒素置換対応のCFS（クロスフローシュレッダ）を導入し、安全性を確保しながら月10,000台の処理を実現。導入後11年間、火災が一度も発生していない。",
+    "vendor": "satotekko-cfs.jp",
+    "product": "CFS（クロスフローシュレッダ）",
+    "productCategory": "robot",
+    "sourceUrl": "https://www.satotekko-cfs.jp/voice/voice02/",
+    "collectedAt": "2026-09-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社富士エコサイクル",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "cost"
+    ],
+    "challengeDetail": "冷蔵庫の断熱材に使用されるシクロペンタンガスは引火性が高く、破砕処理中の爆発・引火を防ぐ必要があった。また、他の破砕機で窒素置換する場合、莫大な窒素ガスが必要でランニングコストが大きくなる課題があった。",
+    "actions": "準密閉構造で窒素置換対応のCFS（クロスフローシュレッダ）を導入。冷蔵庫の投入から排出まで一貫して窒素置換し、酸素濃度を低下させることで発火爆発を防止。プロセスガスを循環させて窒素使用量を最小化。",
+    "results": [
+      {
+        "metric": "火災発生件数",
+        "value": "ゼロ（11年間）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "年間処理台数",
+        "value": "約120,000台"
+      },
+      {
+        "metric": "導入後の運用期間",
+        "value": "11年"
+      },
+      {
+        "metric": "月間処理台数（20日稼働）",
+        "value": "約10,000台"
+      }
+    ],
+    "resultsQualitative": "トラブルがなくなり、安全性が格段に高まった。ドイツ製CFSの9年での劣化課題を改善した日本製CFSは耐久性が向上し、現在でも問題なく処理できている。ランニングコストが低減され、自社工場内のCO2発生を抑制できている。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "検査の目視頼み",
+      "不良の見逃し",
+      "安全リスク管理"
+    ],
+    "image": "https://www.satotekko-cfs.jp/wp-content/uploads/after_DSC01515.jpg"
+  },
+  {
     "id": "www-science-co-jp-case-dentalsystems-2-manual",
     "title": "Confluence導入でマニュアル作成工数を軽減し、2ヶ月で300ページ以上の新規マニュアルを完成",
     "summary": "歯科用システム開発企業が、Wordで作成していたマニュアルの改定遅れと複数ファイル管理の課題を抱えていました。Confluenceを導入し、複数ライターによる並行編集と一元管理を実現。システム更新に対応したマニュアルを短期間で完成させ、情報共有とバージョン管理が容易になりました。",
@@ -75922,6 +76224,49 @@
       "老朽化したシステム",
       "リアルタイムに把握できない"
     ]
+  },
+  {
+    "id": "www-toa-industry-co-jp-case-small-00001",
+    "title": "餃子製造機の導入で手作業10時間を大幅短縮、味と価格で顧客満足を実現",
+    "summary": "製麺・ラーメン店から餃子製造にシフトした豚珍館は、手作業で1日1500個の餃子製造に約10時間かかっていた。東亜工業の小型餃子製造機を導入することで作業時間を大幅に短縮し、「体が自由になった」と述べ、素材や調味料の研究に注力できるようになった。味と価格を武器に遠方からの顧客も増加している。",
+    "vendor": "toa-industry.co.jp",
+    "product": "餃子製造機",
+    "productCategory": "robot",
+    "sourceUrl": "https://www.toa-industry.co.jp/case/small/00001/",
+    "collectedAt": "2026-09-02T00:00:00.000Z",
+    "customer": {
+      "name": "鈴弥製麺 豚珍館",
+      "industry": "food",
+      "size": "夫婦経営",
+      "dept": ""
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "餃子の手作り製造に1日1500個作るのに約10時間を要していた。具の刻みから練るまでに3時間、包みに約7時間かかり、朝3時からの仕込みというハードな労働が課題だった。",
+    "actions": "東亜工業の小型餃子製造機を平成19年10月に導入。故障が少なく、メンテナンスも簡単（10分で分解洗浄可能）な機械を選定し、製造工程を機械化した。",
+    "results": [
+      {
+        "metric": "手作業時間削減",
+        "value": "約10時間→短縮（具体値は本文で明記なし）"
+      }
+    ],
+    "resultsQualitative": "作業時間の短縮により「体が自由になった」と述べられ、素材や調味料の研究など品質向上に注力できるようになった。看板設置もあり来客が増加し、遠方からも顧客が求めてくるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "scale": [
+      {
+        "metric": "1日の製造数",
+        "value": "1500個"
+      }
+    ],
+    "tags": [
+      "手作業の転記",
+      "月末の残業",
+      "技能伝承ができない"
+    ],
+    "image": "https://www.toa-industry.co.jp/case/small/00001/file/70/voice_img03.jpg"
   },
   {
     "id": "www-toray-acs-co-jp-products-creacompo2-patternmagic2-3d-jir",
@@ -91852,6 +92197,51 @@
     ]
   },
   {
+    "id": "ev-charge-enechange-jp-case-ichikawa-bil-chiba",
+    "title": "商業施設がEV充電器導入で利便性向上と地域貢献を実現",
+    "summary": "商業施設を運営する市川ビルは、EV市場の不透明さなど懸念を抱えていたが、補助金活用とEV充電エネチェンジの導入実績を判断材料に導入を決定。告知活動により利用が増加し、テナント売上向上にもつながった。",
+    "vendor": "ev-charge-enechange.jp",
+    "product": "EV充電エネチェンジ",
+    "productCategory": "other-product",
+    "sourceUrl": "https://ev-charge-enechange.jp/case/ichikawa-bil_chiba/",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社市川ビル",
+      "industry": "retail",
+      "size": "中堅企業",
+      "dept": "業務効率向上室"
+    },
+    "challenges": [
+      "efficiency",
+      "sustainability"
+    ],
+    "challengeDetail": "商業施設の利便性向上と地域への貢献を課題としており、EV市場の不透明さに対するリスク懸念があった。",
+    "actions": "EV充電エネチェンジを導入し、補助金でイニシャルコストをカバー。導入当初の低利用率に対し、デジタルサイネージやポスターで告知活動を実施した。",
+    "results": [
+      {
+        "metric": "利用実績",
+        "value": "告知活動後1カ月で利用が伸長"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入箇所",
+        "value": "ターミナルシティ本八幡アイビス4口"
+      },
+      {
+        "metric": "運用開始時期",
+        "value": "2024年11月"
+      }
+    ],
+    "resultsQualitative": "テナント売上向上につながり、社内からも導入に肯定的な声が上がった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "リード獲得の停滞",
+      "情報共有の遅れ"
+    ]
+  },
+  {
     "id": "fact-3s-corp-co-jp-case",
     "title": "工場床の塗装・UVコーティングで従業員モチベーションが向上し、採用応募者が増加",
     "summary": "町工場の負のイメージ払拭を目指す金属加工商社が、工場床をオレンジから白に塗装・UVコーティング施工。床の美化により従業員の仕事への向き合い方が変わり、環境美化への関心が高まるとともに、求職者の応募が増加した。",
@@ -105371,59 +105761,6 @@
     ]
   },
   {
-    "id": "recop-jp-case-torikizoku",
-    "title": "採用ホームページ強化でホームページ経由応募者2.5倍増、有料求人メディア依存から脱却",
-    "summary": "採用市場の変化で有料求人メディア頼みの採用が限界を迎えていた。リクオプの導入で採用ホームページをリニューアルし、応募者対応を自動化することで、ホームページ経由の応募者を2.5倍に増やすことができた。",
-    "vendor": "recop.jp",
-    "product": "リクオプ",
-    "productCategory": "hrtech",
-    "sourceUrl": "https://recop.jp/case/torikizoku/",
-    "collectedAt": "2026-09-17T00:00:00.000Z",
-    "customer": {
-      "name": "株式会社鳥貴族",
-      "industry": "food",
-      "size": "従業員9,902名（グループ全体・パート・アルバイト含む）",
-      "dept": "採用部門"
-    },
-    "challenges": [
-      "labor",
-      "cost",
-      "efficiency"
-    ],
-    "challengeDetail": "コロナ禍明けで採用人数を増やす必要があったが、有料求人メディアへの出稿費用が見合わず、応募単価・採用単価が悪化していた。また、応募者対応フローが煩雑で時間がかかっていた。",
-    "actions": "自社採用ホームページのリニューアルと採用管理システムの刷新を行い、チャットボットなどの自動化機能を活用して応募者対応と面接調整を自動化した。",
-    "results": [
-      {
-        "metric": "ホームページ経由応募者数",
-        "value": "2.5倍増"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "直営店舗数",
-        "value": "654店舗"
-      },
-      {
-        "metric": "導入期間",
-        "value": "約5ヶ月（2023年3月末公開運用開始）"
-      },
-      {
-        "metric": "フランチャイズ導入ATS台数",
-        "value": "十数社"
-      }
-    ],
-    "resultsQualitative": "応募単価・採用単価が高水準となり、有料求人メディアへの出稿量を最小限に抑えられる店舗が増えた。現場からの戸惑いを乗り越え、月1回の定例会議を通じた継続的な分析・改善が進んでいる。",
-    "hasNumbers": true,
-    "sample": false,
-    "image": "http://recop.jp/assets/uploads/2023/09/torikizoku_kvpng.png",
-    "tags": [
-      "応募が集まらない",
-      "一次対応の属人化",
-      "問い合わせ対応の負荷"
-    ],
-    "hidden": true
-  },
-  {
     "id": "re-v-co-jp-voice-amazing-day",
     "title": "ホームページ制作で問い合わせ増加、月5〜6人の入会数を実現",
     "summary": "結婚相談所が、自信を持って紹介できないホームページが課題だった。Revisionが代表の想いと独自の世界観を反映したサイトを制作し、お客様から「ホームページが素敵」との評価を得て、無料カウンセリングの問い合わせが増加した。",
@@ -113971,61 +114308,6 @@
     ]
   },
   {
-    "id": "www-amc-rocketsoftware-co-jp-mfproducts-cobol-cases-hokudens",
-    "title": "オフコン資産のCOBOL to COBOL移行でオープン環境へ完全移行、ファイル処理を10分から1分以内に短縮",
-    "summary": "東芝製フレームワークTPcareのサービス終了に直面した北陸電機商会は、40年蓄積したCOBOL資産（2,800本のプログラム）を維持しながらMicro Focus Visual COBOLへのストレート移行を実施。完全オープン環境への移行に成功し、周辺システム連携の柔軟性向上とパフォーマンス大幅改善を実現。",
-    "vendor": "rocketsoftware.co.jp",
-    "product": "Micro Focus Visual COBOL",
-    "productCategory": "dev",
-    "sourceUrl": "https://www.amc.rocketsoftware.co.jp/mfproducts/COBOL/cases/hokudensho/",
-    "collectedAt": "2026-09-28T00:00:00.000Z",
-    "customer": {
-      "name": "株式会社北陸電機商会",
-      "industry": "retail",
-      "size": "従業員248名",
-      "dept": "情報システム部"
-    },
-    "challenges": [
-      "efficiency",
-      "standardize"
-    ],
-    "challengeDetail": "採用していた東芝製フレームワークTPcareのサービス終了が2022年に発表され、40年蓄積したCOBOL資産2,800本を維持しながらシステム移行する必要が生じた。業務フローの変更を避けるため、スクラッチ開発やパッケージ導入は選択できず、COBOL to COBOLのストレート移行を検討。",
-    "actions": "東京システムハウスのマイグレーション用ツールAJTOOLとMicro Focus Visual COBOLを採用し、COBOL資産のストレート移行を実施。情報システム部の5名が主導してプロジェクトを管理し、資産整理・調査分析・プログラム変換・各種テストを実施。2021年3月にプロジェクト開始、2022年7月に本番稼働。",
-    "results": [
-      {
-        "metric": "ファイル処理時間",
-        "value": "10分→1分以内"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "COBOLプログラム数",
-        "value": "2,800本"
-      },
-      {
-        "metric": "JCL数",
-        "value": "2,000本"
-      },
-      {
-        "metric": "RDBデータ数",
-        "value": "60本"
-      },
-      {
-        "metric": "プロジェクト期間",
-        "value": "2021年3月～2022年7月（16ヶ月）"
-      }
-    ],
-    "resultsQualitative": "サービス終了前にストレート移行を完了し、蓄積したCOBOL資産を維持したまま完全オープン環境への移行に成功。周辺システム連携が柔軟になり、帳票基盤と運用管理にサードパーティー製品を導入可能に。エンドユーザーからシステム高速化への肯定的フィードバック獲得。",
-    "hasNumbers": true,
-    "sample": false,
-    "image": "https://www.amc.rocketsoftware.co.jp/img/products/COBOL/cases/hokudensho/hokudensho_p01.jpg",
-    "tags": [
-      "老朽化したシステム",
-      "システムの乱立",
-      "周辺システムとの連携困難"
-    ]
-  },
-  {
     "id": "www-amc-rocketsoftware-co-jp-mfproducts-cobol-cases-jfc",
     "title": "メインフレーム13台全廃、プライベートクラウドへの統合でコスト大幅削減",
     "summary": "旧4金融機関の統合で13台のメインフレームが混在し、ベンダーロックインによりコスト高止まりという課題を抱えていた。Micro Focus COBOLを活用し、約1980万ステップのCOBOL資産をプライベートクラウド上の共通基盤へマイグレーション。年間維持コストを大幅に圧縮し、ベンダーロックインから脱却した。",
@@ -115715,6 +115997,60 @@
       "見積もり作成に時間",
       "数字の集計に時間",
       "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "www-bungu-navi-or-jp-case-study-interview-2",
+    "title": "SEDIO-VAN導入で1年でFAX件数50%削減、年間コスト1,000万円削減を実現",
+    "summary": "キヤノンマーケティングジャパンは、FAX・メール主体の受発注業務の効率化が急務だった。SEDIO-VANを導入し、16社の取引先と共通フォーマットのEDIに切り替えることで、1年でFAX件数約50%削減、業務コスト約1,000万円の削減を達成した。",
+    "vendor": "bungu-navi.or.jp",
+    "product": "SEDIO-VAN",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.bungu-navi.or.jp/case-study/interview-2",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "キヤノンマーケティングジャパン株式会社",
+      "industry": "it",
+      "size": "",
+      "dept": "IT本部、コンスーマ事業推進部"
+    },
+    "challenges": [
+      "efficiency",
+      "cost"
+    ],
+    "challengeDetail": "全社的なDX化に伴い、手作業を伴うFAXやメールでの受注業務の負荷が高く削減が急務。複数業界の取引先ごとに異なるEDIに個別対応することの非効率性があった。",
+    "actions": "SEDIO-VANを導入し、SEDIO会員である取引先16社と共通フォーマットのEDI経由での受発注業務に切り替えた。2023年4月から調整を開始し、2024年2月現在で15社が切り替え完了している。",
+    "results": [
+      {
+        "metric": "FAX件数削減",
+        "value": "約50%削減"
+      },
+      {
+        "metric": "業務コスト削減（年間）",
+        "value": "約1,000万円削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "切替対象取引先数",
+        "value": "16社"
+      },
+      {
+        "metric": "実施時点での切替完了数",
+        "value": "15社（2024年2月現在）"
+      },
+      {
+        "metric": "導入から成果測定までの期間",
+        "value": "1年"
+      }
+    ],
+    "resultsQualitative": "システム部門と営業部門の連携により、受発注業務の改善が実現。新規取引先拡大への可能性が広がった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "電話・FAX中心",
+      "手作業の転記",
+      "協力会社との連携"
     ]
   },
   {
@@ -126584,54 +126920,6 @@
     ]
   },
   {
-    "id": "www-hitachi-ies-co-jp-products-cmp-case-202107-01-html",
-    "title": "食品製造工場のコンプレッサー停止問題を、オイルフリーコンプレッサーと遠隔監視で解決",
-    "summary": "食品製造工場Bでは、設置されたコンプレッサー8台が頻繁に停止し、生産が中断される課題を抱えていました。日立産機システムは、最新のオイルフリーコンプレッサーDSP-NEXT®4台への置き換えと、クラウド監視ツールFitLive®による遠隔監視を導入。その結果、消費電力を18.8%削減し、稼働状況を24時間365日リアルタイム把握できるようになりました。",
-    "vendor": "hitachi-ies.co.jp",
-    "product": "DSP-NEXT®（オイルフリースクリュー圧縮機）、FitLive®（遠隔監視システム）",
-    "productCategory": "other-product",
-    "sourceUrl": "https://www.hitachi-ies.co.jp/products/cmp/case/202107_01.html",
-    "collectedAt": "2026-09-10T00:00:00.000Z",
-    "customer": {
-      "name": "B社（食品製造業）",
-      "industry": "food",
-      "size": "",
-      "dept": "製造部"
-    },
-    "challenges": [
-      "efficiency",
-      "cost",
-      "quality"
-    ],
-    "challengeDetail": "設置されたコンプレッサー8台が屋外の暑さの影響で頻繁に停止し、生産が一時的に中断される。また複雑な管理体制により、点検時期の管理が困難で、不意の停止によって生産ロスと相当な電力消費が発生していました。",
-    "actions": "現在の8台のコンプレッサーのうち、最新のオイルフリースクリュー圧縮機DSP-NEXT®4台に置き換えし、残り4台は小数制御装置で無駄のない運用管理を実施。設置場所を最適化し、クラウド監視ツールFitLive®を導入して24時間365日リアルタイムに稼働状況を把握できる体制を構築しました。",
-    "results": [
-      {
-        "metric": "消費電力削減",
-        "value": "18.8%削減"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "置き換えたコンプレッサー台数",
-        "value": "4台"
-      },
-      {
-        "metric": "小数制御装置で管理する台数",
-        "value": "4台"
-      }
-    ],
-    "resultsQualitative": "コンプレッサーの停止リスクが大幅に低減され、遠隔監視により不意の停止に対応可能になり、生産の安定性が向上しました。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "進捗が見えない",
-      "リアルタイムに把握できない",
-      "工程管理の難しさ"
-    ],
-    "image": "https://www.hitachi-ies.co.jp/products/cmp/image/image_cmp_case_202107_1.png"
-  },
-  {
     "id": "www-hitachi-ies-co-jp-products-cmp-case-202201-01-html",
     "title": "コンプレッサー20台を4台に統合、エネルギー消費量を大幅削減",
     "summary": "複数社から散在するコンプレッサーの制御・管理が困難であり、予期しない故障が多発していた製造企業。日立産機システムの診断ツールで現状を正確に把握し、20台の11～37kWコンプレッサーを75kW×4台に統合・最適化することで、エネルギー効率を大幅に改善し、CO2削減を実現した。",
@@ -130236,56 +130524,6 @@
       "データが分散",
       "業務の属人化"
     ]
-  },
-  {
-    "id": "www-intra-mart-jp-case-study-006481-01-html",
-    "title": "グローバルなクレームマネジメントシステムで95％以上の案件を5日以内に迅速対応",
-    "summary": "制御機器メーカーのIDEC株式会社は、旧システムの老朽化と国内外拠点間の情報分断により、クレーム対応に遅延と二重入力が発生していた。intra-martを基盤とした「ECOASクレームマネジメント」を導入し、Salesforce・Microsoft Teamsと連携させることで、グローバルなリアルタイム情報共有と重大クレームの自動分岐を実現。95％以上の案件で初回回答を5日以内に迅速化し、月次集計の残業を解消した。",
-    "vendor": "intra-mart.jp",
-    "product": "ECOASクレームマネジメント（intra-martパートナーソリューション）",
-    "productCategory": "saas",
-    "sourceUrl": "https://www.intra-mart.jp/case-study/006481-01.html",
-    "collectedAt": "2026-09-10T00:00:00.000Z",
-    "customer": {
-      "name": "IDEC株式会社",
-      "industry": "manufacturing",
-      "size": "グローバル企業（複数の国内外拠点）",
-      "dept": "品質部門、営業部門、生産部門"
-    },
-    "challenges": [
-      "efficiency",
-      "standardize",
-      "data"
-    ],
-    "challengeDetail": "旧システムの老朽化により、Salesforceとのシステム分断で営業担当者がクレーム情報を二重入力する必要があった。また、紙ベースの再発防止依頼書運用と文字コード制約のため、海外拠点からは中国語など多言語での入力ができず、手書きPDF化での運用になっていた。さらに月次集計運用により、経営層が重大クレームを迅速に把握できず事業リスクに対応困難な状況にあった。",
-    "actions": "intra-martを基盤とした「ECOASクレームマネジメント」を導入し、SalesforceおよびMicrosoft Teamsとの連携を実現。全拠点でのリアルタイムな情報共有体制を構築し、重大クレームを自動で別ルートへ分岐するワークフローを設定した。",
-    "results": [
-      {
-        "metric": "初回回答の迅速化",
-        "value": "95％以上の案件で5日以内"
-      },
-      {
-        "metric": "月次集計業務の残業",
-        "value": "解消"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "拠点規模",
-        "value": "世界各地の複数拠点"
-      }
-    ],
-    "resultsQualitative": "二重入力が廃止され、Salesforce・Teams連携による業務効率化を実現。経営層が重大クレームを即座に把握できる体制が構築された。グローバル規模での情報連携が迅速化され、現場の属人性が低減した。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "老朽化したシステム",
-      "二重入力",
-      "多拠点の管理",
-      "リアルタイムに把握できない",
-      "月末の残業"
-    ],
-    "image": "https://www.intra-mart.jp/dcms_media/image/case-study_006481_img_top-cover.png"
   },
   {
     "id": "www-intra-mart-jp-case-study-006482-01-html",
@@ -143001,58 +143239,6 @@
       "検査の目視頼み",
       "品質のばらつき"
     ]
-  },
-  {
-    "id": "www-mmeg-co-jp-case-2021-20210901-210-html",
-    "title": "IoTダッシュボードで生産プロセスを可視化し、夜間作業の効率化と不稼働時間削減を実現",
-    "summary": "精密部品加工企業が24時間稼働する生産現場で、機械の稼働状況を把握できず無駄な時間が発生していた。iQ Care Remote4Uのダッシュボード機能とメール通知機能を導入し、生産プロセスを可視化・リアルタイム監視することで、故障対応の迅速化と作業指示の精度向上を実現。",
-    "vendor": "mmeg.co.jp",
-    "product": "iQ Care Remote4U",
-    "productCategory": "iot",
-    "sourceUrl": "https://www.mmeg.co.jp/case/2021/20210901-210.html",
-    "collectedAt": "2026-09-14T00:00:00.000Z",
-    "customer": {
-      "name": "株式会社東部精工",
-      "industry": "manufacturing",
-      "size": "従業員数不明",
-      "dept": "生産・製造部門"
-    },
-    "challenges": [
-      "efficiency",
-      "data"
-    ],
-    "challengeDetail": "24時間稼働する生産現場で、機械の稼働状況や故障・トラブル発生状況をリアルタイムで把握できず、無駄な時間が多く発生していた。特に夜間作業では現場の状況が見えないため、対応が遅れていた。",
-    "actions": "iQ Care Remote4Uのダッシュボード機能により、加工機の稼働情報・加工予測・予防保全などのリアルタイムデータをPC・タブレット・スマートフォンから一目で確認できる環境を構築。メール通知機能により、機械停止やトラブルを即座に把握し、迅速な対応が可能に。生産プロセスの詳細な可視化により、作業指示マニュアルを改善し、作業員の実績値に基づいた現実的な目標値を設定。",
-    "results": [
-      {
-        "metric": "稼働率改善目標",
-        "value": "稼働率80%以上を達成目標として改善を推進"
-      },
-      {
-        "metric": "故障対応時間",
-        "value": "機械停止時の対応が迅速化"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "導入期間",
-        "value": "2021年7月より新サービスとして開始"
-      },
-      {
-        "metric": "稼働形態",
-        "value": "24時間稼働"
-      }
-    ],
-    "resultsQualitative": "これまでは稼働時間に対する成果（完成品）のみが見えていたが、ダッシュボードにより結果に至るまでのプロセスが可視化され、夜間作業を含む詳細な生産プロセスが把握できるようになった。トラブル対応や予防保全を含めた詳細な作業データの蓄積により、より効率的でロスの少ない生産パターン発見が可能となり、作業指示マニュアルの大幅な改善が進展している。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "進捗が見えない",
-      "リアルタイムに把握できない",
-      "現場と本社の往復",
-      "夜間対応の遅れ"
-    ],
-    "image": "https://www.mmeg.co.jp/case/2021/uploads/hattori-seiko_05.jpg"
   },
   {
     "id": "www-mmeg-co-jp-case-2021-20210921-213-html",
@@ -156533,57 +156719,6 @@
     ]
   },
   {
-    "id": "www-sato-co-jp-case-niime-html",
-    "title": "4～5万点の在庫をRFIDで管理、棚卸し工数を10分の1に削減",
-    "summary": "アパレル企業がQRコード管理から RFID システムへ移行。4～5万点の作品管理において、棚卸し工数を 20名・1週間から 2名・1日に短縮し、作品探索も効率化。",
-    "vendor": "sato.co.jp",
-    "product": "RFIDシステム（スキャントロニクスCL4NX-J Plusシリーズ）",
-    "productCategory": "iot",
-    "sourceUrl": "https://www.sato.co.jp/case/niime.html",
-    "collectedAt": "2026-09-17T00:00:00.000Z",
-    "customer": {
-      "name": "有限会社玉木新雌",
-      "industry": "retail",
-      "size": "従業員98名",
-      "dept": "倉庫・在庫管理"
-    },
-    "challenges": [
-      "efficiency",
-      "labor"
-    ],
-    "challengeDetail": "QRコードによる在庫管理では作品探索に膨大な時間を要し、棚卸しは 20名体制で 1週間必要だった。売上拡大に伴いピッキング工数も増加していた。",
-    "actions": "既存管理システムを継続しつつ、RFIDシステムを導入。ハンディターミナルで作品所在を把握し、RFIDラベルプリンターで必要分を 1枚ずつ印字する運用に変更。",
-    "results": [
-      {
-        "metric": "棚卸し工数",
-        "value": "10分の1に削減（20名・1週間→2名・1日）"
-      },
-      {
-        "metric": "作品ピックアップ時間",
-        "value": "激減（段ボール外からの一括読み取り対応）"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "在庫点数",
-        "value": "4～5万点"
-      },
-      {
-        "metric": "従業員数",
-        "value": "98名"
-      }
-    ],
-    "resultsQualitative": "作品探索の判断基準が明確になり次のアクション決断が迅速化。デザインなど本来業務に時間を割けるようになった。ラベル印字スピードに課題がなく、1日200～300枚印字可能。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "在庫の把握不足",
-      "探し物の時間",
-      "繁忙期の人員不足"
-    ],
-    "image": "https://www.sato.co.jp/case/img/img_niime_01.jpg"
-  },
-  {
     "id": "www-sato-co-jp-case-nissei-service-html",
     "title": "位置測位技術で倉庫作業を効率化、モノ探しの作業者を3名から1名に削減",
     "summary": "紙ベースの入出庫管理と属人的なモノ探しが課題だった物流企業が、位置測位技術（Quuppa）を導入。自社システムとの連携でリアルタイム把握を実現し、作業工数を削減してスペース有効活用を達成した。",
@@ -157438,56 +157573,6 @@
       "手順書がない",
       "業務の属人化"
     ]
-  },
-  {
-    "id": "www-satotekko-cfs-jp-voice-voice02",
-    "title": "冷蔵庫破砕の安全性向上：窒素置換CFS導入で火災ゼロを11年継続",
-    "summary": "冷蔵庫の断熱材に使用されるシクロペンタンガスによる爆発・引火リスクが課題だった。準密閉構造で窒素置換対応のCFS（クロスフローシュレッダ）を導入し、安全性を確保しながら月10,000台の処理を実現。導入後11年間、火災が一度も発生していない。",
-    "vendor": "satotekko-cfs.jp",
-    "product": "CFS（クロスフローシュレッダ）",
-    "productCategory": "robot",
-    "sourceUrl": "https://www.satotekko-cfs.jp/voice/voice02/",
-    "collectedAt": "2026-09-24T00:00:00.000Z",
-    "customer": {
-      "name": "株式会社富士エコサイクル",
-      "industry": "manufacturing",
-      "size": "",
-      "dept": ""
-    },
-    "challenges": [
-      "cost"
-    ],
-    "challengeDetail": "冷蔵庫の断熱材に使用されるシクロペンタンガスは引火性が高く、破砕処理中の爆発・引火を防ぐ必要があった。また、他の破砕機で窒素置換する場合、莫大な窒素ガスが必要でランニングコストが大きくなる課題があった。",
-    "actions": "準密閉構造で窒素置換対応のCFS（クロスフローシュレッダ）を導入。冷蔵庫の投入から排出まで一貫して窒素置換し、酸素濃度を低下させることで発火爆発を防止。プロセスガスを循環させて窒素使用量を最小化。",
-    "results": [
-      {
-        "metric": "火災発生件数",
-        "value": "ゼロ（11年間）"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "年間処理台数",
-        "value": "約120,000台"
-      },
-      {
-        "metric": "導入後の運用期間",
-        "value": "11年"
-      },
-      {
-        "metric": "月間処理台数（20日稼働）",
-        "value": "約10,000台"
-      }
-    ],
-    "resultsQualitative": "トラブルがなくなり、安全性が格段に高まった。ドイツ製CFSの9年での劣化課題を改善した日本製CFSは耐久性が向上し、現在でも問題なく処理できている。ランニングコストが低減され、自社工場内のCO2発生を抑制できている。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "検査の目視頼み",
-      "不良の見逃し",
-      "安全リスク管理"
-    ],
-    "image": "https://www.satotekko-cfs.jp/wp-content/uploads/after_DSC01515.jpg"
   },
   {
     "id": "www-sbismile-co-jp-leaseback-case",
@@ -164567,49 +164652,6 @@
       "サイト更新ができない",
       "追客の漏れ"
     ]
-  },
-  {
-    "id": "www-toa-industry-co-jp-case-small-00001",
-    "title": "餃子製造機の導入で手作業10時間を大幅短縮、味と価格で顧客満足を実現",
-    "summary": "製麺・ラーメン店から餃子製造にシフトした豚珍館は、手作業で1日1500個の餃子製造に約10時間かかっていた。東亜工業の小型餃子製造機を導入することで作業時間を大幅に短縮し、「体が自由になった」と述べ、素材や調味料の研究に注力できるようになった。味と価格を武器に遠方からの顧客も増加している。",
-    "vendor": "toa-industry.co.jp",
-    "product": "餃子製造機",
-    "productCategory": "robot",
-    "sourceUrl": "https://www.toa-industry.co.jp/case/small/00001/",
-    "collectedAt": "2026-09-02T00:00:00.000Z",
-    "customer": {
-      "name": "鈴弥製麺 豚珍館",
-      "industry": "food",
-      "size": "夫婦経営",
-      "dept": ""
-    },
-    "challenges": [
-      "labor",
-      "efficiency"
-    ],
-    "challengeDetail": "餃子の手作り製造に1日1500個作るのに約10時間を要していた。具の刻みから練るまでに3時間、包みに約7時間かかり、朝3時からの仕込みというハードな労働が課題だった。",
-    "actions": "東亜工業の小型餃子製造機を平成19年10月に導入。故障が少なく、メンテナンスも簡単（10分で分解洗浄可能）な機械を選定し、製造工程を機械化した。",
-    "results": [
-      {
-        "metric": "手作業時間削減",
-        "value": "約10時間→短縮（具体値は本文で明記なし）"
-      }
-    ],
-    "resultsQualitative": "作業時間の短縮により「体が自由になった」と述べられ、素材や調味料の研究など品質向上に注力できるようになった。看板設置もあり来客が増加し、遠方からも顧客が求めてくるようになった。",
-    "hasNumbers": true,
-    "sample": false,
-    "scale": [
-      {
-        "metric": "1日の製造数",
-        "value": "1500個"
-      }
-    ],
-    "tags": [
-      "手作業の転記",
-      "月末の残業",
-      "技能伝承ができない"
-    ],
-    "image": "https://www.toa-industry.co.jp/case/small/00001/file/70/voice_img03.jpg"
   },
   {
     "id": "www-toa-industry-co-jp-case-small-00004",
@@ -176325,6 +176367,44 @@
     ]
   },
   {
+    "id": "brightdata-jp-customer-stories-data-as-a-service-cars2click",
+    "title": "Web データ収集で北米・アジア市場への拡大を支援",
+    "summary": "自動車取引プラットフォームが新市場進出に伴い、現地のWebデータ収集が必要になった。Bright Data のウェブアンロッカーとデータセンターネットワークを導入し、ブロック対策を実現。データ収集プロセスの問題を解決し、事業拡大をサポート。",
+    "vendor": "brightdata.jp",
+    "product": "Bright Data（ウェブアンロッカー、データセンターネットワーク）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://brightdata.jp/customer-stories/data-as-a-service/cars2click",
+    "collectedAt": "2026-10-12T00:00:00.000Z",
+    "customer": {
+      "name": "Cars2Click",
+      "industry": "other-industry",
+      "size": "EU16カ国以上に拠点",
+      "dept": "プロダクト"
+    },
+    "challenges": [
+      "data",
+      "efficiency"
+    ],
+    "challengeDetail": "北米とアジアの新市場進出に向けて、現地のWeb データへのアクセスが必要だった。既存のWebスクレイピングプロセスでは、販売サイトなどのブロック手法により、データ収集が困難になっていた。",
+    "actions": "Bright Data のネットワークソリューションを導入。まずデータセンターネットワークを使用し、ブロックされた場合はウェブアンロッカーを活用してWebサイトへのアクセスを自動解除する体制を構築。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "拠点数",
+        "value": "EU16カ国以上"
+      }
+    ],
+    "resultsQualitative": "ウェブアンロッカーにより、これまでのデータ収集プロセスで抱えていた問題の多くが解決された。事業拡大が可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://media.brightdata.jp/2022/09/Francisc-Czobor-from-Cars2Click.png",
+    "tags": [
+      "データが分散",
+      "リアルタイムに把握できない",
+      "多拠点の管理"
+    ]
+  },
+  {
     "id": "business-labbase-jp-case-forgevision",
     "title": "初めての新卒採用でLabBase就職を導入、優秀なエンジニア1名採用に成功",
     "summary": "ベンチャーIT企業フォージビジョンは、採用コストの高騰と知名度不足という課題を抱えていました。LabBase就職の質の高い学生母集団と導入費用対効果の優位性が決め手となり、導入初年度で優秀な理系学生との接点を形成し、エンジニア採用1名を実現しました。",
@@ -176509,44 +176589,6 @@
       "名刺情報の死蔵"
     ],
     "hidden": true
-  },
-  {
-    "id": "brightdata-jp-customer-stories-data-as-a-service-cars2click",
-    "title": "Web データ収集で北米・アジア市場への拡大を支援",
-    "summary": "自動車取引プラットフォームが新市場進出に伴い、現地のWebデータ収集が必要になった。Bright Data のウェブアンロッカーとデータセンターネットワークを導入し、ブロック対策を実現。データ収集プロセスの問題を解決し、事業拡大をサポート。",
-    "vendor": "brightdata.jp",
-    "product": "Bright Data（ウェブアンロッカー、データセンターネットワーク）",
-    "productCategory": "other-product",
-    "sourceUrl": "https://brightdata.jp/customer-stories/data-as-a-service/cars2click",
-    "collectedAt": "2026-10-12T00:00:00.000Z",
-    "customer": {
-      "name": "Cars2Click",
-      "industry": "other-industry",
-      "size": "EU16カ国以上に拠点",
-      "dept": "プロダクト"
-    },
-    "challenges": [
-      "data",
-      "efficiency"
-    ],
-    "challengeDetail": "北米とアジアの新市場進出に向けて、現地のWeb データへのアクセスが必要だった。既存のWebスクレイピングプロセスでは、販売サイトなどのブロック手法により、データ収集が困難になっていた。",
-    "actions": "Bright Data のネットワークソリューションを導入。まずデータセンターネットワークを使用し、ブロックされた場合はウェブアンロッカーを活用してWebサイトへのアクセスを自動解除する体制を構築。",
-    "results": [],
-    "scale": [
-      {
-        "metric": "拠点数",
-        "value": "EU16カ国以上"
-      }
-    ],
-    "resultsQualitative": "ウェブアンロッカーにより、これまでのデータ収集プロセスで抱えていた問題の多くが解決された。事業拡大が可能になった。",
-    "hasNumbers": false,
-    "sample": false,
-    "image": "https://media.brightdata.jp/2022/09/Francisc-Czobor-from-Cars2Click.png",
-    "tags": [
-      "データが分散",
-      "リアルタイムに把握できない",
-      "多拠点の管理"
-    ]
   },
   {
     "id": "c-c-s-jp-case-study",
@@ -186160,45 +186202,6 @@
     ]
   },
   {
-    "id": "ev-charge-enechange-jp-case-locosports-kanagawa",
-    "title": "スポーツ施設がEV充電器を導入、会員・利用客の利便性向上",
-    "summary": "スポーツ施設ロコスポーツ湘南は、利用客からの要望をきっかけにEV充電器4口を導入。導入後は週数回の利用があり、フロント問い合わせもなく、利用者から好評を得ている。",
-    "vendor": "ev-charge-enechange.jp",
-    "product": "EV充電エネチェンジ",
-    "productCategory": "other-product",
-    "sourceUrl": "https://ev-charge-enechange.jp/case/locosports_kanagawa/",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "ショコー産業株式会社",
-      "industry": "other-industry",
-      "size": "",
-      "dept": ""
-    },
-    "challenges": [
-      "efficiency"
-    ],
-    "challengeDetail": "スポーツ施設の利用客がEV充電の需要があったが、施設側ではニーズの有無が不確実だった。",
-    "actions": "EV充電エネチェンジを導入し、ロコスポーツ湘南に4口のEV充電器を設置。誘導看板も設置した。",
-    "results": [],
-    "scale": [
-      {
-        "metric": "設置台数",
-        "value": "4口"
-      },
-      {
-        "metric": "導入施設",
-        "value": "ロコスポーツ湘南（神奈川県茅ヶ崎市）"
-      }
-    ],
-    "resultsQualitative": "週に数回の利用があり、フロントに問い合わせもなく問題なく利用されている。利用者から『充電器を設置したんだね』とのお声も得ている。",
-    "hasNumbers": false,
-    "sample": false,
-    "tags": [
-      "問い合わせ対応の負荷",
-      "顧客ニーズの把握不足"
-    ]
-  },
-  {
     "id": "ev-charge-enechange-jp-case-miyashita-hills-nagano",
     "title": "キャンプ場がEV充電器導入で、EVユーザーの信頼拠点に——ミヤシタヒルズ",
     "summary": "長野県のキャンプ場が、既設の太陽光発電を活用してEV充電器を導入。初期費用0円で4口の充電設備を設置し、峠越えドライバーの安心確保と宿泊客の利便性向上を実現。",
@@ -186488,49 +186491,6 @@
     ]
   },
   {
-    "id": "ev-charge-enechange-jp-case-soneka-hokkaido",
-    "title": "プライベートヴィラリゾートがEV充電器を各棟に導入、顧客満足度向上と環境方針の実現を両立",
-    "summary": "北海道のプライベートヴィラリゾート「SONEKA」は、EVで来館する顧客の増加に対応するため、各ヴィラの駐車場にEV充電器を設置。導入コストの優位性と充実したサポート（補助金手続き支援）により、スムーズに導入でき、顧客満足度向上と企業の環境方針の実現を実現した。",
-    "vendor": "ev-charge-enechange.jp",
-    "product": "EV充電エネチェンジ",
-    "productCategory": "other-product",
-    "sourceUrl": "https://ev-charge-enechange.jp/case/soneka_hokkaido/",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "マスダプランニング株式会社",
-      "industry": "other-industry",
-      "size": "",
-      "dept": ""
-    },
-    "challenges": [
-      "cs"
-    ],
-    "challengeDetail": "海外や道外からレンタカーで来館するEV利用客が増加しており、充電設備がないことで顧客満足度が低下していた。",
-    "actions": "EV充電器を各ヴィラの駐車場に1台ずつ設置。導入時は補助金申請手続きをベンダー担当者と協力して対応した。",
-    "results": [],
-    "scale": [
-      {
-        "metric": "敷地面積",
-        "value": "約77,000㎡"
-      },
-      {
-        "metric": "ヴィラ棟数",
-        "value": "4棟"
-      },
-      {
-        "metric": "導入EV充電器台数",
-        "value": "4台"
-      }
-    ],
-    "resultsQualitative": "顧客満足度向上。企業の環境方針「自然との共生と地域資源の再生」の実現。補助金手続きをスムーズに完了。",
-    "hasNumbers": false,
-    "sample": false,
-    "tags": [
-      "顧客ニーズへの対応遅れ",
-      "既存設備の機能不足"
-    ]
-  },
-  {
     "id": "ev-charge-enechange-jp-case-sunday-aomori",
     "title": "ホームセンターチェーンが既存充電器の課題を解決、複数支払方法対応のEV充電器を24店舗に導入",
     "summary": "ホームセンター「サンデー」は、既存EV充電器で一部カードのみ対応という課題を抱えていた。複数の支払方法に対応し、補助金で設置費用0円となるEV充電エネチェンジを導入。導入後、EVユーザーだけでなく非ユーザーからも認知され、来店動機の1つになることを期待している。",
@@ -186705,42 +186665,6 @@
       "ペーパーレス化",
       "多拠点の管理",
       "情報共有の遅れ"
-    ]
-  },
-  {
-    "id": "ev-charge-enechange-jp-case-wakka-iwate",
-    "title": "観光施設への EV充電器導入で、EVユーザーの来訪を想定した施設価値向上を実現",
-    "summary": "岩手県の観光施設「龍泉洞わっか」は、再開に際し EV 充電器の設置を検討。初期費用の負担軽減と補助金活用、また周辺地域での EV 充電インフラ整備進展を踏まえ、EV ユーザーの来訪増加と施設選択理由の多様化を期待して導入した。",
-    "vendor": "ev-charge-enechange.jp",
-    "product": "EV充電エネチェンジ",
-    "productCategory": "other-product",
-    "sourceUrl": "https://ev-charge-enechange.jp/case/wakka_iwate/",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "泉金ホールディングス株式会社（施設名：龍泉洞わっか）",
-      "industry": "retail",
-      "size": "",
-      "dept": ""
-    },
-    "challenges": [
-      "efficiency",
-      "cost"
-    ],
-    "challengeDetail": "観光施設の再開にあたり、EV充電器の導入を検討する際、初期費用負担が課題であった。また、施設をより多くの来訪者に選んでもらうための差別化要因が必要だった。",
-    "actions": "EV充電エネチェンジの充電器を導入。補助金の活用により初期費用を大幅に低減し、4口の充電器を設置。周辺地域のEV充電インフラ整備の進展に合わせ、EVユーザーの来訪を想定した施設価値向上を図った。",
-    "results": [],
-    "scale": [
-      {
-        "metric": "設置台数",
-        "value": "4口"
-      }
-    ],
-    "resultsQualitative": "施設選択理由の1つとなり、EVユーザーの来訪増加の可能性が高まった。",
-    "hasNumbers": false,
-    "sample": false,
-    "tags": [
-      "施設の差別化要因不足",
-      "初期投資の負担"
     ]
   },
   {
@@ -214791,54 +214715,6 @@
     ]
   },
   {
-    "id": "r25-jp-companies-ebilab-interview-919892551069073410",
-    "title": "感覚頼りの経営からデータドリブンへ。飲食店チェーンが仕入れ効率化と販売戦略を実現",
-    "summary": "自家製麺店を展開する味一番フードは、職人気質で感覚に頼った経営をしていた。TOUCH POINT BIを導入し、客数やテーブル使用状況などのデータ分析により、精度の高い販売戦略と無駄のない仕入れ発注、効率的なシフト組みを実現した。",
-    "vendor": "r25.jp",
-    "product": "TOUCH POINT BI",
-    "productCategory": "saas",
-    "sourceUrl": "https://r25.jp/companies/ebilab/interview/919892551069073410",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "味一番フード",
-      "industry": "food",
-      "size": "",
-      "dept": ""
-    },
-    "challenges": [
-      "efficiency",
-      "cost",
-      "standardize"
-    ],
-    "challengeDetail": "職人気質で数値ではなく感覚で仕事をしており、経験がなければ店舗運営ができなかった。感覚頼りの経営では精度の高い経営判断ができていなかった。",
-    "actions": "石川県のデジタル化実践道場でTOUCH POINT BIの導入を検討。半年間のテスト期間を経て本格導入を決定。客数やテーブル使用状況などのデータを分析し、販売戦略、仕入れ発注、シフト組みに活用。",
-    "results": [],
-    "scale": [
-      {
-        "metric": "導入店舗数",
-        "value": "5店舗（導入拡大）"
-      },
-      {
-        "metric": "全体店舗数",
-        "value": "9店舗（めん房本陣7店舗、そば処花凛2店舗）"
-      },
-      {
-        "metric": "テスト期間",
-        "value": "半年間"
-      }
-    ],
-    "resultsQualitative": "各店舗の時間ごとの客数やテーブル使用状況から顧客像を描けるようになり、精度の高い販売戦略を立案可能に。現場スタッフも需要予測データを仕入れ発注に活用でき、業務効率化が進んだ。今後物販事業の開拓も検討中。",
-    "hasNumbers": false,
-    "sample": false,
-    "tags": [
-      "業務の属人化",
-      "進捗が見えない",
-      "数字の集計に時間",
-      "在庫の把握不足",
-      "発注の手作業"
-    ]
-  },
-  {
     "id": "raksul-com-magazine-voice-atrae",
     "title": "ラクスル導入で印刷発注の属人化排除と営業用パンフレットの安定供給を実現",
     "summary": "IT・Webサービス企業のアトラエは、営業用パンフレットの頻繁な更新対応と社内プリンタの限界により、印刷発注業務の課題を抱えていました。ラクスルの導入により、100部単位の小ロット対応と折加工対応を活用し、簡単な発注システムで属人化を排除しながら、高品質な印刷物を安定供給できるようになりました。",
@@ -215224,6 +215100,46 @@
     ]
   },
   {
+    "id": "rakushifu-jp-case-retail-uedasasaya",
+    "title": "複雑なベーカリー業態のシフト作成負担を軽減、店長の時間創出と人件費の見える化を実現",
+    "summary": "ベーカリー店でポジション数が多く複雑なシフト作成業務の負担が大きかった。LINE連携のシフト管理システム「らくしふ」を導入し、シフト作成業務を迅速化。店長の業務負担が軽減され、シフトの見える化により人件費の課題も明確になった。",
+    "vendor": "rakushifu.jp",
+    "product": "らくしふ",
+    "productCategory": "saas",
+    "sourceUrl": "https://rakushifu.jp/case/retail/uedasasaya/",
+    "collectedAt": "2026-10-09T00:00:00.000Z",
+    "customer": {
+      "name": "ささや株式会社",
+      "industry": "food",
+      "size": "従業員200名未満",
+      "dept": "飲食店事業部"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "cost"
+    ],
+    "challengeDetail": "ベーカリー店で仕込み・成型・調理などのポジションが多く、シフト作成が複雑で店長の負担が大きかった。従来のツールでは対応しきれず、エクセルでの再調整が必要で二度手間となっていた。また、シフト確定が遅れ、連絡業務の負担も大きかった。",
+    "actions": "2024年9月にLINE連携のシフト管理システム「らくしふ」を導入。従業員がLINEで希望シフトを送信すると自動でシフト表に反映され、店長が微調整するだけでシフト完成。既存の勤怠管理システムとも連携させた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "導入店舗数",
+        "value": "6店舗（ベーカリー店2店舗、飲食店4店舗）"
+      }
+    ],
+    "resultsQualitative": "シフト作成業務の負担が大幅に軽減され、店長がバックヤードでパソコンとにらめっこする姿がほとんど見かけなくなった。店長が店頭に出る時間を確保でき、人手不足改善に寄与。シフト確定のタイミングが早くなり従業員への共有も迅速化。色分け機能によりベーカリー店の複雑なシフト調整と確認が効率化。プライベートLINEでの職場との繋がりが不要になり、従業員満足度が向上し、離職防止にも寄与。シフトの見える化により、各店舗の従業員数配置の最適化課題が見つかった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "Excel管理の限界",
+      "手作業の転記",
+      "月末の残業",
+      "メール中心の連絡"
+    ],
+    "image": "https://rakushifu.jp/wp-content/uploads/2025/10/case-32-0418-scaled.webp"
+  },
+  {
     "id": "recop-jp-case-alsok-soe",
     "title": "求人原稿改善と応募者管理の一元化で応募数増加を実現",
     "summary": "ALSOK双栄は採用ホームページ管理システム「リクオプ」を導入。実践講座での求人原稿の書き方改善と、応募・選考情報の一元管理により、応募数が増加。迅速な応募者対応と継続的な改善を実践している。",
@@ -215318,46 +215234,6 @@
       "情報共有の遅れ"
     ],
     "hidden": true
-  },
-  {
-    "id": "rakushifu-jp-case-retail-uedasasaya",
-    "title": "複雑なベーカリー業態のシフト作成負担を軽減、店長の時間創出と人件費の見える化を実現",
-    "summary": "ベーカリー店でポジション数が多く複雑なシフト作成業務の負担が大きかった。LINE連携のシフト管理システム「らくしふ」を導入し、シフト作成業務を迅速化。店長の業務負担が軽減され、シフトの見える化により人件費の課題も明確になった。",
-    "vendor": "rakushifu.jp",
-    "product": "らくしふ",
-    "productCategory": "saas",
-    "sourceUrl": "https://rakushifu.jp/case/retail/uedasasaya/",
-    "collectedAt": "2026-10-09T00:00:00.000Z",
-    "customer": {
-      "name": "ささや株式会社",
-      "industry": "food",
-      "size": "従業員200名未満",
-      "dept": "飲食店事業部"
-    },
-    "challenges": [
-      "labor",
-      "efficiency",
-      "cost"
-    ],
-    "challengeDetail": "ベーカリー店で仕込み・成型・調理などのポジションが多く、シフト作成が複雑で店長の負担が大きかった。従来のツールでは対応しきれず、エクセルでの再調整が必要で二度手間となっていた。また、シフト確定が遅れ、連絡業務の負担も大きかった。",
-    "actions": "2024年9月にLINE連携のシフト管理システム「らくしふ」を導入。従業員がLINEで希望シフトを送信すると自動でシフト表に反映され、店長が微調整するだけでシフト完成。既存の勤怠管理システムとも連携させた。",
-    "results": [],
-    "scale": [
-      {
-        "metric": "導入店舗数",
-        "value": "6店舗（ベーカリー店2店舗、飲食店4店舗）"
-      }
-    ],
-    "resultsQualitative": "シフト作成業務の負担が大幅に軽減され、店長がバックヤードでパソコンとにらめっこする姿がほとんど見かけなくなった。店長が店頭に出る時間を確保でき、人手不足改善に寄与。シフト確定のタイミングが早くなり従業員への共有も迅速化。色分け機能によりベーカリー店の複雑なシフト調整と確認が効率化。プライベートLINEでの職場との繋がりが不要になり、従業員満足度が向上し、離職防止にも寄与。シフトの見える化により、各店舗の従業員数配置の最適化課題が見つかった。",
-    "hasNumbers": false,
-    "sample": false,
-    "tags": [
-      "Excel管理の限界",
-      "手作業の転記",
-      "月末の残業",
-      "メール中心の連絡"
-    ],
-    "image": "https://rakushifu.jp/wp-content/uploads/2025/10/case-32-0418-scaled.webp"
   },
   {
     "id": "reflexworks-jp-success-stories-html",
@@ -235410,74 +235286,6 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "多拠点の管理"
-    ]
-  },
-  {
-    "id": "www-cybersolutions-co-jp-casestudy-primaham",
-    "title": "メールシステムの刷新でクラウド移行、管理負荷を軽減",
-    "summary": "メール操作性の悪さとメールボックス容量不足、サーバ管理の手間が課題だったプリマハム。クラウド型メールサービス「CYBERMAILΣ」を導入し、利便性向上と管理業務の削減を実現。",
-    "vendor": "cybersolutions.co.jp",
-    "product": "CYBERMAILΣ",
-    "productCategory": "saas",
-    "sourceUrl": "https://www.cybersolutions.co.jp/casestudy/primaham/",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "プリマハム株式会社",
-      "industry": "food",
-      "size": "",
-      "dept": ""
-    },
-    "challenges": [
-      "efficiency",
-      "labor"
-    ],
-    "challengeDetail": "既存メールシステムの操作性が悪く利用者から不満が多かった。メールボックス容量が小さくすぐに満杯になる上、メールサーバ管理に多くの人手がかかっていた。",
-    "actions": "クラウド・SaaS型メールサービス「CYBERMAILΣ」を導入し、メールシステムを刷新。メール管理業務をアウトソース化した。",
-    "results": [],
-    "resultsQualitative": "操作性が向上し利用者の不満が減少。メールボックスが大容量化され大容量ファイルの保存が可能に。メール管理業務の手間と人手を削減。",
-    "hasNumbers": false,
-    "sample": false,
-    "tags": [
-      "老朽化したシステム",
-      "サーバ運用の負担",
-      "アカウント管理の煩雑さ"
-    ]
-  },
-  {
-    "id": "www-cybersolutions-co-jp-casestudy-srs",
-    "title": "モバイル対応とセキュリティ管理を両立したクラウドメールシステムへの移行",
-    "summary": "レストランシステム企業が、ビジネス拡大に伴うモバイル利用ニーズと複雑な権限管理に対応するため、クラウドメールシステムをリプレース。デバイス別の利用環境を統一し、セキュリティポリシー準拠を実現した。",
-    "vendor": "cybersolutions.co.jp",
-    "product": "CYBERMAIL Σ",
-    "productCategory": "saas",
-    "sourceUrl": "https://www.cybersolutions.co.jp/casestudy/srs/",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "サトレストランシステムズ株式会社",
-      "industry": "food",
-      "size": "",
-      "dept": ""
-    },
-    "challenges": [
-      "efficiency",
-      "security",
-      "standardize"
-    ],
-    "challengeDetail": "ビジネス拡大に伴い、モバイルを含む多様なデバイスからの社外アクセスニーズが増加。複雑な管理権限設定への対応とシステム運用負荷の軽減が課題だった。",
-    "actions": "クラウド・SaaS型のメールシステムに移行。グループ共有アドレス帳機能の継続と詳細な権限管理設定が可能なシステムを導入し、モバイル対応を実現。",
-    "results": [
-      {
-        "metric": "システム稼働までの期間",
-        "value": "短期間での実現"
-      }
-    ],
-    "resultsQualitative": "デバイスに関係なく社内外でメール利用環境を実現。社内セキュリティポリシーに沿った権限管理が可能になった。ユーザー・システム移行がスムーズに行われた。",
-    "hasNumbers": false,
-    "sample": false,
-    "tags": [
-      "老朽化したシステム",
-      "サーバ運用の負担",
-      "アカウント管理の煩雑さ"
     ]
   },
   {
@@ -256522,6 +256330,37 @@
     ]
   },
   {
+    "id": "www-optex-co-jp-solutions-cases-car-outgoing-warning-html",
+    "title": "工場の歩道における車両と歩行者の接触事故防止を実現",
+    "summary": "精密機械製造工場では、歩道での車両と歩行者の接触事故リスクが課題であった。同社は車両検知センサーシステムを導入し、歩道への車両進入を防止することで、安全性を確保した。",
+    "vendor": "optex.co.jp",
+    "product": "車両検知機械・システム/倉庫警報システム",
+    "productCategory": "iot",
+    "sourceUrl": "https://www.optex.co.jp/solutions/cases/car-outgoing-warning.html",
+    "collectedAt": "2026-09-14T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "安全管理"
+    },
+    "challenges": [
+      "efficiency"
+    ],
+    "challengeDetail": "工場の歩道には多くの子どもや自転車の通行があり、歩道に進入する大型トラックや業務車両との接触事故が懸念されていた。従来のループコイルを使用した車両検知では、再施工工事に時間を要していた。",
+    "actions": "非接触型の車両検知センサーシステムを導入し、歩道への車両進入を防止する仕組みを構築した。センサーを追加配置して交通量の多い時間帯の安全性を向上させ、柔軟にシステム設計できるようにした。",
+    "results": [],
+    "resultsQualitative": "歩道への車両の不正な進入を防止でき、歩行者との接触事故のリスクを低減した。設置後は常時正常稼働しており、現場に適した機械を組み合わせた柔軟なシステム設計が実現できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "工程管理の難しさ",
+      "業務の属人化",
+      "リアルタイムに把握できない"
+    ],
+    "image": "https://www.optex.co.jp/solutions/cases/htq74l000000c85q-img/htq74l000000c87o.jpg"
+  },
+  {
     "id": "www-optex-co-jp-solutions-cases-iot-remote-monitoring-strawb",
     "title": "IoT無線ユニットでイビガ施肥装置の稼働状況を遠隔監視、管理者の負担軽減を実現",
     "summary": "農業用移動式施肥装置の稼働状況確認のため、毎日現地に赴く必要があった課題に対して、OPTEXのIoT無線ユニットを活用して稼働状況を自動メール通知するシステムを導入。施肥装置の遠隔監視が可能になり、管理者の出社不要化を実現した。",
@@ -258690,37 +258529,6 @@
       "紙図面の保管",
       "設計変更の反映遅れ",
       "部署間の情報共有"
-    ]
-  },
-  {
-    "id": "www-proudit-jp-casestudy-proudblog",
-    "title": "技術ブログをサーバーレス構成で運用、保守負荷を大幅削減",
-    "summary": "株式会社プラウディットの技術ブログ「Proud Blog」は、継続的な更新でサーバー保守の負荷が課題だった。S3によるサーバーレス構成とGitHub+CircleCIの自動デプロイを導入し、サーバー監視やセキュリティ対応の作業を削減した。",
-    "vendor": "proudit.jp",
-    "product": "Proud Cloud（S3、Route 53、IAM、GitHub、CircleCI）",
-    "productCategory": "cloud",
-    "sourceUrl": "https://www.proudit.jp/casestudy/proudblog/",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "株式会社プラウディット",
-      "industry": "it",
-      "size": "",
-      "dept": ""
-    },
-    "challenges": [
-      "efficiency",
-      "cost"
-    ],
-    "challengeDetail": "技術ブログの継続的な更新により、サーバーの保守・監視負荷が増大し、インフラの保守が足りなくなっていた。サーバー運用に伴うOSアップデートやセキュリティ対応など手作業が多く発生していた。",
-    "actions": "S3をコンテンツ配置場所として採用し、サーバーレス構成に移行。GitHub でソースコード管理を行い、CircleCI で自動デプロイを実現。本番環境への切り替えを段階的に行う運用体制を構築した。",
-    "results": [],
-    "resultsQualitative": "サーバー監視（ping・プロセス監視）が不要に。OS・ファームウェアのアップデート・セキュリティ対応作業が削減。運用費用を最小限に抑え、複数人による並行した記事編集・修正が可能になった。",
-    "hasNumbers": false,
-    "sample": false,
-    "tags": [
-      "サーバ運用の負担",
-      "老朽化したシステム",
-      "手作業の転記"
     ]
   },
   {
@@ -289306,6 +289114,124 @@
     ]
   },
   {
+    "id": "ev-charge-enechange-jp-case-locosports-kanagawa",
+    "title": "スポーツ施設がEV充電器を導入、会員・利用客の利便性向上",
+    "summary": "スポーツ施設ロコスポーツ湘南は、利用客からの要望をきっかけにEV充電器4口を導入。導入後は週数回の利用があり、フロント問い合わせもなく、利用者から好評を得ている。",
+    "vendor": "ev-charge-enechange.jp",
+    "product": "EV充電エネチェンジ",
+    "productCategory": "other-product",
+    "sourceUrl": "https://ev-charge-enechange.jp/case/locosports_kanagawa/",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "ショコー産業株式会社",
+      "industry": "other-industry",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency"
+    ],
+    "challengeDetail": "スポーツ施設の利用客がEV充電の需要があったが、施設側ではニーズの有無が不確実だった。",
+    "actions": "EV充電エネチェンジを導入し、ロコスポーツ湘南に4口のEV充電器を設置。誘導看板も設置した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "設置台数",
+        "value": "4口"
+      },
+      {
+        "metric": "導入施設",
+        "value": "ロコスポーツ湘南（神奈川県茅ヶ崎市）"
+      }
+    ],
+    "resultsQualitative": "週に数回の利用があり、フロントに問い合わせもなく問題なく利用されている。利用者から『充電器を設置したんだね』とのお声も得ている。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "問い合わせ対応の負荷",
+      "顧客ニーズの把握不足"
+    ]
+  },
+  {
+    "id": "ev-charge-enechange-jp-case-soneka-hokkaido",
+    "title": "プライベートヴィラリゾートがEV充電器を各棟に導入、顧客満足度向上と環境方針の実現を両立",
+    "summary": "北海道のプライベートヴィラリゾート「SONEKA」は、EVで来館する顧客の増加に対応するため、各ヴィラの駐車場にEV充電器を設置。導入コストの優位性と充実したサポート（補助金手続き支援）により、スムーズに導入でき、顧客満足度向上と企業の環境方針の実現を実現した。",
+    "vendor": "ev-charge-enechange.jp",
+    "product": "EV充電エネチェンジ",
+    "productCategory": "other-product",
+    "sourceUrl": "https://ev-charge-enechange.jp/case/soneka_hokkaido/",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "マスダプランニング株式会社",
+      "industry": "other-industry",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "cs"
+    ],
+    "challengeDetail": "海外や道外からレンタカーで来館するEV利用客が増加しており、充電設備がないことで顧客満足度が低下していた。",
+    "actions": "EV充電器を各ヴィラの駐車場に1台ずつ設置。導入時は補助金申請手続きをベンダー担当者と協力して対応した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "敷地面積",
+        "value": "約77,000㎡"
+      },
+      {
+        "metric": "ヴィラ棟数",
+        "value": "4棟"
+      },
+      {
+        "metric": "導入EV充電器台数",
+        "value": "4台"
+      }
+    ],
+    "resultsQualitative": "顧客満足度向上。企業の環境方針「自然との共生と地域資源の再生」の実現。補助金手続きをスムーズに完了。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "顧客ニーズへの対応遅れ",
+      "既存設備の機能不足"
+    ]
+  },
+  {
+    "id": "ev-charge-enechange-jp-case-wakka-iwate",
+    "title": "観光施設への EV充電器導入で、EVユーザーの来訪を想定した施設価値向上を実現",
+    "summary": "岩手県の観光施設「龍泉洞わっか」は、再開に際し EV 充電器の設置を検討。初期費用の負担軽減と補助金活用、また周辺地域での EV 充電インフラ整備進展を踏まえ、EV ユーザーの来訪増加と施設選択理由の多様化を期待して導入した。",
+    "vendor": "ev-charge-enechange.jp",
+    "product": "EV充電エネチェンジ",
+    "productCategory": "other-product",
+    "sourceUrl": "https://ev-charge-enechange.jp/case/wakka_iwate/",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "泉金ホールディングス株式会社（施設名：龍泉洞わっか）",
+      "industry": "retail",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "cost"
+    ],
+    "challengeDetail": "観光施設の再開にあたり、EV充電器の導入を検討する際、初期費用負担が課題であった。また、施設をより多くの来訪者に選んでもらうための差別化要因が必要だった。",
+    "actions": "EV充電エネチェンジの充電器を導入。補助金の活用により初期費用を大幅に低減し、4口の充電器を設置。周辺地域のEV充電インフラ整備の進展に合わせ、EVユーザーの来訪を想定した施設価値向上を図った。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "設置台数",
+        "value": "4口"
+      }
+    ],
+    "resultsQualitative": "施設選択理由の1つとなり、EVユーザーの来訪増加の可能性が高まった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "施設の差別化要因不足",
+      "初期投資の負担"
+    ]
+  },
+  {
     "id": "factoria-jp-voicelist-voice-nts",
     "title": "人材育成と海外発信を軸とした新本社兼工場の建設",
     "summary": "包装機械メーカーの日本テクノロジーソリューションは、事業の永続性を支える人材育成と、海外進出への意志を「魅せる」ための新本社兼工場を建設。女性目線の工場設計と開放的なデザインにより、働きやすい環境を実現した。",
@@ -317558,6 +317484,54 @@
     ]
   },
   {
+    "id": "r25-jp-companies-ebilab-interview-919892551069073410",
+    "title": "感覚頼りの経営からデータドリブンへ。飲食店チェーンが仕入れ効率化と販売戦略を実現",
+    "summary": "自家製麺店を展開する味一番フードは、職人気質で感覚に頼った経営をしていた。TOUCH POINT BIを導入し、客数やテーブル使用状況などのデータ分析により、精度の高い販売戦略と無駄のない仕入れ発注、効率的なシフト組みを実現した。",
+    "vendor": "r25.jp",
+    "product": "TOUCH POINT BI",
+    "productCategory": "saas",
+    "sourceUrl": "https://r25.jp/companies/ebilab/interview/919892551069073410",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "味一番フード",
+      "industry": "food",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "cost",
+      "standardize"
+    ],
+    "challengeDetail": "職人気質で数値ではなく感覚で仕事をしており、経験がなければ店舗運営ができなかった。感覚頼りの経営では精度の高い経営判断ができていなかった。",
+    "actions": "石川県のデジタル化実践道場でTOUCH POINT BIの導入を検討。半年間のテスト期間を経て本格導入を決定。客数やテーブル使用状況などのデータを分析し、販売戦略、仕入れ発注、シフト組みに活用。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "導入店舗数",
+        "value": "5店舗（導入拡大）"
+      },
+      {
+        "metric": "全体店舗数",
+        "value": "9店舗（めん房本陣7店舗、そば処花凛2店舗）"
+      },
+      {
+        "metric": "テスト期間",
+        "value": "半年間"
+      }
+    ],
+    "resultsQualitative": "各店舗の時間ごとの客数やテーブル使用状況から顧客像を描けるようになり、精度の高い販売戦略を立案可能に。現場スタッフも需要予測データを仕入れ発注に活用でき、業務効率化が進んだ。今後物販事業の開拓も検討中。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "業務の属人化",
+      "進捗が見えない",
+      "数字の集計に時間",
+      "在庫の把握不足",
+      "発注の手作業"
+    ]
+  },
+  {
     "id": "raksul-com-magazine-voice-morinaga",
     "title": "森永乳業、チラシ制作の属人化を解消し全国拠点での一元管理を実現",
     "summary": "森永乳業は全国の拠点でチラシ制作業務が属人化し、ナレッジ共有ができておらず、営業活動の時間が圧迫されていた。ラクスルのオンラインデザイン・印刷プラットフォームを導入することで、ブランド統制と現場の自由度を両立させ、効率的な運用体制を構築した。",
@@ -343889,6 +343863,74 @@
       "システムの乱立",
       "アカウント管理の煩雑さ",
       "サーバ運用の負担"
+    ]
+  },
+  {
+    "id": "www-cybersolutions-co-jp-casestudy-primaham",
+    "title": "メールシステムの刷新でクラウド移行、管理負荷を軽減",
+    "summary": "メール操作性の悪さとメールボックス容量不足、サーバ管理の手間が課題だったプリマハム。クラウド型メールサービス「CYBERMAILΣ」を導入し、利便性向上と管理業務の削減を実現。",
+    "vendor": "cybersolutions.co.jp",
+    "product": "CYBERMAILΣ",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.cybersolutions.co.jp/casestudy/primaham/",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "プリマハム株式会社",
+      "industry": "food",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "既存メールシステムの操作性が悪く利用者から不満が多かった。メールボックス容量が小さくすぐに満杯になる上、メールサーバ管理に多くの人手がかかっていた。",
+    "actions": "クラウド・SaaS型メールサービス「CYBERMAILΣ」を導入し、メールシステムを刷新。メール管理業務をアウトソース化した。",
+    "results": [],
+    "resultsQualitative": "操作性が向上し利用者の不満が減少。メールボックスが大容量化され大容量ファイルの保存が可能に。メール管理業務の手間と人手を削減。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "アカウント管理の煩雑さ"
+    ]
+  },
+  {
+    "id": "www-cybersolutions-co-jp-casestudy-srs",
+    "title": "モバイル対応とセキュリティ管理を両立したクラウドメールシステムへの移行",
+    "summary": "レストランシステム企業が、ビジネス拡大に伴うモバイル利用ニーズと複雑な権限管理に対応するため、クラウドメールシステムをリプレース。デバイス別の利用環境を統一し、セキュリティポリシー準拠を実現した。",
+    "vendor": "cybersolutions.co.jp",
+    "product": "CYBERMAIL Σ",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.cybersolutions.co.jp/casestudy/srs/",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "サトレストランシステムズ株式会社",
+      "industry": "food",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "security",
+      "standardize"
+    ],
+    "challengeDetail": "ビジネス拡大に伴い、モバイルを含む多様なデバイスからの社外アクセスニーズが増加。複雑な管理権限設定への対応とシステム運用負荷の軽減が課題だった。",
+    "actions": "クラウド・SaaS型のメールシステムに移行。グループ共有アドレス帳機能の継続と詳細な権限管理設定が可能なシステムを導入し、モバイル対応を実現。",
+    "results": [
+      {
+        "metric": "システム稼働までの期間",
+        "value": "短期間での実現"
+      }
+    ],
+    "resultsQualitative": "デバイスに関係なく社内外でメール利用環境を実現。社内セキュリティポリシーに沿った権限管理が可能になった。ユーザー・システム移行がスムーズに行われた。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "アカウント管理の煩雑さ"
     ]
   },
   {
@@ -399029,37 +399071,6 @@
     ]
   },
   {
-    "id": "www-optex-co-jp-solutions-cases-car-outgoing-warning-html",
-    "title": "工場の歩道における車両と歩行者の接触事故防止を実現",
-    "summary": "精密機械製造工場では、歩道での車両と歩行者の接触事故リスクが課題であった。同社は車両検知センサーシステムを導入し、歩道への車両進入を防止することで、安全性を確保した。",
-    "vendor": "optex.co.jp",
-    "product": "車両検知機械・システム/倉庫警報システム",
-    "productCategory": "iot",
-    "sourceUrl": "https://www.optex.co.jp/solutions/cases/car-outgoing-warning.html",
-    "collectedAt": "2026-09-14T00:00:00.000Z",
-    "customer": {
-      "name": "",
-      "industry": "manufacturing",
-      "size": "",
-      "dept": "安全管理"
-    },
-    "challenges": [
-      "efficiency"
-    ],
-    "challengeDetail": "工場の歩道には多くの子どもや自転車の通行があり、歩道に進入する大型トラックや業務車両との接触事故が懸念されていた。従来のループコイルを使用した車両検知では、再施工工事に時間を要していた。",
-    "actions": "非接触型の車両検知センサーシステムを導入し、歩道への車両進入を防止する仕組みを構築した。センサーを追加配置して交通量の多い時間帯の安全性を向上させ、柔軟にシステム設計できるようにした。",
-    "results": [],
-    "resultsQualitative": "歩道への車両の不正な進入を防止でき、歩行者との接触事故のリスクを低減した。設置後は常時正常稼働しており、現場に適した機械を組み合わせた柔軟なシステム設計が実現できた。",
-    "hasNumbers": false,
-    "sample": false,
-    "tags": [
-      "工程管理の難しさ",
-      "業務の属人化",
-      "リアルタイムに把握できない"
-    ],
-    "image": "https://www.optex.co.jp/solutions/cases/htq74l000000c85q-img/htq74l000000c87o.jpg"
-  },
-  {
     "id": "www-optex-co-jp-solutions-cases-cocoshiga-html",
     "title": "スマートセンサーで百貨店の自動ドアの動作を最適化し、顧客満足度と省エネを実現",
     "summary": "東京日本橋の百貨店では、自動ドアの動作が多角度からの来客に対応できず、交差点での不要な開閉や歩行速度に合わせたタイミング制御が課題でした。eスマートセンサーVVS-1を正面エントランスに導入することで、来客の歩行速度に応じた最適なタイミングでの自動ドア開閉を実現し、不要な開閉エラーを削減して省エネと顧客快適性の向上を実現しました。",
@@ -402581,6 +402592,37 @@
     "tags": [
       "紙の書類処理",
       "電気代の増加"
+    ]
+  },
+  {
+    "id": "www-proudit-jp-casestudy-proudblog",
+    "title": "技術ブログをサーバーレス構成で運用、保守負荷を大幅削減",
+    "summary": "株式会社プラウディットの技術ブログ「Proud Blog」は、継続的な更新でサーバー保守の負荷が課題だった。S3によるサーバーレス構成とGitHub+CircleCIの自動デプロイを導入し、サーバー監視やセキュリティ対応の作業を削減した。",
+    "vendor": "proudit.jp",
+    "product": "Proud Cloud（S3、Route 53、IAM、GitHub、CircleCI）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.proudit.jp/casestudy/proudblog/",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社プラウディット",
+      "industry": "it",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "cost"
+    ],
+    "challengeDetail": "技術ブログの継続的な更新により、サーバーの保守・監視負荷が増大し、インフラの保守が足りなくなっていた。サーバー運用に伴うOSアップデートやセキュリティ対応など手作業が多く発生していた。",
+    "actions": "S3をコンテンツ配置場所として採用し、サーバーレス構成に移行。GitHub でソースコード管理を行い、CircleCI で自動デプロイを実現。本番環境への切り替えを段階的に行う運用体制を構築した。",
+    "results": [],
+    "resultsQualitative": "サーバー監視（ping・プロセス監視）が不要に。OS・ファームウェアのアップデート・セキュリティ対応作業が削減。運用費用を最小限に抑え、複数人による並行した記事編集・修正が可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "サーバ運用の負担",
+      "老朽化したシステム",
+      "手作業の転記"
     ]
   },
   {

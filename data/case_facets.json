@@ -4832,6 +4832,7 @@
   "www-co-meeting-co-jp-casestudy-cu-hacker-for-salesforce-sosh": {"dept": ["sales"], "effects": ["visibility", "standard"], "size": "unknown", "sizeBasis": "none", "industry": "trading"},
   "www-co-meeting-co-jp-casestudy-programmer-nextbeat": {"dept": ["sales", "rd"], "effects": ["visibility", "sales", "time"], "size": "unknown", "sizeBasis": "none"},
   "www-coco-ar-jp-case-shibatashoten-html": {"dept": ["sales"], "effects": ["sales"], "size": "unknown", "sizeBasis": "none", "industry": "media"},
+  "www-cognex-com-ja-why-cognex-customer-success-stories-cognex": {"dept": ["logistics"], "effects": ["time", "cost", "quality"], "size": "large", "sizeBasis": "stated"},
   "www-coleta-jp-case-std": {"dept": ["sales"], "effects": ["time", "standard"], "size": "unknown", "sizeBasis": "none"},
   "www-com-ware-co-jp-sap-casestudy-casestudy01": {"dept": ["management", "finance"], "effects": ["visibility", "standard"], "size": "s3", "sizeBasis": "stated"},
   "www-com-ware-co-jp-sap-casestudy-casestudy02": {"dept": ["management", "logistics"], "effects": ["visibility", "standard"], "size": "s5", "sizeBasis": "stated"},
