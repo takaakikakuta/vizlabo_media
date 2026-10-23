@@ -164,7 +164,6 @@ export type SenArticle = {
   publishedAt: string;
   title: string[];
   lead: string;
-  criteriaNote: string;   // 選定基準と範囲の明示（母数・基準・順位でないこと）
   items: { caseId: string; headline: string; body: string }[];  // 10本または3本（headline＝見出し、body＝読みどころ2〜3文）
   compare?: {             // 任意。3選向けの「比べる」パート（items と同じ順に並べて、読者が自社の位置を判定する表）
     title?: string;       // 見出し（既定「3社を比べる」）

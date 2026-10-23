@@ -101,7 +101,6 @@
 | フィールド | 記事上の場所 |
 |---|---|
 | `title` / `lead` | 扉 |
-| `criteriaNote` | リード直下の枠（母数・選定基準・順位でないことの明示） |
 | `items[]` | 01〜10（3選なら01〜03。caseId＝事例、headline＝見出し、body＝読みどころ2〜3文。カルテ・成果チップ・リンクは自動。件数は固定されていない） |
 | `compare`（任意・3選向け） | 本文の後の「3社を比べる」表（intro＝導入、rows＝条件ごとの行で values は items と同順、fit＝自社に近いのはどれかの手がかり、note＝限界の断り）。省略すると章ごと消える |
 | `outroTitle` / `outro` | まとめ（並べて見えた共通項＋次の一歩） |
@@ -141,8 +140,8 @@ JSONに `"hidden": true` を足すと、一覧・トップ・個別URLのすべ�
 Claude Code では「この文章を読みやすくして」「AI臭さを消して」と頼むとスキルが呼ばれる。数値だけ見たいときはリンターを直接回す。
 
 ```bash
-# JSONの本文を抜き出して検査する例（lead・criteriaNote・items・outro）
-node -e 'const a=require("./content/articles/<記事>.json");console.log([a.lead,a.criteriaNote,...a.items.map(i=>i.headline+"\n\n"+i.body),a.outro].join("\n\n"))' > /tmp/article.md
+# JSONの本文を抜き出して検査する例（lead・items・outro）
+node -e 'const a=require("./content/articles/<記事>.json");console.log([a.lead,...a.items.map(i=>i.headline+"\n\n"+i.body),a.outro].join("\n\n"))' > /tmp/article.md
 python3 .claude/skills/yomiyasu/scripts/yomiyasu_lint.py /tmp/article.md
 ```
 
