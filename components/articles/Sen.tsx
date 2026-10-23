@@ -14,8 +14,7 @@ import { SUGGEST_ENABLED } from "../../lib/flags";
 
 /* 「選」テンプレート（テーマ別の事例10選・3選）。順位ではなく並列の選として組む。
    3選では任意の compare（比べる表）を items の後に置ける。
-   各項目は〈書き下ろしの見出し＋読みどころ〉＋〈事例データから自動で出すカルテと成果数字〉。
-   選定基準と範囲は criteriaNote で冒頭に明示する。 */
+   各項目は〈書き下ろしの見出し＋読みどころ〉＋〈事例データから自動で出すカルテと成果数字〉。 */
 
 export default function Sen({ article }: { article: SenArticle }) {
   const entries = article.items
@@ -55,7 +54,6 @@ export default function Sen({ article }: { article: SenArticle }) {
           ))}
         </h1>
         <p className="mt-6 text-[14px] leading-[2.1] text-body">{article.lead}</p>
-        <p className="mt-5 border border-line2 px-4 py-3 text-[11.5px] leading-[1.9] text-muted">{article.criteriaNote}</p>
       </header>
 
       {/* 一括問い合わせへの早い導線（詳細は記事末尾の一覧から個別選択も可能） */}
