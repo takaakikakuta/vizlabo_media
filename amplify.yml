@@ -8,8 +8,11 @@ backend:
   phases:
     build:
       commands:
-        # npm ci はローカルとAmplifyのnpmバージョン差（バンドル依存の解釈差）で
-        # 誤検知の不整合エラーを出すため、npm install を使う
+        # npm install を使う（npm ci でも入るが、下の注意を参照）。
+        # 注意: @aws-amplify/data-construct のバンドル依存の扱いが npm ci と npm install で食い違う。
+        # package-lock.json には npm ci が要求する入れ子の項目（@opentelemetry/core@2.0.0 ×4）を手で足してあり、
+        # npm install を走らせるとその4項目が lock から消えて npm ci が再び失敗する。
+        # ローカルで npm install した後の package-lock.json の差分はコミットしないこと。
         - npm install --cache .npm --prefer-offline --no-audit --no-fund
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
