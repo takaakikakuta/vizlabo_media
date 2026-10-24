@@ -165,29 +165,29 @@
 
 ## 2本以上の記事に出ている事例
 
-同じ事例が看板になり続けないための確認。
+同じ事例が看板になり続けないための確認。番号は記事の no（hidden の下書き記事と番号が重なることがあるので印を付けている）。
 
-- 株式会社阪急アクトフォー（エイチ・ツー・オー リテイリングのグループ企業向けシェアードサービス提供）（fastaccounting.co.jp）: #26, #24, #29, #28, #3
-- 日清食品ホールディングス株式会社（fastaccounting.co.jp）: #24, #29, #28, #1
-- 佐藤工業株式会社（andpad.jp）: #26, #29, #4
-- 株式会社カスケホーム（andpad.jp）: #25, #29, #9
-- 日本光電工業株式会社（shippio.io）: #26, #25
-- 社会福祉法人ふらい（freee.co.jp）: #26, #28
-- 株式会社梅林（amano.co.jp）: #24, #5
-- 学校法人 早稲田大学（kpmg.com）: #24, #21
-- 浅川学園台在宅クリニック（rpa-technologies.com）: #24, #10
-- 株式会社TTS（shippio.io）: #23, #9
-- 株式会社タカラベ（andpad.jp）: #23, #6
-- 株式会社オートテクニックジャパン（re-v.co.jp）: #26, #11
-- 三信住建株式会社（onecareer.jp）: #26, #11
-- 株式会社トヨタ車体研究所（onecareer.jp）: #26, #11
-- 株式会社ぽらりす（miidas.jp）: #26, #11
-- 秀英会（valueagent.co.jp）: #26, #11
-- 株式会社ワントゥワン東京（casty-app.jp）: #26, #14
-- ディップ株式会社（ababa.co.jp）: #26, #14
-- 株式会社大創産業（sonar-ats.jp）: #26, #14
-- 株式会社デイリースポーツ案内広告社（miidas.jp）: #26, #14
-- 日本フルハーフ株式会社 厚木工場（coolex.jp）: #24, #37
+- 株式会社阪急アクトフォー（エイチ・ツー・オー リテイリングのグループ企業向けシェアードサービス提供）（fastaccounting.co.jp）: #26(hidden), #24(hidden), #29(hidden), #28(hidden), #3
+- 日清食品ホールディングス株式会社（fastaccounting.co.jp）: #24(hidden), #29(hidden), #28(hidden), #1
+- 佐藤工業株式会社（andpad.jp）: #26(hidden), #29(hidden), #4
+- 株式会社カスケホーム（andpad.jp）: #25(hidden), #29(hidden), #9
+- 日本光電工業株式会社（shippio.io）: #26(hidden), #25(hidden)
+- 社会福祉法人ふらい（freee.co.jp）: #26(hidden), #28(hidden)
+- 株式会社梅林（amano.co.jp）: #24(hidden), #5
+- 学校法人 早稲田大学（kpmg.com）: #24(hidden), #21
+- 浅川学園台在宅クリニック（rpa-technologies.com）: #24(hidden), #10
+- 株式会社TTS（shippio.io）: #23(hidden), #9
+- 株式会社タカラベ（andpad.jp）: #23(hidden), #6
+- 株式会社オートテクニックジャパン（re-v.co.jp）: #26(hidden), #11
+- 三信住建株式会社（onecareer.jp）: #26(hidden), #11
+- 株式会社トヨタ車体研究所（onecareer.jp）: #26(hidden), #11
+- 株式会社ぽらりす（miidas.jp）: #26(hidden), #11
+- 秀英会（valueagent.co.jp）: #26(hidden), #11
+- 株式会社ワントゥワン東京（casty-app.jp）: #26(hidden), #14
+- ディップ株式会社（ababa.co.jp）: #26(hidden), #14
+- 株式会社大創産業（sonar-ats.jp）: #26(hidden), #14
+- 株式会社デイリースポーツ案内広告社（miidas.jp）: #26(hidden), #14
+- 日本フルハーフ株式会社 厚木工場（coolex.jp）: #24, #37(draft)
 
 ## 提供元の偏り（記事に出た回数が多い提供元）
 

@@ -135,12 +135,12 @@ for (const c of cases) for (const tag of c.tags ?? []) {
 for (const [tag, e] of [...tagMap].filter(([, e]) => e.sozai >= 15).sort((a, b) => b[1].sozai - a[1].sozai))
   lines.push(`| ${tag} | ${e.total} | ${e.sozai} | ${e.num} | ${e.unusedN} |`);
 
-lines.push("", "## 2本以上の記事に出ている事例", "", "同じ事例が看板になり続けないための確認。", "");
+lines.push("", "## 2本以上の記事に出ている事例", "", "同じ事例が看板になり続けないための確認。番号は記事の no（hidden の下書き記事と番号が重なることがあるので印を付けている）。", "");
 const dup = [...usedIn].filter(([, a]) => a.length >= 2).sort((a, b) => b[1].length - a[1].length);
 if (!dup.length) lines.push("なし");
 for (const [id, a] of dup) {
   const c = cases.find((x) => x.id === id);
-  lines.push(`- ${c?.customer?.name ?? id}（${c?.vendor ?? "-"}）: ${a.map((x) => "#" + x.no).join(", ")}`);
+  lines.push(`- ${c?.customer?.name ?? id}（${c?.vendor ?? "-"}）: ${a.map((x) => "#" + x.no + (x.hidden ? "(hidden)" : x.draft ? "(draft)" : "")).join(", ")}`);
 }
 lines.push("", "## 提供元の偏り（記事に出た回数が多い提供元）", "");
 const vend = new Map();
