@@ -11,7 +11,10 @@
      - 今週の事例セレクション：公開中の選記事のうち新しい順に5本（サムネイル・タイトル・リードの冒頭）
      - 今週の記念日ポスト：配信日の6日前〜配信日の7日分
    手で書くもの（newsletter/YYYY-MM-DD.json）:
+     - 件名（subject：Benchmark に手で入れる控え）、プレヘッダー（preheader：空なら自動）
+     - 事例セレクションの一言（selectionNotes：記事番号 → 2〜4行。空ならリードの冒頭を出す）
      - この事例がスゴイ／事例コラム（note の URL・タイトル・一言）、お知らせ枠（1つ）、編集後記、冒頭のひと言
+   手順は .claude/skills/newsletter/SKILL.md（/newsletter）。
    リンクにはすべて utm_source=newsletter&utm_medium=email&utm_campaign=YYYY-MM-DD&utm_content=<枠> を付ける。
 
    HTML メールの作法：table 組み・インライン CSS・幅600px・Web フォント無し（Gmail / Outlook で崩れないように）。 */
@@ -98,9 +101,12 @@ const manualPath = path.join(OUT_DIR, `${issue}.json`);
 if (!exists(manualPath)) {
   fs.writeFileSync(manualPath, JSON.stringify({
     _note: "この号の手書き欄。空欄の枠はメールに出さない（note の2本は必ず埋める）。書いたら build.mjs をもう一度実行する。",
+    subject: "",
+    preheader: "",
     intro: "今週も、事例の集積から読み解いた記事をお届けします。",
     sugoi: { title: "", url: "", desc: "" },
     column: { title: "", url: "", desc: "" },
+    selectionNotes: {},
     notice: {
       label: "AI事例サジェスト（無料）",
       title: "今週の事例に、貴社に近いものはありましたか？",
@@ -147,6 +153,13 @@ const button = (href, text) => `
   <td style="background:${C.ink};"><a href="${esc(href)}" style="display:inline-block;padding:10px 18px;font-size:13px;font-weight:bold;color:#ffffff;text-decoration:none;">${esc(text)} →</a></td>
 </tr></table>`;
 
+// SNS ポストから起こした一言（selectionNotes）があればそれを、無ければリードの冒頭を出す
+function selectionNote(a) {
+  const note = (m.selectionNotes || {})[String(a.no)];
+  if (note) return `<div style="font-size:13.5px;line-height:1.85;color:${C.body};margin-top:8px;white-space:pre-line;">${esc(note.trim())}</div>`;
+  return `<div style="font-size:13px;line-height:1.8;color:${C.body};margin-top:6px;">${esc(clip(a.lead || "", 72))}</div>`;
+}
+
 function selectionRow(a, i) {
   const href = utm(`${SITE}/articles/${a.slug}`, `selection-${i + 1}`);
   const img = articleThumb(a);
@@ -156,7 +169,7 @@ function selectionRow(a, i) {
   ${img ? `<a href="${esc(href)}"><img src="${esc(img)}" width="544" alt="" style="display:block;width:100%;max-width:544px;height:auto;border:1px solid ${C.line2};margin-bottom:12px;"></a>` : ""}
   <div style="font-size:11px;color:${C.muted};">#${String(a.no).padStart(3, "0")}</div>
   <a href="${esc(href)}" style="font-family:${SERIF};font-size:17px;line-height:1.55;color:${C.ink};text-decoration:none;font-weight:bold;">${esc(a.title.join(""))}</a>
-  <div style="font-size:13px;line-height:1.8;color:${C.body};margin-top:6px;">${esc(clip(a.lead || "", 72))}</div>
+  ${selectionNote(a)}
 </td></tr>`;
 }
 
@@ -190,11 +203,11 @@ function dayRow(d) {
 }
 
 // ── 本文
-const preheader = `${selections[0] ? selections[0].title.join("") : ""}ほか、今週の事例セレクション${selections.length}本`;
+const preheader = m.preheader || `${selections[0] ? selections[0].title.join("") : ""}ほか、今週の事例セレクション${selections.length}本`;
 
 const html = `<!DOCTYPE html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>週刊 事例マニア ${issue}</title></head>
+<title>${esc(m.subject || `週刊 事例マニア ${issue}`)}</title></head>
 <body style="margin:0;padding:0;background:${C.soft};">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(preheader)}</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.soft};"><tr><td align="center" style="padding:24px 12px;">
@@ -262,4 +275,8 @@ fs.writeFileSync(outPath, html, "utf-8");
 const missing = ["sugoi", "column"].filter((k) => !m[k] || !m[k].url);
 console.log(`${issue}（${wd(issue)}）号 → ${path.relative(ROOT, outPath)}`);
 console.log(`  事例セレクション ${selections.length}本 / 記念日 ${days.length}日分（${weekFrom}〜${issue}）`);
+console.log(`  件名: ${m.subject || "（未入力）"}`);
+console.log(`  プレヘッダー: ${preheader}`);
+const noNote = selections.filter((a) => !(m.selectionNotes || {})[String(a.no)]).map((a) => "#" + a.no);
+if (noNote.length) console.log(`  セレクションの一言なし（リードで代用）: ${noNote.join(" ")}`);
 if (missing.length) console.log(`  未入力: ${missing.join(", ")}（newsletter/${issue}.json に書いて再実行）`);
