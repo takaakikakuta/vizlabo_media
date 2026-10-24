@@ -142,7 +142,7 @@ export async function notifySubscribe(email: string, source: string): Promise<No
 
   await sendAck(email, "【事例マニア】メルマガのご登録ありがとうございます", [
     "メルマガ「週刊 事例マニア」にご登録いただき、ありがとうございます。",
-    "毎週金曜に、事例セレクション5本とnote連載「この事例がスゴイ」「事例コラム」をお届けします。",
+    "毎週土曜に、事例セレクション5本とnote連載「この事例がスゴイ」「事例コラム」をお届けします。",
     "",
     "配信までの間は、サイトで最新の事例セレクションをご覧いただけます。",
     "https://vizlabo.com/articles",

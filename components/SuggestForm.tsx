@@ -20,7 +20,7 @@ export default function SuggestForm({ source = "article" }: { source?: string })
           数分待っても届かない場合は、迷惑メールフォルダをご確認ください。
         </p>
         {state.subscribed && (
-          <p className="mt-2 text-[11.5px] text-muted">メルマガ「週刊 事例マニア」にも登録しました（毎週金曜配信）。</p>
+          <p className="mt-2 text-[11.5px] text-muted">メルマガ「週刊 事例マニア」にも登録しました（毎週土曜配信）。</p>
         )}
       </div>
     );
@@ -50,7 +50,7 @@ export default function SuggestForm({ source = "article" }: { source?: string })
           <input type="checkbox" name="newsletter" defaultChecked
             className="mt-0.75 h-3.5 w-3.5 shrink-0 accent-ink" />
           <span className="text-[12px] leading-relaxed text-body">
-            メルマガ「週刊 事例マニア」にも登録する（毎週金曜・事例セレクション5本、いつでも解除できます）
+            メルマガ「週刊 事例マニア」にも登録する（毎週土曜・事例セレクション5本、いつでも解除できます）
           </span>
         </label>
       </form>

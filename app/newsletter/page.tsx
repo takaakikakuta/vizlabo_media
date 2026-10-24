@@ -8,7 +8,7 @@ import SubscribeForm from "../../components/SubscribeForm";
 
 export const metadata = {
   title: "メルマガ「週刊 事例マニア」",
-  description: "毎週金曜配信。事例セレクション5本と、note連載「この事例がスゴイ」「事例コラム」をメールでお届けします。",
+  description: "毎週土曜配信。事例セレクション5本と、note連載「この事例がスゴイ」「事例コラム」をメールでお届けします。",
 };
 
 /* noteで連載中の2企画。メルマガでは毎週それぞれ1本ずつ届ける */
@@ -33,12 +33,12 @@ export default function NewsletterPage() {
   return (
     <div className="mx-auto max-w-3xl px-5 py-12">
       <ListHead eyebrow="メルマガ" title="週刊 事例マニア"
-        sub={`毎週金曜配信・5分で読める。${s.total}件の事例から書いた事例セレクション5本と、note連載「この事例がスゴイ」「事例コラム」を届けます。`} />
+        sub={`毎週土曜配信・5分で読める。${s.total}件の事例から書いた事例セレクション5本と、note連載「この事例がスゴイ」「事例コラム」を届けます。`} />
 
       {/* 内容を説明してから、末尾のフォームで登録してもらう（フォームは先に出さない） */}
       {/* 何が届くか＝創刊号のプレビュー（実データで組む） */}
       <section>
-        <p className="label mb-4 flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />毎週金曜、この3つが届きます</p>
+        <p className="label mb-4 flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />毎週土曜、この3つが届きます</p>
 
         {/* メールのモック */}
         <div className="border-2 border-ink">

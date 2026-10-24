@@ -149,7 +149,7 @@ export function buildSuggestMail(url: string, p: CompanyProfile, s: Suggestions)
     "もっと探す（課題・業種・困りごとから検索できます）",
     `${SITE}/cases`,
     "",
-    "毎週金曜、事例セレクション5本を届けるメルマガもあります",
+    "毎週土曜、事例セレクション5本を届けるメルマガもあります",
     `${SITE}/newsletter`,
     "",
     "※本メールはご入力いただいたアドレスに1回だけお送りしています。",
@@ -232,7 +232,7 @@ export function buildSuggestMailHtml(url: string, p: CompanyProfile, s: Suggesti
   </div>
 
   <div style="margin-top:32px;border:1px solid ${C.line};padding:16px;text-align:center;">
-    <div style="font-size:13px;font-weight:bold;color:${C.ink};">週刊 事例マニア（毎週金曜配信）</div>
+    <div style="font-size:13px;font-weight:bold;color:${C.ink};">週刊 事例マニア（毎週土曜配信）</div>
     <div style="margin-top:6px;font-size:12px;color:${C.body};line-height:1.9;">事例セレクション5本と、note連載2本をメールで届けます</div>
     <a href="${SITE}/newsletter" style="display:inline-block;margin-top:10px;font-size:12.5px;color:${C.ink};text-decoration:underline;">メルマガの内容を見る →</a>
   </div>

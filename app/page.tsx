@@ -139,7 +139,7 @@ export default function Home() {
                 : <HeroEntry href="/suggest" eyebrow="AI事例サジェスト（無料）" title="貴社のURLを入れるだけで、似た事例が届く"
                     desc="AIが同じ業界・同じ困りごとの事例を選んで、メールでお届けします" cta="試してみる" />)
               : <HeroEntry href="/newsletter" eyebrow="メルマガ" title="週刊 事例マニア"
-                  desc="毎週金曜配信。事例セレクション5本と、note連載2本をメールで届けます" cta="登録する" />}
+                  desc="毎週土曜配信。事例セレクション5本と、note連載2本をメールで届けます" cta="登録する" />}
             <HeroEntry href="/finder" eyebrow="事例ファインダー" title="質問に答えるだけで、自社に近い事例へ"
               desc={`業種・部門・ほしい成果を順に選ぶだけ。${s.total.toLocaleString()}件から絞り込む`} cta="質問に答えて探す" />
             {/* 3枚目：記念日ポスト（/days）。最新の記念日があればその名前を出す */}

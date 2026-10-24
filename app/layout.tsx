@@ -99,7 +99,7 @@ function SiteFooter() {
           <div className="max-w-md">
             <p className="font-display text-[17px] text-ink">週刊 事例マニア</p>
             <p className="mt-1.5 text-[12px] leading-relaxed">
-              毎週金曜配信。事例セレクション5本と、note連載「この事例がスゴイ」「事例コラム」を届けます。
+              毎週土曜配信。事例セレクション5本と、note連載「この事例がスゴイ」「事例コラム」を届けます。
             </p>
           </div>
           <Link href="/newsletter"
