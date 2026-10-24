@@ -150,16 +150,13 @@ const button = (href, text) => `
 function selectionRow(a, i) {
   const href = utm(`${SITE}/articles/${a.slug}`, `selection-${i + 1}`);
   const img = articleThumb(a);
+  // スマホで文字が細切れにならないよう、横並びにせず「画像→番号→タイトル→リード」の縦積みにする
   return `
-<tr><td style="padding:18px 0;border-bottom:1px solid ${C.line2};">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    ${img ? `<td width="150" valign="top" style="padding-right:16px;"><a href="${esc(href)}"><img src="${esc(img)}" width="150" alt="" style="display:block;width:150px;height:auto;border:1px solid ${C.line2};"></a></td>` : ""}
-    <td valign="top">
-      <div style="font-size:11px;color:${C.muted};">#${String(a.no).padStart(3, "0")}</div>
-      <a href="${esc(href)}" style="font-family:${SERIF};font-size:16px;line-height:1.55;color:${C.ink};text-decoration:none;font-weight:bold;">${esc(a.title.join(""))}</a>
-      <div style="font-size:12.5px;line-height:1.8;color:${C.body};margin-top:6px;">${esc(clip(a.lead || "", 72))}</div>
-    </td>
-  </tr></table>
+<tr><td style="padding:20px 0;border-bottom:1px solid ${C.line2};">
+  ${img ? `<a href="${esc(href)}"><img src="${esc(img)}" width="544" alt="" style="display:block;width:100%;max-width:544px;height:auto;border:1px solid ${C.line2};margin-bottom:12px;"></a>` : ""}
+  <div style="font-size:11px;color:${C.muted};">#${String(a.no).padStart(3, "0")}</div>
+  <a href="${esc(href)}" style="font-family:${SERIF};font-size:17px;line-height:1.55;color:${C.ink};text-decoration:none;font-weight:bold;">${esc(a.title.join(""))}</a>
+  <div style="font-size:13px;line-height:1.8;color:${C.body};margin-top:6px;">${esc(clip(a.lead || "", 72))}</div>
 </td></tr>`;
 }
 
