@@ -4,9 +4,6 @@ import { siteStats } from "../../lib/cases";
 import CoverImg from "../../components/CoverImg";
 import { ListHead } from "../../components/CaseGrid";
 
-/* 予約公開：公開日が来た記事を一覧に出すため、1時間ごとに作り直す */
-export const revalidate = 3600;
-
 export const metadata = {
   title: "事例セレクション",
   description: "事例の集積からしか書けないオリジナル連載。課題を解体し、分かれ道の理由と悩みの記録を書く。",

@@ -10,9 +10,6 @@ import { CHALLENGES, INDUSTRIES, PRODUCT_CATEGORIES } from "../lib/taxonomy";
 
 const SITE = "https://vizlabo.com";
 
-/* 予約公開の記事を公開日に載せるため、1時間ごとに作り直す */
-export const revalidate = 3600;
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const fixed: MetadataRoute.Sitemap = [
