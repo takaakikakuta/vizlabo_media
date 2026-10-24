@@ -10,7 +10,6 @@
    自動で拾うもの（サイトのデータから）:
      - 今週の事例セレクション：公開中の選記事のうち新しい順に5本（サムネイル・タイトル・リードの冒頭）
      - 今週の記念日ポスト：配信日の6日前〜配信日の7日分
-     - 今週の数字：配信日前7日間に追加した事例の件数と、成果の数字が「A→B」の形で出ている事例を3つ
    手で書くもの（newsletter/YYYY-MM-DD.json）:
      - この事例がスゴイ／事例コラム（note の URL・タイトル・一言）、お知らせ枠（1つ）、編集後記、冒頭のひと言
    リンクにはすべて utm_source=newsletter&utm_medium=email&utm_campaign=YYYY-MM-DD&utm_content=<枠> を付ける。
@@ -92,24 +91,6 @@ const days = fs.readdirSync(dayDir).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.te
   .map((f) => readJson(path.join(dayDir, f)))
   .filter((d) => !d.draft && d.date >= weekFrom && d.date <= issue)
   .sort((a, b) => a.date.localeCompare(b.date));
-
-const newCases = publicCases.filter((c) => (c.collectedAt || "").slice(0, 10) >= addDays(issue, -7) && (c.collectedAt || "").slice(0, 10) < issue);
-const highlights = [];
-const seenVendor = new Set();
-for (const c of newCases) {
-  const r = (c.results || []).find((x) => /→/.test(x.value) && /\d/.test(x.value));
-  if (!r || seenVendor.has(c.vendor)) continue;
-  seenVendor.add(c.vendor);
-  highlights.push({ c, r });
-  if (highlights.length >= 3) break;
-}
-// 同じ提供元ばかりの週は3つに満たないので、2周目は提供元の重複を許して埋める
-for (const c of newCases) {
-  if (highlights.length >= 3) break;
-  if (highlights.some((h) => h.c.id === c.id)) continue;
-  const r = (c.results || []).find((x) => /→/.test(x.value) && /\d/.test(x.value));
-  if (r) highlights.push({ c, r });
-}
 
 // ── 手書き欄（無ければ雛形を作る）
 fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -211,16 +192,6 @@ function dayRow(d) {
 </td></tr>`;
 }
 
-function highlightRow({ c, r }, i) {
-  const href = utm(`${SITE}/cases/${c.id}`, `number-${i + 1}`);
-  return `
-<tr><td style="padding:12px 0;border-bottom:1px solid ${C.line2};">
-  <div style="font-size:11px;color:${C.muted};">${esc(r.metric)}</div>
-  <div style="font-size:22px;font-weight:bold;color:${C.accent};line-height:1.3;margin-top:2px;">${esc(r.value)}</div>
-  <a href="${esc(href)}" style="font-size:12.5px;line-height:1.7;color:${C.brand};text-decoration:none;">${esc(c.customer?.name ? c.customer.name + "：" : "")}${esc(clip(c.title, 46))} →</a>
-</td></tr>`;
-}
-
 // ── 本文
 const preheader = `${selections[0] ? selections[0].title.join("") : ""}ほか、今週の事例セレクション${selections.length}本`;
 
@@ -259,9 +230,6 @@ ${days.length ? `${sectionHead("04", "今週の記念日ポスト")}
 ${days.map(dayRow).join("")}
 <tr><td style="padding-top:12px;"><a href="${esc(utm(`${SITE}/days`, "day-all"))}" style="font-size:13px;color:${C.brand};font-weight:bold;text-decoration:none;">記念日の一覧（カレンダー）を見る →</a></td></tr>` : ""}
 
-${newCases.length ? `${sectionHead(days.length ? "05" : "04", "今週の数字")}
-<tr><td style="padding:12px 0 4px 0;font-size:13px;color:${C.body};">今週、新しく掲載した事例は <b style="font-size:18px;color:${C.ink};">${newCases.length.toLocaleString()}</b> 件。${highlights.length ? `その中から、成果の数字を${highlights.length}つ。` : ""}</td></tr>
-${highlights.map(highlightRow).join("")}` : ""}
 
 ${m.notice && m.notice.url ? `
 <tr><td style="padding:32px 0 0 0;">
@@ -296,5 +264,5 @@ const outPath = path.join(OUT_DIR, `${issue}.html`);
 fs.writeFileSync(outPath, html, "utf-8");
 const missing = ["sugoi", "column"].filter((k) => !m[k] || !m[k].url);
 console.log(`${issue}（${wd(issue)}）号 → ${path.relative(ROOT, outPath)}`);
-console.log(`  事例セレクション ${selections.length}本 / 記念日 ${days.length}日分（${weekFrom}〜${issue}） / 今週の新着 ${newCases.length}件・数字 ${highlights.length}つ`);
+console.log(`  事例セレクション ${selections.length}本 / 記念日 ${days.length}日分（${weekFrom}〜${issue}）`);
 if (missing.length) console.log(`  未入力: ${missing.join(", ")}（newsletter/${issue}.json に書いて再実行）`);
