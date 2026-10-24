@@ -18,6 +18,12 @@
       "name": "株式会社シーイーシー（IT Renovation／Re@nove など）",
       "reason": "顧客の了承を得ていないとして、ベンダーから掲載削除の依頼を受けた（今後掲載する場合は掲載前に連絡してほしいとの要望あり）",
       "blockedAt": "2026-10-19"
+    },
+    {
+      "domain": "sustainable-switch.jp",
+      "name": "サステナブルスイッチ（sustainable-switch.jp）",
+      "reason": "サイトが閉鎖され、事例ページに到達できなくなったため（削除依頼ではない）",
+      "blockedAt": "2026-10-24"
     }
   ]
 }

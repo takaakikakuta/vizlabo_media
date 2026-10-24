@@ -40068,7 +40068,8 @@
       "電気代の増加",
       "サーバ運用の負担",
       "災害時の事業継続"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-rebake-interview-230621",
@@ -40126,7 +40127,8 @@
       "在庫の把握不足",
       "多拠点の管理",
       "協力会社との連携"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-teslapowerwall-voice16-23040",
@@ -40176,7 +40178,8 @@
     "tags": [
       "電気代の増加",
       "停電時の対応"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-teslapowerwall-voice16-23051",
@@ -40242,7 +40245,8 @@
       "電気代の増加",
       "リアルタイムに把握できない",
       "エネルギー供給の脆弱性"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-teslapowerwall-voice17-23082",
@@ -40289,7 +40293,8 @@
       "電気代の増加",
       "情報収集の手間",
       "製品選定の困難さ"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-teslapowerwall-voice19-23100",
@@ -40351,7 +40356,8 @@
     "tags": [
       "電気代の増加",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-teslapowerwall-voice21-24020",
@@ -40398,7 +40404,8 @@
       "紙図面の保管",
       "リアルタイムに把握できない",
       "エネルギー管理の可視化困難"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-teslapowerwall-voice22-24030",
@@ -40449,7 +40456,8 @@
       "在庫の把握不足",
       "製品選定の情報不足",
       "設置条件の制約"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-teslapowerwall-voice23-24042",
@@ -40504,7 +40512,8 @@
       "電気代の増加",
       "リアルタイムに把握できない",
       "監査対応の負担"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "synups-jp-case-studies-eveautonomy",
@@ -77526,6 +77535,67 @@
       "商談化しない",
       "追客の漏れ"
     ]
+  },
+  {
+    "id": "www-transact-ne-jp-works-selmesta",
+    "title": "FAX回線を60本から1本に集約し、QRコード自動仕分けで業務効率化とコスト削減を実現",
+    "summary": "健康保険組合向けの医薬品斡旋事業を展開する株式会社セルメスタは、膨大なFAX申込書処理のため60本のFAX回線を運用していた。クラウドFAX受信サービス「TransFax」とQRコード自動仕分け機能、FAXビューアーを導入することで、回線を1本に集約し、手作業の仕分け業務を自動化。FAX環境のランニングコスト削減と全社的な業務効率化を実現した。",
+    "vendor": "transact.ne.jp",
+    "product": "TransFax（クラウドFAX受信サービス）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.transact.ne.jp/works/selmesta/",
+    "collectedAt": "2026-09-14T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社セルメスタ",
+      "industry": "other-industry",
+      "size": "",
+      "dept": "オーダーマネジメントグループ"
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "健保組合ごとに異なるFAX番号を用意するため60本のFAX回線を運用しており、毎月の回線使用料が固定費となって利益を圧迫していた。また、大量の申込書を多くのスタッフが人手で仕分けしており、作業負担が大きく、顧客からの問い合わせへの対応に時間差が生じていた。",
+    "actions": "クラウドFAX受信サービス「TransFax」を導入し、FAX回線を60本から1本に集約。同時に、健保組合情報をQRコードに収納して申込書に印字し、FAX受信後に自動仕分けする「QRコード仕分け機能」と、FAX着信をリアルタイムで確認できる「FAXビューアー」を開発・導入した。",
+    "results": [
+      {
+        "metric": "FAX回線集約",
+        "value": "60本→1本"
+      },
+      {
+        "metric": "全体コスト削減率",
+        "value": "約30%"
+      },
+      {
+        "metric": "FAX環境ランニングコスト削減率",
+        "value": "7割削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "契約健保組合数",
+        "value": "約300組合"
+      },
+      {
+        "metric": "対象被保険者数",
+        "value": "数十万人"
+      },
+      {
+        "metric": "FAX受信から画像保管までのタイムラグ",
+        "value": "約10分"
+      }
+    ],
+    "resultsQualitative": "人手による仕分け作業負担が大幅に削減された。FAXビューアーにより顧客からの問い合わせに即座に対応できるようになり、折り返し対応の手間、コスト、ストレスが解消された。固定費を変動費化することで、繁忙期と閑散期の変動に柔軟に対応できるようになった。システム管理の負担が軽減され、システムダウンや回線逼迫などのリスクから解放された。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "電話・FAX中心",
+      "紙の書類処理",
+      "手作業の転記",
+      "問い合わせ対応の負荷"
+    ],
+    "image": "https://www.transact.ne.jp/wp-content/themes/transact/img/case-selmesta-rep.png"
   },
   {
     "id": "www-transcosmos-cotra-jp-employee-casestudy-interview-02",
@@ -166922,67 +166992,6 @@
     ]
   },
   {
-    "id": "www-transact-ne-jp-works-selmesta",
-    "title": "FAX回線を60本から1本に集約し、QRコード自動仕分けで業務効率化とコスト削減を実現",
-    "summary": "健康保険組合向けの医薬品斡旋事業を展開する株式会社セルメスタは、膨大なFAX申込書処理のため60本のFAX回線を運用していた。クラウドFAX受信サービス「TransFax」とQRコード自動仕分け機能、FAXビューアーを導入することで、回線を1本に集約し、手作業の仕分け業務を自動化。FAX環境のランニングコスト削減と全社的な業務効率化を実現した。",
-    "vendor": "transact.ne.jp",
-    "product": "TransFax（クラウドFAX受信サービス）",
-    "productCategory": "cloud",
-    "sourceUrl": "https://www.transact.ne.jp/works/selmesta/",
-    "collectedAt": "2026-09-14T00:00:00.000Z",
-    "customer": {
-      "name": "株式会社セルメスタ",
-      "industry": "other-industry",
-      "size": "",
-      "dept": "オーダーマネジメントグループ"
-    },
-    "challenges": [
-      "cost",
-      "efficiency",
-      "labor"
-    ],
-    "challengeDetail": "健保組合ごとに異なるFAX番号を用意するため60本のFAX回線を運用しており、毎月の回線使用料が固定費となって利益を圧迫していた。また、大量の申込書を多くのスタッフが人手で仕分けしており、作業負担が大きく、顧客からの問い合わせへの対応に時間差が生じていた。",
-    "actions": "クラウドFAX受信サービス「TransFax」を導入し、FAX回線を60本から1本に集約。同時に、健保組合情報をQRコードに収納して申込書に印字し、FAX受信後に自動仕分けする「QRコード仕分け機能」と、FAX着信をリアルタイムで確認できる「FAXビューアー」を開発・導入した。",
-    "results": [
-      {
-        "metric": "FAX回線集約",
-        "value": "60本→1本"
-      },
-      {
-        "metric": "全体コスト削減率",
-        "value": "約30%"
-      },
-      {
-        "metric": "FAX環境ランニングコスト削減率",
-        "value": "7割削減"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "契約健保組合数",
-        "value": "約300組合"
-      },
-      {
-        "metric": "対象被保険者数",
-        "value": "数十万人"
-      },
-      {
-        "metric": "FAX受信から画像保管までのタイムラグ",
-        "value": "約10分"
-      }
-    ],
-    "resultsQualitative": "人手による仕分け作業負担が大幅に削減された。FAXビューアーにより顧客からの問い合わせに即座に対応できるようになり、折り返し対応の手間、コスト、ストレスが解消された。固定費を変動費化することで、繁忙期と閑散期の変動に柔軟に対応できるようになった。システム管理の負担が軽減され、システムダウンや回線逼迫などのリスクから解放された。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "電話・FAX中心",
-      "紙の書類処理",
-      "手作業の転記",
-      "問い合わせ対応の負荷"
-    ],
-    "image": "https://www.transact.ne.jp/wp-content/themes/transact/img/case-selmesta-rep.png"
-  },
-  {
     "id": "www-trinobalance-co-jp-case-10",
     "title": "通販企業の新商品告知ポスティング、反響率9.5倍を実現",
     "summary": "通販企業が新商品告知と新規顧客獲得のため、エリアフリーポスティングを導入。テストマーケティングで目標達成後、他メディアとの相乗効果により反響率を9.5倍に向上させ、月間5,000,000部超の配布規模に拡大。",
@@ -223463,7 +223472,8 @@
     "tags": [
       "電気代の増加",
       "環境への取組み可視化の課題"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-tesla-solar-v2h-voice19-2312",
@@ -223495,7 +223505,8 @@
       "電気代の増加",
       "停電時の事業継続",
       "災害時対応の不備"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-teslapowerwall-voice18-23093",
@@ -223531,7 +223542,8 @@
     "tags": [
       "電気代の増加",
       "情報不足による選択判断困難"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-teslapowerwall-voice20-23102",
@@ -223574,7 +223586,8 @@
       "電気代の増加",
       "複数システムの一元管理",
       "既築物件への対応"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "sustainable-switch-jp-interview-teslapowerwall-voice20-24011",
@@ -223623,7 +223636,8 @@
     "tags": [
       "見積もり作成に時間",
       "業務の属人化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "tabletcart-jp-case-hirao-shogakko",
