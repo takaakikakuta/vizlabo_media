@@ -165,6 +165,7 @@ export type SenArticle = {
   title: string[];
   lead: string;
   items: { caseId: string; headline: string; body: string }[];  // 10本または3本（headline＝見出し、body＝読みどころ2〜3文）
+  trivia?: { title: string; body: string };  // 任意。扉の後に置く「背景の知識」（制度・技術・数字の由来など、事例の外にある前提。空行区切り で段落）
   compare?: {             // 任意。3選向けの「比べる」パート（items と同じ順に並べて、読者が自社の位置を判定する表）
     title?: string;       // 見出し（既定「3社を比べる」）
     intro?: string;       // 表の前の導入（何を軸に並べたか）

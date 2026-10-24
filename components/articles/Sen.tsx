@@ -56,6 +56,15 @@ export default function Sen({ article }: { article: SenArticle }) {
         <p className="mt-6 text-[14px] leading-[2.1] text-body">{article.lead}</p>
       </header>
 
+      {/* ── 背景の知識（任意）。事例に入る前に、制度や技術など事例の外にある前提を押さえる ── */}
+      {article.trivia && (
+        <aside id="trivia" className="mt-10 scroll-mt-20 border border-line bg-soft/40 px-5 py-5 sm:px-6">
+          <p className="label mb-2">この話の背景</p>
+          <h2 className="font-display text-[18px] leading-snug text-ink">{article.trivia.title}</h2>
+          <p className="mt-3 whitespace-pre-line text-[13.5px] leading-[2.1] text-body">{article.trivia.body}</p>
+        </aside>
+      )}
+
       {/* 一括問い合わせへの早い導線（詳細は記事末尾の一覧から個別選択も可能） */}
       <div className="mt-8 flex flex-wrap items-center gap-4">
         <Link href={`/inquiry?a=${encodeURIComponent(article.slug)}`}
@@ -68,6 +77,7 @@ export default function Sen({ article }: { article: SenArticle }) {
       </div>
 
       <Toc items={[
+        ...(article.trivia ? [{ id: "trivia", no: "序", label: article.trivia.title }] : []),
         ...entries.map((e) => ({
           id: `item${e.i + 1}`, no: String(e.i + 1).padStart(2, "0"), label: e.headline,
         })),
@@ -171,7 +181,7 @@ export default function Sen({ article }: { article: SenArticle }) {
       {/* ── まとめ ── */}
       <section className="mt-14 border-t-2 border-ink pt-6">
         <h2 className="font-display text-[20px] leading-snug text-ink">{article.outroTitle}</h2>
-        <p className="mt-4 text-[13.5px] leading-[2.1] text-body">{article.outro}</p>
+        <p className="mt-4 whitespace-pre-line text-[13.5px] leading-[2.1] text-body">{article.outro}</p>
         {(article.relatedSlugs ?? []).length > 0 && (
           <div className="mt-9 border-t border-line pt-6">
             <p className="label mb-4 flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />あわせて読む</p>
