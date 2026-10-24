@@ -195,11 +195,15 @@ export type Article = (
 
 const DIR = path.join(process.cwd(), "content", "articles");
 
-export function allArticles(): Article[] {
+function loadArticles(): Article[] {
   if (!fs.existsSync(DIR)) return [];
   return fs.readdirSync(DIR)
     .filter((f) => f.endsWith(".json"))
-    .map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), "utf-8")) as Article)
+    .map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), "utf-8")) as Article);
+}
+
+export function allArticles(): Article[] {
+  return loadArticles()
     .filter((a) => !a.hidden && !a.draft)  // hidden・draft は公開面から完全に外す
     .filter((a) => a.publishedAt <= todayJST())  // 予約公開：公開日（日本時間）が来るまで出さない
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.no - a.no);
@@ -213,6 +217,16 @@ function todayJST(): string {
 
 export function getArticle(slug: string): Article | undefined {
   return allArticles().find((a) => a.slug === slug);
+}
+
+/** プレビュー用：公開日前・下書きの記事も返す（hidden の退役記事だけは除く）。/preview/articles/ 専用 */
+export function getArticleForPreview(slug: string): Article | undefined {
+  return loadArticles().find((a) => a.slug === slug && !a.hidden);
+}
+
+/** 公開日が来ているか（予約中・下書きなら false）。プレビューの帯の表示に使う */
+export function isPublished(a: Article): boolean {
+  return !a.draft && a.publishedAt <= todayJST();
 }
 
 import { getCase } from "./cases";
