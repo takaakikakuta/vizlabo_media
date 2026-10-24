@@ -110,6 +110,20 @@
 | `outroTitle` / `outro` | まとめ（並べて見えた共通項＋次の一歩） |
 | `relatedSlugs` | 「あわせて読む」への記事slug |
 
+## 記事を企画する前に：事例の棚卸し
+
+何の事例が何件あるかは [INVENTORY.md](INVENTORY.md) にまとまっている（テーマ別の件数・判定・既存記事、困りごとタグ別の件数、2本以上の記事に出ている事例、提供元の偏り）。
+事例データや記事を足したら再生成する。
+
+```bash
+node scripts/inventory/inventory.mjs                        # INVENTORY.md を書き直す
+node scripts/inventory/inventory.mjs --theme "停電|非常用電源"  # そのテーマの候補事例を一覧（● 数字あり / ○ 数字なし、使用済みの記事番号つき）
+node scripts/inventory/inventory.mjs --theme 金型 --industry manufacturing
+node scripts/inventory/inventory.mjs --tags                 # 困りごとタグ別の件数
+```
+
+テーマは `scripts/inventory/themes.json` に1行足せば表に載る。判定（10選・5選・3選・不足）は各ガイドの件数の目安をそのまま機械的に当てたもので、企画の入口の確認用。選ぶときは候補の全件を読む。
+
 ## タイアップ（PR）記事にするとき
 
 genba型は `"sponsored": true` にすると、Sponsoredバッジ・supported by表記・広告ポリシー文が出る。
