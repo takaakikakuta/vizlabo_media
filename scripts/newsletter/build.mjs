@@ -222,7 +222,6 @@ function highlightRow({ c, r }, i) {
 }
 
 // ── 本文
-const toc = ["今週の事例セレクション", "この事例がスゴイ", "事例コラム", days.length ? "今週の記念日ポスト" : "", newCases.length ? "今週の数字" : ""].filter(Boolean);
 const preheader = `${selections[0] ? selections[0].title.join("") : ""}ほか、今週の事例セレクション${selections.length}本`;
 
 const html = `<!DOCTYPE html>
@@ -243,7 +242,6 @@ const html = `<!DOCTYPE html>
 
 <tr><td style="padding:20px 0 4px 0;font-size:14px;line-height:1.9;color:${C.body};">
   ${esc(m.intro || "")}
-  <div style="margin-top:12px;font-size:12px;color:${C.muted};">今週の内容：${toc.map(esc).join(" ／ ")}</div>
 </td></tr>
 
 ${sectionHead("01", "今週の事例セレクション")}
