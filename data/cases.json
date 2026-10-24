@@ -3903,6 +3903,436 @@
     ]
   },
   {
+    "id": "biz-moneyforward-com-case-13844",
+    "title": "月3日の領収書処理業務が半日以下に削減、自動連携で請求漏れリスクも軽減",
+    "summary": "合同会社R・Vision Partnersは、領収書をスクラップブックに貼り付けて手作業で管理していたため月3日の業務時間を要していた。マネーフォワード クラウド会計・請求書・経費・ビジネスカードを導入し、自動連携機能により領収書処理を半日以下に削減し、請求書出し忘れや入金漏れのリスクも低減した。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド会計、マネーフォワード クラウド請求書、マネーフォワード クラウド経費、マネーフォワード ビジネスカード",
+    "productCategory": "accounting",
+    "sourceUrl": "https://biz.moneyforward.com/case/13844/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "合同会社R・Vision Partners",
+      "industry": "other-industry",
+      "size": "1～10名",
+      "dept": "バックオフィス・経理"
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "領収書をスクラップブックに貼り付けて手作業で管理していたため、月3日の作業時間を要していた。また電子帳簿保存法への法対応も課題であった。",
+    "actions": "マネーフォワード クラウド会計、クラウド請求書、クラウド経費、ビジネスカードを導入し、領収書の写真撮影・データ化機能と各サービス間の自動連携機能を活用した。",
+    "results": [
+      {
+        "metric": "領収書処理・管理業務の作業時間削減",
+        "value": "月3日→半日以下（1/3未満）"
+      },
+      {
+        "metric": "請求書出し忘れや入金漏れのリスク",
+        "value": "リスク軽減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "1～10名"
+      }
+    ],
+    "resultsQualitative": "手作業が一切なくなり、請求書作成から自動仕訳、入金消込までが連携することで精神的な安心感が得られた。API連携の安定性により、細かい部分での信頼性も向上。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2025/10/Group-627931-1.png",
+    "tags": [
+      "紙の書類処理",
+      "手作業の転記",
+      "請求処理に時間",
+      "法改正への対応"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-13958",
+    "title": "ひとり法人の経理業務を週1〜2時間に圧縮、一気通貫クラウドで本業に集中",
+    "summary": "ひとり法人として起業した代表が、バックオフィス業務の煩雑さという課題に直面。マネーフォワード クラウド（会計・請求書・契約など12種類のサービス）を導入し、請求書の自動連携などにより経理時間を大幅削減、週1〜2時間程度で管理できる体制を実現した。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド会計、マネーフォワード クラウド請求書、マネーフォワード クラウド契約",
+    "productCategory": "accounting",
+    "sourceUrl": "https://biz.moneyforward.com/case/13958/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "つなぐスタジオ株式会社",
+      "industry": "other-industry",
+      "size": "従業員1名（ひとり法人）",
+      "dept": "経営管理・バックオフィス"
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "ひとり法人として事業開始時に、経理・契約・労務などのバックオフィス業務が煩雑で、本業との並行が困難だった。特に創業融資申請や契約締結のため、早期に正確な決算書類を作成する必要があった。",
+    "actions": "マネーフォワード クラウドの「ひとり法人プラン」を導入し、会計・請求書・契約など複数サービスを1プラットフォームで統合運用。請求書の自動連携などにより業務フローを効率化。",
+    "results": [
+      {
+        "metric": "経理業務時間",
+        "value": "週1〜2時間"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入サービス数",
+        "value": "12種類"
+      }
+    ],
+    "resultsQualitative": "本業に支障が出ない範囲での経理管理を実現。電子契約を別途導入する手間・コストがなくなり、税理士との連携もスムーズに行える基盤が構築された。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2025/11/つなぐスタジオ株式会社様.png",
+    "tags": [
+      "請求処理に時間",
+      "経費精算の手間",
+      "給与計算の手間",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-14063",
+    "title": "法務関連業務の工数を40%削減。電子契約導入でペーパーレス化を実現",
+    "summary": "キャロウェイゴルフは、紙ベースの契約運用により締結に1～2ヶ月要する、進捗管理が不透明といった課題を抱えていた。マネーフォワード クラウド契約の導入により、契約プロセスを電子化し、案件管理機能で法務相談を一元管理することで、法務関連業務の工数を40%削減した。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド契約",
+    "productCategory": "saas",
+    "sourceUrl": "https://biz.moneyforward.com/case/14063/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "キャロウェイゴルフ株式会社",
+      "industry": "retail",
+      "size": "従業員301～500名",
+      "dept": "人事総務部、経理部"
+    },
+    "challenges": [
+      "efficiency",
+      "cost",
+      "standardize"
+    ],
+    "challengeDetail": "契約締結に1～2ヶ月要し、紙ベースの運用により進捗管理が不透明。さらに印紙代・郵送費・書類保管など物理的なコストと手間が発生していた。",
+    "actions": "マネーフォワード クラウド契約を導入し、契約プロセスを電子化。案件管理機能により法務相談を一元管理し、事業部と顧問弁護士が直接システム上でやり取りできる体制を構築した。また、既存の700～800件の契約書をスキャン・アップロード代行サービスで電子化した。",
+    "results": [
+      {
+        "metric": "法務関連業務の工数削減",
+        "value": "40%削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "電子化対象の契約書件数",
+        "value": "700～800件"
+      },
+      {
+        "metric": "電子化にかかった期間",
+        "value": "約1ヶ月"
+      }
+    ],
+    "resultsQualitative": "契約締結までのリードタイムが圧倒的に短縮され、事業スピードが向上。法務相談プロセスがシステム上で可視化され、部門間・弁護士との連携がスムーズになった。印紙代・郵送費の削減、製本などの付帯業務の廃止、書類戻らないトラブルの解消も実現。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2025/11/14063_01.jpg",
+    "tags": [
+      "紙の書類処理",
+      "押印・承認の遅れ",
+      "進捗が見えない",
+      "紙図面の保管"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-14380",
+    "title": "契約検索時間を2時間から大幅短縮、AI-OCRで過去400件のデータベース化を実現",
+    "summary": "医療機関向けサービスを提供する株式会社イノシアは、契約検索に最大2時間、年100件の手入力作業に膨大な工数を要していた。マネーフォワード クラウド契約を導入し、AI-OCR機能による過去データのデータベース化と台帳入力の自動化により、契約管理の透明化と業務効率化を実現した。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド契約",
+    "productCategory": "saas",
+    "sourceUrl": "https://biz.moneyforward.com/case/14380/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社イノシア",
+      "industry": "it",
+      "size": "51～300名",
+      "dept": "経営管理部"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "data"
+    ],
+    "challengeDetail": "契約締結までのやり取りが分散し、過去経緯検索に最大2時間要していた。また、年100件の契約情報をExcelに手入力する作業に膨大な工数がかかり、期限管理も有効に機能していなかった。",
+    "actions": "マネーフォワード クラウド契約をアップグレード導入し、法務相談から承認申請までの流れを一元管理。AI-OCR機能で過去約400件の契約をデータベース化し、台帳入力を自動化した。申請窓口を完全に一本化し、社内定着を徹底。",
+    "results": [
+      {
+        "metric": "手作業による台帳入力",
+        "value": "年100件→ゼロ（完全廃止）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入企業の従業員規模",
+        "value": "51～300名"
+      },
+      {
+        "metric": "過去の紙契約の割合",
+        "value": "約半数"
+      },
+      {
+        "metric": "過去契約データのデータベース化",
+        "value": "約400件を効率的に実現"
+      }
+    ],
+    "resultsQualitative": "入力漏れや転記ミスの心配が大幅に減少。期限アラート機能により契約更新を先回りして管理できる体制が確立された。営業担当者が過去の契約情報を自ら検索できるようになり、全社の業務スピードが向上。法務相談の急な依頼も大幅に減少し、余裕を持って業務を進められる体制が整った。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2026/04/14380_01.jpg",
+    "tags": [
+      "手作業の転記",
+      "Excel管理の限界",
+      "探し物の時間",
+      "業務の属人化"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-14640",
+    "title": "マネーフォワード ビジネスカード導入で経費報告・立替精算をほぼ0に",
+    "summary": "ソーシャルデータバンク株式会社は、従業員増加に伴う年会費負担と報告漏れの課題を抱えていた。マネーフォワード ビジネスカードを導入し、Slack連携により決済情報をリアルタイム共有することで、経費報告と立替精算をほぼ0にし、業務効率を向上させた。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード ビジネスカード",
+    "productCategory": "other-product",
+    "sourceUrl": "https://biz.moneyforward.com/case/14640/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "ソーシャルデータバンク株式会社",
+      "industry": "it",
+      "size": "51～300名",
+      "dept": "管理部経理、営業推進部"
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "従業員数増加に伴うビジネスカード年会費の負担が増大していた。また、経費利用をSlackで報告するルールがあるものの報告忘れが発生し、経費利用状況のリアルタイム把握と管理ができていなかった。",
+    "actions": "マネーフォワード ビジネスカードを導入し、Slack連携機能を活用することで、カード決済情報をリアルタイムにSlackへ通知。追加カードの年会費負担も廃止した。",
+    "results": [
+      {
+        "metric": "経費利用報告と立替精算",
+        "value": "ほぼ0に削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "51～300名"
+      }
+    ],
+    "resultsQualitative": "経費利用状況がリアルタイムに可視化され、現場の報告負担が軽減された。報告漏れがほぼなくなり、決済情報に簡単に補足説明を追加するだけで完了するようになった。また、柔軟な利用上限金額設定により海外出張中のカード停止トラブルを回避できた。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2026/07/unnamed-2-1.png",
+    "tags": [
+      "経費精算の手間",
+      "対応履歴が残らない",
+      "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-14785",
+    "title": "オンプレミス型から刷新、連結会計システムをクラウド化してコスト1/3削減と内製化を実現",
+    "summary": "グループ企業の構成がシンプル化してオーバースペック状態だった連結会計システムを、マネーフォワード クラウド連結会計に刷新。複雑なマクロ処理が不要になり、直感的な画面設計により内製化が可能になった。月々のランニングコストを約3分の1に削減。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド連結会計",
+    "productCategory": "accounting",
+    "sourceUrl": "https://biz.moneyforward.com/case/14785/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社メイテックグループホールディングス",
+      "industry": "manufacturing",
+      "size": "従業員1001名以上",
+      "dept": "グループ経理財務"
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "グループ組織がシンプル化してオンプレミス型システムがオーバースペック状態に。社内方針のクラウド化に対応が必要で、連結パッケージ取り込みに複雑なExcelマクロ処理が必要だった。",
+    "actions": "従来のオンプレミス型連結会計システムからマネーフォワード クラウド連結会計へ刷新。段階的な導入とマネーフォワード製品群全体の将来的な連携を視野に入れた選定を実施。",
+    "results": [
+      {
+        "metric": "月々のシステムランニングコスト",
+        "value": "約1/3に削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "グループ企業数",
+        "value": "国内6社"
+      },
+      {
+        "metric": "グループ構成",
+        "value": "100%子会社のみ"
+      }
+    ],
+    "resultsQualitative": "連結パッケージをダイレクトにインポート可能になり、マクロ維持管理が不要に。直感的な画面設計で連結決算業務の内製化が進展。初期導入費用も短期間で回収できる高い投資対効果を実現。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2026/08/★DSC08886-02_under1000kb.jpg",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "数字の集計に時間"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-14855",
+    "title": "会社負担を抑えながら従業員の手取りを増加。既存制度の対象外だった層にも還元を実現",
+    "summary": "スマートキャンプは既存の家賃補助が条件が厳しく対象者が1割未満だった課題を抱えていた。マネーフォワード クラウド福利厚生賃貸を導入し、会社の金銭負担を大きく増やさずに従業員の手取りを増加させる仕組みを構築。現在は従業員の約15%が利用している。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド福利厚生賃貸",
+    "productCategory": "saas",
+    "sourceUrl": "https://biz.moneyforward.com/case/14855/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "スマートキャンプ株式会社",
+      "industry": "it",
+      "size": "51～300名",
+      "dept": "人事・労務"
+    },
+    "challenges": [
+      "cost",
+      "standardize"
+    ],
+    "challengeDetail": "既存の家賃補助は対象者が全体の1割未満に限定されており、リモートワークの普及で対象者がさらに減少。会社の負担を抑えつつ、より多くの従業員に還元できる仕組みが必要だった。",
+    "actions": "マネーフォワード クラウド福利厚生賃貸を導入。会社の金銭的負担を大きく増やさない一方で、従業員の手取り増加につながる仕組みとした。全社MTGとSlack、オンライン説明会を活用して社内周知を進め、LINEフォームからの申請による簡潔な運用フローを構築した。",
+    "results": [
+      {
+        "metric": "利用者割合",
+        "value": "約15%"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "約200名"
+      },
+      {
+        "metric": "導入初期の利用者",
+        "value": "約25名"
+      }
+    ],
+    "resultsQualitative": "会社の金銭的負担を増やさずに従業員の手取りを増やした。導入初期から多くの応募があり、これまで補助の対象外だった従業員にも新たに活用されている。上場準備期間中でも事業や上場審査に大きな影響を与えることなくスムーズに運用できた。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2026/09/7E9A6689.jpg",
+    "tags": [
+      "福利厚生制度の対象者限定",
+      "情報発信の手段不足",
+      "申請手続きの煩雑さ"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-14917",
+    "title": "海外拠点14社の連結決算を1名で完遂。クラウド連結会計で工数削減とミス防止を実現",
+    "summary": "北米の持株会社が初めての連結決算に際し、表計算ソフトでの手作業による膨大な工数とミスのリスクに直面。マネーフォワード クラウド連結会計を導入し、直感的なUIとAI科目変換機能により、14社分の決算処理を1名で完遂できるようになった。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド連結会計",
+    "productCategory": "accounting",
+    "sourceUrl": "https://biz.moneyforward.com/case/14917/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "JFE SHOJI AMERICA HOLDINGS INC.",
+      "industry": "other-industry",
+      "size": "法人（1～10名）",
+      "dept": "管理部門"
+    },
+    "challenges": [
+      "efficiency",
+      "quality",
+      "data"
+    ],
+    "challengeDetail": "銀行への連結決算提出に向けて、表計算ソフトでの手作業による14社分のデータ集約は膨大な工数とミスのリスクを抱えていた。複雑なシステムへの習熟期間やオンプレミス型の運用負担も懸念があった。",
+    "actions": "マネーフォワード クラウド連結会計を導入。4社比較の結果、直感的なUI、完全なクラウド型提供、外貨換算対応を理由に選定。導入初期の手厚いサポートを受けながら、AIを活用した科目変換機能を活用して運用。",
+    "results": [
+      {
+        "metric": "連結決算処理の担当人数",
+        "value": "14社分を1名で完遂"
+      },
+      {
+        "metric": "手作業による修正・入力ミス",
+        "value": "発生せず"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対象企業数",
+        "value": "14社"
+      },
+      {
+        "metric": "導入初期サポート期間",
+        "value": "2～3ヶ月"
+      }
+    ],
+    "resultsQualitative": "システムの直感的な操作性とAI科目変換機能により、勘定科目の統一作業の工数が大幅に削減。ボタン一つで完結する開始仕訳などにより手作業が自動化され、心理的負担が軽減。充実したサポート体制により、システム習熟に要する時間が短縮され、安心して運用を続けられるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2026/09/IMG_4581_under1000kb.jpg",
+    "tags": [
+      "Excel管理の限界",
+      "手作業の転記",
+      "数字の集計に時間",
+      "データが分散",
+      "サーバ運用の負担"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-2866",
+    "title": "フリーランスデザイナーが確定申告作業を1/3に短縮、UIの優れた会計ソフトで年度末の手間を削減",
+    "summary": "個人事業主のwebデザイナーが確定申告の手間に悩んでいた。マネーフォワード クラウド確定申告を導入し、銀行・クレジットカードとの自動連携と直感的なUIにより、確定申告作業を1/3に短縮。数日要していた作業が一晩で完了した。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド確定申告",
+    "productCategory": "accounting",
+    "sourceUrl": "https://biz.moneyforward.com/case/2866/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "KANEKODESIGN（カネコデザイン）",
+      "industry": "it",
+      "size": "個人事業主・フリーランス",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "個人事業主のデザイナーとして毎年の確定申告は面倒で、年度末にまとめて行うため数日を要していた。手入力による負担とストレスが大きかった。",
+    "actions": "マネーフォワード クラウド確定申告を導入。銀行口座やクレジットカードと連携させデータを自動取得し、業務対象外の項目は簡単に除外できる設定を活用。直感的なUIで基礎知識のみで操作を実施。",
+    "results": [
+      {
+        "metric": "確定申告作業時間",
+        "value": "数日→一晩（1/3程度に短縮）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "個人事業主としての開業年数",
+        "value": "6年"
+      }
+    ],
+    "resultsQualitative": "確定申告のストレスの大部分が解消され、手入力の手間が大幅に削減された。UIの優れた操作感により確定申告を楽しく終えられるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2018/05/01-2.jpg",
+    "tags": [
+      "手作業の転記",
+      "月末の残業",
+      "経費精算の手間"
+    ]
+  },
+  {
     "id": "biz-mxmobiling-co-jp-case-helpdesk-education-o",
     "title": "IT部門の負荷を40%削減！ポータル一元化で学生・教職員サポートを効率化",
     "summary": "教育機関で学生・教職員からのPC・スマホ問い合わせがメール・電話に分散し対応が追いつかない課題があった。itsmoBPO ヘルプデスクのポータル一元化と自動振り分けを導入し、IT部門の負荷を40%削減した。",
@@ -4357,6 +4787,53 @@
       "情報漏洩リスク",
       "多拠点の管理"
     ]
+  },
+  {
+    "id": "biz-premium-yutaiclub-jp-case-2",
+    "title": "株主優待制度新設と株式分割で個人株主数を2.3倍に増加",
+    "summary": "EDIミドルウェア大手のデータ・アプリケーションは、個人株主数の減少と流動性低下という課題に対し、プレミアム優待倶楽部を導入して自社らしい株主優待制度を設計・運用。株式分割との合わせ技により、導入前比で株主数を2.3倍に増加させた。",
+    "vendor": "premium-yutaiclub.jp",
+    "product": "プレミアム優待倶楽部",
+    "productCategory": "saas",
+    "sourceUrl": "https://biz.premium-yutaiclub.jp/case/2",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社データ・アプリケーション",
+      "industry": "it",
+      "size": "上場企業",
+      "dept": "経営企画管理本部"
+    },
+    "challenges": [
+      "sales",
+      "efficiency"
+    ],
+    "challengeDetail": "個人株主数が減少し、流動性が低下。一般消費者に見えにくい業態のため知名度が低く、個人投資家の開拓が必要だった。",
+    "actions": "プレミアム優待倶楽部を導入して自社らしい株主優待制度を設計し、株式分割と同時にリリース。100株からの優待取得を可能にし、個人投資家の購入ハードルを低下させた。",
+    "results": [
+      {
+        "metric": "株主数増加",
+        "value": "2.3倍（2022年3月末比2024年3月末）"
+      },
+      {
+        "metric": "導入発表直後の株主数増加",
+        "value": "1.7倍（2022年3月末比2023年1月）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入時期",
+        "value": "2023年1月発表、2023年5月サイトオープン"
+      }
+    ],
+    "resultsQualitative": "個人投資家からのお問い合わせが増加し、オフラインの個人投資家説明会での興味も高まった。100株保有層の増加も見込み通りに実現。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "リード獲得の停滞",
+      "知名度向上の課題",
+      "個人投資家の開拓"
+    ],
+    "image": "https://biz.premium-yutaiclub.jp/img/case/2/mv_case2.png"
   },
   {
     "id": "biz-teachme-jp-casestudy-aitech-check",
@@ -5261,57 +5738,6 @@
     "hasNumbers": true,
     "sample": false,
     "image": "https://biz.techoffer.jp/wp-content/uploads/2025/12/DSC_0713-scaled.jpg",
-    "tags": [
-      "応募が集まらない",
-      "リード獲得の停滞",
-      "採用しても定着しない"
-    ]
-  },
-  {
-    "id": "biz-techoffer-jp-casestudy-casestudy-5",
-    "title": "技術キーワードマッチングで機電系学生の母集団形成に成功、早期選考参加者の半数を獲得",
-    "summary": "地方BtoB企業のウシオ電機は、機電系・物理系学生への採用アプローチに課題を抱えていた。技術キーワードに基づいたオファー型採用支援サービスTECH OFFERを導入し、ターゲット層への効率的なマッチングを実現。早期選考参加者の半数がTECH OFFER経由となった。",
-    "vendor": "techoffer.jp",
-    "product": "TECH OFFER",
-    "productCategory": "hrtech",
-    "sourceUrl": "https://biz.techoffer.jp/casestudy/casestudy-5/",
-    "collectedAt": "2026-10-13T00:00:00.000Z",
-    "customer": {
-      "name": "ウシオ電機株式会社",
-      "industry": "manufacturing",
-      "size": "従業員5001名以上",
-      "dept": "採用"
-    },
-    "challenges": [
-      "sales",
-      "hr"
-    ],
-    "challengeDetail": "地方・BtoB企業として採用競争に勝ちづらく、従来ターゲットだった機電系・物理系学生の母集団形成に苦戦していた。他のダイレクトリクルーティングサービスでも手間の割に効率的なアプローチができていなかった。",
-    "actions": "技術キーワードに基づいたオファー型採用支援サービスTECH OFFERを導入し、学生の専攻分野と企業の技術・事業領域のマッチングを精密に行うことで、ターゲット層への効率的なアプローチを実現した。",
-    "results": [
-      {
-        "metric": "母集団に占めるTECH OFFER経由の割合",
-        "value": "4割以上"
-      },
-      {
-        "metric": "早期選考参加者に占めるTECH OFFER経由の割合",
-        "value": "半数"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "導入時期",
-        "value": "導入1年目（取材日2020年2月）"
-      },
-      {
-        "metric": "全体母集団数",
-        "value": "数百名"
-      }
-    ],
-    "resultsQualitative": "ターゲット層の学生に対して自社とのマッチングを認識させることができ、オファーがなければエントリーしなかったという学生も多く獲得できた。学生が自らの専攻分野に関連する企業の他の事業領域も発見し、アピールするようになった。",
-    "hasNumbers": true,
-    "sample": false,
-    "image": "https://biz.techoffer.jp/wp-content/uploads/2020/02/ushio-top.jpg",
     "tags": [
       "応募が集まらない",
       "リード獲得の停滞",
@@ -83309,53 +83735,6 @@
     ]
   },
   {
-    "id": "biz-premium-yutaiclub-jp-case-2",
-    "title": "株主優待制度新設と株式分割で個人株主数を2.3倍に増加",
-    "summary": "EDIミドルウェア大手のデータ・アプリケーションは、個人株主数の減少と流動性低下という課題に対し、プレミアム優待倶楽部を導入して自社らしい株主優待制度を設計・運用。株式分割との合わせ技により、導入前比で株主数を2.3倍に増加させた。",
-    "vendor": "premium-yutaiclub.jp",
-    "product": "プレミアム優待倶楽部",
-    "productCategory": "saas",
-    "sourceUrl": "https://biz.premium-yutaiclub.jp/case/2",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "株式会社データ・アプリケーション",
-      "industry": "it",
-      "size": "上場企業",
-      "dept": "経営企画管理本部"
-    },
-    "challenges": [
-      "sales",
-      "efficiency"
-    ],
-    "challengeDetail": "個人株主数が減少し、流動性が低下。一般消費者に見えにくい業態のため知名度が低く、個人投資家の開拓が必要だった。",
-    "actions": "プレミアム優待倶楽部を導入して自社らしい株主優待制度を設計し、株式分割と同時にリリース。100株からの優待取得を可能にし、個人投資家の購入ハードルを低下させた。",
-    "results": [
-      {
-        "metric": "株主数増加",
-        "value": "2.3倍（2022年3月末比2024年3月末）"
-      },
-      {
-        "metric": "導入発表直後の株主数増加",
-        "value": "1.7倍（2022年3月末比2023年1月）"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "導入時期",
-        "value": "2023年1月発表、2023年5月サイトオープン"
-      }
-    ],
-    "resultsQualitative": "個人投資家からのお問い合わせが増加し、オフラインの個人投資家説明会での興味も高まった。100株保有層の増加も見込み通りに実現。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "リード獲得の停滞",
-      "知名度向上の課題",
-      "個人投資家の開拓"
-    ],
-    "image": "https://biz.premium-yutaiclub.jp/img/case/2/mv_case2.png"
-  },
-  {
     "id": "bizmobile-co-jp-case-20170801",
     "title": "グローバル展開する自動車部品メーカーが、iOS端末管理の課題をBizMobile Go!で解決",
     "summary": "世界4ヶ国に拠点を持つ自動車部品メーカーは、iOS端末の管理に際して、Macなしでのプロファイル作成やアプリの自動配布・更新ができないという課題を抱えていました。BizMobile Go!を導入することで、Macを購入せずにブラウザベースでiOS端末を完全に管理でき、デバイス設定時間を大幅に短縮しました。",
@@ -159764,6 +160143,543 @@
     ]
   },
   {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case01",
+    "title": "ファイバーレーザ+自動化装置で生産性5倍を実現",
+    "summary": "厚板加工ができず夜間加工に頼っていた課題に対し、ファイバーレーザ加工機ENSIS-AJと10段パレットチェンジャーASを導入。高速加工と長時間連続運転により、従来比で生産性が5倍以上に向上した。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "ENSIS3015AJ+AS3015G（ファイバーレーザ加工機+自動パレットチェンジャー）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case01/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社　杉山",
+      "industry": "manufacturing",
+      "size": "従業員18名",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "leadtime",
+      "quality"
+    ],
+    "challengeDetail": "CO2レーザでは板厚9.0mmのめっき鋼板が切れず、既存のシャトルテーブル機は加工速度が遅く、加工パレットが2枚のため夜間加工に頼らざるを得なかった。段取り作業が頻繁で作業者が加工機から離れられず、大量受注時のリードタイム予測も困難だった。",
+    "actions": "ファイバーレーザ加工機ENSIS-AJ（6kW）と10段パレットチェンジャー装置ASを導入し、高速加工と長時間連続運転を実現。",
+    "results": [
+      {
+        "metric": "生産性",
+        "value": "5倍以上"
+      },
+      {
+        "metric": "加工速度",
+        "value": "約4倍"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "18名"
+      },
+      {
+        "metric": "加工パレット数",
+        "value": "10枚"
+      },
+      {
+        "metric": "日中の稼働時間",
+        "value": "約15時間"
+      }
+    ],
+    "resultsQualitative": "新しい仕事を計画的に受注できる余力が生まれ、急ぎの依頼に対応可能になった。CO2レーザの毎日1時間の暖機運転が不要になり、ファイバーレーザの立ち上がりが早いことも大きなアドバンテージとなった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "工程管理の難しさ",
+      "納期の遅延",
+      "残業の常態化"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case16",
+    "title": "都市型板金工場がコンパクトファイバーレーザマシンで外注を内製化、納期短縮と利益率向上を実現",
+    "summary": "工場スペースと投資コストに制約のある都市型板金工場が、外注依存のレーザ加工を内製化するため、コンパクトなファイバーレーザマシン「BREVIS-AJ」を導入。特急対応と納期遵守が可能になり、外注費削減による利益率改善を達成。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "BREVIS-AJ（コンパクトファイバーレーザマシン）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case16/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "leadtime",
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "都市型板金工場は工場スペースと投資コストに制約があり、外注依存でレーザ加工を依頼していた。外注依存により品質管理や特急対応が難しく、納期遅延や品質トラブルが発生していた。",
+    "actions": "コンパクトでオールラウンドな加工性能を備えた「BREVIS-AJ」を導入し、外注していたレーザ加工を内製化した。設置スペースの工夫や中2階への付帯設備設置により、限られた工場スペースでの対応を実現。",
+    "results": [
+      {
+        "metric": "外注費削減",
+        "value": "利益率改善"
+      },
+      {
+        "metric": "納期対応",
+        "value": "1～3日の超短納期に対応可能"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入企業の従業員数（船橋金属）",
+        "value": "4名"
+      },
+      {
+        "metric": "得意先数（船橋金属）",
+        "value": "約20社"
+      },
+      {
+        "metric": "得意先数（土筆鋼業）",
+        "value": "約100社"
+      }
+    ],
+    "resultsQualitative": "特殊材料や超短納期への柔軟な対応が可能になった。社内でのトライやサンプル製作ができるようになり、顧客への提案力が向上。端材の有効活用で材料ロスが削減された。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "納期の遅延",
+      "工程管理の難しさ",
+      "品質のばらつき",
+      "外注依存"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case17",
+    "title": "花村産業がファイバーレーザ導入で加工速度6～7倍を実現、土曜出勤を廃止",
+    "summary": "金属加工商社の花村産業は、従来のCO2レーザ（4kW）からファイバーレーザ「LC-VALSTER-6225AJ」（10kW）に更新。加工速度が6～7倍に向上し、毎週土曜日の出勤が不要になり、消費電力も1/2以下に削減。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "LC-VALSTER-6225AJ（ファイバーレーザマシン、パレットチェンジャー仕様8段）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case17/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "花村産業株式会社",
+      "industry": "manufacturing",
+      "size": "中堅企業（創業1909年、115年以上の歴史）",
+      "dept": "市場事業所 業務二課"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "leadtime"
+    ],
+    "challengeDetail": "15年以上前の自走式CO2レーザ（4kW）での加工は低速で、毎週土曜日に3人が交代で製品回収と材料段取りを行う必要があった。生産能力向上と人手不足への対応が課題。",
+    "actions": "従来のCO2レーザマシン（4kW）をファイバーレーザ「LC-VALSTER-6225AJ」（10kW）のパレットチェンジャー仕様（8段）に更新し、大板材（8フィート×20フィート）対応の高速・自動化加工体制を構築。",
+    "results": [
+      {
+        "metric": "加工スピード改善",
+        "value": "従来機比6～7倍"
+      },
+      {
+        "metric": "消費電力削減",
+        "value": "1/2以下"
+      },
+      {
+        "metric": "休日出勤削減",
+        "value": "毎週土曜日の出勤廃止、平日5日間の稼働で対応"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対応板厚",
+        "value": "3.2～25mm"
+      },
+      {
+        "metric": "対応板材サイズ",
+        "value": "8フィート×20フィート"
+      }
+    ],
+    "resultsQualitative": "生産量増加、作業者負荷平準化、材料歩留り改善、設備のPR効果による企業イメージ向上。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "残業の常態化",
+      "繁忙期の人員不足",
+      "老朽化したシステム"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case18",
+    "title": "調剤機器向けカバー溶接で生産性3倍化、仕上げレス納品を実現",
+    "summary": "調剤機器メーカーの主力サプライヤーである株式会社川西金属は、外観品質が求められるカバー溶接をTIG溶接からハンディファイバーレーザ溶接機FLW-1500MTに切り替え、生産性を大幅に改善し仕上げ工程を削減した。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "FLW-1500MT（ハンディファイバーレーザ溶接機）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case18/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社川西金属",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "溶接・製造"
+    },
+    "challenges": [
+      "efficiency",
+      "quality"
+    ],
+    "challengeDetail": "調剤機器のカバーなど外観品質が求められる製品の溶接において、TIG溶接では時間がかかり、焼けやひずみが発生していた。",
+    "actions": "2023年3月にFLW-1500MTを導入。ファイバーレーザ溶接により熱影響を抑制し、溶接ビードを美しく仕上げる。",
+    "results": [
+      {
+        "metric": "生産性改善（TIG溶接との比較）",
+        "value": "30分→10分（最大3倍）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "使用実績期間",
+        "value": "1年半"
+      }
+    ],
+    "resultsQualitative": "焼けやひずみの発生がほぼなく、仕上げレスで納品可能。溶接ビードが滑らかで美しい。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "工程管理の難しさ",
+      "検査の目視頼み",
+      "品質のばらつき"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case20",
+    "title": "ファイバーレーザ溶接システムで熟練不要・生産性5～10倍を実現",
+    "summary": "板金加工業界の人手不足と技能継承の課題に対し、アマダのファイバーレーザ溶接システム（FLWシリーズ）を導入。非熟練者でも安定した高品質溶接が可能になり、2次作業が大幅削減され、生産性が向上した。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "FLWシリーズ（ファイバーレーザ溶接システム）",
+    "productCategory": "robot",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case20/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "quality"
+    ],
+    "challengeDetail": "板金加工業界での人手不足と若年作業者への技能継承が課題。溶接工程は熟練作業者の手作業に依存し、作業者のスキルにより品質にばらつきが生じていた。",
+    "actions": "複数の導入事例で、ファイバーレーザ溶接システム（FLW-600MT、FLW-1500MT、FLW-3000Le、FLW-6000ENSISe）を段階的に導入。AI-TAS（自動補正機能）により非熟練者でも操作可能な環境を整備。",
+    "results": [
+      {
+        "metric": "生産性向上",
+        "value": "5～10倍"
+      },
+      {
+        "metric": "設置面積削減",
+        "value": "約37%小型化"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入機種数",
+        "value": "3台"
+      },
+      {
+        "metric": "導入期間",
+        "value": "2019年～2024年（5年間）"
+      }
+    ],
+    "resultsQualitative": "ひずみ取りや仕上げなどの2次作業が大幅に軽減。手直し作業が不要になり、ビード面が滑らか。非熟練者でも安定した溶接品質が実現。操作習熟が短期間で可能。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "技能伝承ができない",
+      "品質のばらつき",
+      "検査の目視頼み"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case22",
+    "title": "有機溶剤使用量8割減・工数削減を実現した板金洗浄ソリューション導入",
+    "summary": "板金加工企業3社が、有機溶剤による手拭き脱脂作業の課題に対し、SAIW（スーパーアルカリイオンウォーター）洗浄機を導入。有機溶剤使用量の大幅削減、工数短縮、品質の安定化を実現した。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "SAIWシートメタル洗浄機、SAIW再生機",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case22/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "製造・洗浄工程"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "quality"
+    ],
+    "challengeDetail": "有機溶剤を使った手拭き脱脂作業は工数がかかり、作業者の健康被害（頭痛、手荒れ）と作業品質のバラツキが発生。後工程への油残りや拭き直し作業が発生していた。",
+    "actions": "SAIWシートメタル洗浄機を導入し、手拭き脱脂作業から自動洗浄に転換。SAIW再生機を併用して洗浄液を再利用し、メンテナンス負担を軽減。",
+    "results": [
+      {
+        "metric": "有機溶剤使用量",
+        "value": "8割減（事例②では2ヶ月2缶→半年1缶、事例③ではパーツクリーナー3缶→1缶以下"
+      },
+      {
+        "metric": "洗浄作業時間",
+        "value": "3時間→30分（事例③ブランク工程後）、1日作業→2～3時間（事例②）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入企業数",
+        "value": "3社"
+      },
+      {
+        "metric": "設置台数",
+        "value": "事例①では2台"
+      },
+      {
+        "metric": "防サビ効果",
+        "value": "2～3週間"
+      }
+    ],
+    "resultsQualitative": "拭き残しなどの作業のバラツキが軽減され品質が安定化。後工程への油残りが解消し拭き直し作業がなくなった。作業者の臭いによるめまい・手荒れなどの健康被害が改善。溶接品質の向上。産廃量削減。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "検査の目視頼み",
+      "品質のばらつき",
+      "工程管理の難しさ"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case23",
+    "title": "EGB-6020ATCe×4台導入で曲げ加工の段取り時間を282分から56分に短縮、1日処理件数が7件から17件に倍増",
+    "summary": "板金加工企業が自動金型交換装置付きベンディングマシン「EGB-6020ATCe」4台を導入。段取り時間の大幅短縮と経験の浅い作業者でも安定した品質での加工が可能になり、1日あたりの処理件数が2倍以上に増加、機械稼働率が改善した。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "EGB-6020ATCe（自動金型交換装置付きベンディングマシン）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case23/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社誠工社",
+      "industry": "manufacturing",
+      "size": "従業員数不明（受注月平均3500件、生産個数月平均20万個以上）",
+      "dept": "製造部門（曲げ加工工程）"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "quality"
+    ],
+    "challengeDetail": "曲げ加工は人手がかかり板金加工のボトルネックとなりやすく、経験の浅い作業者による突き当てミスが発生して加工不良につながることがあった。複雑な製品の曲げ順序や突き当て個所を間違えやすく、曲げ不良時の再段取りやコストロスが生産性低下につながっていた。",
+    "actions": "自動金型交換装置（ATC）と3軸バックゲージ、タブレットHMIを搭載した「EGB-6020ATCe」を導入。金型段取り作業を自動化し、ARカメラ映像を使った位置決め支援により、経験の浅い作業者でも正確な曲げ作業が可能に。曲げ加工用CAM「VPSS 4ie BEND」で曲げ加工データを全自動生成し金型段取り回数を最小化。",
+    "results": [
+      {
+        "metric": "段取り時間",
+        "value": "282分→56分"
+      },
+      {
+        "metric": "1日あたりの処理件数",
+        "value": "7件→17件（2倍以上増加）"
+      },
+      {
+        "metric": "機械稼働率",
+        "value": "大幅改善"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入台数",
+        "value": "EGB-6020ATCe 4台"
+      },
+      {
+        "metric": "導入時期",
+        "value": "2024年8月～2025年10月（1号機8月、2号機2025年6月、3・4号機1"
+      }
+    ],
+    "resultsQualitative": "熟練度に関係なく安定した品質での生産が可能となり工程能力が向上。女性従業員の負担軽減（重い金型交換が不要）。タブレットHMIが曲げ作業をサポートして大変便利との評価。属人化が解消され、経験の浅い社員でも即戦力として複雑形状を加工可能に。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "工程管理の難しさ",
+      "技能伝承ができない",
+      "検査の目視頼み",
+      "不良の見逃し"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case24",
+    "title": "小物ベンディングロボット2台体制で残業時間10～15%削減",
+    "summary": "アミューズメント機器部品メーカーの正幸産業は、老朽化した17年前のロボットシステムをEGB-6013ARceに更新し2台体制に。加工可能な製品種が増え、夜間稼働率向上により残業時間が削減された。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "EGB-6013ARce（電動サーボ式小物ベンディング自動化システム）",
+    "productCategory": "robot",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case24/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "正幸産業株式会社",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "製造部門"
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "曲げ工程がボトルネックとなり、残業が常態化していた。老朽化した17年前のロボットシステムの更新が必要だった。",
+    "actions": "EGB-6013ARceと汎用ベンダーEGB-6020eを導入し、小物向けベンディングロボット2台体制に変更。日中は大きめ製品、夜間は小さい製品と柔軟に使い分けて運用。",
+    "results": [
+      {
+        "metric": "残業時間削減率",
+        "value": "10～15%削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "曲げ工程のマシン台数",
+        "value": "13台"
+      },
+      {
+        "metric": "ベンディングロボット台数",
+        "value": "2台"
+      },
+      {
+        "metric": "金型配置エリア拡大率",
+        "value": "10%以上"
+      }
+    ],
+    "resultsQualitative": "加工可能な製品種が大幅に増加。従来は複数マシンで分割加工していた製品をEGB-6013ARceで完結加工できるようになった。夜間稼働率が高まり、スケジュール運転の中断が減少。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "残業の常態化",
+      "老朽化したシステム",
+      "工程管理の難しさ"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case25",
+    "title": "ファイバーレーザマシン導入で厚板加工を30時間から10時間に短縮",
+    "summary": "鋼材加工企業2社がアマダのファイバーレーザマシン「VENTIS-6225AJe」を導入。ビーム軌跡制御技術により、厚板40mm対応と加工速度3～5倍の向上を実現。従来のガス切断やレーザとの組み合わせで必要だった30時間相当の作業を1日10時間で完結させた。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "VENTIS-6225AJe（ファイバーレーザマシン）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case25/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "樫本商店、倉敷動力工業",
+      "industry": "manufacturing",
+      "size": "従業員30名以下～中堅企業",
+      "dept": "製造・加工部門"
+    },
+    "challenges": [
+      "efficiency",
+      "labor",
+      "leadtime"
+    ],
+    "challengeDetail": "厚板鋼材の切断加工において、従来のガス溶断やプラズマ切断では処理に時間がかかり、人手不足への対応が課題。倉敷動力工業では30時間以上の稼働を要していた。樫本商店では省人化と環境対応の両立が課題。",
+    "actions": "アマダのファイバーレーザマシン「VENTIS-6225AJe（9kW）」をセカンドステーションと棚システム「AS-6225」と組み合わせて導入。ビーム軌跡制御技術「LBC」により、高出力に頼らず厚板を高速・高精度で加工できる設備を整備。",
+    "results": [
+      {
+        "metric": "加工時間削減",
+        "value": "30時間→10時間"
+      },
+      {
+        "metric": "加工速度向上",
+        "value": "3～5倍"
+      },
+      {
+        "metric": "年間加工量増加（倉敷動力工業）",
+        "value": "7～10%増"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "月間加工量（倉敷動力工業）",
+        "value": "約300トン"
+      },
+      {
+        "metric": "VENTIS-AJeでの処理量比率",
+        "value": "月間約150トン（全体の約50%）"
+      },
+      {
+        "metric": "倉敷動力工業の2026年目標年間加工量",
+        "value": "3700～3800トン"
+      },
+      {
+        "metric": "樫本商店の導入台数",
+        "value": "ファイバーレーザマシン7台"
+      },
+      {
+        "metric": "対応厚板",
+        "value": "40mm対応（従来：30mm）"
+      }
+    ],
+    "resultsQualitative": "板厚40mmの切断面品質が良好。40mm対応により営業活動が強化された。テーパー・ノッチが少なく安定稼働。ガス切断から内製化への転換で短納期対応と利益率改善を実現。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "加工工程の長時間化",
+      "繁忙期の人員不足",
+      "品質のばらつき"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case26",
+    "title": "医療機器部品向け複合マシン増設で生産能力2～2.5倍を実現",
+    "summary": "斎藤板金工業所は大手医療機器メーカーからの増産要請に対応するため、ファイバーレーザ複合マシン「ACIES-2512T-AJe」と自動倉庫「MARS」を導入。工程統合と金型段取りレス化により、外注割合を10～15%から5%以下に削減し、生産能力を2～2.5倍に向上させた。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "ACIES-2512T-AJe、MARS自動倉庫",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case26/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社斎藤板金工業所",
+      "industry": "manufacturing",
+      "size": "従業員規模不明",
+      "dept": "製造部"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "leadtime"
+    ],
+    "challengeDetail": "医療機器メーカーからの増産要請に対応する必要がある一方、金型交換や2次加工の手作業が多く、工程間の仕掛り品滞留や配膳のムダが発生していた。",
+    "actions": "複合マシン「ACIES-2512T-AJe」（最大300型収納の金型ストレージ搭載）と自動倉庫「MARS（8段6列）」を導入し、金型段取りレス化、成形加工などの2次加工の機内完結、テイクアウトローダーによる製品の自動積載を実現。",
+    "results": [
+      {
+        "metric": "生産能力向上",
+        "value": "2～2.5倍"
+      },
+      {
+        "metric": "外注割合削減",
+        "value": "10～15%から5%以下"
+      },
+      {
+        "metric": "2次加工エリアの作業者削減",
+        "value": "4名から2名"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "工場面積拡大",
+        "value": "約1.6倍"
+      }
+    ],
+    "resultsQualitative": "柔軟な納期対応が可能になり、利益率も改善。BCP対応を強化し、機械トラブル発生時も供給責任を果たせる体制を整備。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "工程管理の難しさ",
+      "重労働の作業"
+    ]
+  },
+  {
     "id": "www-shonan-helpers-jp-website-web-plan-customer",
     "title": "ホームページ制作による顧客獲得の拡大（複数事例）",
     "summary": "ペット葬儀、歯科医院、魚屋など複数の中小企業が、ホームページ制作サービスを導入することで、オンラインでの認知向上と顧客獲得を実現した事例集。タウンページなどの従来型広告からWebへの転換により、営業範囲拡大と問い合わせ増加を達成。",
@@ -173627,6 +174543,389 @@
     ]
   },
   {
+    "id": "biz-moneyforward-com-case-12773",
+    "title": "IT人材サービス企業が福利厚生賃貸を導入、実質ゼロコストで社員還元を実現",
+    "summary": "IT人材採用支援企業が、社員への還元と採用競争力強化のため、マネーフォワード クラウド福利厚生賃貸を導入。導入・運用コストが実質ゼロで、不動産管理業務も代行されることで、管理部門の負担を軽減しながら福利厚生を充実させた。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド福利厚生賃貸",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://biz.moneyforward.com/case/12773/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社アイデンティティー",
+      "industry": "hr-service",
+      "size": "51～300名",
+      "dept": "管理部門"
+    },
+    "challenges": [
+      "cost",
+      "labor",
+      "hr"
+    ],
+    "challengeDetail": "社員に還元できる職場環境を整えたいという経営方針がある一方で、住宅福利厚生は導入にコストがかかると認識していた。また、管理部門における不動産管理会社とのやりとりなど関連業務の手間が課題だった。",
+    "actions": "導入・運用コストが実質ゼロで開始でき、不動産管理会社とのやりとりや関連業務の大部分を代行してくれるマネーフォワード クラウド福利厚生賃貸を導入した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "企業規模",
+        "value": "51～300名"
+      }
+    ],
+    "resultsQualitative": "社員に還元できる職場環境の実現と、採用活動・従業員満足度の向上への期待。管理部門の業務負担軽減。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2025/04/IMG_2091-2048x1536-1.jpg",
+    "tags": [
+      "採用しても定着しない",
+      "経費精算の手間",
+      "アカウント管理の煩雑さ"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-12799",
+    "title": "小さな工数で福利厚生制度を拡充、運用負荷を軽減",
+    "summary": "スタートアップ企業が福利厚生制度の拡充を課題としていたため、マネーフォワード クラウド福利厚生賃貸を導入。導入・運用を全面サポートしてもらい、小さな工数で制度拡充を実現した。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド福利厚生賃貸",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://biz.moneyforward.com/case/12799/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社カンリー",
+      "industry": "it",
+      "size": "従業員70名（事業規模51～300名）",
+      "dept": "コーポレート部"
+    },
+    "challenges": [
+      "labor",
+      "hr"
+    ],
+    "challengeDetail": "福利厚生制度の拡充を検討していたが、社内リソースが潤沢ではなく、導入による業務増加が懸念事項だった。",
+    "actions": "マネーフォワード クラウド福利厚生賃貸を導入し、導入と運用を全面的にサポートしてもらった。社員説明会の実施、データ加工、労務・経理実務に関する説明を受けた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "70名"
+      }
+    ],
+    "resultsQualitative": "特段の負荷を感じることなく福利厚生制度の拡充が実現でき、社員説明会のアーカイブ化により新入社員向けの汎用性も確保された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2025/04/canly-interview.png",
+    "tags": [
+      "経費精算の手間",
+      "アカウント管理の煩雑さ",
+      "研修の負担"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-13685",
+    "title": "法人化時のバックオフィス一気通貫で会社設立から会計管理まで効率化",
+    "summary": "コンサルティング業の法人化に際し、会社設立手続きから会計・請求書管理までをマネーフォワード クラウドで一元化。会社設立時のスムーズさとコスト面の柔軟性を評価し、バックオフィスツールも同じプラットフォームに統一した。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド（会社設立・会計・請求書）",
+    "productCategory": "accounting",
+    "sourceUrl": "https://biz.moneyforward.com/case/13685/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "JAENコーディネーター合同会社",
+      "industry": "construction",
+      "size": "法人1～10名",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "法人化に伴うバックオフィス構築にあたり、初期費用と固定費を抑制しながら会社設立と会計業務をスムーズに進める必要があった。",
+    "actions": "会社設立手続きをマネーフォワード クラウド会社設立で実施し、その後も会計・請求書などのバックオフィスツールを同じプラットフォーム（法人プラン）に統一。領収書のアップロード機能やモバイルアプリを活用して経費管理の効率化を推進。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "事業規模",
+        "value": "1～10名"
+      }
+    ],
+    "resultsQualitative": "会社設立から会計管理までの一気通貫の使いやすさにより、バックオフィス構築がスムーズに進行。複数のサービスを別個に契約する手間が削減され、コスト面でも柔軟性が得られた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2025/09/Group-627940.png",
+    "tags": [
+      "請求処理に時間",
+      "経費精算の手間",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-13947",
+    "title": "M&A時の会計システム立ち上げの負荷軽減とグループガバナンスの両立を実現",
+    "summary": "GOグループはM&Aによる急速な事業拡大に伴い、子会社設立時の会計システム導入と親会社のガバナンス強化の両立に課題を抱えていた。マネーフォワード クラウド会計Plusを導入し、既存の業務フロー活用とシステム連携により、少人数でも自律的に運用できる会計基盤を構築した。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド会計Plus（請求書、債権管理、経費、固定資産、契約、ERP含む）",
+    "productCategory": "accounting",
+    "sourceUrl": "https://biz.moneyforward.com/case/13947/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "GO株式会社",
+      "industry": "it",
+      "size": "法人51～300名",
+      "dept": "経営戦略本部 財務マネジメントグループ"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "quality"
+    ],
+    "challengeDetail": "M&A後の子会社設立時において経理システムのフロー設計・導入・運用が同時に発生し負荷が高かった。上場準備段階でのグループ統制機能整備が急務である一方、親会社ルールの適用が子会社の事業スピードの低下を招く可能性があった。",
+    "actions": "別の子会社で既に導入実績があったマネーフォワード クラウドを選定。既存フローの再利用、クラウド上の承認ガバナンス強化、マスタ設定が100％でなくても取引開始できる柔軟性を活用し、段階的な統制整備を実現した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象グループ会社",
+        "value": "複数の子会社（サイネージ広告事業、配送取次業、人材採用プラットフォーム事業など）"
+      }
+    ],
+    "resultsQualitative": "既存フローの素早い展開により新グループイン会社への導入が容易化。少人数体制でもミスなく回せる仕組みが構築され、事業立ち上げ速度を落とすことなくグループガバナンスが強化された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2025/10/GOグループ-サムネイル.png",
+    "tags": [
+      "システムの乱立",
+      "押印・承認の遅れ",
+      "業務の属人化",
+      "監査対応の負担"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-14008",
+    "title": "現役高校生起業家が会計ソフトで知識ゼロから経理を習得",
+    "summary": "経理知識ゼロの高校生起業家が、法人設立と同時にマネーフォワード クラウド会計を導入。自動仕訳機能と視覚的なUIにより、週1時間弱の作業で初期業務を完結させ、やりながら会計知識を習得できた。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド会計",
+    "productCategory": "accounting",
+    "sourceUrl": "https://biz.moneyforward.com/case/14008/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社SAHARA",
+      "industry": "retail",
+      "size": "1～10名",
+      "dept": "バックオフィス"
+    },
+    "challenges": [
+      "standardize",
+      "efficiency"
+    ],
+    "challengeDetail": "経理・会計知識がゼロの状態で法人を設立し、複雑な仕訳業務を自力で対応する必要があった。また事業初期段階でコスト抑制も課題だった。",
+    "actions": "マネーフォワード クラウド会計を導入し、自動仕訳機能により候補を視覚的に選択できる仕組みを活用。クラウド型サービスで海外からもアクセス可能な環境を構築。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "事業規模",
+        "value": "1～10名のひとり法人"
+      },
+      {
+        "metric": "月間作業時間",
+        "value": "週1時間弱"
+      }
+    ],
+    "resultsQualitative": "会計知識がゼロの状態でも直感的な操作で経理業務を開始でき、やりながら会計知識を習得できた。初期費用を抑えながら事業に集中できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2025/11/株式会社SAHARA様サムネ.png",
+    "tags": [
+      "請求処理に時間",
+      "経費精算の手間",
+      "給与計算の手間"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-14512",
+    "title": "年間1万件の経費精算をクラウド化。小口現金廃止と手入力削減で経理業務を平準化",
+    "summary": "警備会社が年間約1万件の経費精算を紙・Excel・小口現金で処理していた。マネーフォワード クラウド経費とビジネスカード、クラウド債務支払を導入し、キャッシュレス化と申請から仕訳までの自動化を実現。経理部の手入力作業と現金管理の手間が大幅に軽減され、業務が平準化された。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド経費、マネーフォワード ビジネスカード、マネーフォワード クラウド債務支払",
+    "productCategory": "saas",
+    "sourceUrl": "https://biz.moneyforward.com/case/14512/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "富士防災警備株式会社",
+      "industry": "hr-service",
+      "size": "従業員約1,000名（1001名以上）",
+      "dept": "経理部"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "cost"
+    ],
+    "challengeDetail": "本社・全国約20か所の事業所で発生する経費を小口現金で精算していた。年間約1万件の経費申請をExcelに転記後、経理担当者が手入力で会計システムに入力する運用であり、月末に処理が集中していた。また、請求書も紙中心で月300件の手入力作業があり、支払ミスが発生していた。",
+    "actions": "マネーフォワード クラウド経費を導入してスマートフォンでの領収書撮影・申請を可能にし、ビジネスカードを併用してキャッシュレス化を推進。クラウド債務支払で請求書を一元管理。トライアル運用後、全国展開時には現場向けにシンプルなマニュアルを作成し、問い合わせ体制を整備した。",
+    "results": [
+      {
+        "metric": "経理部の手入力作業",
+        "value": "大幅削減"
+      },
+      {
+        "metric": "請求書処理のミス",
+        "value": "大幅削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "経費申請件数（年間）",
+        "value": "約1万件"
+      },
+      {
+        "metric": "経費申請件数（月間）",
+        "value": "約800件"
+      },
+      {
+        "metric": "請求書処理件数（月間）",
+        "value": "約300件"
+      },
+      {
+        "metric": "事業所数",
+        "value": "本社を含む全国約20か所"
+      }
+    ],
+    "resultsQualitative": "申請が届いたものから順次確認・承認でき、月末に集中していた業務が平準化された。複数名で承認作業を分担しやすくなり、休日出勤の負担が軽減。事業所の事務員は警備員への現金手渡しが不要になった。現金管理と銀行での引き出し、小銭準備の手間が削減。請求書を一元管理することで支払漏れ・二重支払い・金額間違いの防止が実現。システム上の可視化により内部統制が向上。チャット機能が社内コミュニケーションのきっかけにもなった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2026/06/入口.jpg",
+    "tags": [
+      "経費精算の手間",
+      "手作業の転記",
+      "月末の残業",
+      "多拠点の管理"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-14650",
+    "title": "バーチャルカード導入で即日与信枠変更を実現、経費立替負担と申請漏れリスクを解消",
+    "summary": "オンライン教育企業が従業員の経費立替負担と申請漏れのリスクを課題としていた。マネーフォワード ビジネスカード（バーチャルカード）を導入し、管理画面からの即日与信枠変更と、入退社時の手軽なカード発行・停止で経費管理を効率化した。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード ビジネスカード",
+    "productCategory": "saas",
+    "sourceUrl": "https://biz.moneyforward.com/case/14650/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社アタム",
+      "industry": "education",
+      "size": "11～50名",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "リモート勤務中心のため従業員が経費を立て替えており、一時的負担が大きく経費申請が後回しになるケースがあった。経営者視点では経費の可視性が低く、申請漏れリスクがあった。",
+    "actions": "マネーフォワード ビジネスカード（バーチャルカード）を導入。既存の会計・経費管理ツールと統一することで、従業員の移行をスムーズにした。ネット決済中心の支払い体制にあわせてバーチャルカードを選択し、紛失リスク低減と無料発行手数料による柔軟な管理を実現した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "従業員規模",
+        "value": "11～50名"
+      }
+    ],
+    "resultsQualitative": "大規模イベント時の急な高額出費に対応する際、管理画面から与信枠をボタン一つで即日変更でき、決済を当日中に完了できた。バーチャルカードの発行・停止を入退社に合わせて気軽に行えるようになり、管理面での負担が軽減された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2026/07/PXL_20250724_0611356862-1-1-1.png",
+    "tags": [
+      "経費精算の手間",
+      "申請漏れ",
+      "経費の可視性不足"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-14937",
+    "title": "表計算ソフト依存の属人化を脱却し、ノウハウ継承とレビュー業務を標準化",
+    "summary": "電力インフラ企業が、前任者作成の複雑な表計算ソフト依存の連結決算業務から脱却するため、クラウド連結会計システムを導入。属人化を解消し、誰でも対応できる標準化されたプロセスとエラー原因の可視化により、レビューと引き継ぎ業務がスムーズになった。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド連結会計",
+    "productCategory": "accounting",
+    "sourceUrl": "https://biz.moneyforward.com/case/14937/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社東光高岳",
+      "industry": "energy",
+      "size": "従業員1001名以上",
+      "dept": "経理部門"
+    },
+    "challenges": [
+      "standardize",
+      "labor",
+      "data"
+    ],
+    "challengeDetail": "前任者が作成した表計算ソフトに依存した属人化が発生しており、複雑なファイル構造により新しい科目追加時の関数ズレ修正やエラー原因特定が困難。フォーマット作成者の定年退職を控え、ノウハウ継承と業務継続に対するリスクを抱えていた。",
+    "actions": "マネーフォワード クラウド連結会計を導入し、表計算ソフト依存から脱却。システム上で相殺差額の発生箇所を自動一覧化し、修正仕訳の経緯や根拠資料を一元管理できるようにした。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "連結子会社数",
+        "value": "7社"
+      },
+      {
+        "metric": "導入期間",
+        "value": "約4ヶ月"
+      },
+      {
+        "metric": "実務担当者数",
+        "value": "2名"
+      }
+    ],
+    "resultsQualitative": "属人化していた表計算ソフトから脱却し、誰でも対応できる業務の標準化とノウハウ継承の土台が整った。エラーの原因特定がしやすくなり、過去の経緯や根拠を一元管理することで、レビューと実務担当者とのコミュニケーションがスムーズになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2026/10/計器センターIR広報撮影_under1000kb.jpg",
+    "tags": [
+      "Excel管理の限界",
+      "業務の属人化",
+      "引き継ぎ困難",
+      "手作業の転記"
+    ]
+  },
+  {
+    "id": "biz-moneyforward-com-case-2296",
+    "title": "ピラティススタジオ経営者がクラウド確定申告で経営意識向上、リアルタイム売上把握を実現",
+    "summary": "ピラティススタジオ経営者が、青色申告対応のためマネーフォワード クラウド確定申告を導入。丁寧なガイドブックにより簡単に運用開始でき、外出先からもリアルタイムで収支を確認できるようになった。これにより経営判断がスピーディーになり、売上改善に向けた課題抽出と対策実行が可能になった。",
+    "vendor": "biz.moneyforward.com",
+    "product": "マネーフォワード クラウド確定申告",
+    "productCategory": "accounting",
+    "sourceUrl": "https://biz.moneyforward.com/case/2296/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "MI Pilates Studio",
+      "industry": "other-industry",
+      "size": "個人事業主",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "個人事業主として複数施設でピラティスレッスンを提供する中、青色申告に必要な複式簿記の知識がなく、Excelでの確定申告対応が難しくなった。また、経営データをリアルタイムで把握し、スピーディーな意思決定を行う仕組みが必要だった。",
+    "actions": "マネーフォワード クラウド確定申告を導入し、公式ガイドブックに沿って設定。銀行やカードのデータ連携機能を活用して、日々の収支をリアルタイムで自動取り込み。外出先やスマホからも経営データを確認できる環境を構築した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "経営形態",
+        "value": "個人事業主・複数施設でのレッスン提供"
+      }
+    ],
+    "resultsQualitative": "経営に対する意識が大幅に向上。リアルタイムで売上や収支を確認できるようになり、スピーディーな経営判断が可能に。施設ごとの売上分析から課題を抽出し、改善策を迅速に実行できるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.moneyforward.com/case/wp-content/uploads/2017/09/IMG_3032_700-420.jpg",
+    "tags": [
+      "Excel管理の限界",
+      "数字の集計に時間",
+      "リアルタイムに把握できない"
+    ]
+  },
+  {
     "id": "biz-mxmobiling-co-jp-case-detail01",
     "title": "大林組のCCUS対応タブレット導入をBPOで一元管理、運用業務を効率化",
     "summary": "建設キャリアアップシステム（CCUS）導入に伴い、顔認証対応タブレットの現場配置・保守運用業務が増加。既存のLCMサービスを活かし、キッティングからサポートデスク運営まで一気通貫でアウトソース。管理業務の工数低減と柔軟な納品スケジュールを実現。",
@@ -174810,6 +176109,57 @@
       "応募が集まらない",
       "採用しても定着しない",
       "一次対応の属人化"
+    ]
+  },
+  {
+    "id": "biz-techoffer-jp-casestudy-casestudy-5",
+    "title": "技術キーワードマッチングで機電系学生の母集団形成に成功、早期選考参加者の半数を獲得",
+    "summary": "地方BtoB企業のウシオ電機は、機電系・物理系学生への採用アプローチに課題を抱えていた。技術キーワードに基づいたオファー型採用支援サービスTECH OFFERを導入し、ターゲット層への効率的なマッチングを実現。早期選考参加者の半数がTECH OFFER経由となった。",
+    "vendor": "techoffer.jp",
+    "product": "TECH OFFER",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://biz.techoffer.jp/casestudy/casestudy-5/",
+    "collectedAt": "2026-10-13T00:00:00.000Z",
+    "customer": {
+      "name": "ウシオ電機株式会社",
+      "industry": "manufacturing",
+      "size": "従業員5001名以上",
+      "dept": "採用"
+    },
+    "challenges": [
+      "sales",
+      "hr"
+    ],
+    "challengeDetail": "地方・BtoB企業として採用競争に勝ちづらく、従来ターゲットだった機電系・物理系学生の母集団形成に苦戦していた。他のダイレクトリクルーティングサービスでも手間の割に効率的なアプローチができていなかった。",
+    "actions": "技術キーワードに基づいたオファー型採用支援サービスTECH OFFERを導入し、学生の専攻分野と企業の技術・事業領域のマッチングを精密に行うことで、ターゲット層への効率的なアプローチを実現した。",
+    "results": [
+      {
+        "metric": "早期選考参加者に占めるTECH OFFER経由の割合",
+        "value": "半数"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入時期",
+        "value": "導入1年目（取材日2020年2月）"
+      },
+      {
+        "metric": "全体母集団数",
+        "value": "数百名"
+      },
+      {
+        "metric": "母集団に占めるTECH OFFER経由の割合",
+        "value": "4割以上"
+      }
+    ],
+    "resultsQualitative": "ターゲット層の学生に対して自社とのマッチングを認識させることができ、オファーがなければエントリーしなかったという学生も多く獲得できた。学生が自らの専攻分野に関連する企業の他の事業領域も発見し、アピールするようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.techoffer.jp/wp-content/uploads/2020/02/ushio-top.jpg",
+    "tags": [
+      "応募が集まらない",
+      "リード獲得の停滞",
+      "採用しても定着しない"
     ]
   },
   {
@@ -263138,16 +264488,15 @@
     ],
     "challengeDetail": "新しい事業価値創造に向けてデジタルの知見を獲得する必要があった。クラウド技術を活用した事業部門への貢献、PoC実施のための人材確保と育成が課題であった。",
     "actions": "アジャイル開発センターを2017年に設立し、サーバーワークスのサポートを受けながらAWS上でのプログラミング開発トレーニング、アジャイル開発手法の学習、PoCの実施を行った。週1回のベースで開発チームがトレーニングを受け、実際にアプリケーション構築を通じて学習した。",
-    "results": [
-      {
-        "metric": "情報システム部の約1/4のメンバー",
-        "value": "AWS認定資格取得"
-      }
-    ],
+    "results": [],
     "scale": [
       {
         "metric": "チーム規模の拡大",
         "value": "2017年1チーム4名から現在2チーム10名"
+      },
+      {
+        "metric": "情報システム部の約1/4のメンバー",
+        "value": "AWS認定資格取得"
       }
     ],
     "resultsQualitative": "開発チームがプログラミングやシステム開発の大変さを経験し、自律的にクラウド上でアプリケーション開発を推進できるようになった。PoCを通じてユーザー側の要望に基づいた実装やデザインの改善が迅速に進むようになり、本番サービス適用に向けた開発体制が確立された。",
@@ -412363,6 +413712,135 @@
       "紙の書類処理",
       "手作業の転記",
       "二重入力"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case15",
+    "title": "FLW-3000ENSISで未熟練者でも高品質溶接を実現",
+    "summary": "エヅリコ・エンジニアリングは、食品向け包装機械のSUS304溶接において高度な職人スキルが必要だった課題に対し、FLW-3000ENSISを導入。経験の浅い作業者でも高品質な寸法精度を保つ溶接が可能になった。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "FLW-3000ENSIS",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case15/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社エヅリコ・エンジニアリング",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "板金・溶接"
+    },
+    "challenges": [
+      "labor",
+      "quality"
+    ],
+    "challengeDetail": "SUS304を使用する食品向け包装機械の溶接は高度な職人スキルが必要であり、一人前の溶接作業者育成に大きな時間と労力がかかっていた。",
+    "actions": "ファイバーレーザ溶接システムFLW-3000ENSISを導入し、職人の技能や経験をプログラムと加工条件として保存することで、暗黙知をデジタル化した。TAS（ティーチング・アシスト・システム）により、特殊なロボット操作スキルなしでも操作可能。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "導入時期",
+        "value": "2021年"
+      }
+    ],
+    "resultsQualitative": "溶接技能が必要な製品でも、寸門精度を確保しつつ高品質な仕上げ加工が可能となった。今後は3次元CAD/CAM技術を活用したオフラインティーチングにより、プログラムの外段取り化に挑戦予定。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "技能伝承ができない",
+      "新人教育のばらつき",
+      "検査の目視頼み"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case19",
+    "title": "IoTサポートによる作業者の操作習熟支援と不具合対応時間の短縮",
+    "summary": "クリーンルーム装置製造の赤土製作所は、初導入マシンの操作習熟支援とトラブル対応を目的にIoTサポートを活用。チャットやビデオ通話による遠隔サポートにより、不具合解消までの時間を短縮し、マシンの安定稼働を実現した。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "V-factory IoTサポート",
+    "productCategory": "iot",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case19/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社赤土製作所",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "製造部板金課"
+    },
+    "challenges": [
+      "efficiency",
+      "quality"
+    ],
+    "challengeDetail": "初導入マシンの操作に作業者の知識が未熟であり、不具合発生時の対応に時間がかかっていた。従来は電話での状況説明では伝わりにくく、復旧までのプロセスが不明確だった。",
+    "actions": "2019年にファイバーレーザ複合マシン「LC-2515C1AJ」導入時にIoTサポートを活用開始。2022年にはベンディングマシン2台とオンラインサポートキット（タブレット端末）をセットで導入し、チャットやビデオ通話による遠隔サポートを運用。",
+    "results": [
+      {
+        "metric": "不具合解消・復旧までの時間",
+        "value": "短縮（定量値なし）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入マシン台数",
+        "value": "3台"
+      },
+      {
+        "metric": "導入開始時期",
+        "value": "2019年"
+      }
+    ],
+    "resultsQualitative": "ビデオ通話で動画を共有しながら対応を受けることで、対応が楽になった。電話での状況説明の課題が解決され、対応方法が明確に指示されるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "技能伝承ができない",
+      "電話・FAX中心",
+      "対応履歴が残らない"
+    ]
+  },
+  {
+    "id": "www-sheetmetal-amada-co-jp-column-case-case21",
+    "title": "精工理化医療電機：ハンディレーザ溶接機とロボット導入で作業者育成課題を解消",
+    "summary": "半導体洗浄装置タンク製造で、熟練者育成が困難なTIG溶接からファイバーレーザ溶接に転換。さらに協働ロボット「CR-700W」を導入し、品質バラツキを抑制。外国人作業者でも習熟度が低くても安定した溶接が可能になった。",
+    "vendor": "sheetmetal.amada.co.jp",
+    "product": "FLW-1500MT、CR-700W",
+    "productCategory": "robot",
+    "sourceUrl": "https://www.sheetmetal.amada.co.jp/column/case/case21/",
+    "collectedAt": "2026-10-24T00:00:00.000Z",
+    "customer": {
+      "name": "精工理化医療電機株式会社",
+      "industry": "manufacturing",
+      "size": "記載なし",
+      "dept": "溶接部門"
+    },
+    "challenges": [
+      "labor",
+      "quality",
+      "standardize"
+    ],
+    "challengeDetail": "得意先の増産要求に対応するため、ステンレス精密溶接が可能な作業者の育成が大きな課題。TIG溶接は高い技術が必要で、品質バラツキが出やすく、熟練者育成に長時間要する。",
+    "actions": "2023年10月にファイバーレーザ溶接機「FLW-1500MT」を導入し、2024年10月に協働ロボット「CR-700W」を後付け導入。ロボットのティーチングを簡素化し、未経験者でも操作可能に。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "タンク月産数量",
+        "value": "毎月10～100個"
+      },
+      {
+        "metric": "その他ステンレス製品月産数量",
+        "value": "月産1～50個"
+      },
+      {
+        "metric": "導入から評価までの期間",
+        "value": "半年"
+      }
+    ],
+    "resultsQualitative": "習熟度が十分でない作業者でも簡単に操作できるようになり、ロボットによる品質安定化が実現。リピートロット案件で効果が出ることを期待。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "技能伝承ができない",
+      "品質のばらつき",
+      "繁忙期の人員不足"
     ]
   },
   {
