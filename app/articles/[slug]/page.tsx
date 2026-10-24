@@ -1,7 +1,13 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { allArticles, getArticle } from "../../../lib/articles";
-import ArticleView from "../../../components/articles/ArticleView";
+import Wakaremichi from "../../../components/articles/Wakaremichi";
+import Genba from "../../../components/articles/Genba";
+import Dounyumae from "../../../components/articles/Dounyumae";
+import Chizu from "../../../components/articles/Chizu";
+import Ekkyou from "../../../components/articles/Ekkyou";
+import Butaiura from "../../../components/articles/Butaiura";
+import Sen from "../../../components/articles/Sen";
 
 /* オリジナル記事の本番ルート。format に応じてテンプレートを出し分ける。
    記事を1本増やす＝ content/articles/ にJSONを1つ置く、だけ。 */
@@ -28,5 +34,22 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const a = getArticle(decodeURIComponent((await params).slug));
   if (!a) notFound();
 
-  return <ArticleView article={a} />;
+  switch (a.format) {
+    case "wakaremichi":
+      return <Wakaremichi article={a} />;
+    case "genba":
+      return <Genba article={a} />;
+    case "dounyumae":
+      return <Dounyumae article={a} />;
+    case "chizu":
+      return <Chizu article={a} />;
+    case "ekkyou":
+      return <Ekkyou article={a} />;
+    case "butaiura":
+      return <Butaiura article={a} />;
+    case "sen":
+      return <Sen article={a} />;
+    default:
+      notFound();
+  }
 }

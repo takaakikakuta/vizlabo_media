@@ -15,8 +15,6 @@ const nextConfig: NextConfig = {
     APP_AWS_ACCESS_KEY_ID: process.env.APP_AWS_ACCESS_KEY_ID ?? "",
     APP_AWS_SECRET_ACCESS_KEY: process.env.APP_AWS_SECRET_ACCESS_KEY ?? "",
     BEDROCK_MODEL_ID: process.env.BEDROCK_MODEL_ID ?? "",
-    // 公開前記事のプレビュー（/preview/articles/<slug>?key=...）の合言葉。空ならプレビューは常に 404
-    PREVIEW_KEY: process.env.PREVIEW_KEY ?? "",
   },
 };
 

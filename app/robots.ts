@@ -17,8 +17,8 @@ const BLOCKED_BOTS = [
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      // 試作ページ・問い合わせフォーム・記事プレビューは誰にも巡回させない
-      { userAgent: "*", allow: "/", disallow: ["/proposal", "/contact", "/inquiry", "/preview"] },
+      // 試作ページと問い合わせフォームは誰にも巡回させない
+      { userAgent: "*", allow: "/", disallow: ["/proposal", "/contact", "/inquiry"] },
       ...BLOCKED_BOTS.map((userAgent) => ({ userAgent, disallow: "/" })),
     ],
     sitemap: `${SITE}/sitemap.xml`,
