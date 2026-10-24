@@ -122,10 +122,10 @@ if (!exists(manualPath)) {
     column: { title: "", url: "", desc: "" },
     notice: {
       label: "AI事例サジェスト（無料）",
-      title: "貴社のURLを入れるだけで、似た事例が届きます",
-      desc: "AIが同じ業界・同じ困りごとの事例を選んで、メールでお届けします。",
+      title: "今週の事例に、貴社に近いものはありましたか？",
+      desc: "なければ、貴社のURLを入れるだけで、AIが同じ業界・同じ困りごとの事例を選んでメールでお送りします。",
       url: "https://vizlabo.com/suggest",
-      cta: "試してみる",
+      cta: "近い事例を送ってもらう",
     },
     afterword: "",
   }, null, 2), "utf-8");
