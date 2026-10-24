@@ -133,6 +133,27 @@ if (!exists(manualPath)) {
 }
 const m = readJson(manualPath);
 
+// note の記事は OGP 画像（アイキャッチ）とタイトルを自動で取りに行く。取れたら手書き欄にも書き戻す（次回から再取得しない）
+async function fillFromOgp(n) {
+  if (!n || !n.url || (n.image && n.title)) return false;
+  try {
+    const res = await fetch(n.url, { headers: { "User-Agent": "Mozilla/5.0 (compatible; jirei-mania-newsletter/1.0)" }, signal: AbortSignal.timeout(15000) });
+    if (!res.ok) return false;
+    const h = await res.text();
+    const meta = (p) => {
+      const r = h.match(new RegExp(`<meta[^>]+property=["']og:${p}["'][^>]+content=["']([^"']+)["']`, "i"))
+        || h.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:${p}["']`, "i"));
+      return r ? r[1].replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'") : "";
+    };
+    let changed = false;
+    if (!n.image && meta("image")) { n.image = meta("image"); changed = true; }
+    if (!n.title && meta("title")) { n.title = meta("title").replace(/｜vizlabo$/, ""); changed = true; }
+    return changed;
+  } catch { return false; }
+}
+const filled = (await Promise.all([fillFromOgp(m.sugoi), fillFromOgp(m.column)])).some(Boolean);
+if (filled) fs.writeFileSync(manualPath, JSON.stringify(m, null, 2), "utf-8");
+
 // ── 部品
 const sectionHead = (label, title) => `
 <tr><td style="padding:36px 0 12px 0;border-bottom:2px solid ${C.ink};">
@@ -169,6 +190,7 @@ function noteBlock(label, n, key) {
   const href = utm(n.url, key);
   return `
 <tr><td style="padding:18px 0;">
+  ${n.image ? `<a href="${esc(href)}"><img src="${esc(n.image)}" width="544" alt="" style="display:block;width:100%;max-width:544px;height:auto;border:1px solid ${C.line2};margin-bottom:14px;"></a>` : ""}
   <a href="${esc(href)}" style="font-family:${SERIF};font-size:17px;line-height:1.55;color:${C.ink};text-decoration:none;font-weight:bold;">${esc(n.title)}</a>
   ${n.desc ? `<div style="font-size:13px;line-height:1.85;color:${C.body};margin-top:6px;">${esc(n.desc)}</div>` : ""}
   ${button(href, "noteで読む")}
