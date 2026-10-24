@@ -103,6 +103,13 @@ for (const c of newCases) {
   highlights.push({ c, r });
   if (highlights.length >= 3) break;
 }
+// 同じ提供元ばかりの週は3つに満たないので、2周目は提供元の重複を許して埋める
+for (const c of newCases) {
+  if (highlights.length >= 3) break;
+  if (highlights.some((h) => h.c.id === c.id)) continue;
+  const r = (c.results || []).find((x) => /→/.test(x.value) && /\d/.test(x.value));
+  if (r) highlights.push({ c, r });
+}
 
 // ── 手書き欄（無ければ雛形を作る）
 fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -233,7 +240,7 @@ ${days.map(dayRow).join("")}
 <tr><td style="padding-top:12px;"><a href="${esc(utm(`${SITE}/days`, "day-all"))}" style="font-size:13px;color:${C.brand};font-weight:bold;text-decoration:none;">記念日の一覧（カレンダー）を見る →</a></td></tr>` : ""}
 
 ${newCases.length ? `${sectionHead(days.length ? "05" : "04", "今週の数字")}
-<tr><td style="padding:12px 0 4px 0;font-size:13px;color:${C.body};">今週、新しく掲載した事例は <b style="font-size:18px;color:${C.ink};">${newCases.length.toLocaleString()}</b> 件。その中から、成果の数字を3つ。</td></tr>
+<tr><td style="padding:12px 0 4px 0;font-size:13px;color:${C.body};">今週、新しく掲載した事例は <b style="font-size:18px;color:${C.ink};">${newCases.length.toLocaleString()}</b> 件。${highlights.length ? `その中から、成果の数字を${highlights.length}つ。` : ""}</td></tr>
 ${highlights.map(highlightRow).join("")}` : ""}
 
 ${m.notice && m.notice.url ? `
