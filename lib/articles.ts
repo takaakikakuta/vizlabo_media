@@ -201,7 +201,14 @@ export function allArticles(): Article[] {
     .filter((f) => f.endsWith(".json"))
     .map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), "utf-8")) as Article)
     .filter((a) => !a.hidden && !a.draft)  // hidden・draft は公開面から完全に外す
+    .filter((a) => a.publishedAt <= todayJST())  // 予約公開：公開日（日本時間）が来るまで出さない
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.no - a.no);
+}
+
+/** 日本時間の今日（"YYYY-MM-DD"）。予約公開の判定に使う。
+    記事を出す各ページは revalidate=3600 なので、公開日になってから最大1時間で表に出る。 */
+function todayJST(): string {
+  return new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
 }
 
 export function getArticle(slug: string): Article | undefined {

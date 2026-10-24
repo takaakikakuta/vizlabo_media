@@ -12,6 +12,11 @@ import Sen from "../../../components/articles/Sen";
 /* オリジナル記事の本番ルート。format に応じてテンプレートを出し分ける。
    記事を1本増やす＝ content/articles/ にJSONを1つ置く、だけ。 */
 
+/* 予約公開：公開日前の記事は 404。1時間ごとに作り直すので、公開日になれば最大1時間で表に出る
+   （ビルド時に無かった記事も、アクセス時に生成される） */
+export const revalidate = 3600;
+export const dynamicParams = true;
+
 export function generateStaticParams() {
   return allArticles().map((a) => ({ slug: a.slug }));
 }
