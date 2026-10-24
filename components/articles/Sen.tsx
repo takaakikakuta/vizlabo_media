@@ -12,8 +12,8 @@ import FeaturedServices from "./FeaturedServices";
 import SuggestForm from "../SuggestForm";
 import { SUGGEST_ENABLED } from "../../lib/flags";
 
-/* 「選」テンプレート（テーマ別の事例10選・3選）。順位ではなく並列の選として組む。
-   3選では任意の compare（比べる表）を items の後に置ける。
+/* 「選」テンプレート（テーマ別の事例10選・5選・3選）。順位ではなく並列の選として組む。
+   5選では任意の compare（比べる表）を items の後に置ける。
    各項目は〈書き下ろしの見出し＋読みどころ〉＋〈事例データから自動で出すカルテと成果数字〉。 */
 
 export default function Sen({ article }: { article: SenArticle }) {
@@ -84,7 +84,7 @@ export default function Sen({ article }: { article: SenArticle }) {
         ...(compare ? [{ id: "compare", no: "比", label: compare.title ?? `${entries.length}社を比べる` }] : []),
       ]} />
 
-      {/* ── 10本（3選なら3本） ── */}
+      {/* ── 10本（5選なら5本、3選なら3本） ── */}
       <div className="mt-4">
         {entries.map((e) => {
           const c = e.c!;
@@ -136,7 +136,7 @@ export default function Sen({ article }: { article: SenArticle }) {
         })}
       </div>
 
-      {/* ── 比べる（任意。3選で、読者が自社の位置を判定するための表） ── */}
+      {/* ── 比べる（任意。5選で、読者が自社の位置を見つけるための表） ── */}
       {compare && (
         <section id="compare" className="mt-14 scroll-mt-20 border-t-2 border-ink pt-6">
           <h2 className="font-display text-[20px] leading-snug text-ink">{compare.title ?? `${entries.length}社を比べる`}</h2>
