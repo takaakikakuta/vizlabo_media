@@ -195,7 +195,8 @@ export type Article = (
 
 const DIR = path.join(process.cwd(), "content", "articles");
 
-export function allArticles(): Article[] {
+/** URL で開ける記事（hidden・draft 以外）。公開日前でも記事ページは存在する（宣伝ポストの準備用） */
+export function publishedArticles(): Article[] {
   if (!fs.existsSync(DIR)) return [];
   return fs.readdirSync(DIR)
     .filter((f) => f.endsWith(".json"))
@@ -204,8 +205,19 @@ export function allArticles(): Article[] {
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.no - a.no);
 }
 
+/** 一覧・トップ・サイトマップに並べる記事。publishedAt（日本時間）の当日から並ぶ。
+    使うページは revalidate=3600 なので、公開日になってから最大1時間で並ぶ */
+export function allArticles(): Article[] {
+  const today = todayJST();
+  return publishedArticles().filter((a) => a.publishedAt <= today);
+}
+
+function todayJST(): string {
+  return new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
 export function getArticle(slug: string): Article | undefined {
-  return allArticles().find((a) => a.slug === slug);
+  return publishedArticles().find((a) => a.slug === slug);
 }
 
 import { getCase } from "./cases";

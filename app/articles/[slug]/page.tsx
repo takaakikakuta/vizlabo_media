@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { allArticles, getArticle } from "../../../lib/articles";
+import { publishedArticles, getArticle } from "../../../lib/articles";
 import Wakaremichi from "../../../components/articles/Wakaremichi";
 import Genba from "../../../components/articles/Genba";
 import Dounyumae from "../../../components/articles/Dounyumae";
@@ -13,7 +13,7 @@ import Sen from "../../../components/articles/Sen";
    記事を1本増やす＝ content/articles/ にJSONを1つ置く、だけ。 */
 
 export function generateStaticParams() {
-  return allArticles().map((a) => ({ slug: a.slug }));
+  return publishedArticles().map((a) => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
