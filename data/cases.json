@@ -101931,7 +101931,7 @@
     "vendor": "mobilus.co.jp",
     "product": "MOBI VOICE（AI電話自動応答システム）",
     "productCategory": "ai",
-    "sourceUrl": "https://mobilus.co.jp/lab/tag/case-stady/",
+    "sourceUrl": "https://mobilus.co.jp/case/myaqua-mobivoice-2/",
     "collectedAt": "2026-10-02T00:00:00.000Z",
     "customer": {
       "name": "株式会社マイアクア",
@@ -101963,7 +101963,8 @@
       "問い合わせ対応の負荷",
       "一次対応の属人化",
       "対応履歴が残らない"
-    ]
+    ],
+    "image": "https://mobilus.co.jp/wp-content/uploads/2025/01/lab_case_myaqua-mobivoice-2-1.jpg"
   },
   {
     "id": "motifyhr-jp-casestudy",
