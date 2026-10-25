@@ -234,11 +234,15 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
   );
 }
 
+/** クエリ文字列が付くと本文が空のページを返すサイト。ここには UTM を付けない */
+const NO_UTM_HOSTS = new Set(["mediadrive.jp"]);
+
 /** 出典URLに UTM を付ける。掲載元の解析で「事例マニアの事例ページの冒頭／末尾から来た」と分かるようにする。
     既にクエリやハッシュがあっても壊さないよう URL オブジェクトで組む。 */
 function withUtm(url: string, position: "top" | "bottom"): string {
   try {
     const u = new URL(url);
+    if (NO_UTM_HOSTS.has(u.hostname.replace(/^www\./, ""))) return url;
     u.searchParams.set("utm_source", "jirei-mania");
     u.searchParams.set("utm_medium", "referral");
     u.searchParams.set("utm_campaign", "case_detail");
