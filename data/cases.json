@@ -306849,7 +306849,8 @@
       "手作業の転記",
       "発注の手作業",
       "業務の属人化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "makertown-jp-case-tominagaboeki",
@@ -306891,7 +306892,8 @@
       "見積もり作成に時間",
       "リードタイムの短縮",
       "システム構築コスト"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "makertown-jp-case-topstarjapan",
@@ -306922,7 +306924,8 @@
       "見積もり作成に時間",
       "商談化しない",
       "サイト更新ができない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "makertown-jp-case-waco",
@@ -306964,7 +306967,8 @@
       "見積もり作成に時間",
       "手作業の転記",
       "工程管理の難しさ"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "makertown-jp-case-wako",
@@ -307003,7 +307007,8 @@
       "手作業の転記",
       "見積もり作成に時間",
       "システムの乱立"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "maki-ne-jp-payroll-voice",

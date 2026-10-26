@@ -14,7 +14,7 @@
   "items": [
     { "caseId": "www-sato-co-jp-case-niime-html", "note": "アパレル企業が4〜5万点の作品管理をQRコードからRFIDに移行し、棚卸しと作品探索を効率化" },
     { "caseId": "kintone-sol-cybozu-co-jp-cases-kyoya-html", "note": "アパレル製造業が受注から製造までの進捗をkintoneで一元管理し、属人化を解消" },
-    { "caseId": "makertown-jp-case-wako", "note": "アパレルプリント企業がクラウド受注システムで少量多品種のカスタマイズ受注に対応" }
+    { "caseId": "makertown-jp-case-ec-case-wakopro", "note": "アパレルプリント企業がクラウド受注システムで少量多品種のカスタマイズ受注に対応" }
   ],
   "more": { "label": "アパレルの事例をもっと見る", "href": "/cases?q=アパレル" }
 }
