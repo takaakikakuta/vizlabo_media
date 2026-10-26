@@ -91832,7 +91832,8 @@
       "紙の書類処理",
       "月末の残業",
       "紙の廃棄量"
-    ]
+    ],
+    "image": "https://ecomeeting.jp/case/tohoku_gakuin.jpg"
   },
   {
     "id": "ecomeeting-jp-case-index-php",
@@ -131003,7 +131004,8 @@
       "サーバ運用の負担",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "image": "https://www.intra-mart.jp/dcms_media/image/case-study_006470_img_top-cover.png"
   },
   {
     "id": "www-intra-mart-jp-case-study-006471-01-html",
@@ -306847,7 +306849,8 @@
       "手作業の転記",
       "発注の手作業",
       "業務の属人化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "makertown-jp-case-tominagaboeki",
@@ -306889,7 +306892,8 @@
       "見積もり作成に時間",
       "リードタイムの短縮",
       "システム構築コスト"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "makertown-jp-case-topstarjapan",
@@ -306920,7 +306924,8 @@
       "見積もり作成に時間",
       "商談化しない",
       "サイト更新ができない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "makertown-jp-case-waco",
@@ -306962,7 +306967,8 @@
       "見積もり作成に時間",
       "手作業の転記",
       "工程管理の難しさ"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "makertown-jp-case-wako",
@@ -307001,7 +307007,8 @@
       "手作業の転記",
       "見積もり作成に時間",
       "システムの乱立"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "maki-ne-jp-payroll-voice",
