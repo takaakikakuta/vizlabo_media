@@ -1,0 +1,59 @@
+# 公開日を迎えた記事・記念日ページを一覧／トップに並べるための毎日の再デプロイ。
+# 一覧とトップは revalidate=3600 の ISR だが、Amplify 上では作り直されず、
+# 最後のビルド時点の並びのまま止まる（2026-10-26・27 に #21・#22 が当日に出なかった）。
+# そこで日本時間 0:05 に、その日が公開日の記事か記念日ページがあり、かつ当日まだ push が無ければ、
+# 空コミットを push して Amplify のビルドを起こす。
+name: daily-redeploy
+
+on:
+  schedule:
+    - cron: "5 15 * * *"   # UTC 15:05 = 日本時間 0:05
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "条件に関係なく再デプロイする"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Decide
+        id: decide
+        run: |
+          TODAY=$(TZ=Asia/Tokyo date +%F)
+          MIDNIGHT=$(TZ=Asia/Tokyo date -d "$TODAY 00:00" +%s)
+          LAST=$(git log -1 --format=%ct)
+          ARTICLES=$(grep -l "\"publishedAt\": \"$TODAY\"" content/articles/*.json || true)
+          DAY=$( [ -f "content/days/$TODAY.json" ] && echo "content/days/$TODAY.json" || true )
+          echo "today=$TODAY"
+          echo "articles: ${ARTICLES:-なし}"
+          echo "day page: ${DAY:-なし}"
+          echo "last commit: $(TZ=Asia/Tokyo date -d @$LAST '+%F %T')"
+          if [ "${{ inputs.force }}" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ -z "$ARTICLES$DAY" ]; then
+            echo "公開日を迎えるものが無いのでスキップ"; echo "run=false" >> "$GITHUB_OUTPUT"
+          elif [ "$LAST" -ge "$MIDNIGHT" ]; then
+            echo "今日すでに push があり、ビルド済みなのでスキップ"; echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
+
+      - name: Push empty commit
+        if: steps.decide.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "再デプロイ（自動）：${{ steps.decide.outputs.today }} 公開分を一覧・トップに反映"
+          git push origin main
