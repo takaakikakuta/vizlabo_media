@@ -24,6 +24,12 @@
       "name": "サステナブルスイッチ（sustainable-switch.jp）",
       "reason": "サイトが閉鎖され、事例ページに到達できなくなったため（削除依頼ではない）",
       "blockedAt": "2026-10-24"
+    },
+    {
+      "domain": "i3handy.jp",
+      "name": "株式会社学研ロジスティクス（Gakken i3 Handy）",
+      "reason": "掲載先の企業から許可を得ていないとして、ベンダーから掲載削除の依頼を受けた",
+      "blockedAt": "2026-10-27"
     }
   ]
 }
