@@ -111739,7 +111739,8 @@
       "多拠点の管理",
       "数字の集計に時間",
       "月末の残業"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "timepack-amano-co-jp-voice-voice22-html",
