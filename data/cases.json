@@ -127734,6 +127734,304 @@
     ]
   },
   {
+    "id": "www-funfo-jp-index-php-testimonials-batten",
+    "title": "モバイルオーダー導入で店舗スタッフ教育の手間を削減、複数店舗の売上管理がリアルタイム化",
+    "summary": "居酒屋チェーン「九州炭火酒場ばってん」は、従来の高額POSレジの限界と店舗間のデータ管理課題を抱えていた。funfoのモバイルオーダー+POSレジを導入し、操作がシンプルで教育負担が軽減、全店舗の売上をリアルタイムで把握できるようになった。",
+    "vendor": "funfo.jp",
+    "product": "funfo（モバイルオーダー+POSレジ）",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/batten/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社アート（九州炭火酒場 ばってん 神田西口店運営）",
+      "industry": "food",
+      "size": "複数店舗運営（神田に5店舗）",
+      "dept": "本社・店舗運営"
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "data"
+    ],
+    "challengeDetail": "従来のPOSレジは導入費用が100万以上かかり、機能面で時代に合わせられていなかった。店舗数が増えても全ページを確認しないとデータが取得できず、売上把握も店舗スタッフへのLINE確認に頼っていた。",
+    "actions": "funfoのモバイルオーダー+POSレジ（funfo Business Plus）を導入。LINE連携により公式アカウントとの連携を実現し、店舗スタッフが簡単にメニュー編集や品切れ設定ができる仕様を採用。",
+    "results": [
+      {
+        "metric": "モバイルオーダー利用率（50代・60代客層）",
+        "value": "約7割"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "運営店舗数",
+        "value": "5店舗（神田地域）"
+      },
+      {
+        "metric": "運営期間",
+        "value": "6年"
+      },
+      {
+        "metric": "モバイルオーダー経由の LINE公式アカウント登録者数",
+        "value": "1店舗で1万人"
+      }
+    ],
+    "resultsQualitative": "スタッフ教育にかかる手間が大幅に削減された。操作がシンプルで説明されなくても新しいスタッフがすぐに使いこなせるようになった。全店舗の売上やオーダー状況がリアルタイムで可視化でき、店舗スタッフの送り合いや運営管理が容易になった。本社の負担も軽減され、店舗側も自動対応できるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "新人教育のばらつき",
+      "進捗が見えない",
+      "老朽化したシステム",
+      "多拠点の管理"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-elle-world",
+    "title": "モバイルオーダー導入で客単価20%UP、LINE誘導により顧客接点を2〜3倍に拡大",
+    "summary": "12店舗展開のカフェ・飲食チェーン「ELLE WORLD」が、大規模店舗での顧客体験向上を目的にfunfoのモバイルオーダーを導入。待ち時間削減、メニュー自動切替、データ一元管理により運用効率を改善し、客単価最大20%UP、LINE登録者数2〜3倍増を実現。",
+    "vendor": "funfo.jp",
+    "product": "funfo",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/elle-world/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "ELLE WORLD",
+      "industry": "food",
+      "size": "12店舗展開",
+      "dept": ""
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "cs"
+    ],
+    "challengeDetail": "大規模カフェ店舗で人手不足の中、スタッフが対面でオーダーを取る従来方式では対応に限界があり、混雑時に顧客をお待たせする課題があった。また複数システムの管理と手動メニュー切替の手間が発生していた。",
+    "actions": "モバイルオーダーシステムfunfoを導入。顧客がスマートフォンからQRコードで注文でき、スタッフ側はiPadやプリンターで確認する仕組みを構築。メニュー自動切替やLINE連携機能を活用し、顧客データの一元管理と情報発信を実施。",
+    "results": [
+      {
+        "metric": "客単価",
+        "value": "最大20%UP"
+      },
+      {
+        "metric": "LINE登録者数伸び率",
+        "value": "2〜3倍"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入店舗数",
+        "value": "10店舗（全12店舗中）"
+      },
+      {
+        "metric": "グランドオープン店舗規模",
+        "value": "120坪"
+      }
+    ],
+    "resultsQualitative": "混雑時の案内遅れを削減。スマートフォンから気軽に追加注文が可能になり機会損失を削減。LINEを通じたビアガーデン告知で1日数10件の予約獲得。アンケート機能により顧客の声を吸収でき、スタッフモチベーション向上と店舗改善に活用。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "繁忙期の人員不足",
+      "システムの乱立",
+      "手作業の転記"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-example5",
+    "title": "モバイルオーダー導入でLINE友だち10万人獲得、客単価100円UP、一部商品売上4倍達成",
+    "summary": "居酒屋チェーンがタブレットオーダーからLINEミニアプリ連携のモバイルオーダーに切り替え。注文時の自然な導線でLINE友だちを1年間で10万人増加させ、平均客単価向上と人件費削減を実現。",
+    "vendor": "funfo.jp",
+    "product": "funfo",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/example5/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "ひねり蛇口ハイ 大衆酒泉テルマエ",
+      "industry": "food",
+      "size": "13店舗",
+      "dept": ""
+    },
+    "challenges": [
+      "sales",
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "タブレットオーダーとポップによるLINE集客では期待した効果が出ていなかった。複数店舗の管理効率や売上集計に課題があった。",
+    "actions": "モバイルオーダー機能を備えたfunfoを導入。注文時のQRコード読み取りでLINE友だち追加を自動案内する導線を構築。LINE Pro機能で顧客属性と喫食情報を組み合わせたセグメント配信を実施。複数店舗のメニューを一元管理。",
+    "results": [
+      {
+        "metric": "LINE友だち増加（1年間）",
+        "value": "10万人"
+      },
+      {
+        "metric": "平均客単価の向上",
+        "value": "100円UP"
+      },
+      {
+        "metric": "動画メニュー導入商品の売上増加",
+        "value": "4倍"
+      },
+      {
+        "metric": "人件費率削減",
+        "value": "約1%"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入店舗数",
+        "value": "13店舗"
+      },
+      {
+        "metric": "2024年1月時点のLINE友だち数",
+        "value": "177,968人"
+      },
+      {
+        "metric": "日次LINE友だち獲得ペース",
+        "value": "700人/日"
+      }
+    ],
+    "resultsQualitative": "タブレットオーダーからモバイルオーダーへの切り替えにより、顧客が自然な導線でLINE友だち追加を行うようになった。複数店舗のメニュー一元管理により店舗管理が効率化し、売上集計が容易になった。顧客アンケート機能により生の声を収集し経営改善に活用できるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "紙の書類処理",
+      "数字の集計に時間",
+      "多拠点の管理",
+      "連絡手段の乱立"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-foodexkaburaya",
+    "title": "対面接客を守りながらモバイルオーダーを導入、45店舗へ展開",
+    "summary": "居酒屋チェーンが対面接客の価値を損なわないよう、モバイルオーダーとPOSレジの共存モデルを構築。1店舗での検証を経て45店舗への導入に至り、導入費用は従来比3分の1に削減、スタッフの習熟も迅速化した。",
+    "vendor": "funfo.jp",
+    "product": "funfo",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/foodexkaburaya/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "フーデックスホールディングス（かぶら屋）",
+      "industry": "food",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "当時使用していたPOSシステムが、スマートフォンベースのハンディ端末やQRコードモバイルオーダーなど時代の変化に十分対応できておらず、求める仕組みとのギャップがあった。",
+    "actions": "funfoのモバイルオーダー+POSレジシステムを導入。カウンター近くのお客様からは対面注文、複数人でカウンターから離れた席のお客様にはモバイルオーダーを使用するなど、注文方法を顧客が選べる仕組みを構築。まず田無店で2〜3カ月検証した後、45店舗へ展開。",
+    "results": [
+      {
+        "metric": "導入費用削減",
+        "value": "従来のPOSレジ比で約3分の1"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入店舗数",
+        "value": "45店舗"
+      },
+      {
+        "metric": "検証期間",
+        "value": "2〜3カ月"
+      }
+    ],
+    "resultsQualitative": "新入りアルバイトスタッフでもスマートフォン操作の延長で比較的早く習熟可能になった。オフライン運用対応によりサーバーダウン時のリスクが軽減された。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "法改正への対応",
+      "複数の注文方法への未対応"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-himono",
+    "title": "モバイルオーダー導入で対面注文の待ち時間を解消、全店売上100万円以上増加",
+    "summary": "焼き魚専門店「ヒモノ照ラス」は、対面注文の待ち時間がボトルネックとなっていた。funfoのモバイルオーダーを導入し、3人が同時注文できるようになったことで、注文トラフィックが加速。全店で売上が100万〜150万円伸びた。",
+    "vendor": "funfo.jp",
+    "product": "funfo",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/himono/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "奥山安蔵商店株式会社（ヒモノ照ラス）",
+      "industry": "food",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "対面での注文対応が顧客の待ち時間になっており、注文処理のトラフィックがボトルネックとなっていた。他社のモバイルオーダーは導入費用が高く、設定の自由度が低かった。",
+    "actions": "funfoのモバイルオーダー機能を導入。顧客がスマートフォンから注文できる仕組みに切り替え、セットメニューのカスタマイズ機能を活用。オフライン機能にも対応。",
+    "results": [
+      {
+        "metric": "全店売上増加",
+        "value": "100万〜150万円"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "店舗数",
+        "value": "複数店舗"
+      }
+    ],
+    "resultsQualitative": "対面注文時は1人3分かかり3人グループで9分要していたのに対し、モバイルオーダーで3人が同時に注文可能に。追加人手を増やさずに注文対応でき、求人コストも削減。スタッフが注文対応に追われなくなり、接客の質向上に注力できるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "電話・FAX中心",
+      "問い合わせ対応の負荷",
+      "一次対応の属人化"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-wannamanna",
+    "title": "台湾式カフェwanna mannaがモバイルオーダーで行列解消、人件費35%→25%削減",
+    "summary": "台湾式モーニングカフェは、レジ前の長い行列と顧客の動線の混乱、テイクアウト注文の不便さに課題を抱えていた。モバイルオーダーアプリfunfoを導入し、店内飲食とテイクアウトの事前決済を実現。行列が減少し、人件費を35%から25%に削減、スタッフが他業務に時間を使えるようになった。",
+    "vendor": "funfo.jp",
+    "product": "funfo",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/wannamanna/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "wanna manna（台湾甜商店の姉妹ブランド）",
+      "industry": "food",
+      "size": "複数店舗（関西・関東に展開）",
+      "dept": "店舗運営"
+    },
+    "challenges": [
+      "efficiency",
+      "labor",
+      "cs"
+    ],
+    "challengeDetail": "レジ前に長い行列ができ、顧客の動線が悪かった。店内飲食とテイクアウト注文が同じレジに並び、顧客が混乱していた。電話予約がなくテイクアウトは直接来店での注文のみで、急いでいる顧客には不便だった。",
+    "actions": "モバイルオーダーアプリfunfoを導入し、店内飲食はテーブル事前決済、テイクアウトはスマホ事前決済、現金希望者はレジに並ぶハイブリッド運用に切り替えた。",
+    "results": [
+      {
+        "metric": "人件費比率",
+        "value": "35%→25%"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "店舗展開地域",
+        "value": "関西・関東"
+      }
+    ],
+    "resultsQualitative": "レジ前の行列が目に見えて減少。スタッフがレジに立ちっぱなしにならず、洗い物やドリンク・デザートの仕込みなど他業務に時間を回せるようになった。アンケート機能により離れた店舗のお客様の声を直接把握でき、スタッフ間での運営改善の話が通りやすくなった。",
+    "hasNumbers": true,
+    "sample": false,
+    "tags": [
+      "紙の書類処理",
+      "電話・FAX中心",
+      "動線の混乱"
+    ]
+  },
+  {
     "id": "www-general-packer-co-jp-case-case04",
     "title": "種袋の包装・梱包を完全自動化、5～6人の作業を1人に削減",
     "summary": "野菜や果物の種袋の梱包作業で、従来は複数人による手作業が必要だった。帯状フィルムによるバンディングと包装機・カウント装置・段ボール詰装置を一体化したシステムを導入し、オペレーター1人で対応可能にした。",
@@ -164342,10 +164640,6 @@
     "actions": "井川城工場の新設に合わせて、太陽光発電システムを導入。発電出力22.2kW（モジュール）、設置面積約106㎡のシステムを屋根上に設置し、発電監視システムで運用管理。",
     "results": [
       {
-        "metric": "想定発電量（初年度）",
-        "value": "約27,000kWh"
-      },
-      {
         "metric": "想定CO2排出削減量（初年度）",
         "value": "約13t-CO2/年"
       }
@@ -164366,6 +164660,10 @@
       {
         "metric": "導入年月",
         "value": "2026年2月"
+      },
+      {
+        "metric": "想定発電量（初年度）",
+        "value": "約27,000kWh"
       }
     ],
     "resultsQualitative": "環境保全活動への取り組みが1ランクステージアップし、エコアクション21取得から20年目を迎える中で、再生可能エネルギー利用による環境負荷低減を実現。",
@@ -355370,6 +355668,244 @@
       "追客の漏れ",
       "名刺情報の死蔵",
       "連絡手段の乱立"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-example2",
+    "title": "モバイルオーダー導入で紙オーダーの混乱を解消、仕込み時間を確保",
+    "summary": "洋食レストランLION KITCHENは、京都移転後の繁忙期に紙オーダーによる記入ミスと業務混乱に直面していた。funfoのモバイルオーダーシステムを導入することで、ホール業務を削減し、仕込み準備に時間を充てることができるようになった。",
+    "vendor": "funfo.jp",
+    "product": "funfo（モバイルオーダー＋POSレジ）",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/example2/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "LION KITCHEN",
+      "industry": "food",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "京都移転後、スタッフ2名での運営でピーク時に紙オーダーが対応しきれず、複写式メモの記入ミスが発生していた。",
+    "actions": "funfoのモバイルオーダーシステムを導入し、顧客がスマートフォンから注文、店舗がiPadやプリンターで確認できる体制に切り替えた。翻訳機能も活用している。",
+    "results": [],
+    "resultsQualitative": "ホール業務が削減され、仕込み業務に時間を回すことができるようになった。操作しやすく、システムアップデートも速い。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "紙の書類処理",
+      "手作業の転記",
+      "繁忙期の人員不足"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-example3",
+    "title": "モバイルオーダー導入でコスト削減と人手不足を解決、接客品質も向上",
+    "summary": "POSレジのコスト負担と人手不足に課題を抱えていた居酒屋が、funfoのモバイルオーダー+POSレジを導入。ランニングコストを削減し、顧客がスマートフォンから注文できるようになることで、店員の呼ばれる回数を削減し、より丁寧な接客に時間を充てられるようになった。",
+    "vendor": "funfo.jp",
+    "product": "funfo Business Plus",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/example3/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "お魚パーラーCENTRO",
+      "industry": "food",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "前システムは初期費用・ランニングコストが高く、サポートも不十分。人手不足で十分なシフトが組めず、顧客対応に課題があった。",
+    "actions": "funfoのモバイルオーダー+POSレジシステムを導入。顧客がスマートフォンから注文でき、店舗側はiPadで確認する仕組みにした。LINE連携機能も活用してお客様フォローを強化。",
+    "results": [],
+    "resultsQualitative": "注文のために呼ばれることがほとんどなくなり、より丁寧な接客に注力できるようになった。年配の顧客にも利用が広がった。ランニングコスト削減と人材課題が解消され、LINE連携でお得意様をフォローできるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "繁忙期の人員不足",
+      "問い合わせ対応の負荷"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-example6",
+    "title": "モバイルオーダー導入で注文ミス削減、顧客コミュニケーション強化",
+    "summary": "居酒屋が他社POSシステムからfunfoに切り替え。紙オーダーからモバイルオーダーに移行し、注文ミスをほぼ撲滅。顧客とのコミュニケーション機会が増え、売上向上につながった。",
+    "vendor": "funfo.jp",
+    "product": "funfo Lite",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/example6/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "鮮魚居酒屋加夢居",
+      "industry": "food",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "quality"
+    ],
+    "challengeDetail": "他社POSシステムのコストが高く、紙でのオーダー業務では必ずミスが発生していた。",
+    "actions": "funfoのモバイルオーダーシステムに切り替え。スマートフォンからのオーダーと、iPad/プリンターでの確認を導入。",
+    "results": [
+      {
+        "metric": "注文ミス",
+        "value": "ほぼゼロ達成"
+      },
+      {
+        "metric": "売上",
+        "value": "アップ"
+      }
+    ],
+    "resultsQualitative": "スタッフがオーダー対応時間を削減でき、顧客とのコミュニケーション時間に充てることで顧客満足度が向上。海外顧客対応時の説明手間も削減され、商品推奨時間が増加した。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "紙の書類処理",
+      "手作業の転記",
+      "問い合わせ対応の負荷"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-example7",
+    "title": "焼肉食べ放題チェーンがモバイルオーダー導入で運用コストを削減、メニュー設定の工数を大幅短縮",
+    "summary": "神戸牛・黒毛和牛の食べ放題を提供する焼肉屋がハンディやタブレット利用時の課題（高いランニングコスト・複雑なメニュー設定）を抱えていた。funfoのモバイルオーダーシステムを導入し、メニュー変更が数分で完結可能に、ランニングコストを大幅削減し、スタッフの時間効率が改善された。",
+    "vendor": "funfo.jp",
+    "product": "funfo",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/example7/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "焼肉屋 大牧場",
+      "industry": "food",
+      "size": "5店舗展開",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "タブレット利用時にランニングコストが高く、月額費用が1店舗だけの導入に留まっていた。メニュー変更が複雑で業者対応が必要となり、時間と金額がかかっていた。",
+    "actions": "funfoのモバイルオーダーシステム（QRコード注文）を導入。当初食べ放題機能がなかったため、ベンダーと協働で3ヶ月で機能開発。スタッフはオーダー受注業務を削減し、配膳に専念する体制に変更。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "店舗数",
+        "value": "5店舗"
+      },
+      {
+        "metric": "店内収容人数（道頓堀店）",
+        "value": "80〜110名"
+      },
+      {
+        "metric": "月額売上（既存店舗）",
+        "value": "3000万円以上"
+      }
+    ],
+    "resultsQualitative": "メニュー設定が数分で完結可能に。オーダー受注業務の削減によりスタッフの時間が生まれ、別業務への対応が可能になった。ランニングコストが大幅に抑えられた。多言語対応により外国客のスムーズな注文が実現。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "老朽化したシステム",
+      "メニュー変更の手作業",
+      "サーバ運用の負担"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-jyujyuan",
+    "title": "食べ放題の焼肉店が モバイルオーダー導入で提供スピード向上、顧客満足度を改善",
+    "summary": "食べ放題の焼肉チェーン「じゅじゅ庵」は、コロナ禍での省人化と提供スピード向上を課題として、funfoのモバイルオーダー+POSレジを導入。注文取得時間の削減と LINE連携によるアンケート機能の活用で、顧客からのフィードバック収集が容易になり、メニュー改善に繋がった。",
+    "vendor": "funfo.jp",
+    "product": "funfo Business Plus",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/jyujyuan/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "じゅじゅ庵",
+      "industry": "food",
+      "size": "3店舗",
+      "dept": ""
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "コロナ禍で飲食業界のDX化の必要性を認識し、特に食べ放題ビジネスにおいて提供スピードの向上と省人化が急務だった。また、顧客ニーズの把握手段が限定的で、経営判断の根拠が不十分だった。",
+    "actions": "funfoのモバイルオーダーシステムを導入して注文業務を効率化し、LINEの連携機能を活用した。十三店ではLINE Proのアンケート機能を導入して、毎週顧客フィードバックを収集・分析し、メニュー改善に反映させた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "店舗数",
+        "value": "3店舗（十三・茨木・京橋）"
+      }
+    ],
+    "resultsQualitative": "注文取得時間が削減され、提供スピードが向上した。LINEアンケート機能により顧客のニーズ把握が容易になり、「トウモロコシが食べたい」との顧客意見を即座にメニューに導入するなど、メニュー改善のPDCAが高速化した。顧客からは「え、はや！」との声が上がるなど、食べ放題というビジネスモデルにおいて顧客体験が向上した。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "電話・FAX中心",
+      "顧客フィードバックの収集困難",
+      "作業効率の低下"
+    ]
+  },
+  {
+    "id": "www-funfo-jp-index-php-testimonials-tgn",
+    "title": "全60会場のウェディング施設にモバイルオーダー導入、ゲストのドリンク注文体験を向上",
+    "summary": "テイクアンドギヴ・ニーズは、披露宴でのドリンクオーダーをすべてスタッフが口頭受付していたため、注文ミスや「頼みづらさ」が課題だった。funfoのモバイルオーダーを全60会場に導入し、ゲストが自分のタイミングで注文できる環境を実現。オーダーミスが改善され、ドリンク関連の満足度が向上し、1組あたりの注文数も増加した。",
+    "vendor": "funfo.jp",
+    "product": "funfo（モバイルオーダー + POSレジ）",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.funfo.jp/index.php/testimonials/tgn/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "テイクアンドギヴ・ニーズ",
+      "industry": "other-industry",
+      "size": "全国60会場、年間約12,000組",
+      "dept": "全施設（オペレーション全体）"
+    },
+    "challenges": [
+      "efficiency",
+      "cs",
+      "quality"
+    ],
+    "challengeDetail": "披露宴中のドリンクオーダーをスタッフが口頭で受付していたため、注文の抜け漏れやオペレーションミスが発生していた。また、ゲストが「スタッフに声をかけることに遠慮を感じる」「タイミングが分からず控える」といった「頼みづらさ」があり、ゲスト体験が損なわれていた。",
+    "actions": "funfoのモバイルオーダーシステムを全国60会場に導入。ゲストが自分のスマートフォンから自由に注文でき、スタッフによる直接対応と併用するハイブリッドオペレーションを採用。ブランドカラー反映やウェディング特有の要望にも対応。",
+    "results": [
+      {
+        "metric": "ドリンクケア関連の満足度評価",
+        "value": "全国会場で向上"
+      },
+      {
+        "metric": "1組あたりのドリンク注文数",
+        "value": "導入前比で増加"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入会場数",
+        "value": "60会場"
+      },
+      {
+        "metric": "年間対応組数",
+        "value": "約12,000組"
+      }
+    ],
+    "resultsQualitative": "オーダーミスが大きく改善された。スタッフが従来オーダー対応に充てていた時間を、本来大切にしているサービスやおもてなし、結婚式全体のディレクションに充てられるようになった。ゲストからは「自分のタイミングで気軽に注文できた」「写真付きで直感的に選びやすい」といった好評の声が上がっている。スタッフからも「ゲスト一人ひとりにより丁寧に向き合えるようになった」というポジティブな反応が増えている。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "電話・FAX中心",
+      "ヒューマンエラーの多発",
+      "顧客体験の低下"
     ]
   },
   {
