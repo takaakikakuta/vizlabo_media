@@ -76023,7 +76023,8 @@
       "紙の書類処理",
       "給与計算の手間",
       "情報漏洩リスク"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-city-koriyama02",
@@ -76071,7 +76072,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "情報共有の遅れ"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-city-koriyama03",
@@ -76114,7 +76116,8 @@
       "数字の集計に時間",
       "Excel管理の限界",
       "情報共有の遅れ"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-kanke",
@@ -76169,7 +76172,8 @@
       "紙の書類処理",
       "月末の残業",
       "業務の属人化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-kotobukien",
@@ -76225,7 +76229,8 @@
       "紙の書類処理",
       "発注の手作業",
       "ピーク時の管理ミス"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-nakanodenko",
@@ -76262,7 +76267,8 @@
       "応募が集まらない",
       "顧客満足度の低下",
       "社内コミュニケーション不足"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-talenta-co-jp-customer-case",
@@ -270585,7 +270591,8 @@
       "業務の属人化",
       "老朽化したシステム",
       "情報共有の遅れ"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-city-koriyama01",
@@ -270623,7 +270630,8 @@
       "移動時間の多さ",
       "リアルタイムに把握できない",
       "手作業の転記"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-elite",
@@ -270669,7 +270677,8 @@
       "ブランド価値の伝達不足",
       "情報発信の手段不足",
       "夜間の視認性低下"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-fna",
@@ -270720,7 +270729,8 @@
       "老朽化したシステム",
       "テレワーク対応",
       "サーバ運用の負担"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-fukushima-sports-entertainment",
@@ -270753,7 +270763,8 @@
       "在庫の把握不足",
       "リアルタイムに把握できない",
       "数字の集計に時間"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-izumi-service",
@@ -270798,7 +270809,8 @@
       "システムの乱立",
       "在庫の把握不足",
       "給与計算の手間"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-satoujuku",
@@ -270844,7 +270856,8 @@
       "手作業の転記",
       "業務の属人化",
       "データが分散"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-sketchbook",
@@ -270897,7 +270910,8 @@
       "勤怠管理の手間",
       "Excel管理の限界",
       "データが分散"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-tobutoptours",
@@ -270943,7 +270957,8 @@
       "業務の属人化",
       "進捗が見えない"
     ],
-    "image": "https://www.suzuyayoko.co.jp/wp3/wp-content/uploads/2026/09/DSC04769.jpg"
+    "image": "https://www.suzuyayoko.co.jp/wp3/wp-content/uploads/2026/09/DSC04769.jpg",
+    "hidden": true
   },
   {
     "id": "www-suzuyayoko-co-jp-voice-trust-ysp",
@@ -270989,7 +271004,8 @@
     "tags": [
       "紙の書類処理",
       "情報共有の遅れ"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-system-renovate-co-jp-business-casestudy-kintone-tepco-f",
