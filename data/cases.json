@@ -5656,95 +5656,6 @@
     ]
   },
   {
-    "id": "biz-techoffer-jp-casestudy-casestudy-46",
-    "title": "TECH OFFER導入で工数削減と国公立大卒学生の採用に成功",
-    "summary": "新卒採用専任1名でリソース不足だったサイバートラスト株式会社が、TECH OFFERを導入。自動オファー機能で効率化しながら、26卒で内定承諾4名を獲得し、初めて国公立大卒学生の採用に成功した。",
-    "vendor": "techoffer.jp",
-    "product": "TECH OFFER",
-    "productCategory": "hrtech",
-    "sourceUrl": "https://biz.techoffer.jp/casestudy/casestudy-46/",
-    "collectedAt": "2026-10-13T00:00:00.000Z",
-    "customer": {
-      "name": "サイバートラスト株式会社",
-      "industry": "it",
-      "size": "～500名",
-      "dept": "採用"
-    },
-    "challenges": [
-      "labor",
-      "efficiency"
-    ],
-    "challengeDetail": "新卒採用の専任が1名で、学生へのアプローチから学校訪問まで対応していたため、学生との接点が不足していた。既存のダイレクトリクルーティングサービスではターゲット層とのマッチ度が不十分だった。",
-    "actions": "TECH OFFERを導入し、自動オファー送信機能を活用して効率的に学生にアプローチ。登録学生のプロフィール・スキル情報を確認して、マッチ度の高い学生をターゲットに採用活動を展開した。",
-    "results": [
-      {
-        "metric": "26卒内定承諾者数",
-        "value": "4名"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "導入から成果測定までの期間",
-        "value": "2年目"
-      },
-      {
-        "metric": "25卒内定承諾者数",
-        "value": "1名"
-      },
-      {
-        "metric": "26卒内定出し数",
-        "value": "8名"
-      }
-    ],
-    "resultsQualitative": "初めて国公立大卒学生の採用に成功。北海道から九州まで全国から学生を採用できるようになった。情報系以外の学科（機械系・化学系）からもIT志望の学生を発掘できた。",
-    "hasNumbers": true,
-    "sample": false,
-    "image": "https://biz.techoffer.jp/wp-content/uploads/2025/10/dsc_0345-scaled.jpg",
-    "tags": [
-      "応募が集まらない",
-      "追客の漏れ",
-      "名刺情報の死蔵",
-      "繁忙期の人員不足"
-    ]
-  },
-  {
-    "id": "biz-techoffer-jp-casestudy-casestudy-48",
-    "title": "複数回セミナー開催で金融機関のシステム部門認知度を向上、300名以上の学生接点確保",
-    "summary": "金融機関のシステム・デジタル部門がエンジニア志望学生に認知されていない課題があった。TECH OFFERを活用して複数回のセミナーを早期に開催し、インターンシップ母集団形成を実現。300名以上の学生との接点を確保した。",
-    "vendor": "techoffer.jp",
-    "product": "TECH OFFER",
-    "productCategory": "hrtech",
-    "sourceUrl": "https://biz.techoffer.jp/casestudy/casestudy-48/",
-    "collectedAt": "2026-10-13T00:00:00.000Z",
-    "customer": {
-      "name": "三菱UFJ銀行",
-      "industry": "finance",
-      "size": "5001名以上",
-      "dept": "システム・デジタル部門"
-    },
-    "challenges": [
-      "sales",
-      "standardize"
-    ],
-    "challengeDetail": "銀行のイメージが強く、システム・デジタル部門の存在や魅力がエンジニア志望学生に認知されていない。早期採用対策が必要だった。",
-    "actions": "TECH OFFERの理系学生データベースを活用して、複数回のセミナーや説明会を早期から開催。テックオーシャンの営業支援を受けながら、効果的な母集団形成を実施。",
-    "results": [
-      {
-        "metric": "セミナー参加学生数",
-        "value": "300名以上"
-      }
-    ],
-    "resultsQualitative": "インターンシップ母集団形成に成功。内定承諾歩留率が高い水準を維持。他の大手IT企業との競合状況下でも採用競争力を確保。",
-    "hasNumbers": true,
-    "sample": false,
-    "image": "https://biz.techoffer.jp/wp-content/uploads/2025/12/DSC_0713-scaled.jpg",
-    "tags": [
-      "応募が集まらない",
-      "リード獲得の停滞",
-      "採用しても定着しない"
-    ]
-  },
-  {
     "id": "biztel-jp-case-cs-13782",
     "title": "クラウドPBXへのリプレイス で、3台サーバを1台に集約。リアルタイム可視化により応答率10～20%改善",
     "summary": "宿泊施設向け旅行予約サービスのコールセンターが、従来システムの同時接続数制限と不十分なレポート機能に課題を抱えていた。クラウドPBX「BIZTEL」へリプレイスし、着信番号ごとの応答率・保留時間などをリアルタイム可視化。データに基づく人員配置が実現し、応答率が改善された。",
@@ -53429,53 +53340,6 @@
     ]
   },
   {
-    "id": "www-doteyamab-jp-case-12",
-    "title": "キャンパス建て替えに伴う大規模家具・備品導入を4ヵ月で完了",
-    "summary": "老朽化した姫路工学キャンパスの建て替えに伴い、教職員の意見を反映した細かな仕様書への対応と柔軟な追加対応により、4ヵ月で全備品納品を実現。学生・教職員から高い満足度を得た。",
-    "vendor": "doteyamab.jp",
-    "product": "オフィス家具",
-    "productCategory": "other-product",
-    "sourceUrl": "https://www.doteyamab.jp/case/12",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "兵庫県公立大学法人　兵庫県立大学事務局　姫路工学キャンパス",
-      "industry": "education",
-      "size": "大学（6学部9研究科）",
-      "dept": "経営部総務課"
-    },
-    "challenges": [
-      "efficiency",
-      "standardize"
-    ],
-    "challengeDetail": "昭和40年代に建設された老朽化した10施設を7新施設に建て替える大規模プロジェクトの中で、講義・研究に必要な家具・備品の大掛かりな導入と、建物完成前のタイトなスケジュール対応が課題だった。",
-    "actions": "教職員の意見を反映した詳細な仕様書を作成し、それに基づき入札。建物完成前から図面を参考にレイアウトを事前決定し、納品後の追加注文にも既存品を考慮した柔軟な対応を受けた。",
-    "results": [
-      {
-        "metric": "納品期間",
-        "value": "4ヵ月で全納品完了"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "建て替え対象施設",
-        "value": "10施設を7施設に整備"
-      },
-      {
-        "metric": "長期計画期間",
-        "value": "10年以上"
-      }
-    ],
-    "resultsQualitative": "旧建物から新建物への移行がスムーズに進行。講義室の机・椅子、実験用備品、AV機器など多くの設備が一新され、学生・教職員から高い満足度を得た。",
-    "hasNumbers": true,
-    "sample": false,
-    "image": "https://ferret-one.akamaized.net/images/6405a005bab67b0eebe7a613/large.jpeg?utime=1678090245",
-    "tags": [
-      "紙図面の保管",
-      "納期の遅延",
-      "工程管理の難しさ"
-    ]
-  },
-  {
     "id": "www-dpsj-co-jp-case-wowza-1-mainstream",
     "title": "Wowza Streaming Engineで60秒以内のライブ配信開始を実現、市場投入期間を月単位から週単位に短縮",
     "summary": "1Mainstreamは多様なデバイスへのライブストリーミング配信において、セットアップの複雑さとコスト、市場投入の遅さが課題だった。Wowza Streaming Engineを統合することで、60秒以内でのライブ配信開始と、市場投入期間の短縮を実現した。",
@@ -59779,6 +59643,453 @@
       "電気代の増加",
       "月末の残業",
       "重労働の作業"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-aleph",
+    "title": "オンプレミスメール運用の属人化からクラウド移行で運用負荷を劇的軽減、迷惑メール検知率3倍向上",
+    "summary": "レストランチェーン本部がオンプレミスメールサーバーの属人化と運用負荷に課題を抱えており、専用セキュリティアプライアンス搭載のクラウドメールサービスに移行。運用負荷がほぼ不要になり、迷惑メール検知率が8%から24%に向上した。",
+    "vendor": "kagoya.jp",
+    "product": "メールプラン エンタープライズ",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.kagoya.jp/case/aleph/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社アレフ",
+      "industry": "food",
+      "size": "従業員約750名",
+      "dept": "情報システム本部"
+    },
+    "challenges": [
+      "labor",
+      "security",
+      "standardize"
+    ],
+    "challengeDetail": "オンプレミスメールサーバーの運用において、設定変更・トラブル対応・迷惑メール対策がすべて内製化され、管理工数が増大していた。またメール実務の大部分が個人に集中する属人化が進み、担当者不在時の障害対応が困難な体制であった。",
+    "actions": "オンプレミスメールシステムから、専用セキュリティアプライアンスを備えたクラウドベースのメールプラン エンタープライズへ移行。冗長化や運用管理を委託することで、サーバー側での自動フィルタリングとセキュリティ設定の一元管理を実現した。",
+    "results": [
+      {
+        "metric": "迷惑メール自動検知率",
+        "value": "8%→24%（約3倍向上）"
+      },
+      {
+        "metric": "日次運用作業時間",
+        "value": "毎日2～3時間→ほぼ不要"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "運用アドレス数",
+        "value": "約1,130件"
+      },
+      {
+        "metric": "店舗数",
+        "value": "全国350店舗以上"
+      },
+      {
+        "metric": "導入準備期間",
+        "value": "約半年"
+      }
+    ],
+    "resultsQualitative": "属人化しない運用体制を構築でき、Gmail宛のメール不達問題が完全に解消。フィッシングメールや不審なURLを含む攻撃メールが従業員の受信箱に届く前に遮断され、社内における危険なURLのクリック率も減少した。担当者が優先度の高い業務に注力できる環境が整備された。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2026/04/aleph-top3.png",
+    "tags": [
+      "サーバ運用の負担",
+      "業務の属人化",
+      "担当者不在で止まる"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-anabuki",
+    "title": "desknet's 大規模移行（500～600アカウント）でコスト月20万→3万に削減",
+    "summary": "教育グループが古いバージョンのdesknet'sからのバージョンアップが困難な状況下で、300GBのデータとファイル100万超の大規模移行をKAGOYAの専用サーバーで実現。月額運用費を大幅削減し、不具合解消と処理速度向上も達成。",
+    "vendor": "kagoya.jp",
+    "product": "desknet's NEO専用サーバー",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.kagoya.jp/case/anabuki/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "穴吹カレッジグループ",
+      "industry": "education",
+      "size": "従業員規模不明・学生数約4,900名",
+      "dept": "デジタル推進室"
+    },
+    "challenges": [
+      "efficiency",
+      "cost",
+      "quality"
+    ],
+    "challengeDetail": "古いバージョン（V3.5）のdesknet'sで不具合が多く、バージョンアップが急務だったが、前のサーバー会社の契約制限で容易にできない状態。300GBのデータ容量とファイル数100万超の大規模移行先がなかなか見つからない状況だった。",
+    "actions": "KAGOYA のdesknet's NEO専用サーバーに移行。大規模なデータ移行に対応し、ハードディスクでのメディア移送を含めた柔軟な移行体制を構築。休日を含む移行スケジュール対応も実施。",
+    "results": [
+      {
+        "metric": "月額運用コスト",
+        "value": "月20万円→月3万円（85%削減）"
+      },
+      {
+        "metric": "処理速度",
+        "value": "体感で明らかに高速化"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "desknet'sユーザー数",
+        "value": "500～600アカウント"
+      },
+      {
+        "metric": "移行データ容量",
+        "value": "300GB"
+      },
+      {
+        "metric": "ファイル数",
+        "value": "100万超"
+      },
+      {
+        "metric": "メールドメイン数",
+        "value": "約40"
+      }
+    ],
+    "resultsQualitative": "UI周りの不具合が解消。Sync for smartphonesによるGoogleカレンダーとの自動同期により、スケジュール登録の二重入力が不要になり業務効率向上。社内でも上層部に好評。請求業務の簡略化により人件費削減。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/01/anabuki_main_1440_900.png",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-nihonsm",
+    "title": "Excelベースの社内資料をForguncyでクラウド管理システム化し、内製開発体制を確立",
+    "summary": "マンション管理・公共工事企業が、Excelで分散管理していた見積書や顧客台帳をForguncyでクラウドシステム化。内製開発により、情報検索の効率化と問い合わせ対応の削減を実現した。",
+    "vendor": "kagoya.jp",
+    "product": "Forguncyプラン",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.kagoya.jp/case/nihonsm/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "日本エスエム株式会社",
+      "industry": "construction",
+      "size": "",
+      "dept": "総務部"
+    },
+    "challenges": [
+      "efficiency",
+      "data",
+      "standardize"
+    ],
+    "challengeDetail": "Excel で個別管理していた見積書や顧客台帳により、情報が分散・最新化が困難で、担当者しか詳細情報を把握できず、問い合わせ対応が遅延していた。",
+    "actions": "既存のExcelフォーマットを活かしながらForguncyでWebアプリ化し、クラウド環境で一元管理。内製開発体制を構築し、公共工事見積書・工事日報システムとマンション顧客台帳システムを開発。",
+    "results": [
+      {
+        "metric": "問い合わせに対する折り返し電話の削減",
+        "value": "15件/日減少"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "マンション管理件数",
+        "value": "400件以上"
+      },
+      {
+        "metric": "公共工事見積書システム開発期間",
+        "value": "約1ヶ月"
+      },
+      {
+        "metric": "マンション顧客台帳システム開発期間",
+        "value": "約半年"
+      }
+    ],
+    "resultsQualitative": "情報の一元化により最新データへ即座にアクセス可能になり、現場と事務間の情報提出が迅速化。社員から機能追加・改善の要望が上がるようになり、社内IT意識が醸成された。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/01/300f88cdcd24bb428b15c7945bc05b95-1024x640.png",
+    "tags": [
+      "データが分散",
+      "業務の属人化",
+      "問い合わせ対応の負荷",
+      "情報共有の遅れ"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-sanko",
+    "title": "月額定額制クラウドサーバーの導入でサーバーコスト10％削減、構築スピードも改善",
+    "summary": "教育機関の三幸学園は、他社プライベートクラウドでのサーバー構築遅延とコスト効率の悪さが課題だった。月額定額制のKAGOYA FLEXを導入し、物理サーバーとクラウドサーバーを使い分けることで、コストを10％削減しサーバー提供スピードを改善した。",
+    "vendor": "kagoya.jp",
+    "product": "KAGOYA FLEX（クラウドサーバー・ベアメタルサーバー）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/sanko/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "学校法人 三幸学園",
+      "industry": "education",
+      "size": "全国12都市に60以上の校舎、生徒約49,000名",
+      "dept": "情報システム部"
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "leadtime"
+    ],
+    "challengeDetail": "他社プライベートクラウドではサーバー構築に1ヵ月かかることがあり、迅速な対応が求められるDX推進に対応できなかった。また、テスト用など短期間のみ使用するサーバーも年間契約を強制され、コストパフォーマンスが悪かった。",
+    "actions": "月額定額制で短期利用に対応したクラウドサーバー（FLEX）を導入。リソースが見込める業務システムは物理サーバー、迅速構築が必要な公開用Webサーバーはクラウドサーバーと使い分け、コストを最適化した。",
+    "results": [
+      {
+        "metric": "サーバーコスト削減率",
+        "value": "10%削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "生徒数",
+        "value": "約49,000名"
+      },
+      {
+        "metric": "運営校舎数",
+        "value": "60以上"
+      }
+    ],
+    "resultsQualitative": "サーバー構築スピードが迅速化され、学内DX推進に対応できるようになった。定額制により予算確保が容易になり、勤怠管理システムから経費精算システムなど他の業務システムへの利用も拡大した。BCP対策として西日本拠点の利用も実現。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2025/01/sanko-main.jpg",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "意思決定の遅れ"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-sech",
+    "title": "従量制課金から定額制へ移行、クラウドストレージ費用を1/3～1/5に削減",
+    "summary": "通信キャリア向けシステム開発企業が、クラウドストレージサービス提供時に大手クラウドの従量課金の高さに課題を抱えていた。KAGOYAのベアメタルサーバーで定額制の基盤を構築し、月額数十万円のコストを削減を実現。また自社開発教育基盤でも、トラフィック量の多い用途で定額利用を実現。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX / ベアメタルサーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/sech/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社エス・イー・シー・ハイテック",
+      "industry": "it",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "クラウドストレージサービス提供時に、大手クラウドの従量課金によるコスト高が課題。データ通信量の多い教育コンテンツ配信基盤でも同様に料金が高額化する問題があった。",
+    "actions": "KAGOYAのベアメタルサーバーに移行し、定額制のクラウドストレージ基盤を構築。データ通信量が多くても追加課金されない環境を実現し、専用ファイアーウォールでセキュリティを確保。",
+    "results": [
+      {
+        "metric": "顧客向けコスト削減",
+        "value": "月額数十万円削減"
+      },
+      {
+        "metric": "コスト削減率",
+        "value": "1/3～1/5"
+      },
+      {
+        "metric": "障害発生",
+        "value": "導入後10年以上、ほぼゼロ"
+      },
+      {
+        "metric": "VPN等関連コスト削減",
+        "value": "年間数十万円削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "教育基盤利用ユーザー数",
+        "value": "全国約5,000人"
+      },
+      {
+        "metric": "導入期間",
+        "value": "10年以上"
+      }
+    ],
+    "resultsQualitative": "オンプレミス比で障害が激減。運用負荷が大幅に低減（ハード保守・入れ替え不要）。VPN機材が不要になった。テレワーク定着に伴い、クラウドストレージの活用範囲が拡大。社内情報共有基盤としての活用が活発化。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2024/11/sech_01-scaled-e1730964095986.jpg",
+    "tags": [
+      "老朽化したシステム",
+      "システムの乱立",
+      "サーバ運用の負担"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-softec",
+    "title": "図書館システムベンダーがAWSとKAGOYA CLOUD VPSのハイブリッド構成で年400万円のコスト削減を実現",
+    "summary": "図書館システム提供企業が、AWS中心の構成でコスト変動と運用負荷の課題を抱えていた。AWSとKAGOYA CLOUD VPSを役割に応じて使い分けるハイブリッド構成に移行し、インフラコストを年800万円から400万円に削減した。",
+    "vendor": "kagoya.jp",
+    "product": "KAGOYA CLOUD VPS",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/softec/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社ソフテック",
+      "industry": "it",
+      "size": "従業員数不明",
+      "dept": "インフラ運用部門"
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "AWS中心の運用で従量課金による予算変動や為替の影響があり、コストが見通しづらかった。サーバー台数増加に伴い構成が複雑化し、運用管理の負担が増加していた。",
+    "actions": "AWSとKAGOYA CLOUD VPSをハイブリッド構成で使い分け、フロント側はAWSのセキュリティサービスを活用し、バックエンド側（Webサーバーやデータベースサーバー）はKAGOYA CLOUD VPSで運用。影響の小さい領域から段階的に移行を実施。",
+    "results": [
+      {
+        "metric": "年間インフラコスト削減",
+        "value": "年800万円→年400万円（年400万円削減）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "運用サーバー規模",
+        "value": "約250台"
+      },
+      {
+        "metric": "KAGOYA環境への移行対象サーバー",
+        "value": "約70台"
+      }
+    ],
+    "resultsQualitative": "固定料金により月々のコストが把握しやすくなり予算計画が立てやすくなった。AWSで同等構成の月額5万円がKAGOYA CLOUD VPSで月額1万円未満に削減されたケースもある。電話によるサポート体制の充実で運用の安心感が向上し、現時点で大きな問題は発生していない。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2026/07/softec-top-1024x640.png",
+    "tags": [
+      "サーバ運用の負担",
+      "老朽化したシステム",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-tdi",
+    "title": "デジタルサイネージサービスのインフラをクラウド化し、パブリッククラウドの2倍近いコスト削減を実現",
+    "summary": "TDI株式会社は、デジタルサイネージサービス「DAiS Signage」の基盤インフラとして、月額定額制のカゴヤクラウドサーバーを採用。従来のパブリッククラウド運用時と比べ大幅なコスト削減を実現し、数千台規模の端末リクエストを遅延なく処理できる安定基盤を構築した。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX クラウドサーバー / FLEX ベアメタルサーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/tdi/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "TDI株式会社",
+      "industry": "it",
+      "size": "",
+      "dept": "ソリューション本部"
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "quality"
+    ],
+    "challengeDetail": "パブリッククラウドで1,000台規模運用時にコストが予想の2倍近くになり、月額定額で費用を計算できるインフラが必要だった。また、数千台規模の端末からのリクエストを遅延なく処理し、24時間365日落とさない高可用性を実現する必要があった。",
+    "actions": "月額定額制のFLEX クラウドサーバーを基盤として採用し、HA構成で自動フェイルオーバー機能を構築。DAiS Signageのフロント部分に物理UTMを配置し、セキュリティと処理能力を強化。監視サーバーにはFLEX ベアメタルサーバーを利用。",
+    "results": [
+      {
+        "metric": "コスト削減率",
+        "value": "パブリッククラウド比で約50%削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "端末規模",
+        "value": "数千台"
+      }
+    ],
+    "resultsQualitative": "月額定額制により費用試算が容易になり、スケーリング時もカゴヤとの連携で安心して対応可能。24時間日本語サポートにより、夜間トラブル時も迅速に解決。パブリッククラウドの自動スケーリングによる誤操作リスクも排除。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/01/tdi_main-1.png",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-wellvill",
+    "title": "AI対話エンジンの応答速度をスパコンで8%改善、本番環境での安定運用を実現",
+    "summary": "ウェルヴィル株式会社は、AI対話エンジン「LIFE TALK ENGINE」の本番環境基盤として、KAGOYAのHPCサービス「SX-Aurora TSUBASAクラウド」を導入。GPUからの移行により言語処理の応答速度が8%向上し、安定的なサービス提供が可能になった。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX / HPCサービス（SX-Aurora TSUBASAクラウド）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/wellvill/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "ウェルヴィル株式会社",
+      "industry": "it",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "leadtime"
+    ],
+    "challengeDetail": "AI対話サービスにおいて、リアルタイムな応答速度が求められるが、GPU環境では十分なパフォーマンスが得られていなかった。本番環境での安定的かつスケーラブルな計算基盤が必要だった。",
+    "actions": "NECのベクトルコンピューター「SX-Aurora TSUBASA」への移行を実験的に行い、性能改善を確認した後、KAGOYAのHPCクラウドサービスをAI対話エンジンの本番環境基盤として採用した。",
+    "results": [
+      {
+        "metric": "言語処理応答速度の改善",
+        "value": "8%向上"
+      }
+    ],
+    "resultsQualitative": "GPUからスパコン環境への移行により、対話エンジンが限られた400ms以内の処理時間でより高速に応答可能となり、人間との自然な会話速度に近づいた。安定的なクラウド環境でのサービス提供が実現し、複数業種への事業展開が加速。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/02/wellvill_main-1024x640.png",
+    "tags": [
+      "リアルタイムに把握できない",
+      "老朽化したシステム",
+      "サーバ運用の負担"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-xsol",
+    "title": "複数DC集約でコスト50%削減、ハイブリッド環境で安定パフォーマンスを実現",
+    "summary": "太陽光発電システム企業が複数のデータセンター利用による管理コストの増加と運用の複雑化に直面。クラウドサーバーとハウジングのハイブリッド環境へ集約することで、月額・固定費用を約50%削減しパフォーマンスも向上させた。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX クラウドサーバー / DC+ / FLEX ベアメタルサーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/xsol/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社エクソル",
+      "industry": "energy",
+      "size": "",
+      "dept": "管理本部 情報システム部"
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "複数のデータセンター（3社）利用によりネットワーク構成が複雑化し、管理コストが増加していた。複数データセンター間の管理体制の見直しと集約が課題だった。",
+    "actions": "ハウジングサービスの拡張とFLEXクラウドサーバーの仮想環境を組み合わせたハイブリッド構成に移行。初期費用を抑えながらネットワークの見える化と社内システムの集約を実施。",
+    "results": [
+      {
+        "metric": "月額・固定費用の総コスト削減",
+        "value": "約50%削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "移行前のデータセンター利用社数",
+        "value": "3社"
+      }
+    ],
+    "resultsQualitative": "データセンター集約後、パフォーマンスが快適になり、現行では見えなかった不具合が解消。社外からのリモート接続環境も安定化。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2022/12/3eb92ea5d3855856c5b3669acc8fde5c-e1678440325155.png",
+    "tags": [
+      "システムの乱立",
+      "サーバ運用の負担",
+      "老朽化したシステム"
     ]
   },
   {
@@ -69169,67 +69480,6 @@
       "押印・承認の遅れ",
       "業務の属人化",
       "データが分散"
-    ]
-  },
-  {
-    "id": "www-pa-consul-co-jp-talentpalette-case-details-osakagas-html",
-    "title": "大阪ガス、タレントパレットで人材の見える化とサクセッションプランの実現",
-    "summary": "大阪ガスは、拡大する事業領域に対応するため、人材データを一元管理できるタレントマネジメントシステムを導入。経験領域やポータブルスキルを可視化し、適所適材の人事配置やキャリア開発支援が可能になった。",
-    "vendor": "pa-consul.co.jp",
-    "product": "タレントパレット",
-    "productCategory": "hrtech",
-    "sourceUrl": "https://www.pa-consul.co.jp/talentpalette/case/details/osakagas.html",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "大阪ガス株式会社",
-      "industry": "energy",
-      "size": "従業員21,159名（連結）",
-      "dept": "人事部"
-    },
-    "challenges": [
-      "hr",
-      "standardize",
-      "data"
-    ],
-    "challengeDetail": "事業領域の拡大に伴い必要な人材が顕在化する一方、人事情報が点在していたため、適切な人事配置が難しかった。経験領域の整理やサクセッションプランの見える化が課題だった。",
-    "actions": "タレントパレットを導入し、基本情報、社内経歴、アセスメント結果、テクニカルスキル（経験領域）、ポータブルスキルを一元管理。過去45年分の組織データをAI技術で効率的に分類・紐づけし、ダッシュボードで可視化。キャリアポータルで若手社員がキャリアイメージを構築できる環境を構築。",
-    "results": [
-      {
-        "metric": "キャリアポータル経由の先輩社員面談数",
-        "value": "53件"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "対象者数",
-        "value": "約350名（キャリアポータル利用者）"
-      },
-      {
-        "metric": "分類した経験領域",
-        "value": "18領域"
-      },
-      {
-        "metric": "整理対象の過去組織データ",
-        "value": "約12,000チーム分（45年分）"
-      },
-      {
-        "metric": "経験領域データの可視化",
-        "value": "約5,000名分"
-      },
-      {
-        "metric": "キャリアポータル閲覧件数（対象者1人当たり）",
-        "value": "35.5件"
-      }
-    ],
-    "resultsQualitative": "エビデンスに基づいた適所適材の人事配置が実現。育成期間付き人材公募の開始により、人材不足の解消と社員のリスキリング・育成の両立が可能に。人材の活性化につながっている。",
-    "hasNumbers": true,
-    "sample": false,
-    "image": "https://tp-img.imgix.net/s/case/details/osakagas/case_osakagas_ogp.png",
-    "tags": [
-      "データが分散",
-      "業務の属人化",
-      "引き継ぎ困難",
-      "技能伝承ができない"
     ]
   },
   {
@@ -90002,48 +90252,6 @@
     "resultsQualitative": "マッチング精度の向上により、入社後に活躍が目立つ社員が増加。自立心や向上心、リーダーシップの素質がある学生の採用に成功し、入社1年目での主体的な取り組みや後進育成への参加など、優秀な人材の採用が実現できた。",
     "hasNumbers": true,
     "sample": false,
-    "tags": [
-      "応募が集まらない",
-      "採用しても定着しない",
-      "一次対応の属人化"
-    ]
-  },
-  {
-    "id": "careerticket-jp-partner-case-powerplanning",
-    "title": "精度の高いマッチングにより2カ月で優秀層採用を実現",
-    "summary": "採用担当の人手不足と自社ターゲット層との接点不足に課題があったベンチャー企業が、キャリアチケット就職による人材紹介を導入。関関同立・GMARCH以上の学生層から精度の高いマッチングにより、2カ月という短期間で採用目標を達成した。",
-    "vendor": "careerticket.jp",
-    "product": "キャリアチケット就職",
-    "productCategory": "hrtech",
-    "sourceUrl": "https://careerticket.jp/partner/case/powerplanning/",
-    "collectedAt": "2026-10-13T00:00:00.000Z",
-    "customer": {
-      "name": "パワープランニング株式会社",
-      "industry": "it",
-      "size": "",
-      "dept": "採用担当"
-    },
-    "challenges": [
-      "labor",
-      "efficiency"
-    ],
-    "challengeDetail": "ナビサイトや採用広報ツールの利用により、エントリー数に対して採用担当の人手が足りず、すべての学生対応が困難だった。また、自社がターゲットとする関関同立・GMARCH以上の学生層と効率的に接点を持てていなかった。",
-    "actions": "採用を紹介会社に絞り込み、キャリアチケット就職を導入。営業担当者と密に連携を取り、ターゲット層の学歴要件や地頭の良さ、会社ビジョンとのマッチなどについて細かくすり合わせを行った。",
-    "results": [
-      {
-        "metric": "採用成功率（キャリアチケット経由）",
-        "value": "3名中2名"
-      }
-    ],
-    "resultsQualitative": "紹介から説明会参加まで1週間という迅速な対応により、短期間で精度の高い採用が実現。キャリアアドバイザーが学生の適性を丁寧にヒアリングしたうえで紹介するため、会社ビジョンに共感する学生が集まった。",
-    "hasNumbers": true,
-    "sample": false,
-    "scale": [
-      {
-        "metric": "採用活動期間",
-        "value": "2カ月"
-      }
-    ],
     "tags": [
       "応募が集まらない",
       "採用しても定着しない",
@@ -125941,10 +126149,6 @@
         "value": "100%"
       },
       {
-        "metric": "投資回収期間",
-        "value": "12ヶ月以内"
-      },
-      {
         "metric": "追加検査・廃棄コスト",
         "value": "削減"
       }
@@ -125957,6 +126161,10 @@
       {
         "metric": "従業員数",
         "value": "約150名"
+      },
+      {
+        "metric": "投資回収期間",
+        "value": "12ヶ月以内"
       }
     ],
     "resultsQualitative": "オペレーターの主観判断が排除され、機械内の状態を正確に把握可能に。エネルギー消費（電気、水、ガス）の削減、労働時間の短縮、廃棄部品や貴金属利用の削減などサステナブルな製造効果も実現。新しい機械設備投資が不要となり、データ分析重視の製造工程改善モデルを確立。",
@@ -165113,41 +165321,6 @@
     ]
   },
   {
-    "id": "www-takachiho-kk-co-jp-case-wataru-hasegawa-architect-studio",
-    "title": "アイランドキッチンの昇降システムでダイニングテーブルを4m拡張",
-    "summary": "監督宅に下宿する学生5人を含む7～9人が利用するため、手狭なダイニングスペースの有効活用が課題だった。油圧式昇降システムMOVOTECでアイランドキッチンの高さを調節可能にすることで、ダイニングテーブルの一部として機能させた。来客時には4mのテーブルに拡張でき、限られたスペースを最大限に活用できた。",
-    "vendor": "takachiho-kk.co.jp",
-    "product": "MOVOTEC（油圧式昇降システム）",
-    "productCategory": "other-product",
-    "sourceUrl": "https://www.takachiho-kk.co.jp/case/wataru_hasegawa_architect_studio/",
-    "collectedAt": "2026-10-09T00:00:00.000Z",
-    "customer": {
-      "name": "長谷川ワタル建築研究所",
-      "industry": "construction",
-      "size": "",
-      "dept": ""
-    },
-    "challenges": [
-      "efficiency",
-      "standardize"
-    ],
-    "challengeDetail": "滋賀短期大学付属高等学校の女子バスケットボール部監督宅に学生5人が下宿しており、通常7～9人、来客時はそれ以上の人数が利用する。手狭なキッチンと食卓スペースを有効活用する必要があった。",
-    "actions": "アイランドキッチンに油圧式昇降システムMOVOTECを四隅に取り付け、調理時の高さからダイニングテーブルの高さに調節可能にした。テーブルとの組み合わせで、スペースを最大限に活用できる設計を実現した。",
-    "results": [
-      {
-        "metric": "ダイニングテーブルの拡張サイズ",
-        "value": "4m"
-      }
-    ],
-    "resultsQualitative": "来客時にアイランドキッチンをダイニングテーブルの一部として活用でき、限られたスペースで大人数での食事が可能になった。また、身長差があるカップルや高齢者、子どもなど様々な利用者に対応できる高さ調整機能も実現した。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "スペース不足の課題",
-      "限られた環境での多人数対応"
-    ]
-  },
-  {
     "id": "www-tam-tokyo-co-jp-products-case-study-html",
     "title": "ロングセラー菓子の段ボール詰めを自動化、作業員を半減以下に削減",
     "summary": "老舗菓子メーカーの段ボール詰めや箱詰め工程が人手に頼る状態だったため、TAMの自動化機械を導入。設計から施工まで4ヶ月で完成させ、1ラインの作業を従来9名から4名に削減し、コスト対効果に優れた自動化を実現。",
@@ -171352,43 +171525,6 @@
     ]
   },
   {
-    "id": "ysreportcloud-ysreading-co-jp-case-saiseikaikagoshima",
-    "title": "読影依頼がいつでも可能に。読影結果までの時間を短縮",
-    "summary": "病院の読影依頼作業が週1回の定期的な対応のみだったが、クラウド読影支援システムを導入することで、読影依頼をいつでも出せるようになり、読影結果が分かるまでの時間が短縮された。",
-    "vendor": "ysreading.co.jp",
-    "product": "YS Report Cloud（推定）",
-    "productCategory": "cloud",
-    "sourceUrl": "https://ysreportcloud.ysreading.co.jp/case/saiseikaikagoshima/",
-    "collectedAt": "2026-10-15T00:00:00.000Z",
-    "customer": {
-      "name": "済生会鹿児島病院",
-      "industry": "medical",
-      "size": "",
-      "dept": "画像診断部門"
-    },
-    "challenges": [
-      "efficiency",
-      "leadtime"
-    ],
-    "challengeDetail": "読影依頼作業が週1回のため、都度の依頼対応に業務負担が増えることが懸念されていた。また読影結果までの時間が長く、読影医への相談や再読影依頼の手順が煩雑だった。",
-    "actions": "クラウド型の読影支援システムを導入し、いつでも読影依頼ができるようにした。チャット機能による気軽な相談も実現。",
-    "results": [
-      {
-        "metric": "読影結果到達時間",
-        "value": "通常3営業日以内、緊急3時間以内"
-      }
-    ],
-    "resultsQualitative": "読影結果がすぐに出る安心感からCT撮影が増加。患者の安心感と信頼関係の向上。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "電話・FAX中心",
-      "対応履歴が残らない",
-      "読影結果の待機時間",
-      "再依頼の手順が煩雑"
-    ]
-  },
-  {
     "id": "yz-consulting-jp-case",
     "title": "学習塾経営のコンサルティングで生徒数増加を実現",
     "summary": "学習塾を経営する複数の代表が、経営技術コンサルティングを導入。業務計画の策定・実行、若手育成、経営勉強会への参加を通じて、生徒数の増加と売上向上を達成した。",
@@ -176672,6 +176808,95 @@
       "リード獲得の停滞",
       "追客の漏れ",
       "応募が集まらない"
+    ]
+  },
+  {
+    "id": "biz-techoffer-jp-casestudy-casestudy-46",
+    "title": "TECH OFFER導入で工数削減と国公立大卒学生の採用に成功",
+    "summary": "新卒採用専任1名でリソース不足だったサイバートラスト株式会社が、TECH OFFERを導入。自動オファー機能で効率化しながら、26卒で内定承諾4名を獲得し、初めて国公立大卒学生の採用に成功した。",
+    "vendor": "techoffer.jp",
+    "product": "TECH OFFER",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://biz.techoffer.jp/casestudy/casestudy-46/",
+    "collectedAt": "2026-10-13T00:00:00.000Z",
+    "customer": {
+      "name": "サイバートラスト株式会社",
+      "industry": "it",
+      "size": "～500名",
+      "dept": "採用"
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "新卒採用の専任が1名で、学生へのアプローチから学校訪問まで対応していたため、学生との接点が不足していた。既存のダイレクトリクルーティングサービスではターゲット層とのマッチ度が不十分だった。",
+    "actions": "TECH OFFERを導入し、自動オファー送信機能を活用して効率的に学生にアプローチ。登録学生のプロフィール・スキル情報を確認して、マッチ度の高い学生をターゲットに採用活動を展開した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "導入から成果測定までの期間",
+        "value": "2年目"
+      },
+      {
+        "metric": "25卒内定承諾者数",
+        "value": "1名"
+      },
+      {
+        "metric": "26卒内定出し数",
+        "value": "8名"
+      },
+      {
+        "metric": "26卒内定承諾者数",
+        "value": "4名"
+      }
+    ],
+    "resultsQualitative": "初めて国公立大卒学生の採用に成功。北海道から九州まで全国から学生を採用できるようになった。情報系以外の学科（機械系・化学系）からもIT志望の学生を発掘できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.techoffer.jp/wp-content/uploads/2025/10/dsc_0345-scaled.jpg",
+    "tags": [
+      "応募が集まらない",
+      "追客の漏れ",
+      "名刺情報の死蔵",
+      "繁忙期の人員不足"
+    ]
+  },
+  {
+    "id": "biz-techoffer-jp-casestudy-casestudy-48",
+    "title": "複数回セミナー開催で金融機関のシステム部門認知度を向上、300名以上の学生接点確保",
+    "summary": "金融機関のシステム・デジタル部門がエンジニア志望学生に認知されていない課題があった。TECH OFFERを活用して複数回のセミナーを早期に開催し、インターンシップ母集団形成を実現。300名以上の学生との接点を確保した。",
+    "vendor": "techoffer.jp",
+    "product": "TECH OFFER",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://biz.techoffer.jp/casestudy/casestudy-48/",
+    "collectedAt": "2026-10-13T00:00:00.000Z",
+    "customer": {
+      "name": "三菱UFJ銀行",
+      "industry": "finance",
+      "size": "5001名以上",
+      "dept": "システム・デジタル部門"
+    },
+    "challenges": [
+      "sales",
+      "standardize"
+    ],
+    "challengeDetail": "銀行のイメージが強く、システム・デジタル部門の存在や魅力がエンジニア志望学生に認知されていない。早期採用対策が必要だった。",
+    "actions": "TECH OFFERの理系学生データベースを活用して、複数回のセミナーや説明会を早期から開催。テックオーシャンの営業支援を受けながら、効果的な母集団形成を実施。",
+    "results": [],
+    "resultsQualitative": "インターンシップ母集団形成に成功。内定承諾歩留率が高い水準を維持。他の大手IT企業との競合状況下でも採用競争力を確保。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://biz.techoffer.jp/wp-content/uploads/2025/12/DSC_0713-scaled.jpg",
+    "tags": [
+      "応募が集まらない",
+      "リード獲得の停滞",
+      "採用しても定着しない"
+    ],
+    "scale": [
+      {
+        "metric": "セミナー参加学生数",
+        "value": "300名以上"
+      }
     ]
   },
   {
@@ -238955,6 +239180,52 @@
     ]
   },
   {
+    "id": "www-doteyamab-jp-case-12",
+    "title": "キャンパス建て替えに伴う大規模家具・備品導入を4ヵ月で完了",
+    "summary": "老朽化した姫路工学キャンパスの建て替えに伴い、教職員の意見を反映した細かな仕様書への対応と柔軟な追加対応により、4ヵ月で全備品納品を実現。学生・教職員から高い満足度を得た。",
+    "vendor": "doteyamab.jp",
+    "product": "オフィス家具",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.doteyamab.jp/case/12",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "兵庫県公立大学法人　兵庫県立大学事務局　姫路工学キャンパス",
+      "industry": "education",
+      "size": "大学（6学部9研究科）",
+      "dept": "経営部総務課"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "昭和40年代に建設された老朽化した10施設を7新施設に建て替える大規模プロジェクトの中で、講義・研究に必要な家具・備品の大掛かりな導入と、建物完成前のタイトなスケジュール対応が課題だった。",
+    "actions": "教職員の意見を反映した詳細な仕様書を作成し、それに基づき入札。建物完成前から図面を参考にレイアウトを事前決定し、納品後の追加注文にも既存品を考慮した柔軟な対応を受けた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "建て替え対象施設",
+        "value": "10施設を7施設に整備"
+      },
+      {
+        "metric": "長期計画期間",
+        "value": "10年以上"
+      },
+      {
+        "metric": "納品期間",
+        "value": "4ヵ月で全納品完了"
+      }
+    ],
+    "resultsQualitative": "旧建物から新建物への移行がスムーズに進行。講義室の机・椅子、実験用備品、AV機器など多くの設備が一新され、学生・教職員から高い満足度を得た。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/6405a005bab67b0eebe7a613/large.jpeg?utime=1678090245",
+    "tags": [
+      "紙図面の保管",
+      "納期の遅延",
+      "工程管理の難しさ"
+    ]
+  },
+  {
     "id": "www-dpsj-co-jp-case-theoplayer-hudl",
     "title": "THEOplayerでビデオ分析機能を強化、コーチの詳細なプレー分析を実現",
     "summary": "スポーツビデオ分析プラットフォームのHudl社は、様々なビデオプレイヤーテストで品質課題があったため、THEOplayerを導入。フレーム単位の高速シークとアダプティブHLSストリーミングでのスローモーション機能により、コーチによる詳細なプレー分析が可能になった。",
@@ -248260,6 +248531,959 @@
       "手作業の転記",
       "リソースの限定性",
       "多言語対応の負担"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-ascend",
+    "title": "PBXサービスをオンプレ環境からクラウド化、土日サポート対応で障害時の不安を解消",
+    "summary": "コールセンター向けPBXサービスをオンプレミスから提供していた株式会社アセンドが、顧客のクラウド化ニーズと障害時のサポート不足に対応。KAGOYAのベアメタルサーバーとクラウドサーバーを組み合わせた構成により、物理回線を引きながらクラウド環境を実現し、ハード故障によるダウンタイムを削減した。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX クラウドサーバー / FLEX ベアメタルサーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/ascend/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社アセンド",
+      "industry": "it",
+      "size": "",
+      "dept": "インフラ事業部"
+    },
+    "challenges": [
+      "efficiency",
+      "cost"
+    ],
+    "challengeDetail": "既存のサーバー会社は土日サポートがなく、障害発生時に顧客からクレームが発生していた。また顧客からクラウド環境への移行ニーズが高まっていたが、物理回線が必要なため大手クラウドサービスでは回線料金が高く、顧客に納得できるサービス提供が難しかった。",
+    "actions": "KAGOYAのベアメタルサーバーとクラウドサーバーをローカルネットワークで接続し、物理回線を引き込みながらVMware基盤の仮想環境を構築。土日を含む24時間365日のサポート体制を整備した。",
+    "results": [
+      {
+        "metric": "ハード故障によるダウンタイム",
+        "value": "削減"
+      }
+    ],
+    "resultsQualitative": "運用コストが削減され、トラブルもほぼなくなった。顧客に納得いただけるサービス提供が価格面で実現できるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2022/12/61cce4a7b405785ffee1aa9343bd94ce.png",
+    "tags": [
+      "サーバ運用の負担",
+      "老朽化したシステム",
+      "問い合わせ対応の負荷"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-books-ogaki",
+    "title": "グループウェアサーバーの不安定性を解決、365日24時間サポートで安定環境を実現",
+    "summary": "書店チェーン運営企業が、グループウェア「desknet's NEO」のサーバーで動作不安定とサポート不足に課題を抱えていた。KAGOYAの専用サーバーに移行し、365日24時間対応と安定したインフラにより、快適な使用感と安心したサポート体制を実現した。",
+    "vendor": "kagoya.jp",
+    "product": "desknet's NEO専用サーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/books_ogaki/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社大垣書店",
+      "industry": "retail",
+      "size": "28店舗展開",
+      "dept": "店舗運営部"
+    },
+    "challenges": [
+      "efficiency"
+    ],
+    "challengeDetail": "既存サーバーでグループウェアの動作が不安定になり、サポートセンターが平日18時までの対応に限定されていた。土日も営業している同社にとって、金曜夜に障害が発生し月曜朝まで復旧しないという事態が発生し、365日安定したサーバーが必要だった。",
+    "actions": "ライセンスを持ち込みできるKAGOYAのdesknet's NEO専用サーバーに移行。365日24時間対応の緊急サポートとスペックアップ可能なクラウド環境を導入した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "店舗数",
+        "value": "28店舗"
+      }
+    ],
+    "resultsQualitative": "引っ越し後は同じdesknet's NEOとは思えないほど快適に使用でき、安定した環境に満足。365日無休で24時間対応可能な緊急サポート体制により安心感を獲得。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/02/ogaki_main.png",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-cityascom",
+    "title": "システム開発企業が自社インフラ管理の負担を削減、定額制クラウドで顧客提案を効率化",
+    "summary": "システム開発企業が外部公開系サービスの基盤構築時に、複雑な自社インフラ管理の負担と顧客要件対応の手間を抱えていた。定額制で柔軟な構成が可能なFLEXクラウドを導入し、サーバー構成の手間削減、運用負担軽減、顧客提案の効率化を実現した。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX クラウドサーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/cityascom/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社シティアスコム",
+      "industry": "it",
+      "size": "九州大手・複数支社（福岡本社、東京支社、中部支社、鹿児島開発センター、ベトナム開",
+      "dept": "システムサービス部"
+    },
+    "challenges": [
+      "efficiency",
+      "cost",
+      "labor"
+    ],
+    "challengeDetail": "自社所有のデータセンター環境で外部公開系サービスを提供する際、サーバーリソース・回線・ファイアウォールなどの管理が複雑化し、メンテナンスの負担が大きかった。また海外パブリッククラウドと比較して顧客への提案が複雑だった。",
+    "actions": "定額制で構成が柔軟なFLEXクラウドを導入し、レンタルサーバーとメールサービスの移行から始め、段階的に複雑な要件を持つ案件も移行。インターネット公開型サービスやマルチテナント環境の構築に活用。",
+    "results": [
+      {
+        "metric": "サーバー構成の手間削減",
+        "value": "海外クラウドと比較して準備手間が削減"
+      },
+      {
+        "metric": "運用負担軽減",
+        "value": "回線メンテナンス等の運用負荷がなくなった"
+      }
+    ],
+    "resultsQualitative": "自社でメンテナンスする必要がなくなり、以前発生していたメンテナンス後の負荷上昇問題への対応が不要に。顧客提案時に定額料金で予算見通しをつけやすくなり営業効率が向上。大きなトラブルが発生せず安定的に運用できている。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2025/04/cityascom_01-e1743672746835.jpg",
+    "tags": [
+      "サーバ運用の負担",
+      "老朽化したシステム",
+      "見積もり作成に時間"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-correc",
+    "title": "ホールディング化に伴う大規模ドメイン変更をCSV一括管理で実現、Gmail不達も解決",
+    "summary": "持株会社化に伴う500～600ドメインの変更と、Gmail宛メール不達という課題を抱えていた同社。CSVによる一括管理機能と迷惑メール対策（SPF/DKIM/DMARC）を備えたKAGOYA MAILに移行し、手作業を削減しつつGmail送信の確実性を確保した。",
+    "vendor": "kagoya.jp",
+    "product": "KAGOYA MAIL / メールプラン エンタープライズ",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.kagoya.jp/case/correc/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社コレックホールディングス",
+      "industry": "other-industry",
+      "size": "",
+      "dept": "技術本部"
+    },
+    "challenges": [
+      "efficiency",
+      "security",
+      "standardize"
+    ],
+    "challengeDetail": "持株会社化に伴い500～600のメールドメインを変更する必要があるが、前のサービスでは一括管理ができず全て手動作業が必要だった。また、Gmail宛へのメール不達が頻発していた。",
+    "actions": "CSVを使用したメールアカウント一括管理機能と、SPF・DKIM・DMARC対応によるなりすましメール対策を備えたKAGOYA MAILの専用タイプサーバーに移行した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "メールドメイン数",
+        "value": "500～600個"
+      },
+      {
+        "metric": "メールアカウント数",
+        "value": "無制限"
+      }
+    ],
+    "resultsQualitative": "移行後、Gmail宛のメール不達が解決。管理業務が改善され、UIも使いやすく、障害なく安定して稼働している。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2024/11/DSC04343_top-e1731978108262-1024x666.png",
+    "tags": [
+      "手作業の転記",
+      "アカウント管理の煩雑さ",
+      "情報漏洩リスク"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-cyans",
+    "title": "地方IT企業がKAGOYA FLEXでオンプレミスからクラウド移行、サーバー運用負担を軽減",
+    "summary": "岩手県のIT企業が、顧客企業の5年ごとのサーバー入れ替え負担とクラウド化ニーズに対応するため、VMware環境をサポートするKAGOYA FLEXクラウドを導入。月額固定費でコスト管理が容易になり、サーバー運用の手間と災害リスクへの不安が解消された。",
+    "vendor": "kagoya.jp",
+    "product": "KAGOYA FLEX（クラウドサーバー）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/cyans/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "合同会社しあんす",
+      "industry": "it",
+      "size": "従業員4名",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "cost",
+      "standardize"
+    ],
+    "challengeDetail": "顧客企業のオンプレミスサーバーが5年ごとにリプレイス時期を迎えるたびに、サーバー入れ替えの検討・稟議・決裁といった事務手続きの負担が発生。また、従量課金制のクラウドでは月額費用が確定しないため、顧客への提案が難しかった。",
+    "actions": "VMware環境をサポートし、既存のWindows環境をそのまま稼働できるKAGOYA FLEXクラウドを導入。月額固定料金体系により、顧客の予算化と提案が容易に。既存ライセンスの持ち込みとサブスクリプション利用を顧客に応じて使い分け。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象企業",
+        "value": "協同組合1社"
+      },
+      {
+        "metric": "既存システム運用期間",
+        "value": "10年以上"
+      }
+    ],
+    "resultsQualitative": "月額固定費でコスト管理・予算計画が立てやすくなった。サーバー運用の手間が大きく軽減され、LED確認やサーバー落とし上げの対応が不要に。計画停電時の対応や災害リスクへの不安が解消され、精神的な安心感が得られた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2026/10/cyans-top.png",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "見積もり作成に時間"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-densan-ginza",
+    "title": "複数ドメイン一括管理となりすまし対策により、キャンペーン事務局メール運用を効率化",
+    "summary": "株式会社電算はキャンペーン事務局運用で30～40のドメインを分散管理していたため、管理負荷が課題だった。KAGOYA メールプラン エンタープライズを導入し、複数ドメインを1つのアカウントで一括管理できるようにしたほか、なりすまし対策（DMARC）にも対応。管理の一元化と安定性の向上を実現した。",
+    "vendor": "kagoya.jp",
+    "product": "KAGOYA メールプラン エンタープライズ",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/densan-ginza/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社電算",
+      "industry": "it",
+      "size": "従業員数不明",
+      "dept": "システム統括部 システム支援グループ"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "security"
+    ],
+    "challengeDetail": "複数のキャンペーンごとにドメインを取得し、それぞれ異なるサーバーで管理していたため、サーバーの立ち上げ・削除が頻繁に発生し管理負荷が高かった。また、既存レンタルサーバーではなりすまし対策への対応方針が不明確だった。",
+    "actions": "KAGOYA メールプラン エンタープライズの導入により、複数ドメイン（30～40ドメイン）を1つの専用サーバーに集約。1つの管理画面で全ドメインの一括管理が可能になった。同時になりすまし対策（DMARC対応）を実装した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "管理ドメイン数",
+        "value": "30～40ドメイン"
+      },
+      {
+        "metric": "キャンペーン1件あたりのメール送受信件数",
+        "value": "平均数万件、最大10～20万件"
+      }
+    ],
+    "resultsQualitative": "管理の一元化により管理負荷が大幅に軽減された。10～20万通のメール送受信時も遅延なく安定して運用できるようになった。共用サーバー時代の他ユーザーの影響による遅延が解消された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2024/10/densan_catch-scaled.jpg",
+    "tags": [
+      "アカウント管理の煩雑さ",
+      "サーバ運用の負担",
+      "情報漏洩リスク"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-echosystem",
+    "title": "お弁当EDIシステムの基盤をプライベートクラウドで早期クラウド化、ノントラブル実現",
+    "summary": "株式会社エコー・システムは、顧客からのクラウド化要望を受けてお弁当EDIシステムのプロトタイプ開発を決定。数千人規模の利用を想定した安定基盤として、カゴヤのプライベートクラウドパッケージ[HA]を導入し、親身な技術支援により、ノントラブルで早期のクラウド化を実現した。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX プライベートクラウドパッケージ HA、ベアメタルサーバー、プライベートクラウド Suite",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/echosystem/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社エコー・システム",
+      "industry": "it",
+      "size": "従業員数不明・全国8支店以上",
+      "dept": "事業開発・基盤構築"
+    },
+    "challenges": [
+      "efficiency",
+      "quality"
+    ],
+    "challengeDetail": "顧客からのIT化・クラウド化要望に対応するため、クラウドサービス基盤として数千人規模の利用者を安定稼働させる必要があった。",
+    "actions": "ホスト/ハードウェアを占有できるベアメタルサーバーを導入し、その後さらに冗長化を高めるためプライベートクラウドパッケージ[HA]にグレードアップ。vSphere仮想環境が構築済のパッケージにより、設定作業に費用・工数をかけずにスタート。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "現在稼働中の事業所数",
+        "value": "約300事業所"
+      },
+      {
+        "metric": "3年以内の導入目標",
+        "value": "800社"
+      },
+      {
+        "metric": "想定利用者規模",
+        "value": "数千人"
+      }
+    ],
+    "resultsQualitative": "ノントラブルで早期にクラウド化を実現。迅速な技術支援と親身な相談対応により、リモートKVMなどの必要な対応が直ぐに提供された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/01/f41c0144c495fe7ec029ca3d74643306.png",
+    "tags": [
+      "システムの乱立",
+      "老朽化したシステム",
+      "サーバ運用の負担"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-fliplearning",
+    "title": "火災でのサーバー損傷をきっかけに、レンタルサーバーへ移行し8年間安定運用を実現",
+    "summary": "オンプレミス環境でサーバー管理をしていた学習管理システム企業が、火災による水損でサーバーが停止。外部のレンタルサーバーに移行し、以後8年間大きな不具合なく安定稼働。手厚いサポートにより問題対応も迅速になった。",
+    "vendor": "kagoya.jp",
+    "product": "レンタルサーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/fliplearning/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "フリップラーニング株式会社",
+      "industry": "education",
+      "size": "中小企業",
+      "dept": "システム部門"
+    },
+    "challenges": [
+      "efficiency",
+      "security"
+    ],
+    "challengeDetail": "オンプレミス環境でサーバーを自社管理していたが、火災による消火水でサーバーの半数近くが動作不可に。自社でのサーバー管理に限界を感じた。",
+    "actions": "自社のレンタルサーバーサービスを導入し、サーバーの保守管理を外部委託。国内データセンターでの専任スタッフによる常時監視体制に切り替えた。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "稼働継続期間",
+        "value": "8年間"
+      },
+      {
+        "metric": "大きな不具合発生件数",
+        "value": "0件"
+      }
+    ],
+    "resultsQualitative": "突発的なアクセス数激増時も含め安定的に動作。大手パブリッククラウドと比べ、サポート対応が手厚く迅速で問題解決が容易になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/02/1ba5951966bfce304ab1f06245adef81.png",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-hanamaru",
+    "title": "DDoS攻撃対策とサーバー移行で、専任管理者なしでも安定運用を実現",
+    "summary": "中古車買取サイト運営企業が、個人ユーザー対応開始に伴うアクセス増に対応するため共用から専用サーバーへ移行。その後DDoS攻撃を受けWAFを導入し、専任管理者がいない体制でもサポートを活用して安定運用を実現した。",
+    "vendor": "kagoya.jp",
+    "product": "レンタルサーバー ベーシック、WAF",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/hanamaru/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社はなまる",
+      "industry": "retail",
+      "size": "",
+      "dept": "営業戦略本部 マーケティング部"
+    },
+    "challenges": [
+      "efficiency",
+      "security",
+      "leadtime"
+    ],
+    "challengeDetail": "個人ユーザーからの買取開始に伴い、ウェブ広告やテレビCM放映によるアクセス数の大幅増が見込まれ、共用サーバーでは対応できなくなった。またDDoS攻撃により査定フォームからの送信が秒単位で増加し、Salesforceがリソース不足で停止する状況が発生した。",
+    "actions": "共用サーバーから専用サーバー（レンタルサーバー ベーシック）へ移行し、DDoS対策としてWAFとreCAPTCHAを導入。移行時の問題やWAF導入後の不具合については、都度サポートに問い合わせて解決した。",
+    "results": [
+      {
+        "metric": "DDoS攻撃の防止",
+        "value": "被害がなくなった"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "月間PV",
+        "value": "60万PV"
+      },
+      {
+        "metric": "査定フォーム送信件数",
+        "value": "1日300～400件"
+      }
+    ],
+    "resultsQualitative": "攻撃検知時にメール通知を受信する設定により、現在もWAFから「攻撃があった」という通知が常に届いており、セキュリティ対策の効果を実感している。専任のサーバー管理者がいない体制でも、サポートが丁寧で電話がつながりやすく、問題が発生した度に解決できる環境が整った。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2026/02/hanamaru-top.jpg",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "情報漏洩リスク"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-itoyu",
+    "title": "メールサーバー移行で運用効率化と迷惑メール対策を実現",
+    "summary": "カーサービス企業が委託先からのメール管理業務切り離しに伴い、KAGOYAのメールプラン エンタープライズに移行。料金の安さと運用の簡易性、セキュリティ強化により、迷惑メール問題を解決し管理業務を効率化した。",
+    "vendor": "kagoya.jp",
+    "product": "KAGOYA メールプラン エンタープライズ、desknet's NEO専用サーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/itoyu/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社伊藤佑ホールディングス",
+      "industry": "retail",
+      "size": "従業員約100名（メールアドレス利用者）",
+      "dept": "人事・総務・広報部"
+    },
+    "challenges": [
+      "cost",
+      "efficiency",
+      "security"
+    ],
+    "challengeDetail": "委託先からメール管理業務の切り離しを求められ、移行先を検討中。従来の委託先ではメールアドレス発行に手続きが必要で、また迷惑メールが多く届いていた。",
+    "actions": "メールプラン エンタープライズ（2TBのメールアーカイブ付き）に移行し、セキュリティアプライアンスを導入。併せて社内でメールアドレス管理を一元化し、desknet's NEOのウェブメール機能を活用。",
+    "results": [
+      {
+        "metric": "迷惑メール削減",
+        "value": "ほぼゼロ達成"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "メールアドレス利用者",
+        "value": "約100名"
+      },
+      {
+        "metric": "メールアーカイブ容量",
+        "value": "2TB"
+      },
+      {
+        "metric": "desknet's NEOで構築したアプリケーション",
+        "value": "約50個"
+      }
+    ],
+    "resultsQualitative": "メール管理が簡単になり、メールアドレス発行などの手続きが迅速化。大きな不具合やメール遅延なく安定運用。メールソフトの一本化により、パソコン乗り換え時のデータ移行業務が軽減。管理者の負担が大幅に軽減された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2024/03/itoyu_main1.png",
+    "tags": [
+      "メール中心の連絡",
+      "アカウント管理の煩雑さ",
+      "情報漏洩リスク",
+      "サーバ運用の負担"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-jij",
+    "title": "量子最適化計算サービスのバックエンド基盤をKAGOYAのHPCクラウドで実現",
+    "summary": "量子アニーリング最適化計算サービスを提供するJIJは、SX-Aurora TSUBASAを自社システムと連携させる必要があったが、自社運用はコストと手間がかかるため、KAGOYAのFLEX HPCサービスを導入。専有クラウド環境で安定稼働し、JijZeptのサービス基盤として機能している。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX / HPCサービス（SX-Aurora TSUBASA）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/jij/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社JIJ",
+      "industry": "it",
+      "size": "スタートアップ企業",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "SX-Aurora TSUBASAは優れた計算技術だが、自社でハードウェアを購入して運用するにはコストと手間がかかる。また、AWSなどの共有クラウドではハードウェアを専有できないため、自社システムとの連携が困難だった。",
+    "actions": "KAGOYA のFLEX HPCサービスを導入し、SX-Aurora TSUBASAを専有クラウド環境で利用。Docker コンテナを搭載して開発環境として活用し、自社システムに統合。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "稼働期間",
+        "value": "1年間（安定稼働）"
+      }
+    ],
+    "resultsQualitative": "SX-Aurora TSUBASAの機能を専有しながら安定稼働。大きな問題なく、自社システムとの統合に成功。JijZeptのバックエンド基盤として機能。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/03/a0621e1fe9d04b6244292b20dbc12813.png",
+    "tags": [
+      "サーバ運用の負担",
+      "老朽化したシステム",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-mirai-switch",
+    "title": "FileMaker運用企業が、KAGOYAのベアメタルサーバーで拠点間・テレワーク対応を予算下回りで実現",
+    "summary": "FileMaker開発企業の未来Switchは、顧客のFileMaker拠点間利用・テレワーク化に対応するため、外部サーバー環境を検討。KAGOYAのベアメタルサーバーとVPN環境を導入し、要望以上の提案内容を予算下回りで実現でき、顧客への提案精度が向上した。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX（ベアメタルサーバー）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/mirai_switch/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社未来Switch",
+      "industry": "it",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "FileMakerの拠点間利用・テレワーク対応に必要な外部サーバー環境の提案で、顧客の予算に合致するソリューションが少なかった。既存ベンダーの提案は予算超過となっていた。",
+    "actions": "KAGOYAのベアメタルサーバー（FLEX）を基盤に、VPN接続環境でリモートデスクトップとFileMakerを提供。指定キャリア/プロバイダ回線を引き込み、安全なテレワーク環境を構築した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象企業",
+        "value": "在宅医療クリニック（第1号顧客）ほか複数社"
+      }
+    ],
+    "resultsQualitative": "要望以上の提案内容を予算下回りで実現でき、顧客への提案が容易になった。第1号顧客では当初予算を大きく下回ったため、削減予算でiPadなど環境整備に充当でき、顧客満足度が向上。信頼性の高いサポート体制により、ミッションクリティカル業務でのダウンタイム削減が実現。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/01/miraiswitch_main_1440_900.png",
+    "tags": [
+      "テレワーク対応",
+      "多拠点の管理",
+      "老朽化したシステム"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-nozomigakuen",
+    "title": "テナントサーバーの管理リスク回避、ベアメタルサーバーへの移行で営業継続性を確保",
+    "summary": "進学教室を運営する希学園は、テナントビルのサーバーメンテナンス停電により業務が滞るリスクを抱えていた。KAGOYAのベアメタルサーバーとHyper-V環境により、オンプレミスの運用状態をそのまま外部に移行し、管理リスクを回避しつつコストも抑制した。",
+    "vendor": "kagoya.jp",
+    "product": "ベアメタルサーバー（FLEX）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/nozomigakuen/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社希学園",
+      "industry": "education",
+      "size": "",
+      "dept": "情報システム部門"
+    },
+    "challenges": [
+      "security",
+      "efficiency"
+    ],
+    "challengeDetail": "テナントビルのサーバーが営業時間中にメンテナンス停電され、年間ほぼ休まず営業する当社の業務が滞るリスクがあった。エアコン増設など施設面の制限も多かった。",
+    "actions": "ハイスペックなベアメタルサーバーを採用し、Windows Server OSを実装したHyper-V環境を用意することで、オンプレミスの運用状態をそのまま移行。ファイルサーバーは既存NASを継続利用し、サイジングにより無駄なコストを削減した。",
+    "results": [],
+    "resultsQualitative": "オンプレミスから仮想環境へのスムーズな移行を実現。マイクロソフトのサポートに対応可能になり、管理リスクを回避した。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/03/7fa8e66710e3ac34b0793dccaabe059d.png",
+    "tags": [
+      "サーバ運用の負担",
+      "老朽化したシステム",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-rebun",
+    "title": "テレビ反響時のサーバーダウンを解消、転送量無制限の専用サーバーで販売機会を確保",
+    "summary": "通信販売企業が、テレビ放映による想定外のアクセス殺到でサーバーダウンし販売機会を損失していた。転送量無制限の専用サーバーに移行することで、サーバーダウンなく安定運用を実現した。",
+    "vendor": "kagoya.jp",
+    "product": "レンタルサーバー（KAGOYA マネージド専用サーバー）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/rebun/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社レブニーズ",
+      "industry": "food",
+      "size": "",
+      "dept": "業務改善室"
+    },
+    "challenges": [
+      "efficiency",
+      "sales"
+    ],
+    "challengeDetail": "テレビ放映による想定外のアクセス殺到でサーバーがダウンし、販売機会を損失していた。共用サーバーではアクセス数や転送量に制限があり、セール時の高負荷に対応できなかった。",
+    "actions": "転送量が無制限で、ハイスペックな専用サーバーのリソースをフルで利用できるKAGOYAのマネージド専用サーバーに移行した。",
+    "results": [],
+    "resultsQualitative": "導入後、サーバーがダウンすることなく快適に利用でき、販売機会の損失を防止できるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/01/f89dd36dd6a79ae3b9e99a375fbc5e0c.png",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-sas",
+    "title": "Windows Server サポート切れ対応とテレワーク環境整備で、365日無休サポートのクラウド基盤に統合",
+    "summary": "Windows Server のサポート切れと社員増加に伴う情報管理の多様化に対応するため、メール・グループウェア・仮想デスクトップ環境をKAGOYAのクラウドサービスに統合。以前のクラウドサービスと比べてパフォーマンスが向上し、運用・コスト面で改善を実現。",
+    "vendor": "kagoya.jp",
+    "product": "KAGOYA FLEX クラウドサーバー、KAGOYA MAIL、desknet's NEO専用サーバー、ベアメタルサーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/sas/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "エス・エー・エス株式会社",
+      "industry": "it",
+      "size": "",
+      "dept": "クラウド事業部"
+    },
+    "challenges": [
+      "efficiency",
+      "security",
+      "cost"
+    ],
+    "challengeDetail": "社内サーバで管理していたデータの Windows Server サポート切れにより新たな管理方法が必要となり、同時に社員増加による労働環境や情報アクセスの多様化に対応する必要があった。また、既存のメールサーバーホスティングサービスはサポート面に不満があった。",
+    "actions": "管理者権限付の物理専用サーバーで仮想デスクトップ環境を構築し、グループウェア・メールサーバーなどの業務基盤には KAGOYA のマネージドサービスを活用。Web 勤怠管理システムと給与明細電子化システムを複数ドメイン運用し、Salesforce と連携させた Web-to-Lead 体制を実現。",
+    "results": [],
+    "resultsQualitative": "パフォーマンスが想像以上に向上し、以前のクラウドサービスと比べて改善を実感。サポートのレスポンスが早く、以前のストレスが解消された。365日無休の電話サポートで安心運用が実現。運用面やコスト面の改善も達成。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2022/12/sas_main_1440_900.png",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "テレワーク対応",
+      "アカウント管理の煩雑さ"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-sijam",
+    "title": "パブリッククラウドの不安定性を解決、プライベートクラウドパッケージで安定稼働を実現",
+    "summary": "パブリッククラウドの複数回にわたる障害により業務が中断する課題を抱えていた。KAGOYAのプライベートクラウドパッケージを導入し、3Tier仮想化環境を低コストで簡単に構築。VPN設定まで含めた初期構築サポートにより、安定稼働を実現した。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX プライベートクラウド Suite",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/sijam/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社シジャム・ビーティービー",
+      "industry": "it",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "quality",
+      "security"
+    ],
+    "challengeDetail": "利用していたパブリッククラウドが短期間で複数回にわたって落ちる不具合が発生し、業務が中断する状態が続いていた。周辺の顧客の影響を大きく受けるため、物理的に分離された環境への移行が必要だった。",
+    "actions": "KAGOYAのプライベートクラウドパッケージ（ベアメタルサーバーを使用した専有仮想環境）を導入。VMWare、サーバー、ファイアウォール、バックアップ、FortiGateがパッケージに含まれており、VPN構築から初期設定までKAGOYAがサポート。",
+    "results": [],
+    "resultsQualitative": "課題となっていた大きな障害もなく、安定稼働を実現。導入コストを抑えながらプライベートクラウド環境を簡単に構築できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/01/sijam_main-1-1024x640.png",
+    "tags": [
+      "システムの乱立",
+      "老朽化したシステム",
+      "サーバ運用の負担"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-silpheed",
+    "title": "ベアメタルサーバーからFLEXクラウドへ移行、処理速度向上とサーバー故障リスク軽減を実現",
+    "summary": "システム開発企業が5年利用したベアメタルサーバーのディスク障害をきっかけに、FLEXクラウドへ移行。KAGOYAのサポートにより最小限のダウンタイムでの移行を実現し、サーバー故障リスク軽減と処理速度向上を達成。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX クラウドサーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/silpheed/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社シルフィード",
+      "industry": "it",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "quality",
+      "efficiency"
+    ],
+    "challengeDetail": "5年利用したベアメタルサーバーのディスク障害によるサーバー故障リスクが高まっていた。また、システム処理の遅い部分があり、どんなにチューニングしても改善されない問題があった。",
+    "actions": "ベアメタルサーバーからFLEXクラウドへ移行。移行方法として3つの案を検討し、エンドユーザーへの影響を最小限に抑える構成を採用。VPN疎通トラブルはKAGOYAのサポートで解決。",
+    "results": [
+      {
+        "metric": "システム処理速度",
+        "value": "改善・高速化"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "ベアメタルサーバー利用期間",
+        "value": "5年"
+      }
+    ],
+    "resultsQualitative": "サーバー故障の不安がほぼなくなった。性能が向上したのにコストはほぼ変わらなかった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2025/12/DSC04507.jpg",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-ssl",
+    "title": "コンテンツ配信サービスの中央サーバー基盤をマネージドRancherで実現",
+    "summary": "新事業のコンテンツ配信サービス「natadeCOCO」向けに、各配信ユニットを制御する中央サーバーが必要だった。マネージドRancherとKubernetesを提供するcloud tapコンテナサービスを採用し、アプリケーション開発に集中できる環境を構築した。",
+    "vendor": "kagoya.jp",
+    "product": "cloud tap コンテナサービス（Rancher・Kubernetes）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/ssl/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社スーパーソフトウエア",
+      "industry": "it",
+      "size": "",
+      "dept": "プロダクト開発"
+    },
+    "challenges": [
+      "efficiency",
+      "leadtime"
+    ],
+    "challengeDetail": "新事業のコンテンツ配信サービス向けに、各配信ユニットを制御するための中央サーバーが必要だった。海外サーバーでは遅延が生じるため、国内関西エリアでの構築が必須だった。",
+    "actions": "マネージドRancherでクラスタ管理を行うcloud tapコンテナサービスを採用し、インフラ管理をベンダーに委譲することで、アプリケーション開発に集中できる環境を構築した。",
+    "results": [],
+    "resultsQualitative": "マネージドサービスにより運用管理の負担を軽減し、Rancherのバージョンアップなども含めた安定した運用が実現できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/02/ssl_main.png",
+    "tags": [
+      "サーバ運用の負担",
+      "老朽化したシステム",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-takedahp",
+    "title": "約2,800人の職員対象の人事評価フローを紙媒体から電子化し大幅な工数削減を実現",
+    "summary": "武田病院グループは年2回約2,800名の職員を対象とした人事評価を紙で運用していた。Forguncyプランを導入して評価フローを電子化し、紙の印刷・配送・記入・取り込み業務を削減、役員の評価作業も圧倒的に効率化した。",
+    "vendor": "kagoya.jp",
+    "product": "Forguncyプラン",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.kagoya.jp/case/takedahp/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "武田病院グループ",
+      "industry": "medical",
+      "size": "職員約2,800名（常勤医師以外）",
+      "dept": "医療情報管理部"
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "年2回約2,800名の職員を対象とした人事評価を全て紙で運用しており、大量の紙が京都全域の病院・施設を飛び交う非効率な業務になっていた。専用のSaaSサービスではアカウント単位の課金が膨大となるため導入が現実的ではなかった。",
+    "actions": "Forguncyプランを導入し、自己評価から所属長評価、2次評価、3次評価、役員決裁までの人事評価フロー全体を電子化。ノーコードに加えPHPプログラミングにより、スマートフォンでの外部アクセスと過去歴閲覧などの複雑な要件に対応。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象職員数",
+        "value": "約2,800名"
+      },
+      {
+        "metric": "実施頻度",
+        "value": "年2回"
+      },
+      {
+        "metric": "スマートフォン利用率",
+        "value": "8割"
+      }
+    ],
+    "resultsQualitative": "紙の印刷・配送・記入・システム取り込みという非効率な業務が削減され、人事評価にかかる時間が大幅に短縮された。特に役員の評価がパソコンでの検索と過去歴閲覧により圧倒的に効率的になった。職員の利便性も向上し院内でも好評。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/11/takedahp_top.jpg",
+    "tags": [
+      "紙の書類処理",
+      "押印・承認の遅れ",
+      "月末の残業",
+      "アカウント管理の煩雑さ"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-tokyodome",
+    "title": "イベント時の大量アクセスに対応、CDNより低コストなコンテンツ配信で快適運用を実現",
+    "summary": "東京ドームシティ公式サイトはイベントテレビ放映時にアクセス増加によるレスポンス遅延・停止が発生していた。KAGOYAのレンタルサーバーとスリーハンズのオリジンアシスト（低コストなコンテンツ配信サービス）を導入することで、CDNより予算を抑えながら安定運用を実現。",
+    "vendor": "kagoya.jp",
+    "product": "KAGOYA レンタルサーバー / オリジンアシスト",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/tokyodome/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社東京ドーム（東京コンピュータサービス株式会社が運用）",
+      "industry": "other-industry",
+      "size": "",
+      "dept": "宣伝広告部"
+    },
+    "challenges": [
+      "efficiency",
+      "leadtime"
+    ],
+    "challengeDetail": "イベントのテレビ放映時に大量アクセスが発生し、Webサイトのレスポンスが遅延し、サーバーが瞬間的に停止する状態が発生していた。",
+    "actions": "KAGOYAのレンタルサーバーに移転し、トラフィックブースターを導入。その後、アクセス増加に対応するため、スリーハンズ社のオリジンアシスト（コンテンツをキャッシュして配信するサービス）にグレードアップした。CDNより低予算で国内向け配信に対応。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "ふるさと祭り東京のアクセス数",
+        "value": "ユニークユーザー60万人以上（2020年実績）"
+      },
+      {
+        "metric": "ふるさと祭り東京の動員数",
+        "value": "約44万人（2020年・10日間）"
+      }
+    ],
+    "resultsQualitative": "イベント期間中にイベントページが快適に閲覧でき、イベント以外のコンテンツにも問題なくアクセス可能に。突発的なサイト停止が解消され、通常サポート分でまかなえる状態となった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2022/01/tokyodome_main-1-1024x640.png",
+    "tags": [
+      "サーバ運用の負担",
+      "老朽化したシステム",
+      "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-toyoboshi",
+    "title": "オンプレミスからクラウド移行でセキュリティと災害対策を強化、ERP基幹システムまで統合",
+    "summary": "カシミヤ糸製造企業が、セキュリティ面の懸念と災害対策の必要性からオンプレミス環境をクラウドに移行。ホームページから始まり、desknet's、メールサーバー、基幹システムERP全体をKAGOYAで統合運用することで、運用コスト削減と有事対応体制を確立。",
+    "vendor": "kagoya.jp",
+    "product": "KAGOYA FLEX（ベアメタルサーバー）、KAGOYA MAIL、desknet's NEO専用サーバー、レンタルサーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/toyoboshi/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "東洋紡糸工業株式会社",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "管理部"
+    },
+    "challenges": [
+      "security",
+      "sustainability",
+      "cost"
+    ],
+    "challengeDetail": "オンプレミスのサーバールームをビルの倉庫に配置していたため、セキュリティ面と災害対策に懸念があった。ネット販売強化を進める中で、より安定した環境が必要となった。",
+    "actions": "KAGOYAのデータセンターにホームページを移行し、VPN接続でオンプレミス感覚を維持しながら、NASを活用したファイル共有環境を構築。その後、desknet's、メールサーバー、基幹システムERP全体をクラウド環境に移行した。",
+    "results": [
+      {
+        "metric": "運用コスト",
+        "value": "削減（オンプレ環境より低下）"
+      }
+    ],
+    "resultsQualitative": "2018年台風21号時にネットワークが遮断されたが、KAGOYAのデータセンターでファイルコピーを迅速に提供してもらい、災害対策の重要性と同社の有用性を再認識。オンプレミス倉庫の屋根飛散による水浸しリスクを排除。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2022/12/80f8ebc2cbdaa389544f20c2afd429f6-e1678442683335.png",
+    "tags": [
+      "サーバ運用の負担",
+      "情報漏洩リスク",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-u-tokyo-yoshimura-lab",
+    "title": "地球システムモデル開発の計算負担軽減、SX-Aurora TSUBASAクラウドで開発効率を向上",
+    "summary": "東京大学生産技術研究所は、100年後の気候予測に必要な地球システムモデル開発において、計算資源の膨大化と地球シミュレータへのアクセス負担に直面していた。SX-Aurora TSUBASAクラウドを導入し、地球シミュレータと同じ環境をクラウド上に構築することで、オンプレミス運用の手間を削減し、迅速な開発を実現した。",
+    "vendor": "kagoya.jp",
+    "product": "SX-Aurora TSUBASAクラウド（HPCサービス）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/u-tokyo_yoshimura-lab/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "東京大学 生産技術研究所 芳村研究室",
+      "industry": "education",
+      "size": "研究室",
+      "dept": "気候・水循環研究部門"
+    },
+    "challenges": [
+      "efficiency",
+      "data"
+    ],
+    "challengeDetail": "地球システムモデルの高解像度化に伴い計算資源が膨大化している。地球シミュレータでのデバッグには1回のレスポンスに1日以上かかることもあり、開発効率が低い。また、オンプレミス導入の場合、電気設備・空調・メンテナンスなど運用負担が大きい。",
+    "actions": "カゴヤのSX-Aurora TSUBASAクラウドサービスを導入し、地球シミュレータと同じ環境をクラウド上に構築。手元での迅速な開発環境を実現するとともに、運用・保守をクラウド事業者に委託することで負担軽減を図った。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象モデル解像度の推移",
+        "value": "500km四方から数十km四方へ高解像度化"
+      }
+    ],
+    "resultsQualitative": "地球シミュレータへのアクセス負担を軽減し、手元で迅速に開発可能な環境を構築。オンプレミス運用と比べて設備投資と運用負担を削減。現在、開発に無事取り組める状態を実現。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2023/07/yoshimura-lab_top.png",
+    "tags": [
+      "サーバ運用の負担",
+      "リアルタイムに把握できない",
+      "開発環境の制約"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-utc",
+    "title": "柔軟なサーバー構成で業務システムのインフラを最適化、定額制で顧客提案もしやすく",
+    "summary": "システムコンサル企業が業務システムのインフラとして、従来のオンプレミス環境からKAGOYAのベアメタルサーバーを採用。必要な機能のみを選択でき、定額制で料金体系が明確なため、自社製品の導入顧客への提案材料としても活用している。",
+    "vendor": "kagoya.jp",
+    "product": "FLEX（ベアメタルサーバー）/ レンタルサーバー / WordPress専用サーバー",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/utc/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社ユニオンシンク",
+      "industry": "it",
+      "size": "中堅企業",
+      "dept": "経営層・営業部"
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "業務システムのインフラとして、多機能だが不要な機能の料金も払うことになる既存ベンダーの提供形態に不満。必要な機能のみを選択できる柔軟性と、顧客に提案しやすい定額制の料金体系を求めていた。",
+    "actions": "KAGOYAの『専用サーバーFLEX』を導入し、ハイスペックなベアメタルサーバーにWindows Server OSとHyper-V環境を構築してプライベートクラウド環境を実現。",
+    "results": [],
+    "resultsQualitative": "オンプレミス環境からの移行後もパフォーマンス低下がほぼなく安定稼働。定額制の料金体系により顧客への提案がしやすくなった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2022/12/841e8eb972f376875e5e638810401896.png",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "システムの乱立"
+    ]
+  },
+  {
+    "id": "www-kagoya-jp-case-webserve",
+    "title": "ベアメタルサーバーとクラウドバックアップでBIZWORK＋のクラウド化を低コスト実現",
+    "summary": "パッケージソフトウェア開発企業が、自社サービス「BIZWORK＋」をクラウド型で提供する際、ベアメタルサーバーとクラウドバックアップ/Acronisを組み合わせることで、SQLライセンスコストの大幅削減と安定した運用基盤を実現した。",
+    "vendor": "kagoya.jp",
+    "product": "ベアメタルサーバー FLEX、クラウドバックアップ/Acronis",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.kagoya.jp/case/webserve/",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社ウェブサーブ",
+      "industry": "it",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "cost",
+      "efficiency"
+    ],
+    "challengeDetail": "自社サービスをクラウド型で提供する際、SQLライセンスコストが利用者数により120～130万円に膨れ上がり、製品価格を圧迫していた。また、バックアップソリューションのコストも高かった。",
+    "actions": "コストパフォーマンスの高いベアメタルサーバー（FLEX）にSQL Server Web Editionを構成し、クラウドバックアップ/Acronisを組み合わせることで、低価格でありながら離れた場所へのバックアップが可能な基盤を構築した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "従来のSQLライセンス費用",
+        "value": "120～130万円"
+      },
+      {
+        "metric": "クラウドバックアップ/Acronis料金",
+        "value": "月額2,000円～"
+      }
+    ],
+    "resultsQualitative": "ベアメタルサーバーの安さに顧客が驚くほどのコスト削減を実現。SQLライセンスコストの削減により、BIZWORK＋の価格競争力が向上。Acronisバックアップサービスにより、顧客が手間なく低価格でバックアップ機能を利用可能に。インフラ部分が完璧になったことで、受託開発事業の拡大に注力できる体制が整備された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.kagoya.jp/app/uploads/2022/12/347e30a06adc99c7ea81601337053875.png",
+    "tags": [
+      "老朽化したシステム",
+      "サーバ運用の負担",
+      "コスト最適化の課題"
     ]
   },
   {
@@ -260156,6 +261380,66 @@
       "新人教育のばらつき",
       "業務の属人化",
       "手順書がない"
+    ]
+  },
+  {
+    "id": "www-pa-consul-co-jp-talentpalette-case-details-osakagas-html",
+    "title": "大阪ガス、タレントパレットで人材の見える化とサクセッションプランの実現",
+    "summary": "大阪ガスは、拡大する事業領域に対応するため、人材データを一元管理できるタレントマネジメントシステムを導入。経験領域やポータブルスキルを可視化し、適所適材の人事配置やキャリア開発支援が可能になった。",
+    "vendor": "pa-consul.co.jp",
+    "product": "タレントパレット",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://www.pa-consul.co.jp/talentpalette/case/details/osakagas.html",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "大阪ガス株式会社",
+      "industry": "energy",
+      "size": "従業員21,159名（連結）",
+      "dept": "人事部"
+    },
+    "challenges": [
+      "hr",
+      "standardize",
+      "data"
+    ],
+    "challengeDetail": "事業領域の拡大に伴い必要な人材が顕在化する一方、人事情報が点在していたため、適切な人事配置が難しかった。経験領域の整理やサクセッションプランの見える化が課題だった。",
+    "actions": "タレントパレットを導入し、基本情報、社内経歴、アセスメント結果、テクニカルスキル（経験領域）、ポータブルスキルを一元管理。過去45年分の組織データをAI技術で効率的に分類・紐づけし、ダッシュボードで可視化。キャリアポータルで若手社員がキャリアイメージを構築できる環境を構築。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象者数",
+        "value": "約350名（キャリアポータル利用者）"
+      },
+      {
+        "metric": "分類した経験領域",
+        "value": "18領域"
+      },
+      {
+        "metric": "整理対象の過去組織データ",
+        "value": "約12,000チーム分（45年分）"
+      },
+      {
+        "metric": "経験領域データの可視化",
+        "value": "約5,000名分"
+      },
+      {
+        "metric": "キャリアポータル閲覧件数（対象者1人当たり）",
+        "value": "35.5件"
+      },
+      {
+        "metric": "キャリアポータル経由の先輩社員面談数",
+        "value": "53件"
+      }
+    ],
+    "resultsQualitative": "エビデンスに基づいた適所適材の人事配置が実現。育成期間付き人材公募の開始により、人材不足の解消と社員のリスキリング・育成の両立が可能に。人材の活性化につながっている。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://tp-img.imgix.net/s/case/details/osakagas/case_osakagas_ogp.png",
+    "tags": [
+      "データが分散",
+      "業務の属人化",
+      "引き継ぎ困難",
+      "技能伝承ができない"
     ]
   },
   {
@@ -285402,6 +286686,47 @@
       "応募が集まらない",
       "採用しても定着しない",
       "追客の漏れ"
+    ]
+  },
+  {
+    "id": "careerticket-jp-partner-case-powerplanning",
+    "title": "精度の高いマッチングにより2カ月で優秀層採用を実現",
+    "summary": "採用担当の人手不足と自社ターゲット層との接点不足に課題があったベンチャー企業が、キャリアチケット就職による人材紹介を導入。関関同立・GMARCH以上の学生層から精度の高いマッチングにより、2カ月という短期間で採用目標を達成した。",
+    "vendor": "careerticket.jp",
+    "product": "キャリアチケット就職",
+    "productCategory": "hrtech",
+    "sourceUrl": "https://careerticket.jp/partner/case/powerplanning/",
+    "collectedAt": "2026-10-13T00:00:00.000Z",
+    "customer": {
+      "name": "パワープランニング株式会社",
+      "industry": "it",
+      "size": "",
+      "dept": "採用担当"
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "ナビサイトや採用広報ツールの利用により、エントリー数に対して採用担当の人手が足りず、すべての学生対応が困難だった。また、自社がターゲットとする関関同立・GMARCH以上の学生層と効率的に接点を持てていなかった。",
+    "actions": "採用を紹介会社に絞り込み、キャリアチケット就職を導入。営業担当者と密に連携を取り、ターゲット層の学歴要件や地頭の良さ、会社ビジョンとのマッチなどについて細かくすり合わせを行った。",
+    "results": [],
+    "resultsQualitative": "紹介から説明会参加まで1週間という迅速な対応により、短期間で精度の高い採用が実現。キャリアアドバイザーが学生の適性を丁寧にヒアリングしたうえで紹介するため、会社ビジョンに共感する学生が集まった。",
+    "hasNumbers": false,
+    "sample": false,
+    "scale": [
+      {
+        "metric": "採用活動期間",
+        "value": "2カ月"
+      },
+      {
+        "metric": "採用成功率（キャリアチケット経由）",
+        "value": "3名中2名"
+      }
+    ],
+    "tags": [
+      "応募が集まらない",
+      "採用しても定着しない",
+      "一次対応の属人化"
     ]
   },
   {
@@ -337362,10 +338687,6 @@
       {
         "metric": "承認段階の削減",
         "value": "複数段階の承認を削減"
-      },
-      {
-        "metric": "業務効率化",
-        "value": "給与業務の効率化を実現"
       }
     ],
     "scale": [
@@ -337384,6 +338705,10 @@
       {
         "metric": "海外子会社従業員",
         "value": "約500名"
+      },
+      {
+        "metric": "業務効率化",
+        "value": "給与業務の効率化を実現"
       }
     ],
     "resultsQualitative": "複雑な変更管理にシステムが柔軟に対応できるようになり、派遣社員の管理が容易に。年末調整などの季節業務の負担が軽減された。人事データが経営判断に活用可能になり、戦略的な人事管理が実現した。",
@@ -405712,10 +407037,6 @@
         "value": "大幅改善"
       },
       {
-        "metric": "時間計算業務",
-        "value": "簡素化・効率化"
-      },
-      {
         "metric": "管理者の負担",
         "value": "軽減"
       }
@@ -405728,6 +407049,10 @@
       {
         "metric": "導入時期",
         "value": "2025年9月"
+      },
+      {
+        "metric": "時間計算業務",
+        "value": "簡素化・効率化"
       }
     ],
     "resultsQualitative": "承認担当が部門ごとに分散され、工事部長への負荷が集中しない体制が実現。社員からの申請が不要となり、確認作業の時間が短縮。データと運用が一体化により、正確な勤務管理が可能に。",
@@ -422489,6 +423814,42 @@
     ]
   },
   {
+    "id": "www-takachiho-kk-co-jp-case-wataru-hasegawa-architect-studio",
+    "title": "アイランドキッチンの昇降システムでダイニングテーブルを4m拡張",
+    "summary": "監督宅に下宿する学生5人を含む7～9人が利用するため、手狭なダイニングスペースの有効活用が課題だった。油圧式昇降システムMOVOTECでアイランドキッチンの高さを調節可能にすることで、ダイニングテーブルの一部として機能させた。来客時には4mのテーブルに拡張でき、限られたスペースを最大限に活用できた。",
+    "vendor": "takachiho-kk.co.jp",
+    "product": "MOVOTEC（油圧式昇降システム）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.takachiho-kk.co.jp/case/wataru_hasegawa_architect_studio/",
+    "collectedAt": "2026-10-09T00:00:00.000Z",
+    "customer": {
+      "name": "長谷川ワタル建築研究所",
+      "industry": "construction",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "滋賀短期大学付属高等学校の女子バスケットボール部監督宅に学生5人が下宿しており、通常7～9人、来客時はそれ以上の人数が利用する。手狭なキッチンと食卓スペースを有効活用する必要があった。",
+    "actions": "アイランドキッチンに油圧式昇降システムMOVOTECを四隅に取り付け、調理時の高さからダイニングテーブルの高さに調節可能にした。テーブルとの組み合わせで、スペースを最大限に活用できる設計を実現した。",
+    "results": [],
+    "resultsQualitative": "来客時にアイランドキッチンをダイニングテーブルの一部として活用でき、限られたスペースで大人数での食事が可能になった。また、身長差があるカップルや高齢者、子どもなど様々な利用者に対応できる高さ調整機能も実現した。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "スペース不足の課題",
+      "限られた環境での多人数対応"
+    ],
+    "scale": [
+      {
+        "metric": "ダイニングテーブルの拡張サイズ",
+        "value": "4m"
+      }
+    ]
+  },
+  {
     "id": "www-takachiho-kk-co-jp-case-yaokin",
     "title": "少人数体制の食品メーカーが、ランサムウェア暗号化後の自社復旧体制を構築",
     "summary": "食品製造企業の株式会社やおきんは、ひとり情シス体制でランサムウェア被害時の復旧が不透明という課題を抱えていた。Halcyonを導入し、暗号化キーの自動取得・保存により身代金を支払わず自社で迅速復旧できる体制を実現。少人数での運用負荷を抑えながら事業継続の安心感を確保した。",
@@ -438859,6 +440220,44 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "情報漏洩リスク"
+    ]
+  },
+  {
+    "id": "ysreportcloud-ysreading-co-jp-case-saiseikaikagoshima",
+    "title": "読影依頼がいつでも可能に。読影結果までの時間を短縮",
+    "summary": "病院の読影依頼作業が週1回の定期的な対応のみだったが、クラウド読影支援システムを導入することで、読影依頼をいつでも出せるようになり、読影結果が分かるまでの時間が短縮された。",
+    "vendor": "ysreading.co.jp",
+    "product": "YS Report Cloud（推定）",
+    "productCategory": "cloud",
+    "sourceUrl": "https://ysreportcloud.ysreading.co.jp/case/saiseikaikagoshima/",
+    "collectedAt": "2026-10-15T00:00:00.000Z",
+    "customer": {
+      "name": "済生会鹿児島病院",
+      "industry": "medical",
+      "size": "",
+      "dept": "画像診断部門"
+    },
+    "challenges": [
+      "efficiency",
+      "leadtime"
+    ],
+    "challengeDetail": "読影依頼作業が週1回のため、都度の依頼対応に業務負担が増えることが懸念されていた。また読影結果までの時間が長く、読影医への相談や再読影依頼の手順が煩雑だった。",
+    "actions": "クラウド型の読影支援システムを導入し、いつでも読影依頼ができるようにした。チャット機能による気軽な相談も実現。",
+    "results": [],
+    "resultsQualitative": "読影結果がすぐに出る安心感からCT撮影が増加。患者の安心感と信頼関係の向上。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "電話・FAX中心",
+      "対応履歴が残らない",
+      "読影結果の待機時間",
+      "再依頼の手順が煩雑"
+    ],
+    "scale": [
+      {
+        "metric": "読影結果到達時間",
+        "value": "通常3営業日以内、緊急3時間以内"
+      }
     ]
   },
   {
