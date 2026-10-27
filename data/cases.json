@@ -49138,7 +49138,8 @@
       "情報共有の遅れ",
       "社内コミュニケーション不足",
       "理念・ビジョンの浸透不足"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-businessbridge-jp-case-muratec",
