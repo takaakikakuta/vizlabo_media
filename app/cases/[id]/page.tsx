@@ -9,6 +9,7 @@ import { challengeStyle, primaryChallenge } from "../../../lib/visuals";
 import { parseStat, statSize } from "../../../lib/stat";
 import Adoption from "../../../components/Adoption";
 import CoverImg from "../../../components/CoverImg";
+import { withUtm } from "../../../lib/source";
 
 /* ビルド出力の肥大化対策（Amplifyの220MB制限）:
    事前生成をやめ、初回アクセス時に生成してキャッシュするオンデマンドISRにする。
@@ -234,30 +235,11 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
   );
 }
 
-/** クエリ文字列が付くと本文が空のページを返すサイト。ここには UTM を付けない */
-const NO_UTM_HOSTS = new Set(["mediadrive.jp"]);
-
-/** 出典URLに UTM を付ける。掲載元の解析で「事例マニアの事例ページの冒頭／末尾から来た」と分かるようにする。
-    既にクエリやハッシュがあっても壊さないよう URL オブジェクトで組む。 */
-function withUtm(url: string, position: "top" | "bottom"): string {
-  try {
-    const u = new URL(url);
-    if (NO_UTM_HOSTS.has(u.hostname.replace(/^www\./, ""))) return url;
-    u.searchParams.set("utm_source", "jirei-mania");
-    u.searchParams.set("utm_medium", "referral");
-    u.searchParams.set("utm_campaign", "case_detail");
-    u.searchParams.set("utm_content", position);
-    return u.toString();
-  } catch {
-    return url;
-  }
-}
-
 /** 公式の元記事へのボタン。文言に会社名を入れて「どこに飛ぶか」を具体的にする（導入企業名、無ければ掲載元ドメイン） */
 function SourceButton({ c, position }: { c: CaseStudy; position: "top" | "bottom" }) {
   const name = c.customer.name || c.vendor;
   return (
-    <a href={withUtm(c.sourceUrl, position)} target="_blank" rel="noopener"
+    <a href={withUtm(c.sourceUrl, "case_detail", position)} target="_blank" rel="noopener"
       className="group inline-flex max-w-full flex-col border border-ink bg-ink px-5 py-3 text-white no-underline transition hover:bg-white hover:text-ink">
       <span className="text-[14px] font-bold leading-snug">元の事例を読む（{name}）↗</span>
       <span className="mt-0.5 text-[11px] text-white/70 group-hover:text-muted">掲載元：{c.vendor} の公式サイト</span>

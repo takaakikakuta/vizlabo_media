@@ -10,7 +10,11 @@ const BLOCKED_VENDORS = new Set(blocked.vendors.map((v) => v.domain));
 
 /** 公開対象の事例。hidden: true（削除依頼を受けた事例。データは残す）と
     禁止ベンダーの事例は、ここで外すので上位のどの関数からも見えない。 */
-const ALL = (raw as CaseStudy[]).filter((c) => !c.hidden && !BLOCKED_VENDORS.has(c.vendor));
+const VISIBLE = (raw as CaseStudy[]).filter((c) => !c.hidden && !BLOCKED_VENDORS.has(c.vendor));
+
+/** linkOnly: true（取り下げ依頼を受け、リンクだけ残す事例）も外す。事例ページ・一覧・検索・サイトマップ・
+    記事末尾のサービス紹介・一括問い合わせには出ない。事例セレクションだけが getLinkOnlyCase で拾う。 */
+const ALL = VISIBLE.filter((c) => !c.linkOnly);
 
 /** 数字あり優先 → 収集日の新しい順 → ID順。
     同日が多数あるため、最後のID順まで決めておかないと
@@ -26,6 +30,11 @@ export function allCases(): CaseStudy[] {
 
 export function getCase(id: string): CaseStudy | undefined {
   return ALL.find((c) => c.id === id);
+}
+
+/** リンクのみの事例。事例セレクションで「企業名を伏せた紹介＋元記事へのリンク」を出すときだけ使う */
+export function getLinkOnlyCase(id: string): CaseStudy | undefined {
+  return VISIBLE.find((c) => c.id === id && c.linkOnly);
 }
 
 export function casesByChallenge(slug: string): CaseStudy[] {

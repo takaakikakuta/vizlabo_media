@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getCase } from "../../lib/cases";
+import { getCase, getLinkOnlyCase } from "../../lib/cases";
 import { getArticle, articleThumb } from "../../lib/articles";
 import { industryLabel } from "../../lib/taxonomy";
 import { parseStat } from "../../lib/stat";
@@ -11,15 +11,24 @@ import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
 import SuggestForm from "../SuggestForm";
 import { SUGGEST_ENABLED } from "../../lib/flags";
+import { withUtm } from "../../lib/source";
 
 /* 「選」テンプレート（テーマ別の事例10選・5選・3選）。順位ではなく並列の選として組む。
    5選では任意の compare（比べる表）を items の後に置ける。
-   各項目は〈書き下ろしの見出し＋読みどころ〉＋〈事例データから自動で出すカルテと成果数字〉。 */
+   各項目は〈書き下ろしの見出し＋読みどころ〉＋〈事例データから自動で出すカルテと成果数字〉。
+   事例が linkOnly（掲載元から取り下げ依頼）なら、企業名・規模・数字・画像を出さず、
+   item.linkOnly の短い紹介と提供元ロゴつきの元記事リンクだけにする（番号と本数は崩さない）。 */
 
 export default function Sen({ article }: { article: SenArticle }) {
   const entries = article.items
-    .map((it, i) => ({ ...it, i, c: getCase(it.caseId) }))
-    .filter((e) => e.c);
+    .map((it, i) => {
+      const c = getCase(it.caseId);
+      if (c) return { ...it, i, c, linkOnly: false };
+      const lc = getLinkOnlyCase(it.caseId);
+      if (!lc) return undefined;
+      return { ...it, i, c: lc, linkOnly: true, headline: it.linkOnly?.headline ?? it.headline, body: it.linkOnly?.body ?? "" };
+    })
+    .filter((e) => e !== undefined);
   const compare = article.compare && article.compare.rows.length > 0 ? article.compare : undefined;
 
   return (
@@ -87,7 +96,33 @@ export default function Sen({ article }: { article: SenArticle }) {
       {/* ── 10本（5選なら5本、3選なら3本） ── */}
       <div className="mt-4">
         {entries.map((e) => {
-          const c = e.c!;
+          const c = e.c;
+          if (e.linkOnly) {
+            const logo = vendorLogo(c.vendor);
+            return (
+              <section key={e.caseId} id={`item${e.i + 1}`} className="mt-12 scroll-mt-20">
+                <h2 className="flex items-baseline gap-4 border-t-2 border-ink pt-5">
+                  <span className="num shrink-0 text-[22px] leading-none text-muted">{String(e.i + 1).padStart(2, "0")}</span>
+                  <span className="font-display text-[20px] leading-[1.5] text-ink">{e.headline}</span>
+                </h2>
+                <p className="mt-2.5 ml-10 text-[12px] text-muted">{industryLabel(c.customer.industry)}</p>
+                {e.body && <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>}
+                {/* 元記事へ直接送るカード。画像は掲載元のものを使わず、提供元ロゴにする */}
+                <a href={withUtm(c.sourceUrl, "article", article.slug)} target="_blank" rel="noopener"
+                  className="row group mt-4 ml-10 flex items-center gap-4 border border-line2 p-2.5 no-underline sm:p-3">
+                  <span className="relative block h-20 w-32 shrink-0 overflow-hidden rounded-[3px] border border-line2 bg-soft">
+                    {logo && <VendorLogo src={logo} size={34} />}
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block truncate text-[12px] text-muted">掲載元：{c.product || c.vendor}（{c.vendor}）</span>
+                    <span className="mt-1.5 block text-[13px] font-bold text-ink group-hover:text-brand">
+                      この事例を掲載元で読む ↗
+                    </span>
+                  </span>
+                </a>
+              </section>
+            );
+          }
           const results = (c.results ?? []).slice(0, 2);
           return (
             <section key={e.caseId} id={`item${e.i + 1}`} className="mt-12 scroll-mt-20">
@@ -150,7 +185,7 @@ export default function Sen({ article }: { article: SenArticle }) {
                     <th key={e.caseId} className="py-2.5 pr-3 align-bottom">
                       <a href={`#item${e.i + 1}`} className="no-underline">
                         <span className="num block text-[11px] text-muted">{String(e.i + 1).padStart(2, "0")}</span>
-                        <span className="label mt-1 block normal-case tracking-normal text-ink">{e.c!.customer.name || "導入企業（非公開）"}</span>
+                        <span className="label mt-1 block normal-case tracking-normal text-ink">{e.linkOnly ? "導入企業" : e.c.customer.name || "導入企業（非公開）"}</span>
                       </a>
                     </th>
                   ))}
