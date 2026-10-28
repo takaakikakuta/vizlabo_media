@@ -180,7 +180,7 @@ function DayRow({ d, today }: { d: DayPost; today: string }) {
   const diff = daysBetween(today, d.date);
   const dayNum = parseInt(d.date.slice(8, 10), 10);
   const isToday = d.date === today;
-  const names = cases.map(({ c }) => c.customer.name || vendorLabel(c.vendor)).filter(Boolean);
+  const names = cases.map(({ c, linkOnly }) => (linkOnly ? "" : c.customer.name) || vendorLabel(c.vendor)).filter(Boolean);
 
   return (
     <Link href={`/days/${d.date}`}

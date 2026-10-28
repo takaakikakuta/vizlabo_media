@@ -1,13 +1,17 @@
 import fs from "node:fs";
 import path from "node:path";
-import { getCase } from "./cases";
+import { getCase, getLinkOnlyCase } from "./cases";
 import type { CaseStudy } from "./types";
 
 /* 記念日ページ（/days/YYYY-MM-DD）。SNSの記念日ポストを、1日1ページの読みものとして残す。
    データは content/days/YYYY-MM-DD.json（1日1ファイル）。イラストは public/days/YYYY-MM-DD.jpg|png を置くだけで反映。
    事例の本文・会社名・数字はテンプレートが cases.json から引くので、JSONには事例IDと一言だけを書く。 */
 
-export type DayItem = { caseId: string; note: string };
+export type DayItem = {
+  caseId: string;
+  note: string;
+  linkOnly?: { note: string };  // 事例が linkOnly（取り下げ依頼でリンクのみ）になったとき、note に会社が分かる情報があれば差し替える
+};
 
 export type DayPost = {
   date: string;            // "YYYY-MM-DD"（年ごとに内容を変えられるよう、年を含める）
@@ -92,10 +96,15 @@ export function dayMonth(date: string): number {
   return parseInt(date.slice(5, 7), 10);
 }
 
-/** 事例3本を cases.json から引く（hidden・禁止ベンダーは getCase が除くので、その場合は落ちる） */
-export function dayCases(d: DayPost): { item: DayItem; c: CaseStudy }[] {
-  return d.items.map((item) => ({ item, c: getCase(item.caseId) }))
-    .filter((x): x is { item: DayItem; c: CaseStudy } => Boolean(x.c));
+/** 事例3本を cases.json から引く（hidden・禁止ベンダーは getCase が除くので、その場合は落ちる）。
+    linkOnly の事例は残し、linkOnly: true を付けて返す（企業名・数字を出さず元記事へのリンクだけにする） */
+export function dayCases(d: DayPost): { item: DayItem; c: CaseStudy; linkOnly: boolean }[] {
+  return d.items.flatMap((item): { item: DayItem; c: CaseStudy; linkOnly: boolean }[] => {
+    const c = getCase(item.caseId);
+    if (c) return [{ item, c, linkOnly: false }];
+    const lc = getLinkOnlyCase(item.caseId);
+    return lc ? [{ item, c: lc, linkOnly: true }] : [];
+  });
 }
 
 /* ── 一覧（/days）がカレンダーを組むための暦の道具。タイムゾーンに依らないよう UTC で日付だけを扱う ── */

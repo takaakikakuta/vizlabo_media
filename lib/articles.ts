@@ -164,7 +164,15 @@ export type SenArticle = {
   publishedAt: string;
   title: string[];
   lead: string;
-  items: { caseId: string; headline: string; body: string }[];  // 10本または3本（headline＝見出し、body＝読みどころ2〜3文）
+  items: {
+    caseId: string;
+    headline: string;     // 見出し
+    body: string;         // 読みどころ2〜3文
+    linkOnly?: {          // 事例が linkOnly（取り下げ依頼でリンクのみ）になったときの差し替え。企業名・規模など会社が分かる情報は書かない
+      headline?: string;  // 見出しに会社が分かる情報があるときだけ（無ければ headline をそのまま使う）
+      body: string;       // 事例の中身を1〜2文で。未設定なら紹介文は出さない
+    };
+  }[];  // 10本・5本・3本
   trivia?: { title: string; body: string };  // 任意。扉の後に置く「背景の知識」（制度・技術・数字の由来など、事例の外にある前提。空行区切り で段落）
   compare?: {             // 任意。3選向けの「比べる」パート（items と同じ順に並べて、読者が自社の位置を判定する表）
     title?: string;       // 見出し（既定「3社を比べる」）

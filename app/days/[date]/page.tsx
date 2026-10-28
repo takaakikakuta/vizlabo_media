@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { allDays, dayCases, dayImage, dayLabel, getDay, neighborDays } from "../../../lib/days";
 import CaseCard from "../../../components/CaseCard";
+import LinkOnlyCard from "../../../components/LinkOnlyCard";
 
 /* 記念日ページ。content/days/MM-DD.json を置けば生える。全日をビルド時に静的生成する（最大365ページ） */
 export const dynamicParams = false;
@@ -62,19 +63,22 @@ export default async function DayPage({ params }: { params: Promise<{ date: stri
       {/* 書き出し（title/body）はページには出さない。OGPのタイトルと一覧の見出しにだけ使う */}
       <h1 className="sr-only">{dayLabel(d.date)}は{d.name}。{d.title.join("")}</h1>
 
-      {/* 事例3本：ポストの一言＋事例カード（会社名・数字・リンクはカードが出す） */}
+      {/* 事例3本：ポストの一言＋事例カード（会社名・数字・リンクはカードが出す）。
+          linkOnly の事例は、企業名を出さず元記事へのリンクだけのカードにする */}
       <p className="label mt-10">{d.theme}、{cases.length}本</p>
       <div className="mt-3 border-t border-ink">
-        {cases.map(({ item, c }, i) => (
+        {cases.map(({ item, c, linkOnly }, i) => (
           <div key={c.id} className="border-b border-line2 py-6">
             {/* ポストの一言＝この事例の見出し。カードより目立つように大きく太く */}
             <h2 className="flex items-start gap-3">
               <span className="num mt-1.5 shrink-0 text-[12px] text-muted">{String(i + 1).padStart(2, "0")}</span>
               <span className="font-display text-[19px] leading-[1.55] text-ink sm:text-[21px]">
-                {d.emoji && <span className="mr-1.5">{d.emoji}</span>}{item.note}
+                {d.emoji && <span className="mr-1.5">{d.emoji}</span>}{linkOnly ? item.linkOnly?.note ?? item.note : item.note}
               </span>
             </h2>
-            <div className="mt-4"><CaseCard c={c} /></div>
+            <div className="mt-4">
+              {linkOnly ? <LinkOnlyCard c={c} campaign="day" content={d.date} /> : <CaseCard c={c} />}
+            </div>
           </div>
         ))}
       </div>
