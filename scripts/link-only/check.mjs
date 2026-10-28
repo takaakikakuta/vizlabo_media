@@ -1,4 +1,4 @@
-/* リンクのみ（linkOnly）にした事例が、どの記事にどう残っているかを洗い出す。
+/* リンクのみ（linkOnly）にした事例が、どの記事・記念日にどう残っているかを洗い出す。
    使い方: node scripts/link-only/check.mjs
 
    取り下げ依頼を「リンクのみ」で受けるときの手順:
@@ -7,6 +7,9 @@
       - 事例セレクションの item に linkOnly.body（企業名・規模を伏せた1〜2文）を書く。見出しに会社が分かる情報があれば linkOnly.headline も
       - タイトル・リード・背景・比べる表・まとめで企業名に触れている箇所を書き換える
       - 事例セレクション以外の型の記事は、リンクのみの表示を持たないので事例を差し替える
+      - 記念日（content/days）は、書き出し（title/body。OGP・一覧に出る）と冒頭（intro）の企業名を書き換える。
+        一言（note）に会社が分かる情報があれば、その item に linkOnly.note を書く
+   ※ SNSに投稿済みのポストや配信済みのメルマガはここでは直せない。必要なら手で消す・編集する
    3. 何も出なくなったらコミットする */
 import fs from "node:fs";
 import path from "node:path";
@@ -52,5 +55,28 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
   console.log(`\n${f}（#${a.no} ${a.title.join("")}）`);
   for (const n of notes) console.log(`  - ${n}`);
 }
+const daysDir = path.join(root, "content/days");
+for (const f of fs.readdirSync(daysDir).filter((f) => f.endsWith(".json")).sort()) {
+  const d = JSON.parse(fs.readFileSync(path.join(daysDir, f), "utf-8"));
+  const used = d.items.map((it) => ({ it, c: linkOnly.get(it.caseId) })).filter((x) => x.c);
+  if (used.length === 0) continue;
+
+  const notes = [];
+  for (const { it, c } of used) {
+    // 表に出る文面だけで社名を探す（note は linkOnly.note があればそちらが出る）
+    const shown = JSON.stringify({
+      title: d.title, body: d.body, intro: d.intro, theme: d.theme,
+      items: d.items.map((x) => (x === it ? (x.linkOnly?.note ?? x.note) : x.note)),
+    });
+    for (const k of nameKeys(c.customer?.name)) {
+      if (shown.includes(k)) { notes.push(`${c.id}: 「${k}」が記念日の文面に残っている`); break; }
+    }
+  }
+  if (notes.length === 0) continue;
+  problems += notes.length;
+  console.log(`\n記念日 ${f}（${d.name}）`);
+  for (const n of notes) console.log(`  - ${n}`);
+}
+
 console.log(problems ? `\n要対応 ${problems} 件` : `リンクのみの事例 ${linkOnly.size} 件。要対応なし`);
 process.exitCode = problems ? 1 : 0;

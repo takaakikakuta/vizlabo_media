@@ -11,7 +11,7 @@ import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
 import SuggestForm from "../SuggestForm";
 import { SUGGEST_ENABLED } from "../../lib/flags";
-import { withUtm } from "../../lib/source";
+import LinkOnlyCard from "../LinkOnlyCard";
 
 /* 「選」テンプレート（テーマ別の事例10選・5選・3選）。順位ではなく並列の選として組む。
    5選では任意の compare（比べる表）を items の後に置ける。
@@ -98,7 +98,6 @@ export default function Sen({ article }: { article: SenArticle }) {
         {entries.map((e) => {
           const c = e.c;
           if (e.linkOnly) {
-            const logo = vendorLogo(c.vendor);
             return (
               <section key={e.caseId} id={`item${e.i + 1}`} className="mt-12 scroll-mt-20">
                 <h2 className="flex items-baseline gap-4 border-t-2 border-ink pt-5">
@@ -107,19 +106,7 @@ export default function Sen({ article }: { article: SenArticle }) {
                 </h2>
                 <p className="mt-2.5 ml-10 text-[12px] text-muted">{industryLabel(c.customer.industry)}</p>
                 {e.body && <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>}
-                {/* 元記事へ直接送るカード。画像は掲載元のものを使わず、提供元ロゴにする */}
-                <a href={withUtm(c.sourceUrl, "article", article.slug)} target="_blank" rel="noopener"
-                  className="row group mt-4 ml-10 flex items-center gap-4 border border-line2 p-2.5 no-underline sm:p-3">
-                  <span className="relative block h-20 w-32 shrink-0 overflow-hidden rounded-[3px] border border-line2 bg-soft">
-                    {logo && <VendorLogo src={logo} size={34} />}
-                  </span>
-                  <span className="min-w-0">
-                    <span className="block truncate text-[12px] text-muted">掲載元：{c.product || c.vendor}（{c.vendor}）</span>
-                    <span className="mt-1.5 block text-[13px] font-bold text-ink group-hover:text-brand">
-                      この事例を掲載元で読む ↗
-                    </span>
-                  </span>
-                </a>
+                <div className="mt-4 ml-10"><LinkOnlyCard c={c} campaign="article" content={article.slug} /></div>
               </section>
             );
           }
