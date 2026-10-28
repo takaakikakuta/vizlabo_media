@@ -14555,6 +14555,1254 @@
     ]
   },
   {
+    "id": "form-run-home-blog-media-cases-anabuki-housing",
+    "title": "紙・FAX業務をペーパーレス化し、案件の可視化と紹介件数増加を実現",
+    "summary": "不動産総合サービス企業が、紙・FAXで管理していた紹介案件とアンケートをformrunでデジタル化。ペーパーレス化により手続きが簡素化され、従来記録に残らなかった案件が可視化され、紹介案件が目に見えて増加した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_anabuki_housing",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社穴吹ハウジングサービス",
+      "industry": "other-industry",
+      "size": "従業員1000名以上",
+      "dept": "営業推進部、HGCSES推進室"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "紙とFAXによる紹介案件やアンケートの収集・管理が煩雑で、FAX誤送信などのミスが発生。また記録に残らない案件が多く、見込み件数の可視化ができていなかった。",
+    "actions": "formrunを導入し、紹介案件入力フォームとアンケートフォームをデジタル化。LINE WORKS連携によるリアルタイム通知、メールテンプレート、マトリックス選択機能を活用して案件管理を一元化。",
+    "results": [
+      {
+        "metric": "紹介案件件数",
+        "value": "目に見えて増加"
+      },
+      {
+        "metric": "アンケート業務",
+        "value": "外注から内製化に転換、作成スピード向上、回答時間が外注比で月1ヶ月程度短縮"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "管理物件数",
+        "value": "約3200棟"
+      },
+      {
+        "metric": "導入検討期間",
+        "value": "約4ヶ月"
+      }
+    ],
+    "resultsQualitative": "記録に残らなかった案件がすべて記録されるようになり見込み件数が可視化された。従来の紙手続きからの移行がスムーズで、管理員からの紹介が積極的に増加。フォーム作成が直感的で説明も容易になり、グループ内での導入が進みやすくなった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a6fd12bee1de15da6a4c3d/large.jpeg?utime=1760599975",
+    "tags": [
+      "紙の書類処理",
+      "電話・FAX中心",
+      "対応履歴が残らない",
+      "進捗が見えない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-azumamine",
+    "title": "イベント受付工数9割削減、地方酒造メーカーが電話・FAX対応をformrunで自動化",
+    "summary": "従業員5名で年1回のイベント受付を電話・FAXで手作業していた日本酒製造メーカーが、formrunのメールフォーム・顧客管理機能を導入。受付工数を9割削減し、予約漏れトラブルをゼロ化。24時間受付で機会損失も解消。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_azumamine",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "合名会社吾妻嶺酒造店",
+      "industry": "food",
+      "size": "従業員5名",
+      "dept": "事務・イベント運営"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "従業員5名で通常業務と並行してイベント申し込みを電話・FAXで受付していたため、聞き取れない部分や読めない文字による予約漏れトラブルが発生。毎年申し込み人数が増加する中、業務負荷が増大していた。",
+    "actions": "formrunのメールフォーム・顧客管理機能を導入し、イベント申し込みをオンラインフォームに統一。自動メール返信機能でお客様に申し込み完了を自動通知し、ステータス管理ボードで対応状況を一元管理。",
+    "results": [
+      {
+        "metric": "イベント受付工数削減",
+        "value": "9割カット"
+      },
+      {
+        "metric": "予約漏れトラブル",
+        "value": "ゼロ化"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "イベント参加申し込み",
+        "value": "約200名"
+      },
+      {
+        "metric": "事務担当者数",
+        "value": "2名"
+      }
+    ],
+    "resultsQualitative": "電話待ちが不要になり、製造業務に集中可能に。24時間自動受付で機会損失が解消。お客様も自動返信メールで予約確認ができるため満足度向上。操作が直感的で、インターネット未経験の事務担当者も30分で習熟可能。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a30880a5e443214351497a/large.jpeg?utime=1760598312",
+    "tags": [
+      "電話・FAX中心",
+      "手作業の転記",
+      "入力ミスの頻発"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-b-minded",
+    "title": "フォーム作成工数を10分の1に削減、内製化を実現",
+    "summary": "金融サービス企業が、フォーム作成を外注していた課題に対し、formrunを導入。ノーコードでの内製化により、フォーム作成・修正の工数を10分の1に削減し、会社全体での利用に拡大した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_b_minded",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "ブロードマインド株式会社",
+      "industry": "finance",
+      "size": "従業員50～299名",
+      "dept": "人事総務部"
+    },
+    "challenges": [
+      "cost",
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "フォーム作成を外注していたため、項目追加のたびに見積もり・稟議・発注・作業・確認という一連の工程が必要で、時間とコストが多くかかっていた。また情報システム部門が不在であり、WEBコーディング知見がない中での対応が課題だった。",
+    "actions": "ノーコードで直感的に操作できるformrunを導入し、フォーム作成の内製化を実現。初期は人事総務部での利用から開始し、その後会社全体への展開、さらに研修用フォームへの用途拡大を行った。",
+    "results": [
+      {
+        "metric": "フォーム作成・修正作業量",
+        "value": "10分の1に削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "相談実績",
+        "value": "15万世帯超"
+      }
+    ],
+    "resultsQualitative": "フォーム一覧画面で全フォームを確認でき、管理が容易になった。研修資料と理解度テストを1つに統合することで業務工数を削減。会社全体で活用が広がった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1ea07efce6400646b0883/large.jpeg?utime=1721887239",
+    "tags": [
+      "見積もり作成に時間",
+      "業務の属人化",
+      "手順書がない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-branding-t",
+    "title": "フォーム作成〜設置時間を1/6に短縮、マーケター主導で施策実行を加速",
+    "summary": "ブランディングテクノロジー株式会社は、フォーム作成にエンジニアが必要な状況がボトルネックだった。formrunを導入し、ノーコードでマーケターが独立して作成・設置できる体制を構築。結果、3時間から30分へと所要時間を削減した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_branding_t",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "ブランディングテクノロジー株式会社",
+      "industry": "other-industry",
+      "size": "従業員50〜299名",
+      "dept": "経営戦略室・マーケティング部門"
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "フォーム作成・設置作業にプログラミングの専門知識が必要で、エンジニアへの依頼が常態化。マーケターがスピード感を持って施策を実行するうえで、この対応がボトルネックになっていた。",
+    "actions": "formrunを導入し、ノーコードのクリエイターフォーム機能を活用。マーケターがテンプレート選択と直感的な編集画面操作だけで、フォームの作成〜設置・管理を独立して実行できる体制に変更。あわせてGoogleスプレッドシート連携機能を活用して、収集したデータの下流処理も効率化。",
+    "results": [
+      {
+        "metric": "フォーム作成〜設置時間",
+        "value": "3時間→30分（1/6削減）"
+      },
+      {
+        "metric": "ウェビナー申し込みフォーム公開時間",
+        "value": "10分"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入プラン",
+        "value": "STARTERプラン"
+      }
+    ],
+    "resultsQualitative": "マーケターのみでフォーム周りの業務を完結でき、エンジニアの手を煩わさなくなった。複数のウェビナーをタイトなスケジュールで開催する際も、決定から公開まで最短10分で対応可能に。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a718145406e7030bff6a71/large.jpeg?utime=1722226708",
+    "tags": [
+      "業務の属人化",
+      "引き継ぎ困難",
+      "データが分散"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-bsc-int",
+    "title": "formrun×bookrun連携で採用業務20%削減、月50人の面談を自動化",
+    "summary": "ウォータースポーツ施設を運営する同社は、採用面談の日程調整にメール往復が必要で業務負担が大きかった。formrunとbookrunを連携させることで、面談予約フローを自動化し、採用業務を20%削減、月50人の面談対応を効率化した。",
+    "vendor": "form.run",
+    "product": "formrun（メールフォーム・顧客管理）+ bookrun（日程調整機能）",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_bsc_int",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社ビーエスシー・インターナショナル",
+      "industry": "other-industry",
+      "size": "2~49名",
+      "dept": "採用・企画運営"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "採用インターンシップの面談日程調整に、メール往復が2〜3回必要で、繁忙期（1ヶ月50人以上の面談）に大幅な時間がかかっていた。また、手作業による転記ミスやヒューマンエラーが頻発していた。",
+    "actions": "formrunのメールフォームにbookrun（日程調整機能）を連携させ、応募者が直接面談日程を選択できるシステムに変更。同時にSalesforceと連携させ、フォーム入力データを自動取り込みした。",
+    "results": [
+      {
+        "metric": "採用業務削減",
+        "value": "20%削減"
+      },
+      {
+        "metric": "転記作業時間",
+        "value": "3〜4時間→0時間"
+      },
+      {
+        "metric": "転記ミス",
+        "value": "ゼロに削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "月間面談人数",
+        "value": "50人以上"
+      },
+      {
+        "metric": "繁忙期の1日申込件数",
+        "value": "40〜50件"
+      }
+    ],
+    "resultsQualitative": "日程調整中の応募者のモチベーション低下やGoogle MeetのURL誤送信などのヒューマンエラーが解消され、機会損失リスクが減少した。サマーキャンプの受付時期との重なりでも余裕を持って対応できるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1f791d2fd66028642b427/large.jpeg?utime=1760597231",
+    "tags": [
+      "メール中心の連絡",
+      "手作業の転記",
+      "繁忙期の人員不足"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-clas",
+    "title": "メールテンプレート活用でお問い合わせ対応時間を2分以上から1分以内に短縮",
+    "summary": "家具・家電サブスクリプション企業が、Gmailでの対応漏れと属人化の課題に直面。formrunのボード画面、ステータス管理、メールテンプレート機能を導入し、社内システムとAPI連携させることで、1件あたりの対応時間を大幅に削減した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_clas",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社クラス",
+      "industry": "retail",
+      "size": "従業員数50~299名",
+      "dept": "カスタマーサクセス、商品仕入れチーム、配送関連チーム"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "labor"
+    ],
+    "challengeDetail": "Gmailの代表アドレスからの対応では担当者が不明確で対応漏れが頻発。少人数チームで多くのお客様に個別対応する必要があり、既存登録顧客情報の再入力が手間だった。",
+    "actions": "formrunのボード画面、ステータス機能、メールテンプレートを導入。エンジニアがコード型フォームを作成し、社内システムとAPI連携させて、顧客IDの入力で自動的に顧客情報が反映される仕組みを構築。複数部門でフォームを使い分け、ラベル機能で対応内容を可視化。",
+    "results": [
+      {
+        "metric": "お問い合わせ1件あたりの対応時間",
+        "value": "2分以上→1分以内"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "カスタマーサクセス部門のフォームメンバー数",
+        "value": "6名"
+      },
+      {
+        "metric": "商品仕入れチーム（MD）のフォームメンバー数",
+        "value": "7名"
+      },
+      {
+        "metric": "配送関連チームのフォームメンバー数",
+        "value": "5名"
+      },
+      {
+        "metric": "Googleスプレッドシート出力対象のお問い合わせ件数",
+        "value": "500件"
+      }
+    ],
+    "resultsQualitative": "対応漏れが解消され、ボード画面の視認性により対応状況が一目瞭然に。少人数チームでも効率的に業務を回すことが可能になり、ラベル機能でカテゴリ分けすることでサービス改善へのデータ活用も実現。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a7467e14352805904cfad3/large.jpeg?utime=1760601042",
+    "tags": [
+      "問い合わせ対応の負荷",
+      "一次対応の属人化",
+      "対応履歴が残らない",
+      "手作業の転記"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-daiichi-ag",
+    "title": "住宅展示場のアンケート業務をペーパーレス化、集計時間を大幅削減",
+    "summary": "住宅展示場を運営する企業が、紙のアンケート回答と手作業集計の課題を抱えていた。formrunのフォーム機能と条件分岐を導入し、アンケート集計業務を2時間から削減でき、転記ミスや文字判読の問題も解決した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_daiichi_ag",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社第一エージェンシー",
+      "industry": "other-industry",
+      "size": "2~49名",
+      "dept": "運営サポート部門"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "data"
+    ],
+    "challengeDetail": "住宅展示場の来場者アンケートを紙で回答してもらっていたため、手書きの判読が難しく、転記ミスが多く、集計に2時間を要していた。",
+    "actions": "formrunのメールフォーム機能を導入し、来場者アンケート、掲載申請フォーム、勤怠管理フォームなど複数のフォームを作成。条件分岐機能を活用して複数展示場のフォームを1つに統合した。",
+    "results": [
+      {
+        "metric": "アンケート集計業務の削減",
+        "value": "2時間削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "住宅展示場数",
+        "value": "4か所"
+      },
+      {
+        "metric": "複数人での管理ユーザー数",
+        "value": "6人以上"
+      }
+    ],
+    "resultsQualitative": "文字判読の困難さと転記ミスが解決され、業務がスムーズになった。条件分岐機能により複数展示場のフォーム管理が簡素化され、その後アンケート以外にも社内申請や常設フォームなど様々な用途に拡大した。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1fcdcb6a35503ccdc8eba/large.jpeg?utime=1721892060",
+    "tags": [
+      "紙の書類処理",
+      "手作業の転記",
+      "数字の集計に時間"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-dmmmake",
+    "title": "エンジニアのフォーム作成工数を削減、ノーコードで対応漏れなくお客様対応を実現",
+    "summary": "DMM.makeは従来、エンジニアがコード作成でフォームを制作していたが、1フォーム2時間の工数と全事業部からの依頼対応が課題。formrunのノーコードフォーム機能、Slack通知、ステータス・担当者管理、メールテンプレートを導入し、ビジネス職が独立してフォーム作成できるようになり、対応漏れや重複対応をなくした。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_dmmmake",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "合同会社DMM.com",
+      "industry": "it",
+      "size": "1000名以上",
+      "dept": "3Dプリント事業部"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "社内エンジニアがコード作成でフォーム制作していたため、1フォーム作成に2時間の工数がかかり、全事業部からの依頼対応がボトルネックになっていた。また、対応漏れや同一お客様への重複対応が発生していた。",
+    "actions": "formrunのノーコードフォーム機能を導入し、ビジネス職がファイル添付機能付きフォームを独立して作成できるようにした。Slack通知、ステータス・担当者管理機能、メールテンプレート、フォームコピー機能を活用して対応管理を標準化した。",
+    "results": [
+      {
+        "metric": "フォーム作成から公開までの時間",
+        "value": "5分（従来は要件定義から完成まで数時間）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "1000名以上"
+      }
+    ],
+    "resultsQualitative": "ビジネス職がエンジニアに依存せずフォーム作成できるようになった。Slack通知により新規お問い合わせの認識が明確になった。ステータス・担当者機能により対応漏れと重複対応がなくなった。メールテンプレートにより対応品質が標準化された。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a7434514352804e94cfb7a/large.jpeg?utime=1760599740",
+    "tags": [
+      "業務の属人化",
+      "対応履歴が残らない",
+      "一次対応の属人化",
+      "問い合わせ対応の負荷"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-fh24",
+    "title": "ペーパーレス化で会員登録業務50%削減、来店なしのスポーツジム入会を実現",
+    "summary": "スポーツジムチェーンが紙の会員登録管理と来店手続きの課題を抱えていた。formrunのフォーム機能とファイルアップロード、自動メール返信を導入し、ペーパーレス化と完全オンライン入会を実現。会員登録業務を50%削減した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_fh24",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "有限会社雅興産",
+      "industry": "other-industry",
+      "size": "従業員2~49名",
+      "dept": "スポーツジム運営部門"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "会員登録情報を紙で管理していたため文書管理が煩雑で、入会者増加に伴い管理が困難になっていた。また、コロナ禍で来店なしの入会手続きの需要が高まり、複数店舗での手続き重複も課題だった。",
+    "actions": "formrunの会員登録フォームを導入。ファイルアップロード機能で顔写真を収集、自動メール返信で入室用パスワードを配信、ステータス管理で進捗を一元化した。",
+    "results": [
+      {
+        "metric": "会員登録時の対応工数削減",
+        "value": "50%削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "店舗数",
+        "value": "5店舗"
+      }
+    ],
+    "resultsQualitative": "来店なしでのスポーツジム入会を実現。写真プリント作業が不要になり、フォーム回答データを一元管理可能。入会者の手間が格段に減少。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1dfb759b8ef0a406fc6ea/large.jpeg?utime=1721884599",
+    "tags": [
+      "紙の書類処理",
+      "書類の振り分け",
+      "多拠点の管理"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-hashimoto-nenryou",
+    "title": "LPガス点検予約をWeb化、電話対応時間を大幅削減",
+    "summary": "LPガス保守点検の予約をハガキ・電話から24時間Web対応に切り替え。formrunのフォーム機能とMicrosoft Teams連携により、電話対応時間が大幅に減少し、導入9ヶ月で年間予約の約25%がWeb経由に。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_hashimoto_nenryou",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "橋本燃料株式会社",
+      "industry": "energy",
+      "size": "2~49名",
+      "dept": "総務課"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "LPガス点検予約が電話・ハガキのみで、対応時間が発生していた。顧客の中には電話が苦手な方やスマートフォン利用希望者がいたが、24時間Web対応できていなかった。",
+    "actions": "formrunで法定点検の予約フォームを導入。ハガキのQRコードからもアクセス可能にし、Microsoft Teams連携でフォーム回答を通知。ボード画面で「新着」「対応中」「詳細確認中」「再調整依頼」「予約確定」の5ステータスで進捗管理。",
+    "results": [
+      {
+        "metric": "Web経由の予約件数",
+        "value": "9ヶ月で約500件（年間予約2000件のうち約25%）"
+      },
+      {
+        "metric": "電話対応時間",
+        "value": "大幅に短縮"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "年間予約件数",
+        "value": "約2000件"
+      },
+      {
+        "metric": "導入後の経過期間",
+        "value": "9ヶ月"
+      }
+    ],
+    "resultsQualitative": "ハガキ送付の時間差によるトラブルが減少。記載漏れなく正確な予約受付が実現。双方にとってスムーズな予約対応が可能になった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1fb6bb6a3550389dc8e71/large.jpeg?utime=1760597926",
+    "tags": [
+      "電話・FAX中心",
+      "問い合わせ対応の負荷",
+      "進捗が見えない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-hubble",
+    "title": "formrunとSalesforce連携で営業対応を10分→2秒に短縮、5分以内架電を実現",
+    "summary": "法務文書管理サービス企業が、formrunのSlack通知とSalesforce連携機能を活用し、フォーム回答から営業架電までの業務フローを自動化。従来10～15分要していたリード作成を2秒で完了させ、5分以内の見込み客対応を達成した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_hubble",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社Hubble",
+      "industry": "it",
+      "size": "50～299名",
+      "dept": "マーケティング、セールス、カスタマーサクセス"
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "フォーム回答からSalesforceへのリード作成まで10～15分要しており、営業対応が遅れていた。複数部門間での業務引継ぎが手作業で発生していた。",
+    "actions": "formrunのSalesforce連携機能を導入し、フォーム回答を自動的にSalesforceのリードとして作成。同時にSlack通知を活用して部門ごとに必要な情報を即座に配信できる仕組みを構築。",
+    "results": [
+      {
+        "metric": "リード作成所要時間",
+        "value": "10～15分→2秒"
+      },
+      {
+        "metric": "架電目標達成",
+        "value": "5分以内対応を実現"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "作成フォーム数",
+        "value": "約30個"
+      },
+      {
+        "metric": "従業員規模",
+        "value": "50～299名"
+      }
+    ],
+    "resultsQualitative": "営業活動を効率的に遂行するための「ベース」的存在となり、事業の急速な成長に対応可能に。単純作業の自動化により、営業担当者がより注力すべき業務に注力できるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a71d2b9c79600460e9152f/large.jpeg?utime=1760600861",
+    "tags": [
+      "手作業の転記",
+      "情報共有の遅れ",
+      "追客の漏れ"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-interior",
+    "title": "ECサイトのサポート業務を3人→1人に効率化",
+    "summary": "EC・ECモール・店舗からの大量問い合わせ（最大1日100件超）をエクセル管理していたINTERIOR株式会社が、formrunの管理画面とメールテンプレート機能を導入。対応人員を3人から1人に削減し、返信スピードが向上した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_interior",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "INTERIOR株式会社",
+      "industry": "retail",
+      "size": "2~49名",
+      "dept": "カスタマーサービス課"
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "事業拡大に伴い問い合わせが最大1日100件を超えるようになり、エクセルでの手動管理では対応漏れや担当者間の引き継ぎ不備などのヒューマンエラーが発生。スタッフの負担が大きくなっていた。",
+    "actions": "formrunのボード画面による一元管理とメールテンプレート機能を導入。視認性の良い管理画面でステータス管理を行い、変数機能付きテンプレートで返信効率を向上させた。",
+    "results": [
+      {
+        "metric": "サポート対応人員",
+        "value": "3人→1人"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "最大問い合わせ数",
+        "value": "1日100件超"
+      }
+    ],
+    "resultsQualitative": "メール返信の効率が格段に向上。返信スピードが上がったことでお客様からの満足度が向上し、顧客満足度向上に繋がった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a306f5a5e4432066514aaf/large.png?utime=1760601748",
+    "tags": [
+      "問い合わせ対応の負荷",
+      "対応履歴が残らない",
+      "Excel管理の限界",
+      "一次対応の属人化"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-kokeshi",
+    "title": "TwitterのDM対応からフォーム予約へ移行、ライブ予約工数がほぼ0に削減",
+    "summary": "バンドのライブ予約をTwitterのDMで受けており、何往復ものやり取りと紙での名簿管理に工数がかかっていた。formrunのフォームを導入し、自動返信メール機能と受付上限機能で予約を自動化した結果、予約対応の工数がほぼ0になり、顧客の申し込みハードルも低下した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_kokeshi",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "kokeshi",
+      "industry": "other-industry",
+      "size": "1名",
+      "dept": ""
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "TwitterのDMでの予約受け付けは何往復ものやり取りが必要で工数がかかり、当日も数十名分の名簿を紙に手書きして確認する作業が発生していた。顧客側も申し込みハードルが高かった。",
+    "actions": "formrunのメールフォームを導入し、ライブ予約フォームとお問い合わせフォームを作成。自動返信メール機能で当日の受付確認を自動化し、受付上限機能でキャパオーバーを防止。TwitterプロフィールにフォームURLを配置。",
+    "results": [
+      {
+        "metric": "予約作業時間",
+        "value": "ほぼ0に削減（フォーム告知のみで完了）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "ワンマンライブの受付上限",
+        "value": "200人"
+      }
+    ],
+    "resultsQualitative": "顧客の申し込みハードルが低下し、キャンセルも気軽にできるようになった。バンドメンバーがライブ準備に集中できるようになった。ライブ直前の予約にも対応可能になった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1e6df59b8ef0bce6fc6ea/large.jpeg?utime=1721886432",
+    "tags": [
+      "電話・FAX中心",
+      "紙の書類処理",
+      "手作業の転記"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-morofuji",
+    "title": "注文フォームのヒューマンエラー削減により、やり取りが50%削減",
+    "summary": "花き小売事業で注文フォームと確認メール対応のヒューマンエラーが課題だった。formrunの自動メール機能と入力制限機能を導入し、メールテンプレートに変数を設定してやり取りを自動化。注文対応のやり取りが50%削減され、入力ミスも減少した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_morofuji",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "モロフジ株式会社",
+      "industry": "retail",
+      "size": "2~49名",
+      "dept": "花き事業部"
+    },
+    "challenges": [
+      "efficiency",
+      "labor",
+      "quality"
+    ],
+    "challengeDetail": "注文受付後の確認メール送信時に店舗スタッフが手作業で情報転記を行っていたため、ヒューマンエラー（誤字・誤入力）が頻発して再送や送付前チェックに時間を要していた。また注文者側からの入力ミス（必須項目未入力、電話番号欄への文字入力など）も多く、ご注文後のやり取りが発生していた。",
+    "actions": "formrunの自動メール機能を用いてメールテンプレートに変数を設定し、フォーム回答内容を自動で挿入するようにした。受け渡し方法などの条件分岐によって10種類のテンプレートを使い分けた。また、フォーム項目に文字種の入力制限をかけて注文者の入力ミスを防止した。",
+    "results": [
+      {
+        "metric": "オーダー時のやり取り",
+        "value": "50%削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "メールテンプレート数",
+        "value": "10種類"
+      }
+    ],
+    "resultsQualitative": "注文確認メール送信時のヒューマンエラーが改善され、対応スピードが半分程になった。注文者からの入力ミスが減り、ご注文後の余計なやり取りが発生しなくなった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1f58ab6a3550259dc8e9e/large.jpeg?utime=1721890186",
+    "tags": [
+      "手作業の転記",
+      "二重入力",
+      "対応履歴が残らない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-nihon-mc",
+    "title": "formrunによる入力制限機能で毎日2時間のデータ修正業務を削減",
+    "summary": "人材サービス会社が営業メンバーからの求人情報入力時に発生していた書式のバラつきと修正工数の課題を、formrunのバリデーション機能と条件分岐で解決。毎日2時間かかっていたデータ修正業務がほぼ不要になった。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_nihon_mc",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社日本メディカルキャリア",
+      "industry": "hr-service",
+      "size": "2～49名",
+      "dept": "企画管理・マーケティング部門"
+    },
+    "challenges": [
+      "quality",
+      "efficiency",
+      "data"
+    ],
+    "challengeDetail": "営業メンバーによる求人情報入力の書式や内容にバラつきが発生し、外部求人サイトへの掲載時にエラーや文字化けが発生。ミス修正に毎日1.5～2時間の工数がかかっていた。",
+    "actions": "formrunの入力制限機能（使えない文字の禁止、文字数制限、複数選択の上限設定）とバリデーション機能を活用し、仕様に沿ったデータのみを入力できるフォームを設計。条件分岐でサブ募集科目を動的に表示させるなど、回答ミスを防ぐ対策を実装。",
+    "results": [
+      {
+        "metric": "データ修正業務時間",
+        "value": "1日2時間→0時間"
+      },
+      {
+        "metric": "データベース投入時のエラー発生率",
+        "value": "ほぼゼロ"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "メンバー数増加率",
+        "value": "過去5年で3倍"
+      },
+      {
+        "metric": "条件分岐によるサブ募集科目選択肢",
+        "value": "80通り"
+      },
+      {
+        "metric": "フォーム作成頻度",
+        "value": "週1～2個"
+      }
+    ],
+    "resultsQualitative": "バリデーション機能によりデータベース投入時のエラーがほぼなくなり、育休メンバーの業務を他のメンバーが引き継ぐ必要がなくなった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a31cade9c73424670caa3c/large.jpeg?utime=1721965741",
+    "tags": [
+      "手作業の転記",
+      "データが分散",
+      "業務の属人化"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-platine",
+    "title": "事前カウンセリングフォームで施術時間25%短縮、来店トラブル解消",
+    "summary": "ブラジリアンワックスサロンが、来店前のカウンセリングを紙・対面から条件分岐機能付きフォームに切り替え。施術可否の事前確認と準備ができるようになり、施術時間が1人15分短縮された。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_platine",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "合同会社Platine",
+      "industry": "retail",
+      "size": "2～49名",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "cs"
+    ],
+    "challengeDetail": "来店後のカウンセリングにより、施術不可の判定が後になり顧客をお断りする事態が発生。また対面カウンセリングに不安があった。施術時間が長くなっていた。",
+    "actions": "条件分岐機能を備えたフォーム作成ツール formrun を導入し、LINE公式アカウント経由で予約客に事前カウンセリングフォームを送付。顧客の希望プランや身体状況を来店前に把握。",
+    "results": [
+      {
+        "metric": "施術時間短縮",
+        "value": "1人あたり15分短縮（1時間施術で25%削減）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "企業規模",
+        "value": "2～49名"
+      }
+    ],
+    "resultsQualitative": "来店後のお客様お断りトラブルがなくなった。事前に顧客の状態や肌質を把握することで、最適な粧材での施術提案が可能に。店舗の回転率向上。従業員の安心感向上。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a304e2bee1de1ff36a4afb/large.jpeg?utime=1721959650",
+    "tags": [
+      "紙の書類処理",
+      "対面対応の非効率性",
+      "事前準備の不足"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-rdsupport",
+    "title": "初回面談日程調整率を8%向上、メール対応の手間を削減",
+    "summary": "人材紹介事業を行うRDサポート社は、求職者とコンサルタントの面談日程調整をメール対応から専用フォームに変更。日程調整完了率が70%から78%に向上し、やり取りの手間と誤りが削減された。また管理部門ではボード画面で進捗を可視化し、業務効率が改善。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_rdsupport",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社ＲＤサポート",
+      "industry": "hr-service",
+      "size": "従業員2~49名",
+      "dept": "紹介事業部、管理部"
+    },
+    "challenges": [
+      "efficiency",
+      "cs",
+      "sales"
+    ],
+    "challengeDetail": "人材紹介事業において、求職者がメール本文に日程候補を記載する方式では手間が多く離脱が生じていた。また、進捗管理をExcelで行っていたため手作業の負担が大きかった。",
+    "actions": "求職者向けに日程調整フォームを導入し、メール本文記入方式からフォーム入力に変更。管理部門ではボード画面を活用して対応進捗を一元管理・可視化した。",
+    "results": [
+      {
+        "metric": "初回面談日程調整完了率",
+        "value": "70%→78%（8%向上）"
+      },
+      {
+        "metric": "日程調整にかかる時間",
+        "value": "短縮"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "2~49名"
+      }
+    ],
+    "resultsQualitative": "メール返信時の打ち間違いや記載漏れがなくなり、複数社員による重複対応が解消。Excelへの手書き作業が不要になり、社内コミュニケーションがスムーズになった。新規施策実施のハードルが低下し、企画が増加した。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a2057ad2fd66058442b145/large.jpeg?utime=1760597356",
+    "tags": [
+      "メール中心の連絡",
+      "手作業の転記",
+      "進捗が見えない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-rita-style",
+    "title": "フォーム通過率2倍に改善。formrunで無料カウンセリング申込の利便性向上",
+    "summary": "パーソナルジムRITA-STYLEは、WordPressプラグインの入力フォームの利便性課題を抱えていた。formrunの条件分岐機能を活用してフォームをリデザインし、ユーザーの入力・選択のしやすさを改善した結果、フォーム通過率が2倍に向上。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_rita_style",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社RITA-STYLE",
+      "industry": "other-industry",
+      "size": "50～299名",
+      "dept": "マーケティング部"
+    },
+    "challenges": [
+      "efficiency",
+      "sales"
+    ],
+    "challengeDetail": "既存のWordPressプラグイン型フォームで、店舗選択などの選択項目が多くページが長くなり、入力・選択操作が難しくなっていた。無料カウンセリング申込の獲得数を増やしたいという課題があった。",
+    "actions": "formrunの条件分岐機能を活用して申込フォームを作成し直した。条件分岐により入力フォームの冗長さを改善し、ユーザーにとって入力・選択しやすいフォームに設計を変更。Googleスプレッドシート自動連携でPROFESSIONALプランを契約し、申込情報を即座に社内チャットへ連携できる仕組みを構築。",
+    "results": [
+      {
+        "metric": "フォーム通過率",
+        "value": "2倍"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "トライアル期間での検証",
+        "value": "14日間"
+      }
+    ],
+    "resultsQualitative": "見たまま編集機能により、フォーム修正の取り組みやすさが向上。ユーザーの利便性向上により申込離脱が減少。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a7004ca5e44313d9514a89/large.jpeg?utime=1760599400",
+    "tags": [
+      "リード獲得の停滞",
+      "フォーム離脱の増加",
+      "手作業の転記"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-riverside-arashiyama",
+    "title": "ホテルの顧客対応を50%削減、フォーム導入でチェックイン業務を効率化",
+    "summary": "ペット同伴ホテルでは、チェックイン時のワクチン接種証明書確認に手間がかかっていた。formrunでペット情報登録フォームを導入し、事前提出を実現。対応時間を5割削減し、顧客満足度も向上した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_riverside_arashiyama",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "合同会社リバーサイド",
+      "industry": "other-industry",
+      "size": "2〜49名",
+      "dept": "フロント・カスタマーサポート"
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "限られたスタッフで対応しているため、チェックイン時のワクチン接種証明書確認に日2時間程度の負荷がかかっていた。また顧客がチェックイン当日に証明書を忘れることもあった。",
+    "actions": "ペットの情報登録とワクチン接種証明書のアップロード用フォームをformrunで作成。宿泊前に顧客に入力・アップロードを依頼し、フロントスタッフが管理画面から確認・対応する運用に変更した。",
+    "results": [
+      {
+        "metric": "ワクチン接種関連の顧客対応時間",
+        "value": "5割以上削減（日2時間から削減）"
+      },
+      {
+        "metric": "フォーム使い方に関するお問い合わせ",
+        "value": "月30件以上から0件に"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "企業規模",
+        "value": "2〜49名"
+      }
+    ],
+    "resultsQualitative": "事前にワクチン接種証明書を登録いただくことで、チェックイン時の手間が削減され、顧客もスムーズにチェックインできることで満足度が向上した。フロントスタッフの負担軽減にもつながった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a31dd7a5e44325d051494e/large.jpeg?utime=1760598234",
+    "tags": [
+      "紙の書類処理",
+      "問い合わせ対応の負荷",
+      "繁忙期の人員不足"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-ten-po",
+    "title": "キャンプ場の予約時トラブルを激減、注意事項同意フォームで電話対応1人分削減",
+    "summary": "キャンプ場では予約時に注意事項を確認しないお客様への電話対応が負担だった。formrunの同意フォームを導入し、予約前に確実に注意事項を確認させることで、トラブル対応と電話業務を大幅削減した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_ten_po",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社TEN-PO",
+      "industry": "other-industry",
+      "size": "2~49名",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "cs"
+    ],
+    "challengeDetail": "予約者の約半数が注意事項を確認せずに予約し、電話確認や断り対応が必要だった。確実に注意事項を読んでもらいつつ、予約を面倒に感じさせないバランスが難しかった。",
+    "actions": "formrunで宿泊時注意事項同意フォームを作成し、予約前に必須で表示。フォーム送信後そのまま予約システムに遷移するリダイレクト機能を活用して、スムーズな予約フローを実現した。",
+    "results": [
+      {
+        "metric": "電話対応削減",
+        "value": "1人分相当の作業削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "年間来場者数",
+        "value": "1万人以上"
+      }
+    ],
+    "resultsQualitative": "予約時のトラブル発生が格段に減少。予約手続きが長いという厳しい意見がなくなった。同業他社から運用方法についての問い合わせを受けるほど好評。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1f3b652cf4b0105f38165/large.jpeg?utime=1721889719",
+    "tags": [
+      "問い合わせ対応の負荷",
+      "電話・FAX中心",
+      "対応履歴が残らない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-teracell",
+    "title": "formrunの導入で顧客獲得単価20%削減と1日30~40分の業務効率化を実現",
+    "summary": "人材紹介会社のテラセルは、求職者登録フォームのコンバージョン率計測ができず、登録後の連絡も手作業だった。formrunを導入し自動返信メール機能で業務を自動化、ABテストで継続改善した結果、顧客獲得単価を20%削減し日次業務を30~40分削減した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_teracell",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "合同会社テラセル",
+      "industry": "hr-service",
+      "size": "2~49名",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "sales",
+      "data"
+    ],
+    "challengeDetail": "CMSツールのフォーム機能ではコンバージョン率が正確に計測できず、登録後の求職者への自動返信案内メールを手作業で送信していたため業務負荷が高かった。",
+    "actions": "formrunを導入してサイトに埋め込み、正確なコンバージョン率計測を実現。自動返信メール機能で求職者へのLINE登録案内を自動化し、2週間ごとにABテストで改善を実施。",
+    "results": [
+      {
+        "metric": "顧客獲得単価",
+        "value": "20%削減"
+      },
+      {
+        "metric": "業務時間削減（日次）",
+        "value": "30~40分削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "2~49名"
+      }
+    ],
+    "resultsQualitative": "コンバージョン率が向上し、公式LINE登録率も向上。ボード画面でのステータス管理により求職者ごとの提案がスムーズになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/661b9fcd466e364c460dd44e/large.png?utime=1713086413",
+    "tags": [
+      "リード獲得の停滞",
+      "追客の漏れ",
+      "手作業の転記",
+      "サイト更新ができない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-tomoda",
+    "title": "派遣スタッフ誓約同意フォームの紙運用をデジタル化し、1600人/月分の書類整理作業を削減",
+    "summary": "株式会社トモダ企画は、派遣スタッフの誓約同意書を紙で運用していたため、毎日80名分の印刷・回収・PDF化に時間がかかっていた。formrunで同意フォームをデジタル化し、QRコード配布による回答に変更することで、書類整理作業をほぼ0にした。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_tomoda",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社トモダ企画",
+      "industry": "other-industry",
+      "size": "50~299名",
+      "dept": "情報システム部"
+    },
+    "challenges": [
+      "efficiency",
+      "cost"
+    ],
+    "challengeDetail": "派遣スタッフの誓約同意書を紙で運用していたため、毎日80名分の印刷・配布・回収・枚数チェック・PDF化に大きな時間と手間がかかっていた。また印刷代と保管場所の確保が課題であった。",
+    "actions": "formrunで誓約同意フォームを作成し、QRコードを記載した紙を派遣スタッフに配布して、スマートフォンで回答いただく運用に変更。勤務予定人数と回答数の照合のみの確認作業とした。",
+    "results": [
+      {
+        "metric": "月間書類整理作業削減量",
+        "value": "1600人/月分"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "1日あたり派遣スタッフ数",
+        "value": "約80名"
+      }
+    ],
+    "resultsQualitative": "書類の準備・回答整理・PDF化の作業がほぼなくなった。印刷代が削減され、保管場所の確保が不要になった。現場社員からも好評で不満の声は上がっていない。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1f208d2fd66016a42b05d/large.jpeg?utime=1760598034",
+    "tags": [
+      "紙の書類処理",
+      "手作業の転記",
+      "書類の振り分け"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-uluru",
+    "title": "採用応募フォームと応募者管理をformrunで一元化、採用担当者の工数を大幅削減",
+    "summary": "fondeskの電話オペレーター採用が1日20名から60名に増加し、複数ツール併用による採用管理業務が負担になっていた。formrunの導入により、フォーム受付から応募者管理、メール対応までを一元化し、採用担当者の業務効率を向上させた。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_uluru",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社うるる",
+      "industry": "it",
+      "size": "300~999名",
+      "dept": "fondesk事業部"
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "電話オペレーター採用が1日20名から60名に急増したことで、複数ツール（フォームサービス、Gmail、Googleスプレッドシート）を併用した採用管理が手に負えなくなり、採用担当者の工数が増大していた。",
+    "actions": "formrunを導入し、求人応募フォーム作成、応募者情報の一元管理、メールテンプレートによる個別対応、ステータス・ラベル機能による進捗管理、Slack連携による社内共有をすべて一つのプラットフォームで実現した。",
+    "results": [
+      {
+        "metric": "1人の応募者対応時間",
+        "value": "1分程度→数十秒"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "1日の応募数",
+        "value": "60名"
+      }
+    ],
+    "resultsQualitative": "GmailとGoogleスプレッドシートを横断する手間が解消され、同一画面で応募者対応が完結。メールテンプレート機能で定型対応が効率化され、Slack連携により対応漏れがなくなり、社内の承認判断も迅速化した。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a739de6fd64400facf560b/large.jpeg?utime=1760599057",
+    "tags": [
+      "応募が集まらない",
+      "システムの乱立",
+      "対応履歴が残らない",
+      "一次対応の属人化"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-united-performers-studio",
+    "title": "ワークショップ申込フォームと参加者管理の一元化で、開催回数3倍増加に対応",
+    "summary": "紙ベースで管理していたオーディション応募者とワークショップ参加者の情報をformrunで一元化。複数フォームの横断的な管理と複数人での業務分担が可能になり、ワークショップ開催回数が3倍に増えても混乱なく運営できるようになった。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_united_performers_studio",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社ユナイテッド・パフォーマーズ・スタジオ",
+      "industry": "education",
+      "size": "2〜49名",
+      "dept": "ワークショップ運営、キャスティング部"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "data"
+    ],
+    "challengeDetail": "オーディション応募者や養成所・ワークショップ参加者の情報を紙ベースで管理しており、回ごとにフォームを作り直す手間がかかっていた。複数フォームのデータを横断的に管理することが難しく、業務が属人化していた。",
+    "actions": "formrunの申し込みフォーム機能と顧客管理機能を導入。ステータス・ラベル機能を活用して参加者の状況を可視化し、複数メンバーで管理画面を共有することで情報連携をスムーズにした。",
+    "results": [
+      {
+        "metric": "ワークショップ開催数",
+        "value": "3倍増加（前年度比）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "養成所本科定員",
+        "value": "約100名"
+      },
+      {
+        "metric": "ワークショップ1回の規模",
+        "value": "最大30名"
+      }
+    ],
+    "resultsQualitative": "複数人での参加者管理がしやすくなり、引継ぎがスムーズになった。管理画面で状況が一目でわかるようになり、紙ベース管理への復帰は考えられないほど業務効率が向上した。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1fe1452cf4b0411f38143/large.jpeg?utime=1721892374",
+    "tags": [
+      "紙の書類処理",
+      "業務の属人化",
+      "書類の振り分け"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-wowworks",
+    "title": "お見積り作成の手間を1/3に削減、Salesforce連携で受注率向上",
+    "summary": "WOW WORKS株式会社は、レンタル受注時の顧客情報をメール・電話で受け取り、手作業でSalesforceに入力する手間を抱えていた。formrunとSalesforceを連携させることで、フォーム回答が自動でSalesforceに取り込まれるようにした。お見積り作成時間が15分から5分に短縮され、受注率も向上した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_wowworks",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "WOW WORKS株式会社",
+      "industry": "other-industry",
+      "size": "従業員50～299名",
+      "dept": "経営企画部"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "labor"
+    ],
+    "challengeDetail": "顧客からのお見積もり依頼をメール・電話で受け取る際に、情報が不足したり記入方法がばらばらだったりする問題があった。また、受け付けた顧客情報をSalesforceに手入力する作業が繁忙期の大きな負担になっていた。",
+    "actions": "formrunでお見積もり依頼フォームを構築し、Salesforce連携機能を活用して、フォーム回答を自動でSalesforceに取り込む仕組みを導入した。条件分岐機能も活用して、顧客属性に応じた必要項目のみを表示させた。",
+    "results": [
+      {
+        "metric": "お見積り作成時間",
+        "value": "15分→5分"
+      },
+      {
+        "metric": "手間削減率",
+        "value": "1/3"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対象事業",
+        "value": "無線機・トランシーバーレンタル事業"
+      }
+    ],
+    "resultsQualitative": "Salesforceへの手入力が不要になり、顧客から注文を受けてからお見積りを送付するまでの時間が短縮されたことで受注率が向上し、売上も向上した。その後、他部署・他用途でも導入が広がった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a6f5fb7f1241096f30632b/large.jpeg?utime=1760598135",
+    "tags": [
+      "手作業の転記",
+      "メール中心の連絡",
+      "見積もり作成に時間",
+      "繁忙期の人員不足"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-zensyouken",
+    "title": "1000名規模イベント申込管理を内製化、対応人数を2/3に削減",
+    "summary": "全国障害者問題研究会は、Googleフォームでの100～1000名規模セミナー申込管理が煩雑だったため、formrunを導入。自動採番と管理画面のカンバン形式ステータス管理により、問い合わせ対応を効率化し、対応人数を2/3に削減できた。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_zensyouken",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "全国障害者問題研究会",
+      "industry": "education",
+      "size": "会員3500名",
+      "dept": "事務局"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "labor"
+    ],
+    "challengeDetail": "Googleフォーム使用時、1開催で200名を超える参加申込と問い合わせ対応の管理が煩雑であり、申込者と問い合わせ者を照らし合わせるために都度検索する手間がかかっていた。",
+    "actions": "formrunの自動受付番号採番機能を導入し、自動メール返信に番号を記載。カンバン形式のステータス管理で複数担当者による進捗共有を実現。一斉メール配信機能も活用。",
+    "results": [
+      {
+        "metric": "対応人数削減",
+        "value": "2/3に削減"
+      },
+      {
+        "metric": "メール開封率",
+        "value": "上昇"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "セミナー申込規模",
+        "value": "100～1000名"
+      },
+      {
+        "metric": "会員数",
+        "value": "3500名"
+      },
+      {
+        "metric": "利用メンバー数",
+        "value": "3名以上"
+      }
+    ],
+    "resultsQualitative": "大会直前の問い合わせが大幅に減少。複数担当者での対応が可能になり、抜け漏れなく対応できるようになった。大会直前1週間の他業務停止が不要になり、セミナー頻度の増加に繋がった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a6fac57f12410a4030631b/large.jpeg?utime=1760598410",
+    "tags": [
+      "問い合わせ対応の負荷",
+      "対応履歴が残らない",
+      "一次対応の属人化",
+      "進捗が見えない"
+    ]
+  },
+  {
     "id": "g-gen-co-jp-case-studies-004",
     "title": "Google Workspace導入で年1,800時間のFAX業務を削減、デジタル化で組織改革を実現",
     "summary": "老舗ホテルチェーンが、組織改革と業務効率化の課題に直面。Google WorkspaceとAppSheetを導入し、クラウドベースの統一環境を構築。FAX送受信業務の大幅削減と、POS・気象データの統合分析による販売予測の精度向上を実現した。",
@@ -190586,6 +191834,704 @@
       "情報共有の遅れ",
       "多拠点の管理",
       "協力会社との連携"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-address",
+    "title": "formrunとGoogleスプレッドシート・Slack連携で顧客情報管理と対応を一元化",
+    "summary": "多拠点居住サービスを提供する株式会社アドレスは、複数のフォーム運用とGoogleスプレッドシートでの顧客管理に課題を抱えていた。formrunのボード画面、Slack連携、自動返信メール機能を活用し、情報整理の簡素化とメール見落としによる対応漏れを防止。フォーム作成から顧客対応までの業務をformrun上で完結できるようになった。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_address",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社アドレス",
+      "industry": "other-industry",
+      "size": "従業員2～49名",
+      "dept": "営業管理・顧客管理部門"
+    },
+    "challenges": [
+      "efficiency",
+      "data",
+      "standardize"
+    ],
+    "challengeDetail": "既存のフォーム作成ツールではデザイン性に劣り顧客の信頼感低下や離脱率上昇につながっていた。スタートアップのため社内システムが未整備で、顧客管理がGoogleスプレッドシート上で手動実施されていた。メール通知での対応漏れが発生していた。",
+    "actions": "formrunのクリエイターフォーム機能で約90フォームを統一デザインで構築。Googleスプレッドシートとの自動連携でフォーム回答データを自動出力・管理。Slack連携により受付データを社内外に即座に通知。ボード画面でステータス管理を実施。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "作成フォーム数",
+        "value": "約90フォーム"
+      }
+    ],
+    "resultsQualitative": "フォーム作成からステータス管理、顧客とのコミュニケーションまですべてformrun上で完結。ボード画面で顧客対応状況を一目で把握でき情報整理が簡素化。Slack連携により対応漏れが防止され、優先度の高い問い合わせに即座に対応できるようになり、スピード感を持った顧客対応が実現。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a731676186e20063ba9ef5/large.jpeg?utime=1722233191",
+    "tags": [
+      "問い合わせ対応の負荷",
+      "対応履歴が残らない",
+      "システムの乱立",
+      "データが分散"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-aldo",
+    "title": "formrunのボード画面で進捗を可視化し、対応の抜け漏れを大幅削減",
+    "summary": "不動産管理会社ALDO株式会社は、解約対応に関わる複数部門間の進捗管理が課題だった。formrunのボード画面機能を導入し、ステータス管理とメモ・ラベル機能で一元化することで、対応の抜け漏れを格段に削減できた。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_aldo",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "ALDO株式会社",
+      "industry": "construction",
+      "size": "2～49名",
+      "dept": "バックオフィス"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize",
+      "data"
+    ],
+    "challengeDetail": "賃貸入居者の解約対応において、工事業者・オーナー・保証会社などとの複数の関係者とのやりとりが発生するが、各担当の進捗の共有がされておらず対応の抜け漏れが多く発生していた。",
+    "actions": "formrunのボード画面機能を導入し、フォーム回答をメール通知で全員が認知、ステータス機能で発注見積もり依頼から工事完了まで段階的に管理、メモ機能やラベル機能で詳細を記載して進捗を可視化した。",
+    "results": [
+      {
+        "metric": "対応の抜け漏れ",
+        "value": "格段に削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "2～49名"
+      }
+    ],
+    "resultsQualitative": "各担当が自身の進捗をスムーズに管理でき、他の担当の抜け漏れがないかも確認できるようになった。退去時のトラブルを防ぎ、最後まで丁寧な対応が実現できている。受け付けたルートが異なっていても管理を一元化できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1ff6f52cf4b0432f38136/large.jpeg?utime=1760597861",
+    "tags": [
+      "進捗が見えない",
+      "対応履歴が残らない",
+      "多拠点の管理",
+      "協力会社との連携"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-baton",
+    "title": "EC新規事業のカスタマーサポート窓口を半日の教育で構築",
+    "summary": "EC新規事業立ち上げにあたり、人員が限られた中でカスタマーサポート環境が必要だった株式会社baton様。formrunを導入し、直感的な操作性によりスタッフへの業務教育を半日で完了。メールテンプレート機能やSlack連携により対応の一貫性と効率化を実現した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_baton",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社baton",
+      "industry": "retail",
+      "size": "2~49名",
+      "dept": "EC・カスタマーサポート部門"
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "EC新規事業『QurioStore』の立ち上げにあたり、派遣スタッフを含めたごくわずかなメンバーで、エンジニアに頼らずにお問い合わせ対応を効率的に管理する必要があった。",
+    "actions": "formrunを導入し、直感的なボード画面を用いた問い合わせ管理、メールテンプレート機能による対応ノウハウ蓄積、Slack連携による部署間情報共有、一斉メール配信機能を活用した顧客対応を実装。",
+    "results": [
+      {
+        "metric": "カスタマーサポートスタッフへの業務教育完了時間",
+        "value": "半日"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "企業規模",
+        "value": "2~49名"
+      }
+    ],
+    "resultsQualitative": "直感的な操作性により初期学習コストを大幅削減。メールテンプレート機能で対応ノウハウを効率的に蓄積し、お問い合わせへの対応を迅速かつ一貫性のあるものに。Slack連携により会社として均一な顧客対応を実現。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a20750d2fd66062042b064/large.jpeg?utime=1721894736",
+    "tags": [
+      "一次対応の属人化",
+      "新人教育のばらつき",
+      "対応履歴が残らない",
+      "連絡手段の乱立"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-cloudsign",
+    "title": "複数人でのシームレスな顧客対応により、CS業務の対応スピードを向上",
+    "summary": "弁護士ドットコム株式会社のクラウドサイン事業部は、デザイン性が低い既存フォームサービスの課題を解決するため、formrunを導入。ボード画面とメモ機能を活用し、複数のCS担当者で顧客対応を分担することで、対応スピードを格段に向上させた。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_cloudsign",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "弁護士ドットコム株式会社",
+      "industry": "it",
+      "size": "従業員300〜999名",
+      "dept": "クラウドサイン事業本部 カスタマーサクセス部"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "導入前は全顧客対応を1人が請け負っており、確認事項が多く短時間に大量の回答を送信する必要があったため対応効率に課題を抱えていた。また、既存フォームサービスのデザイン性が低く、UI・UXを重視するクラウドサインのブランドイメージに合致していなかった。",
+    "actions": "formrunを導入し、ボード画面にて担当者別のステータス（「降井」対応、「安川」対応）を作成して顧客対応を分担。メモ機能で対応記録をカードごとに残し、Slack連携により複数担当者間で進捗を共有できる体制を構築した。",
+    "results": [
+      {
+        "metric": "対応スピード",
+        "value": "格段に向上"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "対象部門",
+        "value": "CS部門"
+      }
+    ],
+    "resultsQualitative": "1人あたりの対応数が削減され、複数人で業務を分担しても顧客に対してシームレスな対応が実現。他の担当者がフォーム内容を自分で判断してステータスを振り分けることで、進捗共有の効率化と対応の自動巻き取りが可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a7208bf837d90166cfbb85/large.jpeg?utime=1760602530",
+    "tags": [
+      "問い合わせ対応の負荷",
+      "一次対応の属人化",
+      "対応履歴が残らない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-dhw",
+    "title": "条件分岐・入力チェック機能で開発不要、予約フォームのUI/UX改善と離脱率低減を実現",
+    "summary": "プログラミングスクール運営企業が、学校説明会予約フォームのリニューアルで開発工数削減と離脱防止を課題とした。formrunの条件分岐やバリデーション機能を活用し、複数ページ分かれたフォームを1ページに統合。フォーム管理業務の効率化と離脱率削減を実現した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_dhw",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "デジタルハリウッド株式会社",
+      "industry": "education",
+      "size": "従業員50〜299名",
+      "dept": "ジーズアカデミー事業部"
+    },
+    "challenges": [
+      "efficiency",
+      "sales"
+    ],
+    "challengeDetail": "既存CRMのフォームでは条件分岐やバリデーション機能を実装するのにCSSやJavaScript開発による工数がかかり、調査だけで多くのコストが発生していた。また校舎選択による分岐表示がないため複数ページに分かれ、ページ遷移時の離脱が多く発生していた。",
+    "actions": "formrunの既に用意されている条件分岐表示機能とバリデーション（入力チェック）機能を活用。選択した拠点に応じた必要項目のみを表示し、複数ページ分かれていたフォームを1ページで完結させた。Googleスプレッシート連携も活用して校舎ごとの予約情報振り分けを自動化。",
+    "results": [
+      {
+        "metric": "離脱率",
+        "value": "減少"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "校舎数",
+        "value": "4拠点"
+      },
+      {
+        "metric": "説明会開催頻度",
+        "value": "週4回"
+      },
+      {
+        "metric": "導入チーム規模",
+        "value": "3〜4名"
+      }
+    ],
+    "resultsQualitative": "開発工数がかからずスピード感を持ってフォーム改善を完了できた。フォームメンテナンス業務が簡素化され、日程削除・追加などの定例業務が効率化された。ページ遷移がなくなり入力負担が減少し、入力項目の見やすさが向上した。操作習熟が早く、1日程度で誰でも対応可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a6fbe4bee1de15da6a4afa/large.jpeg?utime=1760599231",
+    "tags": [
+      "見積もり作成に時間",
+      "多拠点の管理",
+      "追客の漏れ"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-jdxa",
+    "title": "複数プロジェクトのフォーム管理と顧客対応を一元化し、運営メンバー間のコミュニケーションコストを削減",
+    "summary": "複数プロジェクトを抱える法人が、複数のフォームサービスの管理負担と顧客対応状況の把握困難という課題を、formrunで全フォームを一元管理し、メール返信とステータス管理を可視化することで解決。運営メンバー間のやり取りコストが削減された。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_jdxa",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "一般社団法人日本デジタルトランスフォーメーション推進協会",
+      "industry": "other-industry",
+      "size": "300～999名",
+      "dept": "事務局"
+    },
+    "challenges": [
+      "efficiency",
+      "data",
+      "standardize"
+    ],
+    "challengeDetail": "複数のプロジェクトに対応する中で、用途ごとに異なるフォームサービスを複数使用していたため、各サービスにログインして回答を確認する手間が生じ、また顧客対応の進捗や担当者を把握することが困難だった。",
+    "actions": "formrunに全フォームを一元管理し、ボード画面でステータスを「新着」「入金中」「完了」などに設定。メール機能でエンドユーザーとのやり取りを履歴管理し、運営メンバー全員が対応状況を確認できる環境を構築した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "プロジェクト数",
+        "value": "複数同時並行"
+      },
+      {
+        "metric": "フォーム用途",
+        "value": "会員登録、お問い合わせ、講演依頼、資料ダウンロード、オンラインサロン入会など"
+      }
+    ],
+    "resultsQualitative": "お客様へのメール送信に関する運営メンバー間のコミュニケーションコストが削減された。複数プロジェクトのメールが混在せず、別の担当者が対応した顧客からの急な連絡でも、カードを見るだけで適切な対応が可能になった。資料管理の一元化により、どのメンバーでも最新情報を顧客に提供できるようになった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a7349d6186e20063baa196/large.jpeg?utime=1760598676",
+    "tags": [
+      "システムの乱立",
+      "進捗が見えない",
+      "対応履歴が残らない",
+      "連絡手段の乱立"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-jewelring",
+    "title": "エステサロン経営者がformrunでセミナー申込管理を効率化、スキマ時間で対応可能に",
+    "summary": "エステサロン・スクール運営を1人で行う経営者が、WordPressプラグインの手間から脱却。formrunのシンプルなフォーム作成・管理機能により、スキマ時間でセミナー日程追加や申込管理ができるようになり、機会損失を削減。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_jewelring",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社JEWEL RING",
+      "industry": "other-industry",
+      "size": "従業員1名",
+      "dept": "経営・営業"
+    },
+    "challenges": [
+      "efficiency",
+      "labor"
+    ],
+    "challengeDetail": "経営者1人で多くの業務を抱えており、WordPressプラグインのフォーム管理・修正に時間がかかり、新規フォーム作成や編集が難しかった。申込者確認にも時間を要していた。",
+    "actions": "formrunのセミナー参加フォーム・スクール申込フォームを導入。テンプレートと見たまま編集機能を活用し、複数フォームを簡単に作成・管理。ボード画面でステータス把握とメール通知を活用。",
+    "results": [
+      {
+        "metric": "機会損失削減",
+        "value": "セミナー候補日をフォーム公開中でもリアルタイムで増やす・変更が可能に"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "企業規模",
+        "value": "従業員1名"
+      }
+    ],
+    "resultsQualitative": "スキマ時間でフォーム変更・確認・申込対応ができるようになり、準備・対応時間が効率化された。業務量は変わらないが忙しさが軽減された。参加者情報管理がシンプル化。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a6fe5ca5e44313a1514c43/large.jpeg?utime=1722220125",
+    "tags": [
+      "業務の属人化",
+      "手作業の転記",
+      "進捗が見えない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-jikyousen",
+    "title": "紙での施設実習受け入れ管理をWebフォーム化し、Excelへの手入力作業を削減",
+    "summary": "保育士・幼稚園教諭養成校が、紙郵送で受け付けていた約200施設からの実習受け入れ可否回答をWebフォーム化。回答データを直接Excel出力できるようにしてExcelへの手入力時間とミスを削減した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_jikyousen",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "日本児童教育専門学校",
+      "industry": "education",
+      "size": "2~49名",
+      "dept": "教務"
+    },
+    "challenges": [
+      "efficiency",
+      "quality",
+      "standardize"
+    ],
+    "challengeDetail": "約200施設から紙郵送で受け付けた実習受け入れ可否の回答を手作業でExcelに入力していたため、時間と手間がかかり、入力ミスが頻発していた。",
+    "actions": "施設向けにWebフォーム（QRコード経由）を導入し、回答をフォーム上で受け付けて直接Excelに出力できる仕組みにした。条件分岐機能で必要な項目のみ表示する工夫も実施。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "対象施設数",
+        "value": "約200施設"
+      },
+      {
+        "metric": "実習施設種別",
+        "value": "11種別"
+      },
+      {
+        "metric": "フォーム利用率",
+        "value": "約1/4の施設がフォームに移行"
+      }
+    ],
+    "resultsQualitative": "Excelへの手入力時間と記入ミスを削減。教員・教務からも使いやすいと反響があり、学内の様々な場面で活用が広がり、複数のツールをformrunに統一する方向に進んでいる。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1fae152cf4b0316f38172/large.png?utime=1721891553",
+    "tags": [
+      "紙の書類処理",
+      "手作業の転記",
+      "二重入力"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-joylife-creation",
+    "title": "フォーム離脱率を大幅削減、内製化による改善を実現",
+    "summary": "音楽スクール運営企業が、外部委託によるフォーム修正の課題を解決するため、formrunを導入。条件分岐やEFO機能を活用し、無料体験レッスンのフォーム離脱率を大幅に削減した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_joylife_creation",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社JOY&LIFE Creation",
+      "industry": "education",
+      "size": "2～49名",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "cost"
+    ],
+    "challengeDetail": "外部業者へのフォーム修正依頼に時間とコストがかかり、気軽に改善ができない状態だった。Googleフォームではステータス管理や社内共有の視認性が悪く、チーム全体での運用に課題があった。",
+    "actions": "formrunを導入し、フォーム作成を内製化。条件分岐項目でレッスン内容に応じた設問分けを実施し、EFO機能のフリガナ自動入力で入力負担を軽減。自動メール返信機能で対応工数を削減。",
+    "results": [
+      {
+        "metric": "フォーム離脱率",
+        "value": "大幅削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "校舎数",
+        "value": "4店舗（東京3店舗、大阪1店舗）"
+      }
+    ],
+    "resultsQualitative": "修正時間と依頼料が削減でき、回答数が増加した。自動メール返信機能により限られたリソースでの対応工数が大幅に削減できた。データエクスポート機能により顧客の意見を把握し、サービス品質向上に活用できている。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a2197ea5e443026351499c/large.jpeg?utime=1760595429",
+    "tags": [
+      "サイト更新ができない",
+      "見積もり作成に時間",
+      "対応履歴が残らない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-nextage",
+    "title": "formrunで留学生プロフィール作成の業務効率化とホストファミリー募集の工数削減を実現",
+    "summary": "留学生とホストファミリーを繋ぐ事業を運営する株式会社ネクステージは、WordPressプラグインからformrunへ移行。留学生プロフィール作成時のやりとりを削減し、ホストファミリー募集を電話対応からメール送信に変更することで、業務効率化を実現。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_nextage",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社ネクステージ",
+      "industry": "education",
+      "size": "2~49名",
+      "dept": "システム&マーケティング事業部、ホームステイ事業部"
+    },
+    "challenges": [
+      "efficiency",
+      "labor",
+      "standardize"
+    ],
+    "challengeDetail": "留学生プロフィール作成時に、書式崩れや記入漏れが生じ、留学生やエージェントとのやりとり回数が増加。ホストファミリー募集時は1軒ずつ電話対応する必要があり、大幅な工数がかかっていた。",
+    "actions": "formrunのノーコードフォームで留学生向けプロフィール入力フォームを構築。Googleスプレッドシート自動連携とVlookup関数を組み合わせてプロフィール自動作成。ホストファミリー募集をメール一斉送信に変更。",
+    "results": [
+      {
+        "metric": "留学生プロフィール作成時のやりとり",
+        "value": "激減"
+      },
+      {
+        "metric": "ホストファミリー募集時の対応",
+        "value": "大幅な時間短縮"
+      },
+      {
+        "metric": "記入漏れ",
+        "value": "ゼロ"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "登録ホストファミリー数",
+        "value": "6,300件以上（2023年6月現在）"
+      },
+      {
+        "metric": "現在の契約プラン",
+        "value": "PROFESSIONALプラン"
+      }
+    ],
+    "resultsQualitative": "スマートフォンからの入力対応により留学生の負担が軽減。電話対応廃止により顧客対応の負荷が低減。業務量増加（コロナ後の留学ニーズ増加）にも対応可能に。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1e2afb591fc095e22941e/large.jpeg?utime=1721885359",
+    "tags": [
+      "手作業の転記",
+      "電話・FAX中心",
+      "入力ミスの頻発"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-ns",
+    "title": "社員寮の入居者対応をformrunで電話対応ゼロ・残業ゼロに実現",
+    "summary": "社員寮の運営で電話とFAXによる属人化した対応が課題だった。formrunで外泊届・退寮届などのフォームを入居者ポータルに設置し、24時間受付と情報共有を実現。電話対応と残業が完全に廃止された。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_ns",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "NSコーポレーション株式会社",
+      "industry": "construction",
+      "size": "従業員50〜299名",
+      "dept": "建設不動産部不動産営業グループ"
+    },
+    "challenges": [
+      "labor",
+      "standardize",
+      "efficiency"
+    ],
+    "challengeDetail": "既存の寮では電話とFAXでの対応が属人化しており、コミュニケーションが特定の管理者に依存していた。新設寮では複数担当者（コンシェルジュと社員）での運営が予定されており、「言った言わない」のトラブルと対応ミスの増加が予想された。",
+    "actions": "入居者専用ポータルサイト内にformrunフォーム（外泊届・退寮届・訪問者申請など）を設置し、24時間受付体制を構築。条件分岐機能で入力チェックと必要情報の漏れ防止、メール通知で複数担当者への情報共有を実現。",
+    "results": [
+      {
+        "metric": "電話対応",
+        "value": "ゼロ"
+      },
+      {
+        "metric": "残業",
+        "value": "ゼロ"
+      }
+    ],
+    "resultsQualitative": "入居者とのやり取りが完全にメール完結し、言った言わないのトラブルが解消。申請時の抜け漏れも発生しなくなった。外国籍入居者への対応も柔軟に実現でき、コンシェルジュも気持ちよく働ける環境が構築された。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a6f97b7f12410a213063bc/large.jpeg?utime=1760601859",
+    "tags": [
+      "電話・FAX中心",
+      "業務の属人化",
+      "対応履歴が残らない",
+      "残業の常態化"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-room-zero",
+    "title": "入居審査の個人情報収集をformrunで効率化・セキュリティ強化",
+    "summary": "賃貸不動産仲介会社が、入居審査時の個人情報受付を紙やメールからformrunのフォームに移行。セキュリティ向上により顧客の不安解消、必須項目設定で情報漏れ防止、完了画面での案内で問い合わせ削減を実現。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_room_zero",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "アーチストエージェント株式会社",
+      "industry": "other-industry",
+      "size": "2〜49名",
+      "dept": "営業・管理"
+    },
+    "challenges": [
+      "security",
+      "efficiency",
+      "data"
+    ],
+    "challengeDetail": "顧客の個人情報をメールや紙で受け取っていたため、セキュリティへの不安から申込キャンセルが発生。また情報の記載漏れが頻繁に起こり、再度の送付依頼が必要になっていた。",
+    "actions": "入居審査申込フォームをformrunで作成し、セキュリティの高いフォーム入力に統一。必須項目設定で入力漏れを防止し、完了画面に今後の流れを画像で掲載して顧客対応を標準化。",
+    "results": [
+      {
+        "metric": "顧客からの個人情報送信不安による申込キャンセル",
+        "value": "年数回→なくなった"
+      },
+      {
+        "metric": "情報記載漏れによる再送付依頼",
+        "value": "削減"
+      },
+      {
+        "metric": "顧客からの進捗問い合わせ",
+        "value": "減少"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "2〜49名"
+      },
+      {
+        "metric": "ファイル添付容量",
+        "value": "5GB（BEGINNERプラン）"
+      }
+    ],
+    "resultsQualitative": "セキュリティの信頼性向上により顧客が安心して個人情報を提供できるようになった。情報の漏れ漏れがなくなり業務効率化。完了画面での案内により顧客との無駄なコミュニケーションコストが削減。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a6ff64bee1de16ac6a4b5d/large.jpeg?utime=1760599594",
+    "tags": [
+      "紙の書類処理",
+      "メール中心の連絡",
+      "情報漏洩リスク",
+      "対応履歴が残らない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-sansoh",
+    "title": "チーム内の問い合わせ対応状況が見える化、ファイル添付対応でメール管理を一元化",
+    "summary": "住宅関連企業が、ファイル添付に対応したフォームツールの必要性と、従来の個別メール対応による情報散在を課題として、formrunを導入。ボード画面でのステータス管理と対応履歴の共有により、チーム内の対応状況が可視化され、業務効率化が実現した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_sansoh",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社参創ハウテック",
+      "industry": "construction",
+      "size": "従業員2～49名",
+      "dept": "パーツ販売部門マーケティングチーム"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "従来は担当者ごとに個別メール対応を行っており、対応方法やステータス管理が煩雑で、チーム内で対応状況が見えない状態だった。また、ショップのフォームがファイルアップロード機能に対応していなかった。",
+    "actions": "formrunを導入し、ファイルアップロード項目を設置できるフォームを構築。ボード画面でカンバン式のステータス管理を実施し、個別メール送受信もformrun内で一元管理するようにした。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "チームメンバー",
+        "value": "3名以上"
+      },
+      {
+        "metric": "導入期間",
+        "value": "2年"
+      }
+    ],
+    "resultsQualitative": "チーム内で対応状況がひと目でわかるようになり、対応履歴が共有できるため同じ内容の問い合わせに対して他の担当者の返信を参考にできるようになった。通常業務に馴染むほど毎日利用され、フォーム編集が自由にできることで業務効率化に繋がった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a1f8d5d2fd66028642b52a/large.jpeg?utime=1760599502",
+    "tags": [
+      "問い合わせ対応の負荷",
+      "対応履歴が残らない",
+      "メール中心の連絡",
+      "進捗が見えない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-vollmond",
+    "title": "メールアドレス入力ミスがほぼゼロに、条件分岐で顧客誤解を防止",
+    "summary": "オンラインドイツ語教室が、Googleフォームから formrun に切り替え。入力補助機能と条件分岐により、メールアドレス誤入力を削減し、初回有料・既登録者の誤申込といった顧客の勘違いをなくした。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_vollmond",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "Vollmond株式会社",
+      "industry": "education",
+      "size": "従業員60名超（講師含む）",
+      "dept": "営業・顧客対応"
+    },
+    "challenges": [
+      "efficiency",
+      "quality",
+      "data"
+    ],
+    "challengeDetail": "Googleフォーム利用時、メールアドレスの入力ミスが多発し連絡が困難であった。また、初回レッスンが有料であることや2回目以降の予約フローが明確でないため、顧客の誤解やトラブルが発生していた。",
+    "actions": "formrun に移行し、バリデーション機能で入力ミスを防止。規約同意項目で注意書きの必読を促し、条件分岐機能で既登録顧客を初回登録フォームから除外する案内を実装した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "導入時点の月間受講生数",
+        "value": "400名以上"
+      },
+      {
+        "metric": "所属講師数",
+        "value": "60名超"
+      },
+      {
+        "metric": "作成フォーム数",
+        "value": "5個以上"
+      },
+      {
+        "metric": "登録メールテンプレート数",
+        "value": "5個以上（1フォームあたり）"
+      }
+    ],
+    "resultsQualitative": "メールアドレス入力ミスがほぼなくなった。料金トラブルが完全になくなった。条件分岐により顧客の誤申込が減り、顧客負担が軽減された。複数スタッフでの共同対応時に管理画面で対応状況が可視化され、業務効率が向上した。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a6f7717f124109c7306330/large.jpeg?utime=1760599314",
+    "tags": [
+      "手作業の転記",
+      "メール中心の連絡",
+      "対応履歴が残らない"
+    ]
+  },
+  {
+    "id": "form-run-home-blog-media-cases-weekend-model",
+    "title": "初期値設定でフォーム回答の手間を削減し、複数人での進捗管理を実現",
+    "summary": "女性複業支援プラットフォーム運営企業が、CS対応の複数人化に伴う進捗管理の課題を抱えていた。formrunの初期値設定機能とボード画面を導入することで、会員情報の自動入力によるフォーム回答率向上と、複数人による抜け漏れない対応を実現した。",
+    "vendor": "form.run",
+    "product": "formrun",
+    "productCategory": "saas",
+    "sourceUrl": "https://form.run/home/blog/media_cases_weekend_model",
+    "collectedAt": "2026-10-28T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社モノクロム",
+      "industry": "it",
+      "size": "2~49名",
+      "dept": "カスタマーサクセス"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "CSスタッフの増加に伴い、複数人でお問い合わせ対応する際に進捗状況が把握できず、抜け漏れが発生する課題があった。従来のメーラーを使った対応では、他のスタッフから対応状況が不透明だった。",
+    "actions": "formrunの初期値設定機能を利用して、ログイン後のフォーム遷移時に会員情報（モデル名・企業名・メールアドレスなど）を自動入力。ボード画面で複数人が進捗を可視化し、メモ機能・メールテンプレート・Slack連携で対応体制を整備した。",
+    "results": [
+      {
+        "metric": "実装期間",
+        "value": "数時間（従来は開発で多くの時間を要した）"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "登録モデル数",
+        "value": "5,000名"
+      },
+      {
+        "metric": "登録企業数",
+        "value": "1,500社"
+      }
+    ],
+    "resultsQualitative": "フォーム回答率が向上。複数人で進捗を追える体制により抜け漏れなく対応可能。エンジニアのリソース不足下でも迅速にカスタマイズ実装できた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://ferret-one.akamaized.net/images/66a71add5406e703dfff6a70/large.jpeg?utime=1760600064",
+    "tags": [
+      "一次対応の属人化",
+      "対応履歴が残らない",
+      "進捗が見えない",
+      "メール中心の連絡"
     ]
   },
   {
