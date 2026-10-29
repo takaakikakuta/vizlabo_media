@@ -7,9 +7,7 @@
 - 課題の攻略地図型: [WRITING-chizu.md](WRITING-chizu.md)
 - 業界を越える事例型: [WRITING-ekkyou.md](WRITING-ekkyou.md)
 - 導入の舞台裏型: [WRITING-butaiura.md](WRITING-butaiura.md)
-- 選（事例10選）型: [WRITING-sen.md](WRITING-sen.md)
-- 選（事例5選）型: [WRITING-sen5.md](WRITING-sen5.md) — テンプレートは10選と同じ `sen`。課題を一本の線に切り、位置の違う5社を並べる（compare で自社の位置を返す）
-- 選（事例3選）型: [WRITING-sen3.md](WRITING-sen3.md) — テンプレートは10選と同じ `sen`。ひとつの気づきを、やり方の違う3社で見せる
+- 選（事例10選・5選）型: [WRITING-sen.md](WRITING-sen.md) — 10選と5選は同じ書き方。違いは本数と課題の幅だけ（3選は 2026-10-29 に廃止）
 - 事例単体（/cases/…）: [WRITING-case.md](WRITING-case.md) — 説明はさらっと（カルテ。自動生成＋手直しの作法）
 
 記事の「書かれた部分」はこのフォルダのJSONにある。文章を直す＝JSONの値を書き換えるだけ。
@@ -97,16 +95,14 @@
 | `prep[]` | 「四 自社で準備すること」 |
 | `closing` | 結び |
 
-## どのフィールドが記事のどこか（選＝事例10選・5選・3選型）
+## どのフィールドが記事のどこか（選＝事例10選・5選型）
 
 | フィールド | 記事上の場所 |
 |---|---|
 | `title` / `lead` | 扉 |
-| `trivia`（任意） | 扉の直後の「この話の背景」枠（title＋body。制度・技術・数字の由来など、事例の外にある前提。`
-
-` で段落。3選で本文が短いときに、動画の尺にもなる知識パート） |
-| `items[]` | 01〜10（5選なら01〜05、3選なら01〜03。caseId＝事例、headline＝見出し、body＝読みどころ2〜3文。カルテ・成果チップ・リンクは自動。件数は固定されていない） |
-| `compare`（任意・5選向け） | 本文の後の「5社を比べる」表（intro＝導入、rows＝条件ごとの行で values は items と同順、fit＝自社に近いのはどれかの手がかり、note＝限界の断り）。省略すると章ごと消える |
+| `items[]` | 01〜10（5選なら01〜05。caseId＝事例、headline＝見出し、body＝読みどころ2〜3文。カルテ・成果チップ・リンクは自動。件数は固定されていない） |
+| `trivia`（旧記事のみ） | 扉の直後の「この話の背景」枠（title＋body。旧3選で使っていた。新しい記事では使わない） |
+| `compare`（旧記事のみ） | 本文の後の「5社を比べる」表（intro・rows・fit・note。旧5選で使っていた。新しい記事では使わない。省略すると章ごと消える） |
 | `outroTitle` / `outro` | まとめ（並べて見えた共通項＋次の一歩） |
 | `relatedSlugs` | 「あわせて読む」への記事slug |
 
@@ -122,7 +118,7 @@ node scripts/inventory/inventory.mjs --theme 金型 --industry manufacturing
 node scripts/inventory/inventory.mjs --tags                 # 困りごとタグ別の件数
 ```
 
-テーマは `scripts/inventory/themes.json` に1行足せば表に載る。判定（10選・5選・3選・不足）は各ガイドの件数の目安をそのまま機械的に当てたもので、企画の入口の確認用。選ぶときは候補の全件を読む。
+テーマは `scripts/inventory/themes.json` に1行足せば表に載る。判定（10選・5選・不足）は各ガイドの件数の目安をそのまま機械的に当てたもので、企画の入口の確認用。選ぶときは候補の全件を読む。
 
 ## タイアップ（PR）記事にするとき
 

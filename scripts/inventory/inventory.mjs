@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* 事例の棚卸し。選記事（10選・5選・3選）を企画する前に、テーマごとに何件あるかを数える。
+/* 事例の棚卸し。選記事（10選・5選）を企画する前に、テーマごとに何件あるかを数える。
  *
  *   node scripts/inventory/inventory.mjs                 → content/articles/INVENTORY.md を書き出す（テーマ別の件数と判定、タグ上位、重複使用）
  *   node scripts/inventory/inventory.mjs --theme "停電|非常用電源"   → そのテーマの候補事例を一覧（素材級のみ。--all で全件）
@@ -7,7 +7,7 @@
  *   node scripts/inventory/inventory.mjs --tags          → 困りごとタグ別の件数（テーマ候補を探す）
  *
  * 素材級 = 課題文80字以上 かつ（数値成果あり または 施策80字以上）。線引きは WRITING-sen.md 冒頭と6節。
- * 判定の目安: 10選 = 素材級15以上・数字7以上・提供元5以上 / 5選 = 素材級10以上・数字4以上・数字ありの提供元4以上 / 3選 = 素材級6以上・数字2以上・提供元2以上
+ * 判定の目安: 10選 = 素材級15以上・数字7以上・提供元5以上 / 5選 = 素材級10以上・数字4以上・数字ありの提供元4以上（3選は 2026-10-29 に廃止）
  * 「使用」は content/articles/*.json（hidden・draft 含む）で参照されている事例。 */
 import fs from "node:fs";
 import path from "node:path";
@@ -62,7 +62,6 @@ function count(list) {
   let verdict = "不足（舞台裏型・攻略地図型へ）";
   if (sozai.length >= 15 && num.length >= 7 && vendors(sozai) >= 5) verdict = "10選まで組める";
   else if (sozai.length >= 10 && num.length >= 4 && vendors(num) >= 4) verdict = "5選まで";
-  else if (sozai.length >= 6 && num.length >= 2 && vendors(num) >= 2) verdict = "3選まで（主張が立てば）";
   return { total: list.length, sozai: sozai.length, num: num.length, vendorsS: vendors(sozai), vendorsN: vendors(num), unusedS: unusedS.length, unusedN: unusedN.length, verdict };
 }
 
@@ -111,7 +110,7 @@ lines.push(`# 事例の棚卸し（${today} 時点）`, "",
   "候補の事例そのものを見るときは `node scripts/inventory/inventory.mjs --theme \"停電|非常用電源\"`。", "",
   `- 掲載事例 ${cases.length.toLocaleString()} 件（hidden・掲載禁止ベンダーを除く）。素材級 ${allS.length.toLocaleString()} 件、うち数字あり ${allS.filter((c) => c.hasNumbers).length.toLocaleString()} 件。`,
   `- 記事 ${articles.length} 本（hidden・draft 含む）が ${usedIn.size} 件の事例を参照している。`,
-  "- 素材級 = 課題文80字以上かつ（数値成果があるか施策80字以上）。判定の目安は 10選 = 素材級15以上・数字7以上・提供元5以上、5選 = 素材級10以上・数字4以上・数字ありの提供元4以上、3選 = 素材級6以上・数字2以上。",
+  "- 素材級 = 課題文80字以上かつ（数値成果があるか施策80字以上）。判定の目安は 10選 = 素材級15以上・数字7以上・提供元5以上、5選 = 素材級10以上・数字4以上・数字ありの提供元4以上。",
   "- 「未使用」はどの記事にも出ていない事例。既存の記事と同じ事例ばかりになるテーマは、未使用の数字ありが少ない。", "",
   "## テーマ別", "",
   "| テーマ | 該当 | 素材級（提供元） | 数字あり（提供元） | 未使用 素材級／数字 | 判定 | 既存記事 |", "|---|---:|---:|---:|---:|---|---|");

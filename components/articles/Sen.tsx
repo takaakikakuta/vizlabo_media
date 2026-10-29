@@ -13,8 +13,8 @@ import SuggestForm from "../SuggestForm";
 import { SUGGEST_ENABLED } from "../../lib/flags";
 import LinkOnlyCard from "../LinkOnlyCard";
 
-/* 「選」テンプレート（テーマ別の事例10選・5選・3選）。順位ではなく並列の選として組む。
-   5選では任意の compare（比べる表）を items の後に置ける。
+/* 「選」テンプレート（課題別の事例10選・5選）。順位ではなく並列の選として組む。
+   trivia（背景の知識）と compare（比べる表）は旧記事（旧3選・旧5選）向けで、新しい記事では使わない。
    各項目は〈書き下ろしの見出し＋読みどころ〉＋〈事例データから自動で出すカルテと成果数字〉。
    事例が linkOnly（掲載元から取り下げ依頼）なら、企業名・規模・数字・画像を出さず、
    item.linkOnly の短い紹介と提供元ロゴつきの元記事リンクだけにする（番号と本数は崩さない）。 */
@@ -93,7 +93,7 @@ export default function Sen({ article }: { article: SenArticle }) {
         ...(compare ? [{ id: "compare", no: "比", label: compare.title ?? `${entries.length}社を比べる` }] : []),
       ]} />
 
-      {/* ── 10本（5選なら5本、3選なら3本） ── */}
+      {/* ── 10本（5選なら5本） ── */}
       <div className="mt-4">
         {entries.map((e) => {
           const c = e.c;

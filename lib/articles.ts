@@ -153,7 +153,7 @@ export type ButaiuraArticle = {
   closing: string;
 };
 
-/* ── 型7：選（テーマ別の事例10選。順位ではなく並列の「選」） ── */
+/* ── 型7：選（課題別の事例10選・5選。順位ではなく並列の「選」） ── */
 export type SenArticle = {
   format: "sen";
   sponsored?: boolean;  // タイアップ（PR）記事か。未指定＝編集記事
@@ -172,9 +172,9 @@ export type SenArticle = {
       headline?: string;  // 見出しに会社が分かる情報があるときだけ（無ければ headline をそのまま使う）
       body: string;       // 事例の中身を1〜2文で。未設定なら紹介文は出さない
     };
-  }[];  // 10本・5本・3本
-  trivia?: { title: string; body: string };  // 任意。扉の後に置く「背景の知識」（制度・技術・数字の由来など、事例の外にある前提。空行区切り で段落）
-  compare?: {             // 任意。3選向けの「比べる」パート（items と同じ順に並べて、読者が自社の位置を判定する表）
+  }[];  // 10本・5本
+  trivia?: { title: string; body: string };  // 旧記事のみ（旧3選）。扉の後に置く「背景の知識」。新しい記事では使わない
+  compare?: {             // 旧記事のみ（旧5選）。「比べる」パート（items と同じ順に並べて、読者が自社の位置を判定する表）。新しい記事では使わない
     title?: string;       // 見出し（既定「3社を比べる」）
     intro?: string;       // 表の前の導入（何を軸に並べたか）
     rows: { label: string; values: string[] }[];  // 行＝条件（規模・予算・現場の制約・選んだ手・成果など）。values は items と同順
