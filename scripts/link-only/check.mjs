@@ -1,6 +1,6 @@
 /* リンクのみ（linkOnly）にした事例が、どの記事・記念日にどう残っているかを洗い出す。
    使い方: node scripts/link-only/check.mjs
-         node scripts/link-only/check.mjs --as-if sen-48-shinjin-ichinen.json
+         node scripts/link-only/check.mjs --as-if sen-49-shinjin-ichinen.json
            … その記事の全項目がリンクのみになったつもりで、title・lead・trivia・outro（と compare の列）に社名・規模・
              成果の数字が残っていないかを見る。項目（headline・body）は差し替わる前提で見ない
              （WRITING-sen.md 8節の公開前の読み直しを機械的にやる。記事ファイル名か no で指定）
