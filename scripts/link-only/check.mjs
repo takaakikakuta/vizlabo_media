@@ -1,5 +1,9 @@
 /* リンクのみ（linkOnly）にした事例が、どの記事・記念日にどう残っているかを洗い出す。
    使い方: node scripts/link-only/check.mjs
+         node scripts/link-only/check.mjs --as-if sen-48-shinjin-ichinen.json
+           … その記事の全項目がリンクのみになったつもりで、title・lead・trivia・outro（と compare の列）に社名・規模・
+             成果の数字が残っていないかを見る。項目（headline・body）は差し替わる前提で見ない
+             （WRITING-sen.md 8節の公開前の読み直しを機械的にやる。記事ファイル名か no で指定）
 
    取り下げ依頼を「リンクのみ」で受けるときの手順:
    1. data/cases.json の該当事例に "linkOnly": true を付ける（データは消さない）
@@ -26,7 +30,20 @@ import path from "node:path";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
 const cases = JSON.parse(fs.readFileSync(path.join(root, "data/cases.json"), "utf-8"));
-const linkOnly = new Map(cases.filter((c) => c.linkOnly && !c.hidden).map((c) => [c.id, c]));
+let linkOnly = new Map(cases.filter((c) => c.linkOnly && !c.hidden).map((c) => [c.id, c]));
+
+/* --as-if <記事>：その記事の全項目をリンクのみとみなす（記事の文面の点検用。記念日は見ない） */
+const asIfArg = process.argv[process.argv.indexOf("--as-if") + 1];
+let asIf;
+if (process.argv.includes("--as-if")) {
+  const files = fs.readdirSync(path.join(root, "content/articles")).filter((f) => f.endsWith(".json"));
+  asIf = files.find((f) => f === asIfArg || f === `${asIfArg}.json`)
+    ?? files.find((f) => { const a = JSON.parse(fs.readFileSync(path.join(root, "content/articles", f), "utf-8")); return a.no === Number(asIfArg) && !a.hidden; });
+  if (!asIf) { console.error(`記事が見つからない: ${asIfArg}`); process.exit(2); }
+  const a = JSON.parse(fs.readFileSync(path.join(root, "content/articles", asIf), "utf-8"));
+  const ids = new Set((a.items ?? []).map((x) => x.caseId));
+  linkOnly = new Map(cases.filter((c) => ids.has(c.id)).map((c) => [c.id, c]));
+}
 
 /** 社名の照合用。法人格を外した中核部分と、その最初の語（「ゴンチャ ジャパン」→「ゴンチャ」）。
     短すぎるものは誤検知が多いので使わない。略称（日清食品HD など）は拾えないので、最後は目でも確かめる */
@@ -93,7 +110,7 @@ function findLeaks(c, shownJson, where) {
 
 const dir = path.join(root, "content/articles");
 let problems = 0;
-for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
+for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json") && (!asIf || f === asIf)).sort()) {
   const a = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8"));
   if (a.hidden) continue;
   const raw = JSON.stringify(a);
@@ -108,11 +125,12 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
     }
     const j = a.items.findIndex((x) => x.caseId === c.id);
     const it = a.items[j];
-    if (!it?.linkOnly?.body) notes.push(`${c.id}: linkOnly.body が未設定（紹介文なしで出る）`);
+    if (!asIf && !it?.linkOnly?.body) notes.push(`${c.id}: linkOnly.body が未設定（紹介文なしで出る）`);
     // 項目自身の読みどころは表に出ないので、それ以外の文面（タイトル・リード・背景・他の項目・まとめ）で探す。比べる表は列ごとに別で見る
+    // --as-if では全項目が差し替わる前提なので、項目は見ずに title・lead・trivia・outro だけを見る
     const shown = JSON.stringify({
       ...a, compare: undefined,
-      items: a.items.map((x) => (x.caseId === c.id ? { linkOnly: x.linkOnly, headline: x.linkOnly?.headline ?? x.headline } : x)),
+      items: asIf ? [] : a.items.map((x) => (x.caseId === c.id ? { linkOnly: x.linkOnly, headline: x.linkOnly?.headline ?? x.headline } : x)),
     });
     notes.push(...findLeaks(c, shown, "記事内"));
     // 比べる表：その会社の列（items と同順）に数字か社名が残っていれば、列を書き直すか表ごと外す
@@ -130,7 +148,7 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
   for (const n of notes) console.log(`  - ${n}`);
 }
 const daysDir = path.join(root, "content/days");
-for (const f of fs.readdirSync(daysDir).filter((f) => f.endsWith(".json")).sort()) {
+for (const f of asIf ? [] : fs.readdirSync(daysDir).filter((f) => f.endsWith(".json")).sort()) {
   const d = JSON.parse(fs.readFileSync(path.join(daysDir, f), "utf-8"));
   const used = d.items.map((it) => ({ it, c: linkOnly.get(it.caseId) })).filter((x) => x.c);
   if (used.length === 0) continue;
@@ -150,5 +168,5 @@ for (const f of fs.readdirSync(daysDir).filter((f) => f.endsWith(".json")).sort(
   for (const n of notes) console.log(`  - ${n}`);
 }
 
-console.log(problems ? `\n要対応 ${problems} 件` : `リンクのみの事例 ${linkOnly.size} 件。要対応なし`);
+console.log(problems ? `\n要対応 ${problems} 件` : asIf ? `${asIf}：全項目がリンクのみになっても残る社名・規模・数字なし` : `リンクのみの事例 ${linkOnly.size} 件。要対応なし`);
 process.exitCode = problems ? 1 : 0;
