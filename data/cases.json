@@ -17090,10 +17090,6 @@
       {
         "metric": "初月反響数",
         "value": "3倍（前年同月5件→11月15件）"
-      },
-      {
-        "metric": "ホームページ経由の反響割合",
-        "value": "全体の約3割"
       }
     ],
     "scale": [
@@ -17104,6 +17100,10 @@
       {
         "metric": "導入期間",
         "value": "2023年11月リニューアル後2ヶ月半経過時点での成果"
+      },
+      {
+        "metric": "ホームページ経由の反響割合",
+        "value": "全体の約3割"
       }
     ],
     "resultsQualitative": "ホームページが見やすく改善された。追客の質も改善されてきた。",
@@ -73736,53 +73736,6 @@
     "image": "https://www.serverworks.co.jp/case/img/main_neu_2_new.png"
   },
   {
-    "id": "www-serverworks-co-jp-case-next-mobility-html",
-    "title": "Amazon Connectで24時間対応の自動音声予約システムを構築し、オペレーター業務を効率化",
-    "summary": "交通系事業者が乗車予約の電話対応負担を抱えていた。Amazon Connectを用いた自動音声予約システムを導入し、24時間対応を実現。オペレーターの業務効率化とコスト削減を達成した。",
-    "vendor": "serverworks.co.jp",
-    "product": "Amazon Connect",
-    "productCategory": "cloud",
-    "sourceUrl": "https://www.serverworks.co.jp/case/next-mobility.html",
-    "collectedAt": "2026-10-08T00:00:00.000Z",
-    "customer": {
-      "name": "ボックス・アメニティ株式会社",
-      "industry": "other-industry",
-      "size": "",
-      "dept": ""
-    },
-    "challenges": [
-      "labor",
-      "efficiency"
-    ],
-    "challengeDetail": "乗車予約の電話対応がオペレーターの負担となっており、営業時間外の予約対応ができていなかった。また電話予約は一定の割合で発生し、オペレーターの人数確保が困難だった。",
-    "actions": "Amazon Connectを用いた自動音声予約システムを構築。顧客がスマートフォンまたは電話で出発地と目的地を指定し、乗車人数と乗車希望日時を指定すれば予約が完了するシステムを導入した。",
-    "results": [
-      {
-        "metric": "対応時間",
-        "value": "24時間対応を実現"
-      },
-      {
-        "metric": "業務効率化",
-        "value": "オペレーターの負担軽減とコスト削減を実現"
-      }
-    ],
-    "scale": [
-      {
-        "metric": "導入エリア",
-        "value": "2023年11月時点で22ヶ所、2023年度中に34ヶ所以上予定"
-      }
-    ],
-    "resultsQualitative": "競合他社との差別化、サービスの付加価値向上を実現。将来的には海外製のバスシステムとのAPI連携により、さらなるサービス展開が可能になった。",
-    "hasNumbers": true,
-    "sample": false,
-    "tags": [
-      "問い合わせ対応の負荷",
-      "営業時間外の対応困難",
-      "一次対応の属人化"
-    ],
-    "image": "https://www.serverworks.co.jp/case/img/main_next-mobility_new.jpg"
-  },
-  {
     "id": "www-serverworks-co-jp-case-nttse-4-html",
     "title": "AWS環境の運用最適化とコスト削減、セキュリティ強化",
     "summary": "NTTスタイルエンジニアリングは95%以上のシステムをAWS上で運用しており、コスト削減と運用最適化、セキュリティ強化が課題だった。CCoEチームとサーバーワークスが連携し、Cloud Automatorによるコスト最適化、New Relicへの監視ツール移行、AWS Organizationsの導入などを実施。コスト削減と運用効率の改善、セキュリティ対応の継続的な強化を実現した。",
@@ -78555,6 +78508,111 @@
       "移動時間の多さ",
       "多拠点の管理",
       "担当者不在で止まる"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-ittenko-case-24",
+    "title": "紙の点呼簿をデジタル化し、業務効率化と記録精度向上を実現",
+    "summary": "運送業の有限会社キワ・ゼネラルサービスは、手書きの点呼簿管理の負担と記録精度の課題を抱えていた。IT点呼キーパーを3拠点に導入することで、点呼業務がスムーズになり、アルコール検査値や点呼時刻が秒単位で正確に記録でき、紙使用量を大幅削減した。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "IT点呼キーパー",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/ittenko/case/24/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "有限会社キワ・ゼネラルサービス",
+      "industry": "logistics",
+      "size": "従業員50名～100名未満",
+      "dept": "運行管理"
+    },
+    "challenges": [
+      "labor",
+      "efficiency",
+      "quality"
+    ],
+    "challengeDetail": "手書きの点呼簿管理が運行管理者1名に集中して負担になっており、点呼内容の正確な記録と営業所間の効率化が課題だった。",
+    "actions": "IT点呼キーパーを本社（和歌山市）、田辺市営業所、新宮市営業所の3拠点に導入。対面点呼のほか、運行管理者がいない時間帯は補助者による電話点呼にも対応。",
+    "results": [
+      {
+        "metric": "記録精度",
+        "value": "1分単位→秒単位での正確な記録"
+      },
+      {
+        "metric": "紙使用量削減",
+        "value": "大幅削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入拠点数",
+        "value": "3拠点"
+      },
+      {
+        "metric": "毎朝の点呼ドライバー数",
+        "value": "約40名"
+      }
+    ],
+    "resultsQualitative": "点呼業務がスムーズになり、混雑時間帯の業務効率が向上。アルコールチェック結果の数値化と点呼時の写真記録により安心性が向上。導入から半年でほぼ全員が使用に慣れ、ごみ排出量も削減。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.tele-nishi.co.jp/img/biz/ittenko/product/case/jirei24_01.jpg",
+    "tags": [
+      "紙の書類処理",
+      "手作業の転記",
+      "業務の属人化",
+      "多拠点の管理"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-white-anzen-case-03",
+    "title": "アルコールチェック業務の工数を月100分→30分に短縮、法改正対応を効率化",
+    "summary": "建設コンサルタント企業が、運転者の飲酒検査を個別管理していた手作業をシステム化。ホワイト安全キーパーを導入し、検査結果の自動集計によって1現場あたり月100分の業務を30分に削減した。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "ホワイト安全キーパー",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/white-anzen/case/03/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "大成エンジニアリング株式会社",
+      "industry": "construction",
+      "size": "従業員300～500名未満",
+      "dept": "安全管理"
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "従来は運転者が個人単位でアルコール検査結果を管理しており、管理者による集計が手作業で困難だった。2022年4月の道路交通法改正への対応も課題だった。",
+    "actions": "ホワイト安全キーパーを導入し、5拠点でスマートフォンを用いた遠隔アルコールチェック体制を構築。検査結果がクラウド上に自動アップロードされ、エクセル形式で帳票を出力できるようにした。",
+    "results": [
+      {
+        "metric": "1現場あたり月間作業時間",
+        "value": "100分→30分"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入拠点数",
+        "value": "5拠点"
+      },
+      {
+        "metric": "スマートフォンID数",
+        "value": "60ID"
+      },
+      {
+        "metric": "保有車両数",
+        "value": "41台"
+      }
+    ],
+    "resultsQualitative": "検査結果の自動集計機能により、帳票作成が簡単になった。運転者の手間も削減され、操作が簡単で使いやすいと評価されている。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://www.tele-nishi.co.jp/img/biz/white-anzen/case/jirei03_01.jpg",
+    "tags": [
+      "手作業の転記",
+      "数字の集計に時間",
+      "法改正への対応",
+      "多拠点の管理"
     ]
   },
   {
@@ -97129,7 +97187,8 @@
       "手作業の転記",
       "給与計算の手間",
       "残業の常態化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-1436",
@@ -97192,7 +97251,8 @@
       "手作業の転記",
       "業務の属人化",
       "二重入力"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-1492",
@@ -97251,7 +97311,8 @@
       "手作業の転記",
       "業務の属人化",
       "紙の書類処理"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-1765",
@@ -97297,7 +97358,8 @@
       "手作業の転記",
       "在庫の把握不足",
       "業務の属人化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-1843",
@@ -97340,7 +97402,8 @@
       "手作業の転記",
       "月末の残業",
       "残業の常態化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-2041",
@@ -97394,7 +97457,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "繁忙期の人員不足"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-242",
@@ -97461,7 +97525,8 @@
       "数字の集計に時間",
       "業務の属人化",
       "手作業の転記"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-243",
@@ -97584,7 +97649,8 @@
       "手作業の転記",
       "業務の属人化",
       "残業の常態化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-245",
@@ -97635,7 +97701,8 @@
       "手作業の転記",
       "業務の属人化",
       "残業の常態化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-248",
@@ -97685,7 +97752,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "一次対応の属人化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-249",
@@ -97739,7 +97807,8 @@
       "請求処理に時間",
       "月末の残業",
       "残業の常態化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-250",
@@ -97803,7 +97872,8 @@
       "数字の集計に時間",
       "Excel管理の限界",
       "残業の常態化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-346",
@@ -97866,7 +97936,8 @@
       "手作業の転記",
       "業務の属人化",
       "月末の残業"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-348",
@@ -97934,7 +98005,8 @@
       "業務の属人化",
       "引き継ぎ困難",
       "メール中心の連絡"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-4016",
@@ -97990,7 +98062,8 @@
       "業務の属人化",
       "月末の残業",
       "ミスの再発"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-5011",
@@ -98040,7 +98113,8 @@
       "手作業の転記",
       "請求処理に時間",
       "数字の集計に時間"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-5095",
@@ -98099,7 +98173,8 @@
       "手作業の転記",
       "データが分散",
       "数字の集計に時間"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-5147",
@@ -98153,7 +98228,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "業務の属人化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-52",
@@ -98208,7 +98284,8 @@
       "手作業の転記",
       "ミスの再発",
       "システムの乱立"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-5222",
@@ -98262,7 +98339,8 @@
       "手作業の転記",
       "業務の属人化",
       "紙の書類処理"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-5387",
@@ -98318,7 +98396,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "多拠点の管理"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-5606",
@@ -98370,7 +98449,8 @@
       "経費精算の手間",
       "応募が集まらない",
       "業務の属人化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-5692",
@@ -98426,7 +98506,8 @@
       "手作業の転記",
       "新人教育のばらつき",
       "法改正への対応"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-948",
@@ -98484,7 +98565,8 @@
       "手作業の転記",
       "給与計算の手間",
       "月末の残業"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-996",
@@ -98543,7 +98625,8 @@
       "二重入力",
       "給与計算の手間",
       "繁忙期の人員不足"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-example-issue-paperwork",
@@ -98579,7 +98662,8 @@
       "紙の書類処理",
       "手作業の転記",
       "手順書がない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-tags-business-e4-b8-8d-e5-8b-95-e7-94-a3-",
@@ -98615,7 +98699,8 @@
       "手作業の転記",
       "二重入力",
       "月末の残業"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-tags-business-e7-89-a9-e6-b5-81-e3-83-bb-",
@@ -98658,7 +98743,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "月末の残業"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-tags-business-e7-94-9f-e7-94-a3-e7-ae-a1-",
@@ -98695,7 +98781,8 @@
       "業務の属人化",
       "手作業の転記",
       "手順書がない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "ferret-one-com-cases-repro",
@@ -274672,6 +274759,53 @@
     "image": "https://www.serverworks.co.jp/case/img/main_netprotections_new.jpg"
   },
   {
+    "id": "www-serverworks-co-jp-case-next-mobility-html",
+    "title": "Amazon Connectで24時間対応の自動音声予約システムを構築し、オペレーター業務を効率化",
+    "summary": "交通系事業者が乗車予約の電話対応負担を抱えていた。Amazon Connectを用いた自動音声予約システムを導入し、24時間対応を実現。オペレーターの業務効率化とコスト削減を達成した。",
+    "vendor": "serverworks.co.jp",
+    "product": "Amazon Connect",
+    "productCategory": "cloud",
+    "sourceUrl": "https://www.serverworks.co.jp/case/next-mobility.html",
+    "collectedAt": "2026-10-08T00:00:00.000Z",
+    "customer": {
+      "name": "ボックス・アメニティ株式会社",
+      "industry": "other-industry",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "labor",
+      "efficiency"
+    ],
+    "challengeDetail": "乗車予約の電話対応がオペレーターの負担となっており、営業時間外の予約対応ができていなかった。また電話予約は一定の割合で発生し、オペレーターの人数確保が困難だった。",
+    "actions": "Amazon Connectを用いた自動音声予約システムを構築。顧客がスマートフォンまたは電話で出発地と目的地を指定し、乗車人数と乗車希望日時を指定すれば予約が完了するシステムを導入した。",
+    "results": [
+      {
+        "metric": "業務効率化",
+        "value": "オペレーターの負担軽減とコスト削減を実現"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入エリア",
+        "value": "2023年11月時点で22ヶ所、2023年度中に34ヶ所以上予定"
+      },
+      {
+        "metric": "対応時間",
+        "value": "24時間対応を実現"
+      }
+    ],
+    "resultsQualitative": "競合他社との差別化、サービスの付加価値向上を実現。将来的には海外製のバスシステムとのAPI連携により、さらなるサービス展開が可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "問い合わせ対応の負荷",
+      "営業時間外の対応困難",
+      "一次対応の属人化"
+    ],
+    "image": "https://www.serverworks.co.jp/case/img/main_next-mobility_new.jpg"
+  },
+  {
     "id": "www-serverworks-co-jp-case-nisshinbo-microdevices-html",
     "title": "AWS Application Migration Service を活用し、3ヶ月で30台のサーバーを移行・DR環境を実現",
     "summary": "企業統合に伴うインフラ環境の統一と、BCP対応のためのDR環境構築が課題だった。AWS Application Migration Service（AWS MGN）を用いて、3ヶ月で30台のサーバーをAWSに移行し、サーバー移行工数を大幅に削減。大阪・東京の両リージョンを併用したDR環境を実現した。",
@@ -281496,6 +281630,225 @@
       "手作業の転記",
       "数字の集計に時間",
       "多拠点の管理"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-ittenko-case-26",
+    "title": "起業段階からのDX化推進：紙の対面点呼をIT点呼キーパーで完全デジタル化し、点呼漏れゼロを実現",
+    "summary": "新進気鋭の物流企業が、起業当初からDX化を方針に、IT点呼キーパーを全営業所・車庫に導入。紙の点呼簿を廃止し、点呼業務を完全デジタル化することで、点呼の抜け漏れをなくし、ペーパーレス化を実現した。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "IT点呼キーパー",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/ittenko/case/26/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社Fast substance logistics",
+      "industry": "logistics",
+      "size": "従業員50名未満",
+      "dept": "管理部門"
+    },
+    "challenges": [
+      "standardize",
+      "efficiency",
+      "sustainability"
+    ],
+    "challengeDetail": "起業当初から、紙を使わないデジタルベースの点呼業務を実現したい。点呼内容を正確に記録し、運用のばらつきをなくしたいという課題があった。",
+    "actions": "IT点呼キーパーを全営業所・車庫に導入し、対面点呼をデジタル化。点呼業務のルーチン化を実現し、点呼状況をリアルタイムで社長・幹部に通知する運用を構築。",
+    "results": [
+      {
+        "metric": "点呼漏れ",
+        "value": "ゼロ達成"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "導入拠点数",
+        "value": "2拠点"
+      },
+      {
+        "metric": "保有車両数",
+        "value": "15台"
+      }
+    ],
+    "resultsQualitative": "紙の点呼簿が不要となりペーパーレス化を実現。用紙代・印刷代・管理の労務費を削減し、保管スペースを圧縮。点呼状況のリアルタイム確認により、アルコール検査など問題発生時の迅速な対応が可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.tele-nishi.co.jp/img/biz/ittenko/product/case/jirei26_01.jpg",
+    "tags": [
+      "紙の書類処理",
+      "業務の属人化",
+      "リアルタイムに把握できない"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-ittenko-case-27",
+    "title": "IT点呼キーパー導入で点呼業務を効率化、ドライバーの意識改革と飲酒運転リスク軽減を実現",
+    "summary": "貸切バス事業を展開する大阪バス株式会社は、狭い点呼場での効率的な点呼実施が課題だった。IT点呼キーパーを2拠点に導入し、対面点呼とスマホ点呼を組み合わせて運用。ドライバーの作業負荷軽減、点呼の確実性向上、ドライバーの意識改革につながり、飲酒運転リスクが軽減した。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "IT点呼キーパー",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/ittenko/case/27/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "大阪バス株式会社",
+      "industry": "logistics",
+      "size": "従業員62名",
+      "dept": "運行管理"
+    },
+    "challenges": [
+      "efficiency",
+      "labor",
+      "quality"
+    ],
+    "challengeDetail": "貸切バスが一斉に帰社する際、狭い点呼場でのスムーズかつ確実な点呼業務が課題。点呼内容の正確な記録と運行管理者の負担軽減が必要だった。",
+    "actions": "IT点呼キーパーを2拠点に導入。本社では対面点呼、離れた場所ではスマホ点呼を実施。点呼簿は手書きをデータ化してシステムに記録し、ドライバーと運行管理者が運転前後のチェックを実施。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "導入拠点数",
+        "value": "2拠点"
+      },
+      {
+        "metric": "従業員数",
+        "value": "62名"
+      }
+    ],
+    "resultsQualitative": "ドライバーの作業負荷軽減、運行管理者の作業負荷軽減、飲酒検査の数値・点呼時刻などが正確に記録できるようになった。点呼中の映像が残ることでドライバーの意識改革につながり、飲酒運転のリスクが軽減した。忙しい時間帯の点呼所要時間を短縮・簡素化することができた。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.tele-nishi.co.jp/img/biz/ittenko/product/case/jirei27_01.jpg",
+    "tags": [
+      "紙の書類処理",
+      "手作業の転記",
+      "多拠点の管理"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-white-anzen-case-01",
+    "title": "アルコールチェックシステム導入で飲酒運転防止と法令順守の意識付けを実現",
+    "summary": "鉄道部品製造の共進金属工業は、道路交通法改正対応としてホワイト安全キーパーを導入。アルコールチェック時に運転免許証をスキャンすることで不携帯・期限切れを防止し、社員の事故防止と法令順守意識を向上させた。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "ホワイト安全キーパー",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/white-anzen/case/01/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "共進金属工業株式会社",
+      "industry": "manufacturing",
+      "size": "従業員79名",
+      "dept": ""
+    },
+    "challenges": [
+      "standardize"
+    ],
+    "challengeDetail": "道路交通法改正対応として、アルコールチェック体制をゼロから構築する必要があった。アナログでの運用は大変であり、運転免許証の不携帯・有効期限切れも懸念事項だった。",
+    "actions": "ホワイト安全キーパーを導入し、毎朝のアルコールチェック時に運転免許証をスキャンすることで、チェック証跡の記録と免許証の携帯状況を確認できる体制を構築した。本社と山口県営業所の2拠点で運用している。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "導入拠点数",
+        "value": "2拠点"
+      },
+      {
+        "metric": "従業員数",
+        "value": "79名"
+      }
+    ],
+    "resultsQualitative": "社員の飲酒運転に対する意識改革が進み、事故防止・法令順守の意識付けに貢献した。ルーティンの一環として定着し、運転免許証の確実な携帯確認も可能になった。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.tele-nishi.co.jp/img/biz/white-anzen/case/jirei01_01.jpg",
+    "tags": [
+      "法改正への対応",
+      "手作業の転記",
+      "多拠点の管理"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-white-anzen-case-02",
+    "title": "クレーン運搬企業がアルコールチェック記録管理システムで安全意識を向上",
+    "summary": "重量物運搬を手掛ける千代一工業は、法改正に対応し、アルコールチェックの記録を残す必要が生じた。本社での対面チェックと現場でのスマホチェックを組み合わせることで、工数を最小限に抑えながら社員の安全意識を向上させた。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "ホワイト安全キーパー",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/white-anzen/case/02/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "千代一工業株式会社",
+      "industry": "construction",
+      "size": "従業員100名程度",
+      "dept": ""
+    },
+    "challenges": [
+      "standardize"
+    ],
+    "challengeDetail": "クレーンでの作業による労働災害や交通事故の防止が必要であり、法改正によりアルコールチェックの記録を残して管理する義務が生じた。",
+    "actions": "ホワイト安全キーパーを導入し、本社では対面でのアルコールチェック、建設・工事現場ではスマートフォンを用いたリモートアルコールチェックを実施する体制を構築した。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "従業員数",
+        "value": "100名程度"
+      },
+      {
+        "metric": "スマホID数",
+        "value": "30"
+      },
+      {
+        "metric": "導入拠点数",
+        "value": "1拠点"
+      }
+    ],
+    "resultsQualitative": "社員の安全に対する意識が高まり、工数を最小限に抑えながら安全対策を実施できた。インターフェイスが見やすく使いやすかったため、現場でも迅速に浸透した。",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.tele-nishi.co.jp/img/biz/white-anzen/case/jirei02_01.jpg",
+    "tags": [
+      "法改正への対応",
+      "記録・管理の手作業",
+      "現場と本社の往復"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-white-anzen-case-05",
+    "title": "道路交通法改正対応とアルコールチェックのデジタル管理を実現",
+    "summary": "不動産仲介業の株式会社三春情報センターは、2023年12月の道路交通法改正によるアルコールチェック義務化への対応が課題だった。ホワイト安全キーパーを導入し、40事業所でアルコールチェックをデジタル管理することで、ペーパーレス化と運営効率化を実現した。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "ホワイト安全キーパー",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/white-anzen/case/05/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社三春情報センター",
+      "industry": "other-industry",
+      "size": "従業員554名",
+      "dept": ""
+    },
+    "challenges": [
+      "standardize",
+      "efficiency"
+    ],
+    "challengeDetail": "2023年12月の道路交通法改正に伴う白ナンバー事業者のアルコールチェック義務化への対応が必要だった。アルコールチェッカー本体のみではなく、運営面での手間と帳票管理の課題があった。",
+    "actions": "ホワイト安全キーパーを導入。全従業員の手元にアプリをダウンロードした端末を配布し、パソコンからもすぐにアルコールチェックができる環境を構築。異常検知時にはアラート通知メールで即時確認できるよう設定。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "導入事業所数",
+        "value": "40事業所"
+      },
+      {
+        "metric": "従業員数",
+        "value": "554名"
+      }
+    ],
+    "resultsQualitative": "アルコールチェックのペーパーレス化を実現、アルコールチェックの精度が高まった、会社全体で安全運転に対する取り組みを実現、法改正に対応できた",
+    "hasNumbers": false,
+    "sample": false,
+    "image": "https://www.tele-nishi.co.jp/img/biz/white-anzen/case/jirei05_01.jpg",
+    "tags": [
+      "紙の書類処理",
+      "ペーパーレス化",
+      "法改正への対応"
     ]
   },
   {
@@ -301299,7 +301652,8 @@
       "手作業の転記",
       "業務の属人化",
       "繁忙期の人員不足"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-1768",
@@ -301350,7 +301704,8 @@
       "業務の属人化",
       "多拠点の管理",
       "協力会社との連携"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-2278",
@@ -301396,7 +301751,8 @@
       "手作業の転記",
       "業務の属人化",
       "ミスの再発"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-247",
@@ -301451,7 +301807,8 @@
       "数字の集計に時間",
       "多拠点の管理",
       "進捗が見えない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-4994",
@@ -301493,7 +301850,8 @@
       "手作業の転記",
       "システムの乱立",
       "数字の集計に時間"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fce-pat-co-jp-case-tags-business-e5-8c-bb-e7-99-82-e3-83-bb-",
@@ -301530,7 +301888,8 @@
       "手作業の転記",
       "請求処理に時間",
       "月末の残業"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "firelogic-jp-case-tokyodiamond",
@@ -440160,6 +440519,175 @@
       "紙の書類処理",
       "サイト更新ができない",
       "運用の手作業"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-mobile-case-01",
+    "title": "営業用携帯をガラケーに切り替えコスト削減を実現",
+    "summary": "自動車・金属加工製造業の本田製作所は、営業用にスマホを契約していたが実際には通話のみの利用だった。通話に特化したガラケーに切り替え、法人携帯のコストを削減した。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "法人携帯（ガラケー）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/mobile/case/01/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社本田製作所",
+      "industry": "manufacturing",
+      "size": "埼玉本社・大分工場",
+      "dept": "営業部門"
+    },
+    "challenges": [
+      "cost"
+    ],
+    "challengeDetail": "営業用携帯としてスマホを法人契約していたが、営業現場では通話のみの利用で、オーバースペックな端末・プランの契約による無駄が発生していた。",
+    "actions": "営業用携帯をスマホからガラケーに切り替え、通話機能に特化した料金プランに変更した。",
+    "results": [
+      {
+        "metric": "営業電話の毎月のコスト",
+        "value": "削減"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "拠点数",
+        "value": "2拠点（埼玉本社・大分工場）"
+      }
+    ],
+    "resultsQualitative": "営業の業務効率化につながった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "電話・FAX中心",
+      "既存設備の機能不足"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-mobile-case-02",
+    "title": "スマホ・LINE WORKS導入で現場連絡の迅速化と業務の見える化を実現",
+    "summary": "建設業の林設備工業は、取引先のQRコード入退室管理対応とコミュニケーション改善が課題だった。法人スマホとLINE WORKSを導入し、電話のみから複数の連絡手段に拡張。緊急対応時の一斉送信や情報の瞬時共有により、業務効率が向上した。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "法人スマホ、LINE WORKS",
+    "productCategory": "saas",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/mobile/case/02/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "株式会社林設備工業",
+      "industry": "construction",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency"
+    ],
+    "challengeDetail": "主要取引先の方針によりQRコード入退室管理対応が必須となった。従来のガラケーでは対応できず、現場と事務所の連絡は電話のみで、緊急時の情報共有に課題があった。",
+    "actions": "法人スマホとLINE WORKSを同時導入。トークルームで緊急連絡の一斉送信、掲示板で周知事項を瞬時共有できる環境を整備した。",
+    "results": [],
+    "resultsQualitative": "現場とのやりとりがスムーズになり、1人1人への説明時間が短縮された。従業員の動きが見える化され、仕事が回しやすくなった。周知徹底事項がリアルタイムで共有できるようになり、効率性とスピード感が向上した。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "電話・FAX中心",
+      "情報共有の遅れ",
+      "連絡手段の乱立"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-mobile-case-04",
+    "title": "複数拠点の社内コミュニケーション活性化｜法人スマホ＋SNSアプリで意思疎通を効率化",
+    "summary": "複数の工場拠点があり電話連絡が多かったため、法人携帯をガラケーからスマートフォンに切り替え、SNSアプリを導入。電話の手間が減り、事前連絡で業務準備が可能になり意思疎通がスムーズになった。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "ソフトバンク法人携帯（スマートフォン）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/mobile/case/04/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "共進金属工業株式会社",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "複数の工場拠点があり顔を見に行けず、コミュニケーションが取りづらかった。また、電話での確認が多く業務が中断される時間が無駄だった。",
+    "actions": "ガラケーからスマートフォンに切り替え、SNSアプリを導入して社内連絡に使用。事前に要件をSNSで伝えておくことで効率化を図った。",
+    "results": [],
+    "scale": [
+      {
+        "metric": "導入台数の変遷",
+        "value": "ガラケー20台→スマートフォン30台"
+      }
+    ],
+    "resultsQualitative": "意思疎通のキャッチボールがしやすくなった。電話での会話時間が減り、事前にSNSで要件を伝えることで、空き時間に資料準備や調査など業務準備ができるようになり、社内電話による業務中断が減った。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "電話・FAX中心",
+      "多拠点の管理",
+      "移動時間の多さ"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-mobile-case-05",
+    "title": "法人携帯導入でメリハリのある職場環境を実現、引継ぎ業務もスムーズ化",
+    "summary": "運送業の和晃運輸は、事業拡大に伴い個人携帯から法人携帯へ切り替え。仕事とプライベートの境界が明確になり、従業員満足度が向上、担当者変更時の引継ぎ業務も効率化した。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "ソフトバンク法人携帯（スマホ）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/mobile/case/05/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "和晃運輸株式会社",
+      "industry": "logistics",
+      "size": "",
+      "dept": ""
+    },
+    "challenges": [
+      "efficiency",
+      "standardize"
+    ],
+    "challengeDetail": "事業拡大に伴い従業員が増加する中、個人携帯の使用では仕事とプライベートの切り分けができず、担当者変更時の引継ぎ作業が煩雑だった。",
+    "actions": "ソフトバンクの法人携帯（スマホ）を導入し、全従業員に社用携帯を支給。担当者変更時に携帯をスライドさせるだけで引継ぎを可能にした。",
+    "results": [],
+    "resultsQualitative": "従業員が祝日・土日に電話に出なくなり、仕事にメリハリがついた。担当者変更時の引継ぎがスムーズになった。従業員から『便利になった』との声が上がった。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "担当者不在で止まる",
+      "引き継ぎ困難",
+      "業務の属人化"
+    ]
+  },
+  {
+    "id": "www-tele-nishi-co-jp-biz-mobile-case-06",
+    "title": "病院の院内電波改善と通信コスト最適化を同時実現",
+    "summary": "格安SIM利用中の病院がオペ室・院内奥での電波悪化に課題を抱えていた。法人携帯（ソフトバンク）への切り替えと電波調査・工事を実施。電波改善と格安SIM同等のコストでの導入を達成した。",
+    "vendor": "tele-nishi.co.jp",
+    "product": "ソフトバンク法人携帯（スマートフォン）",
+    "productCategory": "other-product",
+    "sourceUrl": "https://www.tele-nishi.co.jp/biz/mobile/case/06/",
+    "collectedAt": "2026-11-04T00:00:00.000Z",
+    "customer": {
+      "name": "守口敬仁会病院",
+      "industry": "medical",
+      "size": "",
+      "dept": "システム管理課"
+    },
+    "challenges": [
+      "efficiency",
+      "cost"
+    ],
+    "challengeDetail": "格安SIM利用時にオペ室や院内奥での電波が悪く、格安SIM提供者からも対応を得られなかった。同時に通信費のコスト削減を求めていた。",
+    "actions": "ソフトバンクの法人携帯サービスに切り替え、電波調査と工事を実施した。格安SIM同等のコスト水準での契約条件を実現した。",
+    "results": [],
+    "resultsQualitative": "電波調査・工事後、院内の電波が目に見えて改善され、看護師・医師からも改善を実感する声が得られた。業務効率が向上した。",
+    "hasNumbers": false,
+    "sample": false,
+    "tags": [
+      "電話・FAX中心",
+      "情報共有の遅れ",
+      "多拠点の管理"
     ]
   },
   {
