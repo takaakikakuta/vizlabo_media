@@ -10,6 +10,9 @@ import { parseStat, statSize } from "../../../lib/stat";
 import Adoption from "../../../components/Adoption";
 import CoverImg from "../../../components/CoverImg";
 import { withUtm } from "../../../lib/source";
+import { hasVideo, videoUrl } from "../../../lib/video";
+import VideoBadge from "../../../components/VideoBadge";
+import { Play } from "lucide-react";
 
 /* ビルド出力の肥大化対策（Amplifyの220MB制限）:
    事前生成をやめ、初回アクセス時に生成してキャッシュするオンデマンドISRにする。
@@ -52,6 +55,8 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
           {productLabel(c.productCategory)}
         </Link>
         {c.sample && <><span className="text-line">|</span><span className="text-muted">サンプル(仮)</span></>}
+        {/* 元記事に YouTube 動画がある事例の印（出典ボタンの横に動画への導線も出す） */}
+        {hasVideo(c) && <><span className="text-line">|</span><VideoBadge size="md" /></>}
       </div>
 
       <h1 className="font-display mt-5 text-[27px] leading-[1.42] text-ink sm:text-[36px] sm:leading-[1.38]">
@@ -62,9 +67,11 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
         {c.summary}
       </p>
 
-      {/* 公式の元記事への導線（冒頭）。要約を読んで「詳しく知りたい」と思った人をすぐ送る */}
-      <div className="mt-6">
+      {/* 公式の元記事への導線（冒頭）。要約を読んで「詳しく知りたい」と思った人をすぐ送る。
+          元記事に動画があれば、その動画への導線も並べる */}
+      <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
         <SourceButton c={c} position="top" />
+        <VideoLink c={c} />
       </div>
 
       {/* 出典画像があれば扉の写真として。無い事例も成立する組みにしてある */}
@@ -242,7 +249,24 @@ function SourceButton({ c, position }: { c: CaseStudy; position: "top" | "bottom
     <a href={withUtm(c.sourceUrl, "case_detail", position)} target="_blank" rel="noopener"
       className="group inline-flex max-w-full flex-col border border-ink bg-ink px-5 py-3 text-white no-underline transition hover:bg-white hover:text-ink">
       <span className="text-[14px] font-bold leading-snug">元の事例を読む（{name}）↗</span>
-      <span className="mt-0.5 text-[11px] text-white/70 group-hover:text-muted">掲載元：{c.vendor} の公式サイト</span>
+      <span className="mt-0.5 text-[11px] text-white/70 group-hover:text-muted">
+        掲載元：{c.vendor} の公式サイト{hasVideo(c) && "（動画あり）"}
+      </span>
+    </a>
+  );
+}
+
+/** 元記事に埋め込まれた動画（YouTube）への導線。video が無い事例では何も出さない */
+function VideoLink({ c }: { c: CaseStudy }) {
+  const url = videoUrl(c);
+  if (!url) return null;
+  return (
+    <a href={url} target="_blank" rel="noopener"
+      className="inline-flex items-center gap-2 border-b border-line pb-0.5 text-[13px] font-bold text-ink no-underline transition hover:border-ink">
+      <span className="grid h-5 w-5 place-items-center rounded-full bg-ink text-white">
+        <Play size={9} strokeWidth={2.5} fill="currentColor" className="translate-x-px" aria-hidden />
+      </span>
+      元記事の動画を見る（YouTube）↗
     </a>
   );
 }

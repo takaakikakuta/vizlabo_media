@@ -41,6 +41,9 @@ export type CaseStudy = {
   sample?: boolean;    // サンプル(仮)データの目印。実データ投入時は付けない
   tags?: string[];     // 補助タグ（自由）
   image?: string;      // 出典ページの og:image（あれば実画像・無ければ生成カバー）
+  video?: string;      // 出典ページに埋め込まれた YouTube 動画のURL（watch / youtu.be / embed のどれでも可）。
+                       // あると事例セレクションと要約ページに「動画あり」の印と動画への導線を出す。
+                       // 付け方: node scripts/video/detect.mjs で元記事を走査して自動で付ける（手で書いてもよい）
   hidden?: boolean;    // 非公開（ベンダーからの削除依頼など）。データは残すがサイトには一切出さない
   linkOnly?: boolean;  // リンクのみ（掲載元から取り下げ依頼を受け、要約をやめた事例）。事例ページ・一覧には出さず、
                        // 事例セレクションでは企業名を伏せた短い紹介と元記事へのリンクだけを出す
