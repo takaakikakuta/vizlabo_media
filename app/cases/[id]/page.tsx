@@ -10,9 +10,8 @@ import { parseStat, statSize } from "../../../lib/stat";
 import Adoption from "../../../components/Adoption";
 import CoverImg from "../../../components/CoverImg";
 import { withUtm } from "../../../lib/source";
-import { hasVideo, videoUrl } from "../../../lib/video";
+import { hasVideo } from "../../../lib/video";
 import VideoBadge from "../../../components/VideoBadge";
-import { Play } from "lucide-react";
 
 /* ビルド出力の肥大化対策（Amplifyの220MB制限）:
    事前生成をやめ、初回アクセス時に生成してキャッシュするオンデマンドISRにする。
@@ -55,7 +54,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
           {productLabel(c.productCategory)}
         </Link>
         {c.sample && <><span className="text-line">|</span><span className="text-muted">サンプル(仮)</span></>}
-        {/* 元記事に YouTube 動画がある事例の印（出典ボタンの横に動画への導線も出す） */}
+        {/* 元記事に動画がある事例の印。動画は元記事の説明と一緒に見てもらうので、動画への直リンクは出さない */}
         {hasVideo(c) && <><span className="text-line">|</span><VideoBadge size="md" /></>}
       </div>
 
@@ -67,11 +66,9 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
         {c.summary}
       </p>
 
-      {/* 公式の元記事への導線（冒頭）。要約を読んで「詳しく知りたい」と思った人をすぐ送る。
-          元記事に動画があれば、その動画への導線も並べる */}
-      <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
+      {/* 公式の元記事への導線（冒頭）。要約を読んで「詳しく知りたい」と思った人をすぐ送る */}
+      <div className="mt-6">
         <SourceButton c={c} position="top" />
-        <VideoLink c={c} />
       </div>
 
       {/* 出典画像があれば扉の写真として。無い事例も成立する組みにしてある */}
@@ -252,22 +249,6 @@ function SourceButton({ c, position }: { c: CaseStudy; position: "top" | "bottom
       <span className="mt-0.5 text-[11px] text-white/70 group-hover:text-muted">
         掲載元：{c.vendor} の公式サイト{hasVideo(c) && "（動画あり）"}
       </span>
-    </a>
-  );
-}
-
-/** 元記事に埋め込まれた動画への導線。動画URLが分かれば YouTube へ、
-    video: true（URL不明・動画ありは確認済み）なら元記事へ送る。video が無い事例では何も出さない */
-function VideoLink({ c }: { c: CaseStudy }) {
-  if (!hasVideo(c)) return null;
-  const url = videoUrl(c);
-  return (
-    <a href={url ?? withUtm(c.sourceUrl, "case_detail", "video")} target="_blank" rel="noopener"
-      className="inline-flex items-center gap-2 border-b border-line pb-0.5 text-[13px] font-bold text-ink no-underline transition hover:border-ink">
-      <span className="grid h-5 w-5 place-items-center rounded-full bg-ink text-white">
-        <Play size={9} strokeWidth={2.5} fill="currentColor" className="translate-x-px" aria-hidden />
-      </span>
-      {url ? "元記事の動画を見る（YouTube）↗" : "元記事で動画を見る ↗"}
     </a>
   );
 }

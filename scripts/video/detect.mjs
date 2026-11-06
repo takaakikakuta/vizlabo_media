@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /* 元記事（出典ページ）に YouTube 動画が埋め込まれているかを調べ、data/cases.json の video に動画URLを書き込む。
-   video が付いた事例は、事例セレクション（選記事）と要約ページに「動画あり」の印と動画への導線が出る（lib/video.ts）。
+   video が付いた事例は、事例セレクション（選記事）と要約ページに「動画あり」の印が出る（lib/video.ts）。
+   URLはサイトには出さない（動画への直リンクはしない）。どの動画を見つけたかを目で確かめるための記録。
 
    使い方: node scripts/video/detect.mjs                  … 公開中・下書きの選記事に出ている事例（video 未設定のもの）を調べる
          node scripts/video/detect.mjs --article 49      … その記事（no かファイル名）の事例だけ
