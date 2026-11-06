@@ -50,6 +50,8 @@ description: メルマガ「週刊 事例マニア」（土曜配信・Benchmark
 
 ## 注意
 
+- **トップページのヒーロー直下は、いちばん新しい号の JSON の `sugoi` / `column` をそのまま出す**（`lib/note.ts` → `components/NoteLatest.tsx`、1時間ごとに更新）。note の投稿が配信日より先に出るときは、次の号の JSON を `build.mjs <日付>` で先に作って URL だけ書いておけば、その時点でトップに出る。title・image は build.mjs が OGP から書き戻すので、サイト側で取りに行くのは空のときだけ
+
 - JSON を手で上書きされることがある。壊れたら `git show HEAD:newsletter/<日付>.json` から戻す
 - リンクの UTM は build.mjs が付ける（utm_source=newsletter, utm_campaign=<日付>, utm_content=<枠>）。手で付けない
 - 画像は外部（vizlabo.com / note）から読むので、記事サムネイルが本番にデプロイ済みか確認する

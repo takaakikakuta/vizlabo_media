@@ -8,6 +8,8 @@ import { allArticles, articleThumb } from "../lib/articles";
 import { dayImage, dayLabel, todayDay } from "../lib/days";
 import CoverImg from "../components/CoverImg";
 import { SUGGEST_ENABLED } from "../lib/flags";
+import NoteLatest from "../components/NoteLatest";
+import { latestNotePosts } from "../lib/note";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -69,7 +71,8 @@ function HeroEntry({ href, eyebrow, title, desc, cta, external, image }: {
    静的のままだとビルド時の日付で固まる。1日24回の再生成なのでSSR費用はごくわずか。 */
 export const revalidate = 3600;
 
-export default function Home() {
+export default async function Home() {
+  const notePosts = await latestNotePosts();   // note 連載の最新回（メルマガ最新号の JSON から）
   const chCounts = challengeCounts();
   const indCounts = industryCounts();
   const s = siteStats();
@@ -152,11 +155,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── バナー：note連載への入口（ヒーロー直下）。画像は public/banner/note.png を置くだけで反映（4:1、1600×400px推奨）。
-           比率は4:1のまま、幅をmax-w-3xlに絞って控えめに置く ── */}
+      {/* ── note連載の最新回（ヒーロー直下）：この事例がスゴイ／事例コラムを、メルマガ最新号の JSON から2枚。
+           最新号に URL が無いときは従来の固定バナー（public/banner/note.png）に戻る ── */}
       <section className="mx-auto max-w-6xl px-5 pt-10">
         <div className="mx-auto max-w-3xl">
-          {BANNERS.map((b) => <Banner key={b.file} {...b} />)}
+          {notePosts.length > 0
+            ? <NoteLatest posts={notePosts} />
+            : BANNERS.map((b) => <Banner key={b.file} {...b} />)}
         </div>
       </section>
 
