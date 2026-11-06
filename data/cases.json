@@ -62987,7 +62987,8 @@
       "大量調理の時間制約",
       "調理員の身体的負担",
       "衛生管理の属人化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "www-meal-shuttle-jp-result-case-post-9",
