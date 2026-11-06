@@ -169250,7 +169250,8 @@
       "検査の目視頼み",
       "品質のばらつき",
       "不良の見逃し"
-    ]
+    ],
+    "video": true
   },
   {
     "id": "www-sato-co-jp-case-hospital-ompu-html",

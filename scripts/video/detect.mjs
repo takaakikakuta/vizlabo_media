@@ -6,7 +6,7 @@
          node scripts/video/detect.mjs --article 49      … その記事（no かファイル名）の事例だけ
          node scripts/video/detect.mjs --ids a-1,b-2     … 事例IDを直接指定
          node scripts/video/detect.mjs --all             … 公開対象の全事例（1万件。時間がかかるので普段は使わない）
-         node scripts/video/detect.mjs --recheck         … video が付いている事例も調べ直す（消えた動画は video を外す）
+         node scripts/video/detect.mjs --recheck         … video が付いている事例も調べ直す（消えた動画は video を外す。true は外さず、見つかればURLに置き換える）
          node scripts/video/detect.mjs --dry-run         … 書き込まずに結果だけ出す
 
    見つけ方: ページのHTMLから youtube.com/embed/ID・youtube-nocookie.com/embed/ID・youtu.be/ID・watch?v=ID・shorts/ID と
@@ -130,7 +130,8 @@ for (const c of targets) {
       } else c.video = url;
     }
     added++;
-  } else if (!url && c.video && recheck && !errors.some((e) => e.startsWith(`${c.id}:`))) {
+  } else if (!url && typeof c.video === "string" && recheck && !errors.some((e) => e.startsWith(`${c.id}:`))) {
+    /* video: true は手で確認済みの印なので、見つからなくても外さない */
     lines.push(`  - ${c.id}  動画が見つからなくなったので video を外す`);
     if (!dryRun) delete c.video;
     removed++;

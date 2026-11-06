@@ -256,17 +256,18 @@ function SourceButton({ c, position }: { c: CaseStudy; position: "top" | "bottom
   );
 }
 
-/** 元記事に埋め込まれた動画（YouTube）への導線。video が無い事例では何も出さない */
+/** 元記事に埋め込まれた動画への導線。動画URLが分かれば YouTube へ、
+    video: true（URL不明・動画ありは確認済み）なら元記事へ送る。video が無い事例では何も出さない */
 function VideoLink({ c }: { c: CaseStudy }) {
+  if (!hasVideo(c)) return null;
   const url = videoUrl(c);
-  if (!url) return null;
   return (
-    <a href={url} target="_blank" rel="noopener"
+    <a href={url ?? withUtm(c.sourceUrl, "case_detail", "video")} target="_blank" rel="noopener"
       className="inline-flex items-center gap-2 border-b border-line pb-0.5 text-[13px] font-bold text-ink no-underline transition hover:border-ink">
       <span className="grid h-5 w-5 place-items-center rounded-full bg-ink text-white">
         <Play size={9} strokeWidth={2.5} fill="currentColor" className="translate-x-px" aria-hidden />
       </span>
-      元記事の動画を見る（YouTube）↗
+      {url ? "元記事の動画を見る（YouTube）↗" : "元記事で動画を見る ↗"}
     </a>
   );
 }

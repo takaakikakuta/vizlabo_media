@@ -22,14 +22,15 @@ export function youtubeId(url: string | undefined): string | undefined {
   }
 }
 
-/** 元記事に動画があるか（video が書かれていれば真。印の表示に使う） */
+/** 元記事に動画があるか（video が URL か true なら真。印の表示に使う） */
 export function hasVideo(c: CaseStudy): boolean {
-  return !!c.video?.trim();
+  return c.video === true || (typeof c.video === "string" && c.video.trim() !== "");
 }
 
-/** 動画を見に行くURL。YouTube なら埋め込みURLでも watch ページに揃える（それ以外はそのまま） */
+/** 動画そのもののURL。YouTube なら埋め込みURLでも watch ページに揃える（それ以外のURLはそのまま）。
+    video: true（URL不明・動画ありは確認済み）のときは undefined。導線は元記事に向ける */
 export function videoUrl(c: CaseStudy): string | undefined {
-  if (!hasVideo(c)) return undefined;
+  if (typeof c.video !== "string" || !c.video.trim()) return undefined;
   const id = youtubeId(c.video);
-  return id ? `https://www.youtube.com/watch?v=${id}` : c.video!.trim();
+  return id ? `https://www.youtube.com/watch?v=${id}` : c.video.trim();
 }
