@@ -57,7 +57,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
 
       {articleThumb(article) && (
         <figure className="mt-6">
-          <div className="relative aspect-[5/3] w-full overflow-hidden border border-line bg-soft">
+          <div className="relative aspect-video w-full overflow-hidden border border-line bg-soft">
             <CoverImg src={articleThumb(article)!} />
           </div>
         </figure>

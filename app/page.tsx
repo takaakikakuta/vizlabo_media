@@ -203,7 +203,7 @@ export default async function Home() {
             {terms.map((a) => (
               <Link key={a.slug} href={`/terms/${a.slug}`}
                 className="row group block border-b border-line2 px-2 py-5 no-underline">
-                <div className="relative mb-3.5 aspect-[5/3] w-full overflow-hidden rounded-[3px] border border-line2 bg-soft">
+                <div className="relative mb-3.5 aspect-video w-full overflow-hidden rounded-[3px] border border-line2 bg-soft">
                   {articleThumb(a)
                     ? <CoverImg src={articleThumb(a)!} />
                     : <span className="font-display absolute inset-0 grid place-items-center px-3 text-center text-[20px] leading-tight text-ink">{a.term}</span>}
