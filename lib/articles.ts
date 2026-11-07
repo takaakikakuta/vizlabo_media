@@ -252,11 +252,23 @@ export function publishedArticles(): Article[] {
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.no - a.no);
 }
 
-/** 一覧・トップ・サイトマップに並べる記事。publishedAt（日本時間）の当日から並ぶ。
-    使うページは revalidate=3600 なので、公開日になってから最大1時間で並ぶ */
+/** 一覧・トップ・サイトマップに並べる事例セレクション。publishedAt（日本時間）の当日から並ぶ。
+    使うページは revalidate=3600 なので、公開日になってから最大1時間で並ぶ。
+    「事例でわかる技術用語」（yougo）は別の連載なので含めない（allTermArticles） */
 export function allArticles(): Article[] {
   const today = todayJST();
-  return publishedArticles().filter((a) => a.publishedAt <= today);
+  return publishedArticles().filter((a) => a.format !== "yougo" && a.publishedAt <= today);
+}
+
+/** 「事例でわかる技術用語」の一覧（/terms）。公開日の当日から並ぶ */
+export function allTermArticles(): YougoArticle[] {
+  const today = todayJST();
+  return publishedArticles().filter((a): a is YougoArticle & ArticleCommon => a.format === "yougo" && a.publishedAt <= today);
+}
+
+/** 記事のURL。事例セレクションは /articles/<slug>、事例でわかる技術用語は /terms/<slug> */
+export function articleHref(a: Pick<Article, "format" | "slug">): string {
+  return a.format === "yougo" ? `/terms/${a.slug}` : `/articles/${a.slug}`;
 }
 
 function todayJST(): string {

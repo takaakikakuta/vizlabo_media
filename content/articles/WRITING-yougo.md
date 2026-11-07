@@ -1,7 +1,7 @@
 # 「事例でわかる技術用語」（yougo型）の書き方
 
 「〇〇とは」で検索した人向けに、用語の説明と、その用語で課題を解いた事例を1記事にまとめるコーナー。説明だけのサイトとの差は事例が付いていること。狙いは検索流入。
-`format` は `"yougo"`、`series` は `"事例でわかる技術用語"`。連番 `no` は事例セレクションとは別に数える（サムネイルは `public/thumbnail/yougo-<no>.jpg`）。
+`format` は `"yougo"`、`series` は `"事例でわかる技術用語"`。事例セレクションとは別の連載で、一覧は `/terms`、記事は `/terms/<slug>`（トップにも別のセクションで出る。`/articles` の一覧には載らない）。連番 `no` も事例セレクションとは別に数える（サムネイルは `public/thumbnail/yougo-<no>.jpg`）。
 
 ## 0. 性質と限界
 
@@ -50,4 +50,4 @@
 
 1. `python -c "import uuid; print(uuid.uuid4())"` で slug を生成し、`content/articles/yougo-<no>-<用語>.json` を置く（`draft: true` で下書き）。
 2. `npm run build` が通ることを確認し、`node scripts/inventory/inventory.mjs` で INVENTORY.md を更新する。
-3. 公開するときは `draft` を消し、`publishedAt` を公開日にする。記事URLは `/articles/<slug>`。
+3. 公開するときは `draft` を消し、`publishedAt` を公開日にする。記事URLは `/terms/<slug>`（`/articles/<slug>` で開いても `/terms` へ転送される）。
