@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import type { Metadata } from "next";
 import { publishedArticles, getArticle } from "../../../lib/articles";
 import Wakaremichi from "../../../components/articles/Wakaremichi";
@@ -13,7 +13,7 @@ import Sen from "../../../components/articles/Sen";
    記事を1本増やす＝ content/articles/ にJSONを1つ置く、だけ。 */
 
 export function generateStaticParams() {
-  return publishedArticles().map((a) => ({ slug: a.slug }));
+  return publishedArticles().filter((a) => a.format !== "yougo").map((a) => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const a = getArticle(decodeURIComponent((await params).slug));
   if (!a) notFound();
+  if (a.format === "yougo") permanentRedirect(`/terms/${a.slug}`);  // 用語記事は別の連載（/terms）
 
   switch (a.format) {
     case "wakaremichi":

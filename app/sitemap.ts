@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { allCases, navigableTags } from "../lib/cases";
-import { allArticles } from "../lib/articles";
+import { allArticles, allTermArticles } from "../lib/articles";
 import { allDays } from "../lib/days";
 import { CHALLENGES, INDUSTRIES, PRODUCT_CATEGORIES } from "../lib/taxonomy";
 
@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/`, lastModified: now, changeFrequency: "daily", priority: 1 },
     { url: `${SITE}/cases`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${SITE}/articles`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE}/terms`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE}/challenges`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE}/industries`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE}/tags`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
@@ -30,6 +31,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articles: MetadataRoute.Sitemap = allArticles().map((a) => ({
     url: `${SITE}/articles/${a.slug}`,
+    lastModified: new Date(a.publishedAt),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  const terms: MetadataRoute.Sitemap = allTermArticles().map((a) => ({
+    url: `${SITE}/terms/${a.slug}`,
     lastModified: new Date(a.publishedAt),
     changeFrequency: "monthly",
     priority: 0.8,
@@ -63,5 +71,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...fixed, ...articles, ...days, ...taxonomy, ...tags, ...cases];
+  return [...fixed, ...articles, ...terms, ...days, ...taxonomy, ...tags, ...cases];
 }

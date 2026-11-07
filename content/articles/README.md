@@ -8,6 +8,7 @@
 - 業界を越える事例型: [WRITING-ekkyou.md](WRITING-ekkyou.md)
 - 導入の舞台裏型: [WRITING-butaiura.md](WRITING-butaiura.md)
 - 選（事例10選・5選）型: [WRITING-sen.md](WRITING-sen.md) — 10選と5選は同じ書き方。違いは本数と課題の幅だけ（3選は 2026-10-29 に廃止）
+- 事例でわかる技術用語型: [WRITING-yougo.md](WRITING-yougo.md) — 「〇〇とは」で検索した人向け。用語の説明＋その用語で課題を解いた事例3本か5本
 - 事例単体（/cases/…）: [WRITING-case.md](WRITING-case.md) — 説明はさらっと（カルテ。自動生成＋手直しの作法）
 
 記事の「書かれた部分」はこのフォルダのJSONにある。文章を直す＝JSONの値を書き換えるだけ。
@@ -118,7 +119,12 @@ node scripts/inventory/inventory.mjs --theme 金型 --industry manufacturing
 node scripts/inventory/inventory.mjs --tags                 # 困りごとタグ別の件数
 ```
 
-テーマは `scripts/inventory/themes.json` に1行足せば表に載る。判定（10選・5選・不足）は各ガイドの件数の目安をそのまま機械的に当てたもので、企画の入口の確認用。選ぶときは候補の全件を読む。
+テーマは `scripts/inventory/themes.json` に1行足せば表に載る。
+「事例でわかる技術用語」の用語候補（用語別・業種別の件数と推奨本数）は [TERMS.md](TERMS.md)。`node scripts/inventory/terms.mjs` で再生成する。
+
+## 提供元への掲載連絡の記録
+
+記事に出した提供元のうち、連絡済みで削除依頼がなかった先は [VENDORS.md](VENDORS.md)（元データは `data/vendor_contacts.json`）。掲載通知文は `node scripts/vendors/notify.mjs <記事slug|no|用語no> [--short] [--no-url] [--tieup]` で提供元ごとに作る（Claude Code では `/notify`。出力は `content/articles/notify/` に書き出され、git には入れない）。公開した記事の提供元は `node scripts/vendors/contacts.mjs` で「未連絡」に入り、連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]` で連絡済みにする。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。判定（10選・5選・不足）は各ガイドの件数の目安をそのまま機械的に当てたもので、企画の入口の確認用。選ぶときは候補の全件を読む。
 
 ## タイアップ（PR）記事にするとき
 

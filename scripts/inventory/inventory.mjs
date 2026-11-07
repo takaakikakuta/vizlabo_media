@@ -34,6 +34,7 @@ for (const f of fs.readdirSync(path.join(ROOT, "content/articles")).filter((f) =
     case "ekkyou": ids = [a.caseA?.id, a.caseB?.id]; break;
     case "butaiura": ids = [...(a.walls ?? []).flatMap((w) => w.caseIds ?? []), ...(a.approaches ?? []).flatMap((x) => x.caseIds ?? [])]; break;
     case "sen": ids = (a.items ?? []).map((x) => x.caseId); break;
+    case "yougo": ids = (a.items ?? []).map((x) => x.caseId); break;
   }
   const info = { no: a.no, format: a.format, hidden: !!a.hidden, draft: !!a.draft, title: Array.isArray(a.title) ? a.title.join(" ") : a.title, items: a.items?.length };
   articles.push(info);

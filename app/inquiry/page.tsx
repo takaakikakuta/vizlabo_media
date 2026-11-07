@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getArticle, articleServices } from "../../lib/articles";
+import { getArticle, articleServices, articleHref } from "../../lib/articles";
 import { productLabel } from "../../lib/taxonomy";
 import { vendorLabel } from "../../components/Adoption";
 import InquiryForm from "../../components/InquiryForm";
@@ -47,7 +47,7 @@ export default async function InquiryPage({ searchParams }: {
       <ListHead eyebrow="お問い合わせ" title="まとめて問い合わせ"
         sub={`「${article.title.join("")}」に登場したサービスの提供企業へ、編集部がまとめてお取り次ぎします。`} />
       <p className="mt-5 border border-line2 px-4 py-3 text-[11.5px] leading-[1.9] text-muted">
-        出発点の記事：<Link href={`/articles/${article.slug}`}
+        出発点の記事：<Link href={articleHref(article)}
           className="border-b border-line pb-0.5 text-ink no-underline hover:border-ink">
           {article.series} #{String(article.no).padStart(3, "0")}｜{article.title.join("")}
         </Link>

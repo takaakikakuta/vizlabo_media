@@ -186,6 +186,34 @@ export type SenArticle = {
   relatedSlugs?: string[]; // 関連する解体新書記事
 };
 
+/* ── 型8：事例でわかる技術用語（「〇〇とは」で検索した人に、用語の説明と、その用語で課題を解いた事例を1記事で渡す） ── */
+export type YougoArticle = {
+  format: "yougo";
+  sponsored?: boolean;  // タイアップ（PR）記事か。未指定＝編集記事
+  thumbnail?: string;   // 一覧・トップで使うサムネイル（未設定なら public/thumbnail/yougo-<no>.jpg → 記事内事例の画像の順に自動）
+  slug: string;
+  no: number;           // 連載内の連番（事例セレクションとは別に数える）
+  series: string;       // "事例でわかる技術用語"
+  publishedAt: string;
+  term: string;         // 用語（検索語そのもの。例: RFID）
+  title: string[];      // 「{用語}とは｜{N}つの事例でわかる」
+  lead: string;         // 2〜3文。検索した人の疑問に最初の3行で答える
+  description: string;  // meta description（120字以内）
+  thumbLine: string;    // サムネ用の一行要約（SNS・一覧の補助。表には出さない）
+  definition: string;   // 「{用語}とは」本文（150字程度。専門用語を使わず、何を解決するためのものかを中心に）
+  fitNote: string;      // 向いている仕事・向かない仕事を1〜2文で（箇条書きにしない）
+  items: {
+    caseId: string;
+    label: string;      // 事例の一言ラベル（4〜8字。例: 店舗の棚卸）。読者が本文を読まずに自分に近い事例を選べるように
+    service?: string;   // 見出しの「× サービス名」を製品名から短くしたいときの上書き
+    body: string;       // 何に困り、何をして、どうなったかを1段落（2〜3文）。詳細は事例ページに任せる
+    hitokoto: string;   // 読者が自社に当てはめられる一言（言い切り）
+    linkOnly?: { body: string };  // 事例が linkOnly になったときの差し替え（企業名・規模・数字を書かない）
+  }[];
+  relatedTerms: { label: string; href: string }[];  // 関連する用語（用語記事があればそのURL、無ければ困りごとタグ・製品カテゴリのページ）
+  relatedSlugs?: string[];  // 関連する事例セレクション
+};
+
 /* 全型共通の任意フィールド。
    hidden: true … 退役した旧記事の非公開（データは残す）
    draft: true  … 公開前の下書き。公開するときはこの行を消して（または false にして）push する。
@@ -200,6 +228,7 @@ export type Article = (
   | EkkyouArticle
   | ButaiuraArticle
   | SenArticle
+  | YougoArticle
 ) & ArticleCommon;
 
 const DIR = path.join(process.cwd(), "content", "articles");
@@ -214,11 +243,23 @@ export function publishedArticles(): Article[] {
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.no - a.no);
 }
 
-/** 一覧・トップ・サイトマップに並べる記事。publishedAt（日本時間）の当日から並ぶ。
-    使うページは revalidate=3600 なので、公開日になってから最大1時間で並ぶ */
+/** 一覧・トップ・サイトマップに並べる事例セレクション。publishedAt（日本時間）の当日から並ぶ。
+    使うページは revalidate=3600 なので、公開日になってから最大1時間で並ぶ。
+    「事例でわかる技術用語」（yougo）は別の連載なので含めない（allTermArticles） */
 export function allArticles(): Article[] {
   const today = todayJST();
-  return publishedArticles().filter((a) => a.publishedAt <= today);
+  return publishedArticles().filter((a) => a.format !== "yougo" && a.publishedAt <= today);
+}
+
+/** 「事例でわかる技術用語」の一覧（/terms）。公開日の当日から並ぶ */
+export function allTermArticles(): YougoArticle[] {
+  const today = todayJST();
+  return publishedArticles().filter((a): a is YougoArticle & ArticleCommon => a.format === "yougo" && a.publishedAt <= today);
+}
+
+/** 記事のURL。事例セレクションは /articles/<slug>、事例でわかる技術用語は /terms/<slug> */
+export function articleHref(a: Pick<Article, "format" | "slug">): string {
+  return a.format === "yougo" ? `/terms/${a.slug}` : `/articles/${a.slug}`;
 }
 
 function todayJST(): string {
@@ -256,6 +297,9 @@ export function articleCaseIds(a: Article): string[] {
     case "sen":
       ids = a.items.map((x) => x.caseId);
       break;
+    case "yougo":
+      ids = a.items.map((x) => x.caseId);
+      break;
   }
   return [...new Set(ids)].filter(Boolean);
 }
@@ -289,12 +333,14 @@ export function articleThumb(a: Article): string | undefined {
   if (a.thumbnail === "none") return undefined;  // 番号連動の自動取得も使わない明示指定
   if (a.thumbnail) return a.thumbnail;
   for (const ext of ["jpg", "png"]) {
-    const file = `${String(a.no).padStart(3, "0")}.${ext}`;
+    // 用語記事は連番が事例セレクションと別なので、ファイル名に接頭辞を付けて衝突を避ける
+    const file = `${a.format === "yougo" ? "yougo-" : ""}${String(a.no).padStart(3, "0")}.${ext}`;
     if (fs.existsSync(path.join(process.cwd(), "public", "thumbnail", file))) return `/thumbnail/${file}`;
   }
   if (a.format === "wakaremichi") return getCase(a.caseA.id)?.image ?? getCase(a.caseB.id)?.image;
   if (a.format === "genba") return getCase(a.axisId)?.image;
   if (a.format === "ekkyou") return getCase(a.caseA.id)?.image ?? getCase(a.caseB.id)?.image;
   if (a.format === "sen") return a.items.map((x) => getCase(x.caseId)?.image).find(Boolean);
+  if (a.format === "yougo") return a.items.map((x) => getCase(x.caseId)?.image).find(Boolean);
   return undefined;
 }

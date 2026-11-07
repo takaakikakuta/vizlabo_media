@@ -1,7 +1,7 @@
 import type { ContactInput } from "./contact";
 import { topicLabel } from "./contact";
 import type { InquiryInput } from "./inquiry";
-import { getArticle } from "./articles";
+import { getArticle, articleHref } from "./articles";
 import { mailConfigured, sendMail } from "./mail";
 
 /* フォーム受付の通知。blastengine（lib/mail.ts）で管理者（CONTACT_TO）へメールを送る。
@@ -86,7 +86,7 @@ export async function notifyInquiry(input: InquiryInput): Promise<NotifyResult> 
 
   const article = getArticle(input.articleSlug);
   const articleLine = article
-    ? `${article.title.join(" ")}（/articles/${article.slug}）`
+    ? `${article.title.join(" ")}（${articleHref(article)}）`
     : input.articleSlug || "-";
 
   const text = [
