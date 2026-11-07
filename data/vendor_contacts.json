@@ -1,0 +1,6724 @@
+{
+  "note": "提供元への掲載連絡の記録。scripts/vendors/contacts.mjs が公開中の記事から提供元と記事を足す（手で書いた status・notifiedAt・company・memo は上書きしない）。status: pending＝未連絡 / no-objection＝連絡済みで削除依頼なし / removed＝削除依頼あり（blocked_vendors.json から自動）。notifiedAtEstimated が true の日付は記事の公開日からの推定なので、分かれば直す。",
+  "vendors": [
+    {
+      "domain": "308-al.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-23",
+      "notifiedAtEstimated": true,
+      "products": [
+        "冷えルーフ"
+      ],
+      "articles": [
+        {
+          "slug": "d4bbb964-b594-4ed0-9acf-7a8759f20366",
+          "label": "#020",
+          "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
+          "publishedAt": "2026-10-23",
+          "customers": [
+            "シチズン生活協同組合ほか複数"
+          ],
+          "products": [
+            "冷えルーフ"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "980dbcc5-9675-4391-8850-44575be3ae12",
+          "label": "#038",
+          "title": "空間を冷やせない現場の熱中症対策事例5選",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "シチズン生活協同組合ほか複数"
+          ],
+          "products": [
+            "冷えルーフ"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "3s-corp.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "無溶剤UVコーティング"
+      ],
+      "articles": [
+        {
+          "slug": "5213ed60-e727-4118-bdf6-9b2f4fdb01ff",
+          "label": "#023",
+          "title": "オフィスを変えたら、人が変わった。空間づくりの事例10選",
+          "publishedAt": "2026-10-28",
+          "customers": [
+            "株式会社日本ツクリダス"
+          ],
+          "products": [
+            "無溶剤UVコーティング"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "4on.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "TOUGH"
+      ],
+      "articles": [
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "株式会社ビサン"
+          ],
+          "products": [
+            "TOUGH"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ababa.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-12",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ABABA"
+      ],
+      "articles": [
+        {
+          "slug": "bd64ce85-a3ed-4766-aed5-cc4a24075035",
+          "label": "#011",
+          "title": "求人広告を増やさずに、応募は増えた。「応募が来ない」を解いた採用事例10選",
+          "publishedAt": "2026-10-12",
+          "customers": [
+            "株式会社TYL"
+          ],
+          "products": [
+            "ABABA"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ed9c74a6-161b-401e-9aa4-2ddb5dd32aa1",
+          "label": "#014",
+          "title": "応募は来ている。なのに、面接に人が来ない。「選考が回らない」を解決した採用事例10選",
+          "publishedAt": "2026-10-15",
+          "customers": [
+            "ディップ株式会社",
+            "プレミアグループ株式会社"
+          ],
+          "products": [
+            "ABABA"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "achievement-hrs.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "人材育成研修・OJT支援サービス"
+      ],
+      "articles": [
+        {
+          "slug": "5049358c-68a3-448e-9d01-ea5457462c81",
+          "label": "#026",
+          "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
+          "publishedAt": "2026-11-02",
+          "customers": [
+            "東亜電気工業株式会社"
+          ],
+          "products": [
+            "人材育成研修・OJT支援サービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "afrel-robotics.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ネコボット-F1",
+        "協働ロボットアーム"
+      ],
+      "articles": [
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "株式会社シャルマン"
+          ],
+          "products": [
+            "ネコボット-F1"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "2ee01b44-0fc7-4d07-9c17-a6ec4aa77d0d",
+          "label": "#037",
+          "title": "人手が足りない工場の、ロボット自動化事例5選",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "ウエルダー北沢"
+          ],
+          "products": [
+            "協働ロボットアーム"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "alibaba.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-20",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Alibaba.com"
+      ],
+      "articles": [
+        {
+          "slug": "eba09eb7-fde1-48df-96e5-649188a1f0cb",
+          "label": "#017",
+          "title": "自分の客を、自分で見つける。「下請け・待ちの営業」から抜け出した事例10選",
+          "publishedAt": "2026-10-20",
+          "customers": [
+            "株式会社香月園"
+          ],
+          "products": [
+            "Alibaba.com"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "amano.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "TimeP@CK-iC",
+        "TimeP@CK"
+      ],
+      "articles": [
+        {
+          "slug": "9649f101-0a89-47e7-a98b-15d001011190",
+          "label": "#005",
+          "title": "従業員20名以下でも、ここまで変わった。小さな会社のDX事例10選",
+          "publishedAt": "2026-10-02",
+          "customers": [
+            "株式会社梅林"
+          ],
+          "products": [
+            "TimeP@CK-iC"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "cc2fe571-9de9-4c04-a623-1afae5264410",
+          "label": "#034",
+          "title": "士業の仕事は、資料が行き来する時間でできている。士業事務所と顧問先の資料のやり取りを仕組みに移した事例10選",
+          "publishedAt": "2026-11-12",
+          "customers": [
+            "原口社会保険労務事務所",
+            "籏興行株式会社 シネスイッチ銀座"
+          ],
+          "products": [
+            "TimeP@CK",
+            "TimeP@CK-iC"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "andpad.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-01",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ANDPAD請求管理",
+        "ANDPAD",
+        "ANDPAD遠隔臨場",
+        "ANDPAD施工管理、ANDPAD引合粗利管理",
+        "ANDPAD / ANDPAD BPO"
+      ],
+      "articles": [
+        {
+          "slug": "0f17aaee-727d-4acf-8cbb-4b04e30a1b7c",
+          "label": "#004",
+          "title": "2024年問題の前に、現場はもう動いていた。建設業のDX事例10選",
+          "publishedAt": "2026-10-01",
+          "customers": [
+            "佐藤工業株式会社",
+            "株式会社乃一",
+            "不動産SHOPナカジツ"
+          ],
+          "products": [
+            "ANDPAD請求管理",
+            "ANDPAD",
+            "ANDPAD遠隔臨場"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "9649f101-0a89-47e7-a98b-15d001011190",
+          "label": "#005",
+          "title": "従業員20名以下でも、ここまで変わった。小さな会社のDX事例10選",
+          "publishedAt": "2026-10-02",
+          "customers": [
+            "株式会社玄翁",
+            "株式会社ビーバーリフォーム"
+          ],
+          "products": [
+            "ANDPAD"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "c5538ca4-04a7-4e23-a659-b7ef8bd62926",
+          "label": "#006",
+          "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
+          "publishedAt": "2026-10-05",
+          "customers": [
+            "株式会社タカラベ"
+          ],
+          "products": [
+            "ANDPAD施工管理、ANDPAD引合粗利管理"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "c01f3cb4-d1da-459d-9bf3-42ec69858311",
+          "label": "#007",
+          "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
+          "publishedAt": "2026-10-06",
+          "customers": [
+            "株式会社大勝"
+          ],
+          "products": [
+            "ANDPAD / ANDPAD BPO"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "c9bf031f-e5ee-4612-8361-c3c9bda34638",
+          "label": "#009",
+          "title": "「早く帰ろう」で消える残業は、少ない。残業を減らした事例10選",
+          "publishedAt": "2026-10-08",
+          "customers": [
+            "株式会社カスケホーム",
+            "東洋冷熱工業株式会社"
+          ],
+          "products": [
+            "ANDPAD"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ed5061d7-23b3-4d2e-a8e5-558fdc207eb7",
+          "label": "#013",
+          "title": "センサー・カメラ・遠隔操作で、巡回・点検・出張をなくした事例10選",
+          "publishedAt": "2026-10-14",
+          "customers": [
+            "株式会社ナミキ"
+          ],
+          "products": [
+            "ANDPAD"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "d4bbb964-b594-4ed0-9acf-7a8759f20366",
+          "label": "#020",
+          "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
+          "publishedAt": "2026-10-23",
+          "customers": [
+            "株式会社親広産業"
+          ],
+          "products": [
+            "ANDPAD"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "armg.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-01",
+      "notifiedAtEstimated": true,
+      "products": [
+        "アドバンテッジ スマートケア",
+        "アドバンテッジ ピディカ",
+        "アドバンテッジ ウェルビーイングDXP",
+        "アドバンテッジ タフネス｜TOUGHNESS EQ 感情マネジメント力向上研修"
+      ],
+      "articles": [
+        {
+          "slug": "0f17aaee-727d-4acf-8cbb-4b04e30a1b7c",
+          "label": "#004",
+          "title": "2024年問題の前に、現場はもう動いていた。建設業のDX事例10選",
+          "publishedAt": "2026-10-01",
+          "customers": [
+            "伊藤組土建株式会社"
+          ],
+          "products": [
+            "アドバンテッジ スマートケア"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "839f3e3b-7d07-4f4b-8381-d5066caef279",
+          "label": "#018",
+          "title": "「うちの仕事は在宅無理」は、どこまで本当か。テレワークと現場の温度差を埋めた事例10選",
+          "publishedAt": "2026-10-21",
+          "customers": [
+            "トヨタコネクティッド株式会社"
+          ],
+          "products": [
+            "アドバンテッジ ピディカ"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "95c3cd55-86ab-4a35-9f7a-78dd56e8fcc6",
+          "label": "#036",
+          "title": "満足度調査は、していた。結果が、どこにも届いていなかった。エンゲージメント調査を施策につなげた事例10選",
+          "publishedAt": "2026-11-16",
+          "customers": [
+            "清原株式会社",
+            "日本トーター株式会社",
+            "株式会社 エフテック"
+          ],
+          "products": [
+            "アドバンテッジ ピディカ",
+            "アドバンテッジ ウェルビーイングDXP",
+            "アドバンテッジ タフネス｜TOUGHNESS EQ 感情マネジメント力向上研修"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "basesystem.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-22",
+      "notifiedAtEstimated": true,
+      "products": [
+        "MOTORJIM"
+      ],
+      "articles": [
+        {
+          "slug": "74d68ee8-f1a2-464d-84a4-9b05ce587cd7",
+          "label": "#019",
+          "title": "うちには社内ITがいないから・・・と思ったときにみたい事例１０選",
+          "publishedAt": "2026-10-22",
+          "customers": [
+            "株式会社アキヅキ"
+          ],
+          "products": [
+            "MOTORJIM"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "bcp-kke.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-14",
+      "notifiedAtEstimated": true,
+      "products": [
+        "建物被害モニタリングシステム"
+      ],
+      "articles": [
+        {
+          "slug": "ed5061d7-23b3-4d2e-a8e5-558fdc207eb7",
+          "label": "#013",
+          "title": "センサー・カメラ・遠隔操作で、巡回・点検・出張をなくした事例10選",
+          "publishedAt": "2026-10-14",
+          "customers": [
+            "株式会社豊田自動織機"
+          ],
+          "products": [
+            "建物被害モニタリングシステム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "biztel.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "BIZTEL コールセンター",
+        "BIZTEL コールセンター / BIZTEL モバイル"
+      ],
+      "articles": [
+        {
+          "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
+          "label": "#031",
+          "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
+          "publishedAt": "2026-11-09",
+          "customers": [
+            "株式会社池田模範堂",
+            "寺田倉庫株式会社"
+          ],
+          "products": [
+            "BIZTEL コールセンター",
+            "BIZTEL コールセンター / BIZTEL モバイル"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "bluebean365.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-19",
+      "notifiedAtEstimated": true,
+      "products": [
+        "BlueBean"
+      ],
+      "articles": [
+        {
+          "slug": "6b0ca975-0ee5-441e-a196-f29090be7a8d",
+          "label": "#016",
+          "title": "社内のシステムが古すぎて手を出せない、と思ったときに読みたい事例10選",
+          "publishedAt": "2026-10-19",
+          "customers": [
+            "株式会社チェスコムコールセンターソリューションズ"
+          ],
+          "products": [
+            "BlueBean"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "border.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-05",
+      "notifiedAtEstimated": true,
+      "products": [
+        "BORDER"
+      ],
+      "articles": [
+        {
+          "slug": "ab85bf7f-7d18-4ff8-ab01-91266d712b8e",
+          "label": "#029",
+          "title": "出張で一番時間を食うのは、移動の往復ではなく、書類の往復だった領収書の郵送から差し戻しまで、紙とメールの行き来を止めた事例5選",
+          "publishedAt": "2026-11-05",
+          "customers": [
+            "株式会社Gengo"
+          ],
+          "products": [
+            "BORDER"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "buildee.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-01",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Buildee",
+        "Buildee3サービス"
+      ],
+      "articles": [
+        {
+          "slug": "0f17aaee-727d-4acf-8cbb-4b04e30a1b7c",
+          "label": "#004",
+          "title": "2024年問題の前に、現場はもう動いていた。建設業のDX事例10選",
+          "publishedAt": "2026-10-01",
+          "customers": [
+            "鹿島建設株式会社",
+            "株式会社桑原組"
+          ],
+          "products": [
+            "Buildee",
+            "Buildee3サービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "bunshodo.co.jp",
+      "company": "株式会社文祥堂",
+      "status": "removed",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [],
+      "articles": [],
+      "memo": "",
+      "removedAt": "2026-10-27",
+      "removedReason": "導入事例は顧客との確認・合意を経て内容や画像を定めて公開しているため、事前の相談なく第三者の媒体で再構成・画像を含めて掲載されることは承諾できないとして、ベンダーから掲載削除の依頼を受けた（他の導入事例も掲載しないでほしいとの要望あり）"
+    },
+    {
+      "domain": "businessbridge.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-19",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Business b-ridge"
+      ],
+      "articles": [
+        {
+          "slug": "6b0ca975-0ee5-441e-a196-f29090be7a8d",
+          "label": "#016",
+          "title": "社内のシステムが古すぎて手を出せない、と思ったときに読みたい事例10選",
+          "publishedAt": "2026-10-19",
+          "customers": [
+            "村田機械株式会社"
+          ],
+          "products": [
+            "Business b-ridge"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "b04aab30-7217-4ec6-a7de-e61c92beff82",
+          "label": "#032",
+          "title": "生産管理の属人化、どこから解く？納期回答・計画・進捗・実績・品質記録を人から切り離した事例5選",
+          "publishedAt": "2026-11-10",
+          "customers": [
+            "日本ジェネリック株式会社"
+          ],
+          "products": [
+            "Business b-ridge"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "businesscoach.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "クラウドコーチング・マイコ",
+        "1on1ミーティング導入プログラム"
+      ],
+      "articles": [
+        {
+          "slug": "30777a4a-2bc5-4ec7-bcfa-c99b60f1cc3e",
+          "label": "#035",
+          "title": "辞める直前の場面を、一つだけ変えた。給料でも採用でもない場所から離職を止めた、気づく役の違う5社の事例5選",
+          "publishedAt": "2026-11-13",
+          "customers": [
+            "株式会社百十四銀行"
+          ],
+          "products": [
+            "クラウドコーチング・マイコ"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "95c3cd55-86ab-4a35-9f7a-78dd56e8fcc6",
+          "label": "#036",
+          "title": "満足度調査は、していた。結果が、どこにも届いていなかった。エンゲージメント調査を施策につなげた事例10選",
+          "publishedAt": "2026-11-16",
+          "customers": [
+            "クオリサイトテクノロジーズ株式会社"
+          ],
+          "products": [
+            "1on1ミーティング導入プログラム"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "cashmo.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-19",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Cashmo"
+      ],
+      "articles": [
+        {
+          "slug": "6b0ca975-0ee5-441e-a196-f29090be7a8d",
+          "label": "#016",
+          "title": "社内のシステムが古すぎて手を出せない、と思ったときに読みたい事例10選",
+          "publishedAt": "2026-10-19",
+          "customers": [
+            "株式会社アウローラ",
+            "アップシードビーンズ株式会社"
+          ],
+          "products": [
+            "Cashmo"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "casty-app.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-15",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Casty"
+      ],
+      "articles": [
+        {
+          "slug": "ed9c74a6-161b-401e-9aa4-2ddb5dd32aa1",
+          "label": "#014",
+          "title": "応募は来ている。なのに、面接に人が来ない。「選考が回らない」を解決した採用事例10選",
+          "publishedAt": "2026-10-15",
+          "customers": [
+            "株式会社ワントゥワン東京"
+          ],
+          "products": [
+            "Casty"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ccs1981.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-26",
+      "notifiedAtEstimated": true,
+      "products": [
+        "大学の時間割編成ソリューション"
+      ],
+      "articles": [
+        {
+          "slug": "ab520c82-5d93-43cb-bfcd-0403e70b4389",
+          "label": "#021",
+          "title": "職員室は、日本で一番アナログな職場かもしれない。学校のDX事例10選",
+          "publishedAt": "2026-10-26",
+          "customers": [
+            "創価大学"
+          ],
+          "products": [
+            "大学の時間割編成ソリューション"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "cec-ltd.co.jp",
+      "company": "株式会社シーイーシー（IT Renovation／Re@nove など）",
+      "status": "removed",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [],
+      "articles": [],
+      "memo": "",
+      "removedAt": "2026-10-19",
+      "removedReason": "顧客の了承を得ていないとして、ベンダーから掲載削除の依頼を受けた（今後掲載する場合は掲載前に連絡してほしいとの要望あり）"
+    },
+    {
+      "domain": "ciftr.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "シフター"
+      ],
+      "articles": [
+        {
+          "slug": "30777a4a-2bc5-4ec7-bcfa-c99b60f1cc3e",
+          "label": "#035",
+          "title": "辞める直前の場面を、一つだけ変えた。給料でも採用でもない場所から離職を止めた、気づく役の違う5社の事例5選",
+          "publishedAt": "2026-11-13",
+          "customers": [
+            "溶岩焼肉 牛楽 鶴田町店"
+          ],
+          "products": [
+            "シフター"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ckd.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "パワフルアーム PAW"
+      ],
+      "articles": [
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "髙藏工業株式会社"
+          ],
+          "products": [
+            "パワフルアーム PAW"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "classi.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-26",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Classi"
+      ],
+      "articles": [
+        {
+          "slug": "ab520c82-5d93-43cb-bfcd-0403e70b4389",
+          "label": "#021",
+          "title": "職員室は、日本で一番アナログな職場かもしれない。学校のDX事例10選",
+          "publishedAt": "2026-10-26",
+          "customers": [
+            "東海大学付属高輪台高等学校・中等部"
+          ],
+          "products": [
+            "Classi"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "cloudsign.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-30",
+      "notifiedAtEstimated": true,
+      "products": [
+        "CloudSign by CloudSign",
+        "CloudSign",
+        "クラウドサイン、MAKE for kintone"
+      ],
+      "articles": [
+        {
+          "slug": "499bc233-3d57-42b8-b403-fa6719d0b605",
+          "label": "#003",
+          "title": "経理・バックオフィスの仕事を、AIはどこまで肩代わりできるのか。事例10選",
+          "publishedAt": "2026-09-30",
+          "customers": [
+            "株式会社find",
+            "フィードバイエックス株式会社"
+          ],
+          "products": [
+            "CloudSign by CloudSign",
+            "CloudSign"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "0f17aaee-727d-4acf-8cbb-4b04e30a1b7c",
+          "label": "#004",
+          "title": "2024年問題の前に、現場はもう動いていた。建設業のDX事例10選",
+          "publishedAt": "2026-10-01",
+          "customers": [
+            "株式会社J.フロントプライムスペース"
+          ],
+          "products": [
+            "CloudSign"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "c5538ca4-04a7-4e23-a659-b7ef8bd62926",
+          "label": "#006",
+          "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
+          "publishedAt": "2026-10-05",
+          "customers": [
+            "Fast Fitness Japan"
+          ],
+          "products": [
+            "クラウドサイン、MAKE for kintone"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "conct.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-13",
+      "notifiedAtEstimated": true,
+      "products": [
+        "CO-NECT"
+      ],
+      "articles": [
+        {
+          "slug": "0b70a33d-35b5-4997-b1e9-8cbf23424865",
+          "label": "#012",
+          "title": "売れた数だけ、仕事が増える。EC運営の裏側を仕組みで解いた事例10選",
+          "publishedAt": "2026-10-13",
+          "customers": [
+            "多生堂"
+          ],
+          "products": [
+            "CO-NECT"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "coolex.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "COOLEX-Pro"
+      ],
+      "articles": [
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "日本フルハーフ株式会社 厚木工場"
+          ],
+          "products": [
+            "COOLEX-Pro"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "980dbcc5-9675-4391-8850-44575be3ae12",
+          "label": "#038",
+          "title": "空間を冷やせない現場の熱中症対策事例5選",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "日本フルハーフ株式会社 厚木工場"
+          ],
+          "products": [
+            "COOLEX-Pro"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "coteam.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-05",
+      "notifiedAtEstimated": true,
+      "products": [
+        "コチーム",
+        "1on1・マネジメント研修"
+      ],
+      "articles": [
+        {
+          "slug": "c5538ca4-04a7-4e23-a659-b7ef8bd62926",
+          "label": "#006",
+          "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
+          "publishedAt": "2026-10-05",
+          "customers": [
+            "株式会社ジョン"
+          ],
+          "products": [
+            "コチーム"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "9f697960-a5ea-46eb-b738-031334b09ce7",
+          "label": "#022",
+          "title": "「背中を見て覚えろ」は、教え方ではない。研修・マニュアルのDX事例10選",
+          "publishedAt": "2026-10-27",
+          "customers": [
+            "全日本空輸株式会社（ANA）"
+          ],
+          "products": [
+            "1on1・マネジメント研修"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "cybozu.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "kintone"
+      ],
+      "articles": [
+        {
+          "slug": "b04aab30-7217-4ec6-a7de-e61c92beff82",
+          "label": "#032",
+          "title": "生産管理の属人化、どこから解く？納期回答・計画・進捗・実績・品質記録を人から切り離した事例5選",
+          "publishedAt": "2026-11-10",
+          "customers": [
+            "株式会社京都紋付"
+          ],
+          "products": [
+            "kintone"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "dga.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-22",
+      "notifiedAtEstimated": true,
+      "products": [
+        "実践型DX研修プログラム、動画学習プラットフォーム「みんなデ」"
+      ],
+      "articles": [
+        {
+          "slug": "74d68ee8-f1a2-464d-84a4-9b05ce587cd7",
+          "label": "#019",
+          "title": "うちには社内ITがいないから・・・と思ったときにみたい事例１０選",
+          "publishedAt": "2026-10-22",
+          "customers": [
+            "大日精化工業株式会社"
+          ],
+          "products": [
+            "実践型DX研修プログラム、動画学習プラットフォーム「みんなデ」"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "dpsj.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-22",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Wowza ClearCaster"
+      ],
+      "articles": [
+        {
+          "slug": "74d68ee8-f1a2-464d-84a4-9b05ce587cd7",
+          "label": "#019",
+          "title": "うちには社内ITがいないから・・・と思ったときにみたい事例１０選",
+          "publishedAt": "2026-10-22",
+          "customers": [
+            "株式会社ブルーノート・ジャパン（BLUE NOTE TOKYO）"
+          ],
+          "products": [
+            "Wowza ClearCaster"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ecomeeting.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-08",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ECO Meeting CLOUD",
+        "ECO Meeting PRO",
+        "ECO Meeting"
+      ],
+      "articles": [
+        {
+          "slug": "c9bf031f-e5ee-4612-8361-c3c9bda34638",
+          "label": "#009",
+          "title": "「早く帰ろう」で消える残業は、少ない。残業を減らした事例10選",
+          "publishedAt": "2026-10-08",
+          "customers": [
+            "学校法人東北学院"
+          ],
+          "products": [
+            "ECO Meeting CLOUD"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "日本赤十字社 大津赤十字病院"
+          ],
+          "products": [
+            "ECO Meeting PRO"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "d4bbb964-b594-4ed0-9acf-7a8759f20366",
+          "label": "#020",
+          "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
+          "publishedAt": "2026-10-23",
+          "customers": [
+            "本庄市役所"
+          ],
+          "products": [
+            "ECO Meeting"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ab520c82-5d93-43cb-bfcd-0403e70b4389",
+          "label": "#021",
+          "title": "職員室は、日本で一番アナログな職場かもしれない。学校のDX事例10選",
+          "publishedAt": "2026-10-26",
+          "customers": [
+            "京都府立医科大学"
+          ],
+          "products": [
+            "ECO Meeting"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ehime-medicaldx.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ"
+      ],
+      "articles": [
+        {
+          "slug": "30777a4a-2bc5-4ec7-bcfa-c99b60f1cc3e",
+          "label": "#035",
+          "title": "辞める直前の場面を、一つだけ変えた。給料でも採用でもない場所から離職を止めた、気づく役の違う5社の事例5選",
+          "publishedAt": "2026-11-13",
+          "customers": [
+            "社会医療法人石川記念会HITO病院"
+          ],
+          "products": [
+            "業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "eizo-system.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-27",
+      "notifiedAtEstimated": true,
+      "products": [
+        "AVシステム"
+      ],
+      "articles": [
+        {
+          "slug": "9f697960-a5ea-46eb-b738-031334b09ce7",
+          "label": "#022",
+          "title": "「背中を見て覚えろ」は、教え方ではない。研修・マニュアルのDX事例10選",
+          "publishedAt": "2026-10-27",
+          "customers": [
+            "学校法人武蔵野大学"
+          ],
+          "products": [
+            "AVシステム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "emotion-tech.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "TopicScan",
+        "EmotionTech"
+      ],
+      "articles": [
+        {
+          "slug": "b2097cda-0cd2-48a9-802f-c35fa51abd51",
+          "label": "#002",
+          "title": "問い合わせ対応、もう人がやらなくていい仕事かもしれない。事例10選",
+          "publishedAt": "2026-09-29",
+          "customers": [
+            "株式会社インターネットイニシアティブ"
+          ],
+          "products": [
+            "TopicScan"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "95c3cd55-86ab-4a35-9f7a-78dd56e8fcc6",
+          "label": "#036",
+          "title": "満足度調査は、していた。結果が、どこにも届いていなかった。エンゲージメント調査を施策につなげた事例10選",
+          "publishedAt": "2026-11-16",
+          "customers": [
+            "株式会社北國銀行（株式会社CCIグループ傘下）"
+          ],
+          "products": [
+            "EmotionTech"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "endingcareer.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "組織開発コンサルティング"
+      ],
+      "articles": [
+        {
+          "slug": "5049358c-68a3-448e-9d01-ea5457462c81",
+          "label": "#026",
+          "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
+          "publishedAt": "2026-11-02",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "組織開発コンサルティング"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "energia.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-23",
+      "notifiedAtEstimated": true,
+      "products": [
+        "オンサイト太陽光発電PPAサービス"
+      ],
+      "articles": [
+        {
+          "slug": "d4bbb964-b594-4ed0-9acf-7a8759f20366",
+          "label": "#020",
+          "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
+          "publishedAt": "2026-10-23",
+          "customers": [
+            "ベルシステクロスプロペラ株式会社ほま"
+          ],
+          "products": [
+            "オンサイト太陽光発電PPAサービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "erecta.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-04",
+      "notifiedAtEstimated": true,
+      "products": [
+        "マルチサーブ"
+      ],
+      "articles": [
+        {
+          "slug": "2fe1ae2a-bd01-4e5c-8adb-f9b12b59bc4e",
+          "label": "#028",
+          "title": "「朝やるしかない」は思い込みだった。早番の仕事を変えた事例5選",
+          "publishedAt": "2026-11-04",
+          "customers": [
+            "医療法人慈風会 あつち葛飾クリニック"
+          ],
+          "products": [
+            "マルチサーブ"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ev-charge-enechange.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "EV充電エネチェンジ"
+      ],
+      "articles": [
+        {
+          "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
+          "label": "#031",
+          "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
+          "publishedAt": "2026-11-09",
+          "customers": [
+            "株式会社アスター（盛岡つなぎ温泉 ホテル紫苑）"
+          ],
+          "products": [
+            "EV充電エネチェンジ"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "exawizards.com",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "exaBase FAQ",
+        "AIを活用した水力発電計画最適化システム"
+      ],
+      "articles": [
+        {
+          "slug": "b2097cda-0cd2-48a9-802f-c35fa51abd51",
+          "label": "#002",
+          "title": "問い合わせ対応、もう人がやらなくていい仕事かもしれない。事例10選",
+          "publishedAt": "2026-09-29",
+          "customers": [
+            "住友ファーマ株式会社"
+          ],
+          "products": [
+            "exaBase FAQ"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "d4bbb964-b594-4ed0-9acf-7a8759f20366",
+          "label": "#020",
+          "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
+          "publishedAt": "2026-10-23",
+          "customers": [
+            "中国電力株式会社"
+          ],
+          "products": [
+            "AIを活用した水力発電計画最適化システム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "expoline.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-03",
+      "notifiedAtEstimated": true,
+      "products": [
+        "EXPOLINE"
+      ],
+      "articles": [
+        {
+          "slug": "8f16945f-34d2-4467-955c-d56d0fac5389",
+          "label": "#027",
+          "title": "QRコードで「記録・集計・仕分け」を手放した事例5選",
+          "publishedAt": "2026-11-03",
+          "customers": [
+            "株式会社大塚商会"
+          ],
+          "products": [
+            "EXPOLINE"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "fastaccounting.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Remota",
+        "Remota、Robota"
+      ],
+      "articles": [
+        {
+          "slug": "d1ee84d7-5318-4211-b039-3064c06f4d56",
+          "label": "#001",
+          "title": "「紙を読むAI」で、仕事はどこまで減るのか。成果で見る導入事例10選",
+          "publishedAt": "2026-09-28",
+          "customers": [
+            "日清食品ホールディングス株式会社"
+          ],
+          "products": [
+            "Remota"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "499bc233-3d57-42b8-b403-fa6719d0b605",
+          "label": "#003",
+          "title": "経理・バックオフィスの仕事を、AIはどこまで肩代わりできるのか。事例10選",
+          "publishedAt": "2026-09-30",
+          "customers": [
+            "味の素フィナンシャル・ソリューションズ株式会社",
+            "株式会社阪急アクトフォー（エイチ・ツー・オー リテイリングのグループ企業向けシェアードサービス提供）",
+            "BIPROGY株式会社"
+          ],
+          "products": [
+            "Remota",
+            "Remota、Robota"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "fastaccounting.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "領収書Robota"
+      ],
+      "articles": [
+        {
+          "slug": "d1ee84d7-5318-4211-b039-3064c06f4d56",
+          "label": "#001",
+          "title": "「紙を読むAI」で、仕事はどこまで減るのか。成果で見る導入事例10選",
+          "publishedAt": "2026-09-28",
+          "customers": [
+            "株式会社エフアンドエム"
+          ],
+          "products": [
+            "領収書Robota"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "fastseries.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "FastHelp、FastAnswer",
+        "FastHelp, FastAnswer"
+      ],
+      "articles": [
+        {
+          "slug": "b2097cda-0cd2-48a9-802f-c35fa51abd51",
+          "label": "#002",
+          "title": "問い合わせ対応、もう人がやらなくていい仕事かもしれない。事例10選",
+          "publishedAt": "2026-09-29",
+          "customers": [
+            "日本コープ共済生活協同組合連合会",
+            "株式会社日立システムズ"
+          ],
+          "products": [
+            "FastHelp、FastAnswer",
+            "FastHelp, FastAnswer"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "fce-pat.co.jp",
+      "company": "株式会社FCE（Robo-Pat AI／ロボパット）",
+      "status": "removed",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [],
+      "articles": [],
+      "memo": "",
+      "removedAt": "2026-11-04",
+      "removedReason": "公開から時間が経っていることに加え、自社サイト以外への掲載には都度顧客への確認が必要として、ベンダーから事例紹介と事例ページの掲載取り下げの依頼を受けた（記事の問い合わせ取次ぎ対象からも除外してほしいとの要望あり）"
+    },
+    {
+      "domain": "ferret-one.com",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-05",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ferret One"
+      ],
+      "articles": [
+        {
+          "slug": "c5538ca4-04a7-4e23-a659-b7ef8bd62926",
+          "label": "#006",
+          "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
+          "publishedAt": "2026-10-05",
+          "customers": [
+            "株式会社エルテス"
+          ],
+          "products": [
+            "ferret One"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "89210e33-77cc-417b-b47d-5fa9e1ea0909",
+          "label": "#015",
+          "title": "広告費は増やした。なのに、受注は増えない。「広告費が受注につながらない」を解決した事例10選",
+          "publishedAt": "2026-10-16",
+          "customers": [
+            "株式会社 識学",
+            "株式会社新菱"
+          ],
+          "products": [
+            "ferret One"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "6b0ca975-0ee5-441e-a196-f29090be7a8d",
+          "label": "#016",
+          "title": "社内のシステムが古すぎて手を出せない、と思ったときに読みたい事例10選",
+          "publishedAt": "2026-10-19",
+          "customers": [
+            "株式会社ネクスウェイ"
+          ],
+          "products": [
+            "ferret One"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "eba09eb7-fde1-48df-96e5-649188a1f0cb",
+          "label": "#017",
+          "title": "自分の客を、自分で見つける。「下請け・待ちの営業」から抜け出した事例10選",
+          "publishedAt": "2026-10-20",
+          "customers": [
+            "株式会社キトー"
+          ],
+          "products": [
+            "ferret One"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "focus-cloud.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "フォーカス給与明細クラウド"
+      ],
+      "articles": [
+        {
+          "slug": "9649f101-0a89-47e7-a98b-15d001011190",
+          "label": "#005",
+          "title": "従業員20名以下でも、ここまで変わった。小さな会社のDX事例10選",
+          "publishedAt": "2026-10-02",
+          "customers": [
+            "株式会社山下商会"
+          ],
+          "products": [
+            "フォーカス給与明細クラウド"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "cc2fe571-9de9-4c04-a623-1afae5264410",
+          "label": "#034",
+          "title": "士業の仕事は、資料が行き来する時間でできている。士業事務所と顧問先の資料のやり取りを仕組みに移した事例10選",
+          "publishedAt": "2026-11-12",
+          "customers": [
+            "税理士法人フィデス会計社"
+          ],
+          "products": [
+            "フォーカス給与明細クラウド"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "form.run",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-03",
+      "notifiedAtEstimated": true,
+      "products": [
+        "formrun"
+      ],
+      "articles": [
+        {
+          "slug": "8f16945f-34d2-4467-955c-d56d0fac5389",
+          "label": "#027",
+          "title": "QRコードで「記録・集計・仕分け」を手放した事例5選",
+          "publishedAt": "2026-11-03",
+          "customers": [
+            "株式会社トモダ企画"
+          ],
+          "products": [
+            "formrun"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "freee.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-30",
+      "notifiedAtEstimated": true,
+      "products": [
+        "freee会計、freee人事労務、freeeカー Unlimited、freee-mcp",
+        "freee人事労務",
+        "freee会計、freee給与、freee税務申告"
+      ],
+      "articles": [
+        {
+          "slug": "499bc233-3d57-42b8-b403-fa6719d0b605",
+          "label": "#003",
+          "title": "経理・バックオフィスの仕事を、AIはどこまで肩代わりできるのか。事例10選",
+          "publishedAt": "2026-09-30",
+          "customers": [
+            "レンジャーシステムズ株式会社"
+          ],
+          "products": [
+            "freee会計、freee人事労務、freeeカー Unlimited、freee-mcp"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "c5538ca4-04a7-4e23-a659-b7ef8bd62926",
+          "label": "#006",
+          "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
+          "publishedAt": "2026-10-05",
+          "customers": [
+            "斐紋中央建工株式会社"
+          ],
+          "products": [
+            "freee人事労務"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "cc2fe571-9de9-4c04-a623-1afae5264410",
+          "label": "#034",
+          "title": "士業の仕事は、資料が行き来する時間でできている。士業事務所と顧問先の資料のやり取りを仕組みに移した事例10選",
+          "publishedAt": "2026-11-12",
+          "customers": [
+            "西老資税理士事務所"
+          ],
+          "products": [
+            "freee会計、freee給与、freee税務申告"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "fs-farm.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "検品君"
+      ],
+      "articles": [
+        {
+          "slug": "9649f101-0a89-47e7-a98b-15d001011190",
+          "label": "#005",
+          "title": "従業員20名以下でも、ここまで変わった。小さな会社のDX事例10選",
+          "publishedAt": "2026-10-02",
+          "customers": [
+            "株式会社マキノ"
+          ],
+          "products": [
+            "検品君"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "株式会社マキノ"
+          ],
+          "products": [
+            "検品君"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "fujimak.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "コンビオーブン iCombi Pro",
+        "ニュークックチルシステム"
+      ],
+      "articles": [
+        {
+          "slug": "5213ed60-e727-4118-bdf6-9b2f4fdb01ff",
+          "label": "#023",
+          "title": "オフィスを変えたら、人が変わった。空間づくりの事例10選",
+          "publishedAt": "2026-10-28",
+          "customers": [
+            "株式会社タケエイ"
+          ],
+          "products": [
+            "コンビオーブン iCombi Pro"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "2fe1ae2a-bd01-4e5c-8adb-f9b12b59bc4e",
+          "label": "#028",
+          "title": "「朝やるしかない」は思い込みだった。早番の仕事を変えた事例5選",
+          "publishedAt": "2026-11-04",
+          "customers": [
+            "社会福祉法人 桜ヶ丘社会事業協会 桜ヶ丘記念病院"
+          ],
+          "products": [
+            "ニュークックチルシステム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "geekplus.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-07",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ピッキングロボット",
+        "PopPick",
+        "搬送型AMR",
+        "Geek+ Pシリーズ ピッキングロボット"
+      ],
+      "articles": [
+        {
+          "slug": "93bc5906-d6fa-48cc-b4c8-037c7a4313cb",
+          "label": "#008",
+          "title": "「数える仕事」は、どこまで消せるのか在庫・倉庫のDX事例10選",
+          "publishedAt": "2026-10-07",
+          "customers": [
+            "Bosideng",
+            "アズワン株式会社"
+          ],
+          "products": [
+            "ピッキングロボット",
+            "PopPick"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "トヨタ自動車",
+            "Walmart",
+            "Jointown製薬グループ"
+          ],
+          "products": [
+            "搬送型AMR",
+            "Geek+ Pシリーズ ピッキングロボット",
+            "ピッキングロボット"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "gembahub.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-01",
+      "notifiedAtEstimated": true,
+      "products": [
+        "現場Hub"
+      ],
+      "articles": [
+        {
+          "slug": "0f17aaee-727d-4acf-8cbb-4b04e30a1b7c",
+          "label": "#004",
+          "title": "2024年問題の前に、現場はもう動いていた。建設業のDX事例10選",
+          "publishedAt": "2026-10-01",
+          "customers": [
+            "株式会社オーテック"
+          ],
+          "products": [
+            "現場Hub"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "5049358c-68a3-448e-9d01-ea5457462c81",
+          "label": "#026",
+          "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
+          "publishedAt": "2026-11-02",
+          "customers": [
+            "株式会社Forward"
+          ],
+          "products": [
+            "現場Hub"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "gleas.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-21",
+      "notifiedAtEstimated": true,
+      "products": [
+        "プライベート認証局 Gléas"
+      ],
+      "articles": [
+        {
+          "slug": "839f3e3b-7d07-4f4b-8381-d5066caef279",
+          "label": "#018",
+          "title": "「うちの仕事は在宅無理」は、どこまで本当か。テレワークと現場の温度差を埋めた事例10選",
+          "publishedAt": "2026-10-21",
+          "customers": [
+            "豊田自動織機"
+          ],
+          "products": [
+            "プライベート認証局 Gléas"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "glory.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-09",
+      "notifiedAtEstimated": true,
+      "products": [
+        "離院事故予防システム"
+      ],
+      "articles": [
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "公立羽咋病院"
+          ],
+          "products": [
+            "離院事故予防システム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "good-work-life-toyama.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-21",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Microsoft365、LINEワークス、グループウェア、クラウドシステム"
+      ],
+      "articles": [
+        {
+          "slug": "839f3e3b-7d07-4f4b-8381-d5066caef279",
+          "label": "#018",
+          "title": "「うちの仕事は在宅無理」は、どこまで本当か。テレワークと現場の温度差を埋めた事例10選",
+          "publishedAt": "2026-10-21",
+          "customers": [
+            "株式会社アイペック"
+          ],
+          "products": [
+            "Microsoft365、LINEワークス、グループウェア、クラウドシステム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "guidablejobs.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ガイダブル"
+      ],
+      "articles": [
+        {
+          "slug": "5049358c-68a3-448e-9d01-ea5457462c81",
+          "label": "#026",
+          "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
+          "publishedAt": "2026-11-02",
+          "customers": [
+            "林土木建設株式会社"
+          ],
+          "products": [
+            "ガイダブル"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "hakuou.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "AutoFork"
+      ],
+      "articles": [
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "日本トランスシティ株式会社"
+          ],
+          "products": [
+            "AutoFork"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "hammock.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-14",
+      "notifiedAtEstimated": true,
+      "products": [
+        "AssetView"
+      ],
+      "articles": [
+        {
+          "slug": "ed5061d7-23b3-4d2e-a8e5-558fdc207eb7",
+          "label": "#013",
+          "title": "センサー・カメラ・遠隔操作で、巡回・点検・出張をなくした事例10選",
+          "publishedAt": "2026-10-14",
+          "customers": [
+            "市原市"
+          ],
+          "products": [
+            "AssetView"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "handbook.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-27",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Handbook"
+      ],
+      "articles": [
+        {
+          "slug": "9f697960-a5ea-46eb-b738-031334b09ce7",
+          "label": "#022",
+          "title": "「背中を見て覚えろ」は、教え方ではない。研修・マニュアルのDX事例10選",
+          "publishedAt": "2026-10-27",
+          "customers": [
+            "F・O・インターナショナル"
+          ],
+          "products": [
+            "Handbook"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "helicam.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Matrice 350 RTK + SABOT-3"
+      ],
+      "articles": [
+        {
+          "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
+          "label": "#031",
+          "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
+          "publishedAt": "2026-11-09",
+          "customers": [
+            "留萌市"
+          ],
+          "products": [
+            "Matrice 350 RTK + SABOT-3"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "hitachi-ies.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-23",
+      "notifiedAtEstimated": true,
+      "products": [
+        "DSP-NEXT®"
+      ],
+      "articles": [
+        {
+          "slug": "d4bbb964-b594-4ed0-9acf-7a8759f20366",
+          "label": "#020",
+          "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
+          "publishedAt": "2026-10-23",
+          "customers": [
+            "B社（食品製造業）"
+          ],
+          "products": [
+            "DSP-NEXT®"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "hitachi-systems-es.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-07",
+      "notifiedAtEstimated": true,
+      "products": [
+        "物品管理システム"
+      ],
+      "articles": [
+        {
+          "slug": "b4f52a79-43c0-415b-b16c-722631790a48",
+          "label": "用語#001",
+          "title": "RFIDとは｜3つの事例でわかる",
+          "publishedAt": "2026-11-07",
+          "customers": [
+            "JCOM株式会社"
+          ],
+          "products": [
+            "物品管理システム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "hr-prime.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-15",
+      "notifiedAtEstimated": true,
+      "products": [
+        "HR PRIME"
+      ],
+      "articles": [
+        {
+          "slug": "ed9c74a6-161b-401e-9aa4-2ddb5dd32aa1",
+          "label": "#014",
+          "title": "応募は来ている。なのに、面接に人が来ない。「選考が回らない」を解決した採用事例10選",
+          "publishedAt": "2026-10-15",
+          "customers": [
+            "株式会社カスタマーリレーションテレマーケティング"
+          ],
+          "products": [
+            "HR PRIME"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "hrbrain.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-05",
+      "notifiedAtEstimated": true,
+      "products": [
+        "HRBrain"
+      ],
+      "articles": [
+        {
+          "slug": "c5538ca4-04a7-4e23-a659-b7ef8bd62926",
+          "label": "#006",
+          "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
+          "publishedAt": "2026-10-05",
+          "customers": [
+            "天白信用農業協同組合"
+          ],
+          "products": [
+            "HRBrain"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "95c3cd55-86ab-4a35-9f7a-78dd56e8fcc6",
+          "label": "#036",
+          "title": "満足度調査は、していた。結果が、どこにも届いていなかった。エンゲージメント調査を施策につなげた事例10選",
+          "publishedAt": "2026-11-16",
+          "customers": [
+            "株式会社日比谷花壇",
+            "株式会社ヒューマンアジャスト",
+            "株式会社デルタインターナショナル"
+          ],
+          "products": [
+            "HRBrain"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "i3handy.jp",
+      "company": "株式会社学研ロジスティクス（Gakken i3 Handy）",
+      "status": "removed",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [],
+      "articles": [],
+      "memo": "",
+      "removedAt": "2026-10-27",
+      "removedReason": "掲載先の企業から許可を得ていないとして、ベンダーから掲載削除の依頼を受けた"
+    },
+    {
+      "domain": "info-con.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-20",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ホームページ制作"
+      ],
+      "articles": [
+        {
+          "slug": "eba09eb7-fde1-48df-96e5-649188a1f0cb",
+          "label": "#017",
+          "title": "自分の客を、自分で見つける。「下請け・待ちの営業」から抜け出した事例10選",
+          "publishedAt": "2026-10-20",
+          "customers": [
+            "有限会社丸井食品三重工場"
+          ],
+          "products": [
+            "ホームページ制作"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "info-ligua.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Ligoo POS&CRM、EMS-indepth-、Inject Energy"
+      ],
+      "articles": [
+        {
+          "slug": "5049358c-68a3-448e-9d01-ea5457462c81",
+          "label": "#026",
+          "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
+          "publishedAt": "2026-11-02",
+          "customers": [
+            "メディカルアース株式会社 だいふく鍼灸整骨院グループ"
+          ],
+          "products": [
+            "Ligoo POS&CRM、EMS-indepth-、Inject Energy"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "infocom.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-23",
+      "notifiedAtEstimated": true,
+      "products": [
+        "SVF、OpenBOST、NEOSS"
+      ],
+      "articles": [
+        {
+          "slug": "d4bbb964-b594-4ed0-9acf-7a8759f20366",
+          "label": "#020",
+          "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
+          "publishedAt": "2026-10-23",
+          "customers": [
+            "株式会社ヤクルト本社"
+          ],
+          "products": [
+            "SVF、OpenBOST、NEOSS"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "intercom.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-05",
+      "notifiedAtEstimated": true,
+      "products": [
+        "MaLion"
+      ],
+      "articles": [
+        {
+          "slug": "c5538ca4-04a7-4e23-a659-b7ef8bd62926",
+          "label": "#006",
+          "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
+          "publishedAt": "2026-10-05",
+          "customers": [
+            "関東商事株式会社"
+          ],
+          "products": [
+            "MaLion"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "intra-mart.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-01",
+      "notifiedAtEstimated": true,
+      "products": [
+        "intra-mart Accel Platform、intra-mart Accel Applications、AWS",
+        "Accel-Mart",
+        "intra-mart Accel Platform / IM-BPM",
+        "BeAd販売管理システム",
+        "ECOASクレームマネジメント",
+        "intra-mart Accel Platform",
+        "imforce/経費精算ソリューション"
+      ],
+      "articles": [
+        {
+          "slug": "0f17aaee-727d-4acf-8cbb-4b04e30a1b7c",
+          "label": "#004",
+          "title": "2024年問題の前に、現場はもう動いていた。建設業のDX事例10選",
+          "publishedAt": "2026-10-01",
+          "customers": [
+            "地盤ネット株式会社"
+          ],
+          "products": [
+            "intra-mart Accel Platform、intra-mart Accel Applications、AWS"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "93bc5906-d6fa-48cc-b4c8-037c7a4313cb",
+          "label": "#008",
+          "title": "「数える仕事」は、どこまで消せるのか在庫・倉庫のDX事例10選",
+          "publishedAt": "2026-10-07",
+          "customers": [
+            "日本特殊陶業株式会社",
+            "大鵬薬品工業株式会社"
+          ],
+          "products": [
+            "Accel-Mart",
+            "intra-mart Accel Platform / IM-BPM"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "c9bf031f-e5ee-4612-8361-c3c9bda34638",
+          "label": "#009",
+          "title": "「早く帰ろう」で消える残業は、少ない。残業を減らした事例10選",
+          "publishedAt": "2026-10-08",
+          "customers": [
+            "日精機工株式会社",
+            "IDEC株式会社"
+          ],
+          "products": [
+            "BeAd販売管理システム",
+            "ECOASクレームマネジメント"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ab520c82-5d93-43cb-bfcd-0403e70b4389",
+          "label": "#021",
+          "title": "職員室は、日本で一番アナログな職場かもしれない。学校のDX事例10選",
+          "publishedAt": "2026-10-26",
+          "customers": [
+            "学校法人 千葉工業大学"
+          ],
+          "products": [
+            "intra-mart Accel Platform"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ab85bf7f-7d18-4ff8-ab01-91266d712b8e",
+          "label": "#029",
+          "title": "出張で一番時間を食うのは、移動の往復ではなく、書類の往復だった領収書の郵送から差し戻しまで、紙とメールの行き来を止めた事例5選",
+          "publishedAt": "2026-11-05",
+          "customers": [
+            "ぺんてる株式会社"
+          ],
+          "products": [
+            "imforce/経費精算ソリューション"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "iot-robot.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "RPA"
+      ],
+      "articles": [
+        {
+          "slug": "cc2fe571-9de9-4c04-a623-1afae5264410",
+          "label": "#034",
+          "title": "士業の仕事は、資料が行き来する時間でできている。士業事務所と顧問先の資料のやり取りを仕組みに移した事例10選",
+          "publishedAt": "2026-11-12",
+          "customers": [
+            "社会保険労務士法人 アジア経営革新等支援機関"
+          ],
+          "products": [
+            "RPA"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ip3.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-04",
+      "notifiedAtEstimated": true,
+      "products": [
+        "EntryMaster"
+      ],
+      "articles": [
+        {
+          "slug": "2fe1ae2a-bd01-4e5c-8adb-f9b12b59bc4e",
+          "label": "#028",
+          "title": "「朝やるしかない」は思い込みだった。早番の仕事を変えた事例5選",
+          "publishedAt": "2026-11-04",
+          "customers": [
+            "近畿労働金庫"
+          ],
+          "products": [
+            "EntryMaster"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "itszai.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-12",
+      "notifiedAtEstimated": true,
+      "products": [
+        "イツザイ"
+      ],
+      "articles": [
+        {
+          "slug": "bd64ce85-a3ed-4766-aed5-cc4a24075035",
+          "label": "#011",
+          "title": "求人広告を増やさずに、応募は増えた。「応募が来ない」を解いた採用事例10選",
+          "publishedAt": "2026-10-12",
+          "customers": [
+            "大立工業株式会社",
+            "有限会社コン・コース"
+          ],
+          "products": [
+            "イツザイ"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "japanpost.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ゆうパック・ゆうパケット、ロジスティクスサービス",
+        "ゆうパケットパフ",
+        "ゆうパック",
+        "ゆうパケット、拠点受取サービス、指定場所ダイレクト",
+        "UGX"
+      ],
+      "articles": [
+        {
+          "slug": "9649f101-0a89-47e7-a98b-15d001011190",
+          "label": "#005",
+          "title": "従業員20名以下でも、ここまで変わった。小さな会社のDX事例10選",
+          "publishedAt": "2026-10-02",
+          "customers": [
+            "株式会社ALFOR"
+          ],
+          "products": [
+            "ゆうパック・ゆうパケット、ロジスティクスサービス"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "93bc5906-d6fa-48cc-b4c8-037c7a4313cb",
+          "label": "#008",
+          "title": "「数える仕事」は、どこまで消せるのか在庫・倉庫のDX事例10選",
+          "publishedAt": "2026-10-07",
+          "customers": [
+            "有限会社ワールドアイズ"
+          ],
+          "products": [
+            "ゆうパケットパフ"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "0b70a33d-35b5-4997-b1e9-8cbf23424865",
+          "label": "#012",
+          "title": "売れた数だけ、仕事が増える。EC運営の裏側を仕組みで解いた事例10選",
+          "publishedAt": "2026-10-13",
+          "customers": [
+            "久米仙酒造株式会社",
+            "株式会社Rise UP"
+          ],
+          "products": [
+            "ゆうパック",
+            "ゆうパケット、拠点受取サービス、指定場所ダイレクト"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "eba09eb7-fde1-48df-96e5-649188a1f0cb",
+          "label": "#017",
+          "title": "自分の客を、自分で見つける。「下請け・待ちの営業」から抜け出した事例10選",
+          "publishedAt": "2026-10-20",
+          "customers": [
+            "株式会社江戸てん"
+          ],
+          "products": [
+            "UGX"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "jbs.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Microsoft Power Platform"
+      ],
+      "articles": [
+        {
+          "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
+          "label": "#031",
+          "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
+          "publishedAt": "2026-11-09",
+          "customers": [
+            "西日本旅客鉄道株式会社"
+          ],
+          "products": [
+            "Microsoft Power Platform"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "jes.ne.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "EAPサービス"
+      ],
+      "articles": [
+        {
+          "slug": "5049358c-68a3-448e-9d01-ea5457462c81",
+          "label": "#026",
+          "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
+          "publishedAt": "2026-11-02",
+          "customers": [
+            "イーソル株式会社"
+          ],
+          "products": [
+            "EAPサービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "jfe-eng.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "橋梁配筋のAI自動検査システム"
+      ],
+      "articles": [
+        {
+          "slug": "c01f3cb4-d1da-459d-9bf3-42ec69858311",
+          "label": "#007",
+          "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
+          "publishedAt": "2026-10-06",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "橋梁配筋のAI自動検査システム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "jmc-edu.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-26",
+      "notifiedAtEstimated": true,
+      "products": [
+        "校務支援システム、ICT支援員",
+        "and.T学校Webライター",
+        "しずおかバーチャルスクール",
+        "タブレット端末活用支援"
+      ],
+      "articles": [
+        {
+          "slug": "ab520c82-5d93-43cb-bfcd-0403e70b4389",
+          "label": "#021",
+          "title": "職員室は、日本で一番アナログな職場かもしれない。学校のDX事例10選",
+          "publishedAt": "2026-10-26",
+          "customers": [
+            "豊島区教育委員会",
+            "湖南市教育研究所・湖南市立水戸小学校",
+            "静岡県教育委員会"
+          ],
+          "products": [
+            "校務支援システム、ICT支援員",
+            "and.T学校Webライター",
+            "しずおかバーチャルスクール"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "東京学芸大学附属竹早中学校"
+          ],
+          "products": [
+            "タブレット端末活用支援"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "k-intl.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-30",
+      "notifiedAtEstimated": true,
+      "products": [
+        "みんなの自動翻訳@KI"
+      ],
+      "articles": [
+        {
+          "slug": "0903af42-9ca8-43e0-a400-91574c0293d0",
+          "label": "#025",
+          "title": "英語ができる社員がいなくても、海外とは仕事ができた。翻訳・通訳の事例10選",
+          "publishedAt": "2026-10-30",
+          "customers": [
+            "株式会社メニコン"
+          ],
+          "products": [
+            "みんなの自動翻訳@KI"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "kiscl.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-07",
+      "notifiedAtEstimated": true,
+      "products": [
+        "WMS/400"
+      ],
+      "articles": [
+        {
+          "slug": "93bc5906-d6fa-48cc-b4c8-037c7a4313cb",
+          "label": "#008",
+          "title": "「数える仕事」は、どこまで消せるのか在庫・倉庫のDX事例10選",
+          "publishedAt": "2026-10-07",
+          "customers": [
+            "サンケン電気株式会社"
+          ],
+          "products": [
+            "WMS/400"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "kitera-cloud.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "KiteRa Pro"
+      ],
+      "articles": [
+        {
+          "slug": "cc2fe571-9de9-4c04-a623-1afae5264410",
+          "label": "#034",
+          "title": "士業の仕事は、資料が行き来する時間でできている。士業事務所と顧問先の資料のやり取りを仕組みに移した事例10選",
+          "publishedAt": "2026-11-12",
+          "customers": [
+            "社会保険労務士　荻生労務研究所"
+          ],
+          "products": [
+            "KiteRa Pro"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "kobelcosys.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "現場特化型MESソリューション　実績班長"
+      ],
+      "articles": [
+        {
+          "slug": "b04aab30-7217-4ec6-a7de-e61c92beff82",
+          "label": "#032",
+          "title": "生産管理の属人化、どこから解く？納期回答・計画・進捗・実績・品質記録を人から切り離した事例5選",
+          "publishedAt": "2026-11-10",
+          "customers": [
+            "田中精密工業株式会社"
+          ],
+          "products": [
+            "現場特化型MESソリューション　実績班長"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "koden-kk.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-23",
+      "notifiedAtEstimated": true,
+      "products": [
+        "自家消費型太陽光発電システム"
+      ],
+      "articles": [
+        {
+          "slug": "d4bbb964-b594-4ed0-9acf-7a8759f20366",
+          "label": "#020",
+          "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
+          "publishedAt": "2026-10-23",
+          "customers": [
+            "サン電子工業株式会社"
+          ],
+          "products": [
+            "自家消費型太陽光発電システム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "kouei.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "運行管理クラウドサービス"
+      ],
+      "articles": [
+        {
+          "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
+          "label": "#031",
+          "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
+          "publishedAt": "2026-11-09",
+          "customers": [
+            "ENEOS株式会社"
+          ],
+          "products": [
+            "運行管理クラウドサービス"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "kpmg.com",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-26",
+      "notifiedAtEstimated": true,
+      "products": [
+        "UiPath"
+      ],
+      "articles": [
+        {
+          "slug": "ab520c82-5d93-43cb-bfcd-0403e70b4389",
+          "label": "#021",
+          "title": "職員室は、日本で一番アナログな職場かもしれない。学校のDX事例10選",
+          "publishedAt": "2026-10-26",
+          "customers": [
+            "学校法人 早稲田大学"
+          ],
+          "products": [
+            "UiPath"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "kurabo.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-01",
+      "notifiedAtEstimated": true,
+      "products": [
+        "PG-4"
+      ],
+      "articles": [
+        {
+          "slug": "0f17aaee-727d-4acf-8cbb-4b04e30a1b7c",
+          "label": "#004",
+          "title": "2024年問題の前に、現場はもう動いていた。建設業のDX事例10選",
+          "publishedAt": "2026-10-01",
+          "customers": [
+            "株式会社南原/株式会社DEPO"
+          ],
+          "products": [
+            "PG-4"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "labbase.jp",
+      "company": "株式会社LabBase（LabBase就職・LabBaseNow）",
+      "status": "removed",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [],
+      "articles": [],
+      "memo": "",
+      "removedAt": "2026-10-09",
+      "removedReason": "導入事例の他媒体への掲載を控えているとして、ベンダーから掲載削除の依頼を受けた"
+    },
+    {
+      "domain": "lafool.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ラフールサーベイ"
+      ],
+      "articles": [
+        {
+          "slug": "5049358c-68a3-448e-9d01-ea5457462c81",
+          "label": "#026",
+          "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
+          "publishedAt": "2026-11-02",
+          "customers": [
+            "株式会社プログレス"
+          ],
+          "products": [
+            "ラフールサーベイ"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "lancers.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-20",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ランサーズ"
+      ],
+      "articles": [
+        {
+          "slug": "eba09eb7-fde1-48df-96e5-649188a1f0cb",
+          "label": "#017",
+          "title": "自分の客を、自分で見つける。「下請け・待ちの営業」から抜け出した事例10選",
+          "publishedAt": "2026-10-20",
+          "customers": [
+            "株式会社中村製作所"
+          ],
+          "products": [
+            "ランサーズ"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "lanscope.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-07",
+      "notifiedAtEstimated": true,
+      "products": [
+        "LANSCOPEエンドポイントマネージャー クラウド版",
+        "LANSCOPE セキュリティオーディター",
+        "LANSCOPE エンドポイントマネージャー クラウド版",
+        "LANSCOPE サイバープロテクション powered by Aurora Protect、LANSCOPE サイバープロテクション powered by A"
+      ],
+      "articles": [
+        {
+          "slug": "93bc5906-d6fa-48cc-b4c8-037c7a4313cb",
+          "label": "#008",
+          "title": "「数える仕事」は、どこまで消せるのか在庫・倉庫のDX事例10選",
+          "publishedAt": "2026-10-07",
+          "customers": [
+            "株式会社カシワバラ・コーポレーション"
+          ],
+          "products": [
+            "LANSCOPEエンドポイントマネージャー クラウド版"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "839f3e3b-7d07-4f4b-8381-d5066caef279",
+          "label": "#018",
+          "title": "「うちの仕事は在宅無理」は、どこまで本当か。テレワークと現場の温度差を埋めた事例10選",
+          "publishedAt": "2026-10-21",
+          "customers": [
+            "株式会社MCEAホールディングス",
+            "株式会社ユーグレナ"
+          ],
+          "products": [
+            "LANSCOPE セキュリティオーディター",
+            "LANSCOPE エンドポイントマネージャー クラウド版"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "74d68ee8-f1a2-464d-84a4-9b05ce587cd7",
+          "label": "#019",
+          "title": "うちには社内ITがいないから・・・と思ったときにみたい事例１０選",
+          "publishedAt": "2026-10-22",
+          "customers": [
+            "医療法人社団煌の会 山下湘南夢クリニック"
+          ],
+          "products": [
+            "LANSCOPE サイバープロテクション powered by Aurora Protect、LANSCOPE サイバープロテクション powered by A"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "lattice.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "XVL"
+      ],
+      "articles": [
+        {
+          "slug": "a1da7dbb-6c67-4b0b-b269-1aaa8e10371e",
+          "label": "#040",
+          "title": "不具合が見つかる段階を、一つ手前にずらした。金型の不具合を、設計から点検までのどこで見つけるかを変えた5社の事例5選",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "株式会社東海理化"
+          ],
+          "products": [
+            "XVL"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "levii.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-27",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ペジテの自転車"
+      ],
+      "articles": [
+        {
+          "slug": "9f697960-a5ea-46eb-b738-031334b09ce7",
+          "label": "#022",
+          "title": "「背中を見て覚えろ」は、教え方ではない。研修・マニュアルのDX事例10選",
+          "publishedAt": "2026-10-27",
+          "customers": [
+            "東日本高速道路株式会社（NEXCO東日本）"
+          ],
+          "products": [
+            "ペジテの自転車"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "liveon.ne.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-27",
+      "notifiedAtEstimated": true,
+      "products": [
+        "LiveOn Wearable、LiveOn RecX",
+        "LiveOn Wearable"
+      ],
+      "articles": [
+        {
+          "slug": "9f697960-a5ea-46eb-b738-031334b09ce7",
+          "label": "#022",
+          "title": "「背中を見て覚えろ」は、教え方ではない。研修・マニュアルのDX事例10選",
+          "publishedAt": "2026-10-27",
+          "customers": [
+            "株式会社大西熱学"
+          ],
+          "products": [
+            "LiveOn Wearable、LiveOn RecX"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "三重県伊賀市 上下水道部"
+          ],
+          "products": [
+            "LiveOn Wearable"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "logikura.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ロジクラ"
+      ],
+      "articles": [
+        {
+          "slug": "c01f3cb4-d1da-459d-9bf3-42ec69858311",
+          "label": "#007",
+          "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
+          "publishedAt": "2026-10-06",
+          "customers": [
+            "株式会社ニタス"
+          ],
+          "products": [
+            "ロジクラ"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "8f16945f-34d2-4467-955c-d56d0fac5389",
+          "label": "#027",
+          "title": "QRコードで「記録・集計・仕分け」を手放した事例5選",
+          "publishedAt": "2026-11-03",
+          "customers": [
+            "株式会社暁の星工芸"
+          ],
+          "products": [
+            "ロジクラ"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "lookjob.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-05",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Dr.オフィスLookJOB"
+      ],
+      "articles": [
+        {
+          "slug": "c5538ca4-04a7-4e23-a659-b7ef8bd62926",
+          "label": "#006",
+          "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
+          "publishedAt": "2026-10-05",
+          "customers": [
+            "株式会社協和プランニング"
+          ],
+          "products": [
+            "Dr.オフィスLookJOB"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "lucidsoft.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "リサーチコム"
+      ],
+      "articles": [
+        {
+          "slug": "b2097cda-0cd2-48a9-802f-c35fa51abd51",
+          "label": "#002",
+          "title": "問い合わせ対応、もう人がやらなくていい仕事かもしれない。事例10選",
+          "publishedAt": "2026-09-29",
+          "customers": [
+            "株式会社メディオテック"
+          ],
+          "products": [
+            "リサーチコム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "magicshields.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ころやわマット"
+      ],
+      "articles": [
+        {
+          "slug": "957fff43-2d8d-4069-9ef9-be7221425b96",
+          "label": "#039",
+          "title": "注意に頼らない、現場の事故防止事例5選",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "医療法人社団巨樹の会 小金井リハビリテーション病院"
+          ],
+          "products": [
+            "ころやわマット"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "makip.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-13",
+      "notifiedAtEstimated": true,
+      "products": [
+        "unisize"
+      ],
+      "articles": [
+        {
+          "slug": "0b70a33d-35b5-4997-b1e9-8cbf23424865",
+          "label": "#012",
+          "title": "売れた数だけ、仕事が増える。EC運営の裏側を仕組みで解いた事例10選",
+          "publishedAt": "2026-10-13",
+          "customers": [
+            "株式会社ジェイアックスコーポレーション",
+            "株式会社アルペン"
+          ],
+          "products": [
+            "unisize"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "manebi.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-27",
+      "notifiedAtEstimated": true,
+      "products": [
+        "manebi eラーニング"
+      ],
+      "articles": [
+        {
+          "slug": "9f697960-a5ea-46eb-b738-031334b09ce7",
+          "label": "#022",
+          "title": "「背中を見て覚えろ」は、教え方ではない。研修・マニュアルのDX事例10選",
+          "publishedAt": "2026-10-27",
+          "customers": [
+            "日本交通株式会社",
+            "株式会社 近鉄百貨店"
+          ],
+          "products": [
+            "manebi eラーニング"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "maru-nagoya.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-09",
+      "notifiedAtEstimated": true,
+      "products": [
+        "クリニック向けホームページ制作・SEO対策サービス"
+      ],
+      "articles": [
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "佐藤あつしクリニック"
+          ],
+          "products": [
+            "クリニック向けホームページ制作・SEO対策サービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "meal-shuttle.jp",
+      "company": "株式会社中島製作所（ニュークックチルシステム／meal-shuttle.jp）",
+      "status": "removed",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [],
+      "articles": [],
+      "memo": "",
+      "removedAt": "2026-11-06",
+      "removedReason": "自社公式サイトの導入事例と相違する内容が複数あり、現時点で内容の確認・修正対応が難しく、読者の誤解を招いて導入先に迷惑をかける可能性があるとして、ベンダーから記事中の自社事例部分の掲載削除の依頼を受けた"
+    },
+    {
+      "domain": "media-inc.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-09",
+      "notifiedAtEstimated": true,
+      "products": [
+        "歯科にカルテシステム With"
+      ],
+      "articles": [
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "大阪赤十字病院歯科"
+          ],
+          "products": [
+            "歯科にカルテシステム With"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "mediadrive.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "本人確認OCRライブラリ",
+        "WinReaderHand S v.4.0"
+      ],
+      "articles": [
+        {
+          "slug": "d1ee84d7-5318-4211-b039-3064c06f4d56",
+          "label": "#001",
+          "title": "「紙を読むAI」で、仕事はどこまで減るのか。成果で見る導入事例10選",
+          "publishedAt": "2026-09-28",
+          "customers": [
+            "株式会社山梨中央銀行",
+            "株式会社建設産業振興センター"
+          ],
+          "products": [
+            "本人確認OCRライブラリ",
+            "WinReaderHand S v.4.0"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "mediaplus.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-14",
+      "notifiedAtEstimated": true,
+      "products": [
+        "TANDBERG Codian MCU 4220、TANDBERG Edge 75MXP",
+        "Microsoft Teams Rooms"
+      ],
+      "articles": [
+        {
+          "slug": "ed5061d7-23b3-4d2e-a8e5-558fdc207eb7",
+          "label": "#013",
+          "title": "センサー・カメラ・遠隔操作で、巡回・点検・出張をなくした事例10選",
+          "publishedAt": "2026-10-14",
+          "customers": [
+            "中国電力株式会社",
+            "東洋エンジニアリング株式会社"
+          ],
+          "products": [
+            "TANDBERG Codian MCU 4220、TANDBERG Edge 75MXP",
+            "Microsoft Teams Rooms"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "medikiki.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-03",
+      "notifiedAtEstimated": true,
+      "products": [
+        "MMS"
+      ],
+      "articles": [
+        {
+          "slug": "8f16945f-34d2-4467-955c-d56d0fac5389",
+          "label": "#027",
+          "title": "QRコードで「記録・集計・仕分け」を手放した事例5選",
+          "publishedAt": "2026-11-03",
+          "customers": [
+            "伊賀市立上野総合市民病院"
+          ],
+          "products": [
+            "MMS"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "medpeer.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-09",
+      "notifiedAtEstimated": true,
+      "products": [
+        "kakari"
+      ],
+      "articles": [
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "たむら薬局"
+          ],
+          "products": [
+            "kakari"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "meisei-web.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "キャッピング・外観検査装置"
+      ],
+      "articles": [
+        {
+          "slug": "c01f3cb4-d1da-459d-9bf3-42ec69858311",
+          "label": "#007",
+          "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
+          "publishedAt": "2026-10-06",
+          "customers": [
+            "X社"
+          ],
+          "products": [
+            "キャッピング・外観検査装置"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "miidas.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ミイダス",
+        "ミイダス コンピテンシー診断"
+      ],
+      "articles": [
+        {
+          "slug": "9649f101-0a89-47e7-a98b-15d001011190",
+          "label": "#005",
+          "title": "従業員20名以下でも、ここまで変わった。小さな会社のDX事例10選",
+          "publishedAt": "2026-10-02",
+          "customers": [
+            "株式会社リットシティ"
+          ],
+          "products": [
+            "ミイダス"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "bd64ce85-a3ed-4766-aed5-cc4a24075035",
+          "label": "#011",
+          "title": "求人広告を増やさずに、応募は増えた。「応募が来ない」を解いた採用事例10選",
+          "publishedAt": "2026-10-12",
+          "customers": [
+            "株式会社Cmatrix",
+            "株式会社ぽらりす"
+          ],
+          "products": [
+            "ミイダス"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ed9c74a6-161b-401e-9aa4-2ddb5dd32aa1",
+          "label": "#014",
+          "title": "応募は来ている。なのに、面接に人が来ない。「選考が回らない」を解決した採用事例10選",
+          "publishedAt": "2026-10-15",
+          "customers": [
+            "株式会社デイリースポーツ案内広告社"
+          ],
+          "products": [
+            "ミイダス コンピテンシー診断"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "95c3cd55-86ab-4a35-9f7a-78dd56e8fcc6",
+          "label": "#036",
+          "title": "満足度調査は、していた。結果が、どこにも届いていなかった。エンゲージメント調査を施策につなげた事例10選",
+          "publishedAt": "2026-11-16",
+          "customers": [
+            "株式会社大和工務店"
+          ],
+          "products": [
+            "ミイダス"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "minagine.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "みんなの人事評価"
+      ],
+      "articles": [
+        {
+          "slug": "5049358c-68a3-448e-9d01-ea5457462c81",
+          "label": "#026",
+          "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
+          "publishedAt": "2026-11-02",
+          "customers": [
+            "ダイキチカバーオール株式会社"
+          ],
+          "products": [
+            "みんなの人事評価"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "minshoku.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "みんなの社食"
+      ],
+      "articles": [
+        {
+          "slug": "5213ed60-e727-4118-bdf6-9b2f4fdb01ff",
+          "label": "#023",
+          "title": "オフィスを変えたら、人が変わった。空間づくりの事例10選",
+          "publishedAt": "2026-10-28",
+          "customers": [
+            "株式会社TVer"
+          ],
+          "products": [
+            "みんなの社食"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "mjs.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "MJSお金の管理、ACELINK NX-Pro",
+        "ACELINK NX-Pro"
+      ],
+      "articles": [
+        {
+          "slug": "cc2fe571-9de9-4c04-a623-1afae5264410",
+          "label": "#034",
+          "title": "士業の仕事は、資料が行き来する時間でできている。士業事務所と顧問先の資料のやり取りを仕組みに移した事例10選",
+          "publishedAt": "2026-11-12",
+          "customers": [
+            "東京港税理士法人",
+            "税理士法人近代経営&Kinkei Farm"
+          ],
+          "products": [
+            "MJSお金の管理、ACELINK NX-Pro",
+            "ACELINK NX-Pro"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "mks.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "eNEN"
+      ],
+      "articles": [
+        {
+          "slug": "cc2fe571-9de9-4c04-a623-1afae5264410",
+          "label": "#034",
+          "title": "士業の仕事は、資料が行き来する時間でできている。士業事務所と顧問先の資料のやり取りを仕組みに移した事例10選",
+          "publishedAt": "2026-11-12",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "eNEN"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "mobilus.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "MOBI VOICE"
+      ],
+      "articles": [
+        {
+          "slug": "b2097cda-0cd2-48a9-802f-c35fa51abd51",
+          "label": "#002",
+          "title": "問い合わせ対応、もう人がやらなくていい仕事かもしれない。事例10選",
+          "publishedAt": "2026-09-29",
+          "customers": [
+            "株式会社マイアクア"
+          ],
+          "products": [
+            "MOBI VOICE"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "myquick.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-08",
+      "notifiedAtEstimated": true,
+      "products": [
+        "MyQuickクラウド"
+      ],
+      "articles": [
+        {
+          "slug": "c9bf031f-e5ee-4612-8361-c3c9bda34638",
+          "label": "#009",
+          "title": "「早く帰ろう」で消える残業は、少ない。残業を減らした事例10選",
+          "publishedAt": "2026-10-08",
+          "customers": [
+            "株式会社マーキュリー"
+          ],
+          "products": [
+            "MyQuickクラウド"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "mysite-ai.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-30",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Myサイト翻訳"
+      ],
+      "articles": [
+        {
+          "slug": "0903af42-9ca8-43e0-a400-91574c0293d0",
+          "label": "#025",
+          "title": "英語ができる社員がいなくても、海外とは仕事ができた。翻訳・通訳の事例10選",
+          "publishedAt": "2026-10-30",
+          "customers": [
+            "近江鉄道株式会社"
+          ],
+          "products": [
+            "Myサイト翻訳"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "narikoma-group.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-04",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ニュークックチル",
+        "ナリコマ"
+      ],
+      "articles": [
+        {
+          "slug": "2fe1ae2a-bd01-4e5c-8adb-f9b12b59bc4e",
+          "label": "#028",
+          "title": "「朝やるしかない」は思い込みだった。早番の仕事を変えた事例5選",
+          "publishedAt": "2026-11-04",
+          "customers": [
+            "やまゆりの里"
+          ],
+          "products": [
+            "ニュークックチル"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
+          "label": "#031",
+          "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
+          "publishedAt": "2026-11-09",
+          "customers": [
+            "特別養護老人ホーム アルテイル宮町"
+          ],
+          "products": [
+            "ナリコマ"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "957fff43-2d8d-4069-9ef9-be7221425b96",
+          "label": "#039",
+          "title": "注意に頼らない、現場の事故防止事例5選",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "有隣ホーム"
+          ],
+          "products": [
+            "ナリコマ"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "nau.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "NaU Rulebook"
+      ],
+      "articles": [
+        {
+          "slug": "d1ee84d7-5318-4211-b039-3064c06f4d56",
+          "label": "#001",
+          "title": "「紙を読むAI」で、仕事はどこまで減るのか。成果で見る導入事例10選",
+          "publishedAt": "2026-09-28",
+          "customers": [
+            "学校法人 早稲田大学 情報企画部 / 株式会社 早稲田大学アカデミックソリューション"
+          ],
+          "products": [
+            "NaU Rulebook"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ntt-tx.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "BizFront/SmartUI",
+        "データブリッジ",
+        "Yellowfin",
+        "ProgOffice Enterprise"
+      ],
+      "articles": [
+        {
+          "slug": "c01f3cb4-d1da-459d-9bf3-42ec69858311",
+          "label": "#007",
+          "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
+          "publishedAt": "2026-10-06",
+          "customers": [
+            "株式会社TMJ"
+          ],
+          "products": [
+            "BizFront/SmartUI"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "医療法人篠原湘南クリニック　クローバーホスピタル"
+          ],
+          "products": [
+            "データブリッジ"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "6b0ca975-0ee5-441e-a196-f29090be7a8d",
+          "label": "#016",
+          "title": "社内のシステムが古すぎて手を出せない、と思ったときに読みたい事例10選",
+          "publishedAt": "2026-10-19",
+          "customers": [
+            "株式会社デンソー"
+          ],
+          "products": [
+            "Yellowfin"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "839f3e3b-7d07-4f4b-8381-d5066caef279",
+          "label": "#018",
+          "title": "「うちの仕事は在宅無理」は、どこまで本当か。テレワークと現場の温度差を埋めた事例10選",
+          "publishedAt": "2026-10-21",
+          "customers": [
+            "日本航空株式会社"
+          ],
+          "products": [
+            "ProgOffice Enterprise"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ab85bf7f-7d18-4ff8-ab01-91266d712b8e",
+          "label": "#029",
+          "title": "出張で一番時間を食うのは、移動の往復ではなく、書類の往復だった領収書の郵送から差し戻しまで、紙とメールの行き来を止めた事例5選",
+          "publishedAt": "2026-11-05",
+          "customers": [
+            "株式会社NTT ExCパートナー"
+          ],
+          "products": [
+            "BizFront/SmartUI"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "oaland.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "オフィス移転・設計・施工サービス"
+      ],
+      "articles": [
+        {
+          "slug": "5213ed60-e727-4118-bdf6-9b2f4fdb01ff",
+          "label": "#023",
+          "title": "オフィスを変えたら、人が変わった。空間づくりの事例10選",
+          "publishedAt": "2026-10-28",
+          "customers": [
+            "株式会社ジェイシーエス"
+          ],
+          "products": [
+            "オフィス移転・設計・施工サービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ociete.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-30",
+      "notifiedAtEstimated": true,
+      "products": [
+        "OCiETe"
+      ],
+      "articles": [
+        {
+          "slug": "0903af42-9ca8-43e0-a400-91574c0293d0",
+          "label": "#025",
+          "title": "英語ができる社員がいなくても、海外とは仕事ができた。翻訳・通訳の事例10選",
+          "publishedAt": "2026-10-30",
+          "customers": [
+            "横河電機株式会社",
+            "PROFET AI TECHNOLOGY Co. Ltd.",
+            "熊本大学"
+          ],
+          "products": [
+            "OCiETe"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "odyssey-net.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "SAP SuccessFactors"
+      ],
+      "articles": [
+        {
+          "slug": "5049358c-68a3-448e-9d01-ea5457462c81",
+          "label": "#026",
+          "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
+          "publishedAt": "2026-11-02",
+          "customers": [
+            "日本情報通信株式会社"
+          ],
+          "products": [
+            "SAP SuccessFactors"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "officebot.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-27",
+      "notifiedAtEstimated": true,
+      "products": [
+        "OfficeBot"
+      ],
+      "articles": [
+        {
+          "slug": "9f697960-a5ea-46eb-b738-031334b09ce7",
+          "label": "#022",
+          "title": "「背中を見て覚えろ」は、教え方ではない。研修・マニュアルのDX事例10選",
+          "publishedAt": "2026-10-27",
+          "customers": [
+            "キンコーズ・ジャパン株式会社"
+          ],
+          "products": [
+            "OfficeBot"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "okuma.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "MULTUS",
+        "MULTUS B300Ⅱ ARMROID"
+      ],
+      "articles": [
+        {
+          "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
+          "label": "#031",
+          "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
+          "publishedAt": "2026-11-09",
+          "customers": [
+            "株式会社しらかわ"
+          ],
+          "products": [
+            "MULTUS"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "2ee01b44-0fc7-4d07-9c17-a6ec4aa77d0d",
+          "label": "#037",
+          "title": "人手が足りない工場の、ロボット自動化事例5選",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "株式会社キンレイ"
+          ],
+          "products": [
+            "MULTUS B300Ⅱ ARMROID"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "onecareer.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-12",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ワンキャリア"
+      ],
+      "articles": [
+        {
+          "slug": "bd64ce85-a3ed-4766-aed5-cc4a24075035",
+          "label": "#011",
+          "title": "求人広告を増やさずに、応募は増えた。「応募が来ない」を解いた採用事例10選",
+          "publishedAt": "2026-10-12",
+          "customers": [
+            "三信住建株式会社",
+            "株式会社トヨタ車体研究所"
+          ],
+          "products": [
+            "ワンキャリア"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "onehr.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-05",
+      "notifiedAtEstimated": true,
+      "products": [
+        "One人事[タレントマネジメント]"
+      ],
+      "articles": [
+        {
+          "slug": "c5538ca4-04a7-4e23-a659-b7ef8bd62926",
+          "label": "#006",
+          "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
+          "publishedAt": "2026-10-05",
+          "customers": [
+            "株式会社ハイテックシステムズ"
+          ],
+          "products": [
+            "One人事[タレントマネジメント]"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "optex.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-14",
+      "notifiedAtEstimated": true,
+      "products": [
+        "WATER it データマネジメントサービス",
+        "OAM-EXPLORER J、LINK-BT2"
+      ],
+      "articles": [
+        {
+          "slug": "ed5061d7-23b3-4d2e-a8e5-558fdc207eb7",
+          "label": "#013",
+          "title": "センサー・カメラ・遠隔操作で、巡回・点検・出張をなくした事例10選",
+          "publishedAt": "2026-10-14",
+          "customers": [
+            "高速道路事業者"
+          ],
+          "products": [
+            "WATER it データマネジメントサービス"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "OAM-EXPLORER J、LINK-BT2"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "orwak.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-23",
+      "notifiedAtEstimated": true,
+      "products": [
+        "小型圧縮減容機5010E"
+      ],
+      "articles": [
+        {
+          "slug": "d4bbb964-b594-4ed0-9acf-7a8759f20366",
+          "label": "#020",
+          "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
+          "publishedAt": "2026-10-23",
+          "customers": [
+            "株式会社キトー"
+          ],
+          "products": [
+            "小型圧縮減容機5010E"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "otasukeman.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-08",
+      "notifiedAtEstimated": true,
+      "products": [
+        "お助けマン"
+      ],
+      "articles": [
+        {
+          "slug": "c9bf031f-e5ee-4612-8361-c3c9bda34638",
+          "label": "#009",
+          "title": "「早く帰ろう」で消える残業は、少ない。残業を減らした事例10選",
+          "publishedAt": "2026-10-08",
+          "customers": [
+            "株式会社ジャックス"
+          ],
+          "products": [
+            "お助けマン"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "panasonic.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "コンサルティング"
+      ],
+      "articles": [
+        {
+          "slug": "a1da7dbb-6c67-4b0b-b269-1aaa8e10371e",
+          "label": "#040",
+          "title": "不具合が見つかる段階を、一つ手前にずらした。金型の不具合を、設計から点検までのどこで見つけるかを変えた5社の事例5選",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "旭レヂン株式会社"
+          ],
+          "products": [
+            "コンサルティング"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "pandora-climber.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-30",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ClimberCloud、kintone、DX-Suite、WinActor"
+      ],
+      "articles": [
+        {
+          "slug": "499bc233-3d57-42b8-b403-fa6719d0b605",
+          "label": "#003",
+          "title": "経理・バックオフィスの仕事を、AIはどこまで肩代わりできるのか。事例10選",
+          "publishedAt": "2026-09-30",
+          "customers": [
+            "味の素トレーディング株式会社"
+          ],
+          "products": [
+            "ClimberCloud、kintone、DX-Suite、WinActor"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "patrolclarice.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "robostein"
+      ],
+      "articles": [
+        {
+          "slug": "fd6ddb58-47ab-466a-84d7-e6259103dd81",
+          "label": "#030",
+          "title": "同じ数字を、今日も二度打っている。二度打ちより高くついていた、ずれを探す時間を消した事例5選",
+          "publishedAt": "2026-11-06",
+          "customers": [
+            "ALSOK株式会社"
+          ],
+          "products": [
+            "robostein"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "pcbrain.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-22",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ホームページ制作"
+      ],
+      "articles": [
+        {
+          "slug": "74d68ee8-f1a2-464d-84a4-9b05ce587cd7",
+          "label": "#019",
+          "title": "うちには社内ITがいないから・・・と思ったときにみたい事例１０選",
+          "publishedAt": "2026-10-22",
+          "customers": [
+            "株式会社根上産業"
+          ],
+          "products": [
+            "ホームページ制作"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "pigeonhearts.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "企業内保育所運営サービス"
+      ],
+      "articles": [
+        {
+          "slug": "5049358c-68a3-448e-9d01-ea5457462c81",
+          "label": "#026",
+          "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
+          "publishedAt": "2026-11-02",
+          "customers": [
+            "第一三共株式会社"
+          ],
+          "products": [
+            "企業内保育所運営サービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "plusline.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-20",
+      "notifiedAtEstimated": true,
+      "products": [
+        "WordPress CMS構築・ホームページリニューアル"
+      ],
+      "articles": [
+        {
+          "slug": "eba09eb7-fde1-48df-96e5-649188a1f0cb",
+          "label": "#017",
+          "title": "自分の客を、自分で見つける。「下請け・待ちの営業」から抜け出した事例10選",
+          "publishedAt": "2026-10-20",
+          "customers": [
+            "竹下産業株式会社"
+          ],
+          "products": [
+            "WordPress CMS構築・ホームページリニューアル"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "plusweb.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "コンストラクション・マネジメント"
+      ],
+      "articles": [
+        {
+          "slug": "5213ed60-e727-4118-bdf6-9b2f4fdb01ff",
+          "label": "#023",
+          "title": "オフィスを変えたら、人が変わった。空間づくりの事例10選",
+          "publishedAt": "2026-10-28",
+          "customers": [
+            "日本ジッパーチュービング株式会社"
+          ],
+          "products": [
+            "コンストラクション・マネジメント"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "pol-japan.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-14",
+      "notifiedAtEstimated": true,
+      "products": [
+        "MobiControl",
+        "SOTI MobiControl"
+      ],
+      "articles": [
+        {
+          "slug": "ed5061d7-23b3-4d2e-a8e5-558fdc207eb7",
+          "label": "#013",
+          "title": "センサー・カメラ・遠隔操作で、巡回・点検・出張をなくした事例10選",
+          "publishedAt": "2026-10-14",
+          "customers": [
+            "株式会社メディセオ",
+            "姫路医療生活協同組合"
+          ],
+          "products": [
+            "MobiControl",
+            "SOTI MobiControl"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "powercms.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-22",
+      "notifiedAtEstimated": true,
+      "products": [
+        "PowerCMS 4"
+      ],
+      "articles": [
+        {
+          "slug": "74d68ee8-f1a2-464d-84a4-9b05ce587cd7",
+          "label": "#019",
+          "title": "うちには社内ITがいないから・・・と思ったときにみたい事例１０選",
+          "publishedAt": "2026-10-22",
+          "customers": [
+            "公立大学法人神戸市外国語大学"
+          ],
+          "products": [
+            "PowerCMS 4"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "primis.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-20",
+      "notifiedAtEstimated": true,
+      "products": [
+        "新規事業開発コンサルティング"
+      ],
+      "articles": [
+        {
+          "slug": "eba09eb7-fde1-48df-96e5-649188a1f0cb",
+          "label": "#017",
+          "title": "自分の客を、自分で見つける。「下請け・待ちの営業」から抜け出した事例10選",
+          "publishedAt": "2026-10-20",
+          "customers": [
+            "自動車内外装部品メーカー様"
+          ],
+          "products": [
+            "新規事業開発コンサルティング"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ptengine.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-12",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Ptengine"
+      ],
+      "articles": [
+        {
+          "slug": "bd64ce85-a3ed-4766-aed5-cc4a24075035",
+          "label": "#011",
+          "title": "求人広告を増やさずに、応募は増えた。「応募が来ない」を解いた採用事例10選",
+          "publishedAt": "2026-10-12",
+          "customers": [
+            "セイコーエプソン株式会社"
+          ],
+          "products": [
+            "Ptengine"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "r-ac.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Victory-ONE【検収照合】"
+      ],
+      "articles": [
+        {
+          "slug": "fd6ddb58-47ab-466a-84d7-e6259103dd81",
+          "label": "#030",
+          "title": "同じ数字を、今日も二度打っている。二度打ちより高くついていた、ずれを探す時間を消した事例5選",
+          "publishedAt": "2026-11-06",
+          "customers": [
+            "株式会社メイコー"
+          ],
+          "products": [
+            "Victory-ONE【検収照合】"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "raksul.com",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ラクスル"
+      ],
+      "articles": [
+        {
+          "slug": "9649f101-0a89-47e7-a98b-15d001011190",
+          "label": "#005",
+          "title": "従業員20名以下でも、ここまで変わった。小さな会社のDX事例10選",
+          "publishedAt": "2026-10-02",
+          "customers": [
+            "株式会社髙瀬ホールディングス"
+          ],
+          "products": [
+            "ラクスル"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "岡山医療生活協同組合 総合病院 岡山協立病院"
+          ],
+          "products": [
+            "ラクスル"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "re-v.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-12",
+      "notifiedAtEstimated": true,
+      "products": [
+        "採用サイト制作・リニューアルサービス"
+      ],
+      "articles": [
+        {
+          "slug": "bd64ce85-a3ed-4766-aed5-cc4a24075035",
+          "label": "#011",
+          "title": "求人広告を増やさずに、応募は増えた。「応募が来ない」を解いた採用事例10選",
+          "publishedAt": "2026-10-12",
+          "customers": [
+            "株式会社オートテクニックジャパン"
+          ],
+          "products": [
+            "採用サイト制作・リニューアルサービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "recop.jp",
+      "company": "株式会社HRソリューションズ（リクオプ）",
+      "status": "removed",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [],
+      "articles": [],
+      "memo": "",
+      "removedAt": "2026-10-07",
+      "removedReason": "導入企業への事前確認なく掲載されているとして、ベンダーから掲載削除の依頼を受けた"
+    },
+    {
+      "domain": "recruit-ms.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "エンゲージメント・ドライブ"
+      ],
+      "articles": [
+        {
+          "slug": "95c3cd55-86ab-4a35-9f7a-78dd56e8fcc6",
+          "label": "#036",
+          "title": "満足度調査は、していた。結果が、どこにも届いていなかった。エンゲージメント調査を施策につなげた事例10選",
+          "publishedAt": "2026-11-16",
+          "customers": [
+            "京王電鉄株式会社"
+          ],
+          "products": [
+            "エンゲージメント・ドライブ"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "regi-less.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "セルフレジ/セルフ券売機"
+      ],
+      "articles": [
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "ラーメン暖暮"
+          ],
+          "products": [
+            "セルフレジ/セルフ券売機"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "renaissance-gt.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ルネチェア"
+      ],
+      "articles": [
+        {
+          "slug": "9649f101-0a89-47e7-a98b-15d001011190",
+          "label": "#005",
+          "title": "従業員20名以下でも、ここまで変わった。小さな会社のDX事例10選",
+          "publishedAt": "2026-10-02",
+          "customers": [
+            "Ellena（エレーナ）"
+          ],
+          "products": [
+            "ルネチェア"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "riveting-mcn.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "空圧式リベッティング・マシン US-66M"
+      ],
+      "articles": [
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "川村義肢株式会社"
+          ],
+          "products": [
+            "空圧式リベッティング・マシン US-66M"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "rocketsoftware.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-19",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Micro Focus Visual COBOL"
+      ],
+      "articles": [
+        {
+          "slug": "6b0ca975-0ee5-441e-a196-f29090be7a8d",
+          "label": "#016",
+          "title": "社内のシステムが古すぎて手を出せない、と思ったときに読みたい事例10選",
+          "publishedAt": "2026-10-19",
+          "customers": [
+            "株式会社北陸電機商会"
+          ],
+          "products": [
+            "Micro Focus Visual COBOL"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "rolanddg.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Roland DG Assemble"
+      ],
+      "articles": [
+        {
+          "slug": "b04aab30-7217-4ec6-a7de-e61c92beff82",
+          "label": "#032",
+          "title": "生産管理の属人化、どこから解く？納期回答・計画・進捗・実績・品質記録を人から切り離した事例5選",
+          "publishedAt": "2026-11-10",
+          "customers": [
+            "合資会社菅沼製作所"
+          ],
+          "products": [
+            "Roland DG Assemble"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "rpa-technologies.com",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-09",
+      "notifiedAtEstimated": true,
+      "products": [
+        "BizRobo! mini"
+      ],
+      "articles": [
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "浅川学園台在宅クリニック"
+          ],
+          "products": [
+            "BizRobo! mini"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "saeilo.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Cimatron、Pform"
+      ],
+      "articles": [
+        {
+          "slug": "a1da7dbb-6c67-4b0b-b269-1aaa8e10371e",
+          "label": "#040",
+          "title": "不具合が見つかる段階を、一つ手前にずらした。金型の不具合を、設計から点検までのどこで見つけるかを変えた5社の事例5選",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "株式会社伊吹機械"
+          ],
+          "products": [
+            "Cimatron、Pform"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "salesrenovation.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-16",
+      "notifiedAtEstimated": true,
+      "products": [
+        "インサイドセールス人材サービス"
+      ],
+      "articles": [
+        {
+          "slug": "89210e33-77cc-417b-b47d-5fa9e1ea0909",
+          "label": "#015",
+          "title": "広告費は増やした。なのに、受注は増えない。「広告費が受注につながらない」を解決した事例10選",
+          "publishedAt": "2026-10-16",
+          "customers": [
+            "株式会社第一印刷所"
+          ],
+          "products": [
+            "インサイドセールス人材サービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sato.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "SALI® for スキャントロニクス CL4NX-J Plus",
+        "AI画像スキャン値付け",
+        "VoiSol®Smart",
+        "RFIDシステム",
+        "RFID資産管理ソリューションパッケージ ASETRA",
+        "RFID関連ソリューション",
+        "RFIDリストバンド・三点認証システム",
+        "スマートパッケージング",
+        "FLEQV",
+        "耐性ラベル",
+        "RFID",
+        "MG400協働ロボット移動式ラベラー、ラベルプリンターHA200Rシリーズ"
+      ],
+      "articles": [
+        {
+          "slug": "c01f3cb4-d1da-459d-9bf3-42ec69858311",
+          "label": "#007",
+          "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
+          "publishedAt": "2026-10-06",
+          "customers": [
+            "NECパーソナルコンピュータ株式会社",
+            "株式会社ヤオコー",
+            "生活協同組合連合会 東海コープ事業連合"
+          ],
+          "products": [
+            "SALI® for スキャントロニクス CL4NX-J Plus",
+            "AI画像スキャン値付け",
+            "VoiSol®Smart"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "93bc5906-d6fa-48cc-b4c8-037c7a4313cb",
+          "label": "#008",
+          "title": "「数える仕事」は、どこまで消せるのか在庫・倉庫のDX事例10選",
+          "publishedAt": "2026-10-07",
+          "customers": [
+            "有限会社玉木新雌",
+            "サントリープロダクツ株式会社",
+            "株式会社コックス"
+          ],
+          "products": [
+            "RFIDシステム",
+            "RFID資産管理ソリューションパッケージ ASETRA",
+            "RFID関連ソリューション"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "大阪医科薬科大学病院"
+          ],
+          "products": [
+            "RFIDリストバンド・三点認証システム"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "eba09eb7-fde1-48df-96e5-649188a1f0cb",
+          "label": "#017",
+          "title": "自分の客を、自分で見つける。「下請け・待ちの営業」から抜け出した事例10選",
+          "publishedAt": "2026-10-20",
+          "customers": [
+            "土佐くろしお農業協同組合"
+          ],
+          "products": [
+            "スマートパッケージング"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "ロイヤルホスト株式会社"
+          ],
+          "products": [
+            "FLEQV"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "b4f52a79-43c0-415b-b16c-722631790a48",
+          "label": "用語#001",
+          "title": "RFIDとは｜3つの事例でわかる",
+          "publishedAt": "2026-11-07",
+          "customers": [
+            "大阪医科薬科大学病院"
+          ],
+          "products": [
+            "RFIDリストバンド・三点認証システム"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
+          "label": "#031",
+          "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
+          "publishedAt": "2026-11-09",
+          "customers": [
+            "太陽サカコー株式会社"
+          ],
+          "products": [
+            "耐性ラベル"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "株式会社安川電機"
+          ],
+          "products": [
+            "RFID"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "2ee01b44-0fc7-4d07-9c17-a6ec4aa77d0d",
+          "label": "#037",
+          "title": "人手が足りない工場の、ロボット自動化事例5選",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "北陸計器工業株式会社"
+          ],
+          "products": [
+            "MG400協働ロボット移動式ラベラー、ラベルプリンターHA200Rシリーズ"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "satori.marketing",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-16",
+      "notifiedAtEstimated": true,
+      "products": [
+        "SATORI"
+      ],
+      "articles": [
+        {
+          "slug": "89210e33-77cc-417b-b47d-5fa9e1ea0909",
+          "label": "#015",
+          "title": "広告費は増やした。なのに、受注は増えない。「広告費が受注につながらない」を解決した事例10選",
+          "publishedAt": "2026-10-16",
+          "customers": [
+            "パナソニック株式会社",
+            "マルホ発條工業株式会社"
+          ],
+          "products": [
+            "SATORI"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "eba09eb7-fde1-48df-96e5-649188a1f0cb",
+          "label": "#017",
+          "title": "自分の客を、自分で見つける。「下請け・待ちの営業」から抜け出した事例10選",
+          "publishedAt": "2026-10-20",
+          "customers": [
+            "株式会社関東製作所",
+            "太陽パーツ株式会社"
+          ],
+          "products": [
+            "SATORI"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "74d68ee8-f1a2-464d-84a4-9b05ce587cd7",
+          "label": "#019",
+          "title": "うちには社内ITがいないから・・・と思ったときにみたい事例１０選",
+          "publishedAt": "2026-10-22",
+          "customers": [
+            "千葉テレビ放送株式会社"
+          ],
+          "products": [
+            "SATORI"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "satotekko-cfs.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "CFS"
+      ],
+      "articles": [
+        {
+          "slug": "957fff43-2d8d-4069-9ef9-be7221425b96",
+          "label": "#039",
+          "title": "注意に頼らない、現場の事故防止事例5選",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "株式会社富士エコサイクル"
+          ],
+          "products": [
+            "CFS"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sbi-bs.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "経費BANK"
+      ],
+      "articles": [
+        {
+          "slug": "d1ee84d7-5318-4211-b039-3064c06f4d56",
+          "label": "#001",
+          "title": "「紙を読むAI」で、仕事はどこまで減るのか。成果で見る導入事例10選",
+          "publishedAt": "2026-09-28",
+          "customers": [
+            "株式会社ジャストヒューマンネットワーク"
+          ],
+          "products": [
+            "経費BANK"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "499bc233-3d57-42b8-b403-fa6719d0b605",
+          "label": "#003",
+          "title": "経理・バックオフィスの仕事を、AIはどこまで肩代わりできるのか。事例10選",
+          "publishedAt": "2026-09-30",
+          "customers": [
+            "株式会社アルク",
+            "ハタ コンサルタント株式会社"
+          ],
+          "products": [
+            "経費BANK"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "c5538ca4-04a7-4e23-a659-b7ef8bd62926",
+          "label": "#006",
+          "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
+          "publishedAt": "2026-10-05",
+          "customers": [
+            "株式会社エニーワーク"
+          ],
+          "products": [
+            "経費BANK"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ab85bf7f-7d18-4ff8-ab01-91266d712b8e",
+          "label": "#029",
+          "title": "出張で一番時間を食うのは、移動の往復ではなく、書類の往復だった領収書の郵送から差し戻しまで、紙とメールの行き来を止めた事例5選",
+          "publishedAt": "2026-11-05",
+          "customers": [
+            "株式会社理学ボディ"
+          ],
+          "products": [
+            "経費BANK"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sbpayment.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-13",
+      "notifiedAtEstimated": true,
+      "products": [
+        "AI不正検知"
+      ],
+      "articles": [
+        {
+          "slug": "0b70a33d-35b5-4997-b1e9-8cbf23424865",
+          "label": "#012",
+          "title": "売れた数だけ、仕事が増える。EC運営の裏側を仕組みで解いた事例10選",
+          "publishedAt": "2026-10-13",
+          "customers": [
+            "株式会社ゴルフ・ドゥ"
+          ],
+          "products": [
+            "AI不正検知"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "science.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "sAI Search",
+        "マニュアル作成セミナー・マニュアル作成支援",
+        "Author-it",
+        "MTrans Team",
+        "機械翻訳サービス",
+        "マニュアル作成・翻訳サービス"
+      ],
+      "articles": [
+        {
+          "slug": "b2097cda-0cd2-48a9-802f-c35fa51abd51",
+          "label": "#002",
+          "title": "問い合わせ対応、もう人がやらなくていい仕事かもしれない。事例10選",
+          "publishedAt": "2026-09-29",
+          "customers": [
+            "UTグループ株式会社"
+          ],
+          "products": [
+            "sAI Search"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "9f697960-a5ea-46eb-b738-031334b09ce7",
+          "label": "#022",
+          "title": "「背中を見て覚えろ」は、教え方ではない。研修・マニュアルのDX事例10選",
+          "publishedAt": "2026-10-27",
+          "customers": [
+            "ドコモ・テクノロジ株式会社",
+            "株式会社エジソン"
+          ],
+          "products": [
+            "マニュアル作成セミナー・マニュアル作成支援",
+            "Author-it"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "0903af42-9ca8-43e0-a400-91574c0293d0",
+          "label": "#025",
+          "title": "英語ができる社員がいなくても、海外とは仕事ができた。翻訳・通訳の事例10選",
+          "publishedAt": "2026-10-30",
+          "customers": [
+            "ニデック株式会社",
+            "（非公開）"
+          ],
+          "products": [
+            "MTrans Team",
+            "機械翻訳サービス",
+            "マニュアル作成・翻訳サービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "secom.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-14",
+      "notifiedAtEstimated": true,
+      "products": [
+        "遠隔放射線診断支援サービス"
+      ],
+      "articles": [
+        {
+          "slug": "ed5061d7-23b3-4d2e-a8e5-558fdc207eb7",
+          "label": "#013",
+          "title": "センサー・カメラ・遠隔操作で、巡回・点検・出張をなくした事例10選",
+          "publishedAt": "2026-10-14",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "遠隔放射線診断支援サービス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "senoh.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "BIG ASS FANS"
+      ],
+      "articles": [
+        {
+          "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
+          "label": "#031",
+          "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
+          "publishedAt": "2026-11-09",
+          "customers": [
+            "グラン・スポール 八幡"
+          ],
+          "products": [
+            "BIG ASS FANS"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sg-systems.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Biz-AI×OCR",
+        "バックオフィスサポートサービス",
+        "RockyOne"
+      ],
+      "articles": [
+        {
+          "slug": "d1ee84d7-5318-4211-b039-3064c06f4d56",
+          "label": "#001",
+          "title": "「紙を読むAI」で、仕事はどこまで減るのか。成果で見る導入事例10選",
+          "publishedAt": "2026-09-28",
+          "customers": [
+            "株式会社インテック",
+            "ガリバー・インターナショナル株式会社",
+            "新潟県村上市"
+          ],
+          "products": [
+            "Biz-AI×OCR"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "499bc233-3d57-42b8-b403-fa6719d0b605",
+          "label": "#003",
+          "title": "経理・バックオフィスの仕事を、AIはどこまで肩代わりできるのか。事例10選",
+          "publishedAt": "2026-09-30",
+          "customers": [
+            "株式会社Beso"
+          ],
+          "products": [
+            "バックオフィスサポートサービス"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "980dbcc5-9675-4391-8850-44575be3ae12",
+          "label": "#038",
+          "title": "空間を冷やせない現場の熱中症対策事例5選",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "サンワサプライ株式会社"
+          ],
+          "products": [
+            "RockyOne"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "shi.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "KeiganALI"
+      ],
+      "articles": [
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "株式会社ホリゾン"
+          ],
+          "products": [
+            "KeiganALI"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "shippio.io",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Shippio Cargo"
+      ],
+      "articles": [
+        {
+          "slug": "d1ee84d7-5318-4211-b039-3064c06f4d56",
+          "label": "#001",
+          "title": "「紙を読むAI」で、仕事はどこまで減るのか。成果で見る導入事例10選",
+          "publishedAt": "2026-09-28",
+          "customers": [
+            "株式会社ゴンチャ ジャパン"
+          ],
+          "products": [
+            "Shippio Cargo"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "c9bf031f-e5ee-4612-8361-c3c9bda34638",
+          "label": "#009",
+          "title": "「早く帰ろう」で消える残業は、少ない。残業を減らした事例10選",
+          "publishedAt": "2026-10-08",
+          "customers": [
+            "株式会社TTS"
+          ],
+          "products": [
+            "Shippio Cargo"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sinclo.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "sinclo",
+        "チャットボットsinclo"
+      ],
+      "articles": [
+        {
+          "slug": "b2097cda-0cd2-48a9-802f-c35fa51abd51",
+          "label": "#002",
+          "title": "問い合わせ対応、もう人がやらなくていい仕事かもしれない。事例10選",
+          "publishedAt": "2026-09-29",
+          "customers": [
+            "DNA先端医療株式会社"
+          ],
+          "products": [
+            "sinclo"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ed9c74a6-161b-401e-9aa4-2ddb5dd32aa1",
+          "label": "#014",
+          "title": "応募は来ている。なのに、面接に人が来ない。「選考が回らない」を解決した採用事例10選",
+          "publishedAt": "2026-10-15",
+          "customers": [
+            "株式会社モード・プランニング・ジャパン"
+          ],
+          "products": [
+            "チャットボットsinclo"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sizsan.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "BellaBot"
+      ],
+      "articles": [
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "株式会社五味八珍"
+          ],
+          "products": [
+            "BellaBot"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "smart-stage.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-21",
+      "notifiedAtEstimated": true,
+      "products": [
+        "SmartStage ServiceDesk"
+      ],
+      "articles": [
+        {
+          "slug": "839f3e3b-7d07-4f4b-8381-d5066caef279",
+          "label": "#018",
+          "title": "「うちの仕事は在宅無理」は、どこまで本当か。テレワークと現場の温度差を埋めた事例10選",
+          "publishedAt": "2026-10-21",
+          "customers": [
+            "株式会社アイネス"
+          ],
+          "products": [
+            "SmartStage ServiceDesk"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sonar-ats.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-08",
+      "notifiedAtEstimated": true,
+      "products": [
+        "sonar ATS",
+        "sonar ATS by HRMOS"
+      ],
+      "articles": [
+        {
+          "slug": "c9bf031f-e5ee-4612-8361-c3c9bda34638",
+          "label": "#009",
+          "title": "「早く帰ろう」で消える残業は、少ない。残業を減らした事例10選",
+          "publishedAt": "2026-10-08",
+          "customers": [
+            "オーエスジー株式会社"
+          ],
+          "products": [
+            "sonar ATS"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ed9c74a6-161b-401e-9aa4-2ddb5dd32aa1",
+          "label": "#014",
+          "title": "応募は来ている。なのに、面接に人が来ない。「選考が回らない」を解決した採用事例10選",
+          "publishedAt": "2026-10-15",
+          "customers": [
+            "株式会社大創産業"
+          ],
+          "products": [
+            "sonar ATS by HRMOS"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sony.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-09",
+      "notifiedAtEstimated": true,
+      "products": [
+        "デジタルペーパー"
+      ],
+      "articles": [
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "大阪大学 歯学部附属病院"
+          ],
+          "products": [
+            "デジタルペーパー"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "soukei-lab.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "経理アウトソーシング"
+      ],
+      "articles": [
+        {
+          "slug": "cc2fe571-9de9-4c04-a623-1afae5264410",
+          "label": "#034",
+          "title": "士業の仕事は、資料が行き来する時間でできている。士業事務所と顧問先の資料のやり取りを仕組みに移した事例10選",
+          "publishedAt": "2026-11-12",
+          "customers": [
+            "医療法人社団 さんごの海"
+          ],
+          "products": [
+            "経理アウトソーシング"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "spokes-online.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-30",
+      "notifiedAtEstimated": true,
+      "products": [
+        "SPOKES"
+      ],
+      "articles": [
+        {
+          "slug": "0903af42-9ca8-43e0-a400-91574c0293d0",
+          "label": "#025",
+          "title": "英語ができる社員がいなくても、海外とは仕事ができた。翻訳・通訳の事例10選",
+          "publishedAt": "2026-10-30",
+          "customers": [
+            "茨城県土浦市"
+          ],
+          "products": [
+            "SPOKES"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "staple.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-05",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Staple"
+      ],
+      "articles": [
+        {
+          "slug": "ab85bf7f-7d18-4ff8-ab01-91266d712b8e",
+          "label": "#029",
+          "title": "出張で一番時間を食うのは、移動の往復ではなく、書類の往復だった領収書の郵送から差し戻しまで、紙とメールの行き来を止めた事例5選",
+          "publishedAt": "2026-11-05",
+          "customers": [
+            "株式会社BANQ"
+          ],
+          "products": [
+            "Staple"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sunplanning.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-19",
+      "notifiedAtEstimated": true,
+      "products": [
+        "SAP Business Suite powered by SAP HANA"
+      ],
+      "articles": [
+        {
+          "slug": "6b0ca975-0ee5-441e-a196-f29090be7a8d",
+          "label": "#016",
+          "title": "社内のシステムが古すぎて手を出せない、と思ったときに読みたい事例10選",
+          "publishedAt": "2026-10-19",
+          "customers": [
+            "カルビー株式会社"
+          ],
+          "products": [
+            "SAP Business Suite powered by SAP HANA"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sustainable-switch.jp",
+      "company": "サステナブルスイッチ（sustainable-switch.jp）",
+      "status": "removed",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [],
+      "articles": [],
+      "memo": "",
+      "removedAt": "2026-10-24",
+      "removedReason": "サイトが閉鎖され、事例ページに到達できなくなったため（削除依頼ではない）"
+    },
+    {
+      "domain": "suzuyayoko.co.jp",
+      "company": "株式会社鈴弥洋行",
+      "status": "removed",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [],
+      "articles": [],
+      "memo": "",
+      "removedAt": "2026-10-27",
+      "removedReason": "エンドユーザーへの確認と許可を取っていないとして、ベンダーから同社に関わる記事すべての掲載削除の依頼を受けた（事例の掲載は本来、事前に許諾を得てから行うべきとの指摘あり）"
+    },
+    {
+      "domain": "taashie.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "WinActor"
+      ],
+      "articles": [
+        {
+          "slug": "c01f3cb4-d1da-459d-9bf3-42ec69858311",
+          "label": "#007",
+          "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
+          "publishedAt": "2026-10-06",
+          "customers": [
+            "五の橋レディスクリニック"
+          ],
+          "products": [
+            "WinActor"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "takachiho-kk.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-04",
+      "notifiedAtEstimated": true,
+      "products": [
+        "TrueVUE hybrid"
+      ],
+      "articles": [
+        {
+          "slug": "2fe1ae2a-bd01-4e5c-8adb-f9b12b59bc4e",
+          "label": "#028",
+          "title": "「朝やるしかない」は思い込みだった。早番の仕事を変えた事例5選",
+          "publishedAt": "2026-11-04",
+          "customers": [
+            "株式会社AOKIホールディングス"
+          ],
+          "products": [
+            "TrueVUE hybrid"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "b4f52a79-43c0-415b-b16c-722631790a48",
+          "label": "用語#001",
+          "title": "RFIDとは｜3つの事例でわかる",
+          "publishedAt": "2026-11-07",
+          "customers": [
+            "株式会社AOKIホールディングス"
+          ],
+          "products": [
+            "TrueVUE hybrid"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "tam-tokyo.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか"
+      ],
+      "articles": [
+        {
+          "slug": "2ee01b44-0fc7-4d07-9c17-a6ec4aa77d0d",
+          "label": "#037",
+          "title": "人手が足りない工場の、ロボット自動化事例5選",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "放鶴製菓株式会社・プロルフェン株式会社"
+          ],
+          "products": [
+            "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "tamadic.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [],
+      "articles": [
+        {
+          "slug": "2ee01b44-0fc7-4d07-9c17-a6ec4aa77d0d",
+          "label": "#037",
+          "title": "人手が足りない工場の、ロボット自動化事例5選",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "ガス機器メーカーA社"
+          ],
+          "products": [],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "teamdelta.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-22",
+      "notifiedAtEstimated": true,
+      "products": [
+        "CTO booster"
+      ],
+      "articles": [
+        {
+          "slug": "74d68ee8-f1a2-464d-84a4-9b05ce587cd7",
+          "label": "#019",
+          "title": "うちには社内ITがいないから・・・と思ったときにみたい事例１０選",
+          "publishedAt": "2026-10-22",
+          "customers": [
+            "株式会社HataLuck and Person"
+          ],
+          "products": [
+            "CTO booster"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "tele-nishi.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-14",
+      "notifiedAtEstimated": true,
+      "products": [
+        "IT点呼キーパー"
+      ],
+      "articles": [
+        {
+          "slug": "ed5061d7-23b3-4d2e-a8e5-558fdc207eb7",
+          "label": "#013",
+          "title": "センサー・カメラ・遠隔操作で、巡回・点検・出張をなくした事例10選",
+          "publishedAt": "2026-10-14",
+          "customers": [
+            "浪速運送株式会社"
+          ],
+          "products": [
+            "IT点呼キーパー"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "957fff43-2d8d-4069-9ef9-be7221425b96",
+          "label": "#039",
+          "title": "注意に頼らない、現場の事故防止事例5選",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "株式会社タカロジ"
+          ],
+          "products": [
+            "IT点呼キーパー"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "terrasky.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-19",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Salesforce"
+      ],
+      "articles": [
+        {
+          "slug": "6b0ca975-0ee5-441e-a196-f29090be7a8d",
+          "label": "#016",
+          "title": "社内のシステムが古すぎて手を出せない、と思ったときに読みたい事例10選",
+          "publishedAt": "2026-10-19",
+          "customers": [
+            "ゆこゆこホールディングス株式会社"
+          ],
+          "products": [
+            "Salesforce"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "timerep.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-30",
+      "notifiedAtEstimated": true,
+      "products": [
+        "TimeRep"
+      ],
+      "articles": [
+        {
+          "slug": "0903af42-9ca8-43e0-a400-91574c0293d0",
+          "label": "#025",
+          "title": "英語ができる社員がいなくても、海外とは仕事ができた。翻訳・通訳の事例10選",
+          "publishedAt": "2026-10-30",
+          "customers": [
+            "株式会社グレープストーン"
+          ],
+          "products": [
+            "TimeRep"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "tks-gifu.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-23",
+      "notifiedAtEstimated": true,
+      "products": [
+        "アリアミスト・意地でも節水"
+      ],
+      "articles": [
+        {
+          "slug": "d4bbb964-b594-4ed0-9acf-7a8759f20366",
+          "label": "#020",
+          "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
+          "publishedAt": "2026-10-23",
+          "customers": [
+            "扇野の里 扇芳閣"
+          ],
+          "products": [
+            "アリアミスト・意地でも節水"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "tokouav.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "東光鉄工製農業用ドローン"
+      ],
+      "articles": [
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "髙橋 和久"
+          ],
+          "products": [
+            "東光鉄工製農業用ドローン"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "top-seller.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-13",
+      "notifiedAtEstimated": true,
+      "products": [
+        "TopSeller"
+      ],
+      "articles": [
+        {
+          "slug": "0b70a33d-35b5-4997-b1e9-8cbf23424865",
+          "label": "#012",
+          "title": "売れた数だけ、仕事が増える。EC運営の裏側を仕組みで解いた事例10選",
+          "publishedAt": "2026-10-13",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "TopSeller"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "totec-mlife.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "見守りライフ"
+      ],
+      "articles": [
+        {
+          "slug": "30777a4a-2bc5-4ec7-bcfa-c99b60f1cc3e",
+          "label": "#035",
+          "title": "辞める直前の場面を、一つだけ変えた。給料でも採用でもない場所から離職を止めた、気づく役の違う5社の事例5選",
+          "publishedAt": "2026-11-13",
+          "customers": [
+            "医療法人カワムラメディカル 介護老人保健施設けんこう・ふらの"
+          ],
+          "products": [
+            "見守りライフ"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "totec-sangyo.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ASTERIA Warp",
+        "Asprova APS",
+        "ASTERIA Warp、MotionBoard"
+      ],
+      "articles": [
+        {
+          "slug": "fd6ddb58-47ab-466a-84d7-e6259103dd81",
+          "label": "#030",
+          "title": "同じ数字を、今日も二度打っている。二度打ちより高くついていた、ずれを探す時間を消した事例5選",
+          "publishedAt": "2026-11-06",
+          "customers": [
+            "東海模型株式会社"
+          ],
+          "products": [
+            "ASTERIA Warp"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "b04aab30-7217-4ec6-a7de-e61c92beff82",
+          "label": "#032",
+          "title": "生産管理の属人化、どこから解く？納期回答・計画・進捗・実績・品質記録を人から切り離した事例5選",
+          "publishedAt": "2026-11-10",
+          "customers": [
+            "共和薬品工業株式会社"
+          ],
+          "products": [
+            "Asprova APS"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "980dbcc5-9675-4391-8850-44575be3ae12",
+          "label": "#038",
+          "title": "空間を冷やせない現場の熱中症対策事例5選",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "宇部エクシモ株式会社"
+          ],
+          "products": [
+            "ASTERIA Warp、MotionBoard"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "towaeng.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-28",
+      "notifiedAtEstimated": true,
+      "products": [
+        "会議・同時通訳システム、音響・映像システム、ICTシステム"
+      ],
+      "articles": [
+        {
+          "slug": "5213ed60-e727-4118-bdf6-9b2f4fdb01ff",
+          "label": "#023",
+          "title": "オフィスを変えたら、人が変わった。空間づくりの事例10選",
+          "publishedAt": "2026-10-28",
+          "customers": [
+            "日鉄興和不動産株式会社"
+          ],
+          "products": [
+            "会議・同時通訳システム、音響・映像システム、ICTシステム"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "toyota-lf-okayama.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "垂直搬送機、ドックレベラー、充電式フォークリフト"
+      ],
+      "articles": [
+        {
+          "slug": "957fff43-2d8d-4069-9ef9-be7221425b96",
+          "label": "#039",
+          "title": "注意に頼らない、現場の事故防止事例5選",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "岡山土地倉庫株式会社"
+          ],
+          "products": [
+            "垂直搬送機、ドックレベラー、充電式フォークリフト"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "transact.ne.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-03",
+      "notifiedAtEstimated": true,
+      "products": [
+        "TransFax"
+      ],
+      "articles": [
+        {
+          "slug": "8f16945f-34d2-4467-955c-d56d0fac5389",
+          "label": "#027",
+          "title": "QRコードで「記録・集計・仕分け」を手放した事例5選",
+          "publishedAt": "2026-11-03",
+          "customers": [
+            "株式会社セルメスタ"
+          ],
+          "products": [
+            "TransFax"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "transcosmos-cotra.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "tra:lien"
+      ],
+      "articles": [
+        {
+          "slug": "30777a4a-2bc5-4ec7-bcfa-c99b60f1cc3e",
+          "label": "#035",
+          "title": "辞める直前の場面を、一つだけ変えた。給料でも採用でもない場所から離職を止めた、気づく役の違う5社の事例5選",
+          "publishedAt": "2026-11-13",
+          "customers": [
+            "トランスコスモス（CXスクエア名古屋）"
+          ],
+          "products": [
+            "tra:lien"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "tryhatch.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-02",
+      "notifiedAtEstimated": true,
+      "products": [
+        "MEOチェキ"
+      ],
+      "articles": [
+        {
+          "slug": "9649f101-0a89-47e7-a98b-15d001011190",
+          "label": "#005",
+          "title": "従業員20名以下でも、ここまで変わった。小さな会社のDX事例10選",
+          "publishedAt": "2026-10-02",
+          "customers": [
+            "株式会社花菱"
+          ],
+          "products": [
+            "MEOチェキ"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "u-s-d.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "comuoon mobile type ML / comuoon mobile type WSG"
+      ],
+      "articles": [
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "福岡空港のデイケア施設"
+          ],
+          "products": [
+            "comuoon mobile type ML / comuoon mobile type WSG"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "uchida.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-21",
+      "notifiedAtEstimated": true,
+      "products": [
+        "オフィス移転・リニューアルサービス",
+        "オフィス移転・リニューアルサービス、オフィスデザイン・構築サービス、ABW/フリーアドレス",
+        "オフィス移転・リニューアルサービス、オフィスデザイン・構築サービス",
+        "Change Working",
+        "オフィスデザイン・構築サービス、ABW/フリーアドレス、SmartInfill、COMMONS TABLE SYSTEM-i、LEMNA Work Lounge",
+        "オフィス移転プロジェクトマネジメントサービス、Change Working"
+      ],
+      "articles": [
+        {
+          "slug": "839f3e3b-7d07-4f4b-8381-d5066caef279",
+          "label": "#018",
+          "title": "「うちの仕事は在宅無理」は、どこまで本当か。テレワークと現場の温度差を埋めた事例10選",
+          "publishedAt": "2026-10-21",
+          "customers": [
+            "オリックス銀行株式会社",
+            "大樹生命保険株式会社"
+          ],
+          "products": [
+            "オフィス移転・リニューアルサービス",
+            "オフィス移転・リニューアルサービス、オフィスデザイン・構築サービス、ABW/フリーアドレス"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "5213ed60-e727-4118-bdf6-9b2f4fdb01ff",
+          "label": "#023",
+          "title": "オフィスを変えたら、人が変わった。空間づくりの事例10選",
+          "publishedAt": "2026-10-28",
+          "customers": [
+            "株式会社日経映像",
+            "コニカミノルタ株式会社",
+            "株式会社 YSK e-com",
+            "株式会社インテージ"
+          ],
+          "products": [
+            "オフィス移転・リニューアルサービス、オフィスデザイン・構築サービス",
+            "Change Working",
+            "オフィスデザイン・構築サービス、ABW/フリーアドレス、SmartInfill、COMMONS TABLE SYSTEM-i、LEMNA Work Lounge",
+            "オフィス移転プロジェクトマネジメントサービス、Change Working"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "uhuru.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-13",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Agentforce Service",
+        "Salesforce Experience Cloud",
+        "Amazon Connect"
+      ],
+      "articles": [
+        {
+          "slug": "0b70a33d-35b5-4997-b1e9-8cbf23424865",
+          "label": "#012",
+          "title": "売れた数だけ、仕事が増える。EC運営の裏側を仕組みで解いた事例10選",
+          "publishedAt": "2026-10-13",
+          "customers": [
+            "株式会社Mizkan"
+          ],
+          "products": [
+            "Agentforce Service"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "6b0ca975-0ee5-441e-a196-f29090be7a8d",
+          "label": "#016",
+          "title": "社内のシステムが古すぎて手を出せない、と思ったときに読みたい事例10選",
+          "publishedAt": "2026-10-19",
+          "customers": [
+            "株式会社静岡銀行"
+          ],
+          "products": [
+            "Salesforce Experience Cloud"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "839f3e3b-7d07-4f4b-8381-d5066caef279",
+          "label": "#018",
+          "title": "「うちの仕事は在宅無理」は、どこまで本当か。テレワークと現場の温度差を埋めた事例10選",
+          "publishedAt": "2026-10-21",
+          "customers": [
+            "株式会社ミスミグループ本社"
+          ],
+          "products": [
+            "Amazon Connect"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "unifinity.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Unifinity"
+      ],
+      "articles": [
+        {
+          "slug": "fd6ddb58-47ab-466a-84d7-e6259103dd81",
+          "label": "#030",
+          "title": "同じ数字を、今日も二度打っている。二度打ちより高くついていた、ずれを探す時間を消した事例5選",
+          "publishedAt": "2026-11-06",
+          "customers": [
+            "株式会社エースパック"
+          ],
+          "products": [
+            "Unifinity"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "a1da7dbb-6c67-4b0b-b269-1aaa8e10371e",
+          "label": "#040",
+          "title": "不具合が見つかる段階を、一つ手前にずらした。金型の不具合を、設計から点検までのどこで見つけるかを変えた5社の事例5選",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "株式会社ジーテクト"
+          ],
+          "products": [
+            "Unifinity"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "userlocal.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "User Insight"
+      ],
+      "articles": [
+        {
+          "slug": "b2097cda-0cd2-48a9-802f-c35fa51abd51",
+          "label": "#002",
+          "title": "問い合わせ対応、もう人がやらなくていい仕事かもしれない。事例10選",
+          "publishedAt": "2026-09-29",
+          "customers": [
+            "富士フイルムサービスクリエイティブ株式会社"
+          ],
+          "products": [
+            "User Insight"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "0b70a33d-35b5-4997-b1e9-8cbf23424865",
+          "label": "#012",
+          "title": "売れた数だけ、仕事が増える。EC運営の裏側を仕組みで解いた事例10選",
+          "publishedAt": "2026-10-13",
+          "customers": [
+            "ブックオフコーポレーション株式会社"
+          ],
+          "products": [
+            "User Insight"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "89210e33-77cc-417b-b47d-5fa9e1ea0909",
+          "label": "#015",
+          "title": "広告費は増やした。なのに、受注は増えない。「広告費が受注につながらない」を解決した事例10選",
+          "publishedAt": "2026-10-16",
+          "customers": [
+            "株式会社I-House"
+          ],
+          "products": [
+            "User Insight"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "74d68ee8-f1a2-464d-84a4-9b05ce587cd7",
+          "label": "#019",
+          "title": "うちには社内ITがいないから・・・と思ったときにみたい事例１０選",
+          "publishedAt": "2026-10-22",
+          "customers": [
+            "株式会社タイトー",
+            "株式会社SUBARU"
+          ],
+          "products": [
+            "User Insight"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "usonar.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-16",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ユーソナー",
+        "プランソナー"
+      ],
+      "articles": [
+        {
+          "slug": "89210e33-77cc-417b-b47d-5fa9e1ea0909",
+          "label": "#015",
+          "title": "広告費は増やした。なのに、受注は増えない。「広告費が受注につながらない」を解決した事例10選",
+          "publishedAt": "2026-10-16",
+          "customers": [
+            "レバレジーズ株式会社",
+            "株式会社コンカー",
+            "AGC株式会社"
+          ],
+          "products": [
+            "ユーソナー",
+            "プランソナー"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "valueagent.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-12",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ホームページ制作・Webコンサルティング"
+      ],
+      "articles": [
+        {
+          "slug": "bd64ce85-a3ed-4766-aed5-cc4a24075035",
+          "label": "#011",
+          "title": "求人広告を増やさずに、応募は増えた。「応募が来ない」を解いた採用事例10選",
+          "publishedAt": "2026-10-12",
+          "customers": [
+            "秀英会"
+          ],
+          "products": [
+            "ホームページ制作・Webコンサルティング"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "vtv.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-16",
+      "notifiedAtEstimated": true,
+      "products": [
+        "VTV Care"
+      ],
+      "articles": [
+        {
+          "slug": "89210e33-77cc-417b-b47d-5fa9e1ea0909",
+          "label": "#015",
+          "title": "広告費は増やした。なのに、受注は増えない。「広告費が受注につながらない」を解決した事例10選",
+          "publishedAt": "2026-10-16",
+          "customers": [
+            "ソフトウェア・システム開発会社"
+          ],
+          "products": [
+            "VTV Care"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "works-hi.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-15",
+      "notifiedAtEstimated": true,
+      "products": [
+        "COMPANY 雇用手続管理",
+        "COMPANY Web Service",
+        "COMPANY"
+      ],
+      "articles": [
+        {
+          "slug": "ed9c74a6-161b-401e-9aa4-2ddb5dd32aa1",
+          "label": "#014",
+          "title": "応募は来ている。なのに、面接に人が来ない。「選考が回らない」を解決した採用事例10選",
+          "publishedAt": "2026-10-15",
+          "customers": [
+            "ヤマト運輸株式会社",
+            "パーソルホールディングス株式会社",
+            "ヤマハ発動機ビズパートナー株式会社"
+          ],
+          "products": [
+            "COMPANY 雇用手続管理"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "ab520c82-5d93-43cb-bfcd-0403e70b4389",
+          "label": "#021",
+          "title": "職員室は、日本で一番アナログな職場かもしれない。学校のDX事例10選",
+          "publishedAt": "2026-10-26",
+          "customers": [
+            "国立大学法人 神戸大学"
+          ],
+          "products": [
+            "COMPANY Web Service"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "fd6ddb58-47ab-466a-84d7-e6259103dd81",
+          "label": "#030",
+          "title": "同じ数字を、今日も二度打っている。二度打ちより高くついていた、ずれを探す時間を消した事例5選",
+          "publishedAt": "2026-11-06",
+          "customers": [
+            "菅公学生服株式会社"
+          ],
+          "products": [
+            "COMPANY"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "yamamoto-ss.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-08",
+      "notifiedAtEstimated": true,
+      "products": [
+        "ラベル剥離機 PLS-5000"
+      ],
+      "articles": [
+        {
+          "slug": "c9bf031f-e5ee-4612-8361-c3c9bda34638",
+          "label": "#009",
+          "title": "「早く帰ろう」で消える残業は、少ない。残業を減らした事例10選",
+          "publishedAt": "2026-10-08",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "ラベル剥離機 PLS-5000"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "yamanaka-eng.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "PiezoBolt"
+      ],
+      "articles": [
+        {
+          "slug": "a1da7dbb-6c67-4b0b-b269-1aaa8e10371e",
+          "label": "#040",
+          "title": "不具合が見つかる段階を、一つ手前にずらした。金型の不具合を、設計から点検までのどこで見つけるかを変えた5社の事例5選",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "PiezoBolt"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "yk-yamamoto.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "LIFE SAVER"
+      ],
+      "articles": [
+        {
+          "slug": "980dbcc5-9675-4391-8850-44575be3ae12",
+          "label": "#038",
+          "title": "空間を冷やせない現場の熱中症対策事例5選",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "株式会社岸本建設工業"
+          ],
+          "products": [
+            "LIFE SAVER"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "yu-jin.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-26",
+      "notifiedAtEstimated": true,
+      "products": [
+        "YouMark"
+      ],
+      "articles": [
+        {
+          "slug": "ab520c82-5d93-43cb-bfcd-0403e70b4389",
+          "label": "#021",
+          "title": "職員室は、日本で一番アナログな職場かもしれない。学校のDX事例10選",
+          "publishedAt": "2026-10-26",
+          "customers": [
+            "東京都市大学付属中学校"
+          ],
+          "products": [
+            "YouMark"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "zendesk.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-09-29",
+      "notifiedAtEstimated": true,
+      "products": [
+        "Zendesk"
+      ],
+      "articles": [
+        {
+          "slug": "b2097cda-0cd2-48a9-802f-c35fa51abd51",
+          "label": "#002",
+          "title": "問い合わせ対応、もう人がやらなくていい仕事かもしれない。事例10選",
+          "publishedAt": "2026-09-29",
+          "customers": [
+            "株式会社アンドエスティHD"
+          ],
+          "products": [
+            "Zendesk"
+          ],
+          "notified": true
+        },
+        {
+          "slug": "0b70a33d-35b5-4997-b1e9-8cbf23424865",
+          "label": "#012",
+          "title": "売れた数だけ、仕事が増える。EC運営の裏側を仕組みで解いた事例10選",
+          "publishedAt": "2026-10-13",
+          "customers": [
+            "株式会社ジェイアール東日本企画"
+          ],
+          "products": [
+            "Zendesk"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "クラウドトーマス.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-10-06",
+      "notifiedAtEstimated": true,
+      "products": [
+        "クラウドトーマス"
+      ],
+      "articles": [
+        {
+          "slug": "c01f3cb4-d1da-459d-9bf3-42ec69858311",
+          "label": "#007",
+          "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
+          "publishedAt": "2026-10-06",
+          "customers": [
+            "株式会社オーレック"
+          ],
+          "products": [
+            "クラウドトーマス"
+          ],
+          "notified": true
+        }
+      ],
+      "memo": ""
+    }
+  ]
+}
