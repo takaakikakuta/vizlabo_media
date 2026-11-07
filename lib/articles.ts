@@ -186,6 +186,43 @@ export type SenArticle = {
   relatedSlugs?: string[]; // 関連する解体新書記事
 };
 
+/* ── 型8：事例でわかる技術用語（「〇〇とは」で検索した人に、用語の説明と、その用語で課題を解いた事例を1記事で渡す） ── */
+export type YougoArticle = {
+  format: "yougo";
+  sponsored?: boolean;  // タイアップ（PR）記事か。未指定＝編集記事
+  thumbnail?: string;   // 一覧・トップで使うサムネイル（未設定なら public/thumbnail/yougo-<no>.jpg → 記事内事例の画像の順に自動）
+  slug: string;
+  no: number;           // 連載内の連番（事例セレクションとは別に数える）
+  series: string;       // "事例でわかる技術用語"
+  publishedAt: string;
+  term: string;         // 用語（検索語そのもの。例: RFID）
+  title: string[];      // 「{用語}とは｜{N}つの事例でわかる」
+  lead: string;         // 2〜3文。検索した人の疑問に最初の3行で答える
+  description: string;  // meta description（120字以内）
+  thumbLine: string;    // サムネ用の一行要約（SNS・一覧の補助。表には出さない）
+  definition: string;   // 「{用語}とは」本文（300字程度。専門用語を使わず、何を解決するためのものかを中心に）
+  fit: string[];        // 向いている課題（3つ）
+  unfit: { text: string; caseId?: string }[];  // 向かない課題（3つ。根拠になる事例があれば caseId で事例ページに繋ぐ）
+  items: {
+    caseId: string;
+    service?: string;   // 見出しの「× サービス名」を製品名から短くしたいときの上書き
+    genjo: string;      // 現状
+    nayami: string;     // 悩み
+    uchite: string;     // 打ち手
+    kekka: string;      // 結果（数字は事例の results の範囲）
+    hitokoto: string;   // 読者が自社に当てはめられる一言（言い切り）
+    linkOnly?: { body: string };  // 事例が linkOnly になったときの差し替え（企業名・規模・数字を書かない）
+  }[];
+  wakareme: {
+    intro: string;      // どの条件の違いで打ち手が変わったか（導入）
+    points: { label: string; body: string }[];  // 分かれ目の軸（3本のとき）
+    table?: { rows: { label: string; values: string[] }[] };  // 5本のときの表（values は items と同順）
+    judge: string;      // 読者が「自社はどれに近いか」を決めるための問い
+  };
+  relatedTerms: { label: string; href: string }[];  // 関連する用語（用語記事があればそのURL、無ければ困りごとタグ・製品カテゴリのページ）
+  relatedSlugs?: string[];  // 関連する事例セレクション
+};
+
 /* 全型共通の任意フィールド。
    hidden: true … 退役した旧記事の非公開（データは残す）
    draft: true  … 公開前の下書き。公開するときはこの行を消して（または false にして）push する。
@@ -200,6 +237,7 @@ export type Article = (
   | EkkyouArticle
   | ButaiuraArticle
   | SenArticle
+  | YougoArticle
 ) & ArticleCommon;
 
 const DIR = path.join(process.cwd(), "content", "articles");
@@ -256,6 +294,9 @@ export function articleCaseIds(a: Article): string[] {
     case "sen":
       ids = a.items.map((x) => x.caseId);
       break;
+    case "yougo":
+      ids = a.items.map((x) => x.caseId);
+      break;
   }
   return [...new Set(ids)].filter(Boolean);
 }
@@ -289,12 +330,14 @@ export function articleThumb(a: Article): string | undefined {
   if (a.thumbnail === "none") return undefined;  // 番号連動の自動取得も使わない明示指定
   if (a.thumbnail) return a.thumbnail;
   for (const ext of ["jpg", "png"]) {
-    const file = `${String(a.no).padStart(3, "0")}.${ext}`;
+    // 用語記事は連番が事例セレクションと別なので、ファイル名に接頭辞を付けて衝突を避ける
+    const file = `${a.format === "yougo" ? "yougo-" : ""}${String(a.no).padStart(3, "0")}.${ext}`;
     if (fs.existsSync(path.join(process.cwd(), "public", "thumbnail", file))) return `/thumbnail/${file}`;
   }
   if (a.format === "wakaremichi") return getCase(a.caseA.id)?.image ?? getCase(a.caseB.id)?.image;
   if (a.format === "genba") return getCase(a.axisId)?.image;
   if (a.format === "ekkyou") return getCase(a.caseA.id)?.image ?? getCase(a.caseB.id)?.image;
   if (a.format === "sen") return a.items.map((x) => getCase(x.caseId)?.image).find(Boolean);
+  if (a.format === "yougo") return a.items.map((x) => getCase(x.caseId)?.image).find(Boolean);
   return undefined;
 }

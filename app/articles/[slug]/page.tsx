@@ -8,6 +8,7 @@ import Chizu from "../../../components/articles/Chizu";
 import Ekkyou from "../../../components/articles/Ekkyou";
 import Butaiura from "../../../components/articles/Butaiura";
 import Sen from "../../../components/articles/Sen";
+import Yougo from "../../../components/articles/Yougo";
 
 /* オリジナル記事の本番ルート。format に応じてテンプレートを出し分ける。
    記事を1本増やす＝ content/articles/ にJSONを1つ置く、だけ。 */
@@ -21,7 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!a) return {};
   return {
     title: `${a.series} #${String(a.no).padStart(3, "0")}｜${a.title.join("")}`,
-    description: a.lead.slice(0, 120),
+    // 用語記事は書き下ろしの meta description を使う（検索結果に出る文）。他の型はリードの先頭
+    description: a.format === "yougo" ? a.description : a.lead.slice(0, 120),
   };
 }
 
@@ -44,6 +46,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       return <Butaiura article={a} />;
     case "sen":
       return <Sen article={a} />;
+    case "yougo":
+      return <Yougo article={a} />;
     default:
       notFound();
   }
