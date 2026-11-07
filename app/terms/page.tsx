@@ -23,7 +23,7 @@ export default function TermsPage() {
         {articles.map((a) => (
           <Link key={a.slug} href={`/terms/${a.slug}`}
             className="row group flex flex-col gap-4 border-b border-line2 px-2 py-6 no-underline sm:flex-row sm:gap-5">
-            <div className="relative aspect-[5/3] w-full shrink-0 self-start overflow-hidden rounded-[3px] border border-line2 bg-soft sm:w-40">
+            <div className="relative aspect-video w-full shrink-0 self-start overflow-hidden rounded-[3px] border border-line2 bg-soft sm:w-40">
               {articleThumb(a)
                 ? <CoverImg src={articleThumb(a)!} />
                 : <span className="font-display absolute inset-0 grid place-items-center px-3 text-center text-[20px] leading-tight text-ink sm:text-[15px]">{a.term}</span>}
