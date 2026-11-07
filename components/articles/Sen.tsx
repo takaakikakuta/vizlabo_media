@@ -12,12 +12,15 @@ import FeaturedServices from "./FeaturedServices";
 import SuggestForm from "../SuggestForm";
 import { SUGGEST_ENABLED } from "../../lib/flags";
 import LinkOnlyCard from "../LinkOnlyCard";
+import VideoBadge, { PlayMark } from "../VideoBadge";
+import { hasVideo } from "../../lib/video";
 
 /* 「選」テンプレート（課題別の事例10選・5選）。順位ではなく並列の選として組む。
    trivia（背景の知識）と compare（比べる表）は旧記事（旧3選・旧5選）向けで、新しい記事では使わない。
    各項目は〈書き下ろしの見出し＋読みどころ〉＋〈事例データから自動で出すカルテと成果数字〉。
    事例が linkOnly（掲載元から取り下げ依頼）なら、企業名・規模・数字・画像を出さず、
-   item.linkOnly の短い紹介と提供元ロゴつきの元記事リンクだけにする（番号と本数は崩さない）。 */
+   item.linkOnly の短い紹介と提供元ロゴつきの元記事リンクだけにする（番号と本数は崩さない）。
+   元記事に YouTube 動画がある事例（video あり）は、カルテ行に「動画あり」の印、カードの画像に再生マークを出す。 */
 
 export default function Sen({ article }: { article: SenArticle }) {
   const entries = article.items
@@ -104,7 +107,10 @@ export default function Sen({ article }: { article: SenArticle }) {
                   <span className="num shrink-0 text-[22px] leading-none text-muted">{String(e.i + 1).padStart(2, "0")}</span>
                   <span className="font-display text-[20px] leading-[1.5] text-ink">{e.headline}</span>
                 </h2>
-                <p className="mt-2.5 ml-10 text-[12px] text-muted">{industryLabel(c.customer.industry)}</p>
+                <p className="mt-2.5 ml-10 text-[12px] text-muted">
+                  {industryLabel(c.customer.industry)}
+                  {hasVideo(c) && <span className="ml-2.5"><VideoBadge /></span>}
+                </p>
                 {e.body && <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>}
                 <div className="mt-4 ml-10"><LinkOnlyCard c={c} campaign="article" content={article.slug} /></div>
               </section>
@@ -120,6 +126,7 @@ export default function Sen({ article }: { article: SenArticle }) {
               <p className="mt-2.5 ml-10 text-[12px] text-muted">
                 {c.customer.name || "導入企業（非公開）"} ・ {industryLabel(c.customer.industry)}
                 {c.customer.size && ` ・ ${c.customer.size}`}
+                {hasVideo(c) && <span className="ml-2.5"><VideoBadge /></span>}
               </p>
               <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>
               {results.length > 0 && (
@@ -145,6 +152,7 @@ export default function Sen({ article }: { article: SenArticle }) {
                   {c.image
                     ? <CoverImg src={c.image} />
                     : (vendorLogo(c.vendor) && <VendorLogo src={vendorLogo(c.vendor)!} size={34} />)}
+                  {hasVideo(c) && <PlayMark className="bottom-1.5 left-1.5" />}
                 </span>
                 <span className="min-w-0">
                   <span className="block truncate text-[12px] text-muted">{c.title}</span>
