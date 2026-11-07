@@ -2127,9 +2127,9 @@
     {
       "domain": "hitachi-systems-es.co.jp",
       "company": "",
-      "status": "no-objection",
-      "notifiedAt": "2026-11-07",
-      "notifiedAtEstimated": true,
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
       "products": [
         "物品管理システム"
       ],
@@ -2145,7 +2145,7 @@
           "products": [
             "物品管理システム"
           ],
-          "notified": true
+          "notified": false
         }
       ],
       "memo": ""
@@ -4921,7 +4921,7 @@
           "products": [
             "RFIDリストバンド・三点認証システム"
           ],
-          "notified": true
+          "notified": false
         },
         {
           "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
@@ -5718,7 +5718,7 @@
           "products": [
             "TrueVUE hybrid"
           ],
-          "notified": true
+          "notified": false
         }
       ],
       "memo": ""

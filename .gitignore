@@ -56,3 +56,6 @@ data/*.bak
 data/*.imgbak
 data/*.resbak
 data/*.tagbak
+
+# 掲載通知文の下書き（scripts/vendors/notify.mjs の出力。送ったら contacts.mjs で記録する）
+/content/articles/notify/

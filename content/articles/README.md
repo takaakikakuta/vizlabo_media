@@ -124,7 +124,7 @@ node scripts/inventory/inventory.mjs --tags                 # 困りごとタグ
 
 ## 提供元への掲載連絡の記録
 
-記事に出した提供元のうち、連絡済みで削除依頼がなかった先は [VENDORS.md](VENDORS.md)（元データは `data/vendor_contacts.json`）。公開した記事の提供元は `node scripts/vendors/contacts.mjs` で「未連絡」に入り、連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]` で連絡済みにする。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。判定（10選・5選・不足）は各ガイドの件数の目安をそのまま機械的に当てたもので、企画の入口の確認用。選ぶときは候補の全件を読む。
+記事に出した提供元のうち、連絡済みで削除依頼がなかった先は [VENDORS.md](VENDORS.md)（元データは `data/vendor_contacts.json`）。掲載通知文は `node scripts/vendors/notify.mjs <記事slug|no|用語no> [--short] [--no-url] [--tieup]` で提供元ごとに作る（Claude Code では `/notify`。出力は `content/articles/notify/` に書き出され、git には入れない）。公開した記事の提供元は `node scripts/vendors/contacts.mjs` で「未連絡」に入り、連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]` で連絡済みにする。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。判定（10選・5選・不足）は各ガイドの件数の目安をそのまま機械的に当てたもので、企画の入口の確認用。選ぶときは候補の全件を読む。
 
 ## タイアップ（PR）記事にするとき
 
