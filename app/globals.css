@@ -24,6 +24,7 @@
   --color-accent: #0e6e52;     /* 成果の数字（深緑）＝この誌面の主役 */
   --color-accent2: #12876a;
   --color-accent-soft: #e8f2ee;
+  --color-video: #c8322b;      /* 「動画あり」の印（再生マークの赤。誌面で唯一の赤） */
 
   --font-sans: var(--font-geist-sans);
 

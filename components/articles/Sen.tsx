@@ -108,8 +108,8 @@ export default function Sen({ article }: { article: SenArticle }) {
                   <span className="font-display text-[20px] leading-[1.5] text-ink">{e.headline}</span>
                 </h2>
                 <p className="mt-2.5 ml-10 text-[12px] text-muted">
+                  {hasVideo(c) && <span className="mr-2.5"><VideoBadge /></span>}
                   {industryLabel(c.customer.industry)}
-                  {hasVideo(c) && <span className="ml-2.5"><VideoBadge /></span>}
                 </p>
                 {e.body && <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>}
                 <div className="mt-4 ml-10"><LinkOnlyCard c={c} campaign="article" content={article.slug} /></div>
@@ -124,9 +124,10 @@ export default function Sen({ article }: { article: SenArticle }) {
                 <span className="font-display text-[20px] leading-[1.5] text-ink">{e.headline}</span>
               </h2>
               <p className="mt-2.5 ml-10 text-[12px] text-muted">
+                {/* 動画ありの印は行頭に置く（スマホで折り返しても位置がずれず、最初に目に入る） */}
+                {hasVideo(c) && <span className="mr-2.5"><VideoBadge /></span>}
                 {c.customer.name || "導入企業（非公開）"} ・ {industryLabel(c.customer.industry)}
                 {c.customer.size && ` ・ ${c.customer.size}`}
-                {hasVideo(c) && <span className="ml-2.5"><VideoBadge /></span>}
               </p>
               <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>
               {results.length > 0 && (

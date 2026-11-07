@@ -55,7 +55,9 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
         </Link>
         {c.sample && <><span className="text-line">|</span><span className="text-muted">サンプル(仮)</span></>}
         {/* 元記事に動画がある事例の印。動画は元記事の説明と一緒に見てもらうので、動画への直リンクは出さない */}
-        {hasVideo(c) && <><span className="text-line">|</span><VideoBadge size="md" /></>}
+        {/* スマホでは印を次の行に独立させる（区切り線が行末に取り残されないよう、区切り線は sm 以上だけ） */}
+        {hasVideo(c) && <><span className="hidden text-line sm:inline">|</span>
+          <span className="mt-1.5 basis-full sm:mt-0 sm:basis-auto"><VideoBadge size="md" /></span></>}
       </div>
 
       <h1 className="font-display mt-5 text-[27px] leading-[1.42] text-ink sm:text-[36px] sm:leading-[1.38]">
