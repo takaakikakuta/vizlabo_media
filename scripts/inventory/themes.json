@@ -349,7 +349,9 @@
     {
       "name": "日報",
       "pattern": "日報",
-      "articles": []
+      "articles": [
+        57
+      ]
     },
     {
       "name": "契約・電子署名",
