@@ -200,22 +200,16 @@ export type YougoArticle = {
   lead: string;         // 2〜3文。検索した人の疑問に最初の3行で答える
   description: string;  // meta description（120字以内）
   thumbLine: string;    // サムネ用の一行要約（SNS・一覧の補助。表には出さない）
-  definition: string;   // 「{用語}とは」本文（300字程度。専門用語を使わず、何を解決するためのものかを中心に）
-  fit: string[];        // 向いている課題（3つ）
-  unfit: { text: string; caseId?: string }[];  // 向かない課題（3つ。根拠になる事例があれば caseId で事例ページに繋ぐ）
+  definition: string;   // 「{用語}とは」本文（150字程度。専門用語を使わず、何を解決するためのものかを中心に）
+  fitNote: string;      // 向いている仕事・向かない仕事を1〜2文で（箇条書きにしない）
   items: {
     caseId: string;
+    label: string;      // 事例の一言ラベル（4〜8字。例: 店舗の棚卸）。読者が本文を読まずに自分に近い事例を選べるように
     service?: string;   // 見出しの「× サービス名」を製品名から短くしたいときの上書き
     body: string;       // 何に困り、何をして、どうなったかを1段落（2〜3文）。詳細は事例ページに任せる
     hitokoto: string;   // 読者が自社に当てはめられる一言（言い切り）
     linkOnly?: { body: string };  // 事例が linkOnly になったときの差し替え（企業名・規模・数字を書かない）
   }[];
-  wakareme: {
-    intro: string;      // どの条件の違いで打ち手が変わったか（導入）
-    points: { label: string; body: string }[];  // 分かれ目の軸（3本のとき）
-    table?: { rows: { label: string; values: string[] }[] };  // 5本のときの表（values は items と同順）
-    judge: string;      // 読者が「自社はどれに近いか」を決めるための問い
-  };
   relatedTerms: { label: string; href: string }[];  // 関連する用語（用語記事があればそのURL、無ければ困りごとタグ・製品カテゴリのページ）
   relatedSlugs?: string[];  // 関連する事例セレクション
 };
