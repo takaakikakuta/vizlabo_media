@@ -12,15 +12,17 @@ function Card({ p }: { p: NotePost }) {
   const title = p.title.replace(/^【[^】]*】\s*/, "");
   return (
     <a href={p.url} target="_blank" rel="noopener noreferrer"
-      className="group flex gap-4 border border-ink bg-white p-3 no-underline transition hover:bg-soft sm:p-4">
-      {/* note の OGP は 1.91:1（1280×670）。比率を合わせて端が切れないようにする */}
-      <div className="relative aspect-[1.91/1] w-32 shrink-0 overflow-hidden rounded-[3px] border border-line2 bg-soft sm:w-40">
+      className="group flex flex-col border border-ink bg-white no-underline transition hover:bg-soft">
+      {/* note のアイキャッチは 1.91:1（1280×670）で、文字が大きく入っている。
+         カードの上に横幅いっぱいで出し、比率を固定して端が切れないようにする
+         （横並びにすると枠が文字の高さに引き伸ばされ、左右が切り落とされていた） */}
+      <div className="relative aspect-[1.91/1] w-full overflow-hidden border-b border-ink bg-soft">
         {p.image && <CoverImg src={p.image} />}
       </div>
-      <div className="min-w-0 flex-1">
+      <div className="flex flex-1 flex-col p-3 sm:p-4">
         <p className="label">{LABEL[p.kind]}<span className="ml-1.5 font-normal tracking-normal text-muted/70">note</span></p>
-        <p className="font-display mt-1 line-clamp-3 text-[14px] leading-snug text-ink group-hover:text-brand sm:text-[15px]">{title}</p>
-        <p className="mt-2 text-[12px] font-bold text-ink">noteで読む →</p>
+        <p className="font-display mt-1 line-clamp-2 text-[14px] leading-snug text-ink group-hover:text-brand sm:text-[15px]">{title}</p>
+        <p className="mt-auto pt-2 text-[12px] font-bold text-ink">noteで読む →</p>
       </div>
     </a>
   );
