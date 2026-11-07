@@ -119,7 +119,8 @@ node scripts/inventory/inventory.mjs --theme 金型 --industry manufacturing
 node scripts/inventory/inventory.mjs --tags                 # 困りごとタグ別の件数
 ```
 
-テーマは `scripts/inventory/themes.json` に1行足せば表に載る。判定（10選・5選・不足）は各ガイドの件数の目安をそのまま機械的に当てたもので、企画の入口の確認用。選ぶときは候補の全件を読む。
+テーマは `scripts/inventory/themes.json` に1行足せば表に載る。
+「事例でわかる技術用語」の用語候補（用語別・業種別の件数と推奨本数）は [TERMS.md](TERMS.md)。`node scripts/inventory/terms.mjs` で再生成する。判定（10選・5選・不足）は各ガイドの件数の目安をそのまま機械的に当てたもので、企画の入口の確認用。選ぶときは候補の全件を読む。
 
 ## タイアップ（PR）記事にするとき
 
