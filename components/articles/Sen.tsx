@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getCase, getLinkOnlyCase } from "../../lib/cases";
-import { getArticle, articleThumb } from "../../lib/articles";
+import { getArticle, articleThumb, articleHref } from "../../lib/articles";
 import { industryLabel } from "../../lib/taxonomy";
 import { parseStat } from "../../lib/stat";
 import CoverImg from "../CoverImg";
@@ -221,7 +221,7 @@ export default function Sen({ article }: { article: SenArticle }) {
                 const a = getArticle(s);
                 if (!a) return null;
                 return (
-                  <Link key={s} href={`/articles/${a.slug}`}
+                  <Link key={s} href={articleHref(a)}
                     className="row group block border border-line2 p-3 no-underline transition hover:border-ink">
                     <div className="relative mb-3 aspect-[5/3] w-full overflow-hidden rounded-[3px] border border-line2 bg-soft">
                       {articleThumb(a)

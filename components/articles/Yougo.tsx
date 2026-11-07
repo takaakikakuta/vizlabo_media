@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getCase, getLinkOnlyCase } from "../../lib/cases";
-import { getArticle, articleThumb } from "../../lib/articles";
+import { getArticle, articleThumb, articleHref } from "../../lib/articles";
 import { industryLabel } from "../../lib/taxonomy";
 import { parseStat } from "../../lib/stat";
 import { withUtm } from "../../lib/source";
@@ -22,8 +22,6 @@ import { hasVideo } from "../../lib/video";
    → 条件の違いで打ち手がどう変わったか（分かれ目）→ 関連する用語・記事、の順に組む。
    事例の見出し（導入企業名 × サービス名）・業種・規模・成果チップ・事例リンク・出典リンクは事例データから自動で出す。
    事例が linkOnly（掲載元から取り下げ依頼）なら、企業名・規模・数字を出さず、item.linkOnly の紹介と元記事リンクだけにする。 */
-
-const SERIES_DEFAULT = "事例セレクション";
 
 function serviceName(product: string, vendor: string): string {
   return (product || vendorLabel(vendor)).split(/[（(]/)[0].trim();
@@ -315,7 +313,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                 const a = getArticle(s);
                 if (!a) return null;
                 return (
-                  <Link key={s} href={`/articles/${a.slug}`}
+                  <Link key={s} href={articleHref(a)}
                     className="row group block border border-line2 p-3 no-underline transition hover:border-ink">
                     <div className="relative mb-3 aspect-[5/3] w-full overflow-hidden rounded-[3px] border border-line2 bg-soft">
                       {articleThumb(a)
@@ -323,7 +321,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                         : <span className="num absolute inset-0 grid place-items-center text-[20px] text-muted">#{String(a.no).padStart(3, "0")}</span>}
                     </div>
                     <span className="num text-[11px] text-muted">
-                      {a.series !== SERIES_DEFAULT && <span className="mr-2">{a.series}</span>}#{String(a.no).padStart(3, "0")}
+                      {a.series !== article.series && <span className="mr-2">{a.series}</span>}#{String(a.no).padStart(3, "0")}
                     </span>
                     <span className="font-display mt-1 block text-[15px] leading-[1.55] text-ink group-hover:text-brand">
                       {a.title.join("")}

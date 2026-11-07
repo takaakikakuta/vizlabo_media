@@ -4,7 +4,7 @@ import { challengeCounts, industryCounts, newestCases, siteStats, tagCounts } fr
 import { challengeStyle } from "../lib/visuals";
 import CaseCard from "../components/CaseCard";
 import BrowseTabs from "../components/BrowseTabs";
-import { allArticles, articleThumb } from "../lib/articles";
+import { allArticles, allTermArticles, articleThumb } from "../lib/articles";
 import { dayImage, dayLabel, todayDay } from "../lib/days";
 import CoverImg from "../components/CoverImg";
 import { SUGGEST_ENABLED } from "../lib/flags";
@@ -78,6 +78,7 @@ export default async function Home() {
   const s = siteStats();
   const newest = newestCases(4);
   const articles = allArticles().slice(0, 3);
+  const terms = allTermArticles().slice(0, 3);  // 事例でわかる技術用語（事例セレクションとは別の連載）
   const today = todayDay();  // 今日の記念日 → 同じ月日の昨年以前 → 次の記念日 → 直近に過ぎた記念日
   const browseChallenges = CHALLENGES.map((ch) => ({
     slug: ch.slug, label: ch.label, desc: ch.desc,
@@ -180,12 +181,31 @@ export default async function Home() {
                 </div>
                 <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 text-[11px] text-muted">
                   <span className="num text-[12px] text-ink">#{String(a.no).padStart(3, "0")}</span>
-                  {a.series !== "事例セレクション" && (
-                    <span className="border border-line px-1.5 py-0.5 text-[8.5px] font-bold tracking-widest text-ink">{a.series}</span>
-                  )}
                   {a.sponsored && (
                     <span className="border border-line px-1.5 py-0.5 text-[8.5px] font-bold tracking-widest">Sponsored</span>
                   )}
+                </div>
+                <h3 className="font-display mt-2 text-[16px] leading-[1.55] text-ink group-hover:text-brand">
+                  {a.title.join("")}
+                </h3>
+                <p className="mt-2 line-clamp-2 text-[12px] leading-[1.85] text-muted">{a.lead}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── 事例でわかる技術用語：「〇〇とは」で検索した人向けの、用語の説明＋事例 ── */}
+      {terms.length > 0 && (
+        <section className="mx-auto max-w-6xl px-5 pb-16">
+          <SectionHead title="事例でわかる技術用語" sub="用語の説明と、その用語で課題を解いた事例を1記事で" href="/terms" />
+          <div className="grid gap-x-10 border-t border-line md:grid-cols-3 md:gap-x-8">
+            {terms.map((a) => (
+              <Link key={a.slug} href={`/terms/${a.slug}`}
+                className="row group block border-b border-line2 px-2 py-5 no-underline">
+                <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 text-[11px] text-muted">
+                  <span className="num text-[12px] text-ink">#{String(a.no).padStart(3, "0")}</span>
+                  <span className="font-display text-[12px] tracking-[.12em] text-muted">{a.term}</span>
                 </div>
                 <h3 className="font-display mt-2 text-[16px] leading-[1.55] text-ink group-hover:text-brand">
                   {a.title.join("")}
