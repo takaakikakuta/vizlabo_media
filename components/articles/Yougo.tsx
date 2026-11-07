@@ -18,7 +18,7 @@ import VideoBadge, { PlayMark } from "../VideoBadge";
 import { hasVideo } from "../../lib/video";
 
 /* 「事例でわかる技術用語」テンプレート。「〇〇とは」で検索した人向けに、
-   用語の説明（何を解決するものか）→ 向き不向き → その用語で課題を解いた事例（現状→悩み→打ち手→結果）
+   用語の説明（何を解決するものか）→ 向き不向き → その用語で課題を解いた事例（1段落＋読者向けの一言）
    → 条件の違いで打ち手がどう変わったか（分かれ目）→ 関連する用語・記事、の順に組む。
    事例の見出し（導入企業名 × サービス名）・業種・規模・成果チップ・事例リンク・出典リンクは事例データから自動で出す。
    事例が linkOnly（掲載元から取り下げ依頼）なら、企業名・規模・数字を出さず、item.linkOnly の紹介と元記事リンクだけにする。 */
@@ -144,7 +144,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
         </div>
       </section>
 
-      {/* ── 事例（現状 → 悩み → 打ち手 → 結果） ── */}
+      {/* ── 事例（1段落＋読者向けの一言。詳細は事例ページに任せる） ── */}
       <div className="mt-4">
         {entries.map((e) => {
           const c = e.c;
@@ -168,7 +168,6 @@ export default function Yougo({ article }: { article: YougoArticle }) {
             );
           }
           const results = (c.results ?? []).slice(0, 2);
-          const steps: [string, string][] = [["現状", e.genjo], ["悩み", e.nayami], ["打ち手", e.uchite], ["結果", e.kekka]];
           return (
             <section key={e.caseId} id={`item${e.i + 1}`} className="mt-12 scroll-mt-20">
               <h2 className="flex items-baseline gap-4 border-t-2 border-ink pt-5">
@@ -183,15 +182,8 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                 {c.customer.size && ` ・ ${c.customer.size}`}
                 {` ・ 提供：${vendorLabel(c.vendor)}`}
               </p>
-              <dl className="mt-4 ml-10 border-t border-line2">
-                {steps.map(([k, v]) => (
-                  <div key={k} className="flex flex-col gap-1 border-b border-line2 py-3 sm:flex-row sm:gap-5">
-                    <dt className="label shrink-0 pt-[7px] sm:w-14">{k}</dt>
-                    <dd className="text-[13.5px] leading-[2.05] text-body">{v}</dd>
-                  </div>
-                ))}
-              </dl>
-              <p className="mt-4 ml-10 border-l-2 border-ink pl-4 text-[13.5px] leading-[2.05] text-ink">{e.hitokoto}</p>
+              <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>
+              <p className="mt-3 ml-10 border-l-2 border-ink pl-4 text-[13.5px] leading-[2.05] text-ink">{e.hitokoto}</p>
               {results.length > 0 && (
                 <div className="mt-4 ml-10 flex flex-wrap gap-x-8 gap-y-3 border-y border-line py-3.5">
                   {results.map((r, j) => {

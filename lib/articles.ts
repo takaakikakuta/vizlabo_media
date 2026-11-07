@@ -206,10 +206,7 @@ export type YougoArticle = {
   items: {
     caseId: string;
     service?: string;   // 見出しの「× サービス名」を製品名から短くしたいときの上書き
-    genjo: string;      // 現状
-    nayami: string;     // 悩み
-    uchite: string;     // 打ち手
-    kekka: string;      // 結果（数字は事例の results の範囲）
+    body: string;       // 何に困り、何をして、どうなったかを1段落（2〜3文）。詳細は事例ページに任せる
     hitokoto: string;   // 読者が自社に当てはめられる一言（言い切り）
     linkOnly?: { body: string };  // 事例が linkOnly になったときの差し替え（企業名・規模・数字を書かない）
   }[];
