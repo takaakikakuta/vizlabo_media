@@ -180,6 +180,9 @@ export default async function Home() {
                 </div>
                 <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 text-[11px] text-muted">
                   <span className="num text-[12px] text-ink">#{String(a.no).padStart(3, "0")}</span>
+                  {a.series !== "事例セレクション" && (
+                    <span className="border border-line px-1.5 py-0.5 text-[8.5px] font-bold tracking-widest text-ink">{a.series}</span>
+                  )}
                   {a.sponsored && (
                     <span className="border border-line px-1.5 py-0.5 text-[8.5px] font-bold tracking-widest">Sponsored</span>
                   )}

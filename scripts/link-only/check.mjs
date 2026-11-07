@@ -119,7 +119,7 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json") && (!asIf 
 
   const notes = [];
   for (const c of used) {
-    if (a.format !== "sen") {
+    if (a.format !== "sen" && a.format !== "yougo") {
       notes.push(`${c.id}: 事例セレクション以外の型（${a.format}）。事例を差し替える`);
       continue;
     }

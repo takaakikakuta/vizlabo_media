@@ -8,6 +8,7 @@
 - 業界を越える事例型: [WRITING-ekkyou.md](WRITING-ekkyou.md)
 - 導入の舞台裏型: [WRITING-butaiura.md](WRITING-butaiura.md)
 - 選（事例10選・5選）型: [WRITING-sen.md](WRITING-sen.md) — 10選と5選は同じ書き方。違いは本数と課題の幅だけ（3選は 2026-10-29 に廃止）
+- 事例でわかる技術用語型: [WRITING-yougo.md](WRITING-yougo.md) — 「〇〇とは」で検索した人向け。用語の説明＋その用語で課題を解いた事例3本か5本
 - 事例単体（/cases/…）: [WRITING-case.md](WRITING-case.md) — 説明はさらっと（カルテ。自動生成＋手直しの作法）
 
 記事の「書かれた部分」はこのフォルダのJSONにある。文章を直す＝JSONの値を書き換えるだけ。
