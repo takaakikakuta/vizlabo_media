@@ -72892,7 +72892,8 @@
       "不良の見逃し",
       "担当者不在で止まる"
     ],
-    "image": "https://www.sato.co.jp/case/img/img_yaoko_2_01.jpg"
+    "image": "https://www.sato.co.jp/case/img/img_yaoko_2_01.jpg",
+    "video": true
   },
   {
     "id": "www-satotekko-cfs-jp-voice-voice02",
@@ -170234,7 +170235,8 @@
       "業務の属人化",
       "ミスの再発",
       "繁忙期の人員不足"
-    ]
+    ],
+    "video": true
   },
   {
     "id": "www-sato-co-jp-case-tk-toka-html",
