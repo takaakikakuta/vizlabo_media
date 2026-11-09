@@ -261,7 +261,8 @@
             "TimeP@CK",
             "TimeP@CK-iC"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -690,7 +691,7 @@
           "notified": false
         }
       ],
-      "memo": ""
+      "memo": "2026-11-09 問い合わせフォーム停止中のため #035 の掲載連絡を送れず。復旧したら送る"
     },
     {
       "domain": "cashmo.jp",
@@ -786,8 +787,8 @@
     {
       "domain": "ciftr.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "シフター"
@@ -804,7 +805,8 @@
           "products": [
             "シフター"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -1170,8 +1172,8 @@
     {
       "domain": "ehime-medicaldx.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ"
@@ -1188,7 +1190,8 @@
           "products": [
             "業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -1639,7 +1642,8 @@
           "products": [
             "フォーカス給与明細クラウド"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -1719,7 +1723,8 @@
           "products": [
             "freee会計、freee給与、freee税務申告"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -2445,7 +2450,7 @@
           "notified": false
         }
       ],
-      "memo": ""
+      "memo": "2026-11-09 サイト停止中のため #034 の掲載連絡を送れず。復旧したら送る"
     },
     {
       "domain": "ip3.co.jp",
@@ -2771,7 +2776,7 @@
           "notified": false
         }
       ],
-      "memo": ""
+      "memo": "2026-11-09 サイト停止中のため #034 の掲載連絡を送れず。復旧したら送る"
     },
     {
       "domain": "kobelcosys.co.jp",
@@ -3609,8 +3614,8 @@
     {
       "domain": "mjs.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "MJSお金の管理、ACELINK NX-Pro",
@@ -3630,7 +3635,8 @@
             "MJSお金の管理、ACELINK NX-Pro",
             "ACELINK NX-Pro"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -3659,7 +3665,7 @@
           "notified": false
         }
       ],
-      "memo": ""
+      "memo": "#034 は導入企業名が非公開のため通知文を作れず、未送付"
     },
     {
       "domain": "mobilus.co.jp",
@@ -5533,8 +5539,8 @@
     {
       "domain": "soukei-lab.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "経理アウトソーシング"
@@ -5551,7 +5557,8 @@
           "products": [
             "経理アウトソーシング"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -5969,8 +5976,8 @@
     {
       "domain": "totec-mlife.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "見守りライフ"
@@ -5987,7 +5994,8 @@
           "products": [
             "見守りライフ"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -6127,8 +6135,8 @@
     {
       "domain": "transcosmos-cotra.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "tra:lien"
@@ -6145,7 +6153,8 @@
           "products": [
             "tra:lien"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""

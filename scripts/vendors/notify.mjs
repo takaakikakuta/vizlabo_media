@@ -56,7 +56,7 @@ const contacts = fs.existsSync(path.join(ROOT, "data/vendor_contacts.json")) ? r
 const contact = (domain) => contacts.find((v) => v.domain === domain);
 
 /* 法人格を外す（記事の表記に合わせ、敬称は「様」） */
-const strip = (name) => name.replace(/(株式会社|有限会社|合同会社|合資会社|一般社団法人|一般財団法人|公益社団法人|公益財団法人|社会福祉法人|医療法人社団|医療法人|学校法人|特定非営利活動法人|NPO法人|独立行政法人|国立大学法人)/g, "").replace(/^[\s・]+|[\s・]+$/g, "").trim() || name;
+const strip = (name) => name.replace(/(株式会社|有限会社|合同会社|合資会社|一般社団法人|一般財団法人|公益社団法人|公益財団法人|社会福祉法人|社会医療法人|医療法人社団|医療法人財団|医療法人|学校法人|特定非営利活動法人|NPO法人|独立行政法人|国立大学法人)/g, "").replace(/^[\s・]+|[\s・]+$/g, "").trim() || name;
 
 /* 提供元ごとに事例をまとめる */
 const groups = new Map();
