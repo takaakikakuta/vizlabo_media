@@ -1175,8 +1175,8 @@
     },
     {
       "domain": "ehime-medicaldx.jp",
-      "company": "",
-      "status": "no-objection",
+      "company": "愛媛県医療DX推進協議会",
+      "status": "intro",
       "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
@@ -1198,7 +1198,8 @@
           "notifiedAt": "2026-11-09"
         }
       ],
-      "memo": ""
+      "memo": "",
+      "introReason": "愛媛県庁医療対策課から、県（協議会）がHITO病院へツールを提供したと誤解される掲載なので修正してほしいとの連絡を受けた（#035）。協議会は県内の医療DX事例を紹介しているだけで、製品の提供元ではない"
     },
     {
       "domain": "eizo-system.co.jp",
@@ -3222,8 +3223,8 @@
     {
       "domain": "magicshields.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "ころやわマット"
@@ -3240,7 +3241,8 @@
           "products": [
             "ころやわマット"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -3801,7 +3803,8 @@
           "products": [
             "ナリコマ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5040,8 +5043,8 @@
     {
       "domain": "satotekko-cfs.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "CFS"
@@ -5058,7 +5061,8 @@
           "products": [
             "CFS"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -5854,7 +5858,8 @@
           "products": [
             "IT点呼キーパー"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6100,8 +6105,8 @@
     {
       "domain": "toyota-lf-okayama.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "垂直搬送機、ドックレベラー、充電式フォークリフト"
@@ -6118,7 +6123,8 @@
           "products": [
             "垂直搬送機、ドックレベラー、充電式フォークリフト"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
