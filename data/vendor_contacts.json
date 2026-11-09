@@ -161,8 +161,8 @@
     {
       "domain": "afrel-robotics.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "ネコボット-F1",
@@ -193,7 +193,8 @@
           "products": [
             "協働ロボットアーム"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -4022,8 +4023,8 @@
     {
       "domain": "okuma.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "MULTUS",
@@ -4054,7 +4055,8 @@
           "products": [
             "MULTUS B300Ⅱ ARMROID"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -4975,7 +4977,9 @@
           "products": [
             "MG400協働ロボット移動式ラベラー、ラベルプリンターHA200Rシリーズ"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09",
+          "skipped": "以前の事例セレクションで連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5742,8 +5746,8 @@
     {
       "domain": "tam-tokyo.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか"
@@ -5760,7 +5764,8 @@
           "products": [
             "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -5768,8 +5773,8 @@
     {
       "domain": "tamadic.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [],
       "articles": [
@@ -5782,7 +5787,8 @@
             "ガス機器メーカーA社"
           ],
           "products": [],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
