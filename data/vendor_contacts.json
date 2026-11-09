@@ -3040,8 +3040,8 @@
     {
       "domain": "lattice.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "XVL"
@@ -3058,7 +3058,8 @@
           "products": [
             "XVL"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -4211,8 +4212,8 @@
     {
       "domain": "panasonic.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "コンサルティング"
@@ -4229,7 +4230,8 @@
           "products": [
             "コンサルティング"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -4786,8 +4788,8 @@
     {
       "domain": "saeilo.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "Cimatron、Pform"
@@ -4804,7 +4806,8 @@
           "products": [
             "Cimatron、Pform"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -6374,7 +6377,8 @@
           "products": [
             "Unifinity"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6633,7 +6637,7 @@
           "notified": false
         }
       ],
-      "memo": ""
+      "memo": "2026-11-09 #040: 導入企業名が非公開のため通知文を作れず、未送付"
     },
     {
       "domain": "yk-yamamoto.co.jp",
