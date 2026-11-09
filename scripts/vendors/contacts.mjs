@@ -5,6 +5,8 @@
  *                                                              新しい提供元は「未連絡」、既存の提供元の新しい記事は notified: false で入る。手で書いた値は上書きしない。
  *                                                              あわせて content/articles/VENDORS.md（状態別の一覧）を書き出す
  *   node scripts/vendors/contacts.mjs --notified <記事slug|no> [YYYY-MM-DD]  → その記事の提供元すべてを連絡済みにする（日付省略時は今日）
+ *       --skip a,b      その記事で送らなかった提供元（以前の記事で連絡済みのため省略など）。連絡済み扱いにするが連絡日は付けない
+ *       --hold a,b [--memo 理由]  その記事で送れなかった提供元（サイト・フォーム停止など）。未連絡のまま残し、memo に理由を書く
  *   node scripts/vendors/contacts.mjs --pending <記事slug|no>                → その記事の提供元を未連絡に戻す
  *   node scripts/vendors/contacts.mjs --list                                 → 未連絡の提供元と記事を表示する
  *   node scripts/vendors/contacts.mjs --init-assume-notified                 → 初回だけ。今ある記事をすべて連絡済み（日付は記事の公開日・推定）にして作る
@@ -24,6 +26,7 @@ const today = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 1
 const args = process.argv.slice(2);
 const flag = (k) => { const i = args.indexOf(k); return i >= 0 ? (args[i + 1] ?? true) : undefined; };
 const flagArg2 = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 2] : undefined; };
+const list = (k) => (typeof flag(k) === "string" ? flag(k).split(",").map((s) => s.trim()).filter(Boolean) : []);
 
 const blocked = read("data/blocked_vendors.json").vendors;
 const blockedMap = new Map(blocked.map((v) => [v.domain, v]));
@@ -93,10 +96,22 @@ if (flag("--notified")) {
   const a = findArticle(flag("--notified"));
   if (!a) { console.error("記事が見つからない:", flag("--notified")); process.exit(1); }
   const date = flagArg2("--notified") && /^\d{4}-\d{2}-\d{2}$/.test(flagArg2("--notified")) ? flagArg2("--notified") : today;
+  const skip = new Set(list("--skip")), hold = new Set(list("--hold"));
+  const memo = typeof flag("--memo") === "string" ? flag("--memo") : "";
+  for (const d of [...skip, ...hold]) if (!data.vendors.some((v) => v.domain === d && v.articles.some((x) => x.slug === a.slug))) { console.error(`この記事の提供元にない: ${d}`); process.exit(1); }
   for (const v of data.vendors) {
     const art = v.articles.find((x) => x.slug === a.slug);
     if (!art) continue;
-    art.notified = true; art.notifiedAt = date;
+    if (hold.has(v.domain)) {
+      art.notified = false; delete art.notifiedAt; delete art.skipped;
+      if (memo) v.memo = `${date} ${seriesTag(a)}: ${memo}${v.memo ? ` ／ ${v.memo}` : ""}`;
+      continue;
+    }
+    if (skip.has(v.domain)) {
+      art.notified = true; delete art.notifiedAt; art.skipped = "以前の記事で連絡済みの提供元のため、この記事の通知は省略";
+      continue;
+    }
+    art.notified = true; art.notifiedAt = date; delete art.skipped;
     if (v.status === "pending") { v.status = "no-objection"; v.notifiedAt = date; v.notifiedAtEstimated = false; }
     if (!v.notifiedAt) { v.notifiedAt = date; v.notifiedAtEstimated = false; }
   }

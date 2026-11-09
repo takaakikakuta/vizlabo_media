@@ -3,27 +3,24 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 175 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 26 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 177 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 24 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 9 社
 
 ## 未連絡（これから掲載連絡する）
 
 | 提供元 | サービス | 記事（導入企業） |
 |---|---|---|
-| 308-al.co.jp | 冷えルーフ | #038（シチズン生活協同組合ほか複数） |
 | 4on.jp | TOUGH | #033（株式会社ビサン） |
 | afrel-robotics.jp | ネコボット-F1 | #033（株式会社シャルマン） |
 | biztel.jp | BIZTEL コールセンター・BIZTEL コールセンター / BIZTEL モバイル | #031（株式会社池田模範堂、寺田倉庫株式会社） |
 | businessbridge.jp | Business b-ridge | #032（日本ジェネリック株式会社） |
 | businesscoach.co.jp | クラウドコーチング・マイコ・1on1ミーティング導入プログラム | #035（株式会社百十四銀行）<br>#036（クオリサイトテクノロジーズ株式会社） |
-| coolex.jp | COOLEX-Pro | #038（日本フルハーフ株式会社 厚木工場） |
 | cybozu.co.jp | kintone | #032（株式会社京都紋付） |
 | ev-charge-enechange.jp | EV充電エネチェンジ | #031（株式会社アスター（盛岡つなぎ温泉 ホテル紫苑）） |
 | geekplus.jp | 搬送型AMR・Geek+ Pシリーズ ピッキングロボット・ピッキングロボット | #033（トヨタ自動車、Walmart、Jointown製薬グループ） |
 | hakuou.co.jp | AutoFork | #033（日本トランスシティ株式会社） |
 | helicam.jp | Matrice 350 RTK + SABOT-3 | #031（留萌市） |
-| hitachi-systems-es.co.jp | 物品管理システム | 用語#001（JCOM株式会社） |
 | iot-robot.jp | RPA | #034（社会保険労務士法人 アジア経営革新等支援機関） |
 | jbs.co.jp | Microsoft Power Platform | #031（西日本旅客鉄道株式会社） |
 | kitera-cloud.jp | KiteRa Pro | #034（社会保険労務士　荻生労務研究所） |
@@ -38,25 +35,22 @@
 | panasonic.co.jp | コンサルティング | #040（旭レヂン株式会社） |
 | rolanddg.co.jp | Roland DG Assemble | #032（合資会社菅沼製作所） |
 | saeilo.co.jp | Cimatron、Pform | #040（株式会社伊吹機械） |
-| sato.co.jp | RFIDリストバンド・三点認証システム・耐性ラベル・RFID | 用語#001（大阪医科薬科大学病院）<br>#031（太陽サカコー株式会社）<br>#033（株式会社安川電機） |
+| sato.co.jp | 耐性ラベル・RFID | #031（太陽サカコー株式会社）<br>#033（株式会社安川電機） |
 | satotekko-cfs.jp | CFS | #039（株式会社富士エコサイクル） |
 | senoh.jp | BIG ASS FANS | #031（グラン・スポール 八幡） |
-| sg-systems.co.jp | RockyOne | #038（サンワサプライ株式会社） |
 | shi.co.jp | KeiganALI | #033（株式会社ホリゾン） |
 | sizsan.co.jp | BellaBot | #033（株式会社五味八珍） |
-| takachiho-kk.co.jp | TrueVUE hybrid | 用語#001（株式会社AOKIホールディングス） |
 | tele-nishi.co.jp | IT点呼キーパー | #039（株式会社タカロジ） |
-| totec-sangyo.jp | Asprova APS・ASTERIA Warp、MotionBoard | #032（共和薬品工業株式会社）<br>#038（宇部エクシモ株式会社） |
+| totec-sangyo.jp | Asprova APS | #032（共和薬品工業株式会社） |
 | toyota-lf-okayama.jp | 垂直搬送機、ドックレベラー、充電式フォークリフト | #039（岡山土地倉庫株式会社） |
 | unifinity.co.jp | Unifinity | #040（株式会社ジーテクト） |
 | yamanaka-eng.co.jp | PiezoBolt | #040（（非公開）） |
-| yk-yamamoto.co.jp | LIFE SAVER | #038（株式会社岸本建設工業） |
 
 ## 連絡済み・削除依頼なし
 
 | 提供元 | 連絡日 | サービス | 記事（導入企業） |
 |---|---|---|---|
-| 308-al.co.jp | 2026-10-23（推定） | 冷えルーフ | #020（シチズン生活協同組合ほか複数） |
+| 308-al.co.jp | 2026-10-23（推定） | 冷えルーフ | #020（シチズン生活協同組合ほか複数）<br>#038（シチズン生活協同組合ほか複数） |
 | 3s-corp.co.jp | 2026-10-28（推定） | 無溶剤UVコーティング | #023（株式会社日本ツクリダス） |
 | ababa.co.jp | 2026-10-12（推定） | ABABA | #011（株式会社TYL）<br>#014（ディップ株式会社、プレミアグループ株式会社） |
 | achievement-hrs.co.jp | 2026-11-02（推定） | 人材育成研修・OJT支援サービス | #026（東亜電気工業株式会社） |
@@ -79,7 +73,7 @@
 | classi.jp | 2026-10-26（推定） | Classi | #021（東海大学付属高輪台高等学校・中等部） |
 | cloudsign.jp | 2026-09-30（推定） | CloudSign by CloudSign・CloudSign・クラウドサイン、MAKE for kintone | #003（株式会社find、フィードバイエックス株式会社）<br>#004（株式会社J.フロントプライムスペース）<br>#006（Fast Fitness Japan） |
 | conct.jp | 2026-10-13（推定） | CO-NECT | #012（多生堂） |
-| coolex.jp | 2026-10-29（推定） | COOLEX-Pro | #024（日本フルハーフ株式会社 厚木工場） |
+| coolex.jp | 2026-10-29（推定） | COOLEX-Pro | #024（日本フルハーフ株式会社 厚木工場）<br>#038（日本フルハーフ株式会社 厚木工場） |
 | coteam.jp | 2026-10-05（推定） | コチーム・1on1・マネジメント研修 | #006（株式会社ジョン）<br>#022（全日本空輸株式会社（ANA）） |
 | dga.co.jp | 2026-10-22（推定） | 実践型DX研修プログラム、動画学習プラットフォーム「みんなデ」 | #019（大日精化工業株式会社） |
 | dpsj.co.jp | 2026-10-22（推定） | Wowza ClearCaster | #019（株式会社ブルーノート・ジャパン（BLUE NOTE TOKYO）） |
@@ -110,6 +104,7 @@
 | hammock.jp | 2026-10-14（推定） | AssetView | #013（市原市） |
 | handbook.jp | 2026-10-27（推定） | Handbook | #022（F・O・インターナショナル） |
 | hitachi-ies.co.jp | 2026-10-23（推定） | DSP-NEXT® | #020（B社（食品製造業）） |
+| hitachi-systems-es.co.jp | 2026-11-09 | 物品管理システム | 用語#001（JCOM株式会社） |
 | hr-prime.jp | 2026-10-15（推定） | HR PRIME | #014（株式会社カスタマーリレーションテレマーケティング） |
 | hrbrain.jp | 2026-10-05（推定） | HRBrain | #006（天白信用農業協同組合）<br>#036（株式会社日比谷花壇、株式会社ヒューマンアジャスト、株式会社デルタインターナショナル） |
 | info-con.co.jp | 2026-10-20（推定） | ホームページ制作 | #017（有限会社丸井食品三重工場） |
@@ -185,13 +180,13 @@
 | rocketsoftware.co.jp | 2026-10-19（推定） | Micro Focus Visual COBOL | #016（株式会社北陸電機商会） |
 | rpa-technologies.com | 2026-10-09（推定） | BizRobo! mini | #010（浅川学園台在宅クリニック） |
 | salesrenovation.jp | 2026-10-16（推定） | インサイドセールス人材サービス | #015（株式会社第一印刷所） |
-| sato.co.jp | 2026-10-06（推定） | SALI® for スキャントロニクス CL4NX-J Plus・AI画像スキャン値付け・VoiSol®Smart・RFIDシステム・RFID資産管理ソリューションパッケージ ASETRA・RFID関連ソリューション・RFIDリストバンド・三点認証システム・スマートパッケージング・FLEQV・MG400協働ロボット移動式ラベラー、ラベルプリンターHA200Rシリーズ | #007（NECパーソナルコンピュータ株式会社、株式会社ヤオコー、生活協同組合連合会 東海コープ事業連合）<br>#008（有限会社玉木新雌、サントリープロダクツ株式会社、株式会社コックス）<br>#010（大阪医科薬科大学病院）<br>#017（土佐くろしお農業協同組合）<br>#024（ロイヤルホスト株式会社）<br>#037（北陸計器工業株式会社） |
+| sato.co.jp | 2026-10-06（推定） | SALI® for スキャントロニクス CL4NX-J Plus・AI画像スキャン値付け・VoiSol®Smart・RFIDシステム・RFID資産管理ソリューションパッケージ ASETRA・RFID関連ソリューション・RFIDリストバンド・三点認証システム・スマートパッケージング・FLEQV・MG400協働ロボット移動式ラベラー、ラベルプリンターHA200Rシリーズ | #007（NECパーソナルコンピュータ株式会社、株式会社ヤオコー、生活協同組合連合会 東海コープ事業連合）<br>#008（有限会社玉木新雌、サントリープロダクツ株式会社、株式会社コックス）<br>#010（大阪医科薬科大学病院）<br>#017（土佐くろしお農業協同組合）<br>#024（ロイヤルホスト株式会社）<br>用語#001（大阪医科薬科大学病院）<br>#037（北陸計器工業株式会社） |
 | satori.marketing | 2026-10-16（推定） | SATORI | #015（パナソニック株式会社、マルホ発條工業株式会社）<br>#017（株式会社関東製作所、太陽パーツ株式会社）<br>#019（千葉テレビ放送株式会社） |
 | sbi-bs.co.jp | 2026-09-28（推定） | 経費BANK | #001（株式会社ジャストヒューマンネットワーク）<br>#003（株式会社アルク、ハタ コンサルタント株式会社）<br>#006（株式会社エニーワーク）<br>#029（株式会社理学ボディ） |
 | sbpayment.jp | 2026-10-13（推定） | AI不正検知 | #012（株式会社ゴルフ・ドゥ） |
 | science.co.jp | 2026-09-29（推定） | sAI Search・マニュアル作成セミナー・マニュアル作成支援・Author-it・MTrans Team・機械翻訳サービス・マニュアル作成・翻訳サービス | #002（UTグループ株式会社）<br>#022（ドコモ・テクノロジ株式会社、株式会社エジソン）<br>#025（ニデック株式会社、（非公開）） |
 | secom.co.jp | 2026-10-14（推定） | 遠隔放射線診断支援サービス | #013（（非公開）） |
-| sg-systems.co.jp | 2026-09-28（推定） | Biz-AI×OCR・バックオフィスサポートサービス | #001（株式会社インテック、ガリバー・インターナショナル株式会社、新潟県村上市）<br>#003（株式会社Beso） |
+| sg-systems.co.jp | 2026-09-28（推定） | Biz-AI×OCR・バックオフィスサポートサービス・RockyOne | #001（株式会社インテック、ガリバー・インターナショナル株式会社、新潟県村上市）<br>#003（株式会社Beso）<br>#038（サンワサプライ株式会社） |
 | shippio.io | 2026-09-28（推定） | Shippio Cargo | #001（株式会社ゴンチャ ジャパン）<br>#009（株式会社TTS） |
 | sinclo.jp | 2026-09-29（推定） | sinclo・チャットボットsinclo | #002（DNA先端医療株式会社）<br>#014（株式会社モード・プランニング・ジャパン） |
 | smart-stage.jp | 2026-10-21（推定） | SmartStage ServiceDesk | #018（株式会社アイネス） |
@@ -202,7 +197,7 @@
 | staple.jp | 2026-11-05（推定） | Staple | #029（株式会社BANQ） |
 | sunplanning.co.jp | 2026-10-19（推定） | SAP Business Suite powered by SAP HANA | #016（カルビー株式会社） |
 | taashie.co.jp | 2026-10-06（推定） | WinActor | #007（五の橋レディスクリニック） |
-| takachiho-kk.co.jp | 2026-11-04（推定） | TrueVUE hybrid | #028（株式会社AOKIホールディングス） |
+| takachiho-kk.co.jp | 2026-11-04（推定） | TrueVUE hybrid | #028（株式会社AOKIホールディングス）<br>用語#001（株式会社AOKIホールディングス） |
 | tam-tokyo.co.jp | 2026-11-09 | ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか | #037（放鶴製菓株式会社・プロルフェン株式会社） |
 | tamadic.co.jp | 2026-11-09 | — | #037（ガス機器メーカーA社） |
 | teamdelta.jp | 2026-10-22（推定） | CTO booster | #019（株式会社HataLuck and Person） |
@@ -213,7 +208,7 @@
 | tokouav.jp | 2026-10-29（推定） | 東光鉄工製農業用ドローン | #024（髙橋 和久） |
 | top-seller.jp | 2026-10-13（推定） | TopSeller | #012（（非公開）） |
 | totec-mlife.jp | 2026-11-09 | 見守りライフ | #035（医療法人カワムラメディカル 介護老人保健施設けんこう・ふらの） |
-| totec-sangyo.jp | 2026-11-06（推定） | ASTERIA Warp | #030（東海模型株式会社） |
+| totec-sangyo.jp | 2026-11-06（推定） | ASTERIA Warp・ASTERIA Warp、MotionBoard | #030（東海模型株式会社）<br>#038（宇部エクシモ株式会社） |
 | towaeng.co.jp | 2026-10-28（推定） | 会議・同時通訳システム、音響・映像システム、ICTシステム | #023（日鉄興和不動産株式会社） |
 | transact.ne.jp | 2026-11-03（推定） | TransFax | #027（株式会社セルメスタ） |
 | transcosmos-cotra.jp | 2026-11-09 | tra:lien | #035（トランスコスモス（CXスクエア名古屋）） |
@@ -228,6 +223,7 @@
 | vtv.co.jp | 2026-10-16（推定） | VTV Care | #015（ソフトウェア・システム開発会社） |
 | works-hi.co.jp | 2026-10-15（推定） | COMPANY 雇用手続管理・COMPANY Web Service・COMPANY | #014（ヤマト運輸株式会社、パーソルホールディングス株式会社、ヤマハ発動機ビズパートナー株式会社）<br>#021（国立大学法人 神戸大学）<br>#030（菅公学生服株式会社） |
 | yamamoto-ss.co.jp | 2026-10-08（推定） | ラベル剥離機 PLS-5000 | #009（（非公開）） |
+| yk-yamamoto.co.jp | 2026-11-09 | LIFE SAVER | #038（株式会社岸本建設工業） |
 | yu-jin.co.jp | 2026-10-26（推定） | YouMark | #021（東京都市大学付属中学校） |
 | zendesk.co.jp | 2026-09-29（推定） | Zendesk | #002（株式会社アンドエスティHD）<br>#012（株式会社ジェイアール東日本企画） |
 | クラウドトーマス.jp | 2026-10-06（推定） | クラウドトーマス | #007（株式会社オーレック） |

@@ -10,6 +10,7 @@
  *
  * 文面はテンプレート固定。差し込むのは記事タイトル・記事URL・提供元の事例（導入企業名）だけで、数字や事例は記事データから足さない。
  * 提供元の会社名は data/vendor_contacts.json の company を使う（空ならドメインで見出しを作り、末尾の「要確認」に出す）。
+ * 連絡済みの提供元には、これまでの記事ごとの連絡日と前回からの日数を出す（60日以上空いていたら再送の目安として印を付ける）。
  * 出力は標準出力と content/articles/notify/<記事ラベル>.md（git には入れない）。
  * 送ったら node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付] で連絡済みにする。 */
 import fs from "node:fs";
@@ -54,6 +55,17 @@ const blocked = new Set(read("data/blocked_vendors.json").vendors.map((v) => v.d
 const cases = new Map(read("data/cases.json").map((c) => [c.id, c]));
 const contacts = fs.existsSync(path.join(ROOT, "data/vendor_contacts.json")) ? read("data/vendor_contacts.json").vendors : [];
 const contact = (domain) => contacts.find((v) => v.domain === domain);
+const RESEND_DAYS = 60;  // 前回の連絡からこれだけ空いたら再送の目安
+const todayJst = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+const daysBetween = (from, to) => Math.round((Date.parse(to) - Date.parse(from)) / 86400000);
+/* これまでの連絡履歴（この記事以外）。省略した記事は連絡に数えない。連絡日が記録にない記事は公開日で推定する */
+function history(v, slug) {
+  const arts = (v?.articles ?? []).filter((x) => x.slug !== slug && x.notified);
+  const sent = arts.filter((x) => !x.skipped).map((x) => ({ label: x.label, date: x.notifiedAt || x.publishedAt, est: !x.notifiedAt }));
+  const skipped = arts.filter((x) => x.skipped).map((x) => x.label);
+  const last = sent.reduce((m, x) => (!m || x.date > m.date ? x : m), null);
+  return { sent, skipped, last };
+}
 
 /* 法人格を外す（記事の表記に合わせ、敬称は「様」） */
 const strip = (name) => name.replace(/(株式会社|有限会社|合同会社|合資会社|一般社団法人|一般財団法人|公益社団法人|公益財団法人|社会福祉法人|社会医療法人|医療法人社団|医療法人財団|医療法人|学校法人|特定非営利活動法人|NPO法人|独立行政法人|国立大学法人)/g, "").replace(/^[\s・]+|[\s・]+$/g, "").trim() || name;
@@ -89,12 +101,18 @@ for (const g of [...groups.values()].sort((x, y) => x.domain.localeCompare(y.dom
   const cust = g.customers.length === 1
     ? `導入事例（${g.customers[0]}様）`
     : `導入事例${g.customers.length}件（${g.customers.map((c) => c + "様").join("、")}）`;
-  const other = v?.articles.filter((x) => x.slug !== a.slug && x.notified).map((x) => x.label) ?? [];
   const full = body({ cust, title, url, short: false, noUrl: opt.noUrl, tieup: opt.tieup });
   n++;
   out.push(`### ${n}. ${company || g.domain}`);
   out.push(`掲載事例: ${g.customers.join(" / ")}`);
-  out.push(`提供元: ${g.domain}${v?.status === "no-objection" ? `（連絡済み・削除依頼なし${other.length ? `：${other.join(" ")}` : ""}）` : "（初めて連絡する先）"}`);
+  out.push(`提供元: ${g.domain}${v?.status === "no-objection" ? "（連絡済み・削除依頼なし）" : "（初めて連絡する先）"}`);
+  const h = history(v, a.slug);
+  if (h.last) {
+    const days = daysBetween(h.last.date, todayJst);
+    const list = h.sent.sort((x, y) => x.date.localeCompare(y.date)).map((x) => `${x.label} ${x.date}${x.est ? "（推定）" : ""}`).join(" / ");
+    out.push(`連絡日: ${list}${h.skipped.length ? `（省略: ${h.skipped.join(" ")}）` : ""}`);
+    out.push(`前回の連絡: ${h.last.date}${h.last.est ? "（推定）" : ""}・${days}日前${days >= RESEND_DAYS ? `　★${RESEND_DAYS}日以上空いている（再送の目安）` : ""}`);
+  }
   out.push("```", full, "```");
   if (opt.short) {
     const s = body({ cust, title, url, short: true, noUrl: opt.noUrl, tieup: false });

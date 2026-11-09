@@ -35,7 +35,8 @@
           "products": [
             "冷えルーフ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -437,7 +438,6 @@
             "アドバンテッジ タフネス｜TOUGHNESS EQ 感情マネジメント力向上研修"
           ],
           "notified": true,
-          "notifiedAt": "2026-11-09",
           "skipped": "以前の事例セレクションで連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
@@ -982,7 +982,8 @@
           "products": [
             "COOLEX-Pro"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -1261,7 +1262,6 @@
             "EmotionTech"
           ],
           "notified": true,
-          "notifiedAt": "2026-11-09",
           "skipped": "以前の事例セレクションで連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
@@ -2137,8 +2137,8 @@
     {
       "domain": "hitachi-systems-es.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "物品管理システム"
@@ -2155,7 +2155,8 @@
           "products": [
             "物品管理システム"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -2223,7 +2224,6 @@
             "HRBrain"
           ],
           "notified": true,
-          "notifiedAt": "2026-11-09",
           "skipped": "以前の事例セレクションで連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
@@ -3562,7 +3562,6 @@
             "ミイダス"
           ],
           "notified": true,
-          "notifiedAt": "2026-11-09",
           "skipped": "以前の事例セレクションで連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
@@ -4938,7 +4937,8 @@
           "products": [
             "RFIDリストバンド・三点認証システム"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
@@ -4978,7 +4978,6 @@
             "MG400協働ロボット移動式ラベラー、ラベルプリンターHA200Rシリーズ"
           ],
           "notified": true,
-          "notifiedAt": "2026-11-09",
           "skipped": "以前の事例セレクションで連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
@@ -5321,7 +5320,8 @@
           "products": [
             "RockyOne"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5738,7 +5738,8 @@
           "products": [
             "TrueVUE hybrid"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6064,7 +6065,8 @@
           "products": [
             "ASTERIA Warp、MotionBoard"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6630,8 +6632,8 @@
     {
       "domain": "yk-yamamoto.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "LIFE SAVER"
@@ -6648,7 +6650,8 @@
           "products": [
             "LIFE SAVER"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
