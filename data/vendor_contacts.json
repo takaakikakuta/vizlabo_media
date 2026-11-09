@@ -3222,8 +3222,8 @@
     {
       "domain": "magicshields.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "ころやわマット"
@@ -3240,7 +3240,8 @@
           "products": [
             "ころやわマット"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -3801,7 +3802,8 @@
           "products": [
             "ナリコマ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5040,8 +5042,8 @@
     {
       "domain": "satotekko-cfs.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "CFS"
@@ -5058,7 +5060,8 @@
           "products": [
             "CFS"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -5854,7 +5857,8 @@
           "products": [
             "IT点呼キーパー"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6100,8 +6104,8 @@
     {
       "domain": "toyota-lf-okayama.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "垂直搬送機、ドックレベラー、充電式フォークリフト"
@@ -6118,7 +6122,8 @@
           "products": [
             "垂直搬送機、ドックレベラー、充電式フォークリフト"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
