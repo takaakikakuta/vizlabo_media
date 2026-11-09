@@ -19,6 +19,9 @@ frontend:
         - npm run build
         # ビルドキャッシュは成果物サイズ制限（220MB）に含めない
         - rm -rf .next/cache
+        # サーバー側のソースマップは data/cases.json を丸ごと含むので巨大（2026-11 時点で約58MB）。
+        # 実行には不要（エラー時のスタックトレース用）なので消して、成果物の上限（約230MB）を守る
+        - find .next -name "*.js.map" -delete
   artifacts:
     baseDirectory: .next
     files:

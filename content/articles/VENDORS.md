@@ -3,9 +3,9 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 182 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 18 社（記事単位で未連絡のものは下の表）
-- 削除依頼あり: 9 社
+- 連絡済み・削除依頼なし: 179 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 40 社（記事単位で未連絡のものは下の表）
+- 削除依頼あり: 10 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
 ## 未連絡（これから掲載連絡する）
@@ -13,30 +13,60 @@
 | 提供元 | サービス | 記事（導入企業） |
 |---|---|---|
 | 4on.jp | TOUGH | #033（株式会社ビサン） |
+| acuity-inc.co.jp | BC-Creation、BC-Detection | #043（（非公開）） |
+| afi.co.jp | ELESTA PixeeMo | #043（アルプスウォーター株式会社） |
 | afrel-robotics.jp | ネコボット-F1 | #033（株式会社シャルマン） |
-| biztel.jp | BIZTEL コールセンター・BIZTEL コールセンター / BIZTEL モバイル | #031（株式会社池田模範堂、寺田倉庫株式会社） |
+| bcp-kke.jp | 制震補強設計・シミュレーション | #044（株式会社豊田自動織機） |
+| biztel.jp | BIZTEL コールセンター・BIZTEL コールセンター / BIZTEL モバイル・BIZTEL shouin | #031（株式会社池田模範堂、寺田倉庫株式会社）<br>#041（株式会社JTBグローバルアシスタンス、株式会社バディネット） |
 | businessbridge.jp | Business b-ridge | #032（日本ジェネリック株式会社） |
-| businesscoach.co.jp | クラウドコーチング・マイコ・1on1ミーティング導入プログラム | #035（株式会社百十四銀行）<br>#036（クオリサイトテクノロジーズ株式会社） |
+| businesscoach.co.jp | クラウドコーチング・マイコ・1on1ミーティング導入プログラム・クラウドコーチング | #035（株式会社百十四銀行）<br>#036（クオリサイトテクノロジーズ株式会社）<br>#041（三谷セキサン株式会社、サンヨーエアポートサービス株式会社、藤田観光株式会社（東京ベイ有明ワシントンホテル）） |
+| ccinnovation.co.jp | デジタルマーケティングコンサルティング | #042（城西運輸機工株式会社） |
+| ckd.co.jp | パワフルアーム | #045（因幡電機産業） |
 | cybozu.co.jp | kintone | #032（株式会社京都紋付） |
+| endingcareer.co.jp | 組織開発コンサルティング | #041（T社（情報通信サービス会社）） |
 | ev-charge-enechange.jp | EV充電エネチェンジ | #031（株式会社アスター（盛岡つなぎ温泉 ホテル紫苑）） |
+| fa.omron.co.jp | 現場データ活用サービス i-BELT、マシンオートメーションコントローラ | #040（オムロン株式会社） |
+| fielding.co.jp | NECデータセンターサービス | #044（鉄道工業株式会社） |
+| funaisoken.co.jp | 経営コンサルティング | #042（ケアシステム株式会社） |
 | geekplus.jp | 搬送型AMR・Geek+ Pシリーズ ピッキングロボット・ピッキングロボット | #033（トヨタ自動車、Walmart、Jointown製薬グループ） |
+| goriki.jp | ポストパレット | #045（ナイス（株）相模原市場・相模原営業所） |
 | hakuou.co.jp | AutoFork | #033（日本トランスシティ株式会社） |
 | helicam.jp | Matrice 350 RTK + SABOT-3 | #031（留萌市） |
+| ielove-cloud.jp | いえらぶCLOUD | #045（都市住建株式会社） |
+| inet.co.jp | Next Generation EASY Cloud | #042（株式会社WorkVision） |
 | iot-robot.jp | RPA | #034（社会保険労務士法人 アジア経営革新等支援機関） |
-| jbs.co.jp | Microsoft Power Platform | #031（西日本旅客鉄道株式会社） |
+| itohdenki.co.jp | MDR | #043（シーバス・ブラザーズ社） |
+| jbs.co.jp | Microsoft Power Platform・マネージドバックアップ for Microsoft 365 | #031（西日本旅客鉄道株式会社）<br>#044（株式会社八十二銀行） |
 | kitera-cloud.jp | KiteRa Pro | #034（社会保険労務士　荻生労務研究所） |
 | kobelcosys.co.jp | 現場特化型MESソリューション　実績班長 | #032（田中精密工業株式会社） |
+| koden-kk.co.jp | 自家消費型太陽光発電システム | #044（株式会社右川ゴム製造所） |
 | kouei.co.jp | 運行管理クラウドサービス | #031（ENEOS株式会社） |
+| lattice.co.jp | XVL | #040（株式会社東海理化） |
+| lucidsoft.jp | リアルトレース | #045（株式会社日本テレメッセージ） |
+| meikoshokai.co.jp | MSボイスコールNEO Ver.2 | #045（神奈川県湯河原町役場） |
 | mks.jp | eNEN | #034（（非公開）） |
+| mr-m.co.jp | カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作 | #042（ミズタニバルブ工業株式会社） |
+| naomi.co.jp | パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02・チューブ充填機 6DTZ-T | #043（株式会社ベネッセパレット）<br>#045（下呂プリン） |
 | narikoma-group.co.jp | ナリコマ | #031（特別養護老人ホーム アルテイル宮町） |
+| nikken-totalsourcing.jp | カスタマイズ研修・技能センター研修 | #041（株式会社デンソー山形） |
+| ntt-tx.co.jp | CTBASE/Connect Cloud | #045（パナソニック保険サービス株式会社） |
+| ogs-consulting.co.jp | 人事評価制度構築・運用コンサルティング | #041（株式会社庄内タイヤ） |
 | okuma.co.jp | MULTUS | #031（株式会社しらかわ） |
 | optex.co.jp | OAM-EXPLORER J、LINK-BT2 | #033（（非公開）） |
+| orikane.co.jp | 型替え不要の蓋かぶせ機、L型包装機 | #043（（非公開）） |
+| quest.co.jp | WinActor | #045（株式会社日本能率協会マネジメントセンター（JMAM）） |
+| rescuenow.co.jp | 安否確認サービス | #044（株式会社片山化学工業研究所） |
 | rolanddg.co.jp | Roland DG Assemble | #032（合資会社菅沼製作所） |
+| saeilo.co.jp | Cimatron、Pform | #040（株式会社伊吹機械） |
+| salesrenovation.jp | インサイドセールス人材派遣・育成サービス | #042（キューアンドエー株式会社） |
 | sato.co.jp | 耐性ラベル・RFID | #031（太陽サカコー株式会社）<br>#033（株式会社安川電機） |
+| seagreen.co.jp | 評価ポイント | #041（（非公開）） |
 | senoh.jp | BIG ASS FANS | #031（グラン・スポール 八幡） |
 | shi.co.jp | KeiganALI | #033（株式会社ホリゾン） |
 | sizsan.co.jp | BellaBot | #033（株式会社五味八珍） |
+| techvan.co.jp | ソフトウェアテストサービス | #045（株式会社MIXI） |
 | totec-sangyo.jp | Asprova APS | #032（共和薬品工業株式会社） |
+| unifinity.co.jp | Unifinity | #040（株式会社ジーテクト）<br>#045（株式会社利久） |
 | yamanaka-eng.co.jp | PiezoBolt | #040（（非公開）） |
 
 ## 連絡済み・削除依頼なし
@@ -118,7 +148,6 @@
 | lafool.jp | 2026-11-02（推定） | ラフールサーベイ | #026（株式会社プログレス） |
 | lancers.jp | 2026-10-20（推定） | ランサーズ | #017（株式会社中村製作所） |
 | lanscope.jp | 2026-10-07（推定） | LANSCOPEエンドポイントマネージャー クラウド版・LANSCOPE セキュリティオーディター・LANSCOPE エンドポイントマネージャー クラウド版・LANSCOPE サイバープロテクション powered by Aurora Protect、LANSCOPE サイバープロテクション powered by A | #008（株式会社カシワバラ・コーポレーション）<br>#018（株式会社MCEAホールディングス、株式会社ユーグレナ）<br>#019（医療法人社団煌の会 山下湘南夢クリニック） |
-| lattice.co.jp | 2026-11-09 | XVL | #040（株式会社東海理化） |
 | levii.co.jp | 2026-10-27（推定） | ペジテの自転車 | #022（東日本高速道路株式会社（NEXCO東日本）） |
 | liveon.ne.jp | 2026-10-27（推定） | LiveOn Wearable、LiveOn RecX・LiveOn Wearable | #022（株式会社大西熱学）<br>#024（三重県伊賀市 上下水道部） |
 | logikura.jp | 2026-10-06（推定） | ロジクラ | #007（株式会社ニタス）<br>#027（株式会社暁の星工芸） |
@@ -154,7 +183,6 @@
 | optex.co.jp | 2026-10-14（推定） | WATER it データマネジメントサービス | #013（高速道路事業者） |
 | orwak.co.jp | 2026-10-23（推定） | 小型圧縮減容機5010E | #020（株式会社キトー） |
 | otasukeman.jp | 2026-10-08（推定） | お助けマン | #009（株式会社ジャックス） |
-| panasonic.co.jp | 2026-11-09 | コンサルティング | #040（旭レヂン株式会社） |
 | pandora-climber.jp | 2026-09-30（推定） | ClimberCloud、kintone、DX-Suite、WinActor | #003（味の素トレーディング株式会社） |
 | patrolclarice.jp | 2026-11-06（推定） | robostein | #030（ALSOK株式会社） |
 | pcbrain.co.jp | 2026-10-22（推定） | ホームページ制作 | #019（株式会社根上産業） |
@@ -174,7 +202,6 @@
 | riveting-mcn.co.jp | 2026-10-29（推定） | 空圧式リベッティング・マシン US-66M | #024（川村義肢株式会社） |
 | rocketsoftware.co.jp | 2026-10-19（推定） | Micro Focus Visual COBOL | #016（株式会社北陸電機商会） |
 | rpa-technologies.com | 2026-10-09（推定） | BizRobo! mini | #010（浅川学園台在宅クリニック） |
-| saeilo.co.jp | 2026-11-09 | Cimatron、Pform | #040（株式会社伊吹機械） |
 | salesrenovation.jp | 2026-10-16（推定） | インサイドセールス人材サービス | #015（株式会社第一印刷所） |
 | sato.co.jp | 2026-10-06（推定） | SALI® for スキャントロニクス CL4NX-J Plus・AI画像スキャン値付け・VoiSol®Smart・RFIDシステム・RFID資産管理ソリューションパッケージ ASETRA・RFID関連ソリューション・RFIDリストバンド・三点認証システム・スマートパッケージング・FLEQV・MG400協働ロボット移動式ラベラー、ラベルプリンターHA200Rシリーズ | #007（NECパーソナルコンピュータ株式会社、株式会社ヤオコー、生活協同組合連合会 東海コープ事業連合）<br>#008（有限会社玉木新雌、サントリープロダクツ株式会社、株式会社コックス）<br>#010（大阪医科薬科大学病院）<br>#017（土佐くろしお農業協同組合）<br>#024（ロイヤルホスト株式会社）<br>用語#001（大阪医科薬科大学病院）<br>#037（北陸計器工業株式会社） |
 | satori.marketing | 2026-10-16（推定） | SATORI | #015（パナソニック株式会社、マルホ発條工業株式会社）<br>#017（株式会社関東製作所、太陽パーツ株式会社）<br>#019（千葉テレビ放送株式会社） |
@@ -214,7 +241,7 @@
 | u-s-d.co.jp | 2026-10-29（推定） | comuoon mobile type ML / comuoon mobile type WSG | #024（福岡空港のデイケア施設） |
 | uchida.co.jp | 2026-10-21（推定） | オフィス移転・リニューアルサービス・オフィス移転・リニューアルサービス、オフィスデザイン・構築サービス、ABW/フリーアドレス・オフィス移転・リニューアルサービス、オフィスデザイン・構築サービス・Change Working・オフィスデザイン・構築サービス、ABW/フリーアドレス、SmartInfill、COMMONS TABLE SYSTEM-i、LEMNA Work Lounge・オフィス移転プロジェクトマネジメントサービス、Change Working | #018（オリックス銀行株式会社、大樹生命保険株式会社）<br>#023（株式会社日経映像、コニカミノルタ株式会社、株式会社 YSK e-com、株式会社インテージ） |
 | uhuru.co.jp | 2026-10-13（推定） | Agentforce Service・Salesforce Experience Cloud・Amazon Connect | #012（株式会社Mizkan）<br>#016（株式会社静岡銀行）<br>#018（株式会社ミスミグループ本社） |
-| unifinity.co.jp | 2026-11-06（推定） | Unifinity | #030（株式会社エースパック）<br>#040（株式会社ジーテクト） |
+| unifinity.co.jp | 2026-11-06（推定） | Unifinity | #030（株式会社エースパック） |
 | userlocal.jp | 2026-09-29（推定） | User Insight | #002（富士フイルムサービスクリエイティブ株式会社）<br>#012（ブックオフコーポレーション株式会社）<br>#015（株式会社I-House）<br>#019（株式会社タイトー、株式会社SUBARU） |
 | usonar.co.jp | 2026-10-16（推定） | ユーソナー・プランソナー | #015（レバレジーズ株式会社、株式会社コンカー、AGC株式会社） |
 | valueagent.co.jp | 2026-10-12（推定） | ホームページ制作・Webコンサルティング | #011（秀英会） |
@@ -236,6 +263,7 @@
 | i3handy.jp（株式会社学研ロジスティクス（Gakken i3 Handy）） | 2026-10-27 | 掲載先の企業から許可を得ていないとして、ベンダーから掲載削除の依頼を受けた |
 | labbase.jp（株式会社LabBase（LabBase就職・LabBaseNow）） | 2026-10-09 | 導入事例の他媒体への掲載を控えているとして、ベンダーから掲載削除の依頼を受けた |
 | meal-shuttle.jp（株式会社中島製作所（ニュークックチルシステム／meal-shuttle.jp）） | 2026-11-06 | 自社公式サイトの導入事例と相違する内容が複数あり、現時点で内容の確認・修正対応が難しく、読者の誤解を招いて導入先に迷惑をかける可能性があるとして、ベンダーから記事中の自社事例部分の掲載削除の依頼を受けた |
+| panasonic.co.jp（パナソニック エレクトリックワークス創研株式会社（panasonic.co.jp/ew/pewbct/ 配下のモノづくり支援・研修事例）） | 2026-11-09 | 事例紹介は先方（導入企業）の許可を得て掲載しているもので、多媒体への紹介は慎重に扱う必要があり、事前許可なく掲載されているとして、ベンダーから掲載削除の依頼を受けた |
 | recop.jp（株式会社HRソリューションズ（リクオプ）） | 2026-10-07 | 導入企業への事前確認なく掲載されているとして、ベンダーから掲載削除の依頼を受けた |
 | sustainable-switch.jp（サステナブルスイッチ（sustainable-switch.jp）） | 2026-10-24 | サイトが閉鎖され、事例ページに到達できなくなったため（削除依頼ではない） |
 | suzuyayoko.co.jp（株式会社鈴弥洋行） | 2026-10-27 | エンドユーザーへの確認と許可を取っていないとして、ベンダーから同社に関わる記事すべての掲載削除の依頼を受けた（事例の掲載は本来、事前に許諾を得てから行うべきとの指摘あり） |
@@ -244,4 +272,4 @@
 
 | 掲載元 | 記事 | 理由 |
 |---|---|---|
-| ehime-medicaldx.jp（愛媛県医療DX推進協議会） | #035 | 愛媛県庁医療対策課から、県（協議会）がHITO病院へツールを提供したと誤解される掲載なので修正してほしいとの連絡を受けた（#035）。協議会は県内の医療DX事例を紹介しているだけで、製品の提供元ではない |
+| ehime-medicaldx.jp（愛媛県医療DX推進協議会） | #035 #041 | 愛媛県庁医療対策課から、県（協議会）がHITO病院へツールを提供したと誤解される掲載なので修正してほしいとの連絡を受けた（#035）。協議会は県内の医療DX事例を紹介しているだけで、製品の提供元ではない |

@@ -160,6 +160,58 @@
       "memo": ""
     },
     {
+      "domain": "acuity-inc.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "BC-Creation、BC-Detection"
+      ],
+      "articles": [
+        {
+          "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
+          "label": "#043",
+          "title": "食品工場の省人化は一工程から。自動化事例5選",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "BC-Creation、BC-Detection"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "afi.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ELESTA PixeeMo"
+      ],
+      "articles": [
+        {
+          "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
+          "label": "#043",
+          "title": "食品工場の省人化は一工程から。自動化事例5選",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "アルプスウォーター株式会社"
+          ],
+          "products": [
+            "ELESTA PixeeMo"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "afrel-robotics.jp",
       "company": "",
       "status": "no-objection",
@@ -476,7 +528,8 @@
       "notifiedAt": "2026-10-14",
       "notifiedAtEstimated": true,
       "products": [
-        "建物被害モニタリングシステム"
+        "建物被害モニタリングシステム",
+        "制震補強設計・シミュレーション"
       ],
       "articles": [
         {
@@ -491,6 +544,19 @@
             "建物被害モニタリングシステム"
           ],
           "notified": true
+        },
+        {
+          "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
+          "label": "#044",
+          "title": "災害に備える。BCP対策の事例5選",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "株式会社豊田自動織機"
+          ],
+          "products": [
+            "制震補強設計・シミュレーション"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -503,7 +569,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "BIZTEL コールセンター",
-        "BIZTEL コールセンター / BIZTEL モバイル"
+        "BIZTEL コールセンター / BIZTEL モバイル",
+        "BIZTEL shouin"
       ],
       "articles": [
         {
@@ -518,6 +585,20 @@
           "products": [
             "BIZTEL コールセンター",
             "BIZTEL コールセンター / BIZTEL モバイル"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社JTBグローバルアシスタンス",
+            "株式会社バディネット"
+          ],
+          "products": [
+            "BIZTEL shouin"
           ],
           "notified": false
         }
@@ -664,7 +745,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "クラウドコーチング・マイコ",
-        "1on1ミーティング導入プログラム"
+        "1on1ミーティング導入プログラム",
+        "クラウドコーチング"
       ],
       "articles": [
         {
@@ -690,6 +772,22 @@
           ],
           "products": [
             "1on1ミーティング導入プログラム"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "三谷セキサン株式会社",
+            "サンヨーエアポートサービス株式会社",
+            "藤田観光株式会社（東京ベイ有明ワシントンホテル）"
+          ],
+          "products": [
+            "クラウドコーチング・マイコ",
+            "クラウドコーチング"
           ],
           "notified": false
         }
@@ -745,6 +843,32 @@
             "Casty"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ccinnovation.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "デジタルマーケティングコンサルティング"
+      ],
+      "articles": [
+        {
+          "slug": "5cf33dbf-21e0-4b8a-884a-28a78e498c92",
+          "label": "#042",
+          "title": "これから新規事業を始める会社に、参考にしてほしい事例5選",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "城西運輸機工株式会社"
+          ],
+          "products": [
+            "デジタルマーケティングコンサルティング"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -821,7 +945,8 @@
       "notifiedAt": "2026-10-29",
       "notifiedAtEstimated": true,
       "products": [
-        "パワフルアーム PAW"
+        "パワフルアーム PAW",
+        "パワフルアーム"
       ],
       "articles": [
         {
@@ -836,6 +961,19 @@
             "パワフルアーム PAW"
           ],
           "notified": true
+        },
+        {
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#045",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "因幡電機産業"
+          ],
+          "products": [
+            "パワフルアーム"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1180,7 +1318,8 @@
       "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
-        "業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ"
+        "業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ",
+        "業務用チャット、スマートフォン"
       ],
       "articles": [
         {
@@ -1196,6 +1335,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "社会医療法人石川記念会HITO病院"
+          ],
+          "products": [
+            "業務用チャット、スマートフォン"
+          ],
+          "notified": false
         }
       ],
       "memo": "",
@@ -1290,6 +1442,19 @@
             "組織開発コンサルティング"
           ],
           "notified": true
+        },
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "T社（情報通信サービス会社）"
+          ],
+          "products": [
+            "組織開発コンサルティング"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1434,6 +1599,32 @@
             "EXPOLINE"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "fa.omron.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "現場データ活用サービス i-BELT、マシンオートメーションコントローラ"
+      ],
+      "articles": [
+        {
+          "slug": "a1da7dbb-6c67-4b0b-b269-1aaa8e10371e",
+          "label": "#040",
+          "title": "不具合が見つかる段階を、一つ手前にずらした。金型の不具合を、設計から点検までのどこで見つけるかを変えた5社の事例5選",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "オムロン株式会社"
+          ],
+          "products": [
+            "現場データ活用サービス i-BELT、マシンオートメーションコントローラ"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1610,6 +1801,32 @@
             "ferret One"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "fielding.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "NECデータセンターサービス"
+      ],
+      "articles": [
+        {
+          "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
+          "label": "#044",
+          "title": "災害に備える。BCP対策の事例5選",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "鉄道工業株式会社"
+          ],
+          "products": [
+            "NECデータセンターサービス"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1815,6 +2032,32 @@
       "memo": ""
     },
     {
+      "domain": "funaisoken.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "経営コンサルティング"
+      ],
+      "articles": [
+        {
+          "slug": "5cf33dbf-21e0-4b8a-884a-28a78e498c92",
+          "label": "#042",
+          "title": "これから新規事業を始める会社に、参考にしてほしい事例5選",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "ケアシステム株式会社"
+          ],
+          "products": [
+            "経営コンサルティング"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "geekplus.jp",
       "company": "",
       "status": "no-objection",
@@ -1975,6 +2218,32 @@
             "Microsoft365、LINEワークス、グループウェア、クラウドシステム"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "goriki.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ポストパレット"
+      ],
+      "articles": [
+        {
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#045",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "ナイス（株）相模原市場・相模原営業所"
+          ],
+          "products": [
+            "ポストパレット"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2243,6 +2512,58 @@
       "removedReason": "掲載先の企業から許可を得ていないとして、ベンダーから掲載削除の依頼を受けた"
     },
     {
+      "domain": "ielove-cloud.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "いえらぶCLOUD"
+      ],
+      "articles": [
+        {
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#045",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "都市住建株式会社"
+          ],
+          "products": [
+            "いえらぶCLOUD"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "inet.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Next Generation EASY Cloud"
+      ],
+      "articles": [
+        {
+          "slug": "5cf33dbf-21e0-4b8a-884a-28a78e498c92",
+          "label": "#042",
+          "title": "これから新規事業を始める会社に、参考にしてほしい事例5選",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "株式会社WorkVision"
+          ],
+          "products": [
+            "Next Generation EASY Cloud"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "info-con.co.jp",
       "company": "",
       "status": "no-objection",
@@ -2487,6 +2808,32 @@
       "memo": ""
     },
     {
+      "domain": "itohdenki.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "MDR"
+      ],
+      "articles": [
+        {
+          "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
+          "label": "#043",
+          "title": "食品工場の省人化は一工程から。自動化事例5選",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "シーバス・ブラザーズ社"
+          ],
+          "products": [
+            "MDR"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "itszai.jp",
       "company": "",
       "status": "no-objection",
@@ -2591,7 +2938,8 @@
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "Microsoft Power Platform"
+        "Microsoft Power Platform",
+        "マネージドバックアップ for Microsoft 365"
       ],
       "articles": [
         {
@@ -2604,6 +2952,19 @@
           ],
           "products": [
             "Microsoft Power Platform"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
+          "label": "#044",
+          "title": "災害に備える。BCP対策の事例5選",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "株式会社八十二銀行"
+          ],
+          "products": [
+            "マネージドバックアップ for Microsoft 365"
           ],
           "notified": false
         }
@@ -2834,6 +3195,19 @@
             "自家消費型太陽光発電システム"
           ],
           "notified": true
+        },
+        {
+          "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
+          "label": "#044",
+          "title": "災害に備える。BCP対策の事例5選",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "株式会社右川ゴム製造所"
+          ],
+          "products": [
+            "自家消費型太陽光発電システム"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3040,8 +3414,8 @@
     {
       "domain": "lattice.co.jp",
       "company": "",
-      "status": "no-objection",
-      "notifiedAt": "2026-11-09",
+      "status": "pending",
+      "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
         "XVL"
@@ -3058,8 +3432,7 @@
           "products": [
             "XVL"
           ],
-          "notified": true,
-          "notifiedAt": "2026-11-09"
+          "notified": false
         }
       ],
       "memo": ""
@@ -3202,7 +3575,8 @@
       "notifiedAt": "2026-09-29",
       "notifiedAtEstimated": true,
       "products": [
-        "リサーチコム"
+        "リサーチコム",
+        "リアルトレース"
       ],
       "articles": [
         {
@@ -3217,6 +3591,19 @@
             "リサーチコム"
           ],
           "notified": true
+        },
+        {
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#045",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社日本テレメッセージ"
+          ],
+          "products": [
+            "リアルトレース"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3477,6 +3864,32 @@
       "memo": ""
     },
     {
+      "domain": "meikoshokai.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "MSボイスコールNEO Ver.2"
+      ],
+      "articles": [
+        {
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#045",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "神奈川県湯河原町役場"
+          ],
+          "products": [
+            "MSボイスコールNEO Ver.2"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "meisei-web.co.jp",
       "company": "",
       "status": "no-objection",
@@ -3705,6 +4118,32 @@
       "memo": ""
     },
     {
+      "domain": "mr-m.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作"
+      ],
+      "articles": [
+        {
+          "slug": "5cf33dbf-21e0-4b8a-884a-28a78e498c92",
+          "label": "#042",
+          "title": "これから新規事業を始める会社に、参考にしてほしい事例5選",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "ミズタニバルブ工業株式会社"
+          ],
+          "products": [
+            "カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "myquick.jp",
       "company": "",
       "status": "no-objection",
@@ -3752,6 +4191,46 @@
             "Myサイト翻訳"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "naomi.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02",
+        "チューブ充填機 6DTZ-T"
+      ],
+      "articles": [
+        {
+          "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
+          "label": "#043",
+          "title": "食品工場の省人化は一工程から。自動化事例5選",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "株式会社ベネッセパレット"
+          ],
+          "products": [
+            "パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#045",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "下呂プリン"
+          ],
+          "products": [
+            "チューブ充填機 6DTZ-T"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3837,6 +4316,32 @@
       "memo": ""
     },
     {
+      "domain": "nikken-totalsourcing.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "カスタマイズ研修・技能センター研修"
+      ],
+      "articles": [
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社デンソー山形"
+          ],
+          "products": [
+            "カスタマイズ研修・技能センター研修"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "ntt-tx.co.jp",
       "company": "",
       "status": "no-objection",
@@ -3846,7 +4351,8 @@
         "BizFront/SmartUI",
         "データブリッジ",
         "Yellowfin",
-        "ProgOffice Enterprise"
+        "ProgOffice Enterprise",
+        "CTBASE/Connect Cloud"
       ],
       "articles": [
         {
@@ -3913,6 +4419,19 @@
             "BizFront/SmartUI"
           ],
           "notified": true
+        },
+        {
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#045",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "パナソニック保険サービス株式会社"
+          ],
+          "products": [
+            "CTBASE/Connect Cloud"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4019,6 +4538,32 @@
             "OfficeBot"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ogs-consulting.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "人事評価制度構築・運用コンサルティング"
+      ],
+      "articles": [
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社庄内タイヤ"
+          ],
+          "products": [
+            "人事評価制度構築・運用コンサルティング"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4158,6 +4703,32 @@
       "memo": ""
     },
     {
+      "domain": "orikane.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "型替え不要の蓋かぶせ機、L型包装機"
+      ],
+      "articles": [
+        {
+          "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
+          "label": "#043",
+          "title": "食品工場の省人化は一工程から。自動化事例5選",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "型替え不要の蓋かぶせ機、L型包装機"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "orwak.co.jp",
       "company": "",
       "status": "no-objection",
@@ -4211,9 +4782,9 @@
     },
     {
       "domain": "panasonic.co.jp",
-      "company": "",
-      "status": "no-objection",
-      "notifiedAt": "2026-11-09",
+      "company": "パナソニック エレクトリックワークス創研株式会社（panasonic.co.jp/ew/pewbct/ 配下のモノづくり支援・研修事例）",
+      "status": "removed",
+      "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
         "コンサルティング"
@@ -4230,11 +4801,12 @@
           "products": [
             "コンサルティング"
           ],
-          "notified": true,
-          "notifiedAt": "2026-11-09"
+          "notified": false
         }
       ],
-      "memo": ""
+      "memo": "",
+      "removedAt": "2026-11-09",
+      "removedReason": "事例紹介は先方（導入企業）の許可を得て掲載しているもので、多媒体への紹介は慎重に扱う必要があり、事前許可なく掲載されているとして、ベンダーから掲載削除の依頼を受けた"
     },
     {
       "domain": "pandora-climber.jp",
@@ -4500,6 +5072,32 @@
       "memo": ""
     },
     {
+      "domain": "quest.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "WinActor"
+      ],
+      "articles": [
+        {
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#045",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社日本能率協会マネジメントセンター（JMAM）"
+          ],
+          "products": [
+            "WinActor"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "r-ac.co.jp",
       "company": "",
       "status": "no-objection",
@@ -4682,6 +5280,32 @@
       "memo": ""
     },
     {
+      "domain": "rescuenow.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "安否確認サービス"
+      ],
+      "articles": [
+        {
+          "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
+          "label": "#044",
+          "title": "災害に備える。BCP対策の事例5選",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "株式会社片山化学工業研究所"
+          ],
+          "products": [
+            "安否確認サービス"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "riveting-mcn.co.jp",
       "company": "",
       "status": "no-objection",
@@ -4788,8 +5412,8 @@
     {
       "domain": "saeilo.co.jp",
       "company": "",
-      "status": "no-objection",
-      "notifiedAt": "2026-11-09",
+      "status": "pending",
+      "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
         "Cimatron、Pform"
@@ -4806,8 +5430,7 @@
           "products": [
             "Cimatron、Pform"
           ],
-          "notified": true,
-          "notifiedAt": "2026-11-09"
+          "notified": false
         }
       ],
       "memo": ""
@@ -4819,7 +5442,8 @@
       "notifiedAt": "2026-10-16",
       "notifiedAtEstimated": true,
       "products": [
-        "インサイドセールス人材サービス"
+        "インサイドセールス人材サービス",
+        "インサイドセールス人材派遣・育成サービス"
       ],
       "articles": [
         {
@@ -4834,6 +5458,19 @@
             "インサイドセールス人材サービス"
           ],
           "notified": true
+        },
+        {
+          "slug": "5cf33dbf-21e0-4b8a-884a-28a78e498c92",
+          "label": "#042",
+          "title": "これから新規事業を始める会社に、参考にしてほしい事例5選",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "キューアンドエー株式会社"
+          ],
+          "products": [
+            "インサイドセールス人材派遣・育成サービス"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -5220,6 +5857,32 @@
             "マニュアル作成・翻訳サービス"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "seagreen.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "評価ポイント"
+      ],
+      "articles": [
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "評価ポイント"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -5828,6 +6491,32 @@
       "memo": ""
     },
     {
+      "domain": "techvan.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ソフトウェアテストサービス"
+      ],
+      "articles": [
+        {
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#045",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社MIXI"
+          ],
+          "products": [
+            "ソフトウェアテストサービス"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "tele-nishi.co.jp",
       "company": "",
       "status": "no-objection",
@@ -6377,8 +7066,20 @@
           "products": [
             "Unifinity"
           ],
-          "notified": true,
-          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+          "notified": false
+        },
+        {
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#045",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社利久"
+          ],
+          "products": [
+            "Unifinity"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6637,7 +7338,7 @@
           "notified": false
         }
       ],
-      "memo": "2026-11-09 #040: 導入企業名が非公開のため通知文を作れず、未送付"
+      "memo": ""
     },
     {
       "domain": "yk-yamamoto.co.jp",
