@@ -691,7 +691,7 @@
           "notified": false
         }
       ],
-      "memo": ""
+      "memo": "2026-11-09 問い合わせフォーム停止中のため #035 の掲載連絡を送れず。復旧したら送る"
     },
     {
       "domain": "cashmo.jp",
@@ -787,8 +787,8 @@
     {
       "domain": "ciftr.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "シフター"
@@ -805,7 +805,8 @@
           "products": [
             "シフター"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -1171,8 +1172,8 @@
     {
       "domain": "ehime-medicaldx.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ"
@@ -1189,7 +1190,8 @@
           "products": [
             "業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -5974,8 +5976,8 @@
     {
       "domain": "totec-mlife.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "見守りライフ"
@@ -5992,7 +5994,8 @@
           "products": [
             "見守りライフ"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -6132,8 +6135,8 @@
     {
       "domain": "transcosmos-cotra.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "tra:lien"
@@ -6150,7 +6153,8 @@
           "products": [
             "tra:lien"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""

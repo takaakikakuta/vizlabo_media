@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 166 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 35 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 170 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 31 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 9 社
 
 ## 未連絡（これから掲載連絡する）
@@ -18,10 +18,8 @@
 | biztel.jp | BIZTEL コールセンター・BIZTEL コールセンター / BIZTEL モバイル | #031（株式会社池田模範堂、寺田倉庫株式会社） |
 | businessbridge.jp | Business b-ridge | #032（日本ジェネリック株式会社） |
 | businesscoach.co.jp | クラウドコーチング・マイコ・1on1ミーティング導入プログラム | #035（株式会社百十四銀行）<br>#036（クオリサイトテクノロジーズ株式会社） |
-| ciftr.jp | シフター | #035（溶岩焼肉 牛楽 鶴田町店） |
 | coolex.jp | COOLEX-Pro | #038（日本フルハーフ株式会社 厚木工場） |
 | cybozu.co.jp | kintone | #032（株式会社京都紋付） |
-| ehime-medicaldx.jp | 業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ | #035（社会医療法人石川記念会HITO病院） |
 | emotion-tech.co.jp | EmotionTech | #036（株式会社北國銀行（株式会社CCIグループ傘下）） |
 | ev-charge-enechange.jp | EV充電エネチェンジ | #031（株式会社アスター（盛岡つなぎ温泉 ホテル紫苑）） |
 | geekplus.jp | 搬送型AMR・Geek+ Pシリーズ ピッキングロボット・ピッキングロボット | #033（トヨタ自動車、Walmart、Jointown製薬グループ） |
@@ -55,10 +53,8 @@
 | tam-tokyo.co.jp | ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか | #037（放鶴製菓株式会社・プロルフェン株式会社） |
 | tamadic.co.jp | — | #037（ガス機器メーカーA社） |
 | tele-nishi.co.jp | IT点呼キーパー | #039（株式会社タカロジ） |
-| totec-mlife.jp | 見守りライフ | #035（医療法人カワムラメディカル 介護老人保健施設けんこう・ふらの） |
 | totec-sangyo.jp | Asprova APS・ASTERIA Warp、MotionBoard | #032（共和薬品工業株式会社）<br>#038（宇部エクシモ株式会社） |
 | toyota-lf-okayama.jp | 垂直搬送機、ドックレベラー、充電式フォークリフト | #039（岡山土地倉庫株式会社） |
-| transcosmos-cotra.jp | tra:lien | #035（トランスコスモス（CXスクエア名古屋）） |
 | unifinity.co.jp | Unifinity | #040（株式会社ジーテクト） |
 | yamanaka-eng.co.jp | PiezoBolt | #040（（非公開）） |
 | yk-yamamoto.co.jp | LIFE SAVER | #038（株式会社岸本建設工業） |
@@ -84,6 +80,7 @@
 | cashmo.jp | 2026-10-19（推定） | Cashmo | #016（株式会社アウローラ、アップシードビーンズ株式会社） |
 | casty-app.jp | 2026-10-15（推定） | Casty | #014（株式会社ワントゥワン東京） |
 | ccs1981.jp | 2026-10-26（推定） | 大学の時間割編成ソリューション | #021（創価大学） |
+| ciftr.jp | 2026-11-09 | シフター | #035（溶岩焼肉 牛楽 鶴田町店） |
 | ckd.co.jp | 2026-10-29（推定） | パワフルアーム PAW | #024（髙藏工業株式会社） |
 | classi.jp | 2026-10-26（推定） | Classi | #021（東海大学付属高輪台高等学校・中等部） |
 | cloudsign.jp | 2026-09-30（推定） | CloudSign by CloudSign・CloudSign・クラウドサイン、MAKE for kintone | #003（株式会社find、フィードバイエックス株式会社）<br>#004（株式会社J.フロントプライムスペース）<br>#006（Fast Fitness Japan） |
@@ -93,6 +90,7 @@
 | dga.co.jp | 2026-10-22（推定） | 実践型DX研修プログラム、動画学習プラットフォーム「みんなデ」 | #019（大日精化工業株式会社） |
 | dpsj.co.jp | 2026-10-22（推定） | Wowza ClearCaster | #019（株式会社ブルーノート・ジャパン（BLUE NOTE TOKYO）） |
 | ecomeeting.jp | 2026-10-08（推定） | ECO Meeting CLOUD・ECO Meeting PRO・ECO Meeting | #009（学校法人東北学院）<br>#010（日本赤十字社 大津赤十字病院）<br>#020（本庄市役所）<br>#021（京都府立医科大学） |
+| ehime-medicaldx.jp | 2026-11-09 | 業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ | #035（社会医療法人石川記念会HITO病院） |
 | eizo-system.co.jp | 2026-10-27（推定） | AVシステム | #022（学校法人武蔵野大学） |
 | emotion-tech.co.jp | 2026-09-29（推定） | TopicScan | #002（株式会社インターネットイニシアティブ） |
 | endingcareer.co.jp | 2026-11-02（推定） | 組織開発コンサルティング | #026（（非公開）） |
@@ -216,9 +214,11 @@
 | tks-gifu.jp | 2026-10-23（推定） | アリアミスト・意地でも節水 | #020（扇野の里 扇芳閣） |
 | tokouav.jp | 2026-10-29（推定） | 東光鉄工製農業用ドローン | #024（髙橋 和久） |
 | top-seller.jp | 2026-10-13（推定） | TopSeller | #012（（非公開）） |
+| totec-mlife.jp | 2026-11-09 | 見守りライフ | #035（医療法人カワムラメディカル 介護老人保健施設けんこう・ふらの） |
 | totec-sangyo.jp | 2026-11-06（推定） | ASTERIA Warp | #030（東海模型株式会社） |
 | towaeng.co.jp | 2026-10-28（推定） | 会議・同時通訳システム、音響・映像システム、ICTシステム | #023（日鉄興和不動産株式会社） |
 | transact.ne.jp | 2026-11-03（推定） | TransFax | #027（株式会社セルメスタ） |
+| transcosmos-cotra.jp | 2026-11-09 | tra:lien | #035（トランスコスモス（CXスクエア名古屋）） |
 | tryhatch.co.jp | 2026-10-02（推定） | MEOチェキ | #005（株式会社花菱） |
 | u-s-d.co.jp | 2026-10-29（推定） | comuoon mobile type ML / comuoon mobile type WSG | #024（福岡空港のデイケア施設） |
 | uchida.co.jp | 2026-10-21（推定） | オフィス移転・リニューアルサービス・オフィス移転・リニューアルサービス、オフィスデザイン・構築サービス、ABW/フリーアドレス・オフィス移転・リニューアルサービス、オフィスデザイン・構築サービス・Change Working・オフィスデザイン・構築サービス、ABW/フリーアドレス、SmartInfill、COMMONS TABLE SYSTEM-i、LEMNA Work Lounge・オフィス移転プロジェクトマネジメントサービス、Change Working | #018（オリックス銀行株式会社、大樹生命保険株式会社）<br>#023（株式会社日経映像、コニカミノルタ株式会社、株式会社 YSK e-com、株式会社インテージ） |
