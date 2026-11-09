@@ -108640,7 +108640,8 @@
       "検査の目視頼み",
       "品質のばらつき",
       "工程管理の難しさ"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-consulting-asahi-re",
@@ -108690,7 +108691,8 @@
       "品質のばらつき",
       "検査の目視頼み",
       "技能伝承ができない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-consulting-pana-lig",
@@ -108745,7 +108747,8 @@
       "品質のばらつき",
       "工程管理の難しさ",
       "電気代の増加"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-overseas-exedy",
@@ -108800,7 +108803,8 @@
       "技能伝承ができない",
       "業務の属人化",
       "工程管理の難しさ"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-overseas-sbfurnitur",
@@ -108855,7 +108859,8 @@
       "工程管理の難しさ",
       "在庫の把握不足",
       "納期の遅延"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "pandora-climber-jp-cases-ati-html",
@@ -337596,7 +337601,8 @@
       "工程管理の難しさ",
       "検査の目視頼み",
       "対応履歴が残らない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-consulting-shinwa-s",
@@ -337638,7 +337644,8 @@
       "工程管理の難しさ",
       "技能伝承ができない",
       "業務の属人化"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-consulting-taihei",
@@ -337685,7 +337692,8 @@
       "技能伝承ができない",
       "品質のばらつき",
       "ミスの再発"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-training-age-free",
@@ -337735,7 +337743,8 @@
       "採用しても定着しない",
       "業務の属人化",
       "手順書がない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-training-kyotosangy",
@@ -337771,7 +337780,8 @@
       "採用しても定着しない",
       "新人教育のばらつき",
       "技能伝承ができない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-training-matsuyama",
@@ -337810,7 +337820,8 @@
       "業務の属人化",
       "手順書がない",
       "新人教育のばらつき"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-training-moriguchi-",
@@ -337855,7 +337866,8 @@
       "新人教育のばらつき",
       "研修の負担",
       "採用しても定着しない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "panasonic-co-jp-ew-pewbct-mono-casestudy-training-senko-denk",
@@ -337895,7 +337907,8 @@
       "新人教育のばらつき",
       "研修の負担",
       "技能伝承ができない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "pandora-climber-jp-cases-bridgestone-html",
