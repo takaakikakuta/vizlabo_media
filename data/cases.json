@@ -175854,7 +175854,8 @@
       "検査の目視頼み",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "video": true
   },
   {
     "id": "www-sato-co-jp-case-joshin-html",
@@ -311020,7 +311021,8 @@
       "手作業の転記",
       "工程管理の難しさ",
       "移動時間の多さ"
-    ]
+    ],
+    "video": true
   },
   {
     "id": "cyclo-shi-co-jp-keigan-amr-keigan-ali-case-kikuya-bisyodo",
