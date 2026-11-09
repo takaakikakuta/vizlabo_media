@@ -12,6 +12,7 @@
  *   node scripts/vendors/contacts.mjs --init-assume-notified                 → 初回だけ。今ある記事をすべて連絡済み（日付は記事の公開日・推定）にして作る
  *
  * 状態（status）: pending＝未連絡 / no-objection＝連絡済みで削除依頼なし / removed＝削除依頼あり（data/blocked_vendors.json から自動）
+ *               / intro＝紹介元で提供元ではない（data/intro_sources.json から自動。掲載連絡はしない）
  * 削除依頼を受けたら blocked_vendors.json に足す（この記録は自動で removed になる）。 */
 import fs from "node:fs";
 import path from "node:path";
@@ -29,6 +30,7 @@ const flagArg2 = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 2]
 const list = (k) => (typeof flag(k) === "string" ? flag(k).split(",").map((s) => s.trim()).filter(Boolean) : []);
 
 const blocked = read("data/blocked_vendors.json").vendors;
+const intro = new Map(read("data/intro_sources.json").sources.map((s) => [s.domain, s]));
 const blockedMap = new Map(blocked.map((v) => [v.domain, v]));
 const cases = read("data/cases.json");
 const byId = new Map(cases.map((c) => [c.id, c]));
@@ -129,6 +131,12 @@ if (flag("--pending")) {
   console.log(`${seriesTag(a)} の提供元を未連絡に戻した`);
 }
 
+/* 3a. 紹介元（intro_sources.json）は提供元ではないので掲載連絡の対象から外す */
+for (const v of data.vendors) {
+  const s = intro.get(v.domain);
+  if (s) { v.status = "intro"; if (!v.company) v.company = s.name; v.introReason = s.reason; }
+}
+
 /* 3. 削除依頼（blocked_vendors.json）は自動で removed */
 for (const v of data.vendors) {
   const b = blockedMap.get(v.domain);
@@ -156,16 +164,20 @@ const md = [
   "元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。", "",
   `- 連絡済み・削除依頼なし: ${by("no-objection").length} 社（うち連絡日が推定のもの ${by("no-objection").filter((v) => v.notifiedAtEstimated).length} 社）`,
   `- 未連絡: ${by("pending").length} 社（記事単位で未連絡のものは下の表）`,
-  `- 削除依頼あり: ${by("removed").length} 社`, "",
+  `- 削除依頼あり: ${by("removed").length} 社`,
+  `- 紹介元（提供元ではないので掲載連絡はしない）: ${by("intro").length} 社`, "",
   "## 未連絡（これから掲載連絡する）", "",
   "| 提供元 | サービス | 記事（導入企業） |", "|---|---|---|",
-  ...data.vendors.filter((v) => v.status !== "removed" && pendingArticles(v).length).map((v) => row(v, pendingArticles(v))),
+  ...data.vendors.filter((v) => !["removed", "intro"].includes(v.status) && pendingArticles(v).length).map((v) => row(v, pendingArticles(v))),
   "", "## 連絡済み・削除依頼なし", "",
   "| 提供元 | 連絡日 | サービス | 記事（導入企業） |", "|---|---|---|---|",
   ...by("no-objection").map((v) => `| ${v.domain}${v.company ? `（${v.company}）` : ""} | ${v.notifiedAt}${v.notifiedAtEstimated ? "（推定）" : ""} | ${prods(v.articles.filter((x) => x.notified))} | ${v.articles.filter((x) => x.notified).map((x) => `${x.label}（${x.customers.join("、")}）`).join("<br>") || "—"} |`),
   "", "## 削除依頼あり（掲載しない）", "",
   "| 提供元 | 依頼日 | 理由 |", "|---|---|---|",
   ...by("removed").map((v) => `| ${v.domain}${v.company ? `（${v.company}）` : ""} | ${v.removedAt ?? ""} | ${v.removedReason ?? ""} |`),
+  "", "## 紹介元（提供元ではない。事例は残し、提供元としては出さない）", "",
+  "| 掲載元 | 記事 | 理由 |", "|---|---|---|",
+  ...by("intro").map((v) => `| ${v.domain}${v.company ? `（${v.company}）` : ""} | ${v.articles.map((x) => x.label).join(" ") || "—"} | ${v.introReason ?? ""} |`),
   "",
 ];
 fs.writeFileSync(path.join(ROOT, MD), md.join("\n"));
@@ -173,7 +185,7 @@ fs.writeFileSync(path.join(ROOT, MD), md.join("\n"));
 if (args.includes("--list")) {
   for (const v of data.vendors) {
     const p = pendingArticles(v);
-    if (v.status !== "removed" && p.length) console.log(`${v.domain}: ${p.map((x) => x.label).join(" ")}`);
+    if (!["removed", "intro"].includes(v.status) && p.length) console.log(`${v.domain}: ${p.map((x) => x.label).join(" ")}`);
   }
 }
-console.log(`${FILE} と ${MD} を書き出した（提供元 ${data.vendors.length}：連絡済み ${by("no-objection").length}、未連絡 ${by("pending").length}、削除依頼 ${by("removed").length}）`);
+console.log(`${FILE} と ${MD} を書き出した（提供元 ${data.vendors.length}：連絡済み ${by("no-objection").length}、未連絡 ${by("pending").length}、削除依頼 ${by("removed").length}、紹介元 ${by("intro").length}）`);

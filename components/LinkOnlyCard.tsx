@@ -4,6 +4,7 @@ import { withUtm } from "../lib/source";
 import VendorLogo from "./VendorLogo";
 import { PlayMark } from "./VideoBadge";
 import { hasVideo } from "../lib/video";
+import { introSourceName } from "../lib/introSources";
 
 /* リンクのみ（linkOnly）の事例のカード。掲載元から取り下げ依頼を受けた事例は、
    企業名・数字・掲載元の画像を出さず、提供元ロゴと元記事への直リンクだけにする（元記事に動画があれば再生マークだけ重ねる）。
@@ -18,7 +19,7 @@ export default function LinkOnlyCard({ c, campaign, content }: { c: CaseStudy; c
         {hasVideo(c) && <PlayMark className="bottom-1.5 left-1.5" />}
       </span>
       <span className="min-w-0">
-        <span className="block truncate text-[12px] text-muted">掲載元：{c.product || c.vendor}（{c.vendor}）</span>
+        <span className="block truncate text-[12px] text-muted">掲載元：{introSourceName(c.vendor) ? `${introSourceName(c.vendor)}の事例紹介ページ` : `${c.product || c.vendor}（${c.vendor}）`}</span>
         <span className="mt-1.5 block text-[13px] font-bold text-ink group-hover:text-brand">
           この事例を掲載元で読む ↗
         </span>

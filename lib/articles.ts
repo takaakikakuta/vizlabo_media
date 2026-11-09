@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { isIntroSource } from "./introSources";
 
 /* オリジナル記事の読み込み。
    記事＝「型テンプレート（components/articles/*）」×「編集データ（content/articles/*.json）」。
@@ -317,7 +318,7 @@ export function articleServices(a: Article): ArticleService[] {
   const seen = new Set<string>();
   for (const id of articleCaseIds(a)) {
     const c = getCase(id);
-    if (!c) continue;
+    if (!c || isIntroSource(c.vendor)) continue;  // 紹介元は提供企業ではないので取り次がない
     const name = (c.product || c.vendor).split(/[（(]/)[0].trim();
     const key = `${c.vendor}｜${name}`;
     if (seen.has(key)) continue;

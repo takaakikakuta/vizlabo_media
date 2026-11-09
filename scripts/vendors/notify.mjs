@@ -52,6 +52,7 @@ const title = a.title.join("");
 const url = `${SITE}${a.format === "yougo" ? "/terms/" : "/articles/"}${a.slug}`;
 
 const blocked = new Set(read("data/blocked_vendors.json").vendors.map((v) => v.domain));
+const intro = new Map(read("data/intro_sources.json").sources.map((s) => [s.domain, s.name]));  // 紹介元（提供元ではない）には送らない
 const cases = new Map(read("data/cases.json").map((c) => [c.id, c]));
 const contacts = fs.existsSync(path.join(ROOT, "data/vendor_contacts.json")) ? read("data/vendor_contacts.json").vendors : [];
 const contact = (domain) => contacts.find((v) => v.domain === domain);
@@ -90,6 +91,7 @@ const out = [];
 let n = 0;
 for (const g of [...groups.values()].sort((x, y) => x.domain.localeCompare(y.domain))) {
   if (exclude.has(g.domain)) continue;
+  if (intro.has(g.domain)) { needCheck.push(`${g.domain}：紹介元（${intro.get(g.domain)}）で提供元ではないので文面を作っていない`); continue; }
   const v = contact(g.domain);
   const art = v?.articles.find((x) => x.slug === a.slug);
   if (!opt.all && art?.notified) continue;

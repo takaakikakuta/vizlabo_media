@@ -12,6 +12,7 @@ import CoverImg from "../../../components/CoverImg";
 import { withUtm } from "../../../lib/source";
 import { hasVideo } from "../../../lib/video";
 import VideoBadge from "../../../components/VideoBadge";
+import { isIntroSource, introSourceName } from "../../../lib/introSources";
 
 /* ビルド出力の肥大化対策（Amplifyの220MB制限）:
    事前生成をやめ、初回アクセス時に生成してキャッシュするオンデマンドISRにする。
@@ -95,7 +96,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
         <Row k="業種" v={industryLabel(c.customer.industry)} />
         {c.customer.size && <Row k="規模" v={c.customer.size} />}
         {c.customer.dept && <Row k="部門" v={c.customer.dept} />}
-        <Row k="解決した製品" v={`${c.product}（${c.vendor}）`} />
+        <Row k="解決した製品" v={isIntroSource(c.vendor) ? c.product : `${c.product}（${c.vendor}）`} />
         {c.period && <Row k="期間" v={c.period} />}
         {/* 導入規模＝成果ではない数値。奥付側に置き、成果の数字と混ぜない */}
         {c.scale?.map((s, i) => <Row key={`scale-${i}`} k={s.metric} v={s.value} />)}
@@ -249,7 +250,7 @@ function SourceButton({ c, position }: { c: CaseStudy; position: "top" | "bottom
       className="group inline-flex max-w-full flex-col border border-ink bg-ink px-5 py-3 text-white no-underline transition hover:bg-white hover:text-ink">
       <span className="text-[14px] font-bold leading-snug">元の事例を読む（{name}）↗</span>
       <span className="mt-0.5 text-[11px] text-white/70 group-hover:text-muted">
-        掲載元：{c.vendor} の公式サイト{hasVideo(c) && "（動画あり）"}
+        掲載元：{introSourceName(c.vendor) ? `${introSourceName(c.vendor)}の事例紹介ページ` : `${c.vendor} の公式サイト`}{hasVideo(c) && "（動画あり）"}
       </span>
     </a>
   );

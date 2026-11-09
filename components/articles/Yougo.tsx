@@ -16,6 +16,7 @@ import { SUGGEST_ENABLED } from "../../lib/flags";
 import LinkOnlyCard from "../LinkOnlyCard";
 import VideoBadge, { PlayMark } from "../VideoBadge";
 import { hasVideo } from "../../lib/video";
+import { introSourceName } from "../../lib/introSources";
 
 /* 「事例でわかる技術用語」テンプレート。「〇〇とは」で検索した人向けに、
    用語の説明（何を解決するものか。向き不向きは1〜2文）→ その用語で課題を解いた事例（一言ラベル＋1段落＋読者向けの一言）
@@ -139,7 +140,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                 {hasVideo(c) && <span className="mr-2.5"><VideoBadge /></span>}
                 {industryLabel(c.customer.industry)}
                 {c.customer.size && ` ・ ${c.customer.size}`}
-                {` ・ 提供：${vendorLabel(c.vendor)}`}
+                {introSourceName(c.vendor) ? ` ・ 出典：${introSourceName(c.vendor)}の事例紹介` : ` ・ 提供：${vendorLabel(c.vendor)}`}
               </p>
               <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>
               <p className="mt-3 ml-10 border-l-2 border-ink pl-4 text-[13.5px] leading-[2.05] text-ink">{e.hitokoto}</p>

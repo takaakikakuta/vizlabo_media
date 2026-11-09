@@ -1175,8 +1175,8 @@
     },
     {
       "domain": "ehime-medicaldx.jp",
-      "company": "",
-      "status": "no-objection",
+      "company": "愛媛県医療DX推進協議会",
+      "status": "intro",
       "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
@@ -1198,7 +1198,8 @@
           "notifiedAt": "2026-11-09"
         }
       ],
-      "memo": ""
+      "memo": "",
+      "introReason": "愛媛県庁医療対策課から、県（協議会）がHITO病院へツールを提供したと誤解される掲載なので修正してほしいとの連絡を受けた（#035）。協議会は県内の医療DX事例を紹介しているだけで、製品の提供元ではない"
     },
     {
       "domain": "eizo-system.co.jp",
