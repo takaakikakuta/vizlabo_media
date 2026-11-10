@@ -75617,14 +75617,14 @@
   {
     "id": "www-serverworks-co-jp-case-senshukai-1-html",
     "title": "20年のレガシーシステムをAWSに移行、TCOを3分の2に削減",
-    "summary": "株式会社赤趣会は、20年以上稼働していたメインフレーム上の基幹システムの老朽化と柔軟性の欠如に直面。AWSへの移行と新しいERPパッケージの導入により、インフラを含むTCOを大幅に削減し、クラウドのメリットを活用した事業基盤の強化を実現した。",
+    "summary": "株式会社千趣会は、20年以上稼働していたメインフレーム上の基幹システムの老朽化と柔軟性の欠如に直面。AWSへの移行と新しいERPパッケージの導入により、インフラを含むTCOを大幅に削減し、クラウドのメリットを活用した事業基盤の強化を実現した。",
     "vendor": "serverworks.co.jp",
     "product": "AWS（Amazon Web Services）、ERPパッケージ",
     "productCategory": "cloud",
     "sourceUrl": "https://www.serverworks.co.jp/case/senshukai-1.html",
     "collectedAt": "2026-10-09T00:00:00.000Z",
     "customer": {
-      "name": "株式会社赤趣会",
+      "name": "株式会社千趣会",
       "industry": "retail",
       "size": "",
       "dept": ""
@@ -123394,7 +123394,7 @@
     "sourceUrl": "https://www.canon-electec.co.jp/case/fukuhobank/",
     "collectedAt": "2026-10-13T00:00:00.000Z",
     "customer": {
-      "name": "株式会社福祉銀行",
+      "name": "株式会社福邦銀行",
       "industry": "finance",
       "size": "38支店を保有",
       "dept": "情報系システム部門"
