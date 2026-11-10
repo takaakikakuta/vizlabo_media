@@ -496,6 +496,32 @@
       "memo": ""
     },
     {
+      "domain": "ba-net.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Plaza-i"
+      ],
+      "articles": [
+        {
+          "slug": "26c9394a-cfa3-42dc-8b8f-272a0aec6462",
+          "label": "用語#004",
+          "title": "ERP・基幹システムとは｜IT・ソフトウェアの5つの事例でわかる",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "SocioFuture株式会社"
+          ],
+          "products": [
+            "Plaza-i"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "basesystem.co.jp",
       "company": "",
       "status": "no-objection",
@@ -793,6 +819,72 @@
         }
       ],
       "memo": "2026-11-09 問い合わせフォーム停止中のため #035・#036 の掲載連絡を送れず。復旧したら送る"
+    },
+    {
+      "domain": "cammacs.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "キャムマックス",
+        "クラウドERP キャムマックス"
+      ],
+      "articles": [
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "株式会社八天堂"
+          ],
+          "products": [
+            "キャムマックス"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
+          "label": "用語#003",
+          "title": "ERP・基幹システムとは｜製造業の5つの事例でわかる",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "武田レッグウェアー株式会社"
+          ],
+          "products": [
+            "クラウドERP キャムマックス"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "26c9394a-cfa3-42dc-8b8f-272a0aec6462",
+          "label": "用語#004",
+          "title": "ERP・基幹システムとは｜IT・ソフトウェアの5つの事例でわかる",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "株式会社ガリレオ"
+          ],
+          "products": [
+            "キャムマックス"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "40b83808-8f84-4bb6-88c7-d2e5b2b4c196",
+          "label": "用語#005",
+          "title": "ERP・基幹システムとは｜小売・ECの5つの事例でわかる",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "株式会社イーストボーイ"
+          ],
+          "products": [
+            "クラウドERP キャムマックス"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": "2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのエラーで未送付。2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームで文面がエラーになり送れず。URLなし版・短縮版で再送する"
     },
     {
       "domain": "cashmo.jp",
@@ -1873,6 +1965,32 @@
       "memo": ""
     },
     {
+      "domain": "forbis.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Vegas"
+      ],
+      "articles": [
+        {
+          "slug": "40b83808-8f84-4bb6-88c7-d2e5b2b4c196",
+          "label": "用語#005",
+          "title": "ERP・基幹システムとは｜小売・ECの5つの事例でわかる",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "株式会社DECENCIA"
+          ],
+          "products": [
+            "Vegas"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "form.run",
       "company": "",
       "status": "no-objection",
@@ -1907,7 +2025,8 @@
       "products": [
         "freee会計、freee人事労務、freeeカー Unlimited、freee-mcp",
         "freee人事労務",
-        "freee会計、freee給与、freee税務申告"
+        "freee会計、freee給与、freee税務申告",
+        "freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理"
       ],
       "articles": [
         {
@@ -1949,6 +2068,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "26c9394a-cfa3-42dc-8b8f-272a0aec6462",
+          "label": "用語#004",
+          "title": "ERP・基幹システムとは｜IT・ソフトウェアの5つの事例でわかる",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "株式会社LIG"
+          ],
+          "products": [
+            "freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2681,7 +2813,8 @@
         "BeAd販売管理システム",
         "ECOASクレームマネジメント",
         "intra-mart Accel Platform",
-        "imforce/経費精算ソリューション"
+        "imforce/経費精算ソリューション",
+        "intra-mart、Biz∫"
       ],
       "articles": [
         {
@@ -2752,6 +2885,19 @@
             "imforce/経費精算ソリューション"
           ],
           "notified": true
+        },
+        {
+          "slug": "26c9394a-cfa3-42dc-8b8f-272a0aec6462",
+          "label": "用語#004",
+          "title": "ERP・基幹システムとは｜IT・ソフトウェアの5つの事例でわかる",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "株式会社NTTデータMSE"
+          ],
+          "products": [
+            "intra-mart、Biz∫"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2940,7 +3086,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "Microsoft Power Platform",
-        "マネージドバックアップ for Microsoft 365"
+        "マネージドバックアップ for Microsoft 365",
+        "Microsoft Dynamics 365"
       ],
       "articles": [
         {
@@ -2953,6 +3100,19 @@
           ],
           "products": [
             "Microsoft Power Platform"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "26c9394a-cfa3-42dc-8b8f-272a0aec6462",
+          "label": "用語#004",
+          "title": "ERP・基幹システムとは｜IT・ソフトウェアの5つの事例でわかる",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "パナソニック ソリューションテクノロジー株式会社"
+          ],
+          "products": [
+            "Microsoft Dynamics 365"
           ],
           "notified": false
         },
@@ -3097,6 +3257,33 @@
       "memo": ""
     },
     {
+      "domain": "kacoms.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-11",
+      "notifiedAtEstimated": false,
+      "products": [
+        "BeSpice DecERP include iDempiere"
+      ],
+      "articles": [
+        {
+          "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
+          "label": "用語#003",
+          "title": "ERP・基幹システムとは｜製造業の5つの事例でわかる",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "港製器工業株式会社"
+          ],
+          "products": [
+            "BeSpice DecERP include iDempiere"
+          ],
+          "notified": true,
+          "notifiedAt": "2026-11-11"
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "kiscl.co.jp",
       "company": "",
       "status": "no-objection",
@@ -3151,11 +3338,12 @@
     {
       "domain": "kobelcosys.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-11",
       "notifiedAtEstimated": false,
       "products": [
-        "現場特化型MESソリューション　実績班長"
+        "現場特化型MESソリューション　実績班長",
+        "SAP S/4HANA、SAP on Azure"
       ],
       "articles": [
         {
@@ -3170,6 +3358,20 @@
             "現場特化型MESソリューション　実績班長"
           ],
           "notified": false
+        },
+        {
+          "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
+          "label": "用語#003",
+          "title": "ERP・基幹システムとは｜製造業の5つの事例でわかる",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "株式会社オーディオテクニカ"
+          ],
+          "products": [
+            "SAP S/4HANA、SAP on Azure"
+          ],
+          "notified": true,
+          "notifiedAt": "2026-11-11"
         }
       ],
       "memo": ""
@@ -3578,7 +3780,8 @@
       "notifiedAtEstimated": true,
       "products": [
         "リサーチコム",
-        "リアルトレース"
+        "リアルトレース",
+        "天然水製造・宅配管理システム"
       ],
       "articles": [
         {
@@ -3593,6 +3796,20 @@
             "リサーチコム"
           ],
           "notified": true
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "ジェイウォーター株式会社"
+          ],
+          "products": [
+            "天然水製造・宅配管理システム"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -4038,6 +4255,32 @@
       "memo": ""
     },
     {
+      "domain": "mitani-corp.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "e2-movE"
+      ],
+      "articles": [
+        {
+          "slug": "40b83808-8f84-4bb6-88c7-d2e5b2b4c196",
+          "label": "用語#005",
+          "title": "ERP・基幹システムとは｜小売・ECの5つの事例でわかる",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "株式会社ミヤシゲ"
+          ],
+          "products": [
+            "e2-movE"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "mjs.co.jp",
       "company": "",
       "status": "no-objection",
@@ -4045,7 +4288,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "MJSお金の管理、ACELINK NX-Pro",
-        "ACELINK NX-Pro"
+        "ACELINK NX-Pro",
+        "Galileopt DX"
       ],
       "articles": [
         {
@@ -4063,6 +4307,20 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "福留ハム株式会社"
+          ],
+          "products": [
+            "Galileopt DX"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5867,6 +6125,33 @@
       "memo": ""
     },
     {
+      "domain": "scsk-superstream.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-11",
+      "notifiedAtEstimated": false,
+      "products": [
+        "SuperStream-NX、システム連携ツール Connect、CELF"
+      ],
+      "articles": [
+        {
+          "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
+          "label": "用語#003",
+          "title": "ERP・基幹システムとは｜製造業の5つの事例でわかる",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "キヤノン電子株式会社"
+          ],
+          "products": [
+            "SuperStream-NX、システム連携ツール Connect、CELF"
+          ],
+          "notified": true,
+          "notifiedAt": "2026-11-11"
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "seagreen.co.jp",
       "company": "",
       "status": "pending",
@@ -5938,6 +6223,32 @@
           ],
           "products": [
             "BIG ASS FANS"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "serverworks.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "AWS"
+      ],
+      "articles": [
+        {
+          "slug": "40b83808-8f84-4bb6-88c7-d2e5b2b4c196",
+          "label": "用語#005",
+          "title": "ERP・基幹システムとは｜小売・ECの5つの事例でわかる",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "株式会社千趣会"
+          ],
+          "products": [
+            "AWS"
           ],
           "notified": false
         }
@@ -6159,6 +6470,46 @@
       "memo": ""
     },
     {
+      "domain": "softes.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "SAP S/4HANA",
+        "SAP S/4HANA、SAP Analytics Cloud"
+      ],
+      "articles": [
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "日研フード株式会社"
+          ],
+          "products": [
+            "SAP S/4HANA"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
+          "label": "用語#003",
+          "title": "ERP・基幹システムとは｜製造業の5つの事例でわかる",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "株式会社ニチリン"
+          ],
+          "products": [
+            "SAP S/4HANA、SAP Analytics Cloud"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": "2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのメンテナンス中で未送付。復旧したら2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームがメンテナンス中のため送れず。復旧したら送る"
+    },
+    {
       "domain": "sonar-ats.jp",
       "company": "",
       "status": "no-objection",
@@ -6325,6 +6676,20 @@
             "SAP Business Suite powered by SAP HANA"
           ],
           "notified": true
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "カルビー株式会社"
+          ],
+          "products": [
+            "SAP Business Suite powered by SAP HANA"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6727,7 +7092,8 @@
       "products": [
         "ASTERIA Warp",
         "Asprova APS",
-        "ASTERIA Warp、MotionBoard"
+        "ASTERIA Warp、MotionBoard",
+        "ポストモダンTOTEC ERP"
       ],
       "articles": [
         {
@@ -6769,6 +7135,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "40b83808-8f84-4bb6-88c7-d2e5b2b4c196",
+          "label": "用語#005",
+          "title": "ERP・基幹システムとは｜小売・ECの5つの事例でわかる",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "東海模型株式会社"
+          ],
+          "products": [
+            "ポストモダンTOTEC ERP"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
