@@ -195,7 +195,7 @@
 - 株式会社デイリースポーツ案内広告社（miidas.jp）: #26(hidden), #14
 - 株式会社マキノ（fs-farm.co.jp）: #5, #24
 - 大阪医科薬科大学病院（sato.co.jp）: #10, #1
-- カルビー株式会社（sunplanning.co.jp）: #16, #2(draft)
+- カルビー株式会社（sunplanning.co.jp）: #16, #2
 - シチズン生活協同組合ほか複数（308-al.co.jp）: #20, #38
 - 日本フルハーフ株式会社 厚木工場（coolex.jp）: #24, #38
 - 株式会社AOKIホールディングス（takachiho-kk.co.jp）: #28, #1
