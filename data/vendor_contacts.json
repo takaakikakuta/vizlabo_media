@@ -795,6 +795,32 @@
       "memo": "2026-11-09 問い合わせフォーム停止中のため #035・#036 の掲載連絡を送れず。復旧したら送る"
     },
     {
+      "domain": "cammacs.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "キャムマックス"
+      ],
+      "articles": [
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "株式会社八天堂"
+          ],
+          "products": [
+            "キャムマックス"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": "2026-11-10 用語#002: 問い合わせフォームで文面がエラーになり送れず。URLなし版・短縮版で再送する"
+    },
+    {
       "domain": "cashmo.jp",
       "company": "",
       "status": "no-objection",
@@ -3578,7 +3604,8 @@
       "notifiedAtEstimated": true,
       "products": [
         "リサーチコム",
-        "リアルトレース"
+        "リアルトレース",
+        "天然水製造・宅配管理システム"
       ],
       "articles": [
         {
@@ -3593,6 +3620,20 @@
             "リサーチコム"
           ],
           "notified": true
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "ジェイウォーター株式会社"
+          ],
+          "products": [
+            "天然水製造・宅配管理システム"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -4045,7 +4086,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "MJSお金の管理、ACELINK NX-Pro",
-        "ACELINK NX-Pro"
+        "ACELINK NX-Pro",
+        "Galileopt DX"
       ],
       "articles": [
         {
@@ -4063,6 +4105,20 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "福留ハム株式会社"
+          ],
+          "products": [
+            "Galileopt DX"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6159,6 +6215,32 @@
       "memo": ""
     },
     {
+      "domain": "softes.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "SAP S/4HANA"
+      ],
+      "articles": [
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "日研フード株式会社"
+          ],
+          "products": [
+            "SAP S/4HANA"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": "2026-11-10 用語#002: 問い合わせフォームがメンテナンス中のため送れず。復旧したら送る"
+    },
+    {
       "domain": "sonar-ats.jp",
       "company": "",
       "status": "no-objection",
@@ -6325,6 +6407,20 @@
             "SAP Business Suite powered by SAP HANA"
           ],
           "notified": true
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "カルビー株式会社"
+          ],
+          "products": [
+            "SAP Business Suite powered by SAP HANA"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
