@@ -113,6 +113,7 @@ if (flag("--notified")) {
       art.notified = true; delete art.notifiedAt; art.skipped = "以前の記事で連絡済みの提供元のため、この記事の通知は省略";
       continue;
     }
+    if (art.notified) continue;  // 連絡済み・省略済みの先はそのまま（記事の残りを後から送ったときに日付や省略を書き換えない）
     art.notified = true; art.notifiedAt = date; delete art.skipped;
     if (v.status === "pending") { v.status = "no-objection"; v.notifiedAt = date; v.notifiedAtEstimated = false; }
     if (!v.notifiedAt) { v.notifiedAt = date; v.notifiedAtEstimated = false; }

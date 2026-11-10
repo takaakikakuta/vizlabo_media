@@ -1,10 +1,10 @@
-# 提供元への掲載連絡の記録（2026-11-09 時点）
+# 提供元への掲載連絡の記録（2026-11-10 時点）
 
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 181 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 38 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 183 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 36 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 10 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -25,7 +25,6 @@
 | cybozu.co.jp | kintone | #032（株式会社京都紋付） |
 | endingcareer.co.jp | 組織開発コンサルティング | #041（T社（情報通信サービス会社）） |
 | ev-charge-enechange.jp | EV充電エネチェンジ | #031（株式会社アスター（盛岡つなぎ温泉 ホテル紫苑）） |
-| fa.omron.co.jp | 現場データ活用サービス i-BELT、マシンオートメーションコントローラ | #040（オムロン株式会社） |
 | fielding.co.jp | NECデータセンターサービス | #044（鉄道工業株式会社） |
 | funaisoken.co.jp | 経営コンサルティング | #042（ケアシステム株式会社） |
 | geekplus.jp | 搬送型AMR・Geek+ Pシリーズ ピッキングロボット・ピッキングロボット | #033（トヨタ自動車、Walmart、Jointown製薬グループ） |
@@ -65,7 +64,6 @@
 | techvan.co.jp | ソフトウェアテストサービス | #045（株式会社MIXI） |
 | totec-sangyo.jp | Asprova APS | #032（共和薬品工業株式会社） |
 | unifinity.co.jp | Unifinity | #045（株式会社利久） |
-| yamanaka-eng.co.jp | PiezoBolt | #040（（非公開）） |
 
 ## 連絡済み・削除依頼なし
 
@@ -106,6 +104,7 @@
 | erecta.co.jp | 2026-11-04（推定） | マルチサーブ | #028（医療法人慈風会 あつち葛飾クリニック） |
 | exawizards.com | 2026-09-29（推定） | exaBase FAQ・AIを活用した水力発電計画最適化システム | #002（住友ファーマ株式会社）<br>#020（中国電力株式会社） |
 | expoline.jp | 2026-11-03（推定） | EXPOLINE | #027（株式会社大塚商会） |
+| fa.omron.co.jp | 2026-11-10 | 現場データ活用サービス i-BELT、マシンオートメーションコントローラ | #040（オムロン株式会社） |
 | fastaccounting.co.jp | 2026-09-28（推定） | Remota・Remota、Robota | #001（日清食品ホールディングス株式会社）<br>#003（味の素フィナンシャル・ソリューションズ株式会社、株式会社阪急アクトフォー（エイチ・ツー・オー リテイリングのグループ企業向けシェアードサービス提供）、BIPROGY株式会社） |
 | fastaccounting.jp | 2026-09-28（推定） | 領収書Robota | #001（株式会社エフアンドエム） |
 | fastseries.jp | 2026-09-29（推定） | FastHelp、FastAnswer・FastHelp, FastAnswer | #002（日本コープ共済生活協同組合連合会、株式会社日立システムズ） |
@@ -248,6 +247,7 @@
 | vtv.co.jp | 2026-10-16（推定） | VTV Care | #015（ソフトウェア・システム開発会社） |
 | works-hi.co.jp | 2026-10-15（推定） | COMPANY 雇用手続管理・COMPANY Web Service・COMPANY | #014（ヤマト運輸株式会社、パーソルホールディングス株式会社、ヤマハ発動機ビズパートナー株式会社）<br>#021（国立大学法人 神戸大学）<br>#030（菅公学生服株式会社） |
 | yamamoto-ss.co.jp | 2026-10-08（推定） | ラベル剥離機 PLS-5000 | #009（（非公開）） |
+| yamanaka-eng.co.jp | 2026-11-10 | PiezoBolt | #040（（非公開）） |
 | yk-yamamoto.co.jp | 2026-11-09 | LIFE SAVER | #038（株式会社岸本建設工業） |
 | yu-jin.co.jp | 2026-10-26（推定） | YouMark | #021（東京都市大学付属中学校） |
 | zendesk.co.jp | 2026-09-29（推定） | Zendesk | #002（株式会社アンドエスティHD）<br>#012（株式会社ジェイアール東日本企画） |

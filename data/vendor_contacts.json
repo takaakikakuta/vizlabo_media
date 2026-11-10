@@ -1606,8 +1606,8 @@
     {
       "domain": "fa.omron.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-10",
       "notifiedAtEstimated": false,
       "products": [
         "現場データ活用サービス i-BELT、マシンオートメーションコントローラ"
@@ -1624,7 +1624,8 @@
           "products": [
             "現場データ活用サービス i-BELT、マシンオートメーションコントローラ"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-10"
         }
       ],
       "memo": ""
@@ -7321,8 +7322,8 @@
     {
       "domain": "yamanaka-eng.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-10",
       "notifiedAtEstimated": false,
       "products": [
         "PiezoBolt"
@@ -7339,7 +7340,8 @@
           "products": [
             "PiezoBolt"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-10"
         }
       ],
       "memo": ""
