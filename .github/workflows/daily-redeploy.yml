@@ -8,6 +8,10 @@ name: daily-redeploy
 on:
   schedule:
     - cron: "5 15 * * *"   # UTC 15:05 = 日本時間 0:05
+    # GitHub の定時実行は遅れたり飛ばされたりする（2026-11-10 は朝8時を過ぎても走らず #32 が出なかった）。
+    # 予備の時刻。当日すでに push があれば Decide でスキップされるので、二重に再デプロイはしない
+    - cron: "5 17 * * *"   # 日本時間 2:05
+    - cron: "5 20 * * *"   # 日本時間 5:05
   workflow_dispatch:
     inputs:
       force:
