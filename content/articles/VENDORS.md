@@ -1,10 +1,10 @@
-# 提供元への掲載連絡の記録（2026-11-09 時点）
+# 提供元への掲載連絡の記録（2026-11-10 時点）
 
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 179 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 40 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 184 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 35 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 10 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -25,7 +25,6 @@
 | cybozu.co.jp | kintone | #032（株式会社京都紋付） |
 | endingcareer.co.jp | 組織開発コンサルティング | #041（T社（情報通信サービス会社）） |
 | ev-charge-enechange.jp | EV充電エネチェンジ | #031（株式会社アスター（盛岡つなぎ温泉 ホテル紫苑）） |
-| fa.omron.co.jp | 現場データ活用サービス i-BELT、マシンオートメーションコントローラ | #040（オムロン株式会社） |
 | fielding.co.jp | NECデータセンターサービス | #044（鉄道工業株式会社） |
 | funaisoken.co.jp | 経営コンサルティング | #042（ケアシステム株式会社） |
 | geekplus.jp | 搬送型AMR・Geek+ Pシリーズ ピッキングロボット・ピッキングロボット | #033（トヨタ自動車、Walmart、Jointown製薬グループ） |
@@ -41,10 +40,8 @@
 | kobelcosys.co.jp | 現場特化型MESソリューション　実績班長 | #032（田中精密工業株式会社） |
 | koden-kk.co.jp | 自家消費型太陽光発電システム | #044（株式会社右川ゴム製造所） |
 | kouei.co.jp | 運行管理クラウドサービス | #031（ENEOS株式会社） |
-| lattice.co.jp | XVL | #040（株式会社東海理化） |
 | lucidsoft.jp | リアルトレース | #045（株式会社日本テレメッセージ） |
 | meikoshokai.co.jp | MSボイスコールNEO Ver.2 | #045（神奈川県湯河原町役場） |
-| mks.jp | eNEN | #034（（非公開）） |
 | mr-m.co.jp | カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作 | #042（ミズタニバルブ工業株式会社） |
 | naomi.co.jp | パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02・チューブ充填機 6DTZ-T | #043（株式会社ベネッセパレット）<br>#045（下呂プリン） |
 | narikoma-group.co.jp | ナリコマ | #031（特別養護老人ホーム アルテイル宮町） |
@@ -57,7 +54,6 @@
 | quest.co.jp | WinActor | #045（株式会社日本能率協会マネジメントセンター（JMAM）） |
 | rescuenow.co.jp | 安否確認サービス | #044（株式会社片山化学工業研究所） |
 | rolanddg.co.jp | Roland DG Assemble | #032（合資会社菅沼製作所） |
-| saeilo.co.jp | Cimatron、Pform | #040（株式会社伊吹機械） |
 | salesrenovation.jp | インサイドセールス人材派遣・育成サービス | #042（キューアンドエー株式会社） |
 | sato.co.jp | 耐性ラベル・RFID | #031（太陽サカコー株式会社）<br>#033（株式会社安川電機） |
 | seagreen.co.jp | 評価ポイント | #041（（非公開）） |
@@ -66,8 +62,7 @@
 | sizsan.co.jp | BellaBot | #033（株式会社五味八珍） |
 | techvan.co.jp | ソフトウェアテストサービス | #045（株式会社MIXI） |
 | totec-sangyo.jp | Asprova APS | #032（共和薬品工業株式会社） |
-| unifinity.co.jp | Unifinity | #040（株式会社ジーテクト）<br>#045（株式会社利久） |
-| yamanaka-eng.co.jp | PiezoBolt | #040（（非公開）） |
+| unifinity.co.jp | Unifinity | #045（株式会社利久） |
 
 ## 連絡済み・削除依頼なし
 
@@ -108,6 +103,7 @@
 | erecta.co.jp | 2026-11-04（推定） | マルチサーブ | #028（医療法人慈風会 あつち葛飾クリニック） |
 | exawizards.com | 2026-09-29（推定） | exaBase FAQ・AIを活用した水力発電計画最適化システム | #002（住友ファーマ株式会社）<br>#020（中国電力株式会社） |
 | expoline.jp | 2026-11-03（推定） | EXPOLINE | #027（株式会社大塚商会） |
+| fa.omron.co.jp | 2026-11-10 | 現場データ活用サービス i-BELT、マシンオートメーションコントローラ | #040（オムロン株式会社） |
 | fastaccounting.co.jp | 2026-09-28（推定） | Remota・Remota、Robota | #001（日清食品ホールディングス株式会社）<br>#003（味の素フィナンシャル・ソリューションズ株式会社、株式会社阪急アクトフォー（エイチ・ツー・オー リテイリングのグループ企業向けシェアードサービス提供）、BIPROGY株式会社） |
 | fastaccounting.jp | 2026-09-28（推定） | 領収書Robota | #001（株式会社エフアンドエム） |
 | fastseries.jp | 2026-09-29（推定） | FastHelp、FastAnswer・FastHelp, FastAnswer | #002（日本コープ共済生活協同組合連合会、株式会社日立システムズ） |
@@ -148,6 +144,7 @@
 | lafool.jp | 2026-11-02（推定） | ラフールサーベイ | #026（株式会社プログレス） |
 | lancers.jp | 2026-10-20（推定） | ランサーズ | #017（株式会社中村製作所） |
 | lanscope.jp | 2026-10-07（推定） | LANSCOPEエンドポイントマネージャー クラウド版・LANSCOPE セキュリティオーディター・LANSCOPE エンドポイントマネージャー クラウド版・LANSCOPE サイバープロテクション powered by Aurora Protect、LANSCOPE サイバープロテクション powered by A | #008（株式会社カシワバラ・コーポレーション）<br>#018（株式会社MCEAホールディングス、株式会社ユーグレナ）<br>#019（医療法人社団煌の会 山下湘南夢クリニック） |
+| lattice.co.jp | 2026-11-09 | XVL | #040（株式会社東海理化） |
 | levii.co.jp | 2026-10-27（推定） | ペジテの自転車 | #022（東日本高速道路株式会社（NEXCO東日本）） |
 | liveon.ne.jp | 2026-10-27（推定） | LiveOn Wearable、LiveOn RecX・LiveOn Wearable | #022（株式会社大西熱学）<br>#024（三重県伊賀市 上下水道部） |
 | logikura.jp | 2026-10-06（推定） | ロジクラ | #007（株式会社ニタス）<br>#027（株式会社暁の星工芸） |
@@ -167,6 +164,7 @@
 | minagine.jp | 2026-11-02（推定） | みんなの人事評価 | #026（ダイキチカバーオール株式会社） |
 | minshoku.jp | 2026-10-28（推定） | みんなの社食 | #023（株式会社TVer） |
 | mjs.co.jp | 2026-11-09 | MJSお金の管理、ACELINK NX-Pro・ACELINK NX-Pro | #034（東京港税理士法人、税理士法人近代経営&Kinkei Farm） |
+| mks.jp | 2026-11-10 | eNEN | #034（（非公開）） |
 | mobilus.co.jp | 2026-09-29（推定） | MOBI VOICE | #002（株式会社マイアクア） |
 | myquick.jp | 2026-10-08（推定） | MyQuickクラウド | #009（株式会社マーキュリー） |
 | mysite-ai.jp | 2026-10-30（推定） | Myサイト翻訳 | #025（近江鉄道株式会社） |
@@ -202,6 +200,7 @@
 | riveting-mcn.co.jp | 2026-10-29（推定） | 空圧式リベッティング・マシン US-66M | #024（川村義肢株式会社） |
 | rocketsoftware.co.jp | 2026-10-19（推定） | Micro Focus Visual COBOL | #016（株式会社北陸電機商会） |
 | rpa-technologies.com | 2026-10-09（推定） | BizRobo! mini | #010（浅川学園台在宅クリニック） |
+| saeilo.co.jp | 2026-11-09 | Cimatron、Pform | #040（株式会社伊吹機械） |
 | salesrenovation.jp | 2026-10-16（推定） | インサイドセールス人材サービス | #015（株式会社第一印刷所） |
 | sato.co.jp | 2026-10-06（推定） | SALI® for スキャントロニクス CL4NX-J Plus・AI画像スキャン値付け・VoiSol®Smart・RFIDシステム・RFID資産管理ソリューションパッケージ ASETRA・RFID関連ソリューション・RFIDリストバンド・三点認証システム・スマートパッケージング・FLEQV・MG400協働ロボット移動式ラベラー、ラベルプリンターHA200Rシリーズ | #007（NECパーソナルコンピュータ株式会社、株式会社ヤオコー、生活協同組合連合会 東海コープ事業連合）<br>#008（有限会社玉木新雌、サントリープロダクツ株式会社、株式会社コックス）<br>#010（大阪医科薬科大学病院）<br>#017（土佐くろしお農業協同組合）<br>#024（ロイヤルホスト株式会社）<br>用語#001（大阪医科薬科大学病院）<br>#037（北陸計器工業株式会社） |
 | satori.marketing | 2026-10-16（推定） | SATORI | #015（パナソニック株式会社、マルホ発條工業株式会社）<br>#017（株式会社関東製作所、太陽パーツ株式会社）<br>#019（千葉テレビ放送株式会社） |
@@ -241,13 +240,14 @@
 | u-s-d.co.jp | 2026-10-29（推定） | comuoon mobile type ML / comuoon mobile type WSG | #024（福岡空港のデイケア施設） |
 | uchida.co.jp | 2026-10-21（推定） | オフィス移転・リニューアルサービス・オフィス移転・リニューアルサービス、オフィスデザイン・構築サービス、ABW/フリーアドレス・オフィス移転・リニューアルサービス、オフィスデザイン・構築サービス・Change Working・オフィスデザイン・構築サービス、ABW/フリーアドレス、SmartInfill、COMMONS TABLE SYSTEM-i、LEMNA Work Lounge・オフィス移転プロジェクトマネジメントサービス、Change Working | #018（オリックス銀行株式会社、大樹生命保険株式会社）<br>#023（株式会社日経映像、コニカミノルタ株式会社、株式会社 YSK e-com、株式会社インテージ） |
 | uhuru.co.jp | 2026-10-13（推定） | Agentforce Service・Salesforce Experience Cloud・Amazon Connect | #012（株式会社Mizkan）<br>#016（株式会社静岡銀行）<br>#018（株式会社ミスミグループ本社） |
-| unifinity.co.jp | 2026-11-06（推定） | Unifinity | #030（株式会社エースパック） |
+| unifinity.co.jp | 2026-11-06（推定） | Unifinity | #030（株式会社エースパック）<br>#040（株式会社ジーテクト） |
 | userlocal.jp | 2026-09-29（推定） | User Insight | #002（富士フイルムサービスクリエイティブ株式会社）<br>#012（ブックオフコーポレーション株式会社）<br>#015（株式会社I-House）<br>#019（株式会社タイトー、株式会社SUBARU） |
 | usonar.co.jp | 2026-10-16（推定） | ユーソナー・プランソナー | #015（レバレジーズ株式会社、株式会社コンカー、AGC株式会社） |
 | valueagent.co.jp | 2026-10-12（推定） | ホームページ制作・Webコンサルティング | #011（秀英会） |
 | vtv.co.jp | 2026-10-16（推定） | VTV Care | #015（ソフトウェア・システム開発会社） |
 | works-hi.co.jp | 2026-10-15（推定） | COMPANY 雇用手続管理・COMPANY Web Service・COMPANY | #014（ヤマト運輸株式会社、パーソルホールディングス株式会社、ヤマハ発動機ビズパートナー株式会社）<br>#021（国立大学法人 神戸大学）<br>#030（菅公学生服株式会社） |
 | yamamoto-ss.co.jp | 2026-10-08（推定） | ラベル剥離機 PLS-5000 | #009（（非公開）） |
+| yamanaka-eng.co.jp | 2026-11-10 | PiezoBolt | #040（（非公開）） |
 | yk-yamamoto.co.jp | 2026-11-09 | LIFE SAVER | #038（株式会社岸本建設工業） |
 | yu-jin.co.jp | 2026-10-26（推定） | YouMark | #021（東京都市大学付属中学校） |
 | zendesk.co.jp | 2026-09-29（推定） | Zendesk | #002（株式会社アンドエスティHD）<br>#012（株式会社ジェイアール東日本企画） |

@@ -80,8 +80,10 @@ for (const id of new Set(caseIds(a).filter(Boolean))) {
   if (c.hidden || blocked.has(c.vendor)) continue;  // 削除依頼を受けた先には送らない
   if (!c.vendor) { unknown.push(`${id}（提供元不明）`); continue; }
   const g = groups.get(c.vendor) ?? { domain: c.vendor, customers: [], anonymous: 0 };
-  if (c.customer?.name && !c.linkOnly) { const n = strip(c.customer.name); if (!g.customers.includes(n)) g.customers.push(n); }
-  else g.anonymous++;
+  if (c.customer?.name && !c.linkOnly && !/非公開/.test(c.customer.name)) {  // 「社名非公開」などは名前として出さない
+    const n = strip(c.customer.name);
+    if (!g.customers.includes(n)) g.customers.push(n);
+  } else g.anonymous++;
   groups.set(c.vendor, g);
 }
 
@@ -97,16 +99,22 @@ for (const g of [...groups.values()].sort((x, y) => x.domain.localeCompare(y.dom
   if (!opt.all && art?.notified) continue;
   const company = v?.company?.trim();
   if (!company) noCompany.push(g.domain);
-  if (g.anonymous) needCheck.push(`${g.domain}：導入企業名が非公開の事例が${g.anonymous}件（文面では件数に含めていない）`);
-  if (g.customers.length === 0) { needCheck.push(`${g.domain}：導入企業名が1件も出せないので文面を作っていない`); continue; }
+  if (g.anonymous) needCheck.push(`${g.domain}：導入企業名が非公開の事例が${g.anonymous}件（文面では企業名を出さず件数に含めた）`);
 
-  const cust = g.customers.length === 1
-    ? `導入事例（${g.customers[0]}様）`
-    : `導入事例${g.customers.length}件（${g.customers.map((c) => c + "様").join("、")}）`;
+  /* 企業名ありだけ → 「導入事例（A様）」「導入事例2件（A様、B様）」
+     非公開だけ     → 「導入事例」「導入事例2件」
+     混在           → 「導入事例3件（A様ほか）」 */
+  const total = g.customers.length + g.anonymous;
+  const names = g.customers.map((c) => c + "様").join("、");
+  const cust = g.anonymous === 0
+    ? (total === 1 ? `導入事例（${names}）` : `導入事例${total}件（${names}）`)
+    : g.customers.length === 0
+      ? (total === 1 ? "導入事例" : `導入事例${total}件`)
+      : `導入事例${total}件（${names}ほか）`;
   const full = body({ cust, title, url, short: false, noUrl: opt.noUrl, tieup: opt.tieup });
   n++;
   out.push(`### ${n}. ${company || g.domain}`);
-  out.push(`掲載事例: ${g.customers.join(" / ")}`);
+  out.push(`掲載事例: ${[...g.customers, ...(g.anonymous ? [`導入企業名非公開${g.anonymous > 1 ? `（${g.anonymous}件）` : ""}`] : [])].join(" / ")}`);
   out.push(`提供元: ${g.domain}${v?.status === "no-objection" ? "（連絡済み・削除依頼なし）" : "（初めて連絡する先）"}`);
   const h = history(v, a.slug);
   if (h.last) {

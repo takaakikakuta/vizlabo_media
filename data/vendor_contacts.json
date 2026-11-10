@@ -1606,8 +1606,8 @@
     {
       "domain": "fa.omron.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-10",
       "notifiedAtEstimated": false,
       "products": [
         "現場データ活用サービス i-BELT、マシンオートメーションコントローラ"
@@ -1624,7 +1624,8 @@
           "products": [
             "現場データ活用サービス i-BELT、マシンオートメーションコントローラ"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-10"
         }
       ],
       "memo": ""
@@ -3414,8 +3415,8 @@
     {
       "domain": "lattice.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "XVL"
@@ -3432,7 +3433,8 @@
           "products": [
             "XVL"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -4068,8 +4070,8 @@
     {
       "domain": "mks.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-10",
       "notifiedAtEstimated": false,
       "products": [
         "eNEN"
@@ -4086,10 +4088,11 @@
           "products": [
             "eNEN"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-10"
         }
       ],
-      "memo": "#034 は導入企業名が非公開のため通知文を作れず、未送付"
+      "memo": ""
     },
     {
       "domain": "mobilus.co.jp",
@@ -4784,7 +4787,7 @@
       "domain": "panasonic.co.jp",
       "company": "パナソニック エレクトリックワークス創研株式会社（panasonic.co.jp/ew/pewbct/ 配下のモノづくり支援・研修事例）",
       "status": "removed",
-      "notifiedAt": "",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "コンサルティング"
@@ -4801,7 +4804,8 @@
           "products": [
             "コンサルティング"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": "",
@@ -5412,8 +5416,8 @@
     {
       "domain": "saeilo.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
         "Cimatron、Pform"
@@ -5430,7 +5434,8 @@
           "products": [
             "Cimatron、Pform"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-09"
         }
       ],
       "memo": ""
@@ -7066,7 +7071,8 @@
           "products": [
             "Unifinity"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -7317,8 +7323,8 @@
     {
       "domain": "yamanaka-eng.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-10",
       "notifiedAtEstimated": false,
       "products": [
         "PiezoBolt"
@@ -7335,7 +7341,8 @@
           "products": [
             "PiezoBolt"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-10"
         }
       ],
       "memo": ""
