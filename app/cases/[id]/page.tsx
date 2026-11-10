@@ -13,6 +13,7 @@ import { withUtm } from "../../../lib/source";
 import { hasVideo } from "../../../lib/video";
 import VideoBadge from "../../../components/VideoBadge";
 import { isIntroSource, introSourceName } from "../../../lib/introSources";
+import ViewBeacon from "../../../components/ViewBeacon";
 
 /* ビルド出力の肥大化対策（Amplifyの220MB制限）:
    事前生成をやめ、初回アクセス時に生成してキャッシュするオンデマンドISRにする。
@@ -40,6 +41,8 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 
   return (
     <article className="mx-auto max-w-3xl px-5 py-12">
+      {/* 閲覧数の計測（運営用 /admin/views で見る） */}
+      <ViewBeacon id={c.id} />
       {/* 見出し周り＝記事の扉 */}
       <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[11.5px]">
         <span className="inline-flex items-center gap-1.5 font-bold text-ink2">

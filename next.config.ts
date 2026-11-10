@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
     APP_AWS_ACCESS_KEY_ID: process.env.APP_AWS_ACCESS_KEY_ID ?? "",
     APP_AWS_SECRET_ACCESS_KEY: process.env.APP_AWS_SECRET_ACCESS_KEY ?? "",
     BEDROCK_MODEL_ID: process.env.BEDROCK_MODEL_ID ?? "",
+    // 事例の閲覧数（lib/views.ts）。テーブル名は amplify/backend.ts と同じ規則（ブランチごと）
+    VIEWS_TABLE: process.env.VIEWS_TABLE || (process.env.AWS_BRANCH ? `jirei-mania-views-${process.env.AWS_BRANCH}` : ""),
+    // 運営用ページ（/admin/*）のログインパスワード（lib/admin.ts）
+    ADMIN_PASSWORD: process.env.ADMIN_PASSWORD ?? "",
   },
 };
 
