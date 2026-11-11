@@ -1,4 +1,4 @@
-# 事例の棚卸し（2026-11-10 時点）
+# 事例の棚卸し（2026-11-11 時点）
 
 `node scripts/inventory/inventory.mjs` で再生成する（テーマは `scripts/inventory/themes.json`）。選記事を企画する前に、ここでテーマの厚みを見る。
 候補の事例そのものを見るときは `node scripts/inventory/inventory.mjs --theme "停電|非常用電源"`。
