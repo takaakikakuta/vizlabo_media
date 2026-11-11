@@ -181602,7 +181602,8 @@
       "Excel管理の限界",
       "法改正への対応",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-scskserviceware-co-jp-casestudy-case01-html",
@@ -456760,7 +456761,8 @@
     "tags": [
       "老朽化したシステム",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-scsk-superstream-jp-case-reene",
@@ -456807,7 +456809,8 @@
       "数字の集計に時間",
       "押印・承認の遅れ",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-scskserviceware-co-jp-casestudy-case04-html",
