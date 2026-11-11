@@ -1,6 +1,6 @@
 # Amplify Hosting のビルド定義（Gen2 フルスタック / Next.js SSR）。
 # backendフェーズで amplify/ の定義をデプロイし、frontendフェーズでNext.jsをビルドする。
-# バックエンドは事例の閲覧数テーブル（DynamoDB）だけ。定義は amplify/backend.ts。
+# バックエンドは事例の閲覧数とベンダー会員の DynamoDB テーブル。定義は amplify/backend.ts。
 # 環境変数を本番導入するときは、SSRランタイムには届かないため
 # next.config.ts の env で焼き込むこと（ビルド時定数になる点に注意）。
 version: 1

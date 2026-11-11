@@ -32,6 +32,16 @@ export function getCase(id: string): CaseStudy | undefined {
   return ALL.find((c) => c.id === id);
 }
 
+/** 閲覧・クリックの計測用。リンクのみの事例も含む（事例セレクションから元記事に飛ぶ分も数える） */
+export function getCountableCase(id: string): CaseStudy | undefined {
+  return VISIBLE.find((c) => c.id === id);
+}
+
+/** 提供元（ドメイン）の事例。ベンダー会員のダッシュボード用で、リンクのみの事例も含む（送客は数えているため） */
+export function vendorCases(domain: string): CaseStudy[] {
+  return VISIBLE.filter((c) => c.vendor === domain);
+}
+
 /** リンクのみの事例。事例セレクションで「企業名を伏せた紹介＋元記事へのリンク」を出すときだけ使う */
 export function getLinkOnlyCase(id: string): CaseStudy | undefined {
   return VISIBLE.find((c) => c.id === id && c.linkOnly);
