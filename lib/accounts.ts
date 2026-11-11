@@ -237,6 +237,19 @@ export function isLiveInvite(inv: Invite): boolean {
   return !inv.revoked && inv.exp > Date.now() / 1000;
 }
 
+/** 招待を使い回すのは、残りがこの日数以上あるときだけ（期限間際の招待を送らない） */
+export const INVITE_REUSE_MIN_DAYS = 14;
+
+/** 提供元の招待を1つ返す。使い回せる招待があればそれを、なければ新しく発行する（掲載通知の自動発行用） */
+export async function getOrCreateInvite(domain: string): Promise<{ invite: Invite; reused: boolean }> {
+  const limit = Date.now() / 1000 + INVITE_REUSE_MIN_DAYS * 86400;
+  const live = (await listInvites())
+    .filter((i) => i.domain === domain && isLiveInvite(i) && i.exp >= limit)
+    .sort((a, b) => b.exp - a.exp);
+  if (live[0]) return { invite: live[0], reused: true };
+  return { invite: await createInvite(domain), reused: false };
+}
+
 export async function markInviteUsed(inv: Invite): Promise<void> {
   await putItem(`invite#${inv.code}`, { ...inv, uses: inv.uses + 1 });
 }
@@ -262,6 +275,19 @@ export function saveApplication(a: Application): Promise<void> {
 
 export function listApplications(): Promise<Application[]> {
   return scanKind<Application>("apply");
+}
+
+// ─── 掲載通知（登録済みの提供元への自動メール） ───
+
+/** 記事ごと・提供元ごとに、会員へ掲載通知を送った記録。notify を再実行しても二重に送らない */
+export type NoticeRecord = { domain: string; slug: string; sentAt: string; to: string[] };
+
+export function getNotice(domain: string, slug: string): Promise<NoticeRecord | null> {
+  return getItem<NoticeRecord>(`notice#${domain}#${slug}`);
+}
+
+export function saveNotice(n: NoticeRecord): Promise<void> {
+  return putItem(`notice#${n.domain}#${n.slug}`, n);
 }
 
 // ─── 契約 ───
