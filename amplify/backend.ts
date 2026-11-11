@@ -26,13 +26,28 @@ const table = new Table(stack, "CaseViews", {
   removalPolicy: RemovalPolicy.RETAIN,
 });
 
+/* ベンダー会員（lib/accounts.ts）。登録者・ログインコード・招待・申し込み・契約を pk 1本で持つ。
+   ログインコードは ttl で自動削除。会員情報なのでスタックを消しても残す */
+const accounts = new Table(stack, "VendorAccounts", {
+  tableName: `jirei-mania-accounts-${branch}`,
+  partitionKey: { name: "pk", type: AttributeType.STRING },
+  billingMode: BillingMode.PAY_PER_REQUEST,
+  timeToLiveAttribute: "ttl",
+  removalPolicy: RemovalPolicy.RETAIN,
+});
+
 const policy = new ManagedPolicy(stack, "CaseViewsAccess", {
   managedPolicyName: `jirei-mania-views-${branch}-rw`,
+  // 説明文は変えない（IAM の管理ポリシーは説明を変えると作り直しになり、固定名のため失敗する）。会員テーブルの権限もここに足している
   description: "事例マニアの閲覧数テーブルの読み書き（SSR 用 IAM ユーザーにアタッチする）",
   statements: [
     new PolicyStatement({
       actions: ["dynamodb:UpdateItem", "dynamodb:Query"],
       resources: [table.tableArn],
+    }),
+    new PolicyStatement({
+      actions: ["dynamodb:GetItem", "dynamodb:PutItem", "dynamodb:DeleteItem", "dynamodb:Scan"],
+      resources: [accounts.tableArn],
     }),
   ],
 });
@@ -41,4 +56,5 @@ const iamUser = process.env.VIEWS_IAM_USER;
 if (iamUser) policy.attachToUser(User.fromUserName(stack, "SsrUser", iamUser));
 
 new CfnOutput(stack, "CaseViewsTableName", { value: table.tableName });
+new CfnOutput(stack, "VendorAccountsTableName", { value: accounts.tableName });
 new CfnOutput(stack, "CaseViewsPolicyArn", { value: policy.managedPolicyArn });

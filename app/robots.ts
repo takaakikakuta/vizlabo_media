@@ -18,7 +18,7 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       // 試作ページと問い合わせフォームは誰にも巡回させない
-      { userAgent: "*", allow: "/", disallow: ["/proposal", "/contact", "/inquiry", "/admin", "/api"] },
+      { userAgent: "*", allow: "/", disallow: ["/proposal", "/contact", "/inquiry", "/admin", "/api", "/vendor"] },
       ...BLOCKED_BOTS.map((userAgent) => ({ userAgent, disallow: "/" })),
     ],
     sitemap: `${SITE}/sitemap.xml`,

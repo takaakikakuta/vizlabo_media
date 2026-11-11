@@ -5,6 +5,7 @@ import "./globals.css";
 import { siteStats } from "../lib/cases";
 import { Mail, PenLine, FilePlus2 } from "lucide-react";
 import { GoogleTagManager } from "@next/third-parties/google";
+import SourceClickTracker from "../components/SourceClickTracker";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
@@ -27,6 +28,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SiteFooter />
         {/* vizlabo本体と同じGTMコンテナ。分けたくなったらIDを差し替える */}
         <GoogleTagManager gtmId="GTM-MHP5FFXB" />
+        {/* 出典リンクのクリック（送客）の計測。ベンダーのダッシュボードと /admin/views で見る */}
+        <SourceClickTracker />
       </body>
     </html>
   );
