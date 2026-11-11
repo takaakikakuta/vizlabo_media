@@ -7,6 +7,14 @@
  *     --tieup          追加掲載の段落の末尾にタイアップ制作の一文を足す
  *     --exclude a,b    ドメインで除外（例: --exclude sato.co.jp）
  *     --all            連絡済み（この記事で notified: true）の提供元も出す（既定では未連絡だけ）
+ *     --offline        サイトの API を呼ばない（招待の段落を入れず、会員へのメールも送らない）
+ *
+ * ベンダー会員（vizlabo.com/vendor）との連携。サイトの API（app/api/vendor-notify）を呼び、提供元ごとに
+ *   - 会員が未登録 → 招待（60日有効。使い回せる有効な招待があればそれ）を文面に差し込む
+ *   - 会員が登録済み → 文面は作らず、記事が公開済みなら会員全員にサイトから掲載通知メールを送る（記事ごとに1回だけ）
+ * API の場所とトークンは環境変数 NOTIFY_API_BASE（既定 https://vizlabo.com）と NOTIFY_API_TOKEN。
+ * Claude のクラウド環境ではトークンをプロキシが差し込むので、NODE_USE_ENV_PROXY=1 を付けて実行する。
+ * API を呼べなかったときは招待なしの文面を出し、「要確認」に理由を出す。
  *
  * 文面はテンプレート固定。差し込むのは記事タイトル・記事URL・提供元の事例（導入企業名）だけで、数字や事例は記事データから足さない。
  * 提供元の会社名は data/vendor_contacts.json の company を使う（空ならドメインで見出しを作り、末尾の「要確認」に出す）。
@@ -24,7 +32,7 @@ const SITE = "https://vizlabo.com";
 const args = process.argv.slice(2);
 const key = args.find((a) => !a.startsWith("--") && args[args.indexOf(a) - 1] !== "--exclude");
 if (!key) { console.error("使い方: node scripts/vendors/notify.mjs <記事slug|no|用語no> [--short] [--no-url] [--tieup] [--exclude a,b] [--all]"); process.exit(1); }
-const opt = { short: args.includes("--short"), noUrl: args.includes("--no-url"), tieup: args.includes("--tieup"), all: args.includes("--all") };
+const opt = { short: args.includes("--short"), noUrl: args.includes("--no-url"), tieup: args.includes("--tieup"), all: args.includes("--all"), offline: args.includes("--offline") };
 const exclude = new Set((args[args.indexOf("--exclude") + 1] ?? "").split(",").map((s) => s.trim()).filter((s) => args.includes("--exclude") && s));
 
 /* 記事を探す：slug / 事例セレクションの no / 「用語」+no */
@@ -91,31 +99,82 @@ const needCheck = [...unknown];
 const noCompany = [];
 const out = [];
 let n = 0;
+
+/* 企業名ありだけ → 「導入事例（A様）」「導入事例2件（A様、B様）」
+   非公開だけ     → 「導入事例」「導入事例2件」
+   混在           → 「導入事例3件（A様ほか）」 */
+function custText(g) {
+  const total = g.customers.length + g.anonymous;
+  const names = g.customers.map((c) => c + "様").join("、");
+  return g.anonymous === 0
+    ? (total === 1 ? `導入事例（${names}）` : `導入事例${total}件（${names}）`)
+    : g.customers.length === 0
+      ? (total === 1 ? "導入事例" : `導入事例${total}件`)
+      : `導入事例${total}件（${names}ほか）`;
+}
+
+const targets = [];
 for (const g of [...groups.values()].sort((x, y) => x.domain.localeCompare(y.domain))) {
   if (exclude.has(g.domain)) continue;
   if (intro.has(g.domain)) { needCheck.push(`${g.domain}：紹介元（${intro.get(g.domain)}）で提供元ではないので文面を作っていない`); continue; }
   const v = contact(g.domain);
   const art = v?.articles.find((x) => x.slug === a.slug);
   if (!opt.all && art?.notified) continue;
+  targets.push({ g, v, cust: custText(g) });
+}
+
+/* サイトの API で、未登録の提供元には招待を、登録済みの提供元には会員へのメールを。
+   公開前の記事は会員へのメールを送らない（記事が開けないため）。公開後に再実行すると送る */
+const published = !a.draft && (!a.publishedAt || a.publishedAt <= todayJst);
+const site = new Map();
+let siteError = "";
+if (opt.offline) siteError = "--offline のため";
+else if (targets.length) {
+  try {
+    const res = await fetch(`${process.env.NOTIFY_API_BASE || SITE}/api/vendor-notify`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${process.env.NOTIFY_API_TOKEN || "via-proxy"}` },
+      body: JSON.stringify({ article: { slug: a.slug, label, title, url }, vendors: targets.map((t) => ({ domain: t.g.domain, cust: t.cust })), send: published }),
+    });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(json.error || `HTTP ${res.status}`);
+    for (const x of json.results) site.set(x.domain, x);
+  } catch (err) {
+    siteError = String(err?.cause?.code || err?.message || err);
+  }
+}
+if (siteError && targets.length) needCheck.push(`サイトの API を呼べなかった（${siteError}）。招待の段落なしで出した。会員登録済みかどうかも確かめていない。招待は vizlabo.com/admin/vendors で発行できる`);
+
+for (const { g, v, cust } of targets) {
   const company = v?.company?.trim();
   if (!company) noCompany.push(g.domain);
+  const st = site.get(g.domain);
+
+  /* 会員登録済み：文面は作らず、サイトからのメールの結果だけ出す */
+  if (st?.status === "registered") {
+    n++;
+    out.push(`### ${n}. ${company || g.domain}（会員登録済み・文面なし）`);
+    out.push(`会員: ${st.emails.join(", ")}`);
+    out.push(`掲載通知メール: ${{
+      sent: `送った（${st.sentAt?.slice(0, 16).replace("T", " ")} UTC）`,
+      already: `この記事では送信済み（${st.sentAt?.slice(0, 10)}）`,
+      "not-sent": published ? "送っていない（サイトのメール設定を確認）" : `公開前（${a.publishedAt ?? "draft"}）のため未送信。公開日以降に notify を再実行すると送る`,
+      failed: "送信に失敗（サイトのログを確認）",
+    }[st.mail]}`);
+    if (st.mail !== "sent" && st.mail !== "already") needCheck.push(`${g.domain}：会員への掲載通知メールが未送信`);
+    out.push("");
+    continue;
+  }
+  if (st?.status === "error") needCheck.push(`${g.domain}：招待を発行できなかった（${st.error}）`);
+  const inv = st?.status === "invite" ? st : null;
   if (g.anonymous) needCheck.push(`${g.domain}：導入企業名が非公開の事例が${g.anonymous}件（文面では企業名を出さず件数に含めた）`);
 
-  /* 企業名ありだけ → 「導入事例（A様）」「導入事例2件（A様、B様）」
-     非公開だけ     → 「導入事例」「導入事例2件」
-     混在           → 「導入事例3件（A様ほか）」 */
-  const total = g.customers.length + g.anonymous;
-  const names = g.customers.map((c) => c + "様").join("、");
-  const cust = g.anonymous === 0
-    ? (total === 1 ? `導入事例（${names}）` : `導入事例${total}件（${names}）`)
-    : g.customers.length === 0
-      ? (total === 1 ? "導入事例" : `導入事例${total}件`)
-      : `導入事例${total}件（${names}ほか）`;
-  const full = body({ cust, title, url, short: false, noUrl: opt.noUrl, tieup: opt.tieup });
+  const full = body({ cust, title, url, short: false, noUrl: opt.noUrl, tieup: opt.tieup, inv });
   n++;
   out.push(`### ${n}. ${company || g.domain}`);
   out.push(`掲載事例: ${[...g.customers, ...(g.anonymous ? [`導入企業名非公開${g.anonymous > 1 ? `（${g.anonymous}件）` : ""}`] : [])].join(" / ")}`);
   out.push(`提供元: ${g.domain}${v?.status === "no-objection" ? "（連絡済み・削除依頼なし）" : "（初めて連絡する先）"}`);
+  if (inv) out.push(`招待: ${inv.code}（${inv.reused ? "前に発行した招待を使い回し" : "新しく発行"}・${inv.expires} まで有効）`);
   const h = history(v, a.slug);
   if (h.last) {
     const days = daysBetween(h.last.date, todayJst);
@@ -125,7 +184,7 @@ for (const g of [...groups.values()].sort((x, y) => x.domain.localeCompare(y.dom
   }
   out.push("```", full, "```");
   if (opt.short) {
-    const s = body({ cust, title, url, short: true, noUrl: opt.noUrl, tieup: false });
+    const s = body({ cust, title, url, short: true, noUrl: opt.noUrl, tieup: false, inv });
     out.push(`短縮版（${[...s].length}字）`, "```", s, "```");
   }
   out.push("");
@@ -133,7 +192,7 @@ for (const g of [...groups.values()].sort((x, y) => x.domain.localeCompare(y.dom
 if (noCompany.length) needCheck.push(`会社名が未登録（見出しはドメイン。data/vendor_contacts.json の company に書くと次から出る）: ${noCompany.join(", ")}`);
 out.push(`要確認: ${needCheck.length ? needCheck.join(" ／ ") : "なし"}`);
 
-function body({ cust, title, url, short, noUrl, tieup }) {
+function body({ cust, title, url, short, noUrl, tieup, inv }) {
   const urlLine = noUrl ? "記事URLはご返信いただければお送りします。" : `▼記事はこちら\n${url}`;
   const lines = [
     "突然のご連絡失礼いたします。BtoB導入事例の検索メディア「事例マニア」を運営しております、角田崇明と申します。",
@@ -152,11 +211,20 @@ function body({ cust, title, url, short, noUrl, tieup }) {
   if (!short) {
     lines.push("", "また、貴社の他の導入事例の追加掲載も承っております（無償）。ご興味があればお気軽にご返信ください。" + (tieup ? "比較検討層に届く事例記事のタイアップ制作も承っております。" : ""));
   }
+  /* 会員登録の招待（サイトの API で発行できたときだけ）。URLなし版はコードの入力で案内する */
+  if (inv) {
+    const how = noUrl
+      ? `ご登録は、事例マニアの「ベンダー向けページ」で招待コード「${inv.code}」をご入力ください（${inv.expires}まで有効）。`
+      : `▼ご登録はこちら（${inv.expires}まで有効）\n${inv.url}`;
+    lines.push("", short
+      ? `掲載事例の閲覧数をご覧いただけるページもご用意しています（無料）。\n${how}`
+      : `なお、掲載した貴社の事例がどれだけ読まれ、貴社サイトへ何人を送ったかをご覧いただけるページをご用意しました（直近14日分は無料）。\n${how}`);
+  }
   lines.push("", "事例マニア 運営：角田崇明", "https://vizlabo.com", "kakuta@vizlabo.net");
   return lines.join("\n");
 }
 
-const head = [`# ${label} ${title}`, url, `提供元 ${groups.size} 社のうち ${n} 通（${opt.all ? "連絡済みも含む" : "未連絡のみ"}${opt.short ? "・短縮版つき" : ""}${opt.noUrl ? "・URLなし版" : ""}${opt.tieup ? "・タイアップあり" : ""}）`, ""];
+const head = [`# ${label} ${title}`, url, `提供元 ${groups.size} 社のうち ${n} 社（${opt.all ? "連絡済みも含む" : "未連絡のみ"}${opt.short ? "・短縮版つき" : ""}${opt.noUrl ? "・URLなし版" : ""}${opt.tieup ? "・タイアップあり" : ""}）`, ""];
 const text = [...head, ...out].join("\n");
 const dir = path.join(ROOT, "content/articles/notify");
 fs.mkdirSync(dir, { recursive: true });

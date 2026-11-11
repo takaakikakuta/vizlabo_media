@@ -21,6 +21,8 @@ const nextConfig: NextConfig = {
     // VENDOR_SECRET はログインコードのハッシュとログイン状態の署名に使う（長いランダム文字列。変えると全員ログアウト）
     ACCOUNTS_TABLE: process.env.ACCOUNTS_TABLE || (process.env.AWS_BRANCH ? `jirei-mania-accounts-${process.env.AWS_BRANCH}` : ""),
     VENDOR_SECRET: process.env.VENDOR_SECRET ?? "",
+    // 掲載通知（scripts/vendors/notify.mjs）が招待の発行・会員への通知に使う API のトークン（app/api/vendor-notify）
+    NOTIFY_API_TOKEN: process.env.NOTIFY_API_TOKEN ?? "",
     // 運営用ページ（/admin/*）のログインパスワード（lib/admin.ts）
     ADMIN_PASSWORD: process.env.ADMIN_PASSWORD ?? "",
   },
