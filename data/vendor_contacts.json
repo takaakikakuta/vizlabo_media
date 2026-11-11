@@ -6154,7 +6154,7 @@
     },
     {
       "domain": "scsk-superstream.jp",
-      "company": "",
+      "company": "SCSK Minoriソリューションズ株式会社",
       "status": "no-objection",
       "notifiedAt": "2026-11-11",
       "notifiedAtEstimated": false,
@@ -6168,7 +6168,8 @@
           "title": "ERP・基幹システムとは｜製造業の5つの事例でわかる",
           "publishedAt": "2026-11-18",
           "customers": [
-            "キヤノン電子株式会社"
+            "キヤノン電子株式会社",
+            "（リンクのみ）"
           ],
           "products": [
             "SuperStream-NX、システム連携ツール Connect、CELF"
@@ -6177,7 +6178,7 @@
           "notifiedAt": "2026-11-11"
         }
       ],
-      "memo": ""
+      "memo": "2026-11-11 社外メディアへの掲載は掲載内容の事前確認（導入企業の確認を含む）が必要との社内ルールにより、キヤノン電子の事例の削除依頼（社内確認のうえ再掲載を依頼する可能性あり）。全事例を linkOnly（リンクのみ）にした"
     },
     {
       "domain": "seagreen.co.jp",
