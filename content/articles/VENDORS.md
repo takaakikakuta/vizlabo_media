@@ -3,7 +3,7 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 187 社（うち連絡日が推定のもの 164 社）
+- 連絡済み・削除依頼なし: 188 社（うち連絡日が推定のもの 165 社）
 - 未連絡: 40 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 10 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
@@ -49,6 +49,7 @@
 | meikoshokai.co.jp | MSボイスコールNEO Ver.2 | #045（神奈川県湯河原町役場） |
 | mitani-corp.co.jp | e2-movE | 用語#005（株式会社ミヤシゲ） |
 | mr-m.co.jp | カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作 | #042（ミズタニバルブ工業株式会社） |
+| mujin.co.jp | 通い箱ハンドリング知能ロボット、AGV、デパレタイズ・パレタイズロボット | #033（株式会社アイシン） |
 | naomi.co.jp | パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02・チューブ充填機 6DTZ-T | #043（株式会社ベネッセパレット）<br>#045（下呂プリン） |
 | narikoma-group.co.jp | ナリコマ | #031（特別養護老人ホーム アルテイル宮町） |
 | nikken-totalsourcing.jp | カスタマイズ研修・技能センター研修 | #041（株式会社デンソー山形） |
@@ -65,7 +66,6 @@
 | seagreen.co.jp | 評価ポイント | #041（（非公開）） |
 | senoh.jp | BIG ASS FANS | #031（グラン・スポール 八幡） |
 | serverworks.co.jp | AWS | 用語#005（株式会社千趣会） |
-| shi.co.jp | KeiganALI | #033（株式会社ホリゾン） |
 | sizsan.co.jp | BellaBot | #033（株式会社五味八珍） |
 | softes.co.jp | SAP S/4HANA・SAP S/4HANA、SAP Analytics Cloud | 用語#002（日研フード株式会社）<br>用語#003（株式会社ニチリン） |
 | techvan.co.jp | ソフトウェアテストサービス | #045（株式会社MIXI） |
@@ -221,6 +221,7 @@
 | scsk-superstream.jp | 2026-11-11 | SuperStream-NX、システム連携ツール Connect、CELF | 用語#003（キヤノン電子株式会社） |
 | secom.co.jp | 2026-10-14（推定） | 遠隔放射線診断支援サービス | #013（（非公開）） |
 | sg-systems.co.jp | 2026-09-28（推定） | Biz-AI×OCR・バックオフィスサポートサービス・RockyOne | #001（株式会社インテック、ガリバー・インターナショナル株式会社、新潟県村上市）<br>#003（株式会社Beso）<br>#038（サンワサプライ株式会社） |
+| shi.co.jp（住友重機械工業株式会社） | 2026-11-11（推定） | — | — |
 | shippio.io | 2026-09-28（推定） | Shippio Cargo | #001（株式会社ゴンチャ ジャパン）<br>#009（株式会社TTS） |
 | sinclo.jp | 2026-09-29（推定） | sinclo・チャットボットsinclo | #002（DNA先端医療株式会社）<br>#014（株式会社モード・プランニング・ジャパン） |
 | smart-stage.jp | 2026-10-21（推定） | SmartStage ServiceDesk | #018（株式会社アイネス） |

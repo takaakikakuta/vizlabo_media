@@ -316234,6 +316234,7 @@
   },
   {
     "id": "cyclo-shi-co-jp-keigan-amr-keigan-ali-case-horizon",
+    "hidden": true,
     "title": "製本機メーカーがKeiganALIとカスタムリフターで工程間搬送を自動化、低コスト実現",
     "summary": "製本機メーカーの株式会社ホリゾンは、部品加工工場の工程間搬送自動化が課題だった。KeiganALIにカスタム開発したリフターを取り付け、GPIO連携でシステムを構築。既存設備を変更せず、小ロット高頻度搬送の自動化と工程間のリードタイム短縮を実現した。",
     "vendor": "shi.co.jp",
@@ -316271,6 +316272,7 @@
   },
   {
     "id": "cyclo-shi-co-jp-keigan-amr-keigan-ali-case-kikuya-bisyodo",
+    "hidden": true,
     "title": "工程間搬送の自動化によりピッキング作業を効率化",
     "summary": "美容ディーラーの物流拠点で、工程間搬送の長い負荷に悩んでいた。自律移動ロボットKeiganALIを導入し、作業者がピッキング作業に集中できる体制を実現した。",
     "vendor": "shi.co.jp",
