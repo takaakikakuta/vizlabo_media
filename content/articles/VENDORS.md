@@ -41,6 +41,7 @@
 | iot-robot.jp | RPA | #034（社会保険労務士法人 アジア経営革新等支援機関） |
 | itohdenki.co.jp | MDR | #043（シーバス・ブラザーズ社） |
 | jbs.co.jp | Microsoft Power Platform・Microsoft Dynamics 365・マネージドバックアップ for Microsoft 365 | #031（西日本旅客鉄道株式会社）<br>用語#004（パナソニック ソリューションテクノロジー株式会社）<br>#044（株式会社八十二銀行） |
+| keigan-motor.com | KeiganALI | #033（株式会社ホリゾン） |
 | kitera-cloud.jp | KiteRa Pro | #034（社会保険労務士　荻生労務研究所） |
 | kobelcosys.co.jp | 現場特化型MESソリューション　実績班長 | #032（田中精密工業株式会社） |
 | koden-kk.co.jp | 自家消費型太陽光発電システム | #044（株式会社右川ゴム製造所） |
@@ -49,7 +50,6 @@
 | meikoshokai.co.jp | MSボイスコールNEO Ver.2 | #045（神奈川県湯河原町役場） |
 | mitani-corp.co.jp | e2-movE | 用語#005（株式会社ミヤシゲ） |
 | mr-m.co.jp | カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作 | #042（ミズタニバルブ工業株式会社） |
-| mujin.co.jp | 通い箱ハンドリング知能ロボット、AGV、デパレタイズ・パレタイズロボット | #033（株式会社アイシン） |
 | naomi.co.jp | パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02・チューブ充填機 6DTZ-T | #043（株式会社ベネッセパレット）<br>#045（下呂プリン） |
 | narikoma-group.co.jp | ナリコマ | #031（特別養護老人ホーム アルテイル宮町） |
 | nikken-totalsourcing.jp | カスタマイズ研修・技能センター研修 | #041（株式会社デンソー山形） |

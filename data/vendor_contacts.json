@@ -3284,6 +3284,32 @@
       "memo": ""
     },
     {
+      "domain": "keigan-motor.com",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "KeiganALI"
+      ],
+      "articles": [
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "株式会社ホリゾン"
+          ],
+          "products": [
+            "KeiganALI"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "kiscl.co.jp",
       "company": "",
       "status": "no-objection",
@@ -4398,32 +4424,6 @@
           ],
           "products": [
             "カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作"
-          ],
-          "notified": false
-        }
-      ],
-      "memo": ""
-    },
-    {
-      "domain": "mujin.co.jp",
-      "company": "",
-      "status": "pending",
-      "notifiedAt": "",
-      "notifiedAtEstimated": false,
-      "products": [
-        "通い箱ハンドリング知能ロボット、AGV、デパレタイズ・パレタイズロボット"
-      ],
-      "articles": [
-        {
-          "slug": "0e784788-dda1-4042-9111-e72986f75859",
-          "label": "#033",
-          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
-          "publishedAt": "2026-11-11",
-          "customers": [
-            "株式会社アイシン"
-          ],
-          "products": [
-            "通い箱ハンドリング知能ロボット、AGV、デパレタイズ・パレタイズロボット"
           ],
           "notified": false
         }
@@ -6351,7 +6351,7 @@
         "KeiganALI"
       ],
       "articles": [],
-      "memo": "2026-11-11 住友重機械工業（佐藤様）より連絡。年内でKeiganALIの取り扱いを終了するため、#033の事例リンクをKeigan社YouTubeへ変更できないかとの依頼。元の事例ページが年内でなくなるため、#033の02をアイシン（mujin.co.jp）に差し替え、shi.co.jpの2事例（ホリゾン・菊屋美粧堂）をhiddenにした。"
+      "memo": "2026-11-11 住友重機械工業（佐藤様）より連絡。年内でKeiganALIの取り扱いを終了するため、#033の事例リンクをKeigan社YouTubeへ変更できないかとの依頼。元の事例ページが年内でなくなるため、#033の02をアイシン（mujin.co.jp）に差し替え、shi.co.jpの2事例（ホリゾン・菊屋美粧堂）をhiddenにした。。同日、Keigan社の動画（https://youtu.be/Kw1y5PRC2s8）がホリゾンの改善事例そのものだとして、現状のまま掲載してほしいと再度の連絡。動画の文字起こしで内容を確認し、ホリゾンの事例を出典=動画・提供元=keigan-motor.com に変えて#033の02に戻した（アイシンは外した。菊屋美粧堂は hidden のまま）"
     },
     {
       "domain": "shippio.io",
