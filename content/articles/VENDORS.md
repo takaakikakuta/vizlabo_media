@@ -54,7 +54,7 @@
 | nikken-totalsourcing.jp | カスタマイズ研修・技能センター研修 | #041（株式会社デンソー山形） |
 | ntt-tx.co.jp | CTBASE/Connect Cloud | #045（パナソニック保険サービス株式会社） |
 | ogs-consulting.co.jp | 人事評価制度構築・運用コンサルティング | #041（株式会社庄内タイヤ） |
-| okuma.co.jp | MULTUS | #031（株式会社しらかわ） |
+| okuma.co.jp（オークマ株式会社） | MULTUS | #031（株式会社しらかわ、（リンクのみ）） |
 | optex.co.jp | OAM-EXPLORER J、LINK-BT2 | #033（（非公開）） |
 | orikane.co.jp | 型替え不要の蓋かぶせ機、L型包装機 | #043（（非公開）） |
 | quest.co.jp | WinActor | #045（株式会社日本能率協会マネジメントセンター（JMAM）） |
@@ -185,7 +185,7 @@
 | ociete.jp | 2026-10-30（推定） | OCiETe | #025（横河電機株式会社、PROFET AI TECHNOLOGY Co. Ltd.、熊本大学） |
 | odyssey-net.jp | 2026-11-02（推定） | SAP SuccessFactors | #026（日本情報通信株式会社） |
 | officebot.jp | 2026-10-27（推定） | OfficeBot | #022（キンコーズ・ジャパン株式会社） |
-| okuma.co.jp | 2026-11-09 | MULTUS B300Ⅱ ARMROID | #037（株式会社キンレイ） |
+| okuma.co.jp（オークマ株式会社） | 2026-11-09 | MULTUS B300Ⅱ ARMROID | #037（株式会社キンレイ、（リンクのみ）） |
 | onecareer.jp | 2026-10-12（推定） | ワンキャリア | #011（三信住建株式会社、株式会社トヨタ車体研究所） |
 | onehr.jp | 2026-10-05（推定） | One人事[タレントマネジメント] | #006（株式会社ハイテックシステムズ） |
 | optex.co.jp | 2026-10-14（推定） | WATER it データマネジメントサービス | #013（高速道路事業者） |

@@ -174339,7 +174339,8 @@
       "工程管理の難しさ",
       "納期の遅延",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-atsuta-kigyo-php",
@@ -174389,7 +174390,8 @@
       "進捗が見えない",
       "工程管理の難しさ",
       "移動時間の多さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-hope-industry-php",
@@ -174432,7 +174434,8 @@
       "工程管理の難しさ",
       "段取り替えの手間",
       "加工能力の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-iwata-php",
@@ -174483,7 +174486,8 @@
       "工程管理の難しさ",
       "技能伝承ができない",
       "品質のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-kinrei-php",
@@ -174530,7 +174534,8 @@
       "工程管理の難しさ",
       "段取り替えの手間",
       "リードタイム短縮"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-kohoku-php",
@@ -174571,7 +174576,8 @@
       "工程管理の難しさ",
       "段取り時間の多さ",
       "プログラム製作の手作業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-komatsu-ntc-php",
@@ -174634,7 +174640,8 @@
       "老朽化したシステム",
       "業務の属人化",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-maxell-izumi-php",
@@ -174698,7 +174705,8 @@
       "品質のばらつき",
       "納期の遅延",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-microcut-php",
@@ -174749,7 +174757,8 @@
       "検査の目視頼み",
       "品質のばらつき",
       "工程管理の難しさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-nabeyabi-tech-php",
@@ -174789,7 +174798,8 @@
       "工程管理の難しさ",
       "技能伝承ができない",
       "納期の遅延"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-sanwa-robotics-php",
@@ -174835,7 +174845,8 @@
       "検査の目視頼み",
       "品質のばらつき",
       "工程管理の難しさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-sekidai-php",
@@ -174886,7 +174897,8 @@
       "納期の遅延",
       "工程管理の難しさ",
       "品質のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-shirakawa-php",
@@ -174927,7 +174939,8 @@
       "工程管理の難しさ",
       "品質のばらつき",
       "納期の遅延"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-takenakaseisakusho-php",
@@ -174963,7 +174976,8 @@
       "工程管理の難しさ",
       "手作業の転記",
       "担当者不在で止まる"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-yagishitagiken-php",
@@ -175010,7 +175024,8 @@
       "工程管理の難しさ",
       "納期の遅延",
       "品質のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-yamabiko-php",
@@ -175061,7 +175076,8 @@
       "検査の目視頼み",
       "品質のばらつき",
       "工程管理の難しさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-oneplat-co-jp-voice",
@@ -446119,7 +446135,8 @@
       "工程管理の難しさ",
       "納期の遅延",
       "工程集約による段取り増加"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-yamato-php",
@@ -446166,7 +446183,8 @@
       "工程管理の難しさ",
       "見積もり作成に時間",
       "納期の遅延"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-onesource-co-jp-case-bank",
