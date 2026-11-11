@@ -3,7 +3,6 @@ import { getCase, getLinkOnlyCase } from "../../lib/cases";
 import { getArticle, articleThumb, articleHref } from "../../lib/articles";
 import { industryLabel } from "../../lib/taxonomy";
 import { parseStat } from "../../lib/stat";
-import { withUtm } from "../../lib/source";
 import CoverImg from "../CoverImg";
 import VendorLogo from "../VendorLogo";
 import { vendorLogo } from "../../lib/vendors";
@@ -21,7 +20,7 @@ import { introSourceName } from "../../lib/introSources";
 /* 「事例でわかる技術用語」テンプレート。「〇〇とは」で検索した人向けに、
    用語の説明（何を解決するものか。向き不向きは1〜2文）→ その用語で課題を解いた事例（一言ラベル＋1段落＋読者向けの一言）
    → 関連する用語・記事、の順に組む。説明は冒頭だけに置き、事例の後に分かれ目やまとめは置かない。
-   事例の見出し（導入企業名 × サービス名）・業種・規模・成果チップ・事例リンク・出典リンクは事例データから自動で出す。
+   事例の見出し（導入企業名 × サービス名）・業種・規模・成果チップ・事例リンクは事例データから自動で出す。
    事例が linkOnly（掲載元から取り下げ依頼）なら、企業名・規模・数字を出さず、item.linkOnly の紹介と元記事リンクだけにする。 */
 
 function serviceName(product: string, vendor: string): string {
@@ -160,7 +159,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                   })}
                 </div>
               )}
-              {/* 事例ページ（要約）と出典（掲載元の元記事）への導線を両方置く */}
+              {/* 事例への導線＝その事例の画像（無ければ提供元ロゴ）つきのカード（事例セレクションと同じ。出典URLは事例ページ側に出す） */}
               <Link href={`/cases/${c.id}`}
                 className="row group mt-4 ml-10 flex items-center gap-4 border border-line2 p-2.5 no-underline sm:p-3">
                 <span className="relative block h-20 w-32 shrink-0 overflow-hidden rounded-[3px] border border-line2 bg-soft">
@@ -176,13 +175,6 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                   </span>
                 </span>
               </Link>
-              <p className="mt-2.5 ml-10 text-[11.5px] text-muted">
-                出典：
-                <a href={withUtm(c.sourceUrl, "article", article.slug)} target="_blank" rel="noopener"
-                  className="break-all border-b border-line pb-0.5 text-body no-underline hover:border-ink hover:text-ink">
-                  {c.sourceUrl}
-                </a>
-              </p>
             </section>
           );
         })}
