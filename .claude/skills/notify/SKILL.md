@@ -34,7 +34,8 @@ description: 事例セレクション・事例でわかる技術用語の記事�
    ```
    一部の提供元だけ送った場合は、送らなかった先をオプションで分ける。
    - 以前の記事で連絡済みのため省略した先 → `--skip ドメイン,…`（連絡済み扱い・連絡日は付けない）
-   - サイト・フォーム停止などで送れなかった先 → `--hold ドメイン,… --memo "理由"`（未連絡のまま残し、memo に理由を書く）
+   - サイト・フォーム停止などで送れなかった先 → `--hold ドメイン,… --memo "理由"`（未連絡のまま残し、memo に理由を書く。保留は記録に残るので、あとで `--notified` を流し直しても保留のまま）
+   - 保留していた先を後から送ったとき → `--notified <記事> [日付] --only ドメイン,…`（名指しした先だけ連絡済みにする）
    - 例: `node scripts/vendors/contacts.mjs --notified 36 2026-11-09 --skip armg.jp,hrbrain.jp --hold businesscoach.co.jp --memo "問い合わせフォーム停止中"`
    記録したら `data/vendor_contacts.json` と `content/articles/VENDORS.md` をコミットして push する。
 

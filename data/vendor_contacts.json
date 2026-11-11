@@ -613,20 +613,6 @@
             "BIZTEL コールセンター / BIZTEL モバイル"
           ],
           "notified": false
-        },
-        {
-          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
-          "label": "#041",
-          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
-          "publishedAt": "2026-11-23",
-          "customers": [
-            "株式会社JTBグローバルアシスタンス",
-            "株式会社バディネット"
-          ],
-          "products": [
-            "BIZTEL shouin"
-          ],
-          "notified": false
         }
       ],
       "memo": ""
@@ -786,7 +772,8 @@
           "products": [
             "クラウドコーチング・マイコ"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "95c3cd55-86ab-4a35-9f7a-78dd56e8fcc6",
@@ -799,7 +786,8 @@
           "products": [
             "1on1ミーティング導入プログラム"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
@@ -815,10 +803,11 @@
             "クラウドコーチング・マイコ",
             "クラウドコーチング"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": "2026-11-09 問い合わせフォーム停止中のため #035・#036 の掲載連絡を送れず。復旧したら送る"
+      "memo": "2026-11-11 #041: 問い合わせフォーム停止中のため未送付（#035・#036 と同じ）。復旧したら3本まとめて送る ／ 2026-11-09 問い合わせフォーム停止中のため #035・#036 の掲載連絡を送れず。復旧したら送る"
     },
     {
       "domain": "cammacs.jp",
@@ -842,7 +831,8 @@
           "products": [
             "キャムマックス"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
@@ -855,7 +845,8 @@
           "products": [
             "クラウドERP キャムマックス"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "26c9394a-cfa3-42dc-8b8f-272a0aec6462",
@@ -1546,7 +1537,8 @@
           "products": [
             "組織開発コンサルティング"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2633,6 +2625,33 @@
       "memo": ""
     },
     {
+      "domain": "humanage.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "TG-WEB"
+      ],
+      "articles": [
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社DTS"
+          ],
+          "products": [
+            "TG-WEB"
+          ],
+          "notified": false,
+          "held": true
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "i3handy.jp",
       "company": "株式会社学研ロジスティクス（Gakken i3 Handy）",
       "status": "removed",
@@ -2923,7 +2942,8 @@
           "products": [
             "RPA"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
       "memo": "2026-11-09 サイト停止中のため #034 の掲載連絡を送れず。復旧したら送る"
@@ -3330,7 +3350,8 @@
           "products": [
             "KiteRa Pro"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
       "memo": "2026-11-09 サイト停止中のため #034 の掲載連絡を送れず。復旧したら送る"
@@ -4579,8 +4600,8 @@
     {
       "domain": "nikken-totalsourcing.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-11",
       "notifiedAtEstimated": false,
       "products": [
         "カスタマイズ研修・技能センター研修"
@@ -4597,7 +4618,8 @@
           "products": [
             "カスタマイズ研修・技能センター研修"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-11"
         }
       ],
       "memo": ""
@@ -4806,8 +4828,8 @@
     {
       "domain": "ogs-consulting.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-11",
       "notifiedAtEstimated": false,
       "products": [
         "人事評価制度構築・運用コンサルティング"
@@ -4824,7 +4846,8 @@
           "products": [
             "人事評価制度構築・運用コンサルティング"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-11"
         }
       ],
       "memo": ""
@@ -5037,6 +5060,33 @@
             "お助けマン"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "pa-consul.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "タレントパレット"
+      ],
+      "articles": [
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社松屋フーズホールディングス"
+          ],
+          "products": [
+            "タレントパレット"
+          ],
+          "notified": false,
+          "held": true
         }
       ],
       "memo": ""
@@ -6154,8 +6204,8 @@
     {
       "domain": "seagreen.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-11",
       "notifiedAtEstimated": false,
       "products": [
         "評価ポイント"
@@ -6172,7 +6222,8 @@
           "products": [
             "評価ポイント"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-11"
         }
       ],
       "memo": ""
@@ -6491,7 +6542,8 @@
           "products": [
             "SAP S/4HANA"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
@@ -6504,7 +6556,8 @@
           "products": [
             "SAP S/4HANA、SAP Analytics Cloud"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
       "memo": "2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのメンテナンス中で未送付。復旧したら2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームがメンテナンス中のため送れず。復旧したら送る"
