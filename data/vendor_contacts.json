@@ -4831,7 +4831,7 @@
     },
     {
       "domain": "okuma.co.jp",
-      "company": "",
+      "company": "オークマ株式会社",
       "status": "no-objection",
       "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
@@ -4846,7 +4846,8 @@
           "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
           "publishedAt": "2026-11-09",
           "customers": [
-            "株式会社しらかわ"
+            "株式会社しらかわ",
+            "（リンクのみ）"
           ],
           "products": [
             "MULTUS"
@@ -4859,7 +4860,8 @@
           "title": "人手が足りない工場の、ロボット自動化事例5選",
           "publishedAt": "2026-11-17",
           "customers": [
-            "株式会社キンレイ"
+            "株式会社キンレイ",
+            "（リンクのみ）"
           ],
           "products": [
             "MULTUS B300Ⅱ ARMROID"
@@ -4868,7 +4870,7 @@
           "notifiedAt": "2026-11-09"
         }
       ],
-      "memo": ""
+      "memo": "2026-11-11 第三者メディアへの掲載不可（お客様との取り決めで自社メディアに限り公開）と削除依頼。全事例を linkOnly（リンクのみ）にした"
     },
     {
       "domain": "onecareer.jp",
