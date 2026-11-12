@@ -4,11 +4,11 @@ import { useActionState } from "react";
 import { submitPlanner, type PlannerState } from "../app/planner/actions";
 
 /* 事例プランナーの結果画面に置く、「製品に合わせた質問リスト」の受け取りフォーム。
-   選んだ目的は hidden で引き継ぐ。 */
+   選んだ目的（主目的 m・副目的 s）は hidden で引き継ぐ。 */
 
 const initial: PlannerState = { status: "idle" };
 
-export default function PlannerMailForm({ purposes, total }: { purposes: string[]; total: number }) {
+export default function PlannerMailForm({ main, subs, total }: { main: string; subs: string[]; total: number }) {
   const [state, action, pending] = useActionState(submitPlanner, initial);
 
   if (state.status === "ok") {
@@ -45,7 +45,8 @@ export default function PlannerMailForm({ purposes, total }: { purposes: string[
         {/* ハニーポット */}
         <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true"
           className="absolute left-[-9999px] h-0 w-0 opacity-0" />
-        {purposes.map((g) => <input key={g} type="hidden" name="g" value={g} />)}
+        <input type="hidden" name="m" value={main} />
+        {subs.map((g) => <input key={g} type="hidden" name="s" value={g} />)}
         <input type="text" name="url" required placeholder="製品ページのURL（example.co.jp/product）"
           className="min-w-0 flex-1 border border-ink bg-white px-4 py-2.5 text-[13.5px] text-ink outline-none placeholder:text-muted" />
         <input type="email" name="email" required placeholder="受け取るメールアドレス" autoComplete="email"

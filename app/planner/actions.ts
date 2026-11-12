@@ -3,7 +3,7 @@
 import { headers } from "next/headers";
 import { guardForm } from "../../lib/ratelimit";
 import { fetchSiteText } from "../../lib/suggest";
-import { buildPlan, buildPlanMail, buildPlanMailHtml, countQuestions, customizePlan, parsePurposes, type Plan } from "../../lib/planner";
+import { buildPlan, buildPlanMail, buildPlanMailHtml, countQuestions, customizePlan, parsePurposes, purposeLine, type Plan } from "../../lib/planner";
 import { productLabel, challengeLabel } from "../../lib/taxonomy";
 import { mailConfigured, sendMail } from "../../lib/mail";
 import { notifySubscribe } from "../../lib/notify";
@@ -31,8 +31,8 @@ export async function submitPlanner(_prev: PlannerState, fd: FormData): Promise<
   const email = String(fd.get("email") ?? "").trim();
   const wantsNewsletter = fd.get("newsletter") != null;
 
-  const purposes = parsePurposes(fd.getAll("g").map(String));
-  if (!purposes.length) return { status: "error", error: "目的を読み取れませんでした。お手数ですが、最初からやり直してください。" };
+  const purposes = parsePurposes(String(fd.get("m") ?? ""), fd.getAll("s").map(String));
+  if (!purposes) return { status: "error", error: "目的を読み取れませんでした。お手数ですが、最初からやり直してください。" };
   if (!url) return { status: "error", error: "製品ページのURLを入力してください。" };
   if (!/^https?:\/\//.test(url)) url = `https://${url}`;
   try { new URL(url); } catch { return { status: "error", error: "URLの形式が正しくありません。" }; }
@@ -69,7 +69,7 @@ export async function submitPlanner(_prev: PlannerState, fd: FormData): Promise<
           "事例プランナーが利用されました。",
           `【メール】${email}`,
           `【製品ページ】${url}`,
-          `【目的】${plan.purposes.map((p) => p.label).join("・")}`,
+          `【目的】${purposeLine(plan)}`,
           pr
             ? `【AIの理解】${pr.summary}（製品: ${pr.productCategory ? productLabel(pr.productCategory) : "-"} / 成果: ${pr.challenge ? challengeLabel(pr.challenge) : "-"}）`
             : "【AIの理解】書き換えに失敗。標準の質問リストを送信",

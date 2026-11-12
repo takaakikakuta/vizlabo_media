@@ -33,6 +33,7 @@ export type Purpose = {
   landing: string;  // 着地する事例の形
   noNumber: string; // 数字が出ない場合の着地
   dataBacked: boolean; // 掲載事例（公開事例）で裏付けやすい目的か
+  key: [number, number]; // 副目的として選ばれたときに聞く、要の2問（questions の添字）
 };
 
 export const PURPOSES: Purpose[] = [
@@ -80,6 +81,7 @@ export const PURPOSES: Purpose[] = [
     landing: "導入前の困りごとを記事の前半に厚く書き、製品の説明は後半に短く置く記事になります。読者が「うちと同じだ」と感じる場面が1つあれば成立します。",
     noNumber: "数字がなくても成立しやすい目的です。導入前の場面を細かく書き、導入後は「できるようになったこと」を1つ挙げれば足ります。",
     dataBacked: true,
+    key: [0, 2],
   },
   {
     slug: "deal",
@@ -125,6 +127,7 @@ export const PURPOSES: Purpose[] = [
     landing: "成果の数字と選定理由を冒頭1ページにまとめた、営業資料として配れる事例になります。A4で1〜2枚のPDFにもできます。",
     noNumber: "数字がないと決裁者に届きにくい目的です。成果の代わりに「選んだ決め手」と「社内の通し方」を主役にし、検討中の担当者に向けた事例にします。",
     dataBacked: true,
+    key: [1, 2],
   },
   {
     slug: "adoption",
@@ -170,6 +173,7 @@ export const PURPOSES: Purpose[] = [
     landing: "手順と工夫を並べた、読んだ人が真似できる活用事例になります。サポートサイトや顧客向けメールで配ります。",
     noNumber: "数字がなくても困らない目的です。使い方の手順と、つまずいた点の乗り越え方が書ければ役に立ちます。",
     dataBacked: false,
+    key: [1, 2],
   },
   {
     slug: "internal",
@@ -215,6 +219,7 @@ export const PURPOSES: Purpose[] = [
     landing: "顧客の発言をそのまま多く引用した、社内報や全社会議向けのストーリーになります。社外に出さない前提なので、名前や率直な意見も載せられます。",
     noNumber: "数字は要りません。顧客の言葉と、社員とのやり取りの場面があれば成立します。",
     dataBacked: false,
+    key: [0, 3],
   },
   {
     slug: "recruit",
@@ -260,6 +265,7 @@ export const PURPOSES: Purpose[] = [
     landing: "顧客と自社の担当者の両方が登場する、仕事の中身が伝わる記事になります。採用ページや会社説明資料に載せます。",
     noNumber: "数字は補足で十分です。難しかった局面と、顧客から見た担当者の姿が書ければ成立します。",
     dataBacked: false,
+    key: [1, 2],
   },
   {
     slug: "relation",
@@ -305,6 +311,7 @@ export const PURPOSES: Purpose[] = [
     landing: "顧客の担当者の名前と写真を前面に出した、人物が主役の記事になります。顧客が自社の社内報や採用に転用することもあります。",
     noNumber: "数字は担当者の功績として載せられれば載せます。出せなくても、判断と苦労の過程が書ければ成立します。",
     dataBacked: false,
+    key: [1, 3],
   },
   {
     slug: "newmarket",
@@ -350,6 +357,7 @@ export const PURPOSES: Purpose[] = [
     landing: "業種特有の事情と、その乗り越え方を中心にした事例になります。業種別のページや展示会の配布資料に使います。",
     noNumber: "数字がなくても、業種特有の懸念がどう解消されたかが書ければ証明になります。",
     dataBacked: true,
+    key: [1, 2],
   },
 ];
 
@@ -372,18 +380,24 @@ const METRIC: Record<string, string> = {
   sustainability: "電力使用量やCO2排出量",
 };
 
-/* ── 回答（目的だけ） ── */
+/* ── 回答（主目的1つ＋副目的2つまで） ──
+   主目的は5問すべて、副目的は要の2問だけを聞く。
+   共通3問＋主5問＋副2問×2＝最大12問で、1時間の取材に収まる数にしている。 */
 
-export const MAX_PURPOSES = 2;
+export const MAX_SUB = 2;
 
-/** フォームやURLクエリの値から、有効な目的だけを取り出す（最大2つ）。 */
-export function parsePurposes(g: string[]): string[] {
-  return [...new Set(g)].filter((s) => PURPOSE_MAP[s]).slice(0, MAX_PURPOSES);
+export type PurposeChoice = { main: string; subs: string[] };
+
+/** フォームやURLクエリの値を検証して目的の選択にする。主目的が無ければ null。 */
+export function parsePurposes(m: string | undefined, s: string[]): PurposeChoice | null {
+  if (!m || !PURPOSE_MAP[m]) return null;
+  const subs = [...new Set(s)].filter((x) => PURPOSE_MAP[x] && x !== m).slice(0, MAX_SUB);
+  return { main: m, subs };
 }
 
 /* ── プランの組み立て ── */
 
-export type PurposePlan = Purpose;
+export type PurposePlan = Purpose & { role: "main" | "sub" };
 
 /** 製品ページをAIが読んで分かったこと。 */
 export type ProductProfile = {
@@ -411,7 +425,12 @@ const fillWith = (v: { industry: string; challenge: string; metric: string }) =>
   s.replaceAll("{industry}", v.industry).replaceAll("{challenge}", v.challenge).replaceAll("{metric}", v.metric);
 
 /** 目的だけで組む、製品を問わない版。画面に出すのはこれ。 */
-export function buildPlan(purposeSlugs: string[]): Plan {
+/** 「リード獲得（主）・採用（副）」のような一覧表記。 */
+export function purposeLine(p: Plan): string {
+  return p.purposes.map((x) => `${x.label}（${x.role === "main" ? "主" : "副"}）`).join("・");
+}
+
+export function buildPlan(choice: PurposeChoice): Plan {
   const fill = fillWith({ industry: "◯◯業", challenge: "この課題", metric: "成果の数字" });
 
   const common: Question[] = [
@@ -433,16 +452,19 @@ export function buildPlan(purposeSlugs: string[]): Plan {
     use: "数字の代わりに置く、成果のパート",
   };
 
-  const purposes = purposeSlugs.map((slug) => {
+  const one = (slug: string, role: "main" | "sub"): PurposePlan => {
     const p = PURPOSE_MAP[slug];
+    const qs = role === "main" ? p.questions : p.key.map((i) => p.questions[i]);
     return {
       ...p,
-      questions: p.questions.map((q) => ({ q: fill(q.q), expect: fill(q.expect), use: fill(q.use) })),
+      role,
+      questions: qs.map((q) => ({ q: fill(q.q), expect: fill(q.expect), use: fill(q.use) })),
       title: fill(p.title),
       landing: fill(p.landing),
       noNumber: fill(p.noNumber),
     };
-  });
+  };
+  const purposes = [one(choice.main, "main"), ...choice.subs.map((x) => one(x, "sub"))];
 
   return { common, numberFallback, purposes };
 }
@@ -581,6 +603,8 @@ function evidenceLine(e: PlanEvidence): string {
   return `事例マニアに掲載している「${e.scope}」の事例は${e.total.toLocaleString()}件で、そのうち${pct}%（${e.withNumbers.toLocaleString()}件）が成果を数字で公開しています。`;
 }
 
+const roleLabel = (x: PurposePlan) => (x.role === "main" ? "主目的" : "副目的");
+
 function exampleStat(c: CaseStudy): string {
   const r = c.results.find((x) => /\d/.test(x.value)) ?? c.results[0];
   return r ? `${r.metric}：${r.value}` : "";
@@ -595,7 +619,7 @@ export function buildPlanMail(p: Plan): string {
   L.push("事例マニアの「事例プランナー」をご利用いただきありがとうございます。");
   L.push(p.profile ? INTRO_CUSTOM : INTRO_GENERIC, "");
   if (p.profile) L.push(`AIの理解：「${p.profile.summary}」`);
-  L.push(`目的：${p.purposes.map((x) => x.label).join("・")}`, "");
+  L.push(`目的：${purposeLine(p)}`, "");
 
   let n = 0;
   const qa = (q: Question) => {
@@ -609,7 +633,7 @@ export function buildPlanMail(p: Plan): string {
   qa(p.numberFallback);
 
   for (const x of p.purposes) {
-    L.push(`■ 「${x.label}」のための質問`, `  読ませたい相手：${x.reader}`, "");
+    L.push(`■ ${roleLabel(x)}「${x.label}」のための質問`, `  読ませたい相手：${x.reader}`, "");
     x.questions.forEach(qa);
     L.push(`▼ 「${x.label}」の着地予想`);
     L.push(`  タイトルの型：${x.title}`);
@@ -659,7 +683,7 @@ export function buildPlanMailHtml(p: Plan): string {
   const fallbackHtml = qa(p.numberFallback);
 
   const purposeBlocks = p.purposes.map((x) => `
-    ${head(`「${x.label}」のための質問`)}
+    ${head(`${roleLabel(x)}「${x.label}」のための質問`)}
     <div style="margin-top:10px;font-size:12px;color:${C.muted};">読ませたい相手：${esc(x.reader)}</div>
     ${x.questions.map(qa).join("")}
     <div style="margin-top:16px;border:1px solid ${C.line};background:${C.soft};padding:16px;">
@@ -699,7 +723,7 @@ export function buildPlanMailHtml(p: Plan): string {
     ${esc(p.profile ? INTRO_CUSTOM : INTRO_GENERIC)}
   </p>
   ${understood}
-  <p style="margin:14px 0 0;font-size:13px;line-height:1.9;color:${C.ink};">目的：<b>${esc(p.purposes.map((x) => x.label).join("・"))}</b></p>
+  <p style="margin:14px 0 0;font-size:13px;line-height:1.9;color:${C.ink};">目的：<b>${esc(purposeLine(p))}</b></p>
 
   ${head("最初に聞く質問（どの目的でも共通）")}
   ${commonHtml}

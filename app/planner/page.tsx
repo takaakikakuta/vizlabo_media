@@ -1,12 +1,14 @@
 import Link from "next/link";
-import { PURPOSES, MAX_PURPOSES, buildPlan, countQuestions, parsePurposes, type Plan } from "../../lib/planner";
+import { PURPOSES, MAX_SUB, buildPlan, countQuestions, parsePurposes, type Plan, type PurposeChoice } from "../../lib/planner";
 import { ListHead } from "../../components/CaseGrid";
 import PlannerMailForm from "../../components/PlannerMailForm";
+import PlannerPurposeForm from "../../components/PlannerPurposeForm";
 
 /* 事例プランナー。事例を「作る側」（ベンダーのマーケ・営業・CS・人事）向け。
-   1) 何のために作る事例かを選ぶと、目的別の構成と顧客への質問をすぐ出す（製品を問わない固定文）
+   1) 何のために作る事例かを、主目的1つ＋副目的2つまでで選ぶと、
+      目的別の構成と顧客への質問をすぐ出す（製品を問わない固定文。主目的5問・副目的は要の2問）
    2) 製品ページのURLとメールをもらうと、AIが質問と想定回答をその製品向けに書き換えてメールで渡す
-   状態はURLクエリ（g）に持つ：戻る・共有・リロードがそのまま効く。 */
+   状態はURLクエリ（主目的 m・副目的 s）に持つ：戻る・共有・リロードがそのまま効く。 */
 
 /* 未完成のため、サイト内の導線・サイトマップには載せず、検索にも出さない（URLを知っている人だけが開ける）。 */
 export const metadata = {
@@ -19,79 +21,53 @@ export default async function PlannerPage({ searchParams }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const sp = await searchParams;
-  const g = Array.isArray(sp.g) ? sp.g : sp.g ? [sp.g] : [];
-  const purposes = parsePurposes(g);
+  const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) || undefined;
+  const many = (v: string | string[] | undefined) => (Array.isArray(v) ? v : v ? [v] : []);
+  const choice = parsePurposes(one(sp.m), many(sp.s));
   const edit = sp.edit != null; // 「目的を変える」から戻ってきたとき（選択を保ったままフォームを出す）
 
   return (
     <div className="mx-auto max-w-4xl px-5 py-12">
       <ListHead eyebrow="事例プランナー" title="その事例は、何のために作りますか"
-        sub="同じ顧客に同じ1時間の取材をしても、目的が違えば聞くことも仕上がりも変わります。目的を選ぶと、それに合った構成と、顧客に投げる質問をすぐにお出しします。" />
+        sub="同じ顧客に同じ1時間の取材をしても、目的が違えば聞くことも仕上がりも変わります。目的を選ぶと、それに合った構成と、顧客に投げる質問をすぐにお出しします。1回の取材を複数の用途に使う場合は、主目的と副目的に分けて選べます。" />
 
-      {purposes.length > 0 && !edit ? <Result plan={buildPlan(purposes)} slugs={purposes} /> : (
+      {choice && !edit ? <Result plan={buildPlan(choice)} choice={choice} /> : (
         <>
-          {sp.go != null && purposes.length === 0 && (
+          {sp.go != null && !choice && (
             <p className="mb-6 border border-accent bg-accent-soft px-4 py-3 text-[13px] font-bold text-accent">
-              目的を1つ以上選んでください。
+              主目的を1つ選んでください。
             </p>
           )}
-          <PurposeForm selected={purposes} />
+          <PlannerPurposeForm maxSub={MAX_SUB} initMain={choice?.main} initSubs={choice?.subs ?? []}
+            options={PURPOSES.map((p) => ({ slug: p.slug, label: p.label, desc: p.desc }))} />
         </>
       )}
     </div>
   );
 }
 
-/* ── 目的を選ぶ（GET。JSなしで動く） ── */
-
-function PurposeForm({ selected }: { selected: string[] }) {
-  return (
-    <form method="get" action="/planner">
-      <input type="hidden" name="go" value="1" />
-      <p className="text-[12.5px] text-muted">{MAX_PURPOSES}つまで選べます。2つ選ぶと、1回の取材で両方に使える質問をお出しします。</p>
-      <div className="mt-5 grid gap-2.5 sm:grid-cols-2">
-        {PURPOSES.map((p) => (
-          <label key={p.slug}
-            className="flex cursor-pointer items-start gap-2.5 border border-line bg-white px-4 py-3.5 transition hover:border-ink has-[:checked]:border-ink has-[:checked]:bg-soft">
-            <input type="checkbox" name="g" value={p.slug} defaultChecked={selected.includes(p.slug)}
-              className="mt-1 h-3.5 w-3.5 shrink-0 accent-ink" />
-            <span>
-              <span className="block text-[14.5px] font-bold text-ink">{p.label}</span>
-              <span className="mt-0.5 block text-[12px] leading-relaxed text-muted">{p.desc}</span>
-            </span>
-          </label>
-        ))}
-      </div>
-      <div className="mt-8 border-t border-ink pt-6">
-        <button type="submit"
-          className="border border-ink bg-ink px-8 py-3 text-[14px] font-bold text-white transition hover:bg-white hover:text-ink">
-          構成と質問を見る →
-        </button>
-      </div>
-    </form>
-  );
-}
-
 /* ── 結果（製品を問わない版をすぐ出す） ── */
 
-function Result({ plan, slugs }: { plan: Plan; slugs: string[] }) {
+function Result({ plan, choice }: { plan: Plan; choice: PurposeChoice }) {
   const total = countQuestions(plan);
-  const editQs = new URLSearchParams([...slugs.map((g) => ["g", g]), ["edit", "1"]]);
+  const editQs = new URLSearchParams([["m", choice.main], ...choice.subs.map((g) => ["s", g]), ["edit", "1"]]);
 
   return (
     <div>
       <div className="flex flex-wrap items-center gap-2 border-b border-line pb-5">
         <span className="label mr-1">目的</span>
         {plan.purposes.map((p) => (
-          <span key={p.slug} className="border border-ink2 px-2.5 py-1 text-[12px] font-bold text-ink">{p.label}</span>
+          <span key={p.slug} className={`border px-2.5 py-1 text-[12px] font-bold ${p.role === "main" ? "border-ink bg-ink text-white" : "border-ink2 text-ink"}`}>
+            <span className="mr-1.5 text-[10px] font-normal opacity-70">{p.role === "main" ? "主" : "副"}</span>{p.label}
+          </span>
         ))}
         <Link href={`/planner?${editQs}`} className="ml-auto text-[12px] text-muted no-underline hover:text-ink">目的を変える ↺</Link>
       </div>
 
       <p className="mt-6 text-[13.5px] leading-[1.95] text-body">
         {plan.purposes.length > 1
-          ? "目的を2つ選んだので、1回の取材で2本の事例を作る前提で組んでいます。最初の共通質問で土台を聞き、そのあと目的ごとの質問に進みます。"
-          : "最初の共通質問で土台を聞き、そのあと目的に合わせた質問に進みます。"}
+          ? `1回の取材を${plan.purposes.length}つの用途に使う前提で組んでいます。最初の共通質問で土台を聞き、主目的の5問、副目的の2問ずつへ進みます。全部で${total}問です。`
+          : `最初の共通質問で土台を聞き、そのあと目的に合わせた5問に進みます。全部で${total}問です。`}
         下の質問はどの製品にも使える標準の形です。
         <a href="#fit" className="font-bold text-ink">製品ページのURLを入れると、自社の製品向けに書き直します。</a>
       </p>
@@ -106,7 +82,7 @@ function Result({ plan, slugs }: { plan: Plan; slugs: string[] }) {
       {/* 目的ごとの構成と質問 */}
       {plan.purposes.map((p) => (
         <section key={p.slug} className="mt-12">
-          <p className="label flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />目的</p>
+          <p className="label flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />{p.role === "main" ? "主目的" : "副目的"}</p>
           <h2 className="font-display mt-3 text-[24px] leading-[1.4] text-ink sm:text-[28px]">{p.label}のための事例</h2>
           <dl className="mt-4 grid gap-x-8 gap-y-3 border-y border-line py-4 text-[13px] leading-[1.9] sm:grid-cols-2">
             <div><dt className="label">読ませたい相手</dt><dd className="mt-1 text-body">{p.reader}</dd></div>
@@ -126,7 +102,9 @@ function Result({ plan, slugs }: { plan: Plan; slugs: string[] }) {
             ))}
           </ol>
 
-          <h3 className="mt-7 text-[13px] font-bold text-ink">顧客への質問</h3>
+          <h3 className="mt-7 text-[13px] font-bold text-ink">
+            顧客への質問{p.role === "sub" && <span className="ml-2 font-normal text-muted">副目的なので、要の2問に絞っています</span>}
+          </h3>
           <QuestionList items={p.questions.map((q) => q.q)} />
 
           {/* 想定回答は1問だけ見本として出す（全問分は製品に合わせてメールで） */}
@@ -145,7 +123,7 @@ function Result({ plan, slugs }: { plan: Plan; slugs: string[] }) {
 
       {/* 製品に合わせる（アドレス取得） */}
       <section id="fit" className="mt-14 scroll-mt-24">
-        <PlannerMailForm purposes={slugs} total={total} />
+        <PlannerMailForm main={choice.main} subs={choice.subs} total={total} />
       </section>
 
       <div className="mt-12 border-t border-ink pt-8">
