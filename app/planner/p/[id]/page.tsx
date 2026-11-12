@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { countQuestions, evidenceLine, roleLabel, type Question } from "../../../../lib/planner";
 import { PLAN_DAYS, loadPlan, planDaysLeft, planUntil } from "../../../../lib/plannerStore";
+import { CONCESSIONS, OBJECTION_STAGES } from "../../../../lib/plannerObjections";
 import { ListHead } from "../../../../components/CaseGrid";
 
 /* 事例プランナーの専用ページ。メールで届いたリンク（推測できないID）を知っている人だけが開ける。
@@ -93,6 +94,10 @@ export default async function SavedPlanPage({ params }: { params: Promise<{ id: 
         </div>
       </dl>
 
+      <p className="mt-5 text-[12.5px] text-muted">
+        顧客に断られそうなときは、<a href="#tora" className="font-bold text-ink">ページ下部の「断られたときの返し方」</a>をご覧ください。
+      </p>
+
       <section className="mt-10">
         <p className="label flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />最初に聞く質問（どの目的でも共通）</p>
         <ol className="mt-3 border-t border-line">
@@ -160,6 +165,66 @@ export default async function SavedPlanPage({ params }: { params: Promise<{ id: 
           </div>
         </section>
       )}
+
+      {/* 虎の巻：断られたときの返し方 */}
+      <section id="tora" className="mt-16 scroll-mt-24">
+        <p className="label flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />虎の巻</p>
+        <h2 className="font-display mt-3 text-[24px] leading-[1.4] text-ink sm:text-[28px]">断られたときの返し方</h2>
+        <p className="mt-3 text-[13.5px] leading-[1.95] text-body">
+          事例づくりは、質問の中身よりも「出せません」「時間がありません」で止まることのほうが多いものです。
+          よく言われる{OBJECTION_STAGES.reduce((n, st) => n + st.items.length, 0)}の断り文句と、その返し方をまとめました。
+        </p>
+
+        {/* 目的ごとの譲れる範囲 */}
+        <h3 className="mt-8 text-[13px] font-bold text-ink">あなたの目的なら、ここまで譲れます</h3>
+        <div className="mt-3 space-y-3">
+          {plan.purposes.map((p) => {
+            const c = CONCESSIONS[p.slug];
+            if (!c) return null;
+            return (
+              <div key={p.slug} className="border border-line bg-soft px-5 py-4">
+                <p className="text-[13.5px] font-bold text-ink">
+                  <span className="mr-2 text-[11px] font-normal text-muted">{roleLabel(p)}</span>{p.label}
+                </p>
+                <dl className="mt-3 grid gap-x-6 gap-y-2.5 text-[12.5px] leading-[1.85] sm:grid-cols-[10.5em_1fr]">
+                  <dt className="font-bold text-ink">社名を伏せる場合</dt><dd className="text-body">{c.name}</dd>
+                  <dt className="font-bold text-ink">数字を出せない場合</dt><dd className="text-body">{c.number}</dd>
+                  <dt className="font-bold text-accent">これだけは残す</dt><dd className="font-bold text-ink">{c.keep}</dd>
+                </dl>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* 場面ごとの断り文句（開閉式） */}
+        {OBJECTION_STAGES.map((st) => (
+          <div key={st.slug} className="mt-9">
+            <h3 className="text-[13px] font-bold text-ink">{st.label}</h3>
+            <div className="mt-3 border-t border-line">
+              {st.items.map((o) => (
+                <details key={o.say} className="group border-b border-line2">
+                  <summary className="flex cursor-pointer list-none items-start justify-between gap-4 py-3.5 [&::-webkit-details-marker]:hidden">
+                    <span className="text-[14.5px] font-bold leading-[1.7] text-ink">「{o.say}」</span>
+                    <span aria-hidden className="mt-0.5 shrink-0 text-[18px] leading-none text-muted transition group-open:rotate-45">＋</span>
+                  </summary>
+                  <div className="pb-5 text-[13px] leading-[1.95]">
+                    <p className="text-body"><span className="mr-2 font-bold text-ink">相手の事情</span>{o.real}</p>
+                    <p className="mt-3 border-l-2 border-accent bg-accent-soft px-4 py-3 text-ink">
+                      <span className="label mb-1 block">返し方</span>{o.reply}
+                    </p>
+                    <p className="mt-3 font-bold text-ink">落としどころ（譲る順に）</p>
+                    <ol className="mt-1.5 space-y-1 text-body">
+                      {o.options.map((x, i) => (
+                        <li key={x} className="flex gap-2.5"><span className="num shrink-0 text-muted">{i + 1}</span>{x}</li>
+                      ))}
+                    </ol>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
 
       <div className="mt-14 border-t border-ink pt-8">
         <Link href="/produce" className="group block border border-line bg-soft px-5 py-5 no-underline transition hover:border-ink">

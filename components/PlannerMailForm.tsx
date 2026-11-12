@@ -47,7 +47,7 @@ export default function PlannerMailForm({ main, subs, total }: { main: string; s
       <h2 className="font-display mt-3 text-[20px] leading-[1.5] text-ink sm:text-[23px]">製品ページのURLを入れると、質問がその製品向けに変わります</h2>
       <p className="mt-3 text-[13.5px] leading-[1.95] text-body">
         AIが製品ページを読み、上の質問{total}問を、その製品が使われる業務の言葉に書き直します。
-        すべての質問に、想定される回答と深掘りのしかた、着地する事例のタイトルと構成、近い製品の掲載事例を付けた専用ページをご用意し、リンクをメールでお送りします（無料）。
+        すべての質問に、想定される回答と深掘りのしかた、着地する事例のタイトルと構成、近い製品の掲載事例、顧客に断られたときの返し方をまとめた専用ページをご用意し、リンクをメールでお送りします（無料）。
       </p>
       <p className="mt-2 text-[12.5px] leading-[1.9] text-body">
         専用ページは<span className="font-bold text-ink">30日間</span>保存され、ログインなしでいつでも開けます。期限を過ぎると自動で削除されます。
