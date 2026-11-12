@@ -768,7 +768,8 @@ export function buildPlanLinkMail(p: Plan, link: PlanLink): string {
   L.push("事例マニアの「事例プランナー」をご利用いただきありがとうございます。");
   L.push(p.profile ? INTRO_CUSTOM : INTRO_GENERIC, "");
   if (p.profile) L.push(`AIの理解：「${p.profile.summary}」`);
-  L.push(`目的：${purposeLine(p)}`, `質問：${countQuestions(p)}問（想定される回答と、着地する事例の形つき）`, "");
+  L.push(`目的：${purposeLine(p)}`, `質問：${countQuestions(p)}問（想定される回答と、着地する事例の形つき）`);
+  L.push("顧客に断られたときの返し方（虎の巻）も、同じページに載せています。", "");
   L.push("▼ あなた専用のページ（ログイン不要）", link.url, "");
   L.push(`このページは${link.until}まで保存されます（${link.days}日間）。その後は自動で削除され、開けなくなります。`);
   L.push("残しておきたい場合は、ページ内の「テキストで保存」から手元に保存してください。");
@@ -801,7 +802,8 @@ export function buildPlanLinkMailHtml(p: Plan, link: PlanLink): string {
   ${understood}
   <p style="margin:14px 0 0;font-size:13px;line-height:1.9;color:${C.ink};">
     目的：<b>${esc(purposeLine(p))}</b><br>
-    質問：<b>${countQuestions(p)}問</b>（想定される回答と、着地する事例の形つき）
+    質問：<b>${countQuestions(p)}問</b>（想定される回答と、着地する事例の形つき）<br>
+    顧客に断られたときの返し方（虎の巻）も、同じページに載せています。
   </p>
 
   <div style="margin-top:24px;border:2px solid ${C.ink};padding:22px 18px;text-align:center;">
