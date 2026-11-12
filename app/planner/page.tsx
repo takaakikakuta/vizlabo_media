@@ -12,7 +12,9 @@ import PlannerMailForm from "../../components/PlannerMailForm";
    状態はURLクエリ（g/ind/ch/num）に持つ：戻る・共有・リロードがそのまま効く。
    画面には構成と質問の一部を出し、想定回答つきの全文はメールで渡す（アドレス取得）。 */
 
+/* 未完成のため、サイト内の導線・サイトマップには載せず、検索にも出さない（URLを知っている人だけが開ける）。 */
 export const metadata = {
+  robots: { index: false, follow: false },
   title: "事例プランナー｜目的に合わせて、取材の質問と事例の着地を設計",
   description: "リード獲得、商談の後押し、社内エンゲージメント、採用。導入事例を何のために作るかを選ぶと、目的別の構成と、顧客に投げる質問、想定される回答、着地する事例の形が分かります（無料）。",
 };

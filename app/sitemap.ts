@@ -25,7 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/tags`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     { url: `${SITE}/finder`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE}/newsletter`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
-    { url: `${SITE}/planner`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE}/produce`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
     { url: `${SITE}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.1 },
   ];
