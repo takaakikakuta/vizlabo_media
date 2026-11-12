@@ -1,6 +1,6 @@
 import CoverImg from "./CoverImg";
 import type { NotePost } from "../lib/note";
-import { NOTE_URL } from "./NoteBanner";
+import Link from "next/link";
 
 /* トップのヒーロー直下。note 連載の最新回を2枚（この事例がスゴイ／事例コラム）。
    出どころは newsletter/*.json の最新号（lib/note.ts）。1本も無ければ何も出さない。 */
@@ -35,8 +35,10 @@ export default function NoteLatest({ posts }: { posts: NotePost[] }) {
       <div className={`grid gap-3 ${posts.length > 1 ? "sm:grid-cols-2" : ""}`}>
         {posts.map((p) => <Card key={p.kind} p={p} />)}
       </div>
-      <p className="mt-2 text-right text-[11.5px] text-muted">
-        <a href={NOTE_URL} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-ink">noteの連載一覧 →</a>
+      {/* 過去の回はサイト内の一覧（/sugoi・/column）へ */}
+      <p className="mt-2 flex flex-wrap justify-end gap-x-4 gap-y-1 text-[11.5px] text-muted">
+        <Link href="/sugoi" className="text-muted hover:text-ink">この事例がスゴイ 過去の回 →</Link>
+        <Link href="/column" className="text-muted hover:text-ink">事例コラム 過去の回 →</Link>
       </p>
     </div>
   );

@@ -134,6 +134,8 @@ function SiteFooter() {
               <Link href="/articles" className="no-underline hover:text-ink">事例セレクション</Link>
               <Link href="/terms" className="no-underline hover:text-ink">事例でわかる技術用語</Link>
               <Link href="/days" className="no-underline hover:text-ink">事例で読む記念日</Link>
+              <Link href="/sugoi" className="no-underline hover:text-ink">この事例がスゴイ（note）</Link>
+              <Link href="/column" className="no-underline hover:text-ink">事例コラム（note）</Link>
             </div>
             <div className="flex flex-col gap-2">
               <span className="label">サービス</span>
