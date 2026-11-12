@@ -3,20 +3,30 @@
 import { headers } from "next/headers";
 import { guardForm } from "../../lib/ratelimit";
 import { fetchSiteText } from "../../lib/suggest";
-import { buildPlan, buildPlanMail, buildPlanMailHtml, countQuestions, customizePlan, parsePurposes, purposeLine, type Plan } from "../../lib/planner";
+import {
+  buildPlan, buildPlanMail, buildPlanMailHtml, buildPlanLinkMail, buildPlanLinkMailHtml,
+  countQuestions, customizePlan, parsePurposes, purposeLine, type Plan, type PlanLink,
+} from "../../lib/planner";
+import { PLAN_DAYS, planUntil, plannerStoreConfigured, savePlan } from "../../lib/plannerStore";
 import { productLabel, challengeLabel } from "../../lib/taxonomy";
 import { mailConfigured, sendMail } from "../../lib/mail";
 import { notifySubscribe } from "../../lib/notify";
 
-/* 事例プランナー（目的＋製品ページのURL＋メール → その製品向けに書き換えた取材質問と着地予想をメールで送る）のサーバー処理。
-   同期実行（サイト取得6秒＋AIの書き換え十数秒＋メール送信）。
-   AIの書き換えに失敗しても、製品を問わない標準の質問リストは送る（リードを取りこぼさない）。 */
+/* 事例プランナー（目的＋製品ページのURL＋メール → その製品向けに書き換えた取材質問と着地予想を渡す）のサーバー処理。
+   同期実行（サイト取得6秒＋AIの書き換え十数秒＋保存＋メール送信）。
+   ・プランは30日間保存し、メールには専用ページ（/planner/p/<id>）へのリンクを送る。
+     リンクは画面には出さない（メールが届くこと自体を本人確認にする）
+   ・AIの書き換えに失敗しても、製品を問わない標準の質問リストで続ける（リードを取りこぼさない）
+   ・保存に失敗したら、これまでどおり全文をメールで送る */
+
+const SITE = "https://vizlabo.com";
 
 export type PlannerState = {
   status: "idle" | "ok" | "error";
   error?: string;
   questions?: number;   // 送った質問の数（画面表示用）
   customized?: boolean; // 製品に合わせて書き換えられたか
+  until?: string;       // 専用ページの保存期限（「2026年12月12日」の形）。保存できなかったときは無い
   summary?: string;     // AIが理解した製品の一言
   subscribed?: boolean; // メルマガ登録も受け付けたか
 };
@@ -59,9 +69,24 @@ export async function submitPlanner(_prev: PlannerState, fd: FormData): Promise<
   }
   const pr = plan.profile;
 
+  // 30日間の保存。できなければ link は無いまま進み、全文メールに切り替える
+  let link: PlanLink | undefined;
+  if (plannerStoreConfigured()) {
+    try {
+      const saved = await savePlan({ email, url, choice: purposes, plan });
+      link = { url: `${SITE}/planner/p/${saved.id}`, until: planUntil(saved), days: PLAN_DAYS };
+    } catch (err) {
+      console.error("[planner] プランの保存に失敗（全文をメールで送る）", err);
+    }
+  }
+
   try {
     if (mailConfigured()) {
-      await sendMail("【事例マニア】事例づくりの質問リストと着地予想をお送りします", buildPlanMail(plan), email, buildPlanMailHtml(plan));
+      if (link) {
+        await sendMail("【事例マニア】事例づくりの質問リストと着地予想ができました", buildPlanLinkMail(plan, link), email, buildPlanLinkMailHtml(plan, link));
+      } else {
+        await sendMail("【事例マニア】事例づくりの質問リストと着地予想をお送りします", buildPlanMail(plan), email, buildPlanMailHtml(plan));
+      }
       // 管理者にもリードとして通知
       await sendMail(
         `【事例マニア/事例プランナー】${email}`,
@@ -73,11 +98,12 @@ export async function submitPlanner(_prev: PlannerState, fd: FormData): Promise<
           pr
             ? `【AIの理解】${pr.summary}（製品: ${pr.productCategory ? productLabel(pr.productCategory) : "-"} / 成果: ${pr.challenge ? challengeLabel(pr.challenge) : "-"}）`
             : "【AIの理解】書き換えに失敗。標準の質問リストを送信",
+          link ? `【専用ページ】${link.url}（${link.until}まで）` : "【専用ページ】保存に失敗。全文をメールで送信",
           `【メルマガ】${wantsNewsletter ? "登録希望あり（別途登録メールも送信）" : "希望なし"}`,
         ].join("\n"),
       );
     } else {
-      console.info("[planner] メール未設定のためログのみ", JSON.stringify({ email, url, purposes, profile: pr ?? null, wantsNewsletter }));
+      console.info("[planner] メール未設定のためログのみ", JSON.stringify({ email, url, purposes, profile: pr ?? null, link: link ?? null, wantsNewsletter }));
     }
   } catch (err) {
     console.error("[planner] 失敗", err);
@@ -95,5 +121,5 @@ export async function submitPlanner(_prev: PlannerState, fd: FormData): Promise<
     }
   }
 
-  return { status: "ok", questions: countQuestions(plan), customized: Boolean(pr), summary: pr?.summary, subscribed };
+  return { status: "ok", questions: countQuestions(plan), customized: Boolean(pr), summary: pr?.summary, until: link?.until, subscribed };
 }
