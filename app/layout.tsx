@@ -140,6 +140,7 @@ function SiteFooter() {
             <div className="flex flex-col gap-2">
               <span className="label">サービス</span>
               <Link href="/contact" className="no-underline hover:text-ink">事例の掲載を依頼</Link>
+              <Link href="/planner" className="no-underline hover:text-ink">事例プランナー</Link>
               <Link href="/produce" className="no-underline hover:text-ink">事例制作代行</Link>
               <Link href="/newsletter" className="no-underline hover:text-ink">メルマガ</Link>
             </div>
