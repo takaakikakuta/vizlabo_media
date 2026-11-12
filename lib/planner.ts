@@ -410,7 +410,7 @@ export type PlanEvidence = {
   scope: string;   // 何で数えたか（表示用。例: 会計・経理×業務効率・工数削減）
   total: number;
   withNumbers: number;
-  examples: CaseStudy[]; // 数字のある事例（最大3件）
+  examples: { id: string; title: string; stat: string }[]; // 数字のある事例（最大3件）。保存するので必要な項目だけ持つ
 };
 
 export type Plan = {
@@ -565,7 +565,8 @@ export function applyCustomization(base: Plan, out: string): Plan {
   const purposes = base.purposes.map((x, k) => ({
     ...x,
     questions: x.questions.map(rewrite),
-    title: okText(titles[k], 120) ? fill((titles[k] as string).trim()) : x.title,
+    // AIがタイトルを返さなかった目的は、固定文の型に成果の言葉だけ入れる
+    title: fill(okText(titles[k], 120) ? (titles[k] as string).trim() : PURPOSE_MAP[x.slug].title),
   }));
 
   return { common, numberFallback, purposes, profile, evidence: planEvidence(profile) };
@@ -591,19 +592,19 @@ export function planEvidence(pr: ProductProfile): PlanEvidence | undefined {
 
   const [scope, pool] = pick;
   const numeric = pool.filter((c) => c.hasNumbers && c.results.some((r) => /\d/.test(r.value)));
-  return { scope, total: pool.length, withNumbers: numeric.length, examples: numeric.slice(0, 3) };
+  return { scope, total: pool.length, withNumbers: numeric.length, examples: numeric.slice(0, 3).map((c) => ({ id: c.id, title: c.title, stat: exampleStat(c) })) };
 }
 
 /* ── メール ── */
 
 const SITE = "https://vizlabo.com";
 
-function evidenceLine(e: PlanEvidence): string {
+export function evidenceLine(e: PlanEvidence): string {
   const pct = e.total ? Math.round((e.withNumbers / e.total) * 100) : 0;
   return `事例マニアに掲載している「${e.scope}」の事例は${e.total.toLocaleString()}件で、そのうち${pct}%（${e.withNumbers.toLocaleString()}件）が成果を数字で公開しています。`;
 }
 
-const roleLabel = (x: PurposePlan) => (x.role === "main" ? "主目的" : "副目的");
+export const roleLabel = (x: PurposePlan) => (x.role === "main" ? "主目的" : "副目的");
 
 function exampleStat(c: CaseStudy): string {
   const r = c.results.find((x) => /\d/.test(x.value)) ?? c.results[0];
@@ -611,13 +612,11 @@ function exampleStat(c: CaseStudy): string {
 }
 
 const INTRO_CUSTOM = "ご入力いただいた製品ページを拝見し、取材の質問と想定される回答を、この製品に合わせて書き直しました。";
-const INTRO_GENERIC = "製品ページの内容をうまく読み取れなかったため、製品を問わない標準の質問リストをお送りします。";
+const INTRO_GENERIC = "製品ページの内容をうまく読み取れなかったため、製品を問わない標準の質問リストをご用意しました。";
 
-/** 利用者へ送るプラン（テキスト版） */
-export function buildPlanMail(p: Plan): string {
+/** プランの中身（質問・想定回答・着地予想・裏付け）をテキストにする。メール本文と「テキストで保存」で共用。 */
+export function buildPlanText(p: Plan): string {
   const L: string[] = [];
-  L.push("事例マニアの「事例プランナー」をご利用いただきありがとうございます。");
-  L.push(p.profile ? INTRO_CUSTOM : INTRO_GENERIC, "");
   if (p.profile) L.push(`AIの理解：「${p.profile.summary}」`);
   L.push(`目的：${purposeLine(p)}`, "");
 
@@ -646,15 +645,27 @@ export function buildPlanMail(p: Plan): string {
   if (p.evidence) {
     L.push("■ 近い製品の事例では、成果がこう語られています", evidenceLine(p.evidence), "");
     for (const c of p.evidence.examples) {
-      L.push(`・${c.title}`, `  ${exampleStat(c)}`, `  ${SITE}/cases/${c.id}`);
+      L.push(`・${c.title}`, `  ${c.stat}`, `  ${SITE}/cases/${c.id}`);
     }
     L.push("");
   }
-  L.push("────────────────────");
-  L.push("取材・構成・執筆をまとめて任せたい場合は、事例制作代行をご利用ください。");
-  L.push(`${SITE}/produce`, "");
-  L.push("BtoB導入事例メディア「事例マニア」", SITE);
   return L.join("\n");
+}
+
+/** 利用者へ送るプラン（テキスト版・全文）。プランを保存できなかったときに使う。 */
+export function buildPlanMail(p: Plan): string {
+  return [
+    "事例マニアの「事例プランナー」をご利用いただきありがとうございます。",
+    p.profile ? INTRO_CUSTOM : INTRO_GENERIC,
+    "",
+    buildPlanText(p),
+    "────────────────────",
+    "取材・構成・執筆をまとめて任せたい場合は、事例制作代行をご利用ください。",
+    `${SITE}/produce`,
+    "",
+    "BtoB導入事例メディア「事例マニア」",
+    SITE,
+  ].join("\n");
 }
 
 const C = { ink: "#1a1a1a", body: "#374151", muted: "#6b7280", line: "#e5e1da", soft: "#f7f5f1", accent: "#0e6e52", bg: "#fdfcfa" };
@@ -702,7 +713,7 @@ export function buildPlanMailHtml(p: Plan): string {
   ${p.evidence.examples.map((c) => `
     <div style="border-bottom:1px solid ${C.line};padding:12px 0;">
       <a href="${SITE}/cases/${c.id}" style="color:${C.ink};font-size:13.5px;font-weight:bold;line-height:1.6;text-decoration:none;">${esc(c.title)}</a>
-      <div style="margin-top:4px;font-size:12.5px;color:${C.accent};font-weight:bold;">${esc(exampleStat(c))}</div>
+      <div style="margin-top:4px;font-size:12.5px;color:${C.accent};font-weight:bold;">${esc(c.stat)}</div>
     </div>`).join("")}` : "";
 
   const understood = p.profile ? `
@@ -737,6 +748,71 @@ export function buildPlanMailHtml(p: Plan): string {
     <div style="font-size:13px;font-weight:bold;color:${C.ink};">取材・構成・執筆をまとめて任せたい場合</div>
     <a href="${SITE}/produce" style="display:inline-block;margin-top:12px;background:${C.ink};color:#ffffff;font-size:13px;font-weight:bold;text-decoration:none;padding:11px 26px;">事例制作代行を見る →</a>
   </div>
+
+  <div style="margin-top:28px;border-top:1px solid ${C.line};padding-top:14px;font-size:11px;color:${C.muted};line-height:1.9;">
+    ※本メールはご入力いただいたアドレスに1回だけお送りしています。<br>
+    BtoB導入事例メディア「事例マニア」 <a href="${SITE}" style="color:${C.muted};">${SITE.replace("https://", "")}</a>
+  </div>
+</div>
+</body></html>`;
+}
+
+/* ── 専用ページへの案内メール ──
+   プランを保存できたときは、全文ではなく専用ページ（/planner/p/<id>）へのリンクを送る。
+   リンクを知っている人だけが開けるので、メールが届くこと自体が本人確認になる。 */
+
+export type PlanLink = { url: string; until: string; days: number }; // until は「2026年12月12日」の形
+
+export function buildPlanLinkMail(p: Plan, link: PlanLink): string {
+  const L: string[] = [];
+  L.push("事例マニアの「事例プランナー」をご利用いただきありがとうございます。");
+  L.push(p.profile ? INTRO_CUSTOM : INTRO_GENERIC, "");
+  if (p.profile) L.push(`AIの理解：「${p.profile.summary}」`);
+  L.push(`目的：${purposeLine(p)}`, `質問：${countQuestions(p)}問（想定される回答と、着地する事例の形つき）`, "");
+  L.push("▼ あなた専用のページ（ログイン不要）", link.url, "");
+  L.push(`このページは${link.until}まで保存されます（${link.days}日間）。その後は自動で削除され、開けなくなります。`);
+  L.push("残しておきたい場合は、ページ内の「テキストで保存」から手元に保存してください。");
+  L.push("このリンクを知っている人は誰でもページを開けます。共有する相手にご注意ください。", "");
+  L.push("────────────────────");
+  L.push("取材・構成・執筆をまとめて任せたい場合は、事例制作代行をご利用ください。");
+  L.push(`${SITE}/produce`, "");
+  L.push("BtoB導入事例メディア「事例マニア」", SITE);
+  return L.join("\n");
+}
+
+export function buildPlanLinkMailHtml(p: Plan, link: PlanLink): string {
+  const understood = p.profile ? `
+  <div style="margin-top:12px;border:1px solid ${C.line};background:${C.soft};padding:14px 16px;font-size:14px;font-weight:bold;color:${C.ink};line-height:1.8;">
+    「${esc(p.profile.summary)}」
+  </div>
+  <p style="margin:8px 0 0;font-size:12px;color:${C.muted};line-height:1.8;">AIは製品をこう理解しました。</p>` : "";
+
+  return `<!doctype html>
+<html lang="ja"><body style="margin:0;padding:0;background:${C.bg};">
+<div style="max-width:600px;margin:0 auto;padding:28px 20px;font-family:-apple-system,'Hiragino Sans','Yu Gothic',Meiryo,sans-serif;color:${C.body};">
+  <div style="border-top:3px solid ${C.ink};padding-top:16px;">
+    <a href="${SITE}" style="text-decoration:none;color:${C.ink};font-size:18px;font-weight:bold;letter-spacing:.08em;">事例マニア</a>
+    <span style="font-size:10px;color:${C.muted};letter-spacing:.14em;margin-left:10px;">事例プランナー</span>
+  </div>
+  <p style="margin:24px 0 0;font-size:13.5px;line-height:2;">
+    事例プランナーをご利用いただきありがとうございます。<br>
+    ${esc(p.profile ? INTRO_CUSTOM : INTRO_GENERIC)}
+  </p>
+  ${understood}
+  <p style="margin:14px 0 0;font-size:13px;line-height:1.9;color:${C.ink};">
+    目的：<b>${esc(purposeLine(p))}</b><br>
+    質問：<b>${countQuestions(p)}問</b>（想定される回答と、着地する事例の形つき）
+  </p>
+
+  <div style="margin-top:24px;border:2px solid ${C.ink};padding:22px 18px;text-align:center;">
+    <div style="font-size:11px;font-weight:bold;letter-spacing:.14em;color:${C.muted};">あなた専用のページ（ログイン不要）</div>
+    <a href="${esc(link.url)}" style="display:inline-block;margin-top:14px;background:${C.ink};color:#ffffff;font-size:14px;font-weight:bold;text-decoration:none;padding:13px 30px;">質問と着地予想を開く →</a>
+    <div style="margin-top:14px;font-size:12.5px;color:${C.ink};line-height:1.8;"><b>${esc(link.until)}</b>まで保存されます（${link.days}日間）</div>
+  </div>
+  <p style="margin:14px 0 0;font-size:12px;line-height:1.9;color:${C.muted};">
+    期限を過ぎると自動で削除され、開けなくなります。残しておきたい場合は、ページ内の「テキストで保存」から手元に保存してください。<br>
+    このリンクを知っている人は誰でもページを開けます。共有する相手にご注意ください。
+  </p>
 
   <div style="margin-top:28px;border-top:1px solid ${C.line};padding-top:14px;font-size:11px;color:${C.muted};line-height:1.9;">
     ※本メールはご入力いただいたアドレスに1回だけお送りしています。<br>

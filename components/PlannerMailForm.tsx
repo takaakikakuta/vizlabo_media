@@ -22,10 +22,18 @@ export default function PlannerMailForm({ main, subs, total }: { main: string; s
         )}
         <p className="mt-2 text-[12.5px] leading-relaxed text-muted">
           {state.customized
-            ? `質問${state.questions ?? ""}問と想定回答を、この製品に合わせて書き直しています。`
-            : "製品ページをうまく読み取れなかったため、製品を問わない標準の質問リストをお送りしました。"}
+            ? `質問${state.questions ?? ""}問と想定回答を、この製品に合わせて書き直しました。`
+            : "製品ページをうまく読み取れなかったため、製品を問わない標準の質問リストをご用意しました。"}
+          {state.until
+            ? "メールに、あなた専用のページへのリンクを記載しています。"
+            : "全文をメールに記載しています。"}
           数分待っても届かない場合は、迷惑メールフォルダをご確認ください。
         </p>
+        {state.until && (
+          <p className="mt-3 text-[12.5px] leading-relaxed text-ink">
+            専用ページは<span className="font-bold">{state.until}</span>まで保存されます。その後は自動で削除されます。
+          </p>
+        )}
         {state.subscribed && (
           <p className="mt-2 text-[11.5px] text-muted">メルマガ「週刊 事例マニア」にも登録しました（毎週土曜配信）。</p>
         )}
@@ -39,7 +47,10 @@ export default function PlannerMailForm({ main, subs, total }: { main: string; s
       <h2 className="font-display mt-3 text-[20px] leading-[1.5] text-ink sm:text-[23px]">製品ページのURLを入れると、質問がその製品向けに変わります</h2>
       <p className="mt-3 text-[13.5px] leading-[1.95] text-body">
         AIが製品ページを読み、上の質問{total}問を、その製品が使われる業務の言葉に書き直します。
-        すべての質問に、想定される回答と深掘りのしかた、着地する事例のタイトルと構成、近い製品の掲載事例を付けてメールでお送りします（無料・1通だけ）。
+        すべての質問に、想定される回答と深掘りのしかた、着地する事例のタイトルと構成、近い製品の掲載事例を付けた専用ページをご用意し、リンクをメールでお送りします（無料）。
+      </p>
+      <p className="mt-2 text-[12.5px] leading-[1.9] text-body">
+        専用ページは<span className="font-bold text-ink">30日間</span>保存され、ログインなしでいつでも開けます。期限を過ぎると自動で削除されます。
       </p>
       <form action={action} className="mt-4 flex flex-col gap-2.5 sm:flex-row sm:flex-wrap">
         {/* ハニーポット */}

@@ -36,6 +36,17 @@ const accounts = new Table(stack, "VendorAccounts", {
   removalPolicy: RemovalPolicy.RETAIN,
 });
 
+/* 事例プランナーで作ったプラン（lib/plannerStore.ts）。pk は推測できないランダムなID。
+   始めた日から30日で失効し、ttl で DynamoDB が自動削除する（利用者にもそう案内している）。
+   一時的なデータなので、スタックを消すときはテーブルごと消す */
+const plans = new Table(stack, "PlannerPlans", {
+  tableName: `jirei-mania-plans-${branch}`,
+  partitionKey: { name: "pk", type: AttributeType.STRING },
+  billingMode: BillingMode.PAY_PER_REQUEST,
+  timeToLiveAttribute: "ttl",
+  removalPolicy: RemovalPolicy.DESTROY,
+});
+
 const policy = new ManagedPolicy(stack, "CaseViewsAccess", {
   managedPolicyName: `jirei-mania-views-${branch}-rw`,
   // 説明文は変えない（IAM の管理ポリシーは説明を変えると作り直しになり、固定名のため失敗する）。会員テーブルの権限もここに足している
@@ -49,6 +60,10 @@ const policy = new ManagedPolicy(stack, "CaseViewsAccess", {
       actions: ["dynamodb:GetItem", "dynamodb:PutItem", "dynamodb:DeleteItem", "dynamodb:Scan"],
       resources: [accounts.tableArn],
     }),
+    new PolicyStatement({
+      actions: ["dynamodb:GetItem", "dynamodb:PutItem"],
+      resources: [plans.tableArn],
+    }),
   ],
 });
 
@@ -57,4 +72,5 @@ if (iamUser) policy.attachToUser(User.fromUserName(stack, "SsrUser", iamUser));
 
 new CfnOutput(stack, "CaseViewsTableName", { value: table.tableName });
 new CfnOutput(stack, "VendorAccountsTableName", { value: accounts.tableName });
+new CfnOutput(stack, "PlannerPlansTableName", { value: plans.tableName });
 new CfnOutput(stack, "CaseViewsPolicyArn", { value: policy.managedPolicyArn });
