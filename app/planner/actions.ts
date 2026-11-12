@@ -2,17 +2,22 @@
 
 import { headers } from "next/headers";
 import { guardForm } from "../../lib/ratelimit";
-import { buildPlan, buildPlanMail, buildPlanMailHtml, parsePlanAnswers } from "../../lib/planner";
+import { fetchSiteText } from "../../lib/suggest";
+import { buildPlan, buildPlanMail, buildPlanMailHtml, countQuestions, customizePlan, parsePurposes, type Plan } from "../../lib/planner";
+import { productLabel, challengeLabel } from "../../lib/taxonomy";
 import { mailConfigured, sendMail } from "../../lib/mail";
 import { notifySubscribe } from "../../lib/notify";
 
-/* 事例プランナー（目的・業種・成果の回答＋メール → 取材質問と着地予想をメールで送る）のサーバー処理。
-   質問と想定回答の全文はメールでだけ渡す（画面には目的別の構成と質問の一部だけを出す）。 */
+/* 事例プランナー（目的＋製品ページのURL＋メール → その製品向けに書き換えた取材質問と着地予想をメールで送る）のサーバー処理。
+   同期実行（サイト取得6秒＋AIの書き換え十数秒＋メール送信）。
+   AIの書き換えに失敗しても、製品を問わない標準の質問リストは送る（リードを取りこぼさない）。 */
 
 export type PlannerState = {
   status: "idle" | "ok" | "error";
   error?: string;
   questions?: number;   // 送った質問の数（画面表示用）
+  customized?: boolean; // 製品に合わせて書き換えられたか
+  summary?: string;     // AIが理解した製品の一言
   subscribed?: boolean; // メルマガ登録も受け付けたか
 };
 
@@ -22,45 +27,57 @@ export async function submitPlanner(_prev: PlannerState, fd: FormData): Promise<
   // ハニーポット
   if (String(fd.get("website") ?? "").trim()) return { status: "ok" };
 
+  let url = String(fd.get("url") ?? "").trim();
   const email = String(fd.get("email") ?? "").trim();
-  const company = String(fd.get("company") ?? "").trim().slice(0, 100);
   const wantsNewsletter = fd.get("newsletter") != null;
 
-  const answers = parsePlanAnswers({
-    g: fd.getAll("g").map(String),
-    ind: String(fd.get("ind") ?? ""),
-    ch: String(fd.get("ch") ?? ""),
-    num: String(fd.get("num") ?? ""),
-  });
-  if (!answers) return { status: "error", error: "回答を読み取れませんでした。お手数ですが、最初からやり直してください。" };
+  const purposes = parsePurposes(fd.getAll("g").map(String));
+  if (!purposes.length) return { status: "error", error: "目的を読み取れませんでした。お手数ですが、最初からやり直してください。" };
+  if (!url) return { status: "error", error: "製品ページのURLを入力してください。" };
+  if (!/^https?:\/\//.test(url)) url = `https://${url}`;
+  try { new URL(url); } catch { return { status: "error", error: "URLの形式が正しくありません。" }; }
   if (!email || !EMAIL.test(email)) return { status: "error", error: "メールアドレスの形式が正しくありません。" };
 
   const ip = (await headers()).get("x-forwarded-for")?.split(",")[0]?.trim() ?? null;
   const blocked = guardForm("planner", ip, email);
   if (blocked) return { status: "error", error: blocked };
 
-  const plan = buildPlan(answers);
-  const questions = plan.common.length + 1 + plan.purposes.reduce((n, p) => n + p.questions.length, 0);
+  let text: string;
+  try {
+    text = await fetchSiteText(url);
+  } catch (err) {
+    console.error("[planner] サイト取得に失敗", url, err);
+    return { status: "error", error: "製品ページの読み取りに失敗しました。URLをご確認のうえ、時間をおいてお試しください。" };
+  }
+
+  const base = buildPlan(purposes);
+  let plan: Plan = base;
+  try {
+    plan = await customizePlan(base, text);
+  } catch (err) {
+    console.error("[planner] AIの書き換えに失敗（標準の質問リストを送る）", err);
+  }
+  const pr = plan.profile;
 
   try {
     if (mailConfigured()) {
       await sendMail("【事例マニア】事例づくりの質問リストと着地予想をお送りします", buildPlanMail(plan), email, buildPlanMailHtml(plan));
       // 管理者にもリードとして通知
       await sendMail(
-        `【事例マニア/事例プランナー】${company ? `${company} ` : ""}${email}`,
+        `【事例マニア/事例プランナー】${email}`,
         [
           "事例プランナーが利用されました。",
           `【メール】${email}`,
-          `【会社名】${company || "-"}`,
+          `【製品ページ】${url}`,
           `【目的】${plan.purposes.map((p) => p.label).join("・")}`,
-          `【顧客の業種】${plan.industryLabel}`,
-          `【伝えたい成果】${plan.challengeLabel}`,
-          `【数字の見込み】${answers.num}`,
+          pr
+            ? `【AIの理解】${pr.summary}（製品: ${pr.productCategory ? productLabel(pr.productCategory) : "-"} / 成果: ${pr.challenge ? challengeLabel(pr.challenge) : "-"}）`
+            : "【AIの理解】書き換えに失敗。標準の質問リストを送信",
           `【メルマガ】${wantsNewsletter ? "登録希望あり（別途登録メールも送信）" : "希望なし"}`,
         ].join("\n"),
       );
     } else {
-      console.info("[planner] メール未設定のためログのみ", JSON.stringify({ email, company, answers, wantsNewsletter }));
+      console.info("[planner] メール未設定のためログのみ", JSON.stringify({ email, url, purposes, profile: pr ?? null, wantsNewsletter }));
     }
   } catch (err) {
     console.error("[planner] 失敗", err);
@@ -78,5 +95,5 @@ export async function submitPlanner(_prev: PlannerState, fd: FormData): Promise<
     }
   }
 
-  return { status: "ok", questions, subscribed };
+  return { status: "ok", questions: countQuestions(plan), customized: Boolean(pr), summary: pr?.summary, subscribed };
 }

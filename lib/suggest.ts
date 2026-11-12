@@ -12,9 +12,9 @@ import { searchKey } from "../components/CaseGrid";
    認証: 本番SSRはAWS既定チェーンが使えないため、APP_AWS_* をnext.configでビルド時に
    焼き込んで渡す（vizlabo_xと同方式）。ローカルは既定チェーン（~/.aws）で動く。 */
 
-const MODEL = process.env.BEDROCK_MODEL_ID || "global.anthropic.claude-haiku-4-5-20251001-v1:0";
+export const BEDROCK_MODEL = process.env.BEDROCK_MODEL_ID || "global.anthropic.claude-haiku-4-5-20251001-v1:0";
 
-function bedrock() {
+export function bedrock() {
   const id = process.env.APP_AWS_ACCESS_KEY_ID;
   const secret = process.env.APP_AWS_SECRET_ACCESS_KEY;
   return new BedrockRuntimeClient({
@@ -70,7 +70,7 @@ export async function analyzeCompany(siteText: string): Promise<CompanyProfile> 
   ].join("\n");
 
   const res = await bedrock().send(new ConverseCommand({
-    modelId: MODEL,
+    modelId: BEDROCK_MODEL,
     messages: [{ role: "user", content: [{ text: prompt }] }],
     inferenceConfig: { maxTokens: 500, temperature: 0 },
   }));

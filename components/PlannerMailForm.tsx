@@ -3,22 +3,27 @@
 import { useActionState } from "react";
 import { submitPlanner, type PlannerState } from "../app/planner/actions";
 
-/* 事例プランナーの結果画面に置く、質問リスト全文の受け取りフォーム。
-   回答（目的・業種・成果・数字の見込み）は hidden で引き継ぐ。 */
+/* 事例プランナーの結果画面に置く、「製品に合わせた質問リスト」の受け取りフォーム。
+   選んだ目的は hidden で引き継ぐ。 */
 
 const initial: PlannerState = { status: "idle" };
 
-export default function PlannerMailForm({ purposes, industry, challenge, num, total }: {
-  purposes: string[]; industry: string; challenge: string; num: string; total: number;
-}) {
+export default function PlannerMailForm({ purposes, total }: { purposes: string[]; total: number }) {
   const [state, action, pending] = useActionState(submitPlanner, initial);
 
   if (state.status === "ok") {
     return (
       <div className="border-2 border-ink bg-soft px-6 py-8 text-center">
         <p className="font-display text-[18px] text-ink">メールをお送りしました</p>
+        {state.customized && state.summary && (
+          <p className="mt-3 text-[13px] leading-relaxed text-body">
+            AIは製品を<span className="font-bold text-ink">「{state.summary}」</span>と理解しました。
+          </p>
+        )}
         <p className="mt-2 text-[12.5px] leading-relaxed text-muted">
-          質問{state.questions ? `${state.questions}問` : ""}と想定回答、着地予想を記載しています。
+          {state.customized
+            ? `質問${state.questions ?? ""}問と想定回答を、この製品に合わせて書き直しています。`
+            : "製品ページをうまく読み取れなかったため、製品を問わない標準の質問リストをお送りしました。"}
           数分待っても届かない場合は、迷惑メールフォルダをご確認ください。
         </p>
         {state.subscribed && (
@@ -30,26 +35,24 @@ export default function PlannerMailForm({ purposes, industry, challenge, num, to
 
   return (
     <div className="border-2 border-ink px-5 py-6 sm:px-7 sm:py-7">
-      <p className="label flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />質問リストの全文を受け取る</p>
+      <p className="label flex items-center gap-2.5"><span className="h-px w-5 bg-ink" />自社の製品に合わせる</p>
+      <h2 className="font-display mt-3 text-[20px] leading-[1.5] text-ink sm:text-[23px]">製品ページのURLを入れると、質問がその製品向けに変わります</h2>
       <p className="mt-3 text-[13.5px] leading-[1.95] text-body">
-        質問{total}問のすべてに、想定される回答と使いどころを付けてメールでお送りします。
-        数字が出なかった場合の切り替え方と、着地する事例のタイトル・構成も入っています（無料・1通だけ）。
+        AIが製品ページを読み、上の質問{total}問を、その製品が使われる業務の言葉に書き直します。
+        すべての質問に、想定される回答と深掘りのしかた、着地する事例のタイトルと構成、近い製品の掲載事例を付けてメールでお送りします（無料・1通だけ）。
       </p>
       <form action={action} className="mt-4 flex flex-col gap-2.5 sm:flex-row sm:flex-wrap">
         {/* ハニーポット */}
         <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true"
           className="absolute left-[-9999px] h-0 w-0 opacity-0" />
         {purposes.map((g) => <input key={g} type="hidden" name="g" value={g} />)}
-        <input type="hidden" name="ind" value={industry} />
-        <input type="hidden" name="ch" value={challenge} />
-        <input type="hidden" name="num" value={num} />
-        <input type="text" name="company" placeholder="会社名（任意）" autoComplete="organization"
+        <input type="text" name="url" required placeholder="製品ページのURL（example.co.jp/product）"
           className="min-w-0 flex-1 border border-ink bg-white px-4 py-2.5 text-[13.5px] text-ink outline-none placeholder:text-muted" />
         <input type="email" name="email" required placeholder="受け取るメールアドレス" autoComplete="email"
           className="min-w-0 flex-1 border border-ink bg-white px-4 py-2.5 text-[13.5px] text-ink outline-none placeholder:text-muted" />
         <button type="submit" disabled={pending}
           className="shrink-0 border border-ink bg-ink px-6 py-2.5 text-[13px] font-bold text-white transition hover:bg-white hover:text-ink disabled:opacity-60">
-          {pending ? "送信しています…" : "メールで受け取る"}
+          {pending ? "AIが読んでいます…" : "メールで受け取る"}
         </button>
         <label className="flex cursor-pointer items-start gap-2 sm:order-last sm:basis-full">
           <input type="checkbox" name="newsletter" defaultChecked className="mt-0.75 h-3.5 w-3.5 shrink-0 accent-ink" />
@@ -59,7 +62,9 @@ export default function PlannerMailForm({ purposes, industry, challenge, num, to
         </label>
       </form>
       <p className="mt-2.5 text-[11px] leading-relaxed text-muted">
-        ※いただいたアドレスに営業の電話やメールを繰り返すことはありません。
+        {pending
+          ? "製品ページの読み取りと質問の書き直しに30秒ほどかかります。このままお待ちください。"
+          : "※いただいたアドレスに営業の電話やメールを繰り返すことはありません。"}
       </p>
       {state.status === "error" && (
         <p className="mt-2 text-[12px] font-bold text-accent">{state.error}</p>
