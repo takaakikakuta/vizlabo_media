@@ -17,6 +17,14 @@ const nextConfig: NextConfig = {
     BEDROCK_MODEL_ID: process.env.BEDROCK_MODEL_ID ?? "",
     // 事例の閲覧数（lib/views.ts）。テーブル名は amplify/backend.ts と同じ規則（ブランチごと）
     VIEWS_TABLE: process.env.VIEWS_TABLE || (process.env.AWS_BRANCH ? `jirei-mania-views-${process.env.AWS_BRANCH}` : ""),
+    // ベンダー会員（lib/accounts.ts）。テーブル名は amplify/backend.ts と同じ規則。
+    // VENDOR_SECRET はログインコードのハッシュとログイン状態の署名に使う（長いランダム文字列。変えると全員ログアウト）
+    ACCOUNTS_TABLE: process.env.ACCOUNTS_TABLE || (process.env.AWS_BRANCH ? `jirei-mania-accounts-${process.env.AWS_BRANCH}` : ""),
+    VENDOR_SECRET: process.env.VENDOR_SECRET ?? "",
+    // 事例プランナーのプラン保存（lib/plannerStore.ts）。テーブル名は amplify/backend.ts と同じ規則
+    PLANS_TABLE: process.env.PLANS_TABLE || (process.env.AWS_BRANCH ? `jirei-mania-plans-${process.env.AWS_BRANCH}` : ""),
+    // 掲載通知（scripts/vendors/notify.mjs）が招待の発行・会員への通知に使う API のトークン（app/api/vendor-notify）
+    NOTIFY_API_TOKEN: process.env.NOTIFY_API_TOKEN ?? "",
     // 運営用ページ（/admin/*）のログインパスワード（lib/admin.ts）
     ADMIN_PASSWORD: process.env.ADMIN_PASSWORD ?? "",
   },

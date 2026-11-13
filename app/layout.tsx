@@ -5,6 +5,7 @@ import "./globals.css";
 import { siteStats } from "../lib/cases";
 import { Mail, PenLine, FilePlus2 } from "lucide-react";
 import { GoogleTagManager } from "@next/third-parties/google";
+import SourceClickTracker from "../components/SourceClickTracker";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
@@ -27,6 +28,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SiteFooter />
         {/* vizlabo本体と同じGTMコンテナ。分けたくなったらIDを差し替える */}
         <GoogleTagManager gtmId="GTM-MHP5FFXB" />
+        {/* 出典リンクのクリック（送客）の計測。ベンダーのダッシュボードと /admin/views で見る */}
+        <SourceClickTracker />
       </body>
     </html>
   );
@@ -131,6 +134,8 @@ function SiteFooter() {
               <Link href="/articles" className="no-underline hover:text-ink">事例セレクション</Link>
               <Link href="/terms" className="no-underline hover:text-ink">事例でわかる技術用語</Link>
               <Link href="/days" className="no-underline hover:text-ink">事例で読む記念日</Link>
+              <Link href="/sugoi" className="no-underline hover:text-ink">この事例がスゴイ（note）</Link>
+              <Link href="/column" className="no-underline hover:text-ink">事例コラム（note）</Link>
             </div>
             <div className="flex flex-col gap-2">
               <span className="label">サービス</span>

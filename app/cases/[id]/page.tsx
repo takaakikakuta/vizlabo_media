@@ -249,7 +249,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 function SourceButton({ c, position }: { c: CaseStudy; position: "top" | "bottom" }) {
   const name = c.customer.name || c.vendor;
   return (
-    <a href={withUtm(c.sourceUrl, "case_detail", position)} target="_blank" rel="noopener"
+    <a href={withUtm(c.sourceUrl, "case_detail", position)} target="_blank" rel="noopener" data-case-src={c.id}
       className="group inline-flex max-w-full flex-col border border-ink bg-ink px-5 py-3 text-white no-underline transition hover:bg-white hover:text-ink">
       <span className="text-[14px] font-bold leading-snug">元の事例を読む（{name}）↗</span>
       <span className="mt-0.5 text-[11px] text-white/70 group-hover:text-muted">

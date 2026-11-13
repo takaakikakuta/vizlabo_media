@@ -3304,6 +3304,32 @@
       "memo": ""
     },
     {
+      "domain": "keigan-motor.com",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "KeiganALI"
+      ],
+      "articles": [
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "株式会社ホリゾン"
+          ],
+          "products": [
+            "KeiganALI"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "kiscl.co.jp",
       "company": "",
       "status": "no-objection",
@@ -4854,7 +4880,7 @@
     },
     {
       "domain": "okuma.co.jp",
-      "company": "",
+      "company": "オークマ株式会社",
       "status": "no-objection",
       "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
@@ -4869,7 +4895,8 @@
           "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
           "publishedAt": "2026-11-09",
           "customers": [
-            "株式会社しらかわ"
+            "株式会社しらかわ",
+            "（リンクのみ）"
           ],
           "products": [
             "MULTUS"
@@ -4882,7 +4909,8 @@
           "title": "人手が足りない工場の、ロボット自動化事例5選",
           "publishedAt": "2026-11-17",
           "customers": [
-            "株式会社キンレイ"
+            "株式会社キンレイ",
+            "（リンクのみ）"
           ],
           "products": [
             "MULTUS B300Ⅱ ARMROID"
@@ -4891,7 +4919,7 @@
           "notifiedAt": "2026-11-09"
         }
       ],
-      "memo": ""
+      "memo": "2026-11-11 第三者メディアへの掲載不可（お客様との取り決めで自社メディアに限り公開）と削除依頼。全事例を linkOnly（リンクのみ）にした"
     },
     {
       "domain": "onecareer.jp",
@@ -6176,7 +6204,7 @@
     },
     {
       "domain": "scsk-superstream.jp",
-      "company": "",
+      "company": "SCSK Minoriソリューションズ株式会社",
       "status": "no-objection",
       "notifiedAt": "2026-11-11",
       "notifiedAtEstimated": false,
@@ -6190,7 +6218,8 @@
           "title": "ERP・基幹システムとは｜製造業の5つの事例でわかる",
           "publishedAt": "2026-11-18",
           "customers": [
-            "キヤノン電子株式会社"
+            "キヤノン電子株式会社",
+            "（リンクのみ）"
           ],
           "products": [
             "SuperStream-NX、システム連携ツール Connect、CELF"
@@ -6199,7 +6228,7 @@
           "notifiedAt": "2026-11-11"
         }
       ],
-      "memo": ""
+      "memo": "2026-11-11 社外メディアへの掲載は掲載内容の事前確認（導入企業の確認を含む）が必要との社内ルールにより、キヤノン電子の事例の削除依頼（社内確認のうえ再掲載を依頼する可能性あり）。全事例を linkOnly（リンクのみ）にした"
     },
     {
       "domain": "seagreen.co.jp",
@@ -6365,29 +6394,15 @@
     },
     {
       "domain": "shi.co.jp",
-      "company": "",
-      "status": "pending",
-      "notifiedAt": "",
-      "notifiedAtEstimated": false,
+      "company": "住友重機械工業株式会社",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-11",
+      "notifiedAtEstimated": true,
       "products": [
         "KeiganALI"
       ],
-      "articles": [
-        {
-          "slug": "0e784788-dda1-4042-9111-e72986f75859",
-          "label": "#033",
-          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
-          "publishedAt": "2026-11-11",
-          "customers": [
-            "株式会社ホリゾン"
-          ],
-          "products": [
-            "KeiganALI"
-          ],
-          "notified": false
-        }
-      ],
-      "memo": ""
+      "articles": [],
+      "memo": "2026-11-11 住友重機械工業（佐藤様）より連絡。年内でKeiganALIの取り扱いを終了するため、#033の事例リンクをKeigan社YouTubeへ変更できないかとの依頼。元の事例ページが年内でなくなるため、#033の02をアイシン（mujin.co.jp）に差し替え、shi.co.jpの2事例（ホリゾン・菊屋美粧堂）をhiddenにした。。同日、Keigan社の動画（https://youtu.be/Kw1y5PRC2s8）がホリゾンの改善事例そのものだとして、現状のまま掲載してほしいと再度の連絡。動画の文字起こしで内容を確認し、ホリゾンの事例を出典=動画・提供元=keigan-motor.com に変えて#033の02に戻した（アイシンは外した。菊屋美粧堂は hidden のまま）"
     },
     {
       "domain": "shippio.io",

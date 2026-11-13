@@ -174339,7 +174339,8 @@
       "工程管理の難しさ",
       "納期の遅延",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-atsuta-kigyo-php",
@@ -174389,7 +174390,8 @@
       "進捗が見えない",
       "工程管理の難しさ",
       "移動時間の多さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-hope-industry-php",
@@ -174432,7 +174434,8 @@
       "工程管理の難しさ",
       "段取り替えの手間",
       "加工能力の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-iwata-php",
@@ -174483,7 +174486,8 @@
       "工程管理の難しさ",
       "技能伝承ができない",
       "品質のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-kinrei-php",
@@ -174530,7 +174534,8 @@
       "工程管理の難しさ",
       "段取り替えの手間",
       "リードタイム短縮"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-kohoku-php",
@@ -174571,7 +174576,8 @@
       "工程管理の難しさ",
       "段取り時間の多さ",
       "プログラム製作の手作業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-komatsu-ntc-php",
@@ -174634,7 +174640,8 @@
       "老朽化したシステム",
       "業務の属人化",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-maxell-izumi-php",
@@ -174698,7 +174705,8 @@
       "品質のばらつき",
       "納期の遅延",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-microcut-php",
@@ -174749,7 +174757,8 @@
       "検査の目視頼み",
       "品質のばらつき",
       "工程管理の難しさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-nabeyabi-tech-php",
@@ -174789,7 +174798,8 @@
       "工程管理の難しさ",
       "技能伝承ができない",
       "納期の遅延"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-sanwa-robotics-php",
@@ -174835,7 +174845,8 @@
       "検査の目視頼み",
       "品質のばらつき",
       "工程管理の難しさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-sekidai-php",
@@ -174886,7 +174897,8 @@
       "納期の遅延",
       "工程管理の難しさ",
       "品質のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-shirakawa-php",
@@ -174927,7 +174939,8 @@
       "工程管理の難しさ",
       "品質のばらつき",
       "納期の遅延"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-takenakaseisakusho-php",
@@ -174963,7 +174976,8 @@
       "工程管理の難しさ",
       "手作業の転記",
       "担当者不在で止まる"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-yagishitagiken-php",
@@ -175010,7 +175024,8 @@
       "工程管理の難しさ",
       "納期の遅延",
       "品質のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-yamabiko-php",
@@ -175061,7 +175076,8 @@
       "検査の目視頼み",
       "品質のばらつき",
       "工程管理の難しさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-oneplat-co-jp-voice",
@@ -181586,7 +181602,8 @@
       "Excel管理の限界",
       "法改正への対応",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-scskserviceware-co-jp-casestudy-case01-html",
@@ -316218,13 +316235,13 @@
   },
   {
     "id": "cyclo-shi-co-jp-keigan-amr-keigan-ali-case-horizon",
-    "title": "製本機メーカーがKeiganALIとカスタムリフターで工程間搬送を自動化、低コスト実現",
-    "summary": "製本機メーカーの株式会社ホリゾンは、部品加工工場の工程間搬送自動化が課題だった。KeiganALIにカスタム開発したリフターを取り付け、GPIO連携でシステムを構築。既存設備を変更せず、小ロット高頻度搬送の自動化と工程間のリードタイム短縮を実現した。",
-    "vendor": "shi.co.jp",
+    "title": "製本機メーカーがKeiganALIにリフターを載せ、工程間の部品搬送をワンタッチで自動化",
+    "summary": "製本機メーカーの株式会社ホリゾンは、部品加工から仕上げまで中間加工部品を頻繁に運ぶ工程を、APIが公開された自律移動ロボットKeiganALIで自動化した。リフターで部品コンテナを受け渡す仕組みを自社で組み、受取側に追加設備を付けずに工程間のリードタイムを短縮した。",
+    "vendor": "keigan-motor.com",
     "product": "KeiganALI（自律移動ロボット）",
     "productCategory": "robot",
-    "sourceUrl": "https://cyclo.shi.co.jp/keigan-amr/keigan-ali/case/horizon/",
-    "collectedAt": "2026-09-25T00:00:00.000Z",
+    "sourceUrl": "https://youtu.be/Kw1y5PRC2s8",
+    "collectedAt": "2026-11-11T00:00:00.000Z",
     "customer": {
       "name": "株式会社ホリゾン",
       "industry": "manufacturing",
@@ -316236,25 +316253,27 @@
       "leadtime",
       "cost"
     ],
-    "challengeDetail": "部品加工工場の工程間搬送が手作業であり、小ロットかつ高頻度の搬送が課題だった。既存のAMR・AGVはシステムが非公開で、カスタマイズ自由度が低かった。",
-    "actions": "KeiganALIにカスタム開発したリフターを上部アタッチメントとして取り付け、GPIO連携でリフターの昇降指示を送信するシステムを自社開発。中間加工エリアから仕上げ加工機械までの部品運搬を自動化した。",
+    "challengeDetail": "小ロット生産で、部品加工の現場から仕上げの現場まで中間加工部品を頻繁に運ぶ必要があり、工程間にタイムラグが出ていた。他社のAGV・AMRはAPIが公開されておらず、アタッチメントやシステムを自社でカスタマイズしにくかった。",
+    "actions": "APIが公開され自社でカスタマイズできるKeiganALIを、販売前の実証を兼ねて自社工場に導入。スタート地点のボタンを押すとKeiganALIがコンテナを引き取りに向かい、搭載したリフターの上昇でコンテナを受け取り、ゴール地点でリフターを下げて引き渡す。リフターは自社開発のマイコンの入出力ユニット（GPIOの出力機能）でKeiganALIの停止に合わせて動かし、始点と終点を決めて積み下ろし動作をパターン化した。",
     "results": [
       {
-        "metric": "工程間搬送の自動化達成により",
-        "value": "リードタイム短縮"
+        "metric": "工程間のリードタイム",
+        "value": "短縮"
       }
     ],
-    "resultsQualitative": "既存設備に手を加えることなく、低コストでの自動化を実現。小ロット・高頻度搬送の自動化により、作業効率が向上し、今後はAPIを活用した高機能な自動化への展開を検討中。",
+    "resultsQualitative": "少量の部品を頻繁に運べるようになり、工程間のタイムラグが減った。受取側にモーターやセンサーなどの電気的な追加設備が要らない仕様のため、コストを抑えて自動化できた。今後はAPIを使ったより効率的な自動化や、新たなアプリケーション・ビジネスモデルの構築に取り組む。",
     "hasNumbers": false,
     "sample": false,
     "tags": [
       "手作業の転記",
       "工程管理の難しさ",
       "移動時間の多さ"
-    ]
+    ],
+    "video": "https://youtu.be/Kw1y5PRC2s8"
   },
   {
     "id": "cyclo-shi-co-jp-keigan-amr-keigan-ali-case-kikuya-bisyodo",
+    "hidden": true,
     "title": "工程間搬送の自動化によりピッキング作業を効率化",
     "summary": "美容ディーラーの物流拠点で、工程間搬送の長い負荷に悩んでいた。自律移動ロボットKeiganALIを導入し、作業者がピッキング作業に集中できる体制を実現した。",
     "vendor": "shi.co.jp",
@@ -446119,7 +446138,8 @@
       "工程管理の難しさ",
       "納期の遅延",
       "工程集約による段取り増加"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-okuma-co-jp-case-yamato-php",
@@ -446166,7 +446186,8 @@
       "工程管理の難しさ",
       "見積もり作成に時間",
       "納期の遅延"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-onesource-co-jp-case-bank",
@@ -456740,7 +456761,8 @@
     "tags": [
       "老朽化したシステム",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-scsk-superstream-jp-case-reene",
@@ -456787,7 +456809,8 @@
       "数字の集計に時間",
       "押印・承認の遅れ",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-scskserviceware-co-jp-casestudy-case04-html",

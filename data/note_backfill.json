@@ -1,0 +1,4 @@
+{
+  "_note": "メルマガ（newsletter/*.json）より前に note で出した回。kind は sugoi（この事例がスゴイ）か column（事例コラム）。url だけ書けば title・image は note の OGP から取る。desc は一覧に出す1〜2行の説明で、note 本文のコピーではなくここ用に書く。date は note の公開日（YYYY-MM-DD・並び順と表示に使う）。",
+  "posts": []
+}
