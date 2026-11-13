@@ -524,8 +524,8 @@
     {
       "domain": "ba-net.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
         "Plaza-i"
@@ -542,7 +542,8 @@
           "products": [
             "Plaza-i"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         }
       ],
       "memo": ""
@@ -911,7 +912,8 @@
           "products": [
             "キャムマックス"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "40b83808-8f84-4bb6-88c7-d2e5b2b4c196",
@@ -927,7 +929,7 @@
           "notified": false
         }
       ],
-      "memo": "2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのエラーで未送付。2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームで文面がエラーになり送れず。URLなし版・短縮版で再送する"
+      "memo": "2026-11-13 用語#004: 用語#002・#003 と同じく問い合わせフォームのエラーで未送付。3本まとめて送る ／ 2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのエラーで未送付。2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームで文面がエラーになり送れず。URLなし版・短縮版で再送する"
     },
     {
       "domain": "cashmo.jp",
@@ -2256,7 +2258,8 @@
           "products": [
             "freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3127,7 +3130,8 @@
           "products": [
             "intra-mart、Biz∫"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3312,8 +3316,8 @@
     {
       "domain": "jbs.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
         "Microsoft Power Platform",
@@ -3345,7 +3349,8 @@
           "products": [
             "Microsoft Dynamics 365"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         },
         {
           "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
