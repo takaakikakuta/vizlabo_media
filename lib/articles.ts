@@ -218,8 +218,10 @@ export type YougoArticle = {
 /* 全型共通の任意フィールド。
    hidden: true … 退役した旧記事の非公開（データは残す）
    draft: true  … 公開前の下書き。公開するときはこの行を消して（または false にして）push する。
-                  あわせて publishedAt を公開日に更新すると、一覧の並びと題字の日付が正しくなる */
-type ArticleCommon = { hidden?: boolean; draft?: boolean };
+                  あわせて publishedAt を公開日に更新すると、一覧の並びと題字の日付が正しくなる
+   hideFromTop: true … トップページには出さない（一覧・サイトマップ・記事ページには出る）。
+                  同じ用語の業種違いが続くときなど、トップの枠を埋めたくない記事に付ける */
+type ArticleCommon = { hidden?: boolean; draft?: boolean; hideFromTop?: boolean };
 
 export type Article = (
   | WakaremichiArticle
@@ -253,7 +255,7 @@ export function allArticles(): Article[] {
 }
 
 /** 「事例でわかる技術用語」の一覧（/terms）。公開日の当日から並ぶ */
-export function allTermArticles(): YougoArticle[] {
+export function allTermArticles(): (YougoArticle & ArticleCommon)[] {
   const today = todayJST();
   return publishedArticles().filter((a): a is YougoArticle & ArticleCommon => a.format === "yougo" && a.publishedAt <= today);
 }
