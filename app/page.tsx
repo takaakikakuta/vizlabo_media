@@ -77,8 +77,8 @@ export default async function Home() {
   const indCounts = industryCounts();
   const s = siteStats();
   const newest = newestCases(4);
-  const articles = allArticles().slice(0, 3);
-  const terms = allTermArticles().slice(0, 3);  // 事例でわかる技術用語（事例セレクションとは別の連載）
+  const articles = allArticles().filter((a) => !a.hideFromTop).slice(0, 3);
+  const terms = allTermArticles().filter((a) => !a.hideFromTop).slice(0, 3);  // 事例でわかる技術用語（事例セレクションとは別の連載）。hideFromTop の記事はトップに出さない
   const today = todayDay();  // 今日の記念日 → 同じ月日の昨年以前 → 次の記念日 → 直近に過ぎた記念日
   const browseChallenges = CHALLENGES.map((ch) => ({
     slug: ch.slug, label: ch.label, desc: ch.desc,

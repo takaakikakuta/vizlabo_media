@@ -253,6 +253,32 @@
       "memo": ""
     },
     {
+      "domain": "ai-market.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "AIエージェント型ボイスボット"
+      ],
+      "articles": [
+        {
+          "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
+          "label": "#048",
+          "title": "最初の返事は、人が書かなくてもよかった。問い合わせの一次対応をAIエージェントに任せた事例5選",
+          "publishedAt": "2026-12-02",
+          "customers": [
+            "SBIいきいき少額短期保険株式会社"
+          ],
+          "products": [
+            "AIエージェント型ボイスボット"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "alibaba.co.jp",
       "company": "",
       "status": "no-objection",
@@ -498,8 +524,8 @@
     {
       "domain": "ba-net.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
         "Plaza-i"
@@ -516,7 +542,8 @@
           "products": [
             "Plaza-i"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         }
       ],
       "memo": ""
@@ -588,6 +615,32 @@
       "memo": ""
     },
     {
+      "domain": "betterbound.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "YARIKIRI"
+      ],
+      "articles": [
+        {
+          "slug": "29681d98-3c93-4a49-93a5-a9d16d89b905",
+          "label": "#049",
+          "title": "会議で一番長かったのは、会議の時間ではなかった。資料づくりから決めたことの追跡まで、会議の前後を変えた事例5選",
+          "publishedAt": "2026-12-03",
+          "customers": [
+            "株式会社大林組"
+          ],
+          "products": [
+            "YARIKIRI"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "biztel.jp",
       "company": "",
       "status": "pending",
@@ -611,20 +664,6 @@
           "products": [
             "BIZTEL コールセンター",
             "BIZTEL コールセンター / BIZTEL モバイル"
-          ],
-          "notified": false
-        },
-        {
-          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
-          "label": "#041",
-          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
-          "publishedAt": "2026-11-23",
-          "customers": [
-            "株式会社JTBグローバルアシスタンス",
-            "株式会社バディネット"
-          ],
-          "products": [
-            "BIZTEL shouin"
           ],
           "notified": false
         }
@@ -786,7 +825,8 @@
           "products": [
             "クラウドコーチング・マイコ"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "95c3cd55-86ab-4a35-9f7a-78dd56e8fcc6",
@@ -799,7 +839,8 @@
           "products": [
             "1on1ミーティング導入プログラム"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
@@ -815,10 +856,11 @@
             "クラウドコーチング・マイコ",
             "クラウドコーチング"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": "2026-11-09 問い合わせフォーム停止中のため #035・#036 の掲載連絡を送れず。復旧したら送る"
+      "memo": "2026-11-11 #041: 問い合わせフォーム停止中のため未送付（#035・#036 と同じ）。復旧したら3本まとめて送る ／ 2026-11-09 問い合わせフォーム停止中のため #035・#036 の掲載連絡を送れず。復旧したら送る"
     },
     {
       "domain": "cammacs.jp",
@@ -842,7 +884,8 @@
           "products": [
             "キャムマックス"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
@@ -855,7 +898,8 @@
           "products": [
             "クラウドERP キャムマックス"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "26c9394a-cfa3-42dc-8b8f-272a0aec6462",
@@ -868,7 +912,8 @@
           "products": [
             "キャムマックス"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "40b83808-8f84-4bb6-88c7-d2e5b2b4c196",
@@ -881,10 +926,11 @@
           "products": [
             "クラウドERP キャムマックス"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": "2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのエラーで未送付。2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームで文面がエラーになり送れず。URLなし版・短縮版で再送する"
+      "memo": "2026-11-13 用語#005: 用語#002〜#004 と同じく問い合わせフォームのエラーで未送付。まとめて送る ／ 2026-11-13 用語#004: 用語#002・#003 と同じく問い合わせフォームのエラーで未送付。3本まとめて送る ／ 2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのエラーで未送付。2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームで文面がエラーになり送れず。URLなし版・短縮版で再送する"
     },
     {
       "domain": "cashmo.jp",
@@ -1097,6 +1143,46 @@
       "memo": ""
     },
     {
+      "domain": "cloudpack.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "AWS",
+        "Gemini Enterprise Agent Platform"
+      ],
+      "articles": [
+        {
+          "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
+          "label": "#047",
+          "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "洲本市"
+          ],
+          "products": [
+            "AWS"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
+          "label": "#048",
+          "title": "最初の返事は、人が書かなくてもよかった。問い合わせの一次対応をAIエージェントに任せた事例5選",
+          "publishedAt": "2026-12-02",
+          "customers": [
+            "KDDIアイレット株式会社"
+          ],
+          "products": [
+            "Gemini Enterprise Agent Platform"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "cloudsign.jp",
       "company": "",
       "status": "no-objection",
@@ -1148,6 +1234,32 @@
             "クラウドサイン、MAKE for kintone"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "cognex.com",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "In-Sight 8000"
+      ],
+      "articles": [
+        {
+          "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
+          "label": "#046",
+          "title": "設備が止まる前に気づいた事例5選",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "Drache Umwelttechnik GmbH"
+          ],
+          "products": [
+            "In-Sight 8000"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1259,6 +1371,32 @@
       "memo": ""
     },
     {
+      "domain": "cybersolutions.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "CYBERMAIL Σ ST"
+      ],
+      "articles": [
+        {
+          "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
+          "label": "#047",
+          "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "茨城県五霞町"
+          ],
+          "products": [
+            "CYBERMAIL Σ ST"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "cybozu.co.jp",
       "company": "",
       "status": "pending",
@@ -1278,6 +1416,32 @@
           ],
           "products": [
             "kintone"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "datawise.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Datawise Area Marketer"
+      ],
+      "articles": [
+        {
+          "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
+          "label": "#047",
+          "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "徳島市"
+          ],
+          "products": [
+            "Datawise Area Marketer"
           ],
           "notified": false
         }
@@ -1546,7 +1710,8 @@
           "products": [
             "組織開発コンサルティング"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -1702,7 +1867,8 @@
       "notifiedAt": "2026-11-10",
       "notifiedAtEstimated": false,
       "products": [
-        "現場データ活用サービス i-BELT、マシンオートメーションコントローラ"
+        "現場データ活用サービス i-BELT、マシンオートメーションコントローラ",
+        "現場データ活用サービス i-BELT"
       ],
       "articles": [
         {
@@ -1718,6 +1884,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-10"
+        },
+        {
+          "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
+          "label": "#046",
+          "title": "設備が止まる前に気づいた事例5選",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "オムロン野洲工場"
+          ],
+          "products": [
+            "現場データ活用サービス i-BELT"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1967,8 +2146,8 @@
     {
       "domain": "forbis.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
         "Vegas"
@@ -1985,7 +2164,8 @@
           "products": [
             "Vegas"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         }
       ],
       "memo": ""
@@ -2080,7 +2260,8 @@
           "products": [
             "freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2518,7 +2699,8 @@
       "notifiedAt": "2026-10-23",
       "notifiedAtEstimated": true,
       "products": [
-        "DSP-NEXT®"
+        "DSP-NEXT®",
+        "日立産機システム"
       ],
       "articles": [
         {
@@ -2533,6 +2715,19 @@
             "DSP-NEXT®"
           ],
           "notified": true
+        },
+        {
+          "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
+          "label": "#046",
+          "title": "設備が止まる前に気づいた事例5選",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "J社"
+          ],
+          "products": [
+            "日立産機システム"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2633,6 +2828,33 @@
       "memo": ""
     },
     {
+      "domain": "humanage.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "TG-WEB"
+      ],
+      "articles": [
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社DTS"
+          ],
+          "products": [
+            "TG-WEB"
+          ],
+          "notified": false,
+          "held": true
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "i3handy.jp",
       "company": "株式会社学研ロジスティクス（Gakken i3 Handy）",
       "status": "removed",
@@ -2661,6 +2883,19 @@
           "publishedAt": "2026-11-27",
           "customers": [
             "都市住建株式会社"
+          ],
+          "products": [
+            "いえらぶCLOUD"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
+          "label": "#048",
+          "title": "最初の返事は、人が書かなくてもよかった。問い合わせの一次対応をAIエージェントに任せた事例5選",
+          "publishedAt": "2026-12-02",
+          "customers": [
+            "HKホーム株式会社"
           ],
           "products": [
             "いえらぶCLOUD"
@@ -2897,7 +3132,8 @@
           "products": [
             "intra-mart、Biz∫"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2923,7 +3159,8 @@
           "products": [
             "RPA"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
       "memo": "2026-11-09 サイト停止中のため #034 の掲載連絡を送れず。復旧したら送る"
@@ -3081,8 +3318,8 @@
     {
       "domain": "jbs.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
         "Microsoft Power Platform",
@@ -3114,7 +3351,8 @@
           "products": [
             "Microsoft Dynamics 365"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         },
         {
           "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
@@ -3356,7 +3594,8 @@
           "products": [
             "KiteRa Pro"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
       "memo": "2026-11-09 サイト停止中のため #034 の掲載連絡を送れず。復旧したら送る"
@@ -3593,7 +3832,8 @@
         "LANSCOPEエンドポイントマネージャー クラウド版",
         "LANSCOPE セキュリティオーディター",
         "LANSCOPE エンドポイントマネージャー クラウド版",
-        "LANSCOPE サイバープロテクション powered by Aurora Protect、LANSCOPE サイバープロテクション powered by A"
+        "LANSCOPE サイバープロテクション powered by Aurora Protect、LANSCOPE サイバープロテクション powered by A",
+        "LANSCOPE エンドポイントマネージャー オンプレミス版、Aurora Protect、Aurora Focus"
       ],
       "articles": [
         {
@@ -3636,6 +3876,19 @@
             "LANSCOPE サイバープロテクション powered by Aurora Protect、LANSCOPE サイバープロテクション powered by A"
           ],
           "notified": true
+        },
+        {
+          "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
+          "label": "#047",
+          "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "四国中央市役所"
+          ],
+          "products": [
+            "LANSCOPE エンドポイントマネージャー オンプレミス版、Aurora Protect、Aurora Focus"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3768,6 +4021,32 @@
             "ロジクラ"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "loglass.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Loglass 経営管理"
+      ],
+      "articles": [
+        {
+          "slug": "29681d98-3c93-4a49-93a5-a9d16d89b905",
+          "label": "#049",
+          "title": "会議で一番長かったのは、会議の時間ではなかった。資料づくりから決めたことの追跡まで、会議の前後を変えた事例5選",
+          "publishedAt": "2026-12-03",
+          "customers": [
+            "株式会社GENDA"
+          ],
+          "products": [
+            "Loglass 経営管理"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3956,6 +4235,32 @@
             "クリニック向けホームページ制作・SEO対策サービス"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "max-com.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "BPO"
+      ],
+      "articles": [
+        {
+          "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
+          "label": "#047",
+          "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "BPO"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4283,11 +4588,12 @@
     {
       "domain": "mitani-corp.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
-        "e2-movE"
+        "e2-movE",
+        "SHIELDEX"
       ],
       "articles": [
         {
@@ -4300,6 +4606,20 @@
           ],
           "products": [
             "e2-movE"
+          ],
+          "notified": true,
+          "notifiedAt": "2026-11-13"
+        },
+        {
+          "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
+          "label": "#047",
+          "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "坂戸市"
+          ],
+          "products": [
+            "SHIELDEX"
           ],
           "notified": false
         }
@@ -4424,6 +4744,32 @@
           ],
           "products": [
             "カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "mxmobiling.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "itsmoBPO キッティング"
+      ],
+      "articles": [
+        {
+          "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
+          "label": "#050",
+          "title": "新人の育て方、それで合っていますか？入社1年目の新人育成を変えた事例5選",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "M社"
+          ],
+          "products": [
+            "itsmoBPO キッティング"
           ],
           "notified": false
         }
@@ -4603,10 +4949,36 @@
       "memo": ""
     },
     {
-      "domain": "nikken-totalsourcing.jp",
+      "domain": "nicnet.co.jp",
       "company": "",
       "status": "pending",
       "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ペーパーレス会議システム Support Session"
+      ],
+      "articles": [
+        {
+          "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
+          "label": "#047",
+          "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "仙台市役所（介護保険課）"
+          ],
+          "products": [
+            "ペーパーレス会議システム Support Session"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "nikken-totalsourcing.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-11",
       "notifiedAtEstimated": false,
       "products": [
         "カスタマイズ研修・技能センター研修"
@@ -4623,7 +4995,8 @@
           "products": [
             "カスタマイズ研修・技能センター研修"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-11"
         }
       ],
       "memo": ""
@@ -4810,7 +5183,8 @@
       "notifiedAt": "2026-10-27",
       "notifiedAtEstimated": true,
       "products": [
-        "OfficeBot"
+        "OfficeBot",
+        "OfficeAI社員"
       ],
       "articles": [
         {
@@ -4825,6 +5199,19 @@
             "OfficeBot"
           ],
           "notified": true
+        },
+        {
+          "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
+          "label": "#050",
+          "title": "新人の育て方、それで合っていますか？入社1年目の新人育成を変えた事例5選",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "商船三instituteロジスティクス株式会社"
+          ],
+          "products": [
+            "OfficeAI社員"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4832,8 +5219,8 @@
     {
       "domain": "ogs-consulting.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-11",
       "notifiedAtEstimated": false,
       "products": [
         "人事評価制度構築・運用コンサルティング"
@@ -4850,7 +5237,8 @@
           "products": [
             "人事評価制度構築・運用コンサルティング"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-11"
         }
       ],
       "memo": ""
@@ -4863,7 +5251,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "MULTUS",
-        "MULTUS B300Ⅱ ARMROID"
+        "MULTUS B300Ⅱ ARMROID",
+        "MU-8000V-L、Connect Plan、MULTUS B300II"
       ],
       "articles": [
         {
@@ -4894,6 +5283,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
+          "label": "#046",
+          "title": "設備が止まる前に気づいた事例5選",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "（リンクのみ）"
+          ],
+          "products": [
+            "MU-8000V-L、Connect Plan、MULTUS B300II"
+          ],
+          "notified": false
         }
       ],
       "memo": "2026-11-11 第三者メディアへの掲載不可（お客様との取り決めで自社メディアに限り公開）と削除依頼。全事例を linkOnly（リンクのみ）にした"
@@ -5065,6 +5467,33 @@
             "お助けマン"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "pa-consul.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "タレントパレット"
+      ],
+      "articles": [
+        {
+          "slug": "ba9e220a-83df-40ab-a5bb-2f41b070462b",
+          "label": "#041",
+          "title": "新人は、同じ時期に辞めてはいなかった。新人の早期離職を減らした事例10選",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社松屋フーズホールディングス"
+          ],
+          "products": [
+            "タレントパレット"
+          ],
+          "notified": false,
+          "held": true
         }
       ],
       "memo": ""
@@ -6183,8 +6612,8 @@
     {
       "domain": "seagreen.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-11",
       "notifiedAtEstimated": false,
       "products": [
         "評価ポイント"
@@ -6201,7 +6630,8 @@
           "products": [
             "評価ポイント"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-11"
         }
       ],
       "memo": ""
@@ -6228,6 +6658,32 @@
             "遠隔放射線診断支援サービス"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "seikotrust.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "esTIME"
+      ],
+      "articles": [
+        {
+          "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
+          "label": "#047",
+          "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "岩手県大槌町役場"
+          ],
+          "products": [
+            "esTIME"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6261,8 +6717,8 @@
     {
       "domain": "serverworks.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
         "AWS"
@@ -6279,7 +6735,8 @@
           "products": [
             "AWS"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         }
       ],
       "memo": ""
@@ -6337,6 +6794,32 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "shachihata.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Shachihata Cloud"
+      ],
+      "articles": [
+        {
+          "slug": "29681d98-3c93-4a49-93a5-a9d16d89b905",
+          "label": "#049",
+          "title": "会議で一番長かったのは、会議の時間ではなかった。資料づくりから決めたことの追跡まで、会議の前後を変えた事例5選",
+          "publishedAt": "2026-12-03",
+          "customers": [
+            "株式会社ストライダーズ"
+          ],
+          "products": [
+            "Shachihata Cloud"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6506,7 +6989,8 @@
           "products": [
             "SAP S/4HANA"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
@@ -6519,7 +7003,8 @@
           "products": [
             "SAP S/4HANA、SAP Analytics Cloud"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
       "memo": "2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのメンテナンス中で未送付。復旧したら2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームがメンテナンス中のため送れず。復旧したら送る"
@@ -6586,6 +7071,19 @@
             "デジタルペーパー"
           ],
           "notified": true
+        },
+        {
+          "slug": "29681d98-3c93-4a49-93a5-a9d16d89b905",
+          "label": "#049",
+          "title": "会議で一番長かったのは、会議の時間ではなかった。資料づくりから決めたことの追跡まで、会議の前後を変えた事例5選",
+          "publishedAt": "2026-12-03",
+          "customers": [
+            "立命館大学 経済学部"
+          ],
+          "products": [
+            "デジタルペーパー"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6639,6 +7137,19 @@
             "SPOKES"
           ],
           "notified": true
+        },
+        {
+          "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
+          "label": "#050",
+          "title": "新人の育て方、それで合っていますか？入社1年目の新人育成を変えた事例5選",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "株式会社コアコンセプトテクノロジー"
+          ],
+          "products": [
+            "SPOKES"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6665,6 +7176,32 @@
             "Staple"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "subline.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "SUBLINE"
+      ],
+      "articles": [
+        {
+          "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
+          "label": "#047",
+          "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "常滑市役所 国勢調査事務局（企画部企画課内）"
+          ],
+          "products": [
+            "SUBLINE"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6705,6 +7242,32 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "supportas.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "FileMaker"
+      ],
+      "articles": [
+        {
+          "slug": "29681d98-3c93-4a49-93a5-a9d16d89b905",
+          "label": "#049",
+          "title": "会議で一番長かったのは、会議の時間ではなかった。資料づくりから決めたことの追跡まで、会議の前後を変えた事例5選",
+          "publishedAt": "2026-12-03",
+          "customers": [
+            "農事組合法人ECOマッシュ"
+          ],
+          "products": [
+            "FileMaker"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6845,6 +7408,46 @@
           "products": [],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "teachme.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Teachme Check",
+        "Teachme Biz"
+      ],
+      "articles": [
+        {
+          "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
+          "label": "#046",
+          "title": "設備が止まる前に気づいた事例5選",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "三島食品株式会社"
+          ],
+          "products": [
+            "Teachme Check"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
+          "label": "#050",
+          "title": "新人の育て方、それで合っていますか？入社1年目の新人育成を変えた事例5選",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "ハタ コンサルタント株式会社"
+          ],
+          "products": [
+            "Teachme Biz"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -7162,7 +7765,8 @@
           "products": [
             "ポストモダンTOTEC ERP"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -7386,7 +7990,8 @@
       "products": [
         "Agentforce Service",
         "Salesforce Experience Cloud",
-        "Amazon Connect"
+        "Amazon Connect",
+        "Salesforce、カミレス、帳票DX"
       ],
       "articles": [
         {
@@ -7427,6 +8032,19 @@
             "Amazon Connect"
           ],
           "notified": true
+        },
+        {
+          "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
+          "label": "#047",
+          "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "埼玉県庁"
+          ],
+          "products": [
+            "Salesforce、カミレス、帳票DX"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -7748,7 +8366,8 @@
       "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
-        "LIFE SAVER"
+        "LIFE SAVER",
+        "溶接伝承マスター"
       ],
       "articles": [
         {
@@ -7764,6 +8383,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
+          "label": "#050",
+          "title": "新人の育て方、それで合っていますか？入社1年目の新人育成を変えた事例5選",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "川田工業株式会社（四国工場）"
+          ],
+          "products": [
+            "溶接伝承マスター"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -7801,7 +8433,9 @@
       "notifiedAt": "2026-09-29",
       "notifiedAtEstimated": true,
       "products": [
-        "Zendesk"
+        "Zendesk",
+        "Zendesk AI",
+        "Zendesk AIエージェント"
       ],
       "articles": [
         {
@@ -7829,6 +8463,21 @@
             "Zendesk"
           ],
           "notified": true
+        },
+        {
+          "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
+          "label": "#048",
+          "title": "最初の返事は、人が書かなくてもよかった。問い合わせの一次対応をAIエージェントに任せた事例5選",
+          "publishedAt": "2026-12-02",
+          "customers": [
+            "akippa株式会社",
+            "Qantas Loyalty"
+          ],
+          "products": [
+            "Zendesk AI",
+            "Zendesk AIエージェント"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
