@@ -457,6 +457,19 @@
             "ANDPAD"
           ],
           "notified": true
+        },
+        {
+          "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
+          "label": "用語#007",
+          "title": "ERP・基幹システムとは｜建設・不動産の5つの事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "株式会社CONY JAPAN（リフォーる）"
+          ],
+          "products": [
+            "ANDPAD"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -931,6 +944,33 @@
         }
       ],
       "memo": "2026-11-13 用語#005: 用語#002〜#004 と同じく問い合わせフォームのエラーで未送付。まとめて送る ／ 2026-11-13 用語#004: 用語#002・#003 と同じく問い合わせフォームのエラーで未送付。3本まとめて送る ／ 2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのエラーで未送付。2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームで文面がエラーになり送れず。URLなし版・短縮版で再送する"
+    },
+    {
+      "domain": "canon-electec.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
+      "notifiedAtEstimated": false,
+      "products": [
+        "entrance Banking"
+      ],
+      "articles": [
+        {
+          "slug": "8b0bd681-ea46-4b48-a2b8-1d025d95b168",
+          "label": "用語#006",
+          "title": "ERP・基幹システムとは｜金融・保険の5つの事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社福邦銀行"
+          ],
+          "products": [
+            "entrance Banking"
+          ],
+          "notified": true,
+          "notifiedAt": "2026-11-13"
+        }
+      ],
+      "memo": ""
     },
     {
       "domain": "cashmo.jp",
@@ -2206,7 +2246,8 @@
         "freee会計、freee人事労務、freeeカー Unlimited、freee-mcp",
         "freee人事労務",
         "freee会計、freee給与、freee税務申告",
-        "freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理"
+        "freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理",
+        "freee"
       ],
       "articles": [
         {
@@ -2262,6 +2303,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
+          "label": "用語#008",
+          "title": "ERP・基幹システムとは｜物流・運輸の5つの事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "株式会社ダイナミック物流"
+          ],
+          "products": [
+            "freee"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3049,7 +3103,9 @@
         "ECOASクレームマネジメント",
         "intra-mart Accel Platform",
         "imforce/経費精算ソリューション",
-        "intra-mart、Biz∫"
+        "intra-mart、Biz∫",
+        "intra-mart®",
+        "intra-mart"
       ],
       "articles": [
         {
@@ -3134,6 +3190,59 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "8b0bd681-ea46-4b48-a2b8-1d025d95b168",
+          "label": "用語#006",
+          "title": "ERP・基幹システムとは｜金融・保険の5つの事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "トヨタファイナンス株式会社"
+          ],
+          "products": [
+            "intra-mart®"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
+          "label": "用語#007",
+          "title": "ERP・基幹システムとは｜建設・不動産の5つの事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "エクシオグループ株式会社"
+          ],
+          "products": [
+            "intra-mart Accel Platform"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
+          "label": "用語#008",
+          "title": "ERP・基幹システムとは｜物流・運輸の5つの事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "中部国際空港株式会社"
+          ],
+          "products": [
+            "intra-mart"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "d004fc2a-ea0f-4ed0-a324-c2a6bcb7e5d1",
+          "label": "用語#009",
+          "title": "ERP・基幹システムとは｜医療・介護の5つの事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "東レ・メディカル株式会社"
+          ],
+          "products": [
+            "intra-mart"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3324,7 +3433,8 @@
       "products": [
         "Microsoft Power Platform",
         "マネージドバックアップ for Microsoft 365",
-        "Microsoft Dynamics 365"
+        "Microsoft Dynamics 365",
+        "Microsoft Dynamics 365 for Finance & Operations"
       ],
       "articles": [
         {
@@ -3353,6 +3463,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-13"
+        },
+        {
+          "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
+          "label": "用語#007",
+          "title": "ERP・基幹システムとは｜建設・不動産の5つの事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "株式会社NEXTAGE GROUP"
+          ],
+          "products": [
+            "Microsoft Dynamics 365 for Finance & Operations"
+          ],
+          "notified": false
         },
         {
           "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
@@ -3569,6 +3692,32 @@
             "WMS/400"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "kisnet.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Forwarder-PRO"
+      ],
+      "articles": [
+        {
+          "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
+          "label": "用語#008",
+          "title": "ERP・基幹システムとは｜物流・運輸の5つの事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "西久大運輸倉庫株式会社"
+          ],
+          "products": [
+            "Forwarder-PRO"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4035,6 +4184,19 @@
         "Loglass 経営管理"
       ],
       "articles": [
+        {
+          "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
+          "label": "用語#007",
+          "title": "ERP・基幹システムとは｜建設・不動産の5つの事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "中央日本土地建物株式会社"
+          ],
+          "products": [
+            "Loglass 経営管理"
+          ],
+          "notified": false
+        },
         {
           "slug": "29681d98-3c93-4a49-93a5-a9d16d89b905",
           "label": "#049",
@@ -4611,6 +4773,19 @@
           "notifiedAt": "2026-11-13"
         },
         {
+          "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
+          "label": "用語#007",
+          "title": "ERP・基幹システムとは｜建設・不動産の5つの事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "瀬戸建設株式会社"
+          ],
+          "products": [
+            "e2-movE"
+          ],
+          "notified": false
+        },
+        {
           "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
           "label": "#047",
           "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
@@ -4664,6 +4839,20 @@
           ],
           "products": [
             "Galileopt DX"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "8b0bd681-ea46-4b48-a2b8-1d025d95b168",
+          "label": "用語#006",
+          "title": "ERP・基幹システムとは｜金融・保険の5つの事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "税理士法人近代経営&Kinkei Farm"
+          ],
+          "products": [
+            "ACELINK NX-Pro"
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
@@ -4949,6 +5138,32 @@
       "memo": ""
     },
     {
+      "domain": "nhs.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Paples"
+      ],
+      "articles": [
+        {
+          "slug": "d004fc2a-ea0f-4ed0-a324-c2a6bcb7e5d1",
+          "label": "用語#009",
+          "title": "ERP・基幹システムとは｜医療・介護の5つの事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "キョーリン製薬ホールディングス株式会社"
+          ],
+          "products": [
+            "Paples"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "nicnet.co.jp",
       "company": "",
       "status": "pending",
@@ -5212,6 +5427,33 @@
             "OfficeAI社員"
           ],
           "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ogis-ri.co.jp",
+      "company": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
+      "notifiedAtEstimated": false,
+      "products": [
+        "クラウド移行支援サービス・システム開発支援"
+      ],
+      "articles": [
+        {
+          "slug": "8b0bd681-ea46-4b48-a2b8-1d025d95b168",
+          "label": "用語#006",
+          "title": "ERP・基幹システムとは｜金融・保険の5つの事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "日新火災海上保険株式会社"
+          ],
+          "products": [
+            "クラウド移行支援サービス・システム開発支援"
+          ],
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         }
       ],
       "memo": ""
@@ -6057,7 +6299,9 @@
       "notifiedAt": "2026-10-19",
       "notifiedAtEstimated": true,
       "products": [
-        "Micro Focus Visual COBOL"
+        "Micro Focus Visual COBOL",
+        "Rocket® Visual COBOL、Rocket® COBOL Server",
+        "Micro Focus Visual COBOL / Micro Focus COBOL Server"
       ],
       "articles": [
         {
@@ -6072,6 +6316,33 @@
             "Micro Focus Visual COBOL"
           ],
           "notified": true
+        },
+        {
+          "slug": "8b0bd681-ea46-4b48-a2b8-1d025d95b168",
+          "label": "用語#006",
+          "title": "ERP・基幹システムとは｜金融・保険の5つの事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "ＳＯＭＰＯひまわり生命保険株式会社"
+          ],
+          "products": [
+            "Rocket® Visual COBOL、Rocket® COBOL Server"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
+          "label": "用語#008",
+          "title": "ERP・基幹システムとは｜物流・運輸の5つの事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "日建レンタコム株式会社"
+          ],
+          "products": [
+            "Micro Focus Visual COBOL / Micro Focus COBOL Server"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6750,7 +7021,8 @@
       "products": [
         "Biz-AI×OCR",
         "バックオフィスサポートサービス",
-        "RockyOne"
+        "RockyOne",
+        "Biz-Fleet"
       ],
       "articles": [
         {
@@ -6794,6 +7066,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
+          "label": "用語#008",
+          "title": "ERP・基幹システムとは｜物流・運輸の5つの事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "JPロジスティクス"
+          ],
+          "products": [
+            "Biz-Fleet"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6916,6 +7201,32 @@
       "memo": ""
     },
     {
+      "domain": "sios.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "DataKeeper、Windows Server Failover Clustering"
+      ],
+      "articles": [
+        {
+          "slug": "d004fc2a-ea0f-4ed0-a324-c2a6bcb7e5d1",
+          "label": "用語#009",
+          "title": "ERP・基幹システムとは｜医療・介護の5つの事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "長野県厚生農業協同組合連合会（JA長野厚生連）"
+          ],
+          "products": [
+            "DataKeeper、Windows Server Failover Clustering"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "sizsan.co.jp",
       "company": "",
       "status": "pending",
@@ -6975,7 +7286,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "SAP S/4HANA",
-        "SAP S/4HANA、SAP Analytics Cloud"
+        "SAP S/4HANA、SAP Analytics Cloud",
+        "SAP ERP"
       ],
       "articles": [
         {
@@ -7005,6 +7317,19 @@
           ],
           "notified": false,
           "held": true
+        },
+        {
+          "slug": "d004fc2a-ea0f-4ed0-a324-c2a6bcb7e5d1",
+          "label": "用語#009",
+          "title": "ERP・基幹システムとは｜医療・介護の5つの事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "社会福祉法人 聖隷福祉事業団"
+          ],
+          "products": [
+            "SAP ERP"
+          ],
+          "notified": false
         }
       ],
       "memo": "2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのメンテナンス中で未送付。復旧したら2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームがメンテナンス中のため送れず。復旧したら送る"
@@ -7846,6 +8171,19 @@
             "TransFax"
           ],
           "notified": true
+        },
+        {
+          "slug": "d004fc2a-ea0f-4ed0-a324-c2a6bcb7e5d1",
+          "label": "用語#009",
+          "title": "ERP・基幹システムとは｜医療・介護の5つの事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "株式会社モレーンコーポレーション"
+          ],
+          "products": [
+            "TransFax"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
