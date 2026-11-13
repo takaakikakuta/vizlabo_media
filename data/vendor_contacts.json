@@ -926,10 +926,11 @@
           "products": [
             "クラウドERP キャムマックス"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": "2026-11-13 用語#004: 用語#002・#003 と同じく問い合わせフォームのエラーで未送付。3本まとめて送る ／ 2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのエラーで未送付。2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームで文面がエラーになり送れず。URLなし版・短縮版で再送する"
+      "memo": "2026-11-13 用語#005: 用語#002〜#004 と同じく問い合わせフォームのエラーで未送付。まとめて送る ／ 2026-11-13 用語#004: 用語#002・#003 と同じく問い合わせフォームのエラーで未送付。3本まとめて送る ／ 2026-11-11 用語#003: 用語#002 と同じく問い合わせフォームのエラーで未送付。2本まとめて送る ／ 2026-11-10 用語#002: 問い合わせフォームで文面がエラーになり送れず。URLなし版・短縮版で再送する"
     },
     {
       "domain": "cashmo.jp",
@@ -2145,8 +2146,8 @@
     {
       "domain": "forbis.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
         "Vegas"
@@ -2163,7 +2164,8 @@
           "products": [
             "Vegas"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         }
       ],
       "memo": ""
@@ -4586,8 +4588,8 @@
     {
       "domain": "mitani-corp.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
         "e2-movE",
@@ -4605,7 +4607,8 @@
           "products": [
             "e2-movE"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         },
         {
           "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
@@ -6714,8 +6717,8 @@
     {
       "domain": "serverworks.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
         "AWS"
@@ -6732,7 +6735,8 @@
           "products": [
             "AWS"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         }
       ],
       "memo": ""
@@ -7761,7 +7765,8 @@
           "products": [
             "ポストモダンTOTEC ERP"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
