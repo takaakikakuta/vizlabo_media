@@ -469,7 +469,8 @@
           "products": [
             "ANDPAD"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3216,7 +3217,8 @@
           "products": [
             "intra-mart Accel Platform"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
@@ -3475,7 +3477,8 @@
           "products": [
             "Microsoft Dynamics 365 for Finance & Operations"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
@@ -4177,8 +4180,8 @@
     {
       "domain": "loglass.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
         "Loglass 経営管理"
@@ -4195,7 +4198,8 @@
           "products": [
             "Loglass 経営管理"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-13"
         },
         {
           "slug": "29681d98-3c93-4a49-93a5-a9d16d89b905",
@@ -4783,7 +4787,8 @@
           "products": [
             "e2-movE"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
