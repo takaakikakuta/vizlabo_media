@@ -1,7 +1,8 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import { submitSuggest, type SuggestState } from "../app/suggest/actions";
+import { reportSignup } from "./SourceBeacon";
 
 /* 記事内に置く「貴社のURLを入れると、AIが似た事例をメールで届ける」枠。
    メールアドレス獲得の仕掛けを兼ねる（利用は管理者へ通知される）。 */
@@ -10,6 +11,9 @@ const initial: SuggestState = { status: "idle" };
 
 export default function SuggestForm({ source = "article" }: { source?: string }) {
   const [state, action, pending] = useActionState(submitSuggest, initial);
+
+  // メルマガにも登録したら、UTM つきで来た訪問（SNS・メルマガ）の成果として数える
+  useEffect(() => { if (state.status === "ok" && state.subscribed) reportSignup(); }, [state.status, state.subscribed]);
 
   if (state.status === "ok") {
     return (
