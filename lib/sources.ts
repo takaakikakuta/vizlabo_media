@@ -3,7 +3,7 @@ import { dynamo, awsKeysConfigured } from "./dynamo";
 import { jstDay } from "./views";
 
 /* 流入元の計測。UTM つきの URL で来た訪問を「日 × 流入元 × 着地ページ」で数える。
-   SNS（X・Threads・LinkedIn）とメルマガのどれが、どの種類の記事に人を連れてきたかを /admin/sources で見る。
+   SNS（X・Threads・LinkedIn・YouTube）とメルマガのどれが、どの種類の記事に人を連れてきたかを /admin/sources で見る。
    テーブルは amplify/backend.ts（PK day、SK src）。記録は app/api/sources/route.ts、通知は components/SourceBeacon.tsx。
    SOURCES_TABLE か IAM キーが無い環境（ローカル開発など）では記録せず、読み出しは空を返す。 */
 
@@ -87,6 +87,7 @@ const KNOWN: [RegExp, string][] = [
   [/^(x|twitter|x\.com|twitter\.com|t\.co)$/, "X"],
   [/^threads(\.net|\.com)?$/, "Threads"],
   [/^(linkedin(\.com)?|lnkd\.in)$/, "LinkedIn"],
+  [/^(youtube(\.com)?|youtu\.be|yt)$/, "YouTube"],
   [/^(newsletter|mail|email|benchmark)$/, "メルマガ"],
   [/^note(\.com)?$/, "note"],
   [/^(facebook(\.com)?|fb)$/, "Facebook"],
