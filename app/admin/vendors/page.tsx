@@ -48,7 +48,10 @@ export default async function AdminVendorsPage({
     <div className="mx-auto max-w-4xl px-5 py-10">
       <div className="flex flex-wrap items-baseline justify-between gap-3">
         <h1 className="font-display text-[24px] text-ink">ベンダー会員</h1>
-        <Link href="/admin/views" className="text-[12.5px]">閲覧数 →</Link>
+        <div className="flex items-baseline gap-4">
+          <Link href="/admin/sources" className="text-[12.5px]">流入元 →</Link>
+          <Link href="/admin/views" className="text-[12.5px]">閲覧数 →</Link>
+        </div>
       </div>
 
       {sp.error && sp.error !== "1" && <p className="mt-4 border border-red-300 bg-red-50 px-3 py-2 text-[13px] text-red-700">{sp.error}</p>}

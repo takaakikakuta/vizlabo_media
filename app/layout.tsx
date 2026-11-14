@@ -6,6 +6,7 @@ import { siteStats } from "../lib/cases";
 import { Mail, PenLine, FilePlus2 } from "lucide-react";
 import { GoogleTagManager } from "@next/third-parties/google";
 import SourceClickTracker from "../components/SourceClickTracker";
+import SourceBeacon from "../components/SourceBeacon";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
@@ -30,6 +31,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <GoogleTagManager gtmId="GTM-MHP5FFXB" />
         {/* 出典リンクのクリック（送客）の計測。ベンダーのダッシュボードと /admin/views で見る */}
         <SourceClickTracker />
+        {/* UTM つきの来訪（SNS・メルマガ）の計測。/admin/sources で見る */}
+        <SourceBeacon />
       </body>
     </html>
   );
