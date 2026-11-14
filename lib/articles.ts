@@ -330,6 +330,21 @@ export function articleServices(a: Article): ArticleService[] {
   return out;
 }
 
+/** SNS に貼ったときのカード（og:image / Twitterカード）。自前のサムネイル（/thumbnail/…）があれば大きい画像つき、
+    無ければ画像なしの小さいカード。提供元サイトの画像（自動フォールバック分）は自社のカードには使わない。 */
+export function articleSocial(a: Article, title: string, description: string, urlPath: string) {
+  const thumb = articleThumb(a);
+  const img = thumb?.startsWith("/") ? thumb : undefined;
+  return {
+    openGraph: {
+      title, description, type: "article" as const, url: urlPath, siteName: "事例マニア", locale: "ja_JP",
+      publishedTime: a.publishedAt,
+      ...(img ? { images: [{ url: img, alt: title }] } : {}),
+    },
+    twitter: { card: img ? ("summary_large_image" as const) : ("summary" as const), title, description },
+  };
+}
+
 /** 記事のサムネイル。明示指定 > public/thumbnail/<連番>.jpg|.png（置くだけで反映） > 記事内の主要事例の og:image。
     ビルド容量の制約（Amplify 220MB）があるので、画像は幅1400px程度のJPEG推奨。 */
 export function articleThumb(a: Article): string | undefined {
