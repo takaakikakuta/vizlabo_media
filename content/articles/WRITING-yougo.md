@@ -11,7 +11,8 @@
 
 ## 1. 選定
 
-- 候補は `data/cases.json` を用語（製品名・title・summary・actions・tags）で引く。掲載禁止ベンダー（`data/blocked_vendors.json`）・`hidden`・`linkOnly`（要約を削除し出典リンクのみ）の事例は使わない。
+- 候補は `data/cases.json` を用語（製品名・title・summary・actions・tags）で引く。掲載禁止ベンダー（`data/blocked_vendors.json`）・`hidden` の事例は使わない。
+- リンクのみの事例（`linkOnly: true` の事例と、`data/link_only_vendors.json` のベンダーの事例）は候補に入れてよい。記事では社名・規模・数字が出ず、掲載元へのリンクだけになるので、選んだら最初から `items[].linkOnly.body` を書く（4節）。読みどころを本文で書けない分、1記事に入れるのは1本までにする。
 - 本数は指定がなければ3。条件の違う事例が5本揃うなら5。
 - 条件が違う会社を選ぶ。業界・企業規模・抱えていた課題のうち、どの2社を比べても最低2軸が異なること。5本のときは業界を3つ以上にまたがらせる。同じベンダーの事例は1本まで。
 - 選定理由（なぜこの組み合わせか、何が分かれ目か）を先に短く書いてから本文に入る。
@@ -46,7 +47,7 @@
 ## 4. リンクのみに耐える書き方
 
 `title`・`lead`・`definition`・`fitNote`・`label` には社名・規模・成果の数字を書かない（事例が `linkOnly` になっても書き直さずに済む水準）。
-事例が `linkOnly` になったら `items[].linkOnly.body`（企業名・規模・数字を伏せた1〜2文）を書く。確認は `node scripts/link-only/check.mjs --as-if <記事ファイル名>`。
+事例が `linkOnly` になったら（または最初からリンクのみの事例を選んだら）`items[].linkOnly.body`（企業名・規模・数字を伏せた1〜2文）を書く。確認は `node scripts/link-only/check.mjs --as-if <記事ファイル名>`。
 
 ## 5. 公開手順
 

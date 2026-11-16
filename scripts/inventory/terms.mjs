@@ -3,15 +3,14 @@
  *   node scripts/inventory/terms.mjs   → content/articles/TERMS.md を書き出す
  * 用語（検索語）ごとに、product/title/summary/actions/tags に出る事例を数え、30件以上は業種で割る。
  * 事例件数 = 素材級（課題文80字以上かつ、数値成果あり or 施策80字以上）で導入企業名が公開のもの。
- * hidden・linkOnly・掲載禁止ベンダーは除外。用語を足すときは TERMS に [表示名, 想定検索クエリ, 正規表現] を1行足す。 */
+ * hidden・掲載禁止ベンダーは除外。linkOnly（リンクのみ）の事例は候補に含める（記事ではリンクのみの表示になる）。用語を足すときは TERMS に [表示名, 想定検索クエリ, 正規表現] を1行足す。 */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 const read=(p)=>JSON.parse(fs.readFileSync(ROOT+"/"+p,"utf8"));
 const blocked=new Set(read("data/blocked_vendors.json").vendors.map(v=>v.domain));
-const linkOnlyVendors=new Set(read("data/link_only_vendors.json").vendors.map(v=>v.domain));
-const cases=read("data/cases.json").filter(c=>!c.hidden&&!c.linkOnly&&!linkOnlyVendors.has(c.vendor)&&!c.sample&&!blocked.has(c.vendor));
+const cases=read("data/cases.json").filter(c=>!c.hidden&&!c.sample&&!blocked.has(c.vendor));
 const facets=read("data/case_facets.json");
 const IND={manufacturing:"製造業",it:"IT・ソフトウェア",construction:"建設・不動産",logistics:"物流・運輸",medical:"医療・介護",finance:"金融・保険",retail:"小売・EC",food:"飲食・食品",education:"教育",["hr-service"]:"人材サービス",public:"自治体・公共",energy:"エネルギー・環境",["other-industry"]:"その他"};
 const sozai=(c)=>(c.challengeDetail||"").length>=80&&(c.hasNumbers||(c.actions||"").length>=80);
@@ -124,7 +123,7 @@ for(const [name,query,pat] of TERMS){
 }
 const today=new Date(Date.now()+9*60*60*1000).toISOString().slice(0,10);
 const lines=[`# 事例でわかる技術用語：用語候補（${today} 時点）`,"","`node scripts/inventory/terms.mjs` で再生成する（用語は同ファイルの TERMS に1行足す）。","",
-"事例件数 = 素材級（課題文80字以上かつ、数値成果あり or 施策80字以上）で導入企業名が公開されている件数。hidden・linkOnly・掲載禁止ベンダーは除外。既存セレクションとの重なりは気にしない。",
+"事例件数 = 素材級（課題文80字以上かつ、数値成果あり or 施策80字以上）で導入企業名が公開されている件数。hidden・掲載禁止ベンダーは除外。リンクのみ（linkOnly）の事例は含む。既存セレクションとの重なりは気にしない。",
 "30件以上の用語は業種で割り、5件以上の業種だけ載せた。細分化した行の推奨本数は、5件以上・提供元5以上・数字あり3以上・規模帯2以上なら5、3件以上なら3。","",
 "| 用語 | 事例件数 | うち数字あり | 想定検索クエリ | 業界の広がり | 提供元数 | 推奨本数 |","|---|---:|---:|---|---:|---:|---:|"];
 for(const r of out){ if(r.kind==="sub") lines.push(`| 　└ ${r.name.split(" × ")[1]} | ${r.s.n} | ${r.s.nums} | ${r.query} | 1 | ${r.s.vend} | ${r.rec} |`); else if(r.s.n>=3) lines.push(`| ${r.name}${r.kind==="parent"?"（全体）":""} | ${r.s.n} | ${r.s.nums} | ${r.query} | ${r.s.inds} | ${r.s.vend} | ${r.rec} |`); }
