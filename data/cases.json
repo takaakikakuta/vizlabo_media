@@ -123430,7 +123430,8 @@
       "紙の書類処理",
       "データが分散",
       "情報共有の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-canon-electec-co-jp-case-noguchi",
@@ -123477,7 +123478,8 @@
       "手作業の転記",
       "電話・FAX中心",
       "問い合わせ対応の負荷"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-canon-electec-co-jp-case-nomura-re",
@@ -123523,7 +123525,8 @@
       "二重入力",
       "押印・承認の遅れ",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-canon-its-co-jp-case-detail-education-11-html",
@@ -368036,7 +368039,8 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-canon-electec-co-jp-case-momoya",
@@ -368072,7 +368076,8 @@
       "移動時間の多さ",
       "進捗が見えない",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-canon-electec-co-jp-case-sendaibank",
@@ -368110,7 +368115,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-canon-electec-co-jp-case-shimizubank",
@@ -368148,7 +368154,8 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-canon-electec-co-jp-case-tokyoondai",
@@ -368185,7 +368192,8 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-casio-human-sys-co-jp-hr-case-casio",

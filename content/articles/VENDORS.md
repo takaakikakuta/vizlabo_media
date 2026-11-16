@@ -113,7 +113,7 @@
 | border.co.jp | 2026-11-05（推定） | BORDER | #029（株式会社Gengo） |
 | buildee.jp | 2026-10-01（推定） | Buildee・Buildee3サービス | #004（鹿島建設株式会社、株式会社桑原組） |
 | businessbridge.jp | 2026-10-19（推定） | Business b-ridge | #016（村田機械株式会社） |
-| canon-electec.co.jp | 2026-11-13 | entrance Banking | 用語#006（株式会社福邦銀行） |
+| canon-electec.co.jp（キヤノン電子テクノロジー株式会社（entrance Banking／kintone 導入支援など）） | 2026-11-13 | entrance Banking | 用語#006（株式会社福邦銀行、（リンクのみ）） |
 | cashmo.jp | 2026-10-19（推定） | Cashmo | #016（株式会社アウローラ、アップシードビーンズ株式会社） |
 | casty-app.jp | 2026-10-15（推定） | Casty | #014（株式会社ワントゥワン東京） |
 | ccinnovation.co.jp | 2026-11-16 | デジタルマーケティングコンサルティング | #042（城西運輸機工株式会社） |
