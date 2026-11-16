@@ -2,7 +2,7 @@
 /* 「事例でわかる技術用語」の用語候補を数える。
  *   node scripts/inventory/terms.mjs   → content/articles/TERMS.md を書き出す
  * 用語（検索語）ごとに、product/title/summary/actions/tags に出る事例を数え、30件以上は業種で割る。
- * 事例件数 = 素材級（課題文80字以上かつ、数値成果あり or 施策80字以上）で導入企業名が公開のもの。
+ * 事例件数 = 素材級（課題文80字以上かつ、数値成果あり or 施策80字以上）で導入企業名が公開のもの。推奨本数は10か5（事例セレクションと同じ基準）。
  * hidden・掲載禁止ベンダーは除外。linkOnly（リンクのみ）の事例は候補に含める（記事ではリンクのみの表示になる）。用語を足すときは TERMS に [表示名, 想定検索クエリ, 正規表現] を1行足す。 */
 import fs from "node:fs";
 import path from "node:path";
@@ -107,7 +107,9 @@ const hitText=(c)=>[c.product,c.title,c.summary,c.actions,...(c.tags||[])].join(
 const SPLIT_AT=30; // この件数以上は業種で割る
 const out=[];
 const stat=(list)=>{const inds=new Set(list.map(c=>c.customer.industry));const vend=new Set(list.map(c=>c.vendor));const nums=list.filter(c=>c.hasNumbers).length;const sizes=new Set(list.map(c=>facets[c.id]?.size||"unknown").filter(s=>s!=="unknown"));return{n:list.length,inds:inds.size,vend:vend.size,nums,sizes:sizes.size};};
-const rec=(s,sub)=>{ if(sub) return (s.n>=5&&s.vend>=5&&s.nums>=3&&s.sizes>=2)?5:(s.n>=3?3:0); return (s.n>=5&&s.inds>=3&&s.vend>=5&&s.nums>=3)?5:(s.n>=3?3:0);};
+// 推奨本数は事例セレクションと同じ基準（2026-11-16）: 10本 = 素材級15以上・数字7以上・提供元5以上、5本 = 素材級10以上・数字4以上。
+// 全体の行は業界の広がりも見る（10本は業界5以上、5本は業界3以上）。満たさない行は 0（= まだ組めない）。
+const rec=(s,sub)=>{ if(sub) return (s.n>=15&&s.nums>=7&&s.vend>=5)?10:((s.n>=10&&s.nums>=4)?5:0); return (s.n>=15&&s.nums>=7&&s.vend>=5&&s.inds>=5)?10:((s.n>=10&&s.nums>=4&&s.inds>=3)?5:0);};
 for(const [name,query,pat] of TERMS){
  const re=new RegExp(pat,"i");
  const q=cases.filter(c=>re.test(hitText(c))&&sozai(c)&&c.customer?.name);
@@ -124,7 +126,7 @@ for(const [name,query,pat] of TERMS){
 const today=new Date(Date.now()+9*60*60*1000).toISOString().slice(0,10);
 const lines=[`# 事例でわかる技術用語：用語候補（${today} 時点）`,"","`node scripts/inventory/terms.mjs` で再生成する（用語は同ファイルの TERMS に1行足す）。","",
 "事例件数 = 素材級（課題文80字以上かつ、数値成果あり or 施策80字以上）で導入企業名が公開されている件数。hidden・掲載禁止ベンダーは除外。リンクのみ（linkOnly）の事例は含む。既存セレクションとの重なりは気にしない。",
-"30件以上の用語は業種で割り、5件以上の業種だけ載せた。細分化した行の推奨本数は、5件以上・提供元5以上・数字あり3以上・規模帯2以上なら5、3件以上なら3。","",
+"30件以上の用語は業種で割り、5件以上の業種だけ載せた。推奨本数は事例セレクションと同じ基準で、10本 = 素材級15以上・数字あり7以上・提供元5以上（全体の行は業界5以上も）、5本 = 素材級10以上・数字あり4以上（全体の行は業界3以上も）。0 はまだ組めない。","",
 "| 用語 | 事例件数 | うち数字あり | 想定検索クエリ | 業界の広がり | 提供元数 | 推奨本数 |","|---|---:|---:|---|---:|---:|---:|"];
 for(const r of out){ if(r.kind==="sub") lines.push(`| 　└ ${r.name.split(" × ")[1]} | ${r.s.n} | ${r.s.nums} | ${r.query} | 1 | ${r.s.vend} | ${r.rec} |`); else if(r.s.n>=3) lines.push(`| ${r.name}${r.kind==="parent"?"（全体）":""} | ${r.s.n} | ${r.s.nums} | ${r.query} | ${r.s.inds} | ${r.s.vend} | ${r.rec} |`); }
 fs.writeFileSync(path.join(ROOT,"content/articles/TERMS.md"),lines.join("\n")+"\n");
