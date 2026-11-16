@@ -9,6 +9,7 @@
  *       --hold a,b [--memo 理由]  その記事で送れなかった提供元（サイト・フォーム停止など）。未連絡のまま残し、memo に理由を書く。
  *                         保留は記録に残り、あとで --notified を流し直しても保留のまま
  *       --only a,b      その記事のうち、この提供元だけを連絡済みにする（保留していた先を後から送ったとき）
+ *   記念日ポスト（content/days。scripts/vendors/days.mjs の DAYS_FROM 以降）も記事と同じく記録する。指定は「記念日11/20」「11/20」「2026-11-20」
  *   node scripts/vendors/contacts.mjs --pending <記事slug|no>                → その記事の提供元を未連絡に戻す
  *   node scripts/vendors/contacts.mjs --list                                 → 未連絡の提供元と記事を表示する
  *   node scripts/vendors/contacts.mjs --init-assume-notified                 → 初回だけ。今ある記事をすべて連絡済み（日付は記事の公開日・推定）にして作る
@@ -19,6 +20,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadDayPosts, resolveDayKey, dayLabel } from "./days.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), "utf8"));
@@ -47,15 +49,17 @@ function caseIds(a) {
     case "chizu": return (a.routes ?? []).flatMap((r) => r.caseIds ?? []);
     case "ekkyou": return [a.caseA?.id, a.caseB?.id];
     case "butaiura": return [...(a.walls ?? []).flatMap((w) => w.caseIds ?? []), ...(a.approaches ?? []).flatMap((x) => x.caseIds ?? [])];
+    case "day": return (a.items ?? []).map((x) => x.caseId);  // 記念日ポスト（scripts/vendors/days.mjs）
     default: return [];
   }
 }
-const seriesTag = (a) => (a.format === "yougo" ? "用語" : "") + "#" + String(a.no).padStart(3, "0");
+const seriesTag = (a) => a.format === "day" ? dayLabel(a.date) : (a.format === "yougo" ? "用語" : "") + "#" + String(a.no).padStart(3, "0");
 
 const articles = fs.readdirSync(path.join(ROOT, "content/articles")).filter((f) => f.endsWith(".json"))
   .map((f) => ({ f, a: read("content/articles/" + f) }))
   .filter(({ a }) => !a.hidden && !a.draft)
-  .sort((x, y) => x.a.publishedAt.localeCompare(y.a.publishedAt) || x.a.no - y.a.no);
+  .concat(loadDayPosts(ROOT).map((a) => ({ f: `days/${a.date}.json`, a })))  // 記念日ポスト（DAYS_FROM 以降）も記事と同じように記録する
+  .sort((x, y) => x.a.publishedAt.localeCompare(y.a.publishedAt) || String(x.a.no).localeCompare(String(y.a.no), undefined, { numeric: true }));
 
 const data = fs.existsSync(path.join(ROOT, FILE)) ? read(FILE) : { note: "", vendors: [] };
 data.note = "提供元への掲載連絡の記録。scripts/vendors/contacts.mjs が公開中の記事から提供元と記事を足す（手で書いた status・notifiedAt・company・memo は上書きしない）。status: pending＝未連絡 / no-objection＝連絡済みで削除依頼なし / removed＝削除依頼あり（blocked_vendors.json から自動）。notifiedAtEstimated が true の日付は記事の公開日からの推定なので、分かれば直す。";
@@ -95,7 +99,8 @@ for (const { a } of articles) {
 }
 
 /* 2. 連絡済み／未連絡の切り替え */
-const findArticle = (key) => articles.find(({ a }) => a.slug === key || String(a.no) === String(key))?.a;
+const findArticle = (key) => articles.find(({ a }) => a.slug === key || (a.format !== "day" && String(a.no) === String(key)))?.a
+  ?? resolveDayKey(key, articles.filter(({ a }) => a.format === "day").map(({ a }) => a), today);  // 記念日ポストは「記念日11/20」「11/20」「2026-11-20」
 if (flag("--notified")) {
   const a = findArticle(flag("--notified"));
   if (!a) { console.error("記事が見つからない:", flag("--notified")); process.exit(1); }
