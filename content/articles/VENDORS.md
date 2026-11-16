@@ -30,7 +30,7 @@
 | ev-charge-enechange.jp | EV充電エネチェンジ | #031（株式会社アスター（盛岡つなぎ温泉 ホテル紫苑）） |
 | fa.omron.co.jp | 現場データ活用サービス i-BELT | #046（オムロン野洲工場） |
 | fielding.co.jp | NECデータセンターサービス | #044（鉄道工業株式会社） |
-| freee.co.jp | freee・freee人事労務、freee会計 | 用語#008（株式会社ダイナミック物流）<br>#045（株式会社ファームシップ） |
+| freee.co.jp | freee・freee人事労務、freee会計 | 用語#008（株式会社ダイナミック物流、（リンクのみ））<br>#045（株式会社ファームシップ、（リンクのみ）） |
 | geekplus.jp | 搬送型AMR・Geek+ Pシリーズ ピッキングロボット・ピッキングロボット | #033（トヨタ自動車、Walmart、Jointown製薬グループ） |
 | goriki.jp | ポストパレット | #057（ナイス（株）相模原市場・相模原営業所） |
 | hakuou.co.jp | AutoFork | #033（日本トランスシティ株式会社） |
@@ -122,7 +122,7 @@
 | ckd.co.jp | 2026-10-29（推定） | パワフルアーム PAW | #024（髙藏工業株式会社） |
 | classi.jp | 2026-10-26（推定） | Classi | #021（東海大学付属高輪台高等学校・中等部） |
 | cloudsign.jp | 2026-09-30（推定） | CloudSign by CloudSign・CloudSign・クラウドサイン、MAKE for kintone | #003（株式会社find、フィードバイエックス株式会社）<br>#004（株式会社J.フロントプライムスペース）<br>#006（Fast Fitness Japan） |
-| conct.jp | 2026-10-13（推定） | CO-NECT | #012（多生堂） |
+| conct.jp | 2026-10-13（推定） | CO-NECT | #012（多生堂、（リンクのみ）） |
 | coolex.jp | 2026-10-29（推定） | COOLEX-Pro | #024（日本フルハーフ株式会社 厚木工場）<br>#038（日本フルハーフ株式会社 厚木工場） |
 | coteam.jp | 2026-10-05（推定） | コチーム・1on1・マネジメント研修 | #006（株式会社ジョン）<br>#022（全日本空輸株式会社（ANA）） |
 | dga.co.jp | 2026-10-22（推定） | 実践型DX研修プログラム、動画学習プラットフォーム「みんなデ」 | #019（大日精化工業株式会社） |
@@ -143,7 +143,7 @@
 | focus-cloud.jp | 2026-10-02（推定） | フォーカス給与明細クラウド | #005（株式会社山下商会）<br>#034（税理士法人フィデス会計社） |
 | forbis.jp | 2026-11-13 | Vegas | 用語#005（株式会社DECENCIA） |
 | form.run | 2026-11-03（推定） | formrun | #027（株式会社トモダ企画） |
-| freee.co.jp | 2026-09-30（推定） | freee会計、freee人事労務、freeeカー Unlimited、freee-mcp・freee人事労務・freee会計、freee給与、freee税務申告・freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理 | #003（レンジャーシステムズ株式会社）<br>#006（斐紋中央建工株式会社）<br>#034（西老資税理士事務所）<br>用語#004（株式会社LIG） |
+| freee.co.jp | 2026-09-30（推定） | freee会計、freee人事労務、freeeカー Unlimited、freee-mcp・freee人事労務・freee会計、freee給与、freee税務申告・freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理 | #003（レンジャーシステムズ株式会社、（リンクのみ））<br>#006（斐紋中央建工株式会社、（リンクのみ））<br>#034（西老資税理士事務所、（リンクのみ））<br>用語#004（株式会社LIG、（リンクのみ）） |
 | fs-farm.co.jp | 2026-10-02（推定） | 検品君 | #005（株式会社マキノ）<br>#024（株式会社マキノ） |
 | fujimak.co.jp | 2026-10-28（推定） | コンビオーブン iCombi Pro・ニュークックチルシステム | #023（株式会社タケエイ）<br>#028（社会福祉法人 桜ヶ丘社会事業協会 桜ヶ丘記念病院） |
 | funaisoken.co.jp | 2026-11-16 | 経営コンサルティング | #042（ケアシステム株式会社） |

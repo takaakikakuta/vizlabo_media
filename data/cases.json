@@ -3660,7 +3660,8 @@
       "電話・FAX中心",
       "対応履歴が残らない",
       "追客の漏れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "biz-conct-jp-voice-supplier-torijibussan",
@@ -7780,7 +7781,8 @@
       "リード獲得の停滞",
       "商談化しない",
       "サイト更新ができない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "cl-unisize-makip-co-jp-case-pages-renown-html",
@@ -7918,7 +7920,8 @@
       "返品率の高さ",
       "認知度の地域差",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "cl-unisize-makip-co-jp-case-pages-ships-html",
@@ -15538,7 +15541,8 @@
       "電話・FAX中心",
       "移動時間の多さ",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "growth-tokyo-jp-casestudy-ferretone",
@@ -20997,7 +21001,8 @@
       "進捗が見えない",
       "問い合わせ対応の負荷",
       "一次対応の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "kintone-sol-cybozu-co-jp-cases-persolcareer-html",
@@ -24430,7 +24435,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "在庫の把握不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "lp-automation-milmo-jp-case-dotline",
@@ -24584,7 +24590,8 @@
       "二重入力",
       "押印・承認の遅れ",
       "残業の常態化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "lp-automation-milmo-jp-case-setup",
@@ -42003,7 +42010,8 @@
       "応募が集まらない",
       "採用しても定着しない",
       "一次対応の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "techhire-trackrecords-co-jp-case-mangabox",
@@ -51344,7 +51352,8 @@
       "押印・承認の遅れ",
       "業務の属人化",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-cloudsign-jp-case-2026-09-09-ja-ichikawa",
@@ -51393,7 +51402,8 @@
       "二重入力",
       "押印・承認の遅れ"
     ],
-    "image": "https://www.cloudsign.jp/wp-content/uploads/2026/08/jaichikawa_main.jpg"
+    "image": "https://www.cloudsign.jp/wp-content/uploads/2026/08/jaichikawa_main.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-cloudsign-jp-case-2026-10-06-milbon",
@@ -51449,7 +51459,8 @@
       "手作業の転記",
       "協力会社との連携"
     ],
-    "image": "https://www.cloudsign.jp/wp-content/uploads/2026/09/milbon_01.jpg"
+    "image": "https://www.cloudsign.jp/wp-content/uploads/2026/09/milbon_01.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-cloudsign-jp-case-2026-10-20-nittetsu-engineering",
@@ -58816,7 +58827,8 @@
       "サイト更新ができない",
       "リード獲得の停滞",
       "認知度向上の課題"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-i-studio-co-jp-casestudy-jt-japan-tobacco",
@@ -71224,7 +71236,8 @@
       "給与計算の手間",
       "手作業の転記",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-plusline-jp-interview-takeshita01",
@@ -74254,7 +74267,8 @@
       "システムの乱立",
       "顧客情報の一元管理"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/main_adastria_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/main_adastria_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-aderans-1-html",
@@ -74303,7 +74317,8 @@
       "リアルタイムに把握できない",
       "老朽化したシステム"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/main_aderans-1_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/main_aderans-1_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-ajinomoto-html",
@@ -74413,7 +74428,8 @@
       "サーバ運用の負担",
       "手作業の転記",
       "対応履歴が残らない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-daikin-html",
@@ -74654,7 +74670,8 @@
       "対応履歴が残らない",
       "一次対応の属人化"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/cs_felissimo_01_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/cs_felissimo_01_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-hennge-html",
@@ -74819,7 +74836,8 @@
       "サーバ運用の負担",
       "リアルタイムに把握できない"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/main_king_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/main_king_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-kokuyo-html",
@@ -76013,7 +76031,8 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-world-hd-html",
@@ -85673,7 +85692,8 @@
       "引き継ぎ困難",
       "進捗が見えない",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "zest-jp-case-saiseikai-shiga",
@@ -85777,7 +85797,8 @@
       "手作業の転記",
       "月末の残業",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "zest-jp-case-shinai",
@@ -86013,7 +86034,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "採用しても定着しない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "zest-jp-case-yokohamamachidaclinic",
@@ -86213,7 +86235,8 @@
       "新人教育のばらつき",
       "研修の負担",
       "技能伝承ができない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "achievement-hrs-co-jp-cases-019-artron",
@@ -86311,7 +86334,8 @@
       "新人教育のばらつき",
       "技能伝承ができない",
       "引き継ぎ困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "achievement-hrs-co-jp-cases-025-livable",
@@ -86403,7 +86427,8 @@
       "応募が集まらない",
       "新人教育のばらつき",
       "一次対応の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "achievement-hrs-co-jp-cases-031-sekisui-house",
@@ -86592,7 +86617,8 @@
       "業務のコンプライアンス対応",
       "管理職層の意識統一",
       "組織の自発性測定"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "achievement-hrs-co-jp-cases-knt-ct",
@@ -95788,7 +95814,8 @@
       "老朽化したシステム",
       "問い合わせ対応の負荷",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "dmplus-jp-case",
@@ -102087,7 +102114,8 @@
       "探し物の時間",
       "情報が分散",
       "進捗が見えない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "gencho-kun-jp-case-study-204",
@@ -102167,7 +102195,8 @@
       "経費精算の手間",
       "写真の整理作業",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "go-goinc-jp-business-case-digitalgrid",
@@ -106611,7 +106640,8 @@
       "探し物の時間",
       "進捗が見えない",
       "メール中心の連絡"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "ls-ctc-g-co-jp-casestudy-asahikasei-index-html",
@@ -107359,7 +107389,8 @@
       "リード獲得の停滞",
       "商談化しない",
       "顧客ニーズの把握不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "micreate-jp-voice-php",
@@ -114504,7 +114535,8 @@
       "在庫の把握不足",
       "手作業の転記",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "robooperator-jp-case-01-html",
@@ -114605,7 +114637,8 @@
       "手作業の転記",
       "紙の書類処理",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "rpa-technologies-com-case-case039",
@@ -116061,7 +116094,8 @@
       "紙の書類処理",
       "手作業の転記",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "sendgrid-kke-co-jp-case",
@@ -116477,7 +116511,8 @@
       "老朽化したシステム",
       "リアルタイムに把握できない",
       "会計処理の遅延"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "service-shiftinc-jp-case-au-cl",
@@ -121940,7 +121975,8 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-amc-rocketsoftware-co-jp-mfproducts-cobol-cases-yokohama",
@@ -122595,7 +122631,8 @@
     "tags": [
       "工程管理の難しさ",
       "納期の遅延"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-ast-c-co-jp-case-voice-morozoff-html",
@@ -122645,7 +122682,8 @@
       "進捗が見えない",
       "工程管理の難しさ",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-ast-c-co-jp-case-voice-ushioreinetsu-html",
@@ -122695,7 +122733,8 @@
       "新人教育のばらつき",
       "技能伝承ができない",
       "残業の常態化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-asters-co-jp-case",
@@ -122887,7 +122926,8 @@
       "紙の書類処理",
       "システムの乱立",
       "情報共有の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-b4a-co-jp-case-cinderelladavinci-clinic",
@@ -123792,7 +123832,8 @@
       "給与計算の手間",
       "システムの乱立",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-casio-human-sys-co-jp-hr-case-kohnan",
@@ -123902,7 +123943,8 @@
       "給与計算の手間",
       "手作業の転記",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-casio-human-sys-co-jp-hr-case-matsui-kensetsu",
@@ -124544,7 +124586,8 @@
       "検査の目視頼み",
       "不良の見逃し",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-chepro-co-jp-kensetsu-wao-case-159",
@@ -131609,7 +131652,8 @@
       "電話・FAX中心",
       "営業プロセスの属人化",
       "オンライン営業ツール不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-d-berry-jp-sample-voice-eko-japan",
@@ -131938,7 +131982,8 @@
       "紙図面の保管",
       "情報共有の遅れ",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-d-berry-jp-sample-voice-sanyo-technos",
@@ -132024,7 +132069,8 @@
       "紙の書類処理",
       "ペーパーレス化",
       "電気代の増加"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-d-berry-jp-sample-voice-t-kougei",
@@ -132112,7 +132158,8 @@
       "応募が集まらない",
       "サイト更新ができない",
       "リード獲得の停滞"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-d-berry-jp-sample-voice-ytl",
@@ -135887,7 +135934,8 @@
       "システムの乱立",
       "手作業の転記",
       "押印・承認の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-4stringsjp",
@@ -135935,7 +135983,8 @@
       "データが分散",
       "数字の集計に時間",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-abe-nashien",
@@ -135985,7 +136034,8 @@
       "手作業の転記",
       "月末の残業",
       "テレワーク対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-accounting-force",
@@ -136028,7 +136078,8 @@
       "多拠点の管理",
       "残業の常態化",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ai-connect",
@@ -136076,7 +136127,8 @@
       "リアルタイムに把握できない",
       "紙の書類処理",
       "意思決定の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-air-g",
@@ -136120,7 +136172,8 @@
       "手作業の転記",
       "請求処理に時間",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-aj-dreamcreate",
@@ -136168,7 +136221,8 @@
       "手作業の転記",
       "業務の属人化",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-akasaka-acc",
@@ -136210,7 +136264,8 @@
       "請求処理に時間",
       "Excel管理の限界",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-alba",
@@ -136248,7 +136303,8 @@
       "手作業の転記",
       "業務の属人化",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-amaterasu",
@@ -136304,7 +136360,8 @@
       "システムの乱立",
       "多拠点の管理",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-aquaignis",
@@ -136352,7 +136409,8 @@
       "データが分散",
       "多拠点の管理",
       "紙の書類処理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-arai-acc",
@@ -136394,7 +136452,8 @@
       "引き継ぎ困難",
       "残業の常態化",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-arxiduc-audio",
@@ -136437,7 +136496,8 @@
       "Excel管理の限界",
       "請求処理に時間",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-asahi-life",
@@ -136488,7 +136548,8 @@
       "給与計算の手間",
       "手作業の転記",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-asahiko",
@@ -136540,7 +136601,8 @@
       "給与計算の手間",
       "多拠点の管理",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ascinc",
@@ -136591,7 +136653,8 @@
       "給与計算の手間",
       "紙の書類処理",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-asunaro",
@@ -136637,7 +136700,8 @@
       "紙の書類処理",
       "手作業の転記",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-atrae",
@@ -136686,7 +136750,8 @@
       "データが分散",
       "給与計算の手間",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-axlcpa",
@@ -136733,7 +136798,8 @@
       "Excel管理の限界",
       "手作業の転記",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-bancoo",
@@ -136776,7 +136842,8 @@
       "請求処理に時間",
       "手作業の転記",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-beso",
@@ -136824,7 +136891,8 @@
       "システムの乱立",
       "数字の集計に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-beso-2",
@@ -136870,7 +136938,8 @@
       "システムの乱立",
       "請求処理に時間",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-biotherapy",
@@ -136909,7 +136978,8 @@
       "手作業の転記",
       "多拠点の管理",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-blockfarm",
@@ -136961,7 +137031,8 @@
       "勤怠管理の手間",
       "数字の集計に時間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-bridge-group",
@@ -137010,7 +137081,8 @@
       "書類の振り分け",
       "押印・承認の遅れ",
       "ペーパーレス化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-broad-e",
@@ -137048,7 +137120,8 @@
       "押印・承認の遅れ",
       "システムの乱立",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-brothership",
@@ -137084,7 +137157,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "経営管理体制の構築困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-bstyle",
@@ -137132,7 +137206,8 @@
       "データが分散",
       "月末の残業",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-caddi",
@@ -137180,7 +137255,8 @@
       "勤怠管理の手間",
       "業務の属人化",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-candee",
@@ -137223,7 +137299,8 @@
       "手作業の転記",
       "月末の残業",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-cdps",
@@ -137272,7 +137349,8 @@
       "二重入力",
       "数字の集計に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-chiikinews",
@@ -137322,7 +137400,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-chiyoda-gomu",
@@ -137371,7 +137450,8 @@
       "請求処理に時間",
       "給与計算の手間",
       "勤怠管理の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-chiyoda-gomu-2",
@@ -137414,7 +137494,8 @@
       "請求処理に時間",
       "手作業の転記",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-chuoukogei",
@@ -137465,7 +137546,8 @@
       "手作業の転記",
       "給与計算の手間",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-churapps",
@@ -137504,7 +137586,8 @@
       "手作業の転記",
       "月末の残業",
       "ペーパーレス化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-circlace",
@@ -137540,7 +137623,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-co-medical",
@@ -137587,7 +137671,8 @@
       "給与計算の手間",
       "Excel管理の限界",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-coffee-supreme",
@@ -137637,7 +137722,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-commerce21",
@@ -137681,7 +137767,8 @@
       "手作業の転記",
       "二重入力",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-consulting-service-1",
@@ -137717,7 +137804,8 @@
       "見積もり作成に時間",
       "請求処理に時間",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-contrail",
@@ -137767,7 +137855,8 @@
       "現場と本社の往復",
       "紙の書類処理",
       "情報共有の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-copenhagendesigngroupjapan-0base",
@@ -137803,7 +137892,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "専門知識の不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-coto",
@@ -137849,7 +137939,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-crownbakery",
@@ -137901,7 +137992,8 @@
       "勤怠管理の手間",
       "多拠点の管理",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-daito2",
@@ -137939,7 +138031,8 @@
       "数字の集計に時間",
       "データが分散",
       "決算業務の遅延"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-daiya",
@@ -137991,7 +138084,8 @@
       "経費精算の手間",
       "紙の書類処理",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-dfree",
@@ -138040,7 +138134,8 @@
       "数字の集計に時間",
       "データが分散",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-dlight",
@@ -138083,7 +138178,8 @@
       "手作業の転記",
       "経費精算の手間",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-dn-solutions",
@@ -138128,7 +138224,8 @@
       "月末の残業",
       "リアルタイムに把握できない",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-dot-jp",
@@ -138183,7 +138280,8 @@
       "データが分散",
       "請求処理に時間",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-dsp",
@@ -138231,7 +138329,8 @@
       "紙の書類処理",
       "手作業の転記",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-dynamoamusement",
@@ -138274,7 +138373,8 @@
       "Excel管理の限界",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-east-e",
@@ -138329,7 +138429,8 @@
       "経費精算の手間",
       "月末の残業",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ec",
@@ -138371,7 +138472,8 @@
       "手作業の転記",
       "経費精算の手間",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-em-onoe",
@@ -138419,7 +138521,8 @@
       "業務の属人化",
       "担当者不在で止まる",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-emberpoint",
@@ -138466,7 +138569,8 @@
       "アカウント管理の煩雑さ",
       "シャドーIT対策",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ever-con",
@@ -138504,7 +138608,8 @@
       "給与計算の手間",
       "手作業の転記",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-executivelink",
@@ -138542,7 +138647,8 @@
       "二重入力",
       "老朽化したシステム",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-faber",
@@ -138593,7 +138699,8 @@
       "請求処理に時間",
       "月末の残業",
       "ミスの再発"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-factory-ubiregi",
@@ -138629,7 +138736,8 @@
       "手作業の転記",
       "二重入力",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-farmship",
@@ -138675,7 +138783,8 @@
       "給与計算の手間",
       "多拠点の管理",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-flatheart",
@@ -138713,7 +138822,8 @@
       "給与計算の手間",
       "手作業の転記",
       "ミスの再発"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-freee-004",
@@ -138756,7 +138866,8 @@
       "紙の書類処理",
       "給与計算の手間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-freee-accounting",
@@ -138808,7 +138919,8 @@
       "数字の集計に時間",
       "システムの乱立",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-freee-bundle",
@@ -138853,7 +138965,8 @@
       "アカウント管理の煩雑さ",
       "業務の属人化",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-freee-bundle-2",
@@ -138904,7 +139017,8 @@
       "アカウント管理の煩雑さ",
       "業務の属人化",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-freee-hr",
@@ -138955,7 +139069,8 @@
       "Excel管理の限界",
       "手作業の転記",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-freee-k-k",
@@ -139005,7 +139120,8 @@
     "tags": [
       "給与計算の手間",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-frieheit",
@@ -139043,7 +139159,8 @@
       "業務の属人化",
       "月末の残業",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-frontierchannel",
@@ -139083,7 +139200,8 @@
       "請求処理に時間",
       "資金繰りの悪化",
       "入金と支払のタイミングズレ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-fujiyoshi",
@@ -139131,7 +139249,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-fukamori-tax",
@@ -139171,7 +139290,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-fukutoku-2",
@@ -139223,7 +139343,8 @@
       "Excel管理の限界",
       "手作業の転記",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-fukutoku-3",
@@ -139279,7 +139400,8 @@
       "請求処理に時間",
       "手作業の転記",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-gift10",
@@ -139321,7 +139443,8 @@
       "手作業の転記",
       "二重入力",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-gmo-pepabo",
@@ -139372,7 +139495,8 @@
       "請求処理に時間",
       "手作業の転記",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-gmo-pg",
@@ -139424,7 +139548,8 @@
       "システムの乱立",
       "データが分散",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-go-good",
@@ -139472,7 +139597,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-gonweb-innovations",
@@ -139524,7 +139650,8 @@
       "データが分散",
       "数字の集計に時間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-gree",
@@ -139572,7 +139699,8 @@
       "経理経験者の不在",
       "数字の集計に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-greenenegy-and-company",
@@ -139609,7 +139737,8 @@
       "システムの乱立",
       "手作業の転記",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-greenmedic",
@@ -139653,7 +139782,8 @@
       "給与計算の手間",
       "勤怠管理の手間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hakuyuukai",
@@ -139696,7 +139826,8 @@
       "給与計算の手間",
       "法改正への対応",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hamamatsu-cci",
@@ -139740,7 +139871,8 @@
       "経費精算の手間",
       "押印・承認の遅れ",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hamano",
@@ -139782,7 +139914,8 @@
       "業務の属人化",
       "Excel管理の限界",
       "担当者不在で止まる"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hamure",
@@ -139841,7 +139974,8 @@
       "給与計算の手間",
       "月末の残業",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hanayamaudon",
@@ -139886,7 +140020,8 @@
       "多拠点の管理",
       "給与計算の手間",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-harunire",
@@ -139926,7 +140061,8 @@
       "給与計算の手間",
       "紙の書類処理",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hcfm",
@@ -139986,7 +140122,8 @@
       "多拠点の管理",
       "業務の属人化",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hinomaru",
@@ -140035,7 +140172,8 @@
       "給与計算の手間",
       "システムの乱立",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hitoikisou",
@@ -140081,7 +140219,8 @@
       "手作業の転記",
       "多拠点の管理",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hololab",
@@ -140132,7 +140271,8 @@
       "経費精算の手間",
       "請求処理に時間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hoshibousui",
@@ -140184,7 +140324,8 @@
       "業務の属人化",
       "手作業の転記",
       "引き継ぎ困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hotel-ichinose",
@@ -140236,7 +140377,8 @@
       "給与計算の手間",
       "勤怠管理の手間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-howtelevision-2",
@@ -140297,7 +140439,8 @@
       "システムの乱立",
       "手作業の転記",
       "二重入力"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-humanmade",
@@ -140353,7 +140496,8 @@
       "手作業の転記",
       "給与計算の手間",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-icare",
@@ -140390,7 +140534,8 @@
       "請求処理に時間",
       "システムの乱立",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-idealab",
@@ -140432,7 +140577,8 @@
       "手作業の転記",
       "多拠点の管理",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-igunis",
@@ -140474,7 +140620,8 @@
       "手作業の転記",
       "経費精算の手間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ikokku",
@@ -140525,7 +140672,8 @@
       "多拠点の管理",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-in-the-com",
@@ -140573,7 +140721,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-inc",
@@ -140616,7 +140765,8 @@
       "給与計算の手間",
       "月末の残業",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ingage",
@@ -140663,7 +140813,8 @@
       "アカウント管理の煩雑さ",
       "パスワード共有",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-interactive",
@@ -140709,7 +140860,8 @@
       "リアルタイムに把握できない",
       "経費精算の手間",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-interspace",
@@ -140751,7 +140903,8 @@
       "請求処理に時間",
       "メール中心の連絡",
       "協力会社との連携"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ishiya-seika",
@@ -140795,7 +140948,8 @@
       "法改正への対応",
       "データが分散",
       "押印・承認の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-itohsports",
@@ -140831,7 +140985,8 @@
       "手作業の転記",
       "二重入力",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-iwamoto-tekkojyo",
@@ -140867,7 +141022,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ix-holdings",
@@ -140917,7 +141073,8 @@
       "システムの乱立",
       "手作業の転記",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-iyokougyou",
@@ -140974,7 +141131,8 @@
       "二重入力",
       "給与計算の手間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-jcss-tax",
@@ -141011,7 +141169,8 @@
       "手作業の転記",
       "業務の属人化",
       "手順書がない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-jikorikai",
@@ -141059,7 +141218,8 @@
       "業務の属人化",
       "多拠点の管理",
       "承認フローの標準化不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-jozuworks",
@@ -141112,7 +141272,8 @@
       "給与計算の手間",
       "経費精算の手面",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-jtbcorp",
@@ -141155,7 +141316,8 @@
       "システムの乱立",
       "アカウント管理の煩雑さ",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-jtekt-fluid",
@@ -141211,7 +141373,8 @@
       "請求処理に時間",
       "Excel管理の限界",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-jyuutakufamily",
@@ -141257,7 +141420,8 @@
       "手作業の転記",
       "請求処理に時間",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kanemotogumi",
@@ -141303,7 +141467,8 @@
       "給与計算の手間",
       "Excel管理の限界",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kanetaya",
@@ -141347,7 +141512,8 @@
       "二重入力",
       "データが分散",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kanxashi",
@@ -141384,7 +141550,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kawai",
@@ -141436,7 +141603,8 @@
       "二重入力",
       "リアルタイムに把握できない",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kbc-unie",
@@ -141479,7 +141647,8 @@
       "経費精算の手間",
       "手作業の転記",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-keyakinomura",
@@ -141530,7 +141699,8 @@
       "給与計算の手間",
       "手作業の転記",
       "紙の書類処理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kidskart",
@@ -141572,7 +141742,8 @@
       "経費精算の手間",
       "給与計算の手間",
       "簿記知識の不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kim-tks",
@@ -141621,7 +141792,8 @@
       "二重入力",
       "業務の属人化",
       "引き継ぎ困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kobayashi",
@@ -141665,7 +141837,8 @@
       "手作業の転記",
       "請求処理に時間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kobori-kakoujo",
@@ -141717,7 +141890,8 @@
       "サーバ運用の負担",
       "見積もり作成に時間",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-koujyukai",
@@ -141769,7 +141943,8 @@
       "勤怠管理の手間",
       "システムの乱立",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kozen",
@@ -141821,7 +141996,8 @@
       "手作業の転記",
       "システムの乱立",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kuradashi-02",
@@ -141862,7 +142038,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kurioco",
@@ -141905,7 +142082,8 @@
       "請求処理に時間",
       "経費精算の手間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kushicafe-tamanegi",
@@ -141942,7 +142120,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-leebell",
@@ -141984,7 +142163,8 @@
       "応募が集まらない",
       "採用しても定着しない",
       "福利厚生制度の整備負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-lib",
@@ -142021,7 +142201,8 @@
       "システムの乱立",
       "多拠点の管理",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-lifunext",
@@ -142068,7 +142249,8 @@
       "給与計算の手間",
       "システムの乱立",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-lig-inc",
@@ -142116,7 +142298,8 @@
       "二重入力",
       "手作業の転記",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ligo",
@@ -142174,7 +142357,8 @@
       "請求処理に時間",
       "システムの乱立",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-linkties",
@@ -142220,7 +142404,8 @@
       "システムの乱立",
       "手作業の転記",
       "残業の常態化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-livinghouse",
@@ -142267,7 +142452,8 @@
       "経費精算の手間",
       "数字の集計に時間",
       "情報共有の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-livla",
@@ -142314,7 +142500,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-lrex",
@@ -142364,7 +142551,8 @@
       "業務の属人化",
       "引き継ぎ困難",
       "新人教育のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-maeno-tax",
@@ -142419,7 +142607,8 @@
       "数字の集計に時間",
       "見積もり作成に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-maggies-kitchen",
@@ -142459,7 +142648,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-mamiyagijutsu",
@@ -142506,7 +142696,8 @@
       "手作業の転記",
       "給与計算の手間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-mangabox",
@@ -142553,7 +142744,8 @@
       "業務の属人化",
       "請求処理に時間",
       "契約管理の煩雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-marudining",
@@ -142595,7 +142787,8 @@
       "Excel管理の限界",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-masudaen",
@@ -142632,7 +142825,8 @@
       "二重入力",
       "数字の集計に時間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-matrix",
@@ -142673,7 +142867,8 @@
       "請求処理に時間",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-mediaopusplus",
@@ -142715,7 +142910,8 @@
       "手作業の転記",
       "データが分散",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-medical-tomo",
@@ -142775,7 +142971,8 @@
       "システムの乱立",
       "紙の書類処理",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-medley",
@@ -142823,7 +143020,8 @@
       "数字の集計に時間",
       "データが分散",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-miraiworks-2",
@@ -142871,7 +143069,8 @@
       "二重入力",
       "手作業の転記",
       "残業の常態化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-miyagawa-hospital",
@@ -142909,7 +143108,8 @@
       "数字の集計に時間",
       "データが分散",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-miyaken-hiroshima",
@@ -142964,7 +143164,8 @@
       "給与計算の手間",
       "手作業の転記",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-miyazaki-tax",
@@ -143010,7 +143211,8 @@
       "リード獲得の停滞",
       "名刺情報の死蔵",
       "サイト更新ができない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-motoyu-jinya",
@@ -143056,7 +143258,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "経営判断の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ms-japan",
@@ -143099,7 +143302,8 @@
       "請求処理に時間",
       "Excel管理の限界",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-musashikai",
@@ -143151,7 +143355,8 @@
       "システムの乱立",
       "給与計算の手間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-n1",
@@ -143199,7 +143404,8 @@
       "データが分散",
       "システムの乱立",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-n1system",
@@ -143242,7 +143448,8 @@
       "給与計算の手間",
       "システムの乱立",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nagata-nagasaki",
@@ -143283,7 +143490,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nanairo",
@@ -143329,7 +143537,8 @@
       "請求処理に時間",
       "経費精算の手間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nbc-tax",
@@ -143371,7 +143580,8 @@
       "手作業の転記",
       "請求処理に時間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nek-eng",
@@ -143412,7 +143622,8 @@
       "給与計算の手間",
       "システムの乱立",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nexis",
@@ -143448,7 +143659,8 @@
       "手作業の転記",
       "経費精算の手間",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nikke-butsuryu",
@@ -143504,7 +143716,8 @@
       "データが分散",
       "情報共有の遅れ",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nishimura",
@@ -143551,7 +143764,8 @@
       "システムの乱立",
       "給与計算の手間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-notokenpan",
@@ -143588,7 +143802,8 @@
       "給与計算の手間",
       "手作業の転記",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nulab",
@@ -143636,7 +143851,8 @@
       "システムの乱立",
       "手作業の転記",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-onemedia",
@@ -143684,7 +143900,8 @@
       "請求処理に時間",
       "業務の属人化",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-orange-garden-inc",
@@ -143725,7 +143942,8 @@
       "給与計算の手間",
       "数字の集計に時間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-oranger",
@@ -143761,7 +143979,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-osada-acc",
@@ -143801,7 +144020,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "紙の書類処理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-passiongeeks",
@@ -143856,7 +144076,8 @@
       "業務の属人化",
       "手作業の転記",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-pepabo",
@@ -143893,7 +144114,8 @@
       "システムの乱立",
       "数字の集計に時間",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-pharmedico",
@@ -143940,7 +144162,8 @@
       "経費精算の手間",
       "アカウント管理の煩雑さ",
       "応募が集まらない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-picocela",
@@ -143988,7 +144211,8 @@
       "手作業の転記",
       "二重入力",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-pignus",
@@ -144026,7 +144250,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-pivot",
@@ -144076,7 +144301,8 @@
       "請求処理に時間",
       "システムの乱立",
       "協力会社との連携"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-plas-aids",
@@ -144122,7 +144348,8 @@
       "経費精算の手間",
       "月末の残業",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-plast",
@@ -144182,7 +144409,8 @@
       "手作業の転記",
       "給与計算の手間",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-port",
@@ -144219,7 +144447,8 @@
       "システムの乱立",
       "押印・承認の遅れ",
       "アカウント管理の煩雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-powerhouse",
@@ -144271,7 +144500,8 @@
       "経費精算の手間",
       "給与計算の手間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-president",
@@ -144308,7 +144538,8 @@
       "紙の書類処理",
       "請求処理に時間",
       "ペーパーレス化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-pukarido",
@@ -144350,7 +144581,8 @@
       "Excel管理の限界",
       "手作業の転記",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-puzzle-scs",
@@ -144397,7 +144629,8 @@
       "多拠点の管理",
       "数字の集計に時間",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-pxc",
@@ -144433,7 +144666,8 @@
       "請求処理に時間",
       "システムの乱立",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-questaid",
@@ -144471,7 +144705,8 @@
       "請求処理に時間",
       "経費精算の手間",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-raksul",
@@ -144513,7 +144748,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-raksul-2",
@@ -144564,7 +144800,8 @@
       "経費精算の手間",
       "勤怠管理の手間",
       "テレワーク対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ranger-systems-2",
@@ -144602,7 +144839,8 @@
       "数字の集計に時間",
       "データが分散",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-rant-and-rave",
@@ -144646,7 +144884,8 @@
       "二重入力",
       "Excel管理の限界",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-re-ambitious",
@@ -144694,7 +144933,8 @@
       "手作業の転記",
       "リアルタイムに把握できない",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-renemia",
@@ -144730,7 +144970,8 @@
       "手作業の転記",
       "請求処理に時間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-reteck",
@@ -144772,7 +145013,8 @@
       "紙の書類処理",
       "押印・承認の遅れ",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-reversecorporation",
@@ -144825,7 +145067,8 @@
       "Excel管理の限界",
       "請求処理に時間",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-rincrew",
@@ -144880,7 +145123,8 @@
       "押印・承認の遅れ",
       "多拠点の管理",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ringrow",
@@ -144928,7 +145172,8 @@
       "業務の属人化",
       "手作業の転記",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-risabraire",
@@ -144965,7 +145210,8 @@
       "経費精算の手間",
       "請求処理に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-river-head-systems",
@@ -145010,7 +145256,8 @@
       "給与計算の手間",
       "請求処理に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-rt-corporation",
@@ -145062,7 +145309,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-saikyobank",
@@ -145118,7 +145366,8 @@
       "手作業の転記",
       "引き継ぎ困難",
       "押印・承認の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-saitou-tekkousho",
@@ -145155,7 +145404,8 @@
       "給与計算の手間",
       "手作業の転記",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sakai-zeirishi",
@@ -145197,7 +145447,8 @@
       "数字の集計に時間",
       "データが分散",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-saneikougyou",
@@ -145235,7 +145486,8 @@
       "紙の書類処理",
       "電話・FAX中心",
       "従業員情報の一元管理困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sapporo-nakanoreiki",
@@ -145272,7 +145524,8 @@
       "手作業の転記",
       "給与計算の手間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sasuke-gakuto",
@@ -145323,7 +145576,8 @@
       "紙の書類処理",
       "手作業の転記",
       "押印・承認の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-satake",
@@ -145379,7 +145633,8 @@
       "給与計算の手間",
       "多拠点の管理",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-satudora",
@@ -145430,7 +145685,8 @@
       "紙の書類処理",
       "探し物の時間",
       "紙図面の保管"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sckyoto",
@@ -145473,7 +145729,8 @@
       "システムの乱立",
       "請求処理に時間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-seahorses",
@@ -145525,7 +145782,8 @@
       "手作業の転記",
       "月末の残業",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-seiwakodomoen",
@@ -145577,7 +145835,8 @@
       "Excel管理の限界",
       "システムの乱立",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-shift",
@@ -145628,7 +145887,8 @@
       "Excel管理の限界",
       "手作業の転記",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-shimizukangyo",
@@ -145678,7 +145938,8 @@
       "紙の書類処理",
       "請求処理に時間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-shinagawa-sakurakai",
@@ -145721,7 +145982,8 @@
       "紙の書類処理",
       "押印・承認の遅れ",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-shinaikai",
@@ -145765,7 +146027,8 @@
       "二重入力",
       "Excel管理の限界",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-shingroup-sai",
@@ -145825,7 +146088,8 @@
       "請求処理に時間",
       "紙の書類処理",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-shinohara",
@@ -145866,7 +146130,8 @@
       "給与計算の手間",
       "手作業の転記",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sinko-rubber",
@@ -145917,7 +146182,8 @@
       "二重入力",
       "データが分散",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-smooth",
@@ -145954,7 +146220,8 @@
       "給与計算の手間",
       "請求処理に時間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-socialinterior",
@@ -146000,7 +146267,8 @@
       "手作業の転記",
       "給与計算の手間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-soichiro-inc",
@@ -146037,7 +146305,8 @@
       "システムの乱立",
       "数字の集計に時間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sorajima",
@@ -146088,7 +146357,8 @@
       "請求処理に時間",
       "手作業の転記",
       "対応履歴が残らない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-souchikusya",
@@ -146125,7 +146395,8 @@
       "業務の属人化",
       "引き継ぎ困難",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sougodenki",
@@ -146173,7 +146444,8 @@
       "手作業の転記",
       "データが分散",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-spacekey",
@@ -146216,7 +146488,8 @@
       "請求処理に時間",
       "協力会社との連携",
       "情報共有の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-spot-s",
@@ -146253,7 +146526,8 @@
       "手作業の転記",
       "業務の属人化",
       "勤怠管理の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ssmother",
@@ -146300,7 +146574,8 @@
       "多拠点の管理",
       "リアルタイムに把握できない",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-studist",
@@ -146342,7 +146617,8 @@
       "Excel管理の限界",
       "押印・承認の遅れ",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-studyplus",
@@ -146385,7 +146661,8 @@
       "経費精算の手間",
       "紙の書類処理",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-suganuma-rice",
@@ -146437,7 +146714,8 @@
       "手作業の転記",
       "技能伝承ができない",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tactrading",
@@ -146474,7 +146752,8 @@
       "Excel管理の限界",
       "数字の集計に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tao",
@@ -146521,7 +146800,8 @@
       "給与計算の手間",
       "経費精算の手間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-teamblue",
@@ -146564,7 +146844,8 @@
       "Excel管理の限界",
       "手作業の転記",
       "勤怠管理の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-teamblue-2",
@@ -146611,7 +146892,8 @@
       "請求処理に時間",
       "手作業の転記",
       "二重入力"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-teamblue-3",
@@ -146663,7 +146945,8 @@
       "多拠点の管理",
       "リアルタイムに把握できない",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-techouse",
@@ -146699,7 +146982,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tetemarche",
@@ -146747,7 +147031,8 @@
       "勤怠管理の手間",
       "業務の属人化",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tetsunoya",
@@ -146785,7 +147070,8 @@
       "手作業の転記",
       "二重入力",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-teuchiudon",
@@ -146822,7 +147108,8 @@
       "手作業の転記",
       "給与計算の手間",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tokyu-corporation",
@@ -146868,7 +147155,8 @@
       "アカウント管理の煩雑さ",
       "システムの乱立",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-toms",
@@ -146918,7 +147206,8 @@
       "給与計算の手間",
       "手作業の転記",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-torayakashiten",
@@ -146959,7 +147248,8 @@
       "手作業の転記",
       "請求処理に時間",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tosa-hp",
@@ -147002,7 +147292,8 @@
       "手作業の転記",
       "リアルタイムに把握できない",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-trustill",
@@ -147040,7 +147331,8 @@
       "手作業の転記",
       "請求処理に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ubiregi",
@@ -147076,7 +147368,8 @@
       "給与計算の手間",
       "多拠点の管理",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-uemabento",
@@ -147118,7 +147411,8 @@
       "Excel管理の限界",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ultras",
@@ -147172,7 +147466,8 @@
       "給与計算の手間",
       "Excel管理の限界",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-urcloud",
@@ -147223,7 +147518,8 @@
       "請求処理に時間",
       "手作業の転記",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-van",
@@ -147269,7 +147565,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-vega-c",
@@ -147325,7 +147622,8 @@
       "請求処理に時間",
       "データが分散",
       "押印・承認の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-vision-navi",
@@ -147371,7 +147669,8 @@
       "手作業の転記",
       "システムの乱立",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-vivid-garden",
@@ -147414,7 +147713,8 @@
       "システムの乱立",
       "アカウント管理の煩雑さ",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-volksware",
@@ -147462,7 +147762,8 @@
       "手作業の転記",
       "システムの乱立",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-volumetric",
@@ -147500,7 +147801,8 @@
       "経費精算の手間",
       "給与計算の手間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-wewillaa",
@@ -147543,7 +147845,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-winners",
@@ -147581,7 +147884,8 @@
       "リアルタイムに把握できない",
       "手作業の転記",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-wtbase",
@@ -147630,7 +147934,8 @@
       "紙の書類処理",
       "手作業の転記",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yamaguchi",
@@ -147667,7 +147972,8 @@
       "システムの乱立",
       "手作業の転記",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yamaichi-hagane",
@@ -147716,7 +148022,8 @@
       "多拠点の管理",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yawatahamashi-syakyo",
@@ -147768,7 +148075,8 @@
       "手作業の転記",
       "勤怠管理の手間",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yoani",
@@ -147816,7 +148124,8 @@
       "経費精算の手間",
       "給与計算の手間",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yoshinobu",
@@ -147873,7 +148182,8 @@
       "二重入力",
       "月末の残ογ",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yushi-k",
@@ -147925,7 +148235,8 @@
       "Excel管理の限界",
       "多拠点の管理",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yutori",
@@ -147972,7 +148283,8 @@
       "請求処理に時間",
       "業務の属人化",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-z-works",
@@ -148016,7 +148328,8 @@
       "勤怠管理の手間",
       "業務の属人化",
       "専門知識の不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-fs-farm-co-jp-products-jirei-kuji-php",
@@ -150083,7 +150396,8 @@
       "追客の漏れ",
       "メール中心の連絡",
       "営業資料との情報ズレ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-hai2mail-jp-bridge-case-minicolor-php",
@@ -150129,7 +150443,8 @@
       "リード獲得の停滞",
       "追客の漏れ",
       "名刺情報の死蔵"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-hai2mail-jp-bridge-case-n-asset-berry-php",
@@ -150476,7 +150791,8 @@
       "多拠点の管理",
       "業務の属人化",
       "進捗が見えない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-hitachi-ies-co-jp-products-cmp-case-202105-01-html",
@@ -150776,7 +151092,8 @@
       "業務の属人化",
       "進捗が見えない",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-hos-co-jp-case-tas",
@@ -160559,7 +160876,8 @@
       "紙図面の保管",
       "在庫の把握不足",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-kumahira-co-jp-case-museum-tochigimuseum-html",
@@ -160602,7 +160920,8 @@
       "紙図面の保管",
       "保管環境の管理",
       "施設容量の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-kumahira-co-jp-case-safe-storage-kitaosakashinkin-html",
@@ -170725,7 +171044,8 @@
       "紙の書類処理",
       "老朽化したシステム",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-nicnet-co-jp-next-smartsession-voice-detail-tbs-html",
@@ -173270,7 +173590,8 @@
       "システムの乱立",
       "老朽化したシステム",
       "サーバ運用の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-nttdata-tokai-co-jp-casestudy-tokairika-html",
@@ -173314,7 +173635,8 @@
       "進捗が見えない",
       "書類の振り分け",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-nttexc-co-jp-case-n003",
@@ -175214,7 +175536,8 @@
       "防犯死角の多さ",
       "電気代の増加",
       "安全性確保の難しさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-optex-co-jp-solutions-cases-pa-septic-tank-html",
@@ -177033,7 +177356,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-ptengine-jp-casestudies-dentsu",
@@ -190219,7 +190543,8 @@
       "リード獲得の停滞",
       "商談化しない",
       "追客の漏れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-transact-ne-jp-works-dic",
@@ -192170,7 +192495,8 @@
       "Excel管理の限界",
       "手作業の転記",
       "見積もり作成に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-webook-berry-jp-sample-voice-shidehara",
@@ -192212,7 +192538,8 @@
       "紙の書類処理",
       "紙図面の保管",
       "電気代の増加"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-webook-berry-jp-sample-voice-t-kougei",
@@ -204605,7 +204932,8 @@
       "長尺コンテンツの複数フォーマット展開",
       "手順書がない",
       "著作権リスク対応の不備"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "cloudpack-jp-casestudy-26-12-tbstv-html",
@@ -204853,7 +205181,8 @@
       "検査の目視頼み",
       "品質のばらつき",
       "移動時間の多さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "cmpl-jp-cases-p2enesol",
@@ -210364,7 +210693,8 @@
     "tags": [
       "問い合わせ対応の負荷",
       "移動時間の多さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "ev-charge-enechange-jp-case-chigasaki-city-kanagawa",
@@ -214210,7 +214540,8 @@
       "手作業の転記",
       "二重入力",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "good-call-jp-case",
@@ -215124,7 +215455,8 @@
       "サーバ運用の負担",
       "進捗が見えない",
       "社外との情報共有"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "hosting-redmine-jp-casestudy-marubeni-itsol",
@@ -215210,7 +215542,8 @@
       "業務の属人化",
       "データが分散",
       "進捗が見えない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "hosting-redmine-jp-casestudy-shi",
@@ -218373,7 +218706,8 @@
       "システムの乱立",
       "情報共有の遅れ",
       "勤怠管理の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "iot-robot-jp-case-kimura-ei",
@@ -220007,7 +220341,8 @@
       "引き継ぎ困難",
       "対応履歴が残らない",
       "メール中心の連絡"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "kakari-medpeer-jp-cases-ph-yamato-html",
@@ -220142,7 +220477,8 @@
       "問い合わせ対応の負荷",
       "一次対応の属人化",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "keywordfinder-jp-casestudies-case06",
@@ -225490,7 +225826,8 @@
       "情報共有の遅れ",
       "連絡手段の乱立",
       "対応履歴が残らない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "lp-automation-milmo-jp-case-lifedesign",
@@ -238900,7 +239237,8 @@
       "応募が集まらない",
       "採用情報の発信体制",
       "採用ブランディングの弱さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "products-sint-co-jp-obpm-case-acesystems",
@@ -257558,7 +257896,8 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "協力会社との連携"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-cmswp-jp-casestudy-casestudy-2",
@@ -259920,7 +260259,8 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-cybertrust-co-jp-case-clusterpro-ctj-html",
@@ -260033,7 +260373,8 @@
       "情報漏洩リスク",
       "テレワーク対応",
       "アカウント管理の煩雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-cybertrust-co-jp-case-e-seal-ntt-west-html",
@@ -260353,7 +260694,8 @@
       "アカウント管理の煩雑さ",
       "手順書がない",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-cybertrust-co-jp-case-ssl-arcadia-html",
@@ -267651,7 +267993,8 @@
       "新しい顧客体験の構想困難",
       "専門知識の不足",
       "部署間の情報共有"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-i-studio-co-jp-casestudy-sti-renewal",
@@ -268416,7 +268759,8 @@
       "アカウント管理の煩雑さ",
       "情報漏洩リスク",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-intercom-co-jp-malion-casestudy-tenboshi-seiyu",
@@ -279143,7 +279487,8 @@
       "紙の書類処理",
       "手作業の転記",
       "問い合わせ対応の負荷"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-moov-jp-casestudy-cardbox-osaka-esl",
@@ -290198,7 +290543,8 @@
       "サーバ運用の負担",
       "システムの乱立"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/main_amnimo_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/main_amnimo_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-bellsystem24-html",
@@ -290289,7 +290635,8 @@
       "老朽化したシステム",
       "情報漏洩リスク",
       "スケーラビリティ確保の困難さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-chemipaz-html",
@@ -290403,7 +290750,8 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-daikin-1-html",
@@ -290670,7 +291018,8 @@
       "サーバ運用の負担",
       "担当者不在で止まる"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/main_futaba2_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/main_futaba2_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-g-gen-html",
@@ -291428,7 +291777,8 @@
       "サーバ運用の負担",
       "老朽化したシステム",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-mhi-html",
@@ -291548,7 +291898,8 @@
       "データが分散",
       "老朽化したシステム"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/main_img_mitsubishielectric03_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/main_img_mitsubishielectric03_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-ncbank-html",
@@ -291673,7 +292024,8 @@
       "システムの乱立",
       "監査対応の負担"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/main_netprotections_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/main_netprotections_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-next-mobility-html",
@@ -291720,7 +292072,8 @@
       "営業時間外の対応困難",
       "一次対応の属人化"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/main_next-mobility_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/main_next-mobility_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-nisshinbo-microdevices-html",
@@ -292219,7 +292572,8 @@
       "システムの乱立",
       "サーバ運用の負担"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/main_shueisha_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/main_shueisha_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-sompo-html",
@@ -292333,7 +292687,8 @@
       "情報漏洩リスク",
       "手順書がない"
     ],
-    "image": "https://www.serverworks.co.jp/case/img/main_tiger_new.jpg"
+    "image": "https://www.serverworks.co.jp/case/img/main_tiger_new.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-toho-1-html",
@@ -292591,7 +292946,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-up-edu-html",
@@ -292791,7 +293147,8 @@
       "アカウント管理の煩雑さ",
       "情報漏洩リスク",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-yamaha-motor-html",
@@ -292833,7 +293190,8 @@
     "tags": [
       "老朽化したシステム",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-yanase-html",
@@ -292880,7 +293238,8 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-serverworks-co-jp-case-yaoko-html",
@@ -300100,7 +300459,8 @@
       "進捗が見えない",
       "リアルタイムに把握できない",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-true-works-jp-co-visit-d331338da2c5788a5b396c43-56-html",
@@ -300557,7 +300917,8 @@
       "進捗が見えない",
       "多拠点の管理",
       "新人教育のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-unixon-co-jp-casestudy-case-archives-4",
@@ -303100,7 +303461,8 @@
       "問い合わせ対応の負荷",
       "サイト更新ができない",
       "顧客信頼の構築"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-yotpo-jp-case-studies-tabio",
@@ -303305,7 +303667,8 @@
       "多拠点の管理",
       "料金プランの複雑さ",
       "無人運営の仕組み構築"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "yamadataro-jp-howto-casestudy-ramp-zero",
@@ -303646,7 +304009,8 @@
       "手作業の転記",
       "業務の属人化",
       "移動時間の多さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "zest-jp-case-tonoka",
@@ -304160,7 +304524,8 @@
       "新人教育のばらつき",
       "手順書がない",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "achievement-hrs-co-jp-cases-009-ihi",
@@ -304540,7 +304905,8 @@
       "新人教育のばらつき",
       "研修の負担",
       "対応履歴が残らない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "achievement-hrs-co-jp-cases-040-jinji",
@@ -304697,7 +305063,8 @@
       "新人教育のばらつき",
       "研修の負担",
       "技能伝承ができない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "achievement-hrs-co-jp-cases-045-newton-consulting",
@@ -304813,7 +305180,8 @@
       "新人教育のばらつき",
       "引き継ぎ困難",
       "技能伝承ができない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "achievement-hrs-co-jp-cases-051-tokyu-rs",
@@ -316542,7 +316910,8 @@
       "情報漏洩リスク",
       "品質のばらつき",
       "アカウント管理の煩雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "dreamone-co-jp-case-case-detail-asukahousing-html",
@@ -318225,7 +318594,8 @@
     "tags": [
       "問い合わせ対応の負荷",
       "顧客ニーズの把握不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "ev-charge-enechange-jp-case-soneka-hokkaido",
@@ -318268,7 +318638,8 @@
     "tags": [
       "顧客ニーズへの対応遅れ",
       "既存設備の機能不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "ev-charge-enechange-jp-case-wakka-iwate",
@@ -327885,7 +328256,8 @@
       "電話・FAX中心",
       "情報共有の遅れ",
       "進捗が見えない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "in-share-jp-case-case-okumajuuki-html",
@@ -327924,7 +328296,8 @@
       "紙の書類処理",
       "情報共有の遅れ",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "in-share-jp-case-case-saroma-html",
@@ -328050,7 +328423,8 @@
       "データが分散",
       "情報共有の遅れ",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "in-share-jp-case-case-tohden-html",
@@ -332484,7 +332858,8 @@
       "Excel管理の限界",
       "データが分散",
       "探し物の時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "kintone-stec-co-jp-case-case01-html",
@@ -334352,7 +334727,8 @@
       "業務の属人化",
       "情報共有の遅れ",
       "引き継ぎ困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "ls-ctc-g-co-jp-casestudy-fujipharma-box",
@@ -350105,7 +350481,8 @@
       "工程管理の難しさ",
       "リアルタイムに把握できない",
       "発注の手作業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "rfid-tss21-co-jp-ex-casestudy-sier-utec-html",
@@ -351368,7 +351745,8 @@
       "進捗が見えない",
       "リアルタイムに把握できない",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "sdl-consulting-jp-archives-voice-acmos",
@@ -352041,7 +352419,8 @@
       "情報漏洩リスク",
       "アカウント管理の煩雑さ",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "service-shiftinc-jp-case-nec",
@@ -364823,7 +365202,8 @@
       "業務の属人化",
       "手順書がない",
       "進捗が見えない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-ast-c-co-jp-case-voice-shiraidenshi-html",
@@ -366126,7 +366506,8 @@
       "多拠点の管理",
       "情報漏洩リスク",
       "インシデント対応体制の不備"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-bco-co-jp-case",
@@ -368296,7 +368677,8 @@
       "データが分散",
       "手作業の転記",
       "ヒューマンエラーの頻発"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-casio-human-sys-co-jp-hr-case-hokuetsu",
@@ -368352,7 +368734,8 @@
       "手作業の転記",
       "法改正への対応",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-casio-human-sys-co-jp-hr-case-ines",
@@ -368562,7 +368945,8 @@
       "紙の書類処理",
       "給与計算の手間",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-casio-human-sys-co-jp-hr-case-sankei",
@@ -368603,7 +368987,8 @@
       "サーバ運用の負担",
       "データが分散",
       "新人教育のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-casio-human-sys-co-jp-hr-case-senshu-unv",
@@ -368646,7 +369031,8 @@
       "給与計算の手間",
       "法改正への対応",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-casio-human-sys-co-jp-hr-case-wakunaga",
@@ -368706,7 +369092,8 @@
       "押印・承認の遅れ",
       "データが分散",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-casio-human-sys-co-jp-hr-case-yomiuri-ryokou",
@@ -371570,7 +371957,8 @@
       "法改正への対応",
       "手順書がない",
       "引き継ぎ困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-ccinnovation-co-jp-case-soshiki-jinji-okada",
@@ -379447,7 +379835,8 @@
       "紙の書類処理",
       "サイト更新ができない",
       "社外との情報共有"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-d-berry-jp-sample-voice-masuno",
@@ -379591,7 +379980,8 @@
       "紙の書類処理",
       "見積もり作成に時間",
       "情報共有の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-d-berry-jp-sample-voice-tais",
@@ -382550,7 +382940,8 @@
       "老朽化したシステム",
       "サーバ運用の負担",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-emboma-jp-cases-gojinsha-html",
@@ -382592,7 +382983,8 @@
       "システムの乱立",
       "サーバ運用の負担",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-emboma-jp-cases-koshi-html",
@@ -382639,7 +383031,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-emboma-jp-cases-ripplex-html",
@@ -382690,7 +383083,8 @@
       "サーバ運用の負担",
       "老朽化したシステム",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-enatural-co-jp-case-interview-enomoto-html",
@@ -386180,7 +386574,8 @@
       "経費精算の手間",
       "勤怠管理の手間",
       "テレワーク対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-2bc",
@@ -386211,7 +386606,8 @@
       "手作業の転記",
       "請求処理に時間",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-abesama",
@@ -386248,7 +386644,8 @@
       "経費精算の手間",
       "テレワーク対応",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ace-j",
@@ -386296,7 +386693,8 @@
       "多拠点の管理",
       "Excel管理の限界",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ace-tec",
@@ -386344,7 +386742,8 @@
       "データが分散",
       "手作業の転記",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-active-retech",
@@ -386391,7 +386790,8 @@
       "リアルタイムに把握できない",
       "システムの乱立",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-agrista",
@@ -386428,7 +386828,8 @@
       "監査対応の負担",
       "法改正への対応",
       "テレワーク対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-aichi-hino",
@@ -386467,7 +386868,8 @@
       "給与計算の手間",
       "システムの乱立",
       "アカウント管理の煩雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-air-closet",
@@ -386498,7 +386900,8 @@
       "数字の集計に時間",
       "給与計算の手間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ambercorp",
@@ -386536,7 +386939,8 @@
       "勤怠管理の手間",
       "残業の常態化",
       "従業員の健康リスク把握"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ame-kaze-taiyo",
@@ -386575,7 +386979,8 @@
       "システムの乱立",
       "数字の集計に時間",
       "工程管理の難しさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-anotherworks",
@@ -386607,7 +387012,8 @@
       "請求処理に時間",
       "経費精算の手間",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-aobakaikei",
@@ -386653,7 +387059,8 @@
       "現場と本社の往復",
       "老朽化したシステム",
       "サーバ運用の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-aoi-fas",
@@ -386692,7 +387099,8 @@
       "データが分散",
       "業務の属人化",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-architect-taitan",
@@ -386732,7 +387140,8 @@
       "数字の集計に時間",
       "見積もり作成に時間",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-aroma-taku",
@@ -386764,7 +387173,8 @@
       "二重入力",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-arxiducaudio",
@@ -386795,7 +387205,8 @@
       "請求処理に時間",
       "多拠点の管理",
       "移動時間の多さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-aschool",
@@ -386826,7 +387237,8 @@
       "手作業の転記",
       "システムの乱立",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ashiro",
@@ -386863,7 +387275,8 @@
       "給与計算の手間",
       "研修の負担",
       "採用しても定着しない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-auncon",
@@ -386910,7 +387323,8 @@
       "メール中心の連絡",
       "監査対応の負担",
       "引き継ぎ困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-avance-kumamoto",
@@ -386948,7 +387362,8 @@
       "リアルタイムに把握できない",
       "数字の集計に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-baigie",
@@ -386981,7 +387396,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "経営判断の判断材料不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-baigie-2",
@@ -387023,7 +387439,8 @@
       "進捗が見えない",
       "業務の属人化",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-be-inc",
@@ -387061,7 +387478,8 @@
       "業務の属人化",
       "給与計算の手間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-bitkey",
@@ -387105,7 +387523,8 @@
       "経費精算の手間",
       "監査対応の負担",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-brandingtechnology",
@@ -387142,7 +387561,8 @@
       "システムの乱立",
       "発注の手作業",
       "情報共有の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-bremen",
@@ -387183,7 +387603,8 @@
       "請求処理に時間",
       "給与計算の手間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-bright-core",
@@ -387227,7 +387648,8 @@
       "システムの乱立",
       "メール中心の連絡",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-caads",
@@ -387266,7 +387688,8 @@
       "経費精算の手間",
       "システムの乱立",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-caps",
@@ -387312,7 +387735,8 @@
       "データが分散",
       "多拠点の管理",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-castagna",
@@ -387354,7 +387778,8 @@
       "給与計算の手間",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-casy",
@@ -387392,7 +387817,8 @@
       "Excel管理の限界",
       "業務の属人化",
       "押印・承認の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-cchan",
@@ -387436,7 +387862,8 @@
       "データが分散",
       "経費精算の手間",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-cdp",
@@ -387475,7 +387902,8 @@
       "法改正への対応",
       "数字の集計に時間",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-chinuya",
@@ -387526,7 +387954,8 @@
       "給与計算の手間",
       "業務の属人化",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-chiyoda-kensetsu",
@@ -387573,7 +388002,8 @@
       "業務の属人化",
       "Excel管理の限界",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-chugin-fg",
@@ -387611,7 +388041,8 @@
       "システムの乱立",
       "数字の集計に時間",
       "連結決算業務の複雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-cinra-inc",
@@ -387652,7 +388083,8 @@
       "紙の書類処理",
       "手作業の転記",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-clan-entertainment",
@@ -387694,7 +388126,8 @@
       "発注の手作業",
       "請求処理に時間",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-contentisking",
@@ -387734,7 +388167,8 @@
       "Excel管理の限界",
       "請求処理に時間",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-craftcom",
@@ -387781,7 +388215,8 @@
       "Excel管理の限界",
       "数字の集計に時間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-croslan",
@@ -387814,7 +388249,8 @@
       "手作業の転記",
       "採用しても定着しない",
       "アカウント管理の煩雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-cucuma",
@@ -387852,7 +388288,8 @@
       "数字の集計に時間",
       "業務の属人化",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-culturallife",
@@ -387890,7 +388327,8 @@
       "請求処理に時間",
       "給与計算の手間",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-daigo-kashiwagi",
@@ -387927,7 +388365,8 @@
       "手作業の転記",
       "経費精算の手間",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-datafluct",
@@ -387978,7 +388417,8 @@
       "アカウント管理の煩雑さ",
       "システムの乱立",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-decofarm",
@@ -388015,7 +388455,8 @@
       "紙の書類処理",
       "請求処理に時間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-dlas",
@@ -388054,7 +388495,8 @@
       "進捗が見えない",
       "数字の集計に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-dr-mobilities",
@@ -388099,7 +388541,8 @@
       "採用しても定着しない",
       "応募が集まらない",
       "モチベーション維持の課題"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-drametokyo",
@@ -388130,7 +388573,8 @@
       "数字の集計に時間",
       "データが分散",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-dricos",
@@ -388170,7 +388614,8 @@
       "二重入力",
       "請求処理に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ds-transport",
@@ -388218,7 +388663,8 @@
       "請求処理に時間",
       "経費精算の手間",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-eclore",
@@ -388258,7 +388704,8 @@
       "請求処理に時間",
       "データが分散",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-edit-llc",
@@ -388289,7 +388736,8 @@
       "システムの乱立",
       "請求処理に時間",
       "協力会社との連携"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-efpolymer",
@@ -388332,7 +388780,8 @@
       "数字の集計に時間",
       "データが分散",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-elephant-books",
@@ -388370,7 +388819,8 @@
       "手作業の転記",
       "請求処理に時間",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-elimino",
@@ -388413,7 +388863,8 @@
       "給与計算の手間",
       "業務の属人化",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-emimen",
@@ -388457,7 +388908,8 @@
       "経費精算の手間",
       "システムの乱立",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-eneserve",
@@ -388495,7 +388947,8 @@
       "手作業の転記",
       "二重入力",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-excite",
@@ -388541,7 +388994,8 @@
       "システムの乱立",
       "アカウント管理の煩雑さ",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-factory",
@@ -388584,7 +389038,8 @@
       "経費精算の手間",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-farmnote-2",
@@ -388631,7 +389086,8 @@
       "多拠点の管理",
       "数字の集計に時間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-fastsubstancelogistics",
@@ -388672,7 +389128,8 @@
       "移動時間の多さ",
       "情報共有の遅れ",
       "勤怠管理の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-festinalente",
@@ -388719,7 +389176,8 @@
       "給与計算の手間",
       "手作業の転記",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-finc",
@@ -388757,7 +389215,8 @@
       "手作業の転記",
       "二重入力",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-first-create-aoi-partners",
@@ -388796,7 +389255,8 @@
       "二重入力",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-five-a-japan",
@@ -388839,7 +389299,8 @@
       "二重入力",
       "システムの乱立",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-foodcode",
@@ -388877,7 +389338,8 @@
       "手作業の転記",
       "請求処理に時間",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-freee-003",
@@ -388915,7 +389377,8 @@
       "紙の書類処理",
       "データが分散",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-freee-pm",
@@ -388948,7 +389411,8 @@
       "Excel管理の限界",
       "数字の集計に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-freelance",
@@ -388979,7 +389443,8 @@
       "経費精算の手間",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-fukuishi",
@@ -389031,7 +389496,8 @@
       "手作業の転記",
       "押印・承認の遅れ",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-fukutoku-estate",
@@ -389077,7 +389543,8 @@
       "老朽化したシステム",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-full-kaiten",
@@ -389118,7 +389585,8 @@
       "請求処理に時間",
       "リアルタイムに把握できない",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ga-tech",
@@ -389169,7 +389637,8 @@
       "業務の属人化",
       "経費精算の手間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-gloria",
@@ -389213,7 +389682,8 @@
       "手作業の転記",
       "業務の属人化",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-gmopepabo",
@@ -389269,7 +389739,8 @@
       "二重入力",
       "押印・承認の遅れ",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-gotosetsubi",
@@ -389312,7 +389783,8 @@
       "給与計算の手間",
       "手作業の転記",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-gunmo-pharmacy",
@@ -389358,7 +389830,8 @@
       "数字の集計に時間",
       "データが分散",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-gunosy",
@@ -389404,7 +389877,8 @@
       "請求処理に時間",
       "システムの乱立",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-heroz-2",
@@ -389442,7 +389916,8 @@
       "アカウント管理の煩雑さ",
       "業務の属人化",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hiraoka-syouten",
@@ -389474,7 +389949,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "意思決定の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hokkoku",
@@ -389517,7 +389993,8 @@
       "老朽化したシステム",
       "数字の集計に時間",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hskm",
@@ -389555,7 +390032,8 @@
       "給与計算の手間",
       "業務の属人化",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hudousan",
@@ -389586,7 +390064,8 @@
       "移動時間の多さ",
       "経費精算の手間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-hukusia",
@@ -389629,7 +390108,8 @@
       "紙の書類処理",
       "情報共有の遅れ",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ibaraki-teraoka",
@@ -389677,7 +390157,8 @@
       "多拠点の管理",
       "情報共有の遅れ",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ihgs",
@@ -389710,7 +390191,8 @@
       "請求処理に時間",
       "法改正への対応",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-iij-global-solutions",
@@ -389766,7 +390248,8 @@
       "紙の書類処理",
       "老朽化したシステム",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ikuta-mfg",
@@ -389818,7 +390301,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "情報共有の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-info-port",
@@ -389854,7 +390338,8 @@
       "手作業の転記",
       "給与計算の手間",
       "技能伝承ができない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-intrix",
@@ -389892,7 +390377,8 @@
       "数字の集計に時間",
       "データが分散",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-iseman",
@@ -389948,7 +390434,8 @@
       "二重入力",
       "Excel管理の限界",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-itathlete",
@@ -389995,7 +390482,8 @@
       "数字の集計に時間",
       "多拠点の管理",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-itoma",
@@ -390034,7 +390522,8 @@
       "連絡手段の乱立",
       "情報共有の遅れ",
       "問い合わせ対応の負荷"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-iyobank",
@@ -390076,7 +390565,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ja-osaka",
@@ -390120,7 +390610,8 @@
       "システムの乱立",
       "法改正への対応",
       "業務フローの統一困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-japanhandballleague",
@@ -390170,7 +390661,8 @@
       "経費精算の手間",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-jcss-tax-2",
@@ -390208,7 +390700,8 @@
       "業務の属人化",
       "老朽化したシステム",
       "引き継ぎ困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-jinwakai",
@@ -390240,7 +390733,8 @@
       "システムの乱立",
       "老朽化したシステム",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-joho-station",
@@ -390277,7 +390771,8 @@
       "Excel管理の限界",
       "手作業の転記",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-justincase-tech",
@@ -390314,7 +390809,8 @@
       "アカウント管理の煩雑さ",
       "システムの乱立",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kaijin",
@@ -390352,7 +390848,8 @@
       "経費精算の手間",
       "システムの乱立",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kaizenplatform",
@@ -390391,7 +390888,8 @@
       "手作業の転記",
       "アカウント管理の煩雑さ",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kamakuraaroma",
@@ -390422,7 +390920,8 @@
       "手作業の転記",
       "二重入力",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kanzaki",
@@ -390463,7 +390962,8 @@
       "繁忙期の人員不足",
       "テレワーク対応",
       "アカウント管理の煩雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kashoo",
@@ -390502,7 +391002,8 @@
       "手作業の転記",
       "二重入力",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kauche",
@@ -390544,7 +391045,8 @@
       "手作業の転記",
       "二重入力",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kauche-2",
@@ -390583,7 +391085,8 @@
       "データが分散",
       "押印・承認の遅れ",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kddi",
@@ -390621,7 +391124,8 @@
       "システムの乱立",
       "データが分散",
       "連結決算処理の複雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kenbisha",
@@ -390658,7 +391162,8 @@
       "進捗が見えない",
       "業務の属人化",
       "協力会社との連携"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kimisora",
@@ -390696,7 +391201,8 @@
       "給与計算の手間",
       "勤怠管理の手間",
       "メール中心の連絡"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kimura-tax",
@@ -390729,7 +391235,8 @@
       "リアルタイムに把握できない",
       "老朽化したシステム",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kinkidanboru",
@@ -390767,7 +391274,8 @@
       "請求処理に時間",
       "月末の残業",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kinmirai",
@@ -390819,7 +391327,8 @@
       "システムの乱立",
       "老朽化したシステム",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kinoene",
@@ -390860,7 +391369,8 @@
       "請求処理に時間",
       "手作業の転記",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kinoshita-tax",
@@ -390899,7 +391409,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "ペーパーレス化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kitashinsystem",
@@ -390937,7 +391448,8 @@
       "給与計算の手間",
       "システムの乱立",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-koike",
@@ -390989,7 +391501,8 @@
       "数字の集計に時間",
       "月末の残業",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-koshidaka",
@@ -391031,7 +391544,8 @@
       "アカウント管理の煩雑さ",
       "手作業の転記",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kowa",
@@ -391070,7 +391584,8 @@
       "データが分散",
       "情報共有の遅れ",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kumakawa-shashinkan",
@@ -391112,7 +391627,8 @@
       "手作業の転記",
       "請求処理に時間",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kuradashi",
@@ -391151,7 +391667,8 @@
       "リアルタイムに把握できない",
       "給与計算の手間",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kuriharakougyo",
@@ -391196,7 +391713,8 @@
       "手作業の転記",
       "給与計算の手間",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-kyoto-sougou-zeirishihoujin",
@@ -391232,7 +391750,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-lancers",
@@ -391263,7 +391782,8 @@
       "アカウント管理の煩雑さ",
       "パスワード共有",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-lecto",
@@ -391300,7 +391820,8 @@
       "手作業の転記",
       "給与計算の手間",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-legika",
@@ -391333,7 +391854,8 @@
       "リアルタイムに把握できない",
       "多拠点の管理",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-lig-inc-2",
@@ -391371,7 +391893,8 @@
       "パスワード共有",
       "情報漏洩リスク",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-loco-partners",
@@ -391418,7 +391941,8 @@
       "手作業の転記",
       "Excel管理の限界",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-loco-partners-2",
@@ -391461,7 +391985,8 @@
       "押印・承認の遅れ",
       "数字の集計に時間",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-locopartners",
@@ -391492,7 +392017,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-marudiup-matsuyama",
@@ -391523,7 +392049,8 @@
       "紙の書類処理",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-masuya",
@@ -391570,7 +392097,8 @@
       "二重入力",
       "Excel管理の限界",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-masuya-group",
@@ -391618,7 +392146,8 @@
       "二重入力",
       "業務の属人化",
       "担当者不在で止まる"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-mcproduct",
@@ -391656,7 +392185,8 @@
       "給与計算の手間",
       "業務の属人化",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-mej",
@@ -391694,7 +392224,8 @@
       "業務の属人化",
       "システムの乱立",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-merrybiz",
@@ -391731,7 +392262,8 @@
       "システムの乱立",
       "手作業の転記",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-mic",
@@ -391775,7 +392307,8 @@
       "請求処理に時間",
       "データが分散",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-midorinakurashi",
@@ -391817,7 +392350,8 @@
       "経費精算の手間",
       "データが分散",
       "簿記知識の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-miho-suzuki-tax",
@@ -391855,7 +392389,8 @@
       "業務の属人化",
       "リアルタイムに把握できない",
       "顧客情報の管理負荷"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-mikitaxacc",
@@ -391904,7 +392439,8 @@
       "手作業の転記",
       "請求処理に時間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-miraiworks",
@@ -391943,7 +392479,8 @@
       "請求処理に時間",
       "Excel管理の限界",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-mitakaikeisha",
@@ -391976,7 +392513,8 @@
       "引き継ぎ困難",
       "紙の書類処理",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-miyanishikaikei",
@@ -392014,7 +392552,8 @@
       "システムの乱立",
       "数字の集計に時間",
       "部門別管理の不備"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-mk-corporation",
@@ -392053,7 +392592,8 @@
       "請求処理に時間",
       "リアルタイムに把握できない",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-mobercial",
@@ -392085,7 +392625,8 @@
       "請求処理に時間",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-morimoto-tax",
@@ -392126,7 +392667,8 @@
       "紙の書類処理",
       "手作業の転記",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-morinagamilk",
@@ -392164,7 +392706,8 @@
       "サーバ運用の負担",
       "進捗が見えない",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ms-eight",
@@ -392215,7 +392758,8 @@
       "請求処理に時間",
       "データが分散",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ms-ins",
@@ -392258,7 +392802,8 @@
       "多拠点の管理",
       "数字の集計に時間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-muscat-group",
@@ -392296,7 +392841,8 @@
       "データが分散",
       "経営管理の統一",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nacsj",
@@ -392334,7 +392880,8 @@
       "移動時間の多さ",
       "システムの乱立",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nakayoshi-shoukai",
@@ -392380,7 +392927,8 @@
       "データが分散",
       "月末の残ogs",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nanaki-zouen",
@@ -392417,7 +392965,8 @@
       "給与計算の手間",
       "手作業の転記",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nextaccess",
@@ -392454,7 +393003,8 @@
       "請求処理に時間",
       "手作業の転記",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nhifuku",
@@ -392501,7 +393051,8 @@
       "進捗が見えない",
       "業務の属人化",
       "手順書がない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nissei-kennsetsu",
@@ -392534,7 +393085,8 @@
       "給与計算の手間",
       "勤怠管理の手間",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nobdata",
@@ -392580,7 +393132,8 @@
       "請求処理に時間",
       "数字の集計に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nojimoku",
@@ -392619,7 +393172,8 @@
       "数字の集計に時間",
       "電話・FAX中心",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-npo",
@@ -392656,7 +393210,8 @@
       "手作業の転記",
       "経費精算の手間",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-npoweb",
@@ -392688,7 +393243,8 @@
       "手作業の転記",
       "業務の属人化",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-nxtg",
@@ -392725,7 +393281,8 @@
       "採用しても定着しない",
       "応募が集まらない",
       "福利厚生の認知不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ogimison-shakyo",
@@ -392766,7 +393323,8 @@
       "勤怠管理の手間",
       "顧客情報の一元管理",
       "職場環境の可視化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ohiruneart",
@@ -392804,7 +393362,8 @@
       "Excel管理の限界",
       "連絡手段の乱立",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-okaken",
@@ -392852,7 +393411,8 @@
       "給与計算の手間",
       "法改正への対応",
       "現場と本社の往復"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-onozaki",
@@ -392899,7 +393459,8 @@
       "業務の属人化",
       "書類の振り分け",
       "担当者不在で止まる"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-openwork",
@@ -392949,7 +393510,8 @@
       "システムの乱立",
       "データが分散",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-owaririkuun",
@@ -392996,7 +393558,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "意思決定の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ozawa-eriko",
@@ -393028,7 +393591,8 @@
       "移動時間の多さ",
       "業務の属人化",
       "リード獲得の停滞"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-pensatino",
@@ -393059,7 +393623,8 @@
       "経費精算の手間",
       "リアルタイムに把握できない",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-persol-innovation",
@@ -393102,7 +393667,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-pictoria",
@@ -393145,7 +393711,8 @@
       "発注の手作業",
       "請求処理に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-playsense",
@@ -393187,7 +393754,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-premavera",
@@ -393226,7 +393794,8 @@
       "手作業の転記",
       "リアルタイムに把握できない",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-region-design",
@@ -393264,7 +393833,8 @@
       "給与計算の手間",
       "紙の書類処理",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-rgl",
@@ -393302,7 +393872,8 @@
       "老朽化したシステム",
       "給与計算の手間",
       "紙の書類処理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-rhelixa",
@@ -393341,7 +393912,8 @@
       "データが分散",
       "給与計算の手間",
       "経費精算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-rights",
@@ -393385,7 +393957,8 @@
       "システムの乱立",
       "請求処理に時間",
       "工程管理の難しさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-roopes",
@@ -393425,7 +393998,8 @@
       "多拠点の管理",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-rosefarm-keiji",
@@ -393463,7 +394037,8 @@
       "リアルタイムに把握できない",
       "社外との情報共有",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ryogokuya",
@@ -393509,7 +394084,8 @@
       "現金のみの運用",
       "経費精算の手間",
       "決済手段の限定"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sakana-farm",
@@ -393547,7 +394123,8 @@
       "業務の属人化",
       "システムの乱立",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sakaneya",
@@ -393589,7 +394166,8 @@
       "数字の集計に時間",
       "データが分散",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-salon-de-igaate",
@@ -393621,7 +394199,8 @@
       "データが分散",
       "業務の属人化",
       "連絡手段の乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sapporo-tax",
@@ -393659,7 +394238,8 @@
       "システムの乱立",
       "手作業の転記",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-seikohkai-hp",
@@ -393698,7 +394278,8 @@
       "データが分散",
       "アカウント管理の煩雑さ",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-seiwakai-group",
@@ -393746,7 +394327,8 @@
       "Excel管理の限界",
       "業務の属人化",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-shin-saitama",
@@ -393785,7 +394367,8 @@
       "手作業の転記",
       "給与計算の手間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-shinseikai",
@@ -393829,7 +394412,8 @@
       "Excel管理の限界",
       "引き継ぎ困難",
       "紙の書類処理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-shonanss",
@@ -393868,7 +394452,8 @@
       "Excel管理の限界",
       "給与計算の手間",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-showanomori-smilecare",
@@ -393916,7 +394501,8 @@
       "給与計算の手間",
       "数字の集計に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-shuuumatu-worker",
@@ -393958,7 +394544,8 @@
       "請求処理に時間",
       "協力会社との連携",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-smartnews",
@@ -394005,7 +394592,8 @@
       "データが分散",
       "Excel管理の限界",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-smartround",
@@ -394043,7 +394631,8 @@
       "数字の集計に時間",
       "データが分散",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sora1",
@@ -394096,7 +394685,8 @@
       "給与計算の手間",
       "請求処理に時間",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-soushinkan",
@@ -394138,7 +394728,8 @@
       "手作業の転記",
       "月末の残業",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ss-innovation",
@@ -394175,7 +394766,8 @@
       "請求処理に時間",
       "手作業の転記",
       "テレワーク対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-starland",
@@ -394219,7 +394811,8 @@
       "データが分散",
       "リアルタイムに把握できない",
       "請求処理に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-starman-p",
@@ -394251,7 +394844,8 @@
       "給与計算の手間",
       "業務の属人化",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-studio-hibari",
@@ -394290,7 +394884,8 @@
       "手作業の転記",
       "工程管理の難しさ",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-suganotokeiten",
@@ -394330,7 +394925,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-suncleanservice",
@@ -394375,7 +394971,8 @@
       "経費精算の手間",
       "データが分散",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-sundayfarm",
@@ -394412,7 +395009,8 @@
       "手作業の転記",
       "経費精算の手間",
       "書類の振り分け"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-susaki-kuroshio-hp",
@@ -394465,7 +395063,8 @@
       "二重入力",
       "データが分散",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-t-kyoei-jp",
@@ -394507,7 +395106,8 @@
       "技能伝承ができない",
       "引き継ぎ困難",
       "評価基準の曖昧さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-takagi",
@@ -394549,7 +395149,8 @@
       "経費精算の手間",
       "対応履歴が残らない",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-takeaction",
@@ -394596,7 +395197,8 @@
       "データが分散",
       "請求処理に時間",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-takeyaryokan",
@@ -394640,7 +395242,8 @@
       "月末の残業",
       "多拠点の管理",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tanabepharmacy",
@@ -394679,7 +395282,8 @@
       "老朽化したシステム",
       "数字の集計に時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-techro",
@@ -394716,7 +395320,8 @@
       "手作業の転記",
       "請求処理に時間",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-therapist-infinity-brothership",
@@ -394754,7 +395359,8 @@
       "数字の集計に時間",
       "リアルタイムに把握できない",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tm-jim",
@@ -394796,7 +395402,8 @@
       "手作業の転記",
       "二重入力",
       "Excel管理の限界"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tobem",
@@ -394834,7 +395441,8 @@
       "システムの乱立",
       "請求処理に時間",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-toho-leo",
@@ -394873,7 +395481,8 @@
       "連絡手段の乱立",
       "押印・承認の遅れ",
       "協力会社との連携"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tohoku-motorcycle",
@@ -394914,7 +395523,8 @@
       "経費精算の手間",
       "データが分散",
       "手順書がない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tokyobighouse",
@@ -394955,7 +395565,8 @@
       "給与計算の手間",
       "システムの乱立",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tokyu-hotelpartners",
@@ -395002,7 +395613,8 @@
       "手作業の転記",
       "給与計算の手間",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tokyu-sports-system",
@@ -395041,7 +395653,8 @@
       "数字の集計に時間",
       "システムの乱立",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-toyama-nishi",
@@ -395084,7 +395697,8 @@
       "紙図面の保管",
       "給与計算の手間",
       "勤怠管理の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-tsuginozidai",
@@ -395121,7 +395735,8 @@
       "請求処理に時間",
       "業務の属人化",
       "進捗が見えない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-ty",
@@ -395171,7 +395786,8 @@
       "見積もり作成に時間",
       "請求処理に時間",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-u-can",
@@ -395219,7 +395835,8 @@
       "手順書がない",
       "書類の振り分け",
       "コンプライアンス対応の煩雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-unitedchef",
@@ -395250,7 +395867,8 @@
       "請求処理に時間",
       "資金繰りの管理",
       "売上入金のタイムラグ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-unito",
@@ -395306,7 +395924,8 @@
       "多拠点の管理",
       "数字の集計に時間",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-vege-factory",
@@ -395352,7 +395971,8 @@
       "手作業の転記",
       "給与計算の手間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-visiolion-brothership",
@@ -395397,7 +396017,8 @@
       "Excel管理の限界",
       "経費精silonの手間",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-visualweb",
@@ -395445,7 +396066,8 @@
       "給与計算の手間",
       "業務の属人化",
       "専門知識の不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-vividsoul",
@@ -395483,7 +396105,8 @@
       "給与計算の手間",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-wakaba-hoikuen-2",
@@ -395533,7 +396156,8 @@
       "採用しても定着しない",
       "勤怠管理の手間",
       "職員の健康把握不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-wannaeat",
@@ -395587,7 +396211,8 @@
       "経費精算の手間",
       "押印・承認の遅れ",
       "アカウント管理の煩雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-wantedlyinc",
@@ -395638,7 +396263,8 @@
       "請求処理に時間",
       "手作業の転記",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-webun",
@@ -395677,7 +396303,8 @@
       "押印・承認の遅れ",
       "進捗が見えない",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-welead",
@@ -395715,7 +396342,8 @@
       "押印・承認の遅れ",
       "残業の常態化",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-whitecross",
@@ -395765,7 +396393,8 @@
       "請求処理に時間",
       "押印・承認の遅れ",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-wineno-wa",
@@ -395812,7 +396441,8 @@
       "給与計算の手間",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-woonerf",
@@ -395860,7 +396490,8 @@
       "データが分散",
       "業務の属人化",
       "押印・承認の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yamacon",
@@ -395908,7 +396539,8 @@
       "請求処理に時間",
       "紙の書類処理",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yamacon-2",
@@ -395946,7 +396578,8 @@
       "紙の書類処理",
       "電話・FAX中心",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yamamoto",
@@ -395984,7 +396617,8 @@
       "紙の書類処理",
       "業務の属人化",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yamatomi",
@@ -396027,7 +396661,8 @@
       "手作業の転記",
       "数字の集計に時間",
       "紙の書類処理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yawarakai",
@@ -396083,7 +396718,8 @@
       "勤怠管理の手間",
       "多拠点の管理",
       "データが分散"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yorks",
@@ -396116,7 +396752,8 @@
       "給与計算の手間",
       "勤怠管理の手間",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-youtrust",
@@ -396154,7 +396791,8 @@
       "経費精算の手間",
       "アカウント管理の煩雑さ",
       "新人教育のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yunite",
@@ -396193,7 +396831,8 @@
       "数字の集計に時間",
       "データが分散",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-yuyuhome",
@@ -396227,7 +396866,8 @@
       "二重入力",
       "データが分散",
       "給与計算の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-freee-co-jp-cases-zen-accounting-office",
@@ -396269,7 +396909,8 @@
       "請求処理に時間",
       "テレワーク対応",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-friction-co-jp-category-voice",
@@ -396522,7 +397163,8 @@
       "サイト更新ができない",
       "老朽化したシステム",
       "情報共有の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-fsisb-co-jp-works-web-rhythm-html",
@@ -402886,7 +403528,8 @@
       "情報漏洩リスク",
       "サイト更新ができない",
       "応募が集まらない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-helicam-jp-case-e5-9c-83-e5-a0-b4-e6-95-b4-e5-8-971326c1",
@@ -403823,7 +404466,8 @@
       "サイト更新ができない",
       "情報共有の遅れ",
       "押印・承認の遅れ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-i-studio-co-jp-casestudy-tohoku-quest",
@@ -408495,7 +409139,8 @@
       "手作業の転記",
       "アカウント管理の煩雑さ",
       "情報漏洩リスク"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-islonline-jp-case-case-aap-html",
@@ -418352,7 +418997,8 @@
       "情報漏洩リスク",
       "多拠点の管理",
       "セキュリティ体制の脆弱性"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-kumahira-co-jp-case-museum-shigamuseum-html",
@@ -418382,7 +419028,8 @@
     "tags": [
       "紙図面の保管",
       "老朽化したシステム"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-kumahira-co-jp-case-planning-design-jfesteel-html",
@@ -418601,7 +419248,8 @@
       "システムの乱立",
       "老朽化したシステム",
       "アカウント管理の煩雑さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-kumahira-co-jp-case-security-asobottya-html",
@@ -418669,7 +419317,8 @@
       "接触による感染リスク",
       "入場管理の属人化",
       "セキュリティ対策の不備"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-kumahira-co-jp-case-security-ehimekensougoukagakuhakubut",
@@ -426760,7 +427409,8 @@
       "手作業の転記",
       "二重入力",
       "書類の振り分け"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-mds-ne-jp-tsunagoo-case-03-yokohama-ceremo-html",
@@ -428401,7 +429051,8 @@
       "工程管理の難しさ",
       "検査の目視頼み",
       "品質のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-meltec-co-jp-building-case-19-toranomon-html",
@@ -438230,7 +438881,8 @@
       "老朽化したシステム",
       "リアルタイムに把握できない",
       "監査対応の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-nec-solutioninnovators-co-jp-ss-achr-case-gifu-plastic-i",
@@ -439192,7 +439844,8 @@
       "紙の書類処理",
       "紙図面の保管",
       "サーバ運用の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-nicnet-co-jp-next-smartsession-voice-detail-toenec-html",
@@ -446922,7 +447575,8 @@
       "進捗が見えない",
       "繁忙期の人員不足",
       "現場と本社の往復"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-optex-co-jp-solutions-cases-full-empty-atami-castle-html",
@@ -447132,7 +447786,8 @@
       "進捗が見えない",
       "リアルタイムに把握できない",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-optex-co-jp-solutions-cases-full-empty-worldwing-fujinom",
@@ -447661,7 +448316,8 @@
       "リアルタイムに把握できない",
       "情報共有の遅れ",
       "問い合わせ対応の負荷"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-optex-co-jp-solutions-cases-tokushima-smart-parking-solu",
@@ -447825,7 +448481,8 @@
       "繁忙期の人員不足",
       "進捗が見えない",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-optex-co-jp-solutions-cases-yao-underpass-html",
@@ -450408,7 +451065,8 @@
       "老朽化したシステム",
       "検査の目視頼み",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-ptengine-jp-casestudies-matsui-securities",
@@ -450439,7 +451097,8 @@
       "リード獲得の停滞",
       "商談化しない",
       "サイト更新ができない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-ptengine-jp-casestudies-news-picks",
@@ -451831,7 +452490,8 @@
       "情報共有の遅れ",
       "メール中心の連絡",
       "情報検索の手間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-ricoh-co-jp-case-0803-lintec",
@@ -462790,7 +463450,8 @@
       "老朽化したシステム",
       "問い合わせ対応の負荷",
       "新人教育のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sol-one-co-jp-cases-case-detail-operation-monitoring-aut",
@@ -472494,7 +473155,8 @@
       "移動時間の多さ",
       "業務の属人化",
       "残業の常態化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-totec-mlife-jp-case-case-hashima",
@@ -480446,7 +481108,8 @@
       "紙の廃棄量",
       "紙カタログの在庫管理",
       "PDF配信の使いづらさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-welearn-co-jp-ja-case-study-eisai",
