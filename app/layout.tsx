@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { siteStats } from "../lib/cases";
+import { allTermArticles } from "../lib/articles";
 import { Mail, PenLine, FilePlus2 } from "lucide-react";
 import { GoogleTagManager } from "@next/third-parties/google";
 import SourceClickTracker from "../components/SourceClickTracker";
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 /* 誌面のマストヘッド。太い上罫＋明朝の題字で“紙”の入口をつくる。 */
 function SiteHeader() {
   const { total } = siteStats();
+  const hasTerms = allTermArticles().length > 0;
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-[#fdfcfa]/95 backdrop-blur">
       <div className="h-[3px] bg-ink" />
@@ -59,7 +61,8 @@ function SiteHeader() {
               事例一覧<span className="num ml-1 text-[11px] text-muted">{total}</span>
             </NavLink>
             <NavLink href="/articles" className="hidden md:block">事例セレクション</NavLink>
-            <NavLink href="/terms" className="hidden md:block">技術用語</NavLink>
+            {/* 技術用語は、公開中の記事があるときだけ出す（全記事を下書きに戻している間は入口を消す） */}
+            {hasTerms && <NavLink href="/terms" className="hidden md:block">技術用語</NavLink>}
           </nav>
         </div>
         {/* 右：アクション3つ（メルマガ／事例制作を依頼／事例を掲載する）＝アイコン付きで強調 */}
@@ -98,6 +101,7 @@ function NavLink({ href, children, className = "" }:
 
 function SiteFooter() {
   const { total, vendors } = siteStats();
+  const hasTerms = allTermArticles().length > 0;
   return (
     <footer className="mt-20 border-t border-ink bg-soft">
       <div className="mx-auto max-w-6xl px-5 py-12 text-[13px] text-muted">
@@ -135,7 +139,7 @@ function SiteFooter() {
               <Link href="/finder" className="no-underline hover:text-ink">質問に答えて</Link>
               <Link href="/cases" className="no-underline hover:text-ink">すべての事例</Link>
               <Link href="/articles" className="no-underline hover:text-ink">事例セレクション</Link>
-              <Link href="/terms" className="no-underline hover:text-ink">事例でわかる技術用語</Link>
+              {hasTerms && <Link href="/terms" className="no-underline hover:text-ink">事例でわかる技術用語</Link>}
               <Link href="/days" className="no-underline hover:text-ink">事例で読む記念日</Link>
               <Link href="/sugoi" className="no-underline hover:text-ink">この事例がスゴイ（note）</Link>
               <Link href="/column" className="no-underline hover:text-ink">事例コラム（note）</Link>

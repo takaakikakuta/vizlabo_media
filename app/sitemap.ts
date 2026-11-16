@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/`, lastModified: now, changeFrequency: "daily", priority: 1 },
     { url: `${SITE}/cases`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${SITE}/articles`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${SITE}/terms`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    ...(allTermArticles().length > 0 ? [{ url: `${SITE}/terms`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 }] : []),
     { url: `${SITE}/challenges`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE}/industries`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE}/tags`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },

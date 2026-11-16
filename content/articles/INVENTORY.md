@@ -196,12 +196,12 @@
 - 株式会社デイリースポーツ案内広告社（miidas.jp）: #26(hidden), #14
 - レンジャーシステムズ株式会社（freee.co.jp）: #3, #52(draft)
 - 株式会社マキノ（fs-farm.co.jp）: #5, #24
-- 大阪医科薬科大学病院（sato.co.jp）: #10, #1
+- 大阪医科薬科大学病院（sato.co.jp）: #10, #1(draft)
 - 株式会社Mizkan（uhuru.co.jp）: #12, #14(draft)
-- カルビー株式会社（sunplanning.co.jp）: #16, #2
+- カルビー株式会社（sunplanning.co.jp）: #16, #2(draft)
 - シチズン生活協同組合ほか複数（308-al.co.jp）: #20, #38
 - 日本フルハーフ株式会社 厚木工場（coolex.jp）: #24, #38
-- 株式会社AOKIホールディングス（takachiho-kk.co.jp）: #28, #1
+- 株式会社AOKIホールディングス（takachiho-kk.co.jp）: #28, #1(draft)
 - 西日本旅客鉄道株式会社（jbs.co.jp）: #31, #11(draft)
 - 株式会社京都紋付（cybozu.co.jp）: #32, #10(draft)
 - 税理士法人近代経営&Kinkei Farm（mjs.co.jp）: #34, #6(draft)
