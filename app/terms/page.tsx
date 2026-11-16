@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { allTermArticles, articleThumb } from "../../lib/articles";
 import { siteStats } from "../../lib/cases";
 import CoverImg from "../../components/CoverImg";
@@ -15,6 +16,7 @@ export const metadata = {
 
 export default function TermsPage() {
   const articles = allTermArticles();
+  if (articles.length === 0) notFound();  // 公開中の記事がない間は一覧ごと出さない
   return (
     <div className="mx-auto max-w-3xl px-5 py-12">
       <ListHead eyebrow="連載" title="事例でわかる技術用語"
