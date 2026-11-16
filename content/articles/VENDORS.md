@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 203 社（うち連絡日が推定のもの 165 社）
-- 未連絡: 48 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 208 社（うち連絡日が推定のもの 165 社）
+- 未連絡: 43 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 10 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -13,8 +13,6 @@
 | 提供元 | サービス | 記事（導入企業） |
 |---|---|---|
 | 4on.jp | TOUGH | #033（株式会社ビサン） |
-| acuity-inc.co.jp | BC-Creation、BC-Detection | #043（（非公開）） |
-| afi.co.jp | ELESTA PixeeMo | #043（アルプスウォーター株式会社） |
 | afrel-robotics.jp | ネコボット-F1 | #033（株式会社シャルマン） |
 | ai-market.jp | AIエージェント型ボイスボット | #048（SBIいきいき少額短期保険株式会社） |
 | bcp-kke.jp | 制震補強設計・シミュレーション | #044（株式会社豊田自動織機） |
@@ -43,7 +41,6 @@
 | ielove-cloud.jp | いえらぶCLOUD | #048（HKホーム株式会社）<br>#057（都市住建株式会社） |
 | intra-mart.jp | intra-mart | 用語#008（中部国際空港株式会社）<br>用語#009（東レ・メディカル株式会社） |
 | iot-robot.jp | RPA | #034（社会保険労務士法人 アジア経営革新等支援機関） |
-| itohdenki.co.jp | MDR | #043（シーバス・ブラザーズ社） |
 | jbs.co.jp | Microsoft Power Platform・マネージドバックアップ for Microsoft 365 | #031（西日本旅客鉄道株式会社）<br>#044（株式会社八十二銀行） |
 | keigan-motor.com | KeiganALI | #033（株式会社ホリゾン） |
 | kisnet.co.jp | Forwarder-PRO | 用語#008（西久大運輸倉庫株式会社） |
@@ -59,7 +56,7 @@
 | mitani-corp.co.jp | SHIELDEX | #047（坂戸市） |
 | mjs.co.jp | ACELINK NX-CE | #045（株式会社キムラ電機） |
 | mxmobiling.co.jp | itsmoBPO キッティング | #050（M社） |
-| naomi.co.jp | パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02・チューブ充填機 6DTZ-T | #043（株式会社ベネッセパレット）<br>#057（下呂プリン） |
+| naomi.co.jp | チューブ充填機 6DTZ-T | #057（下呂プリン） |
 | narikoma-group.co.jp | ナリコマ | #031（特別養護老人ホーム アルテイル宮町） |
 | nhs.co.jp | Paples | 用語#009（キョーリン製薬ホールディングス株式会社） |
 | nicnet.co.jp | ペーパーレス会議システム Support Session | #047（仙台市役所（介護保険課）） |
@@ -67,7 +64,6 @@
 | officebot.jp | OfficeAI社員 | #050（商船三instituteロジスティクス株式会社） |
 | okuma.co.jp（オークマ株式会社） | MULTUS・MU-8000V-L、Connect Plan、MULTUS B300II | #031（株式会社しらかわ、（リンクのみ））<br>#046（（リンクのみ）） |
 | optex.co.jp | OAM-EXPLORER J、LINK-BT2 | #033（（非公開）） |
-| orikane.co.jp | 型替え不要の蓋かぶせ機、L型包装機 | #043（（非公開）） |
 | pa-consul.co.jp | タレントパレット | #041（株式会社松屋フーズホールディングス） |
 | quest.co.jp | WinActor | #057（株式会社日本能率協会マネジメントセンター（JMAM）） |
 | rescuenow.co.jp | 安否確認サービス | #044（株式会社片山化学工業研究所） |
@@ -103,6 +99,8 @@
 | 3s-corp.co.jp | 2026-10-28（推定） | 無溶剤UVコーティング | #023（株式会社日本ツクリダス） |
 | ababa.co.jp | 2026-10-12（推定） | ABABA | #011（株式会社TYL）<br>#014（ディップ株式会社、プレミアグループ株式会社） |
 | achievement-hrs.co.jp | 2026-11-02（推定） | 人材育成研修・OJT支援サービス | #026（東亜電気工業株式会社） |
+| acuity-inc.co.jp | 2026-11-16 | BC-Creation、BC-Detection | #043（（非公開）） |
+| afi.co.jp | 2026-11-16 | ELESTA PixeeMo | #043（アルプスウォーター株式会社） |
 | afrel-robotics.jp | 2026-11-09 | 協働ロボットアーム | #037（ウエルダー北沢） |
 | alibaba.co.jp | 2026-10-20（推定） | Alibaba.com | #017（株式会社香月園） |
 | amano.co.jp | 2026-10-02（推定） | TimeP@CK-iC・TimeP@CK | #005（株式会社梅林）<br>#034（原口社会保険労務事務所、籏興行株式会社 シネスイッチ銀座） |
@@ -168,6 +166,7 @@
 | intercom.co.jp | 2026-10-05（推定） | MaLion | #006（関東商事株式会社） |
 | intra-mart.jp | 2026-10-01（推定） | intra-mart Accel Platform、intra-mart Accel Applications、AWS・Accel-Mart・intra-mart Accel Platform / IM-BPM・BeAd販売管理システム・ECOASクレームマネジメント・intra-mart Accel Platform・imforce/経費精算ソリューション・intra-mart、Biz∫・intra-mart® | #004（地盤ネット株式会社）<br>#008（日本特殊陶業株式会社、大鵬薬品工業株式会社）<br>#009（日精機工株式会社、IDEC株式会社）<br>#021（学校法人 千葉工業大学）<br>#029（ぺんてる株式会社）<br>用語#004（株式会社NTTデータMSE）<br>用語#006（トヨタファイナンス株式会社）<br>用語#007（エクシオグループ株式会社） |
 | ip3.co.jp | 2026-11-04（推定） | EntryMaster | #028（近畿労働金庫） |
+| itohdenki.co.jp | 2026-11-16 | MDR | #043（シーバス・ブラザーズ社） |
 | itszai.jp | 2026-10-12（推定） | イツザイ | #011（大立工業株式会社、有限会社コン・コース） |
 | japanpost.jp | 2026-10-02（推定） | ゆうパック・ゆうパケット、ロジスティクスサービス・ゆうパケットパフ・ゆうパック・ゆうパケット、拠点受取サービス、指定場所ダイレクト・UGX | #005（株式会社ALFOR）<br>#008（有限会社ワールドアイズ）<br>#012（久米仙酒造株式会社、株式会社Rise UP）<br>#017（株式会社江戸てん） |
 | jbs.co.jp | 2026-11-13 | Microsoft Dynamics 365・Microsoft Dynamics 365 for Finance & Operations | 用語#004（パナソニック ソリューションテクノロジー株式会社）<br>用語#007（株式会社NEXTAGE GROUP） |
@@ -211,6 +210,7 @@
 | mr-m.co.jp | 2026-11-16 | カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作 | #042（ミズタニバルブ工業株式会社） |
 | myquick.jp | 2026-10-08（推定） | MyQuickクラウド | #009（株式会社マーキュリー） |
 | mysite-ai.jp | 2026-10-30（推定） | Myサイト翻訳 | #025（近江鉄道株式会社） |
+| naomi.co.jp | 2026-11-16 | パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02 | #043（株式会社ベネッセパレット） |
 | narikoma-group.co.jp | 2026-11-04（推定） | ニュークックチル・ナリコマ | #028（やまゆりの里）<br>#039（有隣ホーム） |
 | nau.co.jp | 2026-09-28（推定） | NaU Rulebook | #001（学校法人 早稲田大学 情報企画部 / 株式会社 早稲田大学アカデミックソリューション） |
 | nikken-totalsourcing.jp | 2026-11-11 | カスタマイズ研修・技能センター研修 | #041（株式会社デンソー山形） |
@@ -225,6 +225,7 @@
 | onecareer.jp | 2026-10-12（推定） | ワンキャリア | #011（三信住建株式会社、株式会社トヨタ車体研究所） |
 | onehr.jp | 2026-10-05（推定） | One人事[タレントマネジメント] | #006（株式会社ハイテックシステムズ） |
 | optex.co.jp | 2026-10-14（推定） | WATER it データマネジメントサービス | #013（高速道路事業者） |
+| orikane.co.jp | 2026-11-16 | 型替え不要の蓋かぶせ機、L型包装機 | #043（（非公開）） |
 | orwak.co.jp | 2026-10-23（推定） | 小型圧縮減容機5010E | #020（株式会社キトー） |
 | otasukeman.jp | 2026-10-08（推定） | お助けマン | #009（株式会社ジャックス） |
 | pandora-climber.jp | 2026-09-30（推定） | ClimberCloud、kintone、DX-Suite、WinActor | #003（味の素トレーディング株式会社） |

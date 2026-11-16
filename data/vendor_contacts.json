@@ -162,8 +162,8 @@
     {
       "domain": "acuity-inc.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
         "BC-Creation、BC-Detection"
@@ -180,7 +180,8 @@
           "products": [
             "BC-Creation、BC-Detection"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-16"
         }
       ],
       "memo": ""
@@ -188,8 +189,8 @@
     {
       "domain": "afi.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
         "ELESTA PixeeMo"
@@ -206,7 +207,8 @@
           "products": [
             "ELESTA PixeeMo"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-16"
         }
       ],
       "memo": ""
@@ -3348,8 +3350,8 @@
     {
       "domain": "itohdenki.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
         "MDR"
@@ -3366,7 +3368,8 @@
           "products": [
             "MDR"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-16"
         }
       ],
       "memo": ""
@@ -5083,8 +5086,8 @@
     {
       "domain": "naomi.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
         "パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02",
@@ -5102,7 +5105,8 @@
           "products": [
             "パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-16"
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -5701,8 +5705,8 @@
     {
       "domain": "orikane.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
         "型替え不要の蓋かぶせ機、L型包装機"
@@ -5719,7 +5723,8 @@
           "products": [
             "型替え不要の蓋かぶせ機、L型包装機"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-16"
         }
       ],
       "memo": ""
