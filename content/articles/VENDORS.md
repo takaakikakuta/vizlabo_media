@@ -100,7 +100,7 @@
 | ababa.co.jp | 2026-10-12（推定） | ABABA | #011（株式会社TYL）<br>#014（ディップ株式会社、プレミアグループ株式会社） |
 | achievement-hrs.co.jp | 2026-11-02（推定） | 人材育成研修・OJT支援サービス | #026（東亜電気工業株式会社） |
 | acuity-inc.co.jp | 2026-11-16 | BC-Creation、BC-Detection | #043（（非公開）） |
-| afi.co.jp | 2026-11-16 | ELESTA PixeeMo | #043（アルプスウォーター株式会社） |
+| afi.co.jp | 2026-11-16 | ELESTA PixeeMo | #043（アルプスウォーター株式会社、（リンクのみ）） |
 | afrel-robotics.jp | 2026-11-09 | 協働ロボットアーム | #037（ウエルダー北沢） |
 | alibaba.co.jp | 2026-10-20（推定） | Alibaba.com | #017（株式会社香月園） |
 | amano.co.jp | 2026-10-02（推定） | TimeP@CK-iC・TimeP@CK | #005（株式会社梅林）<br>#034（原口社会保険労務事務所、籏興行株式会社 シネスイッチ銀座） |
