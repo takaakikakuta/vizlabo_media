@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ date: str
   const title = `${dayLabel(d.date)}は${d.name}。${d.title.join("")}`;
   return {
     title,
-    description: `${d.body} ${d.theme}を3つ紹介。`,
+    description: `${d.body} ${d.theme}を${dayCases(d).length}つ紹介。`,  // 削除依頼で事例が減った日は2つになる
     openGraph: { title, description: d.body, type: "article", ...(img ? { images: [{ url: img }] } : {}) },
     twitter: { card: img ? "summary_large_image" : "summary" },
   };
