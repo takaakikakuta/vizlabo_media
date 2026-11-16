@@ -147,6 +147,7 @@ function SiteFooter() {
             <div className="flex flex-col gap-2">
               <span className="label">サービス</span>
               <Link href="/contact" className="no-underline hover:text-ink">事例の掲載を依頼</Link>
+              <Link href="/contact?topic=correction" className="no-underline hover:text-ink">掲載内容の修正・削除</Link>
               <Link href="/produce" className="no-underline hover:text-ink">事例制作代行</Link>
               <Link href="/newsletter" className="no-underline hover:text-ink">メルマガ</Link>
             </div>
@@ -154,7 +155,9 @@ function SiteFooter() {
         </div>
         <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-line pt-5 text-[11px]">
           <span>© {new Date().getFullYear()} {SITE_NAME}</span>
+          <Link href="/policy" className="no-underline hover:text-ink">掲載ポリシー</Link>
           <Link href="/privacy" className="no-underline hover:text-ink">プライバシーポリシー</Link>
+          <Link href="/contact" className="no-underline hover:text-ink">お問い合わせ</Link>
         </div>
       </div>
     </footer>

@@ -39,7 +39,7 @@ export default async function ContactPage({ searchParams }:
           ))}
         </ol>
         <p className="mt-5 text-[12px] leading-relaxed text-muted">
-          掲載は無料です。本文の転載はせず、要約と出典リンクの形で掲載します。
+          掲載は無料です。本文の転載はせず、要約と出典リンクの形で掲載します（<Link href="/policy" className="border-b border-line no-underline hover:border-ink hover:text-ink">掲載ポリシー</Link>）。
           取材・執筆から依頼したい場合は<Link href="/produce" className="border-b border-line no-underline hover:border-ink hover:text-ink">事例制作代行</Link>もご覧ください。
         </p>
       </section>
