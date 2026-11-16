@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { publishedArticles, getArticle } from "../../../lib/articles";
+import { publishedArticles, getArticle, articleSocial } from "../../../lib/articles";
 import Yougo from "../../../components/articles/Yougo";
 
 /* 「事例でわかる技術用語」の記事ページ。事例セレクション（/articles/[slug]）とは別の連載。
@@ -13,10 +13,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const a = getArticle(decodeURIComponent((await params).slug));
   if (!a || a.format !== "yougo") return {};
-  return {
-    title: `${a.title.join("")}｜${a.series}`,
-    description: a.description,  // 書き下ろしの meta description（120字以内）
-  };
+  const title = `${a.title.join("")}｜${a.series}`;
+  const description = a.description;  // 書き下ろしの meta description（120字以内）
+  return { title, description, ...articleSocial(a, title, description, `/terms/${a.slug}`) };
 }
 
 export default async function TermPage({ params }: { params: Promise<{ slug: string }> }) {

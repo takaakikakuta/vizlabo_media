@@ -47,6 +47,18 @@ const plans = new Table(stack, "PlannerPlans", {
   removalPolicy: RemovalPolicy.DESTROY,
 });
 
+/* 流入元（lib/sources.ts）。UTM つきで来た訪問と、そこからのメルマガ登録を「日 × 流入元 × 着地ページ」で数える。
+   - PK day = JST の日付、SK src = "utm_source|utm_medium|utm_campaign|パス"、属性 visits / signups（数値）
+   - 運営画面（/admin/sources）は日付ごとに Query して集計する
+   - 計測データなので、スタックを消してもテーブルは残す */
+const sources = new Table(stack, "TrafficSources", {
+  tableName: `jirei-mania-sources-${branch}`,
+  partitionKey: { name: "day", type: AttributeType.STRING },
+  sortKey: { name: "src", type: AttributeType.STRING },
+  billingMode: BillingMode.PAY_PER_REQUEST,
+  removalPolicy: RemovalPolicy.RETAIN,
+});
+
 const policy = new ManagedPolicy(stack, "CaseViewsAccess", {
   managedPolicyName: `jirei-mania-views-${branch}-rw`,
   // 説明文は変えない（IAM の管理ポリシーは説明を変えると作り直しになり、固定名のため失敗する）。会員テーブルの権限もここに足している
@@ -64,6 +76,10 @@ const policy = new ManagedPolicy(stack, "CaseViewsAccess", {
       actions: ["dynamodb:GetItem", "dynamodb:PutItem"],
       resources: [plans.tableArn],
     }),
+    new PolicyStatement({
+      actions: ["dynamodb:UpdateItem", "dynamodb:Query"],
+      resources: [sources.tableArn],
+    }),
   ],
 });
 
@@ -73,4 +89,5 @@ if (iamUser) policy.attachToUser(User.fromUserName(stack, "SsrUser", iamUser));
 new CfnOutput(stack, "CaseViewsTableName", { value: table.tableName });
 new CfnOutput(stack, "VendorAccountsTableName", { value: accounts.tableName });
 new CfnOutput(stack, "PlannerPlansTableName", { value: plans.tableName });
+new CfnOutput(stack, "TrafficSourcesTableName", { value: sources.tableName });
 new CfnOutput(stack, "CaseViewsPolicyArn", { value: policy.managedPolicyArn });

@@ -1,9 +1,10 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import { useFormStatus } from "react-dom";
 import { initialSubscribeState } from "../lib/newsletter";
 import { subscribe } from "../app/newsletter/actions";
+import { reportSignup } from "./SourceBeacon";
 
 /* メルマガ購読フォーム。
    variant="inline" … フッターなどに置く1行タイプ
@@ -12,6 +13,9 @@ import { subscribe } from "../app/newsletter/actions";
 export default function SubscribeForm({ variant = "inline", source }:
   { variant?: "inline" | "hero"; source: string }) {
   const [state, action] = useActionState(subscribe, initialSubscribeState);
+
+  // 登録が成立したら、UTM つきで来た訪問（SNS・メルマガ）の成果として数える
+  useEffect(() => { if (state.status === "ok") reportSignup(); }, [state.status]);
 
   if (state.status === "ok") {
     return (

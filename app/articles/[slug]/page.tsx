@@ -1,6 +1,6 @@
 import { notFound, permanentRedirect } from "next/navigation";
 import type { Metadata } from "next";
-import { publishedArticles, getArticle } from "../../../lib/articles";
+import { publishedArticles, getArticle, articleSocial } from "../../../lib/articles";
 import Wakaremichi from "../../../components/articles/Wakaremichi";
 import Genba from "../../../components/articles/Genba";
 import Dounyumae from "../../../components/articles/Dounyumae";
@@ -19,10 +19,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const a = getArticle(decodeURIComponent((await params).slug));
   if (!a) return {};
-  return {
-    title: `${a.series} #${String(a.no).padStart(3, "0")}｜${a.title.join("")}`,
-    description: a.lead.slice(0, 120),
-  };
+  const title = `${a.series} #${String(a.no).padStart(3, "0")}｜${a.title.join("")}`;
+  const description = a.lead.slice(0, 120);
+  return { title, description, ...articleSocial(a, title, description, `/articles/${a.slug}`) };
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
