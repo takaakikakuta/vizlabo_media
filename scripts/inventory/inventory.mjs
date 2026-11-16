@@ -17,7 +17,11 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", ".
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), "utf8"));
 
 const blocked = new Set(read("data/blocked_vendors.json").vendors.map((v) => v.domain));
-const cases = read("data/cases.json").filter((c) => !c.hidden && !c.sample && !blocked.has(c.vendor));
+/* リンクのみ（linkOnly の事例と、data/link_only_vendors.json のベンダーの事例）は候補に含め、一覧で印を付ける。
+   記事に入れると、社名・規模・数字を伏せた紹介と掲載元リンクだけの表示になる */
+const linkOnlyVendors = new Set(read("data/link_only_vendors.json").vendors.map((v) => v.domain));
+const cases = read("data/cases.json").filter((c) => !c.hidden && !c.sample && !blocked.has(c.vendor))
+  .map((c) => (linkOnlyVendors.has(c.vendor) ? { ...c, linkOnly: true } : c));
 const themes = read("scripts/inventory/themes.json").themes;
 
 /* 記事→事例の参照（lib/articles.ts の articleCaseIds と同じ範囲） */
@@ -80,12 +84,12 @@ if (args.includes("--theme")) {
   for (const x of show) {
     const u = (usedIn.get(x.id) ?? []).map((a) => "#" + a.no + (a.hidden ? "(hidden)" : a.draft ? "(draft)" : "")).join(",");
     const res = (x.results ?? []).map((r) => `${r.metric} ${r.value}`).join("／");
-    console.log(`${x.hasNumbers ? "●" : "○"} ${x.id}`);
+    console.log(`${x.hasNumbers ? "●" : "○"} ${x.id}${x.linkOnly ? " 【リンクのみ】" : ""}`);
     console.log(`   ${x.vendor} | ${x.customer?.name ?? "（社名非公開）"} ${x.customer?.size ?? ""} [${x.customer?.industry ?? ""}]${u ? " | 使用: " + u : ""}`);
     console.log(`   課題: ${(x.challengeDetail ?? "").slice(0, 90)}`);
     if (res) console.log(`   成果: ${res.slice(0, 120)}`);
   }
-  console.log(`\n${show.length}件表示（● 数字あり / ○ 数字なし）`);
+  console.log(`\n${show.length}件表示（● 数字あり / ○ 数字なし / 【リンクのみ】は社名・数字を伏せて掲載元リンクだけで載せる事例）`);
   process.exit(0);
 }
 

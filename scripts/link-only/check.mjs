@@ -29,7 +29,9 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
-const cases = JSON.parse(fs.readFileSync(path.join(root, "data/cases.json"), "utf-8"));
+/* リンクのみベンダー（data/link_only_vendors.json）の事例は、linkOnly が付いていなくてもリンクのみとして見る（lib/cases.ts と同じ） */
+const linkOnlyVendors = new Set(JSON.parse(fs.readFileSync(path.join(root, "data/link_only_vendors.json"), "utf-8")).vendors.map((v) => v.domain));
+const cases = JSON.parse(fs.readFileSync(path.join(root, "data/cases.json"), "utf-8")).map((c) => (linkOnlyVendors.has(c.vendor) ? { ...c, linkOnly: true } : c));
 let linkOnly = new Map(cases.filter((c) => c.linkOnly && !c.hidden).map((c) => [c.id, c]));
 
 /* --as-if <記事>：その記事の全項目をリンクのみとみなす（記事の文面の点検用。記念日は見ない） */

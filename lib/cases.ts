@@ -1,6 +1,7 @@
 import type { CaseStudy } from "./types";
 import raw from "../data/cases.json";
 import blocked from "../data/blocked_vendors.json";
+import linkOnlyVendors from "../data/link_only_vendors.json";
 
 /* 事例データの読み込み・絞り込み。今はリポジトリ内 JSON を静的に読む（SEO重視・DB不要）。
    件数が増えたら DB/CMS に差し替えても、この関数群のIFを保てば上位は変えずに済む。 */
@@ -8,9 +9,14 @@ import blocked from "../data/blocked_vendors.json";
 /** 掲載禁止ベンダー（削除依頼を受けた先）。データ更新で事例が再び混入しても、ここで落とす。 */
 const BLOCKED_VENDORS = new Set(blocked.vendors.map((v) => v.domain));
 
+/** リンクのみベンダー（全事例の取り下げ依頼を受け、リンクだけ残す先）。データ更新で新しい事例が入っても、
+    cases.json の linkOnly の付け忘れに関係なく、ここでリンクのみにする。 */
+const LINK_ONLY_VENDORS = new Set(linkOnlyVendors.vendors.map((v) => v.domain));
+
 /** 公開対象の事例。hidden: true（削除依頼を受けた事例。データは残す）と
     禁止ベンダーの事例は、ここで外すので上位のどの関数からも見えない。 */
-const VISIBLE = (raw as CaseStudy[]).filter((c) => !c.hidden && !BLOCKED_VENDORS.has(c.vendor));
+const VISIBLE = (raw as CaseStudy[]).filter((c) => !c.hidden && !BLOCKED_VENDORS.has(c.vendor))
+  .map((c) => (!c.linkOnly && LINK_ONLY_VENDORS.has(c.vendor) ? { ...c, linkOnly: true } : c));
 
 /** linkOnly: true（取り下げ依頼を受け、リンクだけ残す事例）も外す。事例ページ・一覧・検索・サイトマップ・
     記事末尾のサービス紹介・一括問い合わせには出ない。事例セレクションだけが getLinkOnlyCase で拾う。 */
