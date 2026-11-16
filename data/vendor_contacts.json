@@ -1029,8 +1029,8 @@
     {
       "domain": "ccinnovation.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
         "デジタルマーケティングコンサルティング"
@@ -1047,7 +1047,8 @@
           "products": [
             "デジタルマーケティングコンサルティング"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-16"
         }
       ],
       "memo": ""
@@ -1143,9 +1144,9 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#045",
+          "label": "#057",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-12-14",
           "customers": [
             "因幡電機産業"
           ],
@@ -2248,7 +2249,8 @@
         "freee人事労務",
         "freee会計、freee給与、freee税務申告",
         "freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理",
-        "freee"
+        "freee",
+        "freee人事労務、freee会計"
       ],
       "articles": [
         {
@@ -2315,6 +2317,19 @@
           ],
           "products": [
             "freee"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "a9004895-5907-41b9-8925-a3505d5f7722",
+          "label": "#045",
+          "title": "年に一度の仕事ほど、毎年やり方を忘れている。年末調整の手間を減らした事例5選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社ファームシップ"
+          ],
+          "products": [
+            "freee人事労務、freee会計"
           ],
           "notified": false
         }
@@ -2403,8 +2418,8 @@
     {
       "domain": "funaisoken.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
         "経営コンサルティング"
@@ -2421,7 +2436,8 @@
           "products": [
             "経営コンサルティング"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-16"
         }
       ],
       "memo": ""
@@ -2603,9 +2619,9 @@
       "articles": [
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#045",
+          "label": "#057",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-12-14",
           "customers": [
             "ナイス（株）相模原市場・相模原営業所"
           ],
@@ -2910,6 +2926,32 @@
       "memo": ""
     },
     {
+      "domain": "i-abs.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "CYBER XEED"
+      ],
+      "articles": [
+        {
+          "slug": "a9004895-5907-41b9-8925-a3505d5f7722",
+          "label": "#045",
+          "title": "年に一度の仕事ほど、毎年やり方を忘れている。年末調整の手間を減らした事例5選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "オーシャル オーシャン シーピング (Japan) 株式会社"
+          ],
+          "products": [
+            "CYBER XEED"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "i3handy.jp",
       "company": "株式会社学研ロジスティクス（Gakken i3 Handy）",
       "status": "removed",
@@ -2932,12 +2974,12 @@
       ],
       "articles": [
         {
-          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#045",
-          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
-          "publishedAt": "2026-11-27",
+          "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
+          "label": "#048",
+          "title": "最初の返事は、人が書かなくてもよかった。問い合わせの一次対応をAIエージェントに任せた事例5選",
+          "publishedAt": "2026-12-02",
           "customers": [
-            "都市住建株式会社"
+            "HKホーム株式会社"
           ],
           "products": [
             "いえらぶCLOUD"
@@ -2945,12 +2987,12 @@
           "notified": false
         },
         {
-          "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
-          "label": "#048",
-          "title": "最初の返事は、人が書かなくてもよかった。問い合わせの一次対応をAIエージェントに任せた事例5選",
-          "publishedAt": "2026-12-02",
+          "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
+          "label": "#057",
+          "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
+          "publishedAt": "2026-12-14",
           "customers": [
-            "HKホーム株式会社"
+            "都市住建株式会社"
           ],
           "products": [
             "いえらぶCLOUD"
@@ -2963,8 +3005,8 @@
     {
       "domain": "inet.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
         "Next Generation EASY Cloud"
@@ -2981,7 +3023,8 @@
           "products": [
             "Next Generation EASY Cloud"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-16"
         }
       ],
       "memo": ""
@@ -4284,9 +4327,9 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#045",
+          "label": "#057",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-12-14",
           "customers": [
             "株式会社日本テレメッセージ"
           ],
@@ -4591,9 +4634,9 @@
       "articles": [
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#045",
+          "label": "#057",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-12-14",
           "customers": [
             "神奈川県湯河原町役場"
           ],
@@ -4815,7 +4858,8 @@
       "products": [
         "MJSお金の管理、ACELINK NX-Pro",
         "ACELINK NX-Pro",
-        "Galileopt DX"
+        "Galileopt DX",
+        "ACELINK NX-CE"
       ],
       "articles": [
         {
@@ -4861,6 +4905,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "a9004895-5907-41b9-8925-a3505d5f7722",
+          "label": "#045",
+          "title": "年に一度の仕事ほど、毎年やり方を忘れている。年末調整の手間を減らした事例5選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社キムラ電機"
+          ],
+          "products": [
+            "ACELINK NX-CE"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4921,8 +4978,8 @@
     {
       "domain": "mr-m.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
         "カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作"
@@ -4939,7 +4996,8 @@
           "products": [
             "カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-16"
         }
       ],
       "memo": ""
@@ -5048,9 +5106,9 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#045",
+          "label": "#057",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-12-14",
           "customers": [
             "下呂プリン"
           ],
@@ -5302,9 +5360,9 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#045",
+          "label": "#057",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-12-14",
           "customers": [
             "パナソニック保険サービス株式会社"
           ],
@@ -6049,9 +6107,9 @@
       "articles": [
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#045",
+          "label": "#057",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-12-14",
           "customers": [
             "株式会社日本能率協会マネジメントセンター（JMAM）"
           ],
@@ -6466,7 +6524,8 @@
           "products": [
             "インサイドセールス人材派遣・育成サービス"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-16"
         }
       ],
       "memo": ""
@@ -7469,6 +7528,19 @@
           "notified": true
         },
         {
+          "slug": "a9004895-5907-41b9-8925-a3505d5f7722",
+          "label": "#045",
+          "title": "年に一度の仕事ほど、毎年やり方を忘れている。年末調整の手間を減らした事例5選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社ペイロール"
+          ],
+          "products": [
+            "SPOKES"
+          ],
+          "notified": false
+        },
+        {
           "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
           "label": "#050",
           "title": "新人の育て方、それで合っていますか？入社1年目の新人育成を変えた事例5選",
@@ -7820,9 +7892,9 @@
       "articles": [
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#045",
+          "label": "#057",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-12-14",
           "customers": [
             "株式会社MIXI"
           ],
@@ -8431,9 +8503,9 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#045",
+          "label": "#057",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-12-14",
           "customers": [
             "株式会社利久"
           ],
@@ -8645,6 +8717,19 @@
             "COMPANY"
           ],
           "notified": true
+        },
+        {
+          "slug": "a9004895-5907-41b9-8925-a3505d5f7722",
+          "label": "#045",
+          "title": "年に一度の仕事ほど、毎年やり方を忘れている。年末調整の手間を減らした事例5選",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "社会医療法人杏嶺会"
+          ],
+          "products": [
+            "COMPANY"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
