@@ -5,7 +5,7 @@
   "publishedAt": "2026-11-14",
   "sponsored": false,
   "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
-  "no": 10,
+  "no": 3,
   "term": "ローコード・ノーコード",
   "title": [
     "ローコード・ノーコードとは｜",
@@ -55,8 +55,8 @@
   ],
   "relatedTerms": [
     {
-      "label": "ERP・基幹システム（製造業の事例）",
-      "href": "/terms/85809744-6e1f-4e1d-89f7-b9a54b2cecfc"
+      "label": "ERP・基幹システムの事例",
+      "href": "/terms/4a98fa83-62e9-43ea-b70c-33a3dee7d78f"
     },
     {
       "label": "Excel管理の限界の事例",
