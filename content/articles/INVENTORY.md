@@ -195,20 +195,20 @@
 - 株式会社デイリースポーツ案内広告社（miidas.jp）: #26(hidden), #14
 - レンジャーシステムズ株式会社（freee.co.jp）: #3, #52(draft)
 - 株式会社マキノ（fs-farm.co.jp）: #5, #24
-- Fast Fitness Japan（cloudsign.jp）: #6, #3(draft)
+- Fast Fitness Japan（cloudsign.jp）: #6, #3
 - 多摩信用金庫（correos.co.jp）: #8, #1
-- 株式会社Mizkan（uhuru.co.jp）: #12, #6(draft)
+- 株式会社Mizkan（uhuru.co.jp）: #12, #6
 - カルビー株式会社（sunplanning.co.jp）: #16, #2
 - シチズン生活協同組合ほか複数（308-al.co.jp）: #20, #38
 - 日本フルハーフ株式会社 厚木工場（coolex.jp）: #24, #38
 - 株式会社AOKIホールディングス（takachiho-kk.co.jp）: #28, #1
-- 西日本旅客鉄道株式会社（jbs.co.jp）: #31(draft), #3(draft)
-- 株式会社京都紋付（cybozu.co.jp）: #32, #3(draft)
+- 西日本旅客鉄道株式会社（jbs.co.jp）: #31(draft), #3
+- 株式会社京都紋付（cybozu.co.jp）: #32, #3
 - 税理士法人近代経営&Kinkei Farm（mjs.co.jp）: #34, #2
-- 宇部エクシモ株式会社（totec-sangyo.jp）: #38, #3(draft)
-- 株式会社ジーテクト（unifinity.co.jp）: #40, #3(draft)
-- 株式会社利久（unifinity.co.jp）: #57, #3(draft)
-- パナソニック保険サービス株式会社（ntt-tx.co.jp）: #57, #5(draft)
+- 宇部エクシモ株式会社（totec-sangyo.jp）: #38, #3
+- 株式会社ジーテクト（unifinity.co.jp）: #40, #3
+- 株式会社利久（unifinity.co.jp）: #57, #3
+- パナソニック保険サービス株式会社（ntt-tx.co.jp）: #57, #5
 
 ## 提供元の偏り（記事に出た回数が多い提供元）
 
