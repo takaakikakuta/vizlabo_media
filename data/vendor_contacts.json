@@ -1293,9 +1293,23 @@
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "In-Sight 8000"
+        "In-Sight 8000",
+        "コグネックス マシンビジョンシステム"
       ],
       "articles": [
+        {
+          "slug": "c01f3cb4-d1da-459d-9bf3-42ec69858311",
+          "label": "#007",
+          "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
+          "publishedAt": "2026-10-06",
+          "customers": [
+            "BorgWarner"
+          ],
+          "products": [
+            "コグネックス マシンビジョンシステム"
+          ],
+          "notified": false
+        },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
           "label": "#046",
@@ -1375,6 +1389,45 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "correos.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "債権書類管理システム"
+      ],
+      "articles": [
+        {
+          "slug": "93bc5906-d6fa-48cc-b4c8-037c7a4313cb",
+          "label": "#008",
+          "title": "「数える仕事」は、どこまで消せるのか在庫・倉庫のDX事例10選",
+          "publishedAt": "2026-10-07",
+          "customers": [
+            "多摩信用金庫"
+          ],
+          "products": [
+            "債権書類管理システム"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "b4f52a79-43c0-415b-b16c-722631790a48",
+          "label": "用語#001",
+          "title": "RFIDとは｜3つの事例でわかる",
+          "publishedAt": "2026-11-07",
+          "customers": [
+            "多摩信用金庫"
+          ],
+          "products": [
+            "債権書類管理システム"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1624,9 +1677,37 @@
       "notifiedAtEstimated": false,
       "products": [
         "業務用チャットツール、iPhone、iPad mini、モバイル電子カルテ",
-        "業務用チャット、スマートフォン"
+        "業務用チャット、スマートフォン",
+        "RFIDシステム",
+        "iPhone、NTTドコモ「オフィスリンク」、kaleidoTOUCH、AmiVoice、電子カルテ内生成AI機能"
       ],
       "articles": [
+        {
+          "slug": "93bc5906-d6fa-48cc-b4c8-037c7a4313cb",
+          "label": "#008",
+          "title": "「数える仕事」は、どこまで消せるのか在庫・倉庫のDX事例10選",
+          "publishedAt": "2026-10-07",
+          "customers": [
+            "済生会今治病院"
+          ],
+          "products": [
+            "RFIDシステム"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "1c991228-7d1e-4726-86ad-02533320a64e",
+          "label": "#010",
+          "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
+          "publishedAt": "2026-10-09",
+          "customers": [
+            "松山赤十字病院"
+          ],
+          "products": [
+            "iPhone、NTTドコモ「オフィスリンク」、kaleidoTOUCH、AmiVoice、電子カルテ内生成AI機能"
+          ],
+          "notified": false
+        },
         {
           "slug": "30777a4a-2bc5-4ec7-bcfa-c99b60f1cc3e",
           "label": "#035",
@@ -3016,6 +3097,32 @@
       "memo": ""
     },
     {
+      "domain": "imagers.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Dolphin CT30XP"
+      ],
+      "articles": [
+        {
+          "slug": "5778bb95-ebec-4be1-8274-d9e8ddcc6fa6",
+          "label": "#024",
+          "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
+          "publishedAt": "2026-10-29",
+          "customers": [
+            "コーナン商事株式会社"
+          ],
+          "products": [
+            "Dolphin CT30XP"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "inet.co.jp",
       "company": "",
       "status": "no-objection",
@@ -4211,7 +4318,8 @@
           "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
           "publishedAt": "2026-10-06",
           "customers": [
-            "株式会社ニタス"
+            "株式会社ニタス",
+            "株式会社FABRIC TOKYO"
           ],
           "products": [
             "ロジクラ"
@@ -4816,9 +4924,23 @@
       "notifiedAtEstimated": false,
       "products": [
         "e2-movE",
-        "SHIELDEX"
+        "SHIELDEX",
+        "Cosmo Finder"
       ],
       "articles": [
+        {
+          "slug": "c01f3cb4-d1da-459d-9bf3-42ec69858311",
+          "label": "#007",
+          "title": "目視のチェックは、もう限界かもしれない。検査・検品・品質管理のDX事例10選",
+          "publishedAt": "2026-10-06",
+          "customers": [
+            "進工業株式会社"
+          ],
+          "products": [
+            "Cosmo Finder"
+          ],
+          "notified": false
+        },
         {
           "slug": "40b83808-8f84-4bb6-88c7-d2e5b2b4c196",
           "label": "用語#005",
@@ -4996,9 +5118,23 @@
       "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
-        "カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作"
+        "カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作",
+        "ミスターマーケティングのコンサルティング"
       ],
       "articles": [
+        {
+          "slug": "eba09eb7-fde1-48df-96e5-649188a1f0cb",
+          "label": "#017",
+          "title": "自分の客を、自分で見つける。「下請け・待ちの営業」から抜け出した事例10選",
+          "publishedAt": "2026-10-20",
+          "customers": [
+            "三和ロボティクス株式会社"
+          ],
+          "products": [
+            "ミスターマーケティングのコンサルティング"
+          ],
+          "notified": false
+        },
         {
           "slug": "5cf33dbf-21e0-4b8a-884a-28a78e498c92",
           "label": "#042",
@@ -5012,6 +5148,46 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-16"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "mujin.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "通い箱パレタイズロボット、AGV、WCS",
+        "MujinOS搭載通い箱デパレタイズロボット"
+      ],
+      "articles": [
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "トヨタ紡織株式会社"
+          ],
+          "products": [
+            "通い箱パレタイズロボット、AGV、WCS"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "2ee01b44-0fc7-4d07-9c17-a6ec4aa77d0d",
+          "label": "#037",
+          "title": "人手が足りない工場の、ロボット自動化事例5選",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "株式会社松田電機工業所"
+          ],
+          "products": [
+            "MujinOS搭載通い箱デパレタイズロボット"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6548,8 +6724,8 @@
     },
     {
       "domain": "sato.co.jp",
-      "company": "",
-      "status": "no-objection",
+      "company": "株式会社サトー",
+      "status": "removed",
       "notifiedAt": "2026-10-06",
       "notifiedAtEstimated": true,
       "products": [
@@ -6704,7 +6880,9 @@
           "skipped": "以前の事例セレクションで連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
-      "memo": "2026-11-16 事例の掲載は自社運営のWebサイトに限ってお客様から許可を得ているとして、転載の削除依頼（今後も転載は控えてほしいとの要望）。全58事例を linkOnly（リンクのみ）にした"
+      "memo": "2026-11-16 事例の掲載は自社運営のWebサイトに限ってお客様から許可を得ているとして、転載の削除依頼。リンクのみにしたところ、リンクも削除するよう再依頼があり、全58事例を非表示にして掲載禁止ベンダーに登録した",
+      "removedAt": "2026-11-16",
+      "removedReason": "事例の掲載は自社運営のWebサイトに限ってお客様から許可を得ているとして、ベンダーから転載の削除依頼を受けた（今後も転載は控えてほしいとの要望あり）。いったんリンクのみにしたが、お客様から掲載取り止めの要望が出ることもあるとして、事例ページへのリンクも削除するよう再依頼があった。サトーが導入企業として他社サイトに載っている事例は対象外"
     },
     {
       "domain": "satori.marketing",
@@ -7756,9 +7934,23 @@
       "notifiedAt": "2026-11-04",
       "notifiedAtEstimated": true,
       "products": [
-        "TrueVUE hybrid"
+        "TrueVUE hybrid",
+        "RFIDシステム"
       ],
       "articles": [
+        {
+          "slug": "93bc5906-d6fa-48cc-b4c8-037c7a4313cb",
+          "label": "#008",
+          "title": "「数える仕事」は、どこまで消せるのか在庫・倉庫のDX事例10選",
+          "publishedAt": "2026-10-07",
+          "customers": [
+            "佐川グローバルロジスティクス株式会社"
+          ],
+          "products": [
+            "RFIDシステム"
+          ],
+          "notified": false
+        },
         {
           "slug": "2fe1ae2a-bd01-4e5c-8adb-f9b12b59bc4e",
           "label": "#028",
