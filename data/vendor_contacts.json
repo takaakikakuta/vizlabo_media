@@ -166,9 +166,23 @@
       "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
-        "BC-Creation、BC-Detection"
+        "BC-Creation、BC-Detection",
+        "OptiTrack、SKYCOM"
       ],
       "articles": [
+        {
+          "slug": "day-2026-11-21",
+          "label": "記念日11/21",
+          "title": "狭軌鉄道の世界最高速度の達成（記念日ポスト 11/21）",
+          "publishedAt": "2026-11-21",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "OptiTrack、SKYCOM"
+          ],
+          "notified": false
+        },
         {
           "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
           "label": "#043",
@@ -462,6 +476,19 @@
           "notified": true
         },
         {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社CONY JAPAN（リフォーる）"
+          ],
+          "products": [
+            "ANDPAD"
+          ],
+          "notified": false
+        },
+        {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
           "label": "用語#007",
           "title": "ERP・基幹システムとは｜建設・不動産の5つの事例でわかる",
@@ -683,6 +710,48 @@
             "BIZTEL コールセンター / BIZTEL モバイル"
           ],
           "notified": false
+        },
+        {
+          "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
+          "label": "用語#004",
+          "title": "BPOとは｜10の事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "フィブロ製薬株式会社"
+          ],
+          "products": [
+            "BIZTEL コールセンター"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
+          "label": "用語#005",
+          "title": "クラウドPBXとは｜10の事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "ピー・シー・エー株式会社",
+            "株式会社きちり"
+          ],
+          "products": [
+            "BIZTEL コールセンター",
+            "BIZTEL コールセンター / BIZTEL モバイル"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
+          "label": "用語#006",
+          "title": "CTIとは｜10の事例でわかる",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社リンクアカデミー",
+            "三菱鉛筆株式会社"
+          ],
+          "products": [
+            "BIZTEL コールセンター"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -709,6 +778,33 @@
             "BlueBean"
           ],
           "notified": true
+        },
+        {
+          "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
+          "label": "用語#005",
+          "title": "クラウドPBXとは｜10の事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "株式会社チェスコムコールセンターソリューションズ"
+          ],
+          "products": [
+            "BlueBean"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
+          "label": "用語#006",
+          "title": "CTIとは｜10の事例でわかる",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社バトン",
+            "株式会社SIMPLATT"
+          ],
+          "products": [
+            "BlueBean"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -891,20 +987,6 @@
       ],
       "articles": [
         {
-          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
-          "label": "用語#002",
-          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
-          "publishedAt": "2026-11-17",
-          "customers": [
-            "株式会社八天堂"
-          ],
-          "products": [
-            "キャムマックス"
-          ],
-          "notified": false,
-          "held": true
-        },
-        {
           "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
           "label": "用語#003",
           "title": "ERP・基幹システムとは｜製造業の5つの事例でわかる",
@@ -941,6 +1023,22 @@
             "株式会社イーストボーイ"
           ],
           "products": [
+            "クラウドERP キャムマックス"
+          ],
+          "notified": false,
+          "held": true
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社八天堂",
+            "武田レッグウェアー株式会社"
+          ],
+          "products": [
+            "キャムマックス",
             "クラウドERP キャムマックス"
           ],
           "notified": false,
@@ -1002,6 +1100,19 @@
             "Cashmo"
           ],
           "notified": true
+        },
+        {
+          "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
+          "label": "用語#004",
+          "title": "BPOとは｜10の事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "テージー株式会社"
+          ],
+          "products": [
+            "Cashmo"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1282,6 +1393,19 @@
             "クラウドサイン、MAKE for kintone"
           ],
           "notified": true
+        },
+        {
+          "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
+          "label": "用語#003",
+          "title": "ローコード・ノーコードとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "Fast Fitness Japan"
+          ],
+          "products": [
+            "クラウドサイン、MAKE for kintone"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1419,7 +1543,7 @@
         {
           "slug": "b4f52a79-43c0-415b-b16c-722631790a48",
           "label": "用語#001",
-          "title": "RFIDとは｜3つの事例でわかる",
+          "title": "RFIDとは｜5つの事例でわかる",
           "publishedAt": "2026-11-07",
           "customers": [
             "多摩信用金庫"
@@ -1473,6 +1597,32 @@
       "memo": ""
     },
     {
+      "domain": "crotta.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "crotta"
+      ],
+      "articles": [
+        {
+          "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
+          "label": "用語#005",
+          "title": "クラウドPBXとは｜10の事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "株式会社 池の平ホテル&リゾーツ（白樺リゾート池の平ホテル）"
+          ],
+          "products": [
+            "crotta"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "cybersolutions.co.jp",
       "company": "",
       "status": "pending",
@@ -1518,6 +1668,45 @@
           ],
           "products": [
             "kintone"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
+          "label": "用語#003",
+          "title": "ローコード・ノーコードとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "株式会社京都紋付"
+          ],
+          "products": [
+            "kintone"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "daiko-xtech.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Fujitsu テレフォニーソリューション「ソフトウェアPBX」"
+      ],
+      "articles": [
+        {
+          "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
+          "label": "用語#005",
+          "title": "クラウドPBXとは｜10の事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "株式会社シャルレ"
+          ],
+          "products": [
+            "Fujitsu テレフォニーソリューション「ソフトウェアPBX」"
           ],
           "notified": false
         }
@@ -1705,6 +1894,19 @@
           ],
           "products": [
             "iPhone、NTTドコモ「オフィスリンク」、kaleidoTOUCH、AmiVoice、電子カルテ内生成AI機能"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "b4f52a79-43c0-415b-b16c-722631790a48",
+          "label": "用語#001",
+          "title": "RFIDとは｜5つの事例でわかる",
+          "publishedAt": "2026-11-07",
+          "customers": [
+            "済生会今治病院"
+          ],
+          "products": [
+            "RFIDシステム"
           ],
           "notified": false
         },
@@ -1998,7 +2200,9 @@
       "notifiedAtEstimated": false,
       "products": [
         "現場データ活用サービス i-BELT、マシンオートメーションコントローラ",
-        "現場データ活用サービス i-BELT"
+        "現場データ活用サービス i-BELT",
+        "i-BELT",
+        "高速CT型X線自動検査装置"
       ],
       "articles": [
         {
@@ -2014,6 +2218,32 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-10"
+        },
+        {
+          "slug": "day-2026-11-20",
+          "label": "記念日11/20",
+          "title": "組織風土の日（記念日ポスト 11/20）",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "YKK AP株式会社"
+          ],
+          "products": [
+            "i-BELT"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "day-2026-11-21",
+          "label": "記念日11/21",
+          "title": "狭軌鉄道の世界最高速度の達成（記念日ポスト 11/21）",
+          "publishedAt": "2026-11-21",
+          "customers": [
+            "株式会社ホックス"
+          ],
+          "products": [
+            "高速CT型X線自動検査装置"
+          ],
+          "notified": false
         },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
@@ -2070,6 +2300,19 @@
             "Remota、Robota"
           ],
           "notified": true
+        },
+        {
+          "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
+          "label": "用語#004",
+          "title": "BPOとは｜10の事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "味の素フィナンシャル・ソリューションズ株式会社"
+          ],
+          "products": [
+            "Remota"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2108,7 +2351,8 @@
       "notifiedAtEstimated": true,
       "products": [
         "FastHelp、FastAnswer",
-        "FastHelp, FastAnswer"
+        "FastHelp, FastAnswer",
+        "FastHelp"
       ],
       "articles": [
         {
@@ -2125,6 +2369,20 @@
             "FastHelp, FastAnswer"
           ],
           "notified": true
+        },
+        {
+          "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
+          "label": "用語#006",
+          "title": "CTIとは｜10の事例でわかる",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社ジェイエイシーリクルートメント",
+            "セック株式会社"
+          ],
+          "products": [
+            "FastHelp"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2140,6 +2398,32 @@
       "memo": "",
       "removedAt": "2026-11-04",
       "removedReason": "公開から時間が経っていることに加え、自社サイト以外への掲載には都度顧客への確認が必要として、ベンダーから事例紹介と事例ページの掲載取り下げの依頼を受けた（記事の問い合わせ取次ぎ対象からも除外してほしいとの要望あり）"
+    },
+    {
+      "domain": "fcs.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "kintone × モジトリ"
+      ],
+      "articles": [
+        {
+          "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
+          "label": "用語#003",
+          "title": "ローコード・ノーコードとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "ISS山崎機械"
+          ],
+          "products": [
+            "kintone × モジトリ"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
     },
     {
       "domain": "ferret-one.com",
@@ -2296,6 +2580,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-13"
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社DECENCIA"
+          ],
+          "products": [
+            "Vegas"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2910,7 +3207,7 @@
         {
           "slug": "b4f52a79-43c0-415b-b16c-722631790a48",
           "label": "用語#001",
-          "title": "RFIDとは｜3つの事例でわかる",
+          "title": "RFIDとは｜5つの事例でわかる",
           "publishedAt": "2026-11-07",
           "customers": [
             "JCOM株式会社"
@@ -3370,6 +3667,19 @@
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社NTTデータMSE"
+          ],
+          "products": [
+            "intra-mart、Biz∫"
+          ],
+          "notified": false
+        },
+        {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
           "label": "用語#007",
           "title": "ERP・基幹システムとは｜建設・不動産の5つの事例でわかる",
@@ -3382,6 +3692,20 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
+          "label": "用語#003",
+          "title": "ローコード・ノーコードとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "三洋化成工業株式会社",
+            "SOMPOホールディングス株式会社（損害保険ジャパン株式会社）"
+          ],
+          "products": [
+            "intra-mart"
+          ],
+          "notified": false
         },
         {
           "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
@@ -3631,6 +3955,19 @@
           "notifiedAt": "2026-11-13"
         },
         {
+          "slug": "day-2026-11-20",
+          "label": "記念日11/20",
+          "title": "組織風土の日（記念日ポスト 11/20）",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "株式会社デンソー"
+          ],
+          "products": [
+            "Microsoft Power Platform"
+          ],
+          "notified": false
+        },
+        {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
           "label": "用語#007",
           "title": "ERP・基幹システムとは｜建設・不動産の5つの事例でわかる",
@@ -3643,6 +3980,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
+          "label": "用語#003",
+          "title": "ローコード・ノーコードとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "西日本旅客鉄道株式会社"
+          ],
+          "products": [
+            "Microsoft Power Platform"
+          ],
+          "notified": false
         },
         {
           "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
@@ -3759,6 +4109,32 @@
       "memo": ""
     },
     {
+      "domain": "jtekt.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "分割型三列複合円筒ころ軸受"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-18",
+          "label": "記念日11/18",
+          "title": "土木の日（記念日ポスト 11/18）",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "分割型三列複合円筒ころ軸受"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "k-intl.co.jp",
       "company": "",
       "status": "no-objection",
@@ -3807,6 +4183,32 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-11"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "kagoya.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Forguncyプラン"
+      ],
+      "articles": [
+        {
+          "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
+          "label": "用語#003",
+          "title": "ローコード・ノーコードとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "武田病院グループ"
+          ],
+          "products": [
+            "Forguncyプラン"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3953,6 +4355,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-11"
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社オーディオテクニカ"
+          ],
+          "products": [
+            "SAP S/4HANA、SAP on Azure"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4070,6 +4485,19 @@
             "PG-4"
           ],
           "notified": true
+        },
+        {
+          "slug": "day-2026-11-18",
+          "label": "記念日11/18",
+          "title": "土木の日（記念日ポスト 11/18）",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "株式会社南原/株式会社DEPO"
+          ],
+          "products": [
+            "PG-4"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4298,6 +4726,19 @@
             "LiveOn Wearable"
           ],
           "notified": true
+        },
+        {
+          "slug": "day-2026-11-19",
+          "label": "記念日11/19",
+          "title": "世界トイレの日（記念日ポスト 11/19）",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "三重県伊賀市 上下水道部"
+          ],
+          "products": [
+            "LiveOn Wearable"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4865,6 +5306,32 @@
       "memo": ""
     },
     {
+      "domain": "mimasa.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "M.O.S"
+      ],
+      "articles": [
+        {
+          "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
+          "label": "用語#004",
+          "title": "BPOとは｜10の事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "ウシオ電機"
+          ],
+          "products": [
+            "M.O.S"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "minagine.jp",
       "company": "",
       "status": "no-objection",
@@ -4956,6 +5423,19 @@
           "notifiedAt": "2026-11-13"
         },
         {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "株式会社ミヤシゲ"
+          ],
+          "products": [
+            "e2-movE"
+          ],
+          "notified": false
+        },
+        {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
           "label": "用語#007",
           "title": "ERP・基幹システムとは｜建設・不動産の5つの事例でわかる",
@@ -5017,13 +5497,15 @@
         {
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
           "label": "用語#002",
-          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
-          "publishedAt": "2026-11-17",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-23",
           "customers": [
-            "福留ハム株式会社"
+            "福留ハム株式会社",
+            "税理士法人近代経営&Kinkei Farm"
           ],
           "products": [
-            "Galileopt DX"
+            "Galileopt DX",
+            "ACELINK NX-Pro"
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
@@ -5193,15 +5675,55 @@
       "memo": ""
     },
     {
+      "domain": "mutumi.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "むつみの販売、むつみのCTI、むつみの営業日報"
+      ],
+      "articles": [
+        {
+          "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
+          "label": "用語#006",
+          "title": "CTIとは｜10の事例でわかる",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "ホームケルン株式会社"
+          ],
+          "products": [
+            "むつみの販売、むつみのCTI、むつみの営業日報"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "mxmobiling.co.jp",
       "company": "",
       "status": "pending",
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "itsmoBPO キッティング"
+        "itsmoBPO キッティング",
+        "itsmoBPO"
       ],
       "articles": [
+        {
+          "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
+          "label": "用語#004",
+          "title": "BPOとは｜10の事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "株式会社クラフティア"
+          ],
+          "products": [
+            "itsmoBPO"
+          ],
+          "notified": false
+        },
         {
           "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
           "label": "#050",
@@ -5471,6 +5993,35 @@
       "memo": ""
     },
     {
+      "domain": "noc-net.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "給与計算・人事アウトソーシングサービス",
+        "経理アウトソーシングサービス"
+      ],
+      "articles": [
+        {
+          "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
+          "label": "用語#004",
+          "title": "BPOとは｜10の事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "アメアスポーツジャパン株式会社",
+            "株式会社viviON"
+          ],
+          "products": [
+            "給与計算・人事アウトソーシングサービス",
+            "経理アウトソーシングサービス"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "ntt-tx.co.jp",
       "company": "",
       "status": "no-objection",
@@ -5481,7 +6032,8 @@
         "データブリッジ",
         "Yellowfin",
         "ProgOffice Enterprise",
-        "CTBASE/Connect Cloud"
+        "CTBASE/Connect Cloud",
+        "Salesforce、CTBASE/JointPro、DataSpider Servista"
       ],
       "articles": [
         {
@@ -5548,6 +6100,33 @@
             "BizFront/SmartUI"
           ],
           "notified": true
+        },
+        {
+          "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
+          "label": "用語#005",
+          "title": "クラウドPBXとは｜10の事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "パナソニック保険サービス株式会社",
+            "株式会社博報堂コネクト"
+          ],
+          "products": [
+            "CTBASE/Connect Cloud"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
+          "label": "用語#006",
+          "title": "CTIとは｜10の事例でわかる",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "日新火災海上保険株式会社"
+          ],
+          "products": [
+            "Salesforce、CTBASE/JointPro、DataSpider Servista"
+          ],
+          "notified": false
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -5748,7 +6327,8 @@
       "products": [
         "MULTUS",
         "MULTUS B300Ⅱ ARMROID",
-        "MU-8000V-L、Connect Plan、MULTUS B300II"
+        "MU-8000V-L、Connect Plan、MULTUS B300II",
+        "LB3000 EX Ⅱ ARMROID"
       ],
       "articles": [
         {
@@ -5779,6 +6359,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "day-2026-11-17",
+          "label": "記念日11/17",
+          "title": "コンピューターマウス特許取得の日（記念日ポスト 11/17）",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "（リンクのみ）"
+          ],
+          "products": [
+            "LB3000 EX Ⅱ ARMROID"
+          ],
+          "notified": false
         },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
@@ -5883,6 +6476,19 @@
           ],
           "products": [
             "OAM-EXPLORER J、LINK-BT2"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "day-2026-11-19",
+          "label": "記念日11/19",
+          "title": "世界トイレの日（記念日ポスト 11/19）",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "高速道路事業者"
+          ],
+          "products": [
+            "WATER it データマネジメントサービス"
           ],
           "notified": false
         }
@@ -6587,6 +7193,19 @@
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "日建レンタコム株式会社"
+          ],
+          "products": [
+            "Micro Focus Visual COBOL / Micro Focus COBOL Server"
+          ],
+          "notified": false
+        },
+        {
           "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
           "label": "用語#008",
           "title": "ERP・基幹システムとは｜物流・運輸の5つの事例でわかる",
@@ -6677,6 +7296,32 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "saleslab.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "オールインワンBPO型営業支援サービス"
+      ],
+      "articles": [
+        {
+          "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
+          "label": "用語#004",
+          "title": "BPOとは｜10の事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "リコージャパン株式会社"
+          ],
+          "products": [
+            "オールインワンBPO型営業支援サービス"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -7148,6 +7793,32 @@
       "memo": "2026-11-11 社外メディアへの掲載は掲載内容の事前確認（導入企業の確認を含む）が必要との社内ルールにより、キヤノン電子の事例の削除依頼（社内確認のうえ再掲載を依頼する可能性あり）。全事例を linkOnly（リンクのみ）にした"
     },
     {
+      "domain": "scskserviceware.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "SCSKサービスウェア"
+      ],
+      "articles": [
+        {
+          "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
+          "label": "用語#004",
+          "title": "BPOとは｜10の事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "DGファイナンシャルテクノロジー"
+          ],
+          "products": [
+            "SCSKサービスウェア"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "seagreen.co.jp",
       "company": "",
       "status": "no-objection",
@@ -7259,7 +7930,9 @@
       "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
-        "AWS"
+        "AWS",
+        "Amazon Connect",
+        "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package"
       ],
       "articles": [
         {
@@ -7275,6 +7948,32 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-13"
+        },
+        {
+          "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
+          "label": "用語#005",
+          "title": "クラウドPBXとは｜10の事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "千趣会コールセンター株式会社"
+          ],
+          "products": [
+            "Amazon Connect"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
+          "label": "用語#006",
+          "title": "CTIとは｜10の事例でわかる",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社G-gen"
+          ],
+          "products": [
+            "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -7558,20 +8257,6 @@
       ],
       "articles": [
         {
-          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
-          "label": "用語#002",
-          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
-          "publishedAt": "2026-11-17",
-          "customers": [
-            "日研フード株式会社"
-          ],
-          "products": [
-            "SAP S/4HANA"
-          ],
-          "notified": false,
-          "held": true
-        },
-        {
           "slug": "85809744-6e1f-4e1d-89f7-b9a54b2cecfc",
           "label": "用語#003",
           "title": "ERP・基幹システムとは｜製造業の5つの事例でわかる",
@@ -7581,6 +8266,22 @@
           ],
           "products": [
             "SAP S/4HANA、SAP Analytics Cloud"
+          ],
+          "notified": false,
+          "held": true
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "日研フード株式会社",
+            "社会福祉法人 聖隷福祉事業団"
+          ],
+          "products": [
+            "SAP S/4HANA",
+            "SAP ERP"
           ],
           "notified": false,
           "held": true
@@ -7812,6 +8513,46 @@
       "memo": ""
     },
     {
+      "domain": "sunnyltd.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "高粘度用サニタリードラムポンプ+リフター",
+        "ATI 過酸化水素水計"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-17",
+          "label": "記念日11/17",
+          "title": "コンピューターマウス特許取得の日（記念日ポスト 11/17）",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "高粘度用サニタリードラムポンプ+リフター"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "day-2026-11-19",
+          "label": "記念日11/19",
+          "title": "世界トイレの日（記念日ポスト 11/19）",
+          "publishedAt": "2026-11-19",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "ATI 過酸化水素水計"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "sunplanning.co.jp",
       "company": "",
       "status": "no-objection",
@@ -7837,8 +8578,8 @@
         {
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
           "label": "用語#002",
-          "title": "ERP・基幹システムとは｜飲食・食品の5つの事例でわかる",
-          "publishedAt": "2026-11-17",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-23",
           "customers": [
             "カルビー株式会社"
           ],
@@ -7967,7 +8708,7 @@
         {
           "slug": "b4f52a79-43c0-415b-b16c-722631790a48",
           "label": "用語#001",
-          "title": "RFIDとは｜3つの事例でわかる",
+          "title": "RFIDとは｜5つの事例でわかる",
           "publishedAt": "2026-11-07",
           "customers": [
             "株式会社AOKIホールディングス"
@@ -8330,7 +9071,8 @@
         "ASTERIA Warp",
         "Asprova APS",
         "ASTERIA Warp、MotionBoard",
-        "ポストモダンTOTEC ERP"
+        "ポストモダンTOTEC ERP",
+        "Asprova"
       ],
       "articles": [
         {
@@ -8386,6 +9128,32 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "day-2026-11-20",
+          "label": "記念日11/20",
+          "title": "組織風土の日（記念日ポスト 11/20）",
+          "publishedAt": "2026-11-20",
+          "customers": [
+            "芝浦機械株式会社"
+          ],
+          "products": [
+            "Asprova"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
+          "label": "用語#003",
+          "title": "ローコード・ノーコードとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "宇部エクシモ株式会社"
+          ],
+          "products": [
+            "ASTERIA Warp、MotionBoard"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -8666,6 +9434,32 @@
           "notified": true
         },
         {
+          "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
+          "label": "用語#005",
+          "title": "クラウドPBXとは｜10の事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "株式会社ミスミグループ本社"
+          ],
+          "products": [
+            "Amazon Connect"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
+          "label": "用語#006",
+          "title": "CTIとは｜10の事例でわかる",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "株式会社Mizkan"
+          ],
+          "products": [
+            "Agentforce Service"
+          ],
+          "notified": false
+        },
+        {
           "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
           "label": "#047",
           "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
@@ -8717,6 +9511,20 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
+          "label": "用語#003",
+          "title": "ローコード・ノーコードとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "株式会社ジーテクト",
+            "株式会社利久"
+          ],
+          "products": [
+            "Unifinity"
+          ],
+          "notified": false
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -8857,6 +9665,32 @@
       "memo": ""
     },
     {
+      "domain": "voicex.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "VoiceX"
+      ],
+      "articles": [
+        {
+          "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
+          "label": "用語#005",
+          "title": "クラウドPBXとは｜10の事例でわかる",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "不二ラテックス株式会社"
+          ],
+          "products": [
+            "VoiceX"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "vtv.co.jp",
       "company": "",
       "status": "no-objection",
@@ -8878,6 +9712,32 @@
             "VTV Care"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "wanbishi.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "AI-OCR×BPOサービス"
+      ],
+      "articles": [
+        {
+          "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
+          "label": "用語#004",
+          "title": "BPOとは｜10の事例でわかる",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "日本通運株式会社"
+          ],
+          "products": [
+            "AI-OCR×BPOサービス"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -8945,6 +9805,45 @@
           ],
           "products": [
             "COMPANY"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "xeye.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Xeye"
+      ],
+      "articles": [
+        {
+          "slug": "b4f52a79-43c0-415b-b16c-722631790a48",
+          "label": "用語#001",
+          "title": "RFIDとは｜5つの事例でわかる",
+          "publishedAt": "2026-11-07",
+          "customers": [
+            "戸田建設株式会社 成田工場"
+          ],
+          "products": [
+            "Xeye"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "day-2026-11-18",
+          "label": "記念日11/18",
+          "title": "土木の日（記念日ポスト 11/18）",
+          "publishedAt": "2026-11-18",
+          "customers": [
+            "戸田建設株式会社 成田工場"
+          ],
+          "products": [
+            "Xeye"
           ],
           "notified": false
         }

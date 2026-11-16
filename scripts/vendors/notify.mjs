@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /* 記事の提供元（ベンダー）に送る「掲載通知文」を、提供元ごとに1通ずつ作る。
  *
- *   node scripts/vendors/notify.mjs <記事slug|no|用語no>          例: notify.mjs 8 / notify.mjs 用語1 / notify.mjs b4f52a79-…
+ *   node scripts/vendors/notify.mjs <記事slug|no|用語no|記念日の日付>   例: notify.mjs 8 / notify.mjs 用語1 / notify.mjs b4f52a79-… / notify.mjs 11/20
+ *     記念日ポスト（content/days）は日付で指定する（「記念日11/20」「11/20」「2026-11-20」）。公開前に送る事前連絡の文面になる
  *     --short          各社600字以内の短縮版も出す（追加掲載の案内と「SNSで使って大歓迎」の一文を削る）
  *     --no-url         記事URLの行を「記事URLはご返信いただければお送りします。」に替える（フォームがURLを弾く場合用）
  *     --tieup          追加掲載の段落の末尾にタイアップ制作の一文を足す
@@ -24,6 +25,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadDayPosts, resolveDayKey, dayLabel } from "./days.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), "utf8"));
@@ -38,9 +40,13 @@ const exclude = new Set((args[args.indexOf("--exclude") + 1] ?? "").split(",").m
 /* 記事を探す：slug / 事例セレクションの no / 「用語」+no */
 const articles = fs.readdirSync(path.join(ROOT, "content/articles")).filter((f) => f.endsWith(".json")).map((f) => read("content/articles/" + f)).filter((a) => !a.hidden);
 const m = key.match(/^(用語|yougo)#?(\d+)$/i);
-const a = articles.find((x) => x.slug === key)
+let a = articles.find((x) => x.slug === key)
   ?? (m ? articles.find((x) => x.format === "yougo" && String(x.no) === m[2]) : articles.find((x) => x.format !== "yougo" && String(x.no) === key));
-if (!a) { console.error("記事が見つからない:", key); process.exit(1); }
+const todayKey = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+const dayPost = a ? undefined : resolveDayKey(key, loadDayPosts(ROOT), todayKey);
+if (!a && !dayPost) { console.error("記事・記念日ポストが見つからない:", key); process.exit(1); }
+if (dayPost) a = dayPost;
+const isDay = a.format === "day";
 if (a.draft) console.error("※ この記事は draft です（公開前）。");
 
 function caseIds(a) {
@@ -52,12 +58,14 @@ function caseIds(a) {
     case "chizu": return (a.routes ?? []).flatMap((r) => r.caseIds ?? []);
     case "ekkyou": return [a.caseA?.id, a.caseB?.id];
     case "butaiura": return [...(a.walls ?? []).flatMap((w) => w.caseIds ?? []), ...(a.approaches ?? []).flatMap((x) => x.caseIds ?? [])];
+    case "day": return (a.items ?? []).map((x) => x.caseId);
     default: return [];
   }
 }
-const label = (a.format === "yougo" ? "用語" : "") + "#" + String(a.no).padStart(3, "0");
-const title = a.title.join("");
-const url = `${SITE}${a.format === "yougo" ? "/terms/" : "/articles/"}${a.slug}`;
+const label = isDay ? dayLabel(a.date) : (a.format === "yougo" ? "用語" : "") + "#" + String(a.no).padStart(3, "0");
+const title = isDay ? a.name : a.title.join("");
+const url = isDay ? `${SITE}/days/${a.date}` : `${SITE}${a.format === "yougo" ? "/terms/" : "/articles/"}${a.slug}`;
+const dayJa = isDay ? `${Number(a.date.slice(5, 7))}月${Number(a.date.slice(8, 10))}日` : "";
 
 const blocked = new Set(read("data/blocked_vendors.json").vendors.map((v) => v.domain));
 const intro = new Map(read("data/intro_sources.json").sources.map((s) => [s.domain, s.name]));  // 紹介元（提供元ではない）には送らない
@@ -86,9 +94,10 @@ for (const id of new Set(caseIds(a).filter(Boolean))) {
   const c = cases.get(id);
   if (!c) { unknown.push(`${id}（事例データが見つからない）`); continue; }
   if (c.hidden || blocked.has(c.vendor)) continue;  // 削除依頼を受けた先には送らない
+  if (c.linkOnly) { unknown.push(`${c.vendor}：${id} はリンクのみ（取り下げ依頼を受けた事例）なので文面に含めていない`); continue; }
   if (!c.vendor) { unknown.push(`${id}（提供元不明）`); continue; }
   const g = groups.get(c.vendor) ?? { domain: c.vendor, customers: [], anonymous: 0 };
-  if (c.customer?.name && !c.linkOnly && !/非公開/.test(c.customer.name)) {  // 「社名非公開」などは名前として出さない
+  if (c.customer?.name && !/非公開/.test(c.customer.name)) {  // 「社名非公開」などは名前として出さない
     const n = strip(c.customer.name);
     if (!g.customers.includes(n)) g.customers.push(n);
   } else g.anonymous++;
@@ -125,7 +134,7 @@ for (const g of [...groups.values()].sort((x, y) => x.domain.localeCompare(y.dom
 
 /* サイトの API で、未登録の提供元には招待を、登録済みの提供元には会員へのメールを。
    公開前の記事は会員へのメールを送らない（記事が開けないため）。公開後に再実行すると送る */
-const published = !a.draft && (!a.publishedAt || a.publishedAt <= todayJst);
+const published = !isDay && !a.draft && (!a.publishedAt || a.publishedAt <= todayJst);  // 記念日ポストは事前連絡なので、会員へのサイトからのメール（記事の掲載通知）は送らない
 const site = new Map();
 let siteError = "";
 if (opt.offline) siteError = "--offline のため";
@@ -151,7 +160,7 @@ for (const { g, v, cust } of targets) {
   const st = site.get(g.domain);
 
   /* 会員登録済み：文面は作らず、サイトからのメールの結果だけ出す */
-  if (st?.status === "registered") {
+  if (st?.status === "registered" && !isDay) {
     n++;
     out.push(`### ${n}. ${company || g.domain}（会員登録済み・文面なし）`);
     out.push(`会員: ${st.emails.join(", ")}`);
@@ -169,7 +178,7 @@ for (const { g, v, cust } of targets) {
   const inv = st?.status === "invite" ? st : null;
   if (g.anonymous) needCheck.push(`${g.domain}：導入企業名が非公開の事例が${g.anonymous}件（文面では企業名を出さず件数に含めた）`);
 
-  const full = body({ cust, title, url, short: false, noUrl: opt.noUrl, tieup: opt.tieup, inv });
+  const full = (isDay ? dayBody : body)({ cust, title, url, short: false, noUrl: opt.noUrl, tieup: opt.tieup, inv });
   n++;
   out.push(`### ${n}. ${company || g.domain}`);
   out.push(`掲載事例: ${[...g.customers, ...(g.anonymous ? [`導入企業名非公開${g.anonymous > 1 ? `（${g.anonymous}件）` : ""}`] : [])].join(" / ")}`);
@@ -184,7 +193,7 @@ for (const { g, v, cust } of targets) {
   }
   out.push("```", full, "```");
   if (opt.short) {
-    const s = body({ cust, title, url, short: true, noUrl: opt.noUrl, tieup: false, inv });
+    const s = (isDay ? dayBody : body)({ cust, title, url, short: true, noUrl: opt.noUrl, tieup: false, inv });
     out.push(`短縮版（${[...s].length}字）`, "```", s, "```");
   }
   out.push("");
@@ -211,24 +220,48 @@ function body({ cust, title, url, short, noUrl, tieup, inv }) {
   if (!short) {
     lines.push("", "また、貴社の他の導入事例の追加掲載も承っております（無償）。ご興味があればお気軽にご返信ください。" + (tieup ? "比較検討層に届く事例記事のタイアップ制作も承っております。" : ""));
   }
-  /* 会員登録の招待（サイトの API で発行できたときだけ）。URLなし版はコードの入力で案内する */
-  if (inv) {
-    const how = noUrl
-      ? `ご登録は、事例マニアの「ベンダー向けページ」で招待コード「${inv.code}」をご入力ください（${inv.expires}まで有効）。`
-      : `▼ご登録はこちら（${inv.expires}まで有効）\n${inv.url}`;
-    lines.push("", short
-      ? `掲載事例の閲覧数をご覧いただけるページもご用意しています（無料）。\n${how}`
-      : `なお、掲載した貴社の事例がどれだけ読まれ、貴社サイトへ何人を送ったかをご覧いただけるページをご用意しました（直近14日分は無料）。\n${how}`);
-  }
+  pushInvite(lines, { inv, short, noUrl });
   lines.push("", "事例マニア 運営：角田崇明", "https://vizlabo.com", "kakuta@vizlabo.net");
   return lines.join("\n");
 }
 
-const head = [`# ${label} ${title}`, url, `提供元 ${groups.size} 社のうち ${n} 社（${opt.all ? "連絡済みも含む" : "未連絡のみ"}${opt.short ? "・短縮版つき" : ""}${opt.noUrl ? "・URLなし版" : ""}${opt.tieup ? "・タイアップあり" : ""}）`, ""];
+/* 会員登録の招待（サイトの API で発行できたときだけ）。URLなし版はコードの入力で案内する */
+function pushInvite(lines, { inv, short, noUrl }) {
+  if (!inv) return;
+  const how = noUrl
+    ? `ご登録は、事例マニアの「ベンダー向けページ」で招待コード「${inv.code}」をご入力ください（${inv.expires}まで有効）。`
+    : `▼ご登録はこちら（${inv.expires}まで有効）\n${inv.url}`;
+  lines.push("", short
+    ? `掲載事例の閲覧数をご覧いただけるページもご用意しています（無料）。\n${how}`
+    : `なお、掲載した貴社の事例がどれだけ読まれ、貴社サイトへ何人を送ったかをご覧いただけるページをご用意しました（直近14日分は無料）。\n${how}`);
+}
+
+/* 記念日ポストの事前連絡（公開日より前に送る）。紹介の予定日と、それまでに申し出れば差し替える旨を伝える */
+function dayBody({ cust, title, url, short, noUrl, tieup, inv }) {
+  const urlLine = noUrl ? "紹介ページのURLはご返信いただければお送りします。" : `▼紹介ページ（${dayJa}公開予定）\n${url}`;
+  const lines = [
+    "突然のご連絡失礼いたします。BtoB導入事例の検索メディア「事例マニア」を運営しております、角田崇明と申します。",
+    "",
+    `${dayJa}の「${title}」にあわせ、当メディアのSNSと記念日ページで、貴社の${cust}を紹介させていただく予定です。`,
+    urlLine,
+    "",
+    "当メディアは、各社が公開されている導入事例を「課題から探せる」形で整理したデータベース（現在10,000件超を収録）です。掲載は公開情報の要約と出典リンクのみで行い、本文の転載はしておりません。紹介ページから貴社の事例ページへ直接リンクしています。",
+    "",
+    `紹介をお控えになりたい場合や、内容に誤りがございましたら、${dayJa}より前にお知らせいただければ差し替えいたします。公開後も、お申し出があればすぐに修正・削除いたします。`,
+  ];
+  if (!short) {
+    lines.push("", "公開後は、貴社のSNSやお客様へのご案内でご紹介いただくのも大歓迎です。また、貴社の他の導入事例の追加掲載も承っております（無償）。ご興味があればお気軽にご返信ください。" + (tieup ? "比較検討層に届く事例記事のタイアップ制作も承っております。" : ""));
+  }
+  pushInvite(lines, { inv, short, noUrl });
+  lines.push("", "事例マニア 運営：角田崇明", "https://vizlabo.com", "kakuta@vizlabo.net");
+  return lines.join("\n");
+}
+
+const head = [`# ${label} ${title}${isDay ? `（${a.date}公開・事前連絡）` : ""}`, url, `提供元 ${groups.size} 社のうち ${n} 社（${opt.all ? "連絡済みも含む" : "未連絡のみ"}${opt.short ? "・短縮版つき" : ""}${opt.noUrl ? "・URLなし版" : ""}${opt.tieup ? "・タイアップあり" : ""}）`, ""];
 const text = [...head, ...out].join("\n");
 const dir = path.join(ROOT, "content/articles/notify");
 fs.mkdirSync(dir, { recursive: true });
-const file = path.join(dir, `${label.replace("#", "")}.md`);
+const file = path.join(dir, `${isDay ? `記念日${a.date}` : label.replace("#", "")}.md`);
 fs.writeFileSync(file, text + "\n");
 console.log(text);
-console.log(`\n→ ${path.relative(ROOT, file)} に書き出した。送ったら: node scripts/vendors/contacts.mjs --notified ${a.format === "yougo" ? a.slug : a.no} [YYYY-MM-DD]`);
+console.log(`\n→ ${path.relative(ROOT, file)} に書き出した。送ったら: node scripts/vendors/contacts.mjs --notified ${isDay ? label : a.format === "yougo" ? a.slug : a.no} [YYYY-MM-DD]`);
