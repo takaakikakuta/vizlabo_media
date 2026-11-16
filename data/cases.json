@@ -73456,7 +73456,8 @@
       "探し物の時間",
       "繁忙期の人員不足"
     ],
-    "image": "https://www.sato.co.jp/case/img/img_niime_01.jpg"
+    "image": "https://www.sato.co.jp/case/img/img_niime_01.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-royalhost-html",
@@ -73507,7 +73508,8 @@
       "紙の書類処理",
       "ヒューマンエラーの多発"
     ],
-    "image": "https://www.sato.co.jp/case/img/img_royalhost_01.jpg"
+    "image": "https://www.sato.co.jp/case/img/img_royalhost_01.jpg",
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-yaoko-2-html",
@@ -73566,7 +73568,8 @@
       "担当者不在で止まる"
     ],
     "image": "https://www.sato.co.jp/case/img/img_yaoko_2_01.jpg",
-    "video": true
+    "video": true,
+    "linkOnly": true
   },
   {
     "id": "www-satotekko-cfs-jp-voice-voice02",
@@ -179510,7 +179513,8 @@
       "紙の廃棄量",
       "紙の書類処理",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-cox-html",
@@ -179557,7 +179561,8 @@
       "手作業の転記",
       "在庫の把握不足",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-crossplus-html",
@@ -179605,7 +179610,8 @@
       "検査の目視頼み",
       "不良の見逃し",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-emas-seri-nur-html",
@@ -179642,7 +179648,8 @@
       "在庫の把握不足",
       "手作業の転記",
       "残業の常態化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-fcl-components-html",
@@ -179693,7 +179700,8 @@
       "在庫の把握不足",
       "検査の目視頼み",
       "品質のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-hokurikukeiki-kogyo-html",
@@ -179742,7 +179750,8 @@
       "品質のばらつき",
       "不良の見逃し"
     ],
-    "video": true
+    "video": true,
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-hospital-ompu-html",
@@ -179793,7 +179802,8 @@
       "検査の目視頼み",
       "手作業の転記",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-joshin-html",
@@ -179840,7 +179850,8 @@
       "繁忙期の人員不足",
       "在庫の把握不足",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-jsw-me-html",
@@ -179884,7 +179895,8 @@
       "業務の属人化",
       "担当者不在で止まる",
       "探し物の時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-juntendo-html",
@@ -179935,7 +179947,8 @@
       "老朽化したシステム",
       "紙の廃棄量",
       "サーバ運用の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-kaisei-musashi-html",
@@ -179983,7 +179996,8 @@
       "手作業の転記",
       "繁忙期の人員不足",
       "検査の目視頼み"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-kakuichi-html",
@@ -180026,7 +180040,8 @@
       "在庫の把握不足",
       "手作業の転記",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-mitsubishichemical-html",
@@ -180085,7 +180100,8 @@
       "手作業の転記",
       "協力会社との連携",
       "残業の常態化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-monte-pelmo-html",
@@ -180126,7 +180142,8 @@
       "手作業の転記",
       "業務の属人化",
       "手順書がない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-nec-html",
@@ -180177,7 +180194,8 @@
       "検査の目視頼み",
       "品質のばらつき",
       "不良の見逃し"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-nichirinvietnam-html",
@@ -180224,7 +180242,8 @@
       "在庫の把握不足",
       "手作業の転記",
       "ピッキングミスの多発"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-nissei-service-html",
@@ -180266,7 +180285,8 @@
       "業務の属人化",
       "探し物の時間",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-okinawayamato-rocore-html",
@@ -180314,7 +180334,8 @@
       "手作業の転記",
       "経費精算の手間",
       "繁忙期の人員不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-sankogosei-html",
@@ -180362,7 +180383,8 @@
       "工程管理の難しさ",
       "ヒューマンエラーの多発",
       "検査の目視頼み"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-sato-html",
@@ -180417,7 +180439,8 @@
       "在庫の把握不足",
       "手作業の転記",
       "検査の目視頼み"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-sato2-html",
@@ -180464,7 +180487,8 @@
       "紙の書類処理",
       "在庫の把握不足",
       "検査の目視頼み"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-sinko-html",
@@ -180507,7 +180531,8 @@
       "進捗が見えない",
       "現場と本社の往復",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-sundelica-html",
@@ -180571,7 +180596,8 @@
       "手作業の転記",
       "検査の目視頼み",
       "在庫の把握不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-suntory-html",
@@ -180622,7 +180648,8 @@
       "在庫の把握不足",
       "業務の属人化",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-taiyo-sakako-html",
@@ -180673,7 +180700,8 @@
       "検査の目視頼み",
       "不良の見逃し",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-tcoop-html",
@@ -180726,7 +180754,8 @@
       "ミスの再発",
       "繁忙期の人員不足"
     ],
-    "video": true
+    "video": true,
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-tk-toka-html",
@@ -180785,7 +180814,8 @@
       "検査の目視頼み",
       "不良の見逃し",
       "紙の書類処理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-tosakuroshio-html",
@@ -180839,7 +180869,8 @@
       "リード獲得の停滞",
       "認知度の低さ",
       "販路拡大の困難さ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-yaoko-html",
@@ -180891,7 +180922,8 @@
       "紙の書類処理",
       "検査の目視頼み",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-yaskawa-html",
@@ -180938,7 +180970,8 @@
       "手作業の転記",
       "工程管理の難しさ",
       "検査の目視頼み"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-satotekko-cfs-jp-voice-voice01",
@@ -454217,7 +454250,8 @@
       "紙の書類処理",
       "手作業の転記",
       "月末の残ingen業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-ecos-html",
@@ -454260,7 +454294,8 @@
       "手作業の転記",
       "ミスの再発",
       "システムの乱立"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-fujisan-html",
@@ -454311,7 +454346,8 @@
       "業務の属人化",
       "品質のばらつき",
       "引き継ぎ困難"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-fundodai-html",
@@ -454356,7 +454392,8 @@
       "紙の書類処理",
       "情報共有の遅れ",
       "多言語対応の課題"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-ghf-html",
@@ -454399,7 +454436,8 @@
       "紙の書類処理",
       "紙の廃棄量",
       "電気代の増加"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-ishikawatool-html",
@@ -454441,7 +454479,8 @@
       "紙の書類処理",
       "手作業の転記",
       "品質のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-japantranscity-html",
@@ -454480,7 +454519,8 @@
       "不良の見逃し",
       "手作業の転記",
       "工程管理の難しさ"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-joysonsafety-html",
@@ -454527,7 +454567,8 @@
       "納期の遅延",
       "進捗が見えない",
       "在庫の把握不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-kokubu-html",
@@ -454565,7 +454606,8 @@
       "紙の廃棄量",
       "手作業の転記",
       "重労働の作業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-komatsu-html",
@@ -454602,7 +454644,8 @@
       "紙の書類処理",
       "手作業の転記",
       "品質のばらつき"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-marutomo-html",
@@ -454657,7 +454700,8 @@
       "手作業の転記",
       "業務の属人化",
       "紙の書類処理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-mitsuboshi-scon-html",
@@ -454709,7 +454753,8 @@
       "リアルタイムに把握できない",
       "工程管理の難しさ",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-monogatari-html",
@@ -454753,7 +454798,8 @@
       "記録漏れと紛失リスク",
       "進捗が見えない",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-nakadaiholdings-html",
@@ -454796,7 +454842,8 @@
       "探し物の時間",
       "業務の属人化",
       "紙の書類処理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-nidec-html",
@@ -454834,7 +454881,8 @@
       "手作業の転記",
       "ミスの再発",
       "検査の目視頼み"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-nishinoomote-html",
@@ -454876,7 +454924,8 @@
       "地域経済の域外流出",
       "高齢者見守り体制の不在",
       "地域内の情報連携不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-oc-am-html",
@@ -454914,7 +454963,8 @@
       "品質のばらつき",
       "クレームの原因不明",
       "対応履歴が残らない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-pepperlunch-html",
@@ -454955,7 +455005,8 @@
       "多拠点の管理",
       "データが分散",
       "手作業の転記"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-sanrei-foods-html",
@@ -455002,7 +455053,8 @@
       "不良の見逃し",
       "新人教育のばらつき",
       "技能伝承ができない"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-sato3-html",
@@ -455039,7 +455091,8 @@
       "手作業の転記",
       "在庫の把握不足",
       "棚卸し作業の負担"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-sekisui-house-html",
@@ -455076,7 +455129,8 @@
       "紙図面の保管",
       "現場と本社の往復",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-sotetsu-rosen-html",
@@ -455122,7 +455176,8 @@
       "手作業の転記",
       "二重入力",
       "紙の書類処理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-takakibakery-html",
@@ -455170,7 +455225,8 @@
       "二重入力",
       "新人教育のばらつき",
       "検査の目視頼み"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-takeuchi-mfg-html",
@@ -455208,7 +455264,8 @@
       "進捗が見えない",
       "紙の書類処理",
       "在庫の把握不足"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-sato-co-jp-case-ts-alfresa-html",
@@ -455249,7 +455306,8 @@
       "紙の書類処理",
       "検査の目視頼み",
       "業務の属人化"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-satotekko-cfs-jp-voice-voice03",
