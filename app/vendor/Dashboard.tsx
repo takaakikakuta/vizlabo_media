@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { Account, VendorUser } from "../../lib/accounts";
 import { FREE_DAYS } from "../../lib/accounts";
-import { loadViews, jstDay } from "../../lib/views";
+import { loadViews, loadArticleViews, jstDay } from "../../lib/views";
+import { articleHref, articleLabel, articlesFeaturing } from "../../lib/articles";
 import { vendorCases } from "../../lib/cases";
 import TeamInvite from "../../components/vendor/TeamInvite";
 import { vendorLogout } from "./actions";
@@ -11,7 +12,19 @@ type Row = { id: string; title: string; href: string; external: boolean; views: 
 export default async function Dashboard({ user, account, paid, periods, days }: {
   user: VendorUser; account: Account; paid: boolean; periods: number[]; days: number;
 }) {
-  const [rows, cases] = [await loadViews(days, user.domain), vendorCases(user.domain)];
+  const cases = vendorCases(user.domain);
+  const [rows, articleViews] = await Promise.all([loadViews(days, user.domain), loadArticleViews(days)]);
+  // 御社の事例を取り上げた記事（事例セレクション・技術用語）と、その記事自体の閲覧数
+  const titleOf = new Map(cases.map((c) => [c.id, c.customer.name || c.title]));
+  const featured = articlesFeaturing(new Set(cases.map((c) => c.id))).map(({ article, caseIds }) => ({
+    slug: article.slug,
+    label: articleLabel(article),
+    title: article.title.join(""),
+    href: articleHref(article),
+    publishedAt: article.publishedAt,
+    cases: caseIds.map((id) => titleOf.get(id) ?? id),
+    views: articleViews.get(article.slug) ?? 0,
+  }));
 
   const byCase = new Map<string, { views: number; clicks: number }>();
   const byDay = new Map<string, { views: number; clicks: number }>();
@@ -89,7 +102,33 @@ export default async function Dashboard({ user, account, paid, periods, days }: 
         </div>
       )}
 
-      <div className="mt-8 flex items-baseline gap-3 border-b border-ink pb-2">
+      {featured.length > 0 && (
+        <>
+          <div className="mt-8 flex items-baseline gap-3 border-b border-ink pb-2">
+            <h2 className="flex-1 text-[15px] font-bold text-ink">御社の事例を紹介した記事</h2>
+            <span className="w-14 text-right text-[11px] text-muted">閲覧</span>
+          </div>
+          <p className="mt-2 text-[11.5px] leading-relaxed text-muted">
+            事例マニアの編集記事（事例セレクション・事例でわかる技術用語）で御社の事例を取り上げたものです。閲覧は記事ページそのものが読まれた回数です。
+          </p>
+          <ul>
+            {featured.map((f) => (
+              <li key={f.slug} className="border-b border-line2 py-2.5 text-[13px]">
+                <div className="flex items-baseline gap-3">
+                  <span className="w-16 shrink-0 text-[12px] tabular-nums text-muted">{f.label}</span>
+                  <Link href={f.href} className="min-w-0 flex-1 truncate text-body">{f.title}</Link>
+                  <span className="w-14 text-right tabular-nums text-ink">{f.views.toLocaleString()}</span>
+                </div>
+                <p className="mt-0.5 pl-[76px] text-[11.5px] text-muted">
+                  {f.publishedAt} 公開・紹介した事例: {f.cases.join("、")}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      <div className="mt-10 flex items-baseline gap-3 border-b border-ink pb-2">
         <h2 className="flex-1 text-[15px] font-bold text-ink">事例ごと</h2>
         <span className="w-14 text-right text-[11px] text-muted">閲覧</span>
         <span className="w-14 text-right text-[11px] text-muted">送客</span>

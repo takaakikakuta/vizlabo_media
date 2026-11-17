@@ -307,6 +307,20 @@ export function articleCaseIds(a: Article): string[] {
   return [...new Set(ids)].filter(Boolean);
 }
 
+/** 記事の番号ラベル（事例セレクション "#036"、事例でわかる技術用語 "用語#003"） */
+export function articleLabel(a: Pick<Article, "format" | "no">): string {
+  return (a.format === "yougo" ? "用語" : "") + "#" + String(a.no).padStart(3, "0");
+}
+
+/** 公開日を迎えた記事のうち、caseIds のどれかを取り上げた記事（ベンダーのダッシュボード用）。新しい順 */
+export function articlesFeaturing(caseIds: Set<string>): { article: Article; caseIds: string[] }[] {
+  const today = todayJST();
+  return publishedArticles()
+    .filter((a) => a.publishedAt <= today)
+    .map((a) => ({ article: a, caseIds: articleCaseIds(a).filter((id) => caseIds.has(id)) }))
+    .filter((x) => x.caseIds.length > 0);
+}
+
 /** 記事に登場したサービス（製品×提供元で重複を除いたもの）。紹介は掲載データの範囲で行う。 */
 export type ArticleService = {
   name: string;      // サービス名（productが無い事例はベンダードメイン表記）

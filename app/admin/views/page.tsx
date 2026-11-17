@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { cookies } from "next/headers";
 import { ADMIN_COOKIE, isAdminToken } from "../../../lib/admin";
-import { loadViews, viewsConfigured, jstDay } from "../../../lib/views";
+import { loadViews, viewsConfigured, jstDay, ARTICLE_PREFIX, ARTICLE_VENDOR } from "../../../lib/views";
+import { getArticle, articleHref, articleLabel } from "../../../lib/articles";
 import { getCountableCase } from "../../../lib/cases";
 import LoginForm from "../LoginForm";
 import { logout } from "../actions";
@@ -29,7 +30,19 @@ export default async function AdminViewsPage({
     return <LoginForm next={self} error={sp.error === "1"} />;
   }
 
-  const rows = await loadViews(days);
+  const all = await loadViews(days);
+  // 記事ページの閲覧は事例と分けて集計する
+  const rows = all.filter((r) => r.vendor !== ARTICLE_VENDOR);
+  const articleViews = new Map<string, number>();
+  for (const r of all) {
+    if (r.vendor !== ARTICLE_VENDOR) continue;
+    const slug = r.caseId.slice(ARTICLE_PREFIX.length);
+    articleViews.set(slug, (articleViews.get(slug) ?? 0) + r.views);
+  }
+  const articleList = [...articleViews]
+    .map(([slug, views]) => ({ a: getArticle(slug), views }))
+    .filter((x) => x.a)
+    .sort((x, y) => y.views - x.views);
 
   // 集計
   const byCase = new Map<string, { vendor: string; views: number; clicks: number }>();
@@ -136,6 +149,24 @@ export default async function AdminViewsPage({
             </details>
           ))}
         </div>
+      )}
+
+      <div className="mt-10 flex items-baseline gap-3">
+        <h2 className="flex-1 text-[15px] font-bold text-ink">記事別（事例セレクション・技術用語）</h2>
+        <span className="w-16 text-right text-[11px] text-muted">閲覧</span>
+      </div>
+      {articleList.length === 0 ? (
+        <p className="mt-3 text-[13px] text-muted">この期間の記録はまだありません。</p>
+      ) : (
+        <ul className="mt-3 border-t border-line">
+          {articleList.map(({ a, views }) => (
+            <li key={a!.slug} className="flex items-baseline gap-3 border-b border-line2 py-2 text-[13px]">
+              <span className="w-16 shrink-0 text-[12px] tabular-nums text-muted">{articleLabel(a!)}</span>
+              <Link href={articleHref(a!)} className="min-w-0 flex-1 truncate text-body">{a!.title.join("")}</Link>
+              <span className="w-16 text-right font-bold tabular-nums text-ink">{views.toLocaleString()}</span>
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
