@@ -140,7 +140,8 @@
       "notifiedAt": "2026-11-02",
       "notifiedAtEstimated": true,
       "products": [
-        "人材育成研修・OJT支援サービス"
+        "人材育成研修・OJT支援サービス",
+        "育成担当者向けOJT研修"
       ],
       "articles": [
         {
@@ -152,7 +153,8 @@
             "東亜電気工業株式会社"
           ],
           "products": [
-            "人材育成研修・OJT支援サービス"
+            "人材育成研修・OJT支援サービス",
+            "育成担当者向けOJT研修"
           ],
           "notified": true
         }
@@ -208,7 +210,8 @@
       "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
-        "ELESTA PixeeMo"
+        "ELESTA PixeeMo",
+        "ELESTA® PixeeMo®"
       ],
       "articles": [
         {
@@ -221,7 +224,8 @@
             "（リンクのみ）"
           ],
           "products": [
-            "ELESTA PixeeMo"
+            "ELESTA PixeeMo",
+            "ELESTA® PixeeMo®"
           ],
           "notified": true,
           "notifiedAt": "2026-11-16"
@@ -331,7 +335,9 @@
       "products": [
         "TimeP@CK-iC",
         "TimeP@CK",
-        "TimeP@CK Professional"
+        "TimeP@CK Professional",
+        "TimeP@CK-iCⅣ、サッと勤怠",
+        "TimeP@CK-iCⅣ"
       ],
       "articles": [
         {
@@ -343,7 +349,8 @@
             "株式会社梅林"
           ],
           "products": [
-            "TimeP@CK-iC"
+            "TimeP@CK-iC",
+            "TimeP@CK-iCⅣ、サッと勤怠"
           ],
           "notified": true
         },
@@ -358,7 +365,8 @@
           ],
           "products": [
             "TimeP@CK",
-            "TimeP@CK-iC"
+            "TimeP@CK-iC",
+            "TimeP@CK-iCⅣ"
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
@@ -709,7 +717,8 @@
       "products": [
         "BIZTEL コールセンター",
         "BIZTEL コールセンター / BIZTEL モバイル",
-        "BIZTEL shouin"
+        "BIZTEL shouin",
+        "BIZTEL コールセンター アウトソーシングオプション"
       ],
       "articles": [
         {
@@ -736,7 +745,8 @@
             "フィブロ製薬株式会社"
           ],
           "products": [
-            "BIZTEL コールセンター"
+            "BIZTEL コールセンター",
+            "BIZTEL コールセンター アウトソーシングオプション"
           ],
           "notified": false
         },
@@ -1219,7 +1229,8 @@
       "notifiedAt": "2026-10-26",
       "notifiedAtEstimated": true,
       "products": [
-        "大学の時間割編成ソリューション"
+        "大学の時間割編成ソリューション",
+        "大学の時間割"
       ],
       "articles": [
         {
@@ -1231,7 +1242,8 @@
             "創価大学"
           ],
           "products": [
-            "大学の時間割編成ソリューション"
+            "大学の時間割編成ソリューション",
+            "大学の時間割"
           ],
           "notified": true
         }
@@ -1418,7 +1430,10 @@
       "products": [
         "CloudSign by CloudSign",
         "CloudSign",
-        "クラウドサイン、MAKE for kintone"
+        "クラウドサイン、MAKE for kintone",
+        "クラウドサイン カンリ",
+        "クラウドサイン",
+        "クラウドサイン、クラウドサインMAKE for kintone"
       ],
       "articles": [
         {
@@ -1428,11 +1443,13 @@
           "publishedAt": "2026-09-30",
           "customers": [
             "株式会社find",
-            "フィードバイエックス株式会社"
+            "フィードバイエックス株式会社",
+            "ディーブイエックス株式会社"
           ],
           "products": [
             "CloudSign by CloudSign",
-            "CloudSign"
+            "CloudSign",
+            "クラウドサイン カンリ"
           ],
           "notified": true
         },
@@ -1445,7 +1462,8 @@
             "株式会社J.フロントプライムスペース"
           ],
           "products": [
-            "CloudSign"
+            "CloudSign",
+            "クラウドサイン"
           ],
           "notified": true
         },
@@ -1455,10 +1473,12 @@
           "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
           "publishedAt": "2026-10-05",
           "customers": [
-            "Fast Fitness Japan"
+            "Fast Fitness Japan",
+            "株式会社Fast Fitness Japan"
           ],
           "products": [
-            "クラウドサイン、MAKE for kintone"
+            "クラウドサイン、MAKE for kintone",
+            "クラウドサイン、クラウドサインMAKE for kintone"
           ],
           "notified": true
         },
@@ -1468,10 +1488,12 @@
           "title": "ローコード・ノーコードとは｜10の事例でわかる",
           "publishedAt": "2026-11-24",
           "customers": [
-            "Fast Fitness Japan"
+            "Fast Fitness Japan",
+            "株式会社Fast Fitness Japan"
           ],
           "products": [
-            "クラウドサイン、MAKE for kintone"
+            "クラウドサイン、MAKE for kintone",
+            "クラウドサイン、クラウドサインMAKE for kintone"
           ],
           "notified": false
         }
@@ -1747,7 +1769,8 @@
           "title": "生産管理の属人化、どこから解く？納期回答・計画・進捗・実績・品質記録を人から切り離した事例5選",
           "publishedAt": "2026-11-10",
           "customers": [
-            "株式会社京都紋付"
+            "株式会社京都紋付",
+            "株式会社京屋染物店"
           ],
           "products": [
             "kintone"
@@ -1760,7 +1783,8 @@
           "title": "ローコード・ノーコードとは｜10の事例でわかる",
           "publishedAt": "2026-11-24",
           "customers": [
-            "株式会社京都紋付"
+            "株式会社京都紋付",
+            "株式会社京屋染物店"
           ],
           "products": [
             "kintone"
@@ -2173,7 +2197,8 @@
           "title": "地球のためじゃなくても、いい。脱炭素・省エネで数字を出した事例10選",
           "publishedAt": "2026-10-23",
           "customers": [
-            "ベルシステクロスプロペラ株式会社ほま"
+            "ベルシステクロスプロペラ株式会社ほま",
+            "ナカシマプロペラ株式会社"
           ],
           "products": [
             "オンサイト太陽光発電PPAサービス"
@@ -2749,7 +2774,9 @@
         "freee会計、freee給与、freee税務申告",
         "freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理",
         "freee",
-        "freee人事労務、freee会計"
+        "freee人事労務、freee会計",
+        "freee会計、freee人事労務、freeeカード Unlimited",
+        "freee会計、freee人事労務、freee申告"
       ],
       "articles": [
         {
@@ -2762,7 +2789,8 @@
             "（リンクのみ）"
           ],
           "products": [
-            "freee会計、freee人事労務、freeeカー Unlimited、freee-mcp"
+            "freee会計、freee人事労務、freeeカー Unlimited、freee-mcp",
+            "freee会計、freee人事労務、freeeカード Unlimited"
           ],
           "notified": true
         },
@@ -2790,7 +2818,8 @@
             "（リンクのみ）"
           ],
           "products": [
-            "freee会計、freee給与、freee税務申告"
+            "freee会計、freee給与、freee税務申告",
+            "freee会計、freee人事労務、freee申告"
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
@@ -2834,9 +2863,11 @@
             "（リンクのみ）"
           ],
           "products": [
-            "freee人事労務、freee会計"
+            "freee人事労務、freee会計",
+            "freee人事労務"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -3434,8 +3465,8 @@
     {
       "domain": "i-abs.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "CYBER XEED"
@@ -3447,12 +3478,14 @@
           "title": "年に一度の仕事ほど、毎年やり方を忘れている。年末調整の手間を減らした事例5選",
           "publishedAt": "2026-11-27",
           "customers": [
-            "オーシャル オーシャン シーピング (Japan) 株式会社"
+            "オーシャル オーシャン シーピング (Japan) 株式会社",
+            "オリエント オーバーシーズ コンテナ ライン リミテッド 日本支社／オー・オー・シー・エル・ロジスティクス（ジャパン）株"
           ],
           "products": [
             "CYBER XEED"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -4432,7 +4465,8 @@
           "title": "「数える仕事」は、どこまで消せるのか在庫・倉庫のDX事例10選",
           "publishedAt": "2026-10-07",
           "customers": [
-            "サンケン電気株式会社"
+            "サンケン電気株式会社",
+            "サンケン ロジスティクス株式会社"
           ],
           "products": [
             "WMS/400"
@@ -5024,7 +5058,8 @@
       "notifiedAt": "2026-10-05",
       "notifiedAtEstimated": true,
       "products": [
-        "Dr.オフィスLookJOB"
+        "Dr.オフィスLookJOB",
+        "Dr.オフィスLookJOB2"
       ],
       "articles": [
         {
@@ -5033,10 +5068,12 @@
           "title": "そのExcel、まだ現役ですか。中小企業の脱Excel・脱属人管理 事例10選",
           "publishedAt": "2026-10-05",
           "customers": [
-            "株式会社協和プランニング"
+            "株式会社協和プランニング",
+            "株式会社協和設計事務所"
           ],
           "products": [
-            "Dr.オフィスLookJOB"
+            "Dr.オフィスLookJOB",
+            "Dr.オフィスLookJOB2"
           ],
           "notified": true
         }
@@ -5142,7 +5179,8 @@
           "publishedAt": "2026-10-13",
           "customers": [
             "株式会社ジェイアックスコーポレーション",
-            "株式会社アルペン"
+            "株式会社アルペン",
+            "株式会社ジョイックスコーポレーション"
           ],
           "products": [
             "unisize"
@@ -5250,7 +5288,8 @@
       "notifiedAt": "2026-10-09",
       "notifiedAtEstimated": true,
       "products": [
-        "歯科にカルテシステム With"
+        "歯科にカルテシステム With",
+        "歯科カルテシステムWith"
       ],
       "articles": [
         {
@@ -5259,10 +5298,12 @@
           "title": "診療を変えなくても、病院は変えられる。病院・クリニックのDX事例10選",
           "publishedAt": "2026-10-09",
           "customers": [
-            "大阪赤十字病院歯科"
+            "大阪赤十字病院歯科",
+            "大津赤十字病院"
           ],
           "products": [
-            "歯科にカルテシステム With"
+            "歯科にカルテシステム With",
+            "歯科カルテシステムWith"
           ],
           "notified": true
         }
@@ -5730,7 +5771,8 @@
           "products": [
             "ACELINK NX-CE"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
@@ -6169,7 +6211,8 @@
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "ペーパーレス会議システム Support Session"
+        "ペーパーレス会議システム Support Session",
+        "スマートセッション"
       ],
       "articles": [
         {
@@ -6178,10 +6221,12 @@
           "title": "お役所仕事は、職員のせいではなかった。自治体・行政のDX事例10選",
           "publishedAt": "2026-12-01",
           "customers": [
-            "仙台市役所（介護保険課）"
+            "仙台市役所（介護保険課）",
+            "仙台市役所介護保険課"
           ],
           "products": [
-            "ペーパーレス会議システム Support Session"
+            "ペーパーレス会議システム Support Session",
+            "スマートセッション"
           ],
           "notified": false
         }
@@ -6437,7 +6482,8 @@
           "title": "辞める理由は、ひとつではなかった。社員の定着を高めた事例10選",
           "publishedAt": "2026-11-02",
           "customers": [
-            "日本情報通信株式会社"
+            "日本情報通信株式会社",
+            "NTTインテグレーション株式会社"
           ],
           "products": [
             "SAP SuccessFactors"
@@ -6477,10 +6523,12 @@
           "title": "新人の育て方、それで合っていますか？入社1年目の新人育成を変えた事例5選",
           "publishedAt": "2026-12-04",
           "customers": [
-            "商船三instituteロジスティクス株式会社"
+            "商船三instituteロジスティクス株式会社",
+            "商船三井ロジスティクス株式会社"
           ],
           "products": [
-            "OfficeAI社員"
+            "OfficeAI社員",
+            "OfficeBot"
           ],
           "notified": false
         }
@@ -6697,7 +6745,8 @@
           "title": "センサー・カメラ・遠隔操作で、巡回・点検・出張をなくした事例10選",
           "publishedAt": "2026-10-14",
           "customers": [
-            "高速道路事業者"
+            "高速道路事業者",
+            "某高速道路事務所"
           ],
           "products": [
             "WATER it データマネジメントサービス"
@@ -6723,7 +6772,8 @@
           "title": "世界トイレの日（記念日ポスト 11/19）",
           "publishedAt": "2026-11-19",
           "customers": [
-            "高速道路事業者"
+            "高速道路事業者",
+            "某高速道路事務所"
           ],
           "products": [
             "WATER it データマネジメントサービス"
@@ -6876,7 +6926,8 @@
       "notifiedAt": "2026-09-30",
       "notifiedAtEstimated": true,
       "products": [
-        "ClimberCloud、kintone、DX-Suite、WinActor"
+        "ClimberCloud、kintone、DX-Suite、WinActor",
+        "ClimberCloud"
       ],
       "articles": [
         {
@@ -6888,7 +6939,8 @@
             "味の素トレーディング株式会社"
           ],
           "products": [
-            "ClimberCloud、kintone、DX-Suite、WinActor"
+            "ClimberCloud、kintone、DX-Suite、WinActor",
+            "ClimberCloud"
           ],
           "notified": true
         }
@@ -7230,7 +7282,8 @@
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "楽楽給与管理"
+        "楽楽給与管理",
+        "楽楽勤怠"
       ],
       "articles": [
         {
@@ -7239,10 +7292,12 @@
           "title": "給与計算システムとは｜10の事例でわかる",
           "publishedAt": "2026-11-30",
           "customers": [
-            "株式会社文英"
+            "株式会社文英",
+            "株式会社文英堂"
           ],
           "products": [
-            "楽楽給与管理"
+            "楽楽給与管理",
+            "楽楽勤怠"
           ],
           "notified": false
         }
@@ -8091,7 +8146,8 @@
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "SCSKサービスウェア"
+        "SCSKサービスウェア",
+        "BPO"
       ],
       "articles": [
         {
@@ -8100,10 +8156,12 @@
           "title": "BPOとは｜10の事例でわかる",
           "publishedAt": "2026-11-25",
           "customers": [
-            "DGファイナンシャルテクノロジー"
+            "DGファイナンシャルテクノロジー",
+            "株式会社DGフィナンシャルテクノロジー"
           ],
           "products": [
-            "SCSKサービスウェア"
+            "SCSKサービスウェア",
+            "BPO"
           ],
           "notified": false
         }
@@ -8225,7 +8283,9 @@
         "AWS",
         "Amazon Connect",
         "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package",
-        "OneLogin"
+        "OneLogin",
+        "Amazon Connect、Amazon Bedrock",
+        "クラウドコンタクトセンターパッケージ"
       ],
       "articles": [
         {
@@ -8248,10 +8308,12 @@
           "title": "クラウドPBXとは｜10の事例でわかる",
           "publishedAt": "2026-11-26",
           "customers": [
-            "千趣会コールセンター株式会社"
+            "千趣会コールセンター株式会社",
+            "株式会社千趣会、千趣会コールセンター株式会社"
           ],
           "products": [
-            "Amazon Connect"
+            "Amazon Connect",
+            "Amazon Connect、Amazon Bedrock"
           ],
           "notified": false
         },
@@ -8261,10 +8323,12 @@
           "title": "CTIとは｜10の事例でわかる",
           "publishedAt": "2026-11-27",
           "customers": [
-            "株式会社G-gen"
+            "株式会社G-gen",
+            "株式会社G-gen（ジージェン）"
           ],
           "products": [
-            "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package"
+            "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package",
+            "クラウドコンタクトセンターパッケージ"
           ],
           "notified": false
         },
@@ -8274,7 +8338,8 @@
           "title": "SSO・IDaaSとは｜10の事例でわかる",
           "publishedAt": "2026-12-01",
           "customers": [
-            "株式会社ペイメ"
+            "株式会社ペイメ",
+            "株式会社ペイミー"
           ],
           "products": [
             "OneLogin"
@@ -8416,7 +8481,21 @@
       "products": [
         "KeiganALI"
       ],
-      "articles": [],
+      "articles": [
+        {
+          "slug": "0e784788-dda1-4042-9111-e72986f75859",
+          "label": "#033",
+          "title": "運ぶ仕事は、誰かの歩数と待ち時間でできている。搬送の自動化（AGV・AMR）事例10選",
+          "publishedAt": "2026-11-11",
+          "customers": [
+            "株式会社ホリゾン"
+          ],
+          "products": [
+            "KeiganALI"
+          ],
+          "notified": false
+        }
+      ],
       "memo": "2026-11-11 住友重機械工業（佐藤様）より連絡。年内でKeiganALIの取り扱いを終了するため、#033の事例リンクをKeigan社YouTubeへ変更できないかとの依頼。元の事例ページが年内でなくなるため、#033の02をアイシン（mujin.co.jp）に差し替え、shi.co.jpの2事例（ホリゾン・菊屋美粧堂）をhiddenにした。。同日、Keigan社の動画（https://youtu.be/Kw1y5PRC2s8）がホリゾンの改善事例そのものだとして、現状のまま掲載してほしいと再度の連絡。動画の文字起こしで内容を確認し、ホリゾンの事例を出典=動画・提供元=keigan-motor.com に変えて#033の02に戻した（アイシンは外した。菊屋美粧堂は hidden のまま）"
     },
     {
@@ -8800,7 +8879,8 @@
           "products": [
             "SPOKES"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
@@ -9129,7 +9209,8 @@
       "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
-        "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか"
+        "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか",
+        "カートナー、段ボールケーサー"
       ],
       "articles": [
         {
@@ -9138,10 +9219,12 @@
           "title": "人手が足りない工場の、ロボット自動化事例5選",
           "publishedAt": "2026-11-17",
           "customers": [
-            "放鶴製菓株式会社・プロルフェン株式会社"
+            "放鶴製菓株式会社・プロルフェン株式会社",
+            "松尾製菓株式会社/チロルチョコ株式会社"
           ],
           "products": [
-            "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか"
+            "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか",
+            "カートナー、段ボールケーサー"
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
@@ -9152,10 +9235,12 @@
           "title": "長野県りんごの日（記念日ポスト 11/22）",
           "publishedAt": "2026-11-22",
           "customers": [
-            "放鶴製菓株式会社・プロルフェン株式会社"
+            "放鶴製菓株式会社・プロルフェン株式会社",
+            "松尾製菓株式会社/チロルチョコ株式会社"
           ],
           "products": [
-            "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか"
+            "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか",
+            "カートナー、段ボールケーサー"
           ],
           "notified": false
         }
@@ -9267,7 +9352,8 @@
           "title": "長野県りんごの日（記念日ポスト 11/22）",
           "publishedAt": "2026-11-22",
           "customers": [
-            "株式会社銘太郎総本店"
+            "株式会社銘太郎総本店",
+            "株式会社榮太樓總本鋪"
           ],
           "products": [
             "TechSword Vision"
@@ -9776,7 +9862,8 @@
           "title": "高いシステムはいらなかった。道具を替えただけで成果が出た現場10選",
           "publishedAt": "2026-10-29",
           "customers": [
-            "福岡空港のデイケア施設"
+            "福岡空港のデイケア施設",
+            "さかい内科・内視鏡クリニック"
           ],
           "products": [
             "comuoon mobile type ML / comuoon mobile type WSG"
@@ -10102,7 +10189,8 @@
       "notifiedAt": "2026-10-12",
       "notifiedAtEstimated": true,
       "products": [
-        "ホームページ制作・Webコンサルティング"
+        "ホームページ制作・Webコンサルティング",
+        "SEOに強い集団ホームページ制作、WEBコンサルティング"
       ],
       "articles": [
         {
@@ -10114,7 +10202,8 @@
             "秀英会"
           ],
           "products": [
-            "ホームページ制作・Webコンサルティング"
+            "ホームページ制作・Webコンサルティング",
+            "SEOに強い集団ホームページ制作、WEBコンサルティング"
           ],
           "notified": true
         }
@@ -10180,7 +10269,8 @@
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "AI-OCR×BPOサービス"
+        "AI-OCR×BPOサービス",
+        "AI-OCR×BPO"
       ],
       "articles": [
         {
@@ -10192,7 +10282,8 @@
             "日本通運株式会社"
           ],
           "products": [
-            "AI-OCR×BPOサービス"
+            "AI-OCR×BPOサービス",
+            "AI-OCR×BPO"
           ],
           "notified": false
         }
@@ -10264,7 +10355,8 @@
           "products": [
             "COMPANY"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
@@ -10344,7 +10436,8 @@
       "notifiedAt": "2026-10-08",
       "notifiedAtEstimated": true,
       "products": [
-        "ラベル剥離機 PLS-5000"
+        "ラベル剥離機 PLS-5000",
+        "ペットボトルラベル分離機 PLS-5000"
       ],
       "articles": [
         {
@@ -10356,7 +10449,8 @@
             "（非公開）"
           ],
           "products": [
-            "ラベル剥離機 PLS-5000"
+            "ラベル剥離機 PLS-5000",
+            "ペットボトルラベル分離機 PLS-5000"
           ],
           "notified": true
         }
