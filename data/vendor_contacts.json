@@ -1418,7 +1418,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "In-Sight 8000",
-        "コグネックス マシンビジョンシステム"
+        "コグネックス マシンビジョンシステム",
+        "In-Sight 5000シリーズ ビジョンシステム"
       ],
       "articles": [
         {
@@ -1431,6 +1432,19 @@
           ],
           "products": [
             "コグネックス マシンビジョンシステム"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "day-2026-11-21",
+          "label": "記念日11/21",
+          "title": "狭軌鉄道の世界最高速度の達成（記念日ポスト 11/21）",
+          "publishedAt": "2026-11-21",
+          "customers": [
+            "JST"
+          ],
+          "products": [
+            "In-Sight 5000シリーズ ビジョンシステム"
           ],
           "notified": false
         },
@@ -5805,9 +5819,23 @@
       "notifiedAtEstimated": false,
       "products": [
         "パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02",
-        "チューブ充填機 6DTZ-T"
+        "チューブ充填機 6DTZ-T",
+        "チューブ充填機 4DTZK-T"
       ],
       "articles": [
+        {
+          "slug": "day-2026-11-17",
+          "label": "記念日11/17",
+          "title": "コンピューターマウス特許取得の日（記念日ポスト 11/17）",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "株式会社長岡小嶋屋"
+          ],
+          "products": [
+            "チューブ充填機 4DTZK-T"
+          ],
+          "notified": false
+        },
         {
           "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
           "label": "#043",

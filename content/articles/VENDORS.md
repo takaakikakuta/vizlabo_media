@@ -28,7 +28,7 @@
 | ckd.co.jp | パワフルアーム | #057（因幡電機産業） |
 | cloudpack.jp | AWS・Gemini Enterprise Agent Platform | #047（洲本市）<br>#048（KDDIアイレット株式会社） |
 | cloudsign.jp | クラウドサイン、MAKE for kintone | 用語#003（Fast Fitness Japan） |
-| cognex.com | コグネックス マシンビジョンシステム・In-Sight 8000 | #007（BorgWarner）<br>#046（Drache Umwelttechnik GmbH） |
+| cognex.com | コグネックス マシンビジョンシステム・In-Sight 5000シリーズ ビジョンシステム・In-Sight 8000 | #007（BorgWarner）<br>記念日11/21（JST）<br>#046（Drache Umwelttechnik GmbH） |
 | correos.co.jp | 債権書類管理システム | #008（多摩信用金庫）<br>用語#001（多摩信用金庫） |
 | crotta.jp | crotta | 用語#005（株式会社 池の平ホテル&リゾーツ（白樺リゾート池の平ホテル）） |
 | cybersolutions.co.jp | CYBERMAIL Σ ST | #047（茨城県五霞町） |
@@ -74,7 +74,7 @@
 | mujin.co.jp | 通い箱パレタイズロボット、AGV、WCS・MujinOS搭載通い箱デパレタイズロボット | #033（トヨタ紡織株式会社）<br>#037（株式会社松田電機工業所） |
 | mutumi.co.jp | むつみの販売、むつみのCTI、むつみの営業日報 | 用語#006（ホームケルン株式会社） |
 | mxmobiling.co.jp | itsmoBPO・itsmoBPO キッティング | 用語#004（株式会社クラフティア）<br>#050（M社） |
-| naomi.co.jp | チューブ充填機 6DTZ-T | #057（下呂プリン） |
+| naomi.co.jp | チューブ充填機 4DTZK-T・チューブ充填機 6DTZ-T | 記念日11/17（株式会社長岡小嶋屋）<br>#057（下呂プリン） |
 | narikoma-group.co.jp | ナリコマ | #031（特別養護老人ホーム アルテイル宮町） |
 | nhs.co.jp | Paples | 用語#009（キョーリン製薬ホールディングス株式会社） |
 | nicnet.co.jp | ペーパーレス会議システム Support Session | #047（仙台市役所（介護保険課）） |
