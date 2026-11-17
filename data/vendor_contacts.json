@@ -4111,8 +4111,8 @@
     {
       "domain": "jtekt.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-17",
       "notifiedAtEstimated": false,
       "products": [
         "分割型三列複合円筒ころ軸受"
@@ -4129,7 +4129,8 @@
           "products": [
             "分割型三列複合円筒ころ軸受"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-17"
         }
       ],
       "memo": ""
@@ -4497,7 +4498,8 @@
           "products": [
             "PG-4"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-17"
         }
       ],
       "memo": ""
@@ -9814,8 +9816,8 @@
     {
       "domain": "xeye.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-17",
       "notifiedAtEstimated": false,
       "products": [
         "Xeye"
@@ -9845,7 +9847,8 @@
           "products": [
             "Xeye"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-17"
         }
       ],
       "memo": ""

@@ -1,10 +1,10 @@
-# 提供元への掲載連絡の記録（2026-11-16 時点）
+# 提供元への掲載連絡の記録（2026-11-17 時点）
 
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 206 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 60 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 208 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 58 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 12 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -55,7 +55,6 @@
 | intra-mart.jp | intra-mart、Biz∫・intra-mart | 用語#002（株式会社NTTデータMSE）<br>用語#003（三洋化成工業株式会社、SOMPOホールディングス株式会社（損害保険ジャパン株式会社））<br>用語#008（中部国際空港株式会社）<br>用語#009（東レ・メディカル株式会社） |
 | iot-robot.jp | RPA | #034（社会保険労務士法人 アジア経営革新等支援機関） |
 | jbs.co.jp | Microsoft Power Platform・マネージドバックアップ for Microsoft 365 | #031（西日本旅客鉄道株式会社）<br>記念日11/20（株式会社デンソー）<br>用語#003（西日本旅客鉄道株式会社）<br>#044（株式会社八十二銀行） |
-| jtekt.co.jp | 分割型三列複合円筒ころ軸受 | 記念日11/18（（非公開）） |
 | kagoya.jp | Forguncyプラン | 用語#003（武田病院グループ） |
 | keigan-motor.com | KeiganALI | #033（株式会社ホリゾン） |
 | kisnet.co.jp | Forwarder-PRO | 用語#008（西久大運輸倉庫株式会社） |
@@ -63,7 +62,6 @@
 | kobelcosys.co.jp | 現場特化型MESソリューション　実績班長・SAP S/4HANA、SAP on Azure | #032（田中精密工業株式会社）<br>用語#002（株式会社オーディオテクニカ） |
 | koden-kk.co.jp | 自家消費型太陽光発電システム | #044（株式会社右川ゴム製造所） |
 | kouei.co.jp | 運行管理クラウドサービス | #031（ENEOS株式会社） |
-| kurabo.co.jp | PG-4 | 記念日11/18（株式会社南原/株式会社DEPO） |
 | lanscope.jp | LANSCOPE エンドポイントマネージャー オンプレミス版、Aurora Protect、Aurora Focus | #047（四国中央市役所） |
 | liveon.ne.jp | LiveOn Wearable | 記念日11/19（三重県伊賀市 上下水道部） |
 | loglass.jp | Loglass 経営管理 | #049（株式会社GENDA） |
@@ -116,7 +114,7 @@
 | voicex.jp | VoiceX | 用語#005（不二ラテックス株式会社） |
 | wanbishi.co.jp | AI-OCR×BPOサービス | 用語#004（日本通運株式会社） |
 | works-hi.co.jp | COMPANY | #045（社会医療法人杏嶺会） |
-| xeye.jp | Xeye | 用語#001（戸田建設株式会社 成田工場）<br>記念日11/18（戸田建設株式会社 成田工場） |
+| xeye.jp | Xeye | 用語#001（戸田建設株式会社 成田工場） |
 | yk-yamamoto.co.jp | 溶接伝承マスター | #050（川田工業株式会社（四国工場）） |
 | zendesk.co.jp | Zendesk AI・Zendesk AIエージェント | #048（akippa株式会社、Qantas Loyalty） |
 
@@ -201,13 +199,14 @@
 | jes.ne.jp | 2026-11-02（推定） | EAPサービス | #026（イーソル株式会社） |
 | jfe-eng.co.jp | 2026-10-06（推定） | 橋梁配筋のAI自動検査システム | #007（（非公開）） |
 | jmc-edu.co.jp | 2026-10-26（推定） | 校務支援システム、ICT支援員・and.T学校Webライター・しずおかバーチャルスクール・タブレット端末活用支援 | #021（豊島区教育委員会、湖南市教育研究所・湖南市立水戸小学校、静岡県教育委員会）<br>#024（東京学芸大学附属竹早中学校） |
+| jtekt.co.jp | 2026-11-17 | 分割型三列複合円筒ころ軸受 | 記念日11/18（（非公開）） |
 | k-intl.co.jp | 2026-10-30（推定） | みんなの自動翻訳@KI | #025（株式会社メニコン） |
 | kacoms.co.jp | 2026-11-11 | BeSpice DecERP include iDempiere | 用語#003（港製器工業株式会社） |
 | kiscl.co.jp | 2026-10-07（推定） | WMS/400 | #008（サンケン電気株式会社） |
 | kobelcosys.co.jp | 2026-11-11 | SAP S/4HANA、SAP on Azure | 用語#003（株式会社オーディオテクニカ） |
 | koden-kk.co.jp | 2026-10-23（推定） | 自家消費型太陽光発電システム | #020（サン電子工業株式会社） |
 | kpmg.com | 2026-10-26（推定） | UiPath | #021（学校法人 早稲田大学） |
-| kurabo.co.jp | 2026-10-01（推定） | PG-4 | #004（株式会社南原/株式会社DEPO） |
+| kurabo.co.jp | 2026-10-01（推定） | PG-4 | #004（株式会社南原/株式会社DEPO）<br>記念日11/18（株式会社南原/株式会社DEPO） |
 | lafool.jp | 2026-11-02（推定） | ラフールサーベイ | #026（株式会社プログレス） |
 | lancers.jp | 2026-10-20（推定） | ランサーズ | #017（株式会社中村製作所） |
 | lanscope.jp | 2026-10-07（推定） | LANSCOPEエンドポイントマネージャー クラウド版・LANSCOPE セキュリティオーディター・LANSCOPE エンドポイントマネージャー クラウド版・LANSCOPE サイバープロテクション powered by Aurora Protect、LANSCOPE サイバープロテクション powered by A | #008（株式会社カシワバラ・コーポレーション）<br>#018（株式会社MCEAホールディングス、株式会社ユーグレナ）<br>#019（医療法人社団煌の会 山下湘南夢クリニック） |
@@ -324,6 +323,7 @@
 | valueagent.co.jp | 2026-10-12（推定） | ホームページ制作・Webコンサルティング | #011（秀英会） |
 | vtv.co.jp | 2026-10-16（推定） | VTV Care | #015（ソフトウェア・システム開発会社） |
 | works-hi.co.jp | 2026-10-15（推定） | COMPANY 雇用手続管理・COMPANY Web Service・COMPANY | #014（ヤマト運輸株式会社、パーソルホールディングス株式会社、ヤマハ発動機ビズパートナー株式会社）<br>#021（国立大学法人 神戸大学）<br>#030（菅公学生服株式会社） |
+| xeye.jp | 2026-11-17 | Xeye | 記念日11/18（戸田建設株式会社 成田工場） |
 | yamamoto-ss.co.jp | 2026-10-08（推定） | ラベル剥離機 PLS-5000 | #009（（非公開）） |
 | yamanaka-eng.co.jp | 2026-11-10 | PiezoBolt | #040（（非公開）） |
 | yk-yamamoto.co.jp | 2026-11-09 | LIFE SAVER | #038（株式会社岸本建設工業） |
