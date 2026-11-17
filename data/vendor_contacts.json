@@ -330,7 +330,8 @@
       "notifiedAtEstimated": true,
       "products": [
         "TimeP@CK-iC",
-        "TimeP@CK"
+        "TimeP@CK",
+        "TimeP@CK Professional"
       ],
       "articles": [
         {
@@ -361,6 +362,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
+          "label": "用語#007",
+          "title": "給与計算システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "林総事株式会社"
+          ],
+          "products": [
+            "TimeP@CK Professional"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -654,7 +668,8 @@
           "products": [
             "制震補強設計・シミュレーション"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -1119,6 +1134,32 @@
       "memo": ""
     },
     {
+      "domain": "casio-human-sys.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "人事統合システム ADPS"
+      ],
+      "articles": [
+        {
+          "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
+          "label": "用語#007",
+          "title": "給与計算システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "株式会社西松屋チェーン"
+          ],
+          "products": [
+            "人事統合システム ADPS"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "casty-app.jp",
       "company": "",
       "status": "no-objection",
@@ -1298,6 +1339,32 @@
             "Classi"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "cloudgate.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "CloudGate UNO"
+      ],
+      "articles": [
+        {
+          "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
+          "label": "用語#008",
+          "title": "SSO・IDaaSとは｜10の事例でわかる",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "株式会社AOB慧央グループ（現：株式会社アルソア慧央グループ）"
+          ],
+          "products": [
+            "CloudGate UNO"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1803,6 +1870,32 @@
             "Wowza ClearCaster"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "dts.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "SAP SuccessFactors"
+      ],
+      "articles": [
+        {
+          "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
+          "label": "用語#007",
+          "title": "給与計算システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "ホシザキ株式会社"
+          ],
+          "products": [
+            "SAP SuccessFactors"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2512,11 +2605,12 @@
     {
       "domain": "fielding.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
-        "NECデータセンターサービス"
+        "NECデータセンターサービス",
+        "NEC北海道データセンター"
       ],
       "articles": [
         {
@@ -2528,9 +2622,11 @@
             "道路工業株式会社"
           ],
           "products": [
-            "NECデータセンターサービス"
+            "NECデータセンターサービス",
+            "NEC北海道データセンター"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -2840,7 +2936,8 @@
           "title": "これから新規事業を始める会社に、参考にしてほしい事例5選",
           "publishedAt": "2026-11-24",
           "customers": [
-            "ケアシステム株式会社"
+            "ケアシステム株式会社",
+            "（リンクのみ）"
           ],
           "products": [
             "経営コンサルティング"
@@ -3788,7 +3885,8 @@
       "notifiedAt": "2026-11-04",
       "notifiedAtEstimated": true,
       "products": [
-        "EntryMaster"
+        "EntryMaster",
+        "CloudLink"
       ],
       "articles": [
         {
@@ -3803,6 +3901,50 @@
             "EntryMaster"
           ],
           "notified": true
+        },
+        {
+          "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
+          "label": "用語#008",
+          "title": "SSO・IDaaSとは｜10の事例でわかる",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "近畿労働金庫",
+            "株式会社サイゼリヤ"
+          ],
+          "products": [
+            "EntryMaster",
+            "CloudLink"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "itecs.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "PRO_STAFF-α人事・給与",
+        "PRO_STAFF-α"
+      ],
+      "articles": [
+        {
+          "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
+          "label": "用語#007",
+          "title": "給与計算システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "日野市立病院",
+            "社会福祉法人黎明会"
+          ],
+          "products": [
+            "PRO_STAFF-α人事・給与",
+            "PRO_STAFF-α"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3814,9 +3956,23 @@
       "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
-        "MDR"
+        "MDR",
+        "直角・30°分岐コンベア"
       ],
       "articles": [
+        {
+          "slug": "day-2026-11-22",
+          "label": "記念日11/22",
+          "title": "長野県りんごの日（記念日ポスト 11/22）",
+          "publishedAt": "2026-11-22",
+          "customers": [
+            "日本農業協同組合（JA）"
+          ],
+          "products": [
+            "直角・30°分岐コンベア"
+          ],
+          "notified": false
+        },
         {
           "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
           "label": "#043",
@@ -4024,7 +4180,8 @@
           "products": [
             "マネージドバックアップ for Microsoft 365"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -4346,7 +4503,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "現場特化型MESソリューション　実績班長",
-        "SAP S/4HANA、SAP on Azure"
+        "SAP S/4HANA、SAP on Azure",
+        "SAP ERP 産業用機械製造業向けテンプレート: HI-KORT for IM&C"
       ],
       "articles": [
         {
@@ -4388,6 +4546,19 @@
             "SAP S/4HANA、SAP on Azure"
           ],
           "notified": false
+        },
+        {
+          "slug": "day-2026-11-23",
+          "label": "記念日11/23",
+          "title": "ワーク・ライフ・バランスの日（記念日ポスト 11/23）",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "本多通信工業株式会社"
+          ],
+          "products": [
+            "SAP ERP 産業用機械製造業向けテンプレート: HI-KORT for IM&C"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4426,7 +4597,8 @@
           "products": [
             "自家消費型太陽光発電システム"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5497,7 +5669,8 @@
         "MJSお金の管理、ACELINK NX-Pro",
         "ACELINK NX-Pro",
         "Galileopt DX",
-        "ACELINK NX-CE"
+        "ACELINK NX-CE",
+        "ACELINK NX-CE 給与"
       ],
       "articles": [
         {
@@ -5556,6 +5729,19 @@
           ],
           "products": [
             "ACELINK NX-CE"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
+          "label": "用語#007",
+          "title": "給与計算システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "株式会社AZU"
+          ],
+          "products": [
+            "ACELINK NX-CE 給与"
           ],
           "notified": false
         }
@@ -6308,7 +6494,8 @@
       "notifiedAt": "2026-11-13",
       "notifiedAtEstimated": false,
       "products": [
-        "クラウド移行支援サービス・システム開発支援"
+        "クラウド移行支援サービス・システム開発支援",
+        "ThemiStruct-WAM"
       ],
       "articles": [
         {
@@ -6324,6 +6511,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-13"
+        },
+        {
+          "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
+          "label": "用語#008",
+          "title": "SSO・IDaaSとは｜10の事例でわかる",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "大阪ガス株式会社"
+          ],
+          "products": [
+            "ThemiStruct-WAM"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -7024,6 +7224,32 @@
       "memo": ""
     },
     {
+      "domain": "rakus.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "楽楽給与管理"
+      ],
+      "articles": [
+        {
+          "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
+          "label": "用語#007",
+          "title": "給与計算システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "株式会社文英"
+          ],
+          "products": [
+            "楽楽給与管理"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "re-v.co.jp",
       "company": "",
       "status": "no-objection",
@@ -7143,8 +7369,8 @@
     {
       "domain": "rescuenow.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "安否確認サービス"
@@ -7161,7 +7387,8 @@
           "products": [
             "安否確認サービス"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -7308,6 +7535,32 @@
             "BizRobo! mini"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ryobi.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ARCACLAVIS Ways"
+      ],
+      "articles": [
+        {
+          "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
+          "label": "用語#008",
+          "title": "SSO・IDaaSとは｜10の事例でわかる",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "共立蒲原総合病院"
+          ],
+          "products": [
+            "ARCACLAVIS Ways"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -7971,7 +8224,8 @@
       "products": [
         "AWS",
         "Amazon Connect",
-        "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package"
+        "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package",
+        "OneLogin"
       ],
       "articles": [
         {
@@ -8011,6 +8265,19 @@
           ],
           "products": [
             "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
+          "label": "用語#008",
+          "title": "SSO・IDaaSとは｜10の事例でわかる",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "株式会社ペイメ"
+          ],
+          "products": [
+            "OneLogin"
           ],
           "notified": false
         }
@@ -8115,6 +8382,32 @@
       "memo": ""
     },
     {
+      "domain": "sheetmetal.amada.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "LC-VALSTER-6225AJ"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-23",
+          "label": "記念日11/23",
+          "title": "ワーク・ライフ・バランスの日（記念日ポスト 11/23）",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "花村産業株式会社"
+          ],
+          "products": [
+            "LC-VALSTER-6225AJ"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "shi.co.jp",
       "company": "住友重機械工業株式会社",
       "status": "no-objection",
@@ -8125,6 +8418,32 @@
       ],
       "articles": [],
       "memo": "2026-11-11 住友重機械工業（佐藤様）より連絡。年内でKeiganALIの取り扱いを終了するため、#033の事例リンクをKeigan社YouTubeへ変更できないかとの依頼。元の事例ページが年内でなくなるため、#033の02をアイシン（mujin.co.jp）に差し替え、shi.co.jpの2事例（ホリゾン・菊屋美粧堂）をhiddenにした。。同日、Keigan社の動画（https://youtu.be/Kw1y5PRC2s8）がホリゾンの改善事例そのものだとして、現状のまま掲載してほしいと再度の連絡。動画の文字起こしで内容を確認し、ホリゾンの事例を出典=動画・提供元=keigan-motor.com に変えて#033の02に戻した（アイシンは外した。菊屋美粧堂は hidden のまま）"
+    },
+    {
+      "domain": "shinwart.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "S-PAYCIAL with 電子給与明細"
+      ],
+      "articles": [
+        {
+          "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
+          "label": "用語#007",
+          "title": "給与計算システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "ヤマトサカナ株式会社"
+          ],
+          "products": [
+            "S-PAYCIAL with 電子給与明細"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
     },
     {
       "domain": "shippio.io",
@@ -8600,7 +8919,8 @@
       "notifiedAt": "2026-10-19",
       "notifiedAtEstimated": true,
       "products": [
-        "SAP Business Suite powered by SAP HANA"
+        "SAP Business Suite powered by SAP HANA",
+        "UiPath"
       ],
       "articles": [
         {
@@ -8629,6 +8949,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "day-2026-11-23",
+          "label": "記念日11/23",
+          "title": "ワーク・ライフ・バランスの日（記念日ポスト 11/23）",
+          "publishedAt": "2026-11-23",
+          "customers": [
+            "カルビー株式会社"
+          ],
+          "products": [
+            "UiPath"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -8682,6 +9015,32 @@
       "memo": "",
       "removedAt": "2026-10-27",
       "removedReason": "エンドユーザーへの確認と許可を取っていないとして、ベンダーから同社に関わる記事すべての掲載削除の依頼を受けた（事例の掲載は本来、事前に許諾を得てから行うべきとの指摘あり）"
+    },
+    {
+      "domain": "swj.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "LDAP Manager、Microsoft Entra ID"
+      ],
+      "articles": [
+        {
+          "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
+          "label": "用語#008",
+          "title": "SSO・IDaaSとは｜10の事例でわかる",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "SOMPOひまわり生命保険株式会社"
+          ],
+          "products": [
+            "LDAP Manager、Microsoft Entra ID"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
     },
     {
       "domain": "taashie.co.jp",
@@ -8786,6 +9145,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "day-2026-11-22",
+          "label": "記念日11/22",
+          "title": "長野県りんごの日（記念日ポスト 11/22）",
+          "publishedAt": "2026-11-22",
+          "customers": [
+            "放鶴製菓株式会社・プロルフェン株式会社"
+          ],
+          "products": [
+            "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -8880,15 +9252,58 @@
       "memo": ""
     },
     {
+      "domain": "techsword.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "TechSword Vision"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-22",
+          "label": "記念日11/22",
+          "title": "長野県りんごの日（記念日ポスト 11/22）",
+          "publishedAt": "2026-11-22",
+          "customers": [
+            "株式会社銘太郎総本店"
+          ],
+          "products": [
+            "TechSword Vision"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "techvan.co.jp",
       "company": "",
       "status": "pending",
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "ソフトウェアテストサービス"
+        "ソフトウェアテストサービス",
+        "Okta、Extic",
+        "GMOトラスト・ログイン"
       ],
       "articles": [
+        {
+          "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
+          "label": "用語#008",
+          "title": "SSO・IDaaSとは｜10の事例でわかる",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "慶應義塾",
+            "株式会社東北新社"
+          ],
+          "products": [
+            "Okta、Extic",
+            "GMOトラスト・ログイン"
+          ],
+          "notified": false
+        },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
           "label": "#057",
@@ -9793,7 +10208,8 @@
       "products": [
         "COMPANY 雇用手続管理",
         "COMPANY Web Service",
-        "COMPANY"
+        "COMPANY",
+        "COMPANY Identity Management"
       ],
       "articles": [
         {
@@ -9847,6 +10263,34 @@
           ],
           "products": [
             "COMPANY"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
+          "label": "用語#007",
+          "title": "給与計算システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "株式会社ガスワンホールディングス",
+            "国立大学法人 神戸大学"
+          ],
+          "products": [
+            "COMPANY",
+            "COMPANY Web Service"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
+          "label": "用語#008",
+          "title": "SSO・IDaaSとは｜10の事例でわかる",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "三建設備工業株式会社"
+          ],
+          "products": [
+            "COMPANY Identity Management"
           ],
           "notified": false
         }
