@@ -99,6 +99,11 @@ for (const { a } of articles) {
 }
 
 /* 2. 連絡済み／未連絡の切り替え */
+/** その記事でこの提供元の事例がすべてリンクのみ（取り下げ依頼を受けた事例）か。今の cases.json で判定する */
+const linkOnlyOnly = (a, domain) => {
+  const cs = [...new Set(caseIds(a).filter(Boolean))].map((id) => byId.get(id)).filter((c) => c && !c.hidden && c.vendor === domain);
+  return cs.length > 0 && cs.every((c) => c.linkOnly);
+};
 const findArticle = (key) => articles.find(({ a }) => a.slug === key || (a.format !== "day" && String(a.no) === String(key)))?.a
   ?? resolveDayKey(key, articles.filter(({ a }) => a.format === "day").map(({ a }) => a), today);  // 記念日ポストは「記念日11/20」「11/20」「2026-11-20」
 if (flag("--notified")) {
@@ -122,7 +127,11 @@ if (flag("--notified")) {
       continue;
     }
     if (intro.has(v.domain)) continue;  // 紹介元には送らないので連絡済みにしない
-    if (art.held && !only.has(v.domain)) continue;  // 保留中の先は --only で名指ししたときだけ連絡済みにする
+    if (art.held && !only.has(v.domain)) continue;
+    if (linkOnlyOnly(a, v.domain)) {  // リンクのみの事例（取り下げ依頼を受けた事例）だけの先には通知しないので、送ったことにしない
+      if (!art.notified) { art.notified = true; delete art.notifiedAt; art.skipped = "リンクのみの事例（取り下げ依頼を受けた事例）なので通知しない"; }
+      continue;
+    }  // 保留中の先は --only で名指ししたときだけ連絡済みにする
     if (art.notified) continue;  // 連絡済み・省略済みの先はそのまま（記事の残りを後から送ったときに日付や省略を書き換えない）
     art.notified = true; art.notifiedAt = date; delete art.skipped; delete art.held;
     if (v.status === "pending") { v.status = "no-objection"; v.notifiedAt = date; v.notifiedAtEstimated = false; }
