@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 208 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 58 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 209 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 57 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 12 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -63,7 +63,6 @@
 | koden-kk.co.jp | 自家消費型太陽光発電システム | #044（株式会社右川ゴム製造所） |
 | kouei.co.jp | 運行管理クラウドサービス | #031（ENEOS株式会社） |
 | lanscope.jp | LANSCOPE エンドポイントマネージャー オンプレミス版、Aurora Protect、Aurora Focus | #047（四国中央市役所） |
-| liveon.ne.jp | LiveOn Wearable | 記念日11/19（三重県伊賀市 上下水道部） |
 | loglass.jp | Loglass 経営管理 | #049（株式会社GENDA） |
 | lucidsoft.jp | リアルトレース | #057（株式会社日本テレメッセージ） |
 | max-com.co.jp | BPO | #047（（非公開）） |
@@ -83,7 +82,7 @@
 | ntt-tx.co.jp | CTBASE/Connect Cloud・Salesforce、CTBASE/JointPro、DataSpider Servista | 用語#005（パナソニック保険サービス株式会社、株式会社博報堂コネクト）<br>用語#006（日新火災海上保険株式会社）<br>#057（パナソニック保険サービス株式会社） |
 | officebot.jp | OfficeAI社員 | #050（商船三instituteロジスティクス株式会社） |
 | okuma.co.jp（オークマ株式会社） | MULTUS・LB3000 EX Ⅱ ARMROID・MU-8000V-L、Connect Plan、MULTUS B300II | #031（株式会社しらかわ、（リンクのみ））<br>記念日11/17（（リンクのみ））<br>#046（（リンクのみ）） |
-| optex.co.jp | OAM-EXPLORER J、LINK-BT2・WATER it データマネジメントサービス | #033（（非公開））<br>記念日11/19（高速道路事業者） |
+| optex.co.jp | OAM-EXPLORER J、LINK-BT2 | #033（（非公開）） |
 | pa-consul.co.jp | タレントパレット | #041（株式会社松屋フーズホールディングス） |
 | quest.co.jp | WinActor | #057（株式会社日本能率協会マネジメントセンター（JMAM）） |
 | rescuenow.co.jp | 安否確認サービス | #044（株式会社片山化学工業研究所） |
@@ -102,7 +101,7 @@
 | sony.jp | デジタルペーパー | #049（立命館大学 経済学部） |
 | spokes-online.jp | SPOKES | #045（株式会社ペイロール）<br>#050（株式会社コアコンセプトテクノロジー） |
 | subline.jp | SUBLINE | #047（常滑市役所 国勢調査事務局（企画部企画課内）） |
-| sunnyltd.co.jp | 高粘度用サニタリードラムポンプ+リフター・ATI 過酸化水素水計 | 記念日11/17（（非公開））<br>記念日11/19（（非公開）） |
+| sunnyltd.co.jp | 高粘度用サニタリードラムポンプ+リフター | 記念日11/17（（非公開）） |
 | supportas.co.jp | FileMaker | #049（農事組合法人ECOマッシュ） |
 | takachiho-kk.co.jp | RFIDシステム | #008（佐川グローバルロジスティクス株式会社） |
 | teachme.jp | Teachme Check・Teachme Biz | #046（三島食品株式会社）<br>#050（ハタ コンサルタント株式会社） |
@@ -212,7 +211,7 @@
 | lanscope.jp | 2026-10-07（推定） | LANSCOPEエンドポイントマネージャー クラウド版・LANSCOPE セキュリティオーディター・LANSCOPE エンドポイントマネージャー クラウド版・LANSCOPE サイバープロテクション powered by Aurora Protect、LANSCOPE サイバープロテクション powered by A | #008（株式会社カシワバラ・コーポレーション）<br>#018（株式会社MCEAホールディングス、株式会社ユーグレナ）<br>#019（医療法人社団煌の会 山下湘南夢クリニック） |
 | lattice.co.jp | 2026-11-09 | XVL | #040（株式会社東海理化） |
 | levii.co.jp | 2026-10-27（推定） | ペジテの自転車 | #022（東日本高速道路株式会社（NEXCO東日本）） |
-| liveon.ne.jp | 2026-10-27（推定） | LiveOn Wearable、LiveOn RecX・LiveOn Wearable | #022（株式会社大西熱学）<br>#024（三重県伊賀市 上下水道部） |
+| liveon.ne.jp | 2026-10-27（推定） | LiveOn Wearable、LiveOn RecX・LiveOn Wearable | #022（株式会社大西熱学）<br>#024（三重県伊賀市 上下水道部）<br>記念日11/19（三重県伊賀市 上下水道部） |
 | logikura.jp | 2026-10-06（推定） | ロジクラ | #007（株式会社ニタス、株式会社FABRIC TOKYO）<br>#027（株式会社暁の星工芸） |
 | loglass.jp | 2026-11-13 | Loglass 経営管理 | 用語#007（中央日本土地建物株式会社） |
 | lookjob.jp | 2026-10-05（推定） | Dr.オフィスLookJOB | #006（株式会社協和プランニング） |
@@ -251,7 +250,7 @@
 | okuma.co.jp（オークマ株式会社） | 2026-11-09 | MULTUS B300Ⅱ ARMROID | #037（株式会社キンレイ、（リンクのみ）） |
 | onecareer.jp | 2026-10-12（推定） | ワンキャリア | #011（三信住建株式会社、株式会社トヨタ車体研究所） |
 | onehr.jp | 2026-10-05（推定） | One人事[タレントマネジメント] | #006（株式会社ハイテックシステムズ） |
-| optex.co.jp | 2026-10-14（推定） | WATER it データマネジメントサービス | #013（高速道路事業者） |
+| optex.co.jp | 2026-10-14（推定） | WATER it データマネジメントサービス | #013（高速道路事業者）<br>記念日11/19（高速道路事業者） |
 | orikane.co.jp | 2026-11-16 | 型替え不要の蓋かぶせ機、L型包装機 | #043（（非公開）） |
 | orwak.co.jp | 2026-10-23（推定） | 小型圧縮減容機5010E | #020（株式会社キトー） |
 | otasukeman.jp | 2026-10-08（推定） | お助けマン | #009（株式会社ジャックス） |
@@ -295,6 +294,7 @@
 | soukei-lab.jp | 2026-11-09 | 経理アウトソーシング | #034（医療法人社団 さんごの海） |
 | spokes-online.jp | 2026-10-30（推定） | SPOKES | #025（茨城県土浦市） |
 | staple.jp | 2026-11-05（推定） | Staple | #029（株式会社BANQ） |
+| sunnyltd.co.jp | 2026-11-17 | ATI 過酸化水素水計 | 記念日11/19（（非公開）） |
 | sunplanning.co.jp | 2026-10-19（推定） | SAP Business Suite powered by SAP HANA | #016（カルビー株式会社）<br>用語#002（カルビー株式会社） |
 | taashie.co.jp | 2026-10-06（推定） | WinActor | #007（五の橋レディスクリニック） |
 | takachiho-kk.co.jp | 2026-11-04（推定） | TrueVUE hybrid | #028（株式会社AOKIホールディングス）<br>用語#001（株式会社AOKIホールディングス） |

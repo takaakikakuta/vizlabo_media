@@ -4740,7 +4740,8 @@
           "products": [
             "LiveOn Wearable"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6492,7 +6493,8 @@
           "products": [
             "WATER it データマネジメントサービス"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -8517,8 +8519,8 @@
     {
       "domain": "sunnyltd.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-17",
       "notifiedAtEstimated": false,
       "products": [
         "高粘度用サニタリードラムポンプ+リフター",
@@ -8549,7 +8551,8 @@
           "products": [
             "ATI 過酸化水素水計"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-17"
         }
       ],
       "memo": ""
