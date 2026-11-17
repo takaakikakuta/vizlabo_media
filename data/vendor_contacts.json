@@ -2230,7 +2230,8 @@
           "products": [
             "i-BELT"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "day-2026-11-21",
@@ -3965,7 +3966,8 @@
           "products": [
             "Microsoft Power Platform"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
@@ -9147,7 +9149,8 @@
           "products": [
             "Asprova"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
