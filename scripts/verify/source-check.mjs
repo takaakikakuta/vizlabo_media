@@ -9,6 +9,7 @@
  *   node scripts/verify/source-check.mjs --input <ファイル>   → cases.json と同じ形の別ファイル（取り込み前の関門。不一致が1件でもあれば終了コード 1）
  *   --refresh        キャッシュを使わず取得し直す
  *   --retry-failed   前回取得に失敗したページだけ取得し直す
+ *   --fetch-excluded 対象外（社名が空・匿名など）の事例もページを取得してキャッシュに入れる（判定は対象外のまま。抽出し直す前の準備用）
  *   --out <ファイル>  CSV の出力先（既定: .source-check/result.csv。--input のときは result-<ファイル名>.csv）
  *   --saved <dir>    手で保存したページ（.html / .mhtml）の置き場所。既定: ../jirei_collector/manual_inbox/done
  *                    ボット拒否で取得できないサイトは、ここにある保存ページを取得済みとして使う（相手のサーバーには取りに行かない）
@@ -41,6 +42,7 @@ const flag = (k) => argv.includes(k);
 const INPUT = arg("--input");
 const REFRESH = flag("--refresh");
 const RETRY_FAILED = flag("--retry-failed");
+const FETCH_EXCLUDED = flag("--fetch-excluded");
 const LIMIT = arg("--limit") ? Number(arg("--limit")) : 0;
 const VENDOR = arg("--vendor");
 const IDS = arg("--ids") ? new Set(arg("--ids").split(",").map((s) => s.trim()).filter(Boolean)) : null;
@@ -489,7 +491,7 @@ console.log(`照合 ${targets.length} 件（掲載禁止の提供元 ${nBlocked}
 const byHost = new Map();
 const results = new Map();
 for (const c of targets) {
-  if (excludedReason(c.customer?.name)) { results.set(c.id, judge(c, { ok: false })); continue; }
+  if (excludedReason(c.customer?.name) && !FETCH_EXCLUDED) { results.set(c.id, judge(c, { ok: false })); continue; }
   let host = "";
   try { host = new URL(c.sourceUrl).host.toLowerCase(); } catch { results.set(c.id, { verdict: "取得失敗", reason: "sourceUrl が不正・空", nums: "", cands: "" }); continue; }
   if (!byHost.has(host)) byHost.set(host, []);
