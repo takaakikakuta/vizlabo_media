@@ -181,7 +181,8 @@
           "products": [
             "OptiTrack、SKYCOM"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
@@ -1413,12 +1414,13 @@
     {
       "domain": "cognex.com",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-17",
       "notifiedAtEstimated": false,
       "products": [
         "In-Sight 8000",
-        "コグネックス マシンビジョンシステム"
+        "コグネックス マシンビジョンシステム",
+        "In-Sight 5000シリーズ ビジョンシステム"
       ],
       "articles": [
         {
@@ -1433,6 +1435,20 @@
             "コグネックス マシンビジョンシステム"
           ],
           "notified": false
+        },
+        {
+          "slug": "day-2026-11-21",
+          "label": "記念日11/21",
+          "title": "狭軌鉄道の世界最高速度の達成（記念日ポスト 11/21）",
+          "publishedAt": "2026-11-21",
+          "customers": [
+            "JST"
+          ],
+          "products": [
+            "In-Sight 5000シリーズ ビジョンシステム"
+          ],
+          "notified": true,
+          "notifiedAt": "2026-11-17"
         },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
@@ -2230,7 +2246,8 @@
           "products": [
             "i-BELT"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "day-2026-11-21",
@@ -2243,7 +2260,8 @@
           "products": [
             "高速CT型X線自動検査装置"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
@@ -3965,7 +3983,8 @@
           "products": [
             "Microsoft Power Platform"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
@@ -4111,8 +4130,8 @@
     {
       "domain": "jtekt.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-17",
       "notifiedAtEstimated": false,
       "products": [
         "分割型三列複合円筒ころ軸受"
@@ -4129,7 +4148,8 @@
           "products": [
             "分割型三列複合円筒ころ軸受"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-17"
         }
       ],
       "memo": ""
@@ -4497,7 +4517,8 @@
           "products": [
             "PG-4"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-17"
         }
       ],
       "memo": ""
@@ -4738,7 +4759,8 @@
           "products": [
             "LiveOn Wearable"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5800,9 +5822,24 @@
       "notifiedAtEstimated": false,
       "products": [
         "パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02",
-        "チューブ充填機 6DTZ-T"
+        "チューブ充填機 6DTZ-T",
+        "チューブ充填機 4DTZK-T"
       ],
       "articles": [
+        {
+          "slug": "day-2026-11-17",
+          "label": "記念日11/17",
+          "title": "コンピューターマウス特許取得の日（記念日ポスト 11/17）",
+          "publishedAt": "2026-11-17",
+          "customers": [
+            "株式会社長岡小嶋屋"
+          ],
+          "products": [
+            "チューブ充填機 4DTZK-T"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
         {
           "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
           "label": "#043",
@@ -6371,7 +6408,8 @@
           "products": [
             "LB3000 EX Ⅱ ARMROID"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
@@ -6490,7 +6528,8 @@
           "products": [
             "WATER it データマネジメントサービス"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -8515,8 +8554,8 @@
     {
       "domain": "sunnyltd.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-17",
       "notifiedAtEstimated": false,
       "products": [
         "高粘度用サニタリードラムポンプ+リフター",
@@ -8534,7 +8573,8 @@
           "products": [
             "高粘度用サニタリードラムポンプ+リフター"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "day-2026-11-19",
@@ -8547,7 +8587,8 @@
           "products": [
             "ATI 過酸化水素水計"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-17"
         }
       ],
       "memo": ""
@@ -9140,7 +9181,8 @@
           "products": [
             "Asprova"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
@@ -9814,8 +9856,8 @@
     {
       "domain": "xeye.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-17",
       "notifiedAtEstimated": false,
       "products": [
         "Xeye"
@@ -9845,7 +9887,8 @@
           "products": [
             "Xeye"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-17"
         }
       ],
       "memo": ""
