@@ -39,7 +39,7 @@
 | fastaccounting.co.jp | Remota | 用語#004（味の素フィナンシャル・ソリューションズ株式会社） |
 | fastseries.jp | FastHelp | 用語#006（株式会社ジェイエイシーリクルートメント、セック株式会社） |
 | fcs.co.jp | kintone × モジトリ | 用語#003（ISS山崎機械） |
-| fielding.co.jp | NECデータセンターサービス | #044（鉄道工業株式会社） |
+| fielding.co.jp | NECデータセンターサービス | #044（道路工業株式会社） |
 | forbis.jp | Vegas | 用語#002（株式会社DECENCIA） |
 | freee.co.jp | freee・freee人事労務、freee会計 | 用語#008（株式会社ダイナミック物流、（リンクのみ））<br>#045（株式会社ファームシップ、（リンクのみ）） |
 | geekplus.jp | 搬送型AMR・Geek+ Pシリーズ ピッキングロボット・ピッキングロボット | #033（トヨタ自動車、Walmart、Jointown製薬グループ） |

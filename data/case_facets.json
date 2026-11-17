@@ -5836,7 +5836,7 @@
   "www-fielding-co-jp-jirei-152-html": {"dept": ["logistics"], "effects": ["quality"], "size": "unknown", "sizeBasis": "none"},
   "www-fielding-co-jp-jirei-153-html": {"dept": ["hr"], "effects": ["people"], "size": "s3", "sizeBasis": "stated"},
   "www-fielding-co-jp-jirei-155-html": {"dept": ["field", "ga"], "effects": ["risk", "time"], "size": "unknown", "sizeBasis": "none"},
-  "www-fielding-co-jp-jirei-156-html": {"dept": ["it"], "effects": ["risk"], "size": "unknown", "sizeBasis": "none"},
+  "www-fielding-co-jp-jirei-156-html": {"dept": ["it"], "effects": ["risk", "time"], "size": "unknown", "sizeBasis": "none"},
   "www-fielding-co-jp-jirei-158-html": {"dept": ["field"], "effects": ["time", "quality"], "size": "unknown", "sizeBasis": "none"},
   "www-fielding-co-jp-jirei-160-html": {"dept": ["it"], "effects": ["time", "risk"], "size": "unknown", "sizeBasis": "none"},
   "www-fielding-co-jp-jirei-163-html": {"dept": ["ga"], "effects": ["quality"], "size": "unknown", "sizeBasis": "none"},
