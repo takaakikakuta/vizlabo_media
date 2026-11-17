@@ -37,6 +37,25 @@ export async function recordView(caseId: string, vendor: string, kind: ViewKind 
   return true;
 }
 
+/* 記事ページの閲覧も同じテーブルに入れる。caseId を "article:<slug>"、vendor を ARTICLE_VENDOR にして事例と分ける
+   （提供元で絞る読み出しには混ざらない） */
+export const ARTICLE_PREFIX = "article:";
+export const ARTICLE_VENDOR = "__article__";
+
+export function recordArticleView(slug: string): Promise<boolean> {
+  return recordView(ARTICLE_PREFIX + slug, ARTICLE_VENDOR, "view");
+}
+
+/** 直近 days 日の記事ごとの閲覧数（slug → 回数） */
+export async function loadArticleViews(days: number): Promise<Map<string, number>> {
+  const out = new Map<string, number>();
+  for (const r of await loadViews(days, ARTICLE_VENDOR)) {
+    const slug = r.caseId.slice(ARTICLE_PREFIX.length);
+    out.set(slug, (out.get(slug) ?? 0) + r.views);
+  }
+  return out;
+}
+
 export type ViewRow = { day: string; caseId: string; vendor: string; views: number; clicks: number };
 
 async function loadDay(day: string, vendor?: string): Promise<ViewRow[]> {
