@@ -27,8 +27,10 @@
    略称（日清食品HD など）や、言い換えた数字（「3分の1」）は拾えない。 */
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
+// new URL(...).pathname だと Windows で「/C:/...」になり、パスが壊れる
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 /* リンクのみベンダー（data/link_only_vendors.json）の事例は、linkOnly が付いていなくてもリンクのみとして見る（lib/cases.ts と同じ） */
 const linkOnlyVendors = new Set(JSON.parse(fs.readFileSync(path.join(root, "data/link_only_vendors.json"), "utf-8")).vendors.map((v) => v.domain));
 const cases = JSON.parse(fs.readFileSync(path.join(root, "data/cases.json"), "utf-8")).map((c) => (linkOnlyVendors.has(c.vendor) ? { ...c, linkOnly: true } : c));
@@ -116,7 +118,8 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json") && (!asIf 
   const a = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8"));
   if (a.hidden) continue;
   const raw = JSON.stringify(a);
-  const used = [...linkOnly.values()].filter((c) => raw.includes(c.id));
+  // ID は完全一致で探す（「…-interview」が「…-interview-shueikai」に部分一致しないように）
+  const used = [...linkOnly.values()].filter((c) => new RegExp(`"caseId":\\s*"${c.id.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`).test(raw) || raw.includes(`"${c.id}"`));
   if (used.length === 0) continue;
 
   const notes = [];

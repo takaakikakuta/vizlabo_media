@@ -96,7 +96,14 @@ function nameKeys(raw) {
     CORP_RE.lastIndex = 0;
     return " ";
   });
-  parts.unshift(...outer.split(/[／/、,，]|および|及び/));
+  // 「A生活協同組合ほか複数」「A社など」の後ろは外す
+  const body = outer.replace(/\s*(?:ほか|他)(?:複数|\d+社)?(?:の(?:企業|法人|団体))?\s*$|\s*(?:など|等)\s*$/, "");
+  parts.unshift(...body.split(/[／/、,，]|および|及び/));   // 「&」は社名の中にも出る（B&V・I&H）ので分けない
+  // 「A株式会社・B株式会社」のように法人格の付いた社名を中黒でつないだものは、各社に分ける（中黒は社名の中にも出るので法人格がある時だけ）
+  for (const p of [...parts]) {
+    const pieces = p.split(/[・･]/);
+    if (pieces.length > 1 && pieces.every((x) => /株式会社|有限会社|合同会社|法人|\(株\)/.test(x))) parts.push(...pieces);
+  }
   for (const p of parts) {
     const k = normName(p.replace(HONORIFIC_RE, "").trim().replace(HONORIFIC_RE, ""));
     if (k.length >= 2) keys.add(k);
