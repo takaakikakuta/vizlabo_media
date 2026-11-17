@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import ViewBeacon from "../../../components/ViewBeacon";
 import type { Metadata } from "next";
 import { publishedArticles, getArticle, articleSocial } from "../../../lib/articles";
 import Yougo from "../../../components/articles/Yougo";
@@ -21,5 +22,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function TermPage({ params }: { params: Promise<{ slug: string }> }) {
   const a = getArticle(decodeURIComponent((await params).slug));
   if (!a || a.format !== "yougo") notFound();
-  return <Yougo article={a} />;
+  return <>
+    {/* 記事の閲覧数の計測（/admin/views とベンダーのダッシュボードで見る） */}
+    <ViewBeacon id={a.slug} kind="article" />
+    <Yougo article={a} />
+  </>;
 }

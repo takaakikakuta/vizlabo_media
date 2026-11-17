@@ -1,6 +1,7 @@
 import { notFound, permanentRedirect } from "next/navigation";
+import ViewBeacon from "../../../components/ViewBeacon";
 import type { Metadata } from "next";
-import { publishedArticles, getArticle, articleSocial } from "../../../lib/articles";
+import { publishedArticles, getArticle, articleSocial, type Article } from "../../../lib/articles";
 import Wakaremichi from "../../../components/articles/Wakaremichi";
 import Genba from "../../../components/articles/Genba";
 import Dounyumae from "../../../components/articles/Dounyumae";
@@ -29,6 +30,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   if (!a) notFound();
   if (a.format === "yougo") permanentRedirect(`/terms/${a.slug}`);  // 用語記事は別の連載（/terms）
 
+  return <>
+    {/* 記事の閲覧数の計測（/admin/views とベンダーのダッシュボードで見る） */}
+    <ViewBeacon id={a.slug} kind="article" />
+    {body(a)}
+  </>;
+}
+
+function body(a: Article) {
   switch (a.format) {
     case "wakaremichi":
       return <Wakaremichi article={a} />;
