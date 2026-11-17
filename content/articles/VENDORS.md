@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 209 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 57 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 210 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 56 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 12 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -13,7 +13,6 @@
 | 提供元 | サービス | 記事（導入企業） |
 |---|---|---|
 | 4on.jp | TOUGH | #033（株式会社ビサン） |
-| acuity-inc.co.jp | OptiTrack、SKYCOM | 記念日11/21（（非公開）） |
 | afrel-robotics.jp | ネコボット-F1 | #033（株式会社シャルマン） |
 | ai-market.jp | AIエージェント型ボイスボット | #048（SBIいきいき少額短期保険株式会社） |
 | andpad.jp | ANDPAD | 用語#002（株式会社CONY JAPAN（リフォーる）） |
@@ -28,7 +27,7 @@
 | ckd.co.jp | パワフルアーム | #057（因幡電機産業） |
 | cloudpack.jp | AWS・Gemini Enterprise Agent Platform | #047（洲本市）<br>#048（KDDIアイレット株式会社） |
 | cloudsign.jp | クラウドサイン、MAKE for kintone | 用語#003（Fast Fitness Japan） |
-| cognex.com | コグネックス マシンビジョンシステム・In-Sight 5000シリーズ ビジョンシステム・In-Sight 8000 | #007（BorgWarner）<br>記念日11/21（JST）<br>#046（Drache Umwelttechnik GmbH） |
+| cognex.com | コグネックス マシンビジョンシステム・In-Sight 8000 | #007（BorgWarner）<br>#046（Drache Umwelttechnik GmbH） |
 | correos.co.jp | 債権書類管理システム | #008（多摩信用金庫）<br>用語#001（多摩信用金庫） |
 | crotta.jp | crotta | 用語#005（株式会社 池の平ホテル&リゾーツ（白樺リゾート池の平ホテル）） |
 | cybersolutions.co.jp | CYBERMAIL Σ ST | #047（茨城県五霞町） |
@@ -36,7 +35,7 @@
 | daiko-xtech.co.jp | Fujitsu テレフォニーソリューション「ソフトウェアPBX」 | 用語#005（株式会社シャルレ） |
 | datawise.co.jp | Datawise Area Marketer | #047（徳島市） |
 | ev-charge-enechange.jp | EV充電エネチェンジ | #031（株式会社アスター（盛岡つなぎ温泉 ホテル紫苑）） |
-| fa.omron.co.jp | 高速CT型X線自動検査装置・現場データ活用サービス i-BELT | 記念日11/21（株式会社ホックス）<br>#046（オムロン野洲工場） |
+| fa.omron.co.jp | 現場データ活用サービス i-BELT | #046（オムロン野洲工場） |
 | fastaccounting.co.jp | Remota | 用語#004（味の素フィナンシャル・ソリューションズ株式会社） |
 | fastseries.jp | FastHelp | 用語#006（株式会社ジェイエイシーリクルートメント、セック株式会社） |
 | fcs.co.jp | kintone × モジトリ | 用語#003（ISS山崎機械） |
@@ -74,7 +73,7 @@
 | mujin.co.jp | 通い箱パレタイズロボット、AGV、WCS・MujinOS搭載通い箱デパレタイズロボット | #033（トヨタ紡織株式会社）<br>#037（株式会社松田電機工業所） |
 | mutumi.co.jp | むつみの販売、むつみのCTI、むつみの営業日報 | 用語#006（ホームケルン株式会社） |
 | mxmobiling.co.jp | itsmoBPO・itsmoBPO キッティング | 用語#004（株式会社クラフティア）<br>#050（M社） |
-| naomi.co.jp | チューブ充填機 4DTZK-T・チューブ充填機 6DTZ-T | 記念日11/17（株式会社長岡小嶋屋）<br>#057（下呂プリン） |
+| naomi.co.jp | チューブ充填機 6DTZ-T | #057（下呂プリン） |
 | narikoma-group.co.jp | ナリコマ | #031（特別養護老人ホーム アルテイル宮町） |
 | nhs.co.jp | Paples | 用語#009（キョーリン製薬ホールディングス株式会社） |
 | nicnet.co.jp | ペーパーレス会議システム Support Session | #047（仙台市役所（介護保険課）） |
@@ -124,7 +123,7 @@
 | 3s-corp.co.jp | 2026-10-28（推定） | 無溶剤UVコーティング | #023（株式会社日本ツクリダス） |
 | ababa.co.jp | 2026-10-12（推定） | ABABA | #011（株式会社TYL）<br>#014（ディップ株式会社、プレミアグループ株式会社） |
 | achievement-hrs.co.jp | 2026-11-02（推定） | 人材育成研修・OJT支援サービス | #026（東亜電気工業株式会社） |
-| acuity-inc.co.jp | 2026-11-16 | BC-Creation、BC-Detection | #043（（非公開）） |
+| acuity-inc.co.jp | 2026-11-16 | OptiTrack、SKYCOM・BC-Creation、BC-Detection | 記念日11/21（（非公開））<br>#043（（非公開）） |
 | afi.co.jp | 2026-11-16 | ELESTA PixeeMo | #043（アルプスウォーター株式会社、（リンクのみ）） |
 | afrel-robotics.jp | 2026-11-09 | 協働ロボットアーム | #037（ウエルダー北沢） |
 | alibaba.co.jp | 2026-10-20（推定） | Alibaba.com | #017（株式会社香月園） |
@@ -146,6 +145,7 @@
 | ckd.co.jp | 2026-10-29（推定） | パワフルアーム PAW | #024（髙藏工業株式会社） |
 | classi.jp | 2026-10-26（推定） | Classi | #021（東海大学付属高輪台高等学校・中等部） |
 | cloudsign.jp | 2026-09-30（推定） | CloudSign by CloudSign・CloudSign・クラウドサイン、MAKE for kintone | #003（株式会社find、フィードバイエックス株式会社）<br>#004（株式会社J.フロントプライムスペース）<br>#006（Fast Fitness Japan） |
+| cognex.com | 2026-11-17 | In-Sight 5000シリーズ ビジョンシステム | 記念日11/21（JST） |
 | conct.jp | 2026-10-13（推定） | CO-NECT | #012（多生堂、（リンクのみ）） |
 | coolex.jp | 2026-10-29（推定） | COOLEX-Pro | #024（日本フルハーフ株式会社 厚木工場）<br>#038（日本フルハーフ株式会社 厚木工場） |
 | coteam.jp | 2026-10-05（推定） | コチーム・1on1・マネジメント研修 | #006（株式会社ジョン）<br>#022（全日本空輸株式会社（ANA）） |
@@ -159,7 +159,7 @@
 | erecta.co.jp | 2026-11-04（推定） | マルチサーブ | #028（医療法人慈風会 あつち葛飾クリニック） |
 | exawizards.com | 2026-09-29（推定） | exaBase FAQ・AIを活用した水力発電計画最適化システム | #002（住友ファーマ株式会社）<br>#020（中国電力株式会社） |
 | expoline.jp | 2026-11-03（推定） | EXPOLINE | #027（株式会社大塚商会） |
-| fa.omron.co.jp | 2026-11-10 | 現場データ活用サービス i-BELT、マシンオートメーションコントローラ・i-BELT | #040（オムロン株式会社）<br>記念日11/20（YKK AP株式会社） |
+| fa.omron.co.jp | 2026-11-10 | 現場データ活用サービス i-BELT、マシンオートメーションコントローラ・i-BELT・高速CT型X線自動検査装置 | #040（オムロン株式会社）<br>記念日11/20（YKK AP株式会社）<br>記念日11/21（株式会社ホックス） |
 | fastaccounting.co.jp | 2026-09-28（推定） | Remota・Remota、Robota | #001（日清食品ホールディングス株式会社）<br>#003（味の素フィナンシャル・ソリューションズ株式会社、株式会社阪急アクトフォー（エイチ・ツー・オー リテイリングのグループ企業向けシェアードサービス提供）、BIPROGY株式会社） |
 | fastaccounting.jp | 2026-09-28（推定） | 領収書Robota | #001（株式会社エフアンドエム） |
 | fastseries.jp | 2026-09-29（推定） | FastHelp、FastAnswer・FastHelp, FastAnswer | #002（日本コープ共済生活協同組合連合会、株式会社日立システムズ） |
@@ -235,7 +235,7 @@
 | mr-m.co.jp | 2026-11-16 | カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作 | #042（ミズタニバルブ工業株式会社） |
 | myquick.jp | 2026-10-08（推定） | MyQuickクラウド | #009（株式会社マーキュリー） |
 | mysite-ai.jp | 2026-10-30（推定） | Myサイト翻訳 | #025（近江鉄道株式会社） |
-| naomi.co.jp | 2026-11-16 | パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02 | #043（株式会社ベネッセパレット） |
+| naomi.co.jp | 2026-11-16 | チューブ充填機 4DTZK-T・パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02 | 記念日11/17（株式会社長岡小嶋屋）<br>#043（株式会社ベネッセパレット） |
 | narikoma-group.co.jp | 2026-11-04（推定） | ニュークックチル・ナリコマ | #028（やまゆりの里）<br>#039（有隣ホーム） |
 | nau.co.jp | 2026-09-28（推定） | NaU Rulebook | #001（学校法人 早稲田大学 情報企画部 / 株式会社 早稲田大学アカデミックソリューション） |
 | nikken-totalsourcing.jp | 2026-11-11 | カスタマイズ研修・技能センター研修 | #041（株式会社デンソー山形） |

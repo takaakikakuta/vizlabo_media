@@ -181,7 +181,8 @@
           "products": [
             "OptiTrack、SKYCOM"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
@@ -1413,8 +1414,8 @@
     {
       "domain": "cognex.com",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-17",
       "notifiedAtEstimated": false,
       "products": [
         "In-Sight 8000",
@@ -1446,7 +1447,8 @@
           "products": [
             "In-Sight 5000シリーズ ビジョンシステム"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-17"
         },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
@@ -2258,7 +2260,8 @@
           "products": [
             "高速CT型X線自動検査装置"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
@@ -5834,7 +5837,8 @@
           "products": [
             "チューブ充填機 4DTZK-T"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "3a18ab4b-4c02-40f7-bd83-3d3077511da9",
