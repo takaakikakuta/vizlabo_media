@@ -59,3 +59,6 @@ data/*.tagbak
 
 # 掲載通知文の下書き（scripts/vendors/notify.mjs の出力。送ったら contacts.mjs で記録する）
 /content/articles/notify/
+
+# 掲載元ページとの照合（scripts/verify/source-check.mjs）の取得キャッシュと結果。誤った社名の一覧を含むのでリポジトリに残さない
+/.source-check/
