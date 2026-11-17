@@ -81,7 +81,7 @@
 | noc-net.co.jp | 給与計算・人事アウトソーシングサービス・経理アウトソーシングサービス | 用語#004（アメアスポーツジャパン株式会社、株式会社viviON） |
 | ntt-tx.co.jp | CTBASE/Connect Cloud・Salesforce、CTBASE/JointPro、DataSpider Servista | 用語#005（パナソニック保険サービス株式会社、株式会社博報堂コネクト）<br>用語#006（日新火災海上保険株式会社）<br>#057（パナソニック保険サービス株式会社） |
 | officebot.jp | OfficeAI社員 | #050（商船三instituteロジスティクス株式会社） |
-| okuma.co.jp（オークマ株式会社） | MULTUS・LB3000 EX Ⅱ ARMROID・MU-8000V-L、Connect Plan、MULTUS B300II | #031（株式会社しらかわ、（リンクのみ））<br>記念日11/17（（リンクのみ））<br>#046（（リンクのみ）） |
+| okuma.co.jp（オークマ株式会社） | MULTUS・MU-8000V-L、Connect Plan、MULTUS B300II | #031（株式会社しらかわ、（リンクのみ））<br>#046（（リンクのみ）） |
 | optex.co.jp | OAM-EXPLORER J、LINK-BT2 | #033（（非公開）） |
 | pa-consul.co.jp | タレントパレット | #041（株式会社松屋フーズホールディングス） |
 | quest.co.jp | WinActor | #057（株式会社日本能率協会マネジメントセンター（JMAM）） |
@@ -101,7 +101,6 @@
 | sony.jp | デジタルペーパー | #049（立命館大学 経済学部） |
 | spokes-online.jp | SPOKES | #045（株式会社ペイロール）<br>#050（株式会社コアコンセプトテクノロジー） |
 | subline.jp | SUBLINE | #047（常滑市役所 国勢調査事務局（企画部企画課内）） |
-| sunnyltd.co.jp | 高粘度用サニタリードラムポンプ+リフター | 記念日11/17（（非公開）） |
 | supportas.co.jp | FileMaker | #049（農事組合法人ECOマッシュ） |
 | takachiho-kk.co.jp | RFIDシステム | #008（佐川グローバルロジスティクス株式会社） |
 | teachme.jp | Teachme Check・Teachme Biz | #046（三島食品株式会社）<br>#050（ハタ コンサルタント株式会社） |
@@ -247,7 +246,7 @@
 | officebot.jp | 2026-10-27（推定） | OfficeBot | #022（キンコーズ・ジャパン株式会社） |
 | ogis-ri.co.jp | 2026-11-13 | クラウド移行支援サービス・システム開発支援 | 用語#006（日新火災海上保険株式会社） |
 | ogs-consulting.co.jp | 2026-11-11 | 人事評価制度構築・運用コンサルティング | #041（株式会社庄内タイヤ） |
-| okuma.co.jp（オークマ株式会社） | 2026-11-09 | MULTUS B300Ⅱ ARMROID | #037（株式会社キンレイ、（リンクのみ）） |
+| okuma.co.jp（オークマ株式会社） | 2026-11-09 | MULTUS B300Ⅱ ARMROID・LB3000 EX Ⅱ ARMROID | #037（株式会社キンレイ、（リンクのみ））<br>記念日11/17（（リンクのみ）） |
 | onecareer.jp | 2026-10-12（推定） | ワンキャリア | #011（三信住建株式会社、株式会社トヨタ車体研究所） |
 | onehr.jp | 2026-10-05（推定） | One人事[タレントマネジメント] | #006（株式会社ハイテックシステムズ） |
 | optex.co.jp | 2026-10-14（推定） | WATER it データマネジメントサービス | #013（高速道路事業者）<br>記念日11/19（高速道路事業者） |
@@ -294,7 +293,7 @@
 | soukei-lab.jp | 2026-11-09 | 経理アウトソーシング | #034（医療法人社団 さんごの海） |
 | spokes-online.jp | 2026-10-30（推定） | SPOKES | #025（茨城県土浦市） |
 | staple.jp | 2026-11-05（推定） | Staple | #029（株式会社BANQ） |
-| sunnyltd.co.jp | 2026-11-17 | ATI 過酸化水素水計 | 記念日11/19（（非公開）） |
+| sunnyltd.co.jp | 2026-11-17 | 高粘度用サニタリードラムポンプ+リフター・ATI 過酸化水素水計 | 記念日11/17（（非公開））<br>記念日11/19（（非公開）） |
 | sunplanning.co.jp | 2026-10-19（推定） | SAP Business Suite powered by SAP HANA | #016（カルビー株式会社）<br>用語#002（カルビー株式会社） |
 | taashie.co.jp | 2026-10-06（推定） | WinActor | #007（五の橋レディスクリニック） |
 | takachiho-kk.co.jp | 2026-11-04（推定） | TrueVUE hybrid | #028（株式会社AOKIホールディングス）<br>用語#001（株式会社AOKIホールディングス） |

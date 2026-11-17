@@ -6374,7 +6374,8 @@
           "products": [
             "LB3000 EX Ⅱ ARMROID"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
@@ -8538,7 +8539,8 @@
           "products": [
             "高粘度用サニタリードラムポンプ+リフター"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "day-2026-11-19",
