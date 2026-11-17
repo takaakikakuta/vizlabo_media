@@ -67,13 +67,15 @@ const CORP_EN_RE = /\b(?:co\.?,?\s*ltd|inc|corporation|corp|llc|ltd|k\.k)\b\.?/g
 const HONORIFIC_RE = /(?:様|さま|御中|殿)$/;
 
 /** 社名・ページ本文を、照合用に揃える（全角半角・大小文字・空白・中黒・長音・異体字・法人格） */
-function normName(s) {
-  return String(s ?? "")
+function normName(s, keepCorp = false) {
+  let t = String(s ?? "")
     .normalize("NFKC")
     .toLowerCase()
-    .replace(ITAIJI_RE, (c) => ITAIJI[c])
-    .replace(CORP_RE, "")
-    .replace(CORP_EN_RE, "")
+    .replace(ITAIJI_RE, (c) => ITAIJI[c]);
+  if (!keepCorp) t = t.replace(CORP_RE, "").replace(CORP_EN_RE, "");
+  return t
+    // ヴとブの揺れ（「プロヴディフ」と「プロブディフ」）
+    .replace(/ヴァ/g, "バ").replace(/ヴィ/g, "ビ").replace(/ヴェ/g, "ベ").replace(/ヴォ/g, "ボ").replace(/ヴ/g, "ブ")
     .replace(/[\s​　]+/g, "")
     .replace(/[・･·•‧]/g, "")
     .replace(/[‐‑‒–—―−ー\-~〜]/g, "ー")
@@ -100,6 +102,12 @@ function nameKeys(raw) {
   return [...keys];
 }
 
+/** 中核が1文字の社名（「社会福祉法人 紡」）は、法人格を付けたまま照合する（ページ側も法人格を外さずに揃える） */
+function shortKeys(raw) {
+  const s = String(raw ?? "").normalize("NFKC").replace(/[（(][^）)]*[）)]/g, " ").replace(HONORIFIC_RE, "").trim();
+  return normName(s).length === 1 ? [normName(s, true)] : [];
+}
+
 /** 空白で区切られた社名（「トヨタ自動車株式会社 元町工場」）は、各部分がすべてページに出れば一致とみなす */
 function nameSegments(raw) {
   const s = String(raw ?? "").normalize("NFKC").replace(/[（(][^）)]*[）)]/g, " ");
@@ -111,8 +119,12 @@ function nameSegments(raw) {
 function excludedReason(raw) {
   const s = String(raw ?? "").normalize("NFKC").trim();
   if (!s) return "社名が空";
-  if (/非公開|匿名|仮名|推定|非開示|不明/.test(s)) return "社名が非公開・匿名など";
+  if (/非公開|匿名|仮名|推定|非開示|不明|具体名なし|名称なし|社名なし|記載なし/.test(s)) return "社名が非公開・匿名など";
   if (/某/.test(s)) return "社名が「某」";
+  if (/^(?:記載なし|なし|未記載|該当なし|-|ー)$/.test(s)) return "社名が「記載なし」など";
+  if (/^[a-z](?:\.|\s)?(?:様|さま|さん|氏|社)/i.test(s)) return "社名が頭文字だけ（「O様」など）";
+  // 「社会福祉法人」「医療法人社団」「一般財団法人さま（非営利団体）」のように法人格しかない
+  if (!normName(s.replace(/[（(][^）)]*[）)]/g, "").replace(HONORIFIC_RE, "").trim().replace(HONORIFIC_RE, ""))) return "社名が法人格だけ";
   if (/(?:^|[^a-z])[a-z]\s?社/i.test(s) || /[〇○●×]{1,}社/.test(s)) return "社名が「A社」の形";
   // 「大手電機メーカー」のような呼び方（法人格を含むものは社名として扱う）
   if (/^(?:大手|中堅|中小|地方の|地域の|ある|国内の?|外資系|全国)/.test(s) && !/株式会社|有限会社|法人|\(株\)/.test(s)) return "社名ではなく呼び方（大手〜など）";
@@ -434,12 +446,16 @@ function judge(c, page) {
   if (segs.length && segs.every((s) => main.includes(s))) return { ...base, nums, verdict: "一致", reason: "空白で区切った各部分がページに出る" };
   const sHit = keys.find((k) => script.includes(k));
   if (sHit) return { ...base, nums, verdict: "一致", reason: "スクリプト内のデータに出る（JS描画のページ）" };
+  const short = shortKeys(name);
+  if (short.length && short.some((k) => normName(p.text + " " + p.meta, true).includes(k))) return { ...base, nums, verdict: "一致", reason: "法人格を含めて一致（中核が1文字の社名）" };
 
   // 取得はできたが中身がないページは、不一致ではなく取得失敗にする
   if (page.finalUrl && page.from !== "saved") {
     try {
       const a = new URL(c.sourceUrl), b = new URL(page.finalUrl);
       if (/^\/?(index\.\w+)?$/.test(b.pathname) && !/^\/?(index\.\w+)?$/.test(a.pathname)) return { ...base, verdict: "取得失敗", reason: `トップページへ転送された（${b.href}）` };
+      // 事例ページが別のページ（移転先の商品ページ・一覧など）へ転送されている。そのページに社名が無くても誤りとは言えない
+      if (normUrl(a.href) !== normUrl(b.href) && normUrl(decodeURI(a.href)) !== normUrl(decodeURI(b.href))) return { ...base, verdict: "取得失敗", reason: `別のページへ転送された（${b.href}）` };
     } catch { /* noop */ }
   }
   if (SOFT404.test(p.title) || p.h1.some((h) => SOFT404.test(h) && h.length < 40)) return { ...base, verdict: "取得失敗", reason: "ページが見つからない（ソフト404）" };
