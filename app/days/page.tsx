@@ -39,6 +39,7 @@ export default function DaysPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-12">
+      <TodayJump dates={days.map((d) => d.date)} />
       <ListHead eyebrow="連載" title="事例で読む記念日"
         sub="その日の記念日にちなんで、掲載事例から3本を選んで紹介する。SNSで配信した記念日ポストを、1日1ページで。" count={days.length} />
 
@@ -82,6 +83,22 @@ export default function DaysPage() {
       ))}
     </div>
   );
+}
+
+/* /days?today で来たら、当日の記念日ページへ飛ばす（X のプロフィールなど、張り替えないリンク用）。
+   このページは Amplify 上でビルド時点のまま止まる（.github/workflows/daily-redeploy.yml）ので、日付はサーバーで決めず、
+   開いた人のブラウザで日本時間のきょうを求める。ページの先頭に置いたスクリプトが描画より先に走るので、一覧はほぼ見えない。
+   解決の順番は todayDay() の前半と同じ：きょうの日付 → 同じ月日の昨年以前（新しい年を優先）。どちらも無ければ一覧に留まる。
+   today 以外のクエリ（utm_source など）は付けたまま渡すので、流入元は飛んだ先のページで数えられる。 */
+function TodayJump({ dates }: { dates: string[] }) {
+  const js = `(function(){try{
+var q=new URLSearchParams(location.search);if(!q.has("today"))return;
+var ds=${JSON.stringify(dates)};
+var t=new Date(Date.now()+324e5).toISOString().slice(0,10),hit="";
+for(var i=0;i<ds.length;i++){if(ds[i]===t){hit=t;break}if(ds[i]<t&&ds[i].slice(5)===t.slice(5))hit=ds[i]}
+if(!hit)return;q.delete("today");var r=q.toString();
+location.replace("/days/"+hit+(r?"?"+r:""))}catch(e){}})()`;
+  return <script dangerouslySetInnerHTML={{ __html: js }} />;
 }
 
 /* 扉：きょうの記念日（無ければ次、それも無ければ直近）。トップの入口カードと同じ解決順 */
