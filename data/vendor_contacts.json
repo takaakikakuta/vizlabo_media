@@ -277,8 +277,8 @@
     {
       "domain": "ai-market.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "AIエージェント型ボイスボット"
@@ -295,7 +295,8 @@
           "products": [
             "AIエージェント型ボイスボット"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -1417,7 +1418,8 @@
           "products": [
             "Gemini Enterprise Agent Platform"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3512,8 +3514,8 @@
     {
       "domain": "ielove-cloud.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "いえらぶCLOUD"
@@ -3530,7 +3532,8 @@
           "products": [
             "いえらぶCLOUD"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -10611,7 +10614,8 @@
             "Zendesk AI",
             "Zendesk AIエージェント"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""

@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 221 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 55 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 223 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 53 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 12 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -14,7 +14,6 @@
 |---|---|---|
 | 4on.jp | TOUGH | #033（株式会社ビサン） |
 | afrel-robotics.jp | ネコボット-F1 | #033（株式会社シャルマン） |
-| ai-market.jp | AIエージェント型ボイスボット | #048（SBIいきいき少額短期保険株式会社） |
 | amano.co.jp | TimeP@CK Professional | 用語#007（林総事株式会社） |
 | andpad.jp | ANDPAD | 用語#002（株式会社CONY JAPAN（リフォーる）） |
 | betterbound.jp | YARIKIRI | #049（株式会社大林組） |
@@ -27,7 +26,6 @@
 | casio-human-sys.co.jp | 人事統合システム ADPS | 用語#007（株式会社西松屋チェーン） |
 | ckd.co.jp | パワフルアーム | #057（因幡電機産業） |
 | cloudgate.jp | CloudGate UNO | 用語#008（株式会社AOB慧央グループ（現：株式会社アルソア慧央グループ）） |
-| cloudpack.jp | Gemini Enterprise Agent Platform | #048（KDDIアイレット株式会社） |
 | cloudsign.jp | クラウドサイン、MAKE for kintone・クラウドサイン、クラウドサインMAKE for kintone | 用語#003（Fast Fitness Japan、株式会社Fast Fitness Japan） |
 | cognex.com | コグネックス マシンビジョンシステム | #007（BorgWarner） |
 | correos.co.jp | 債権書類管理システム | #008（多摩信用金庫）<br>用語#001（多摩信用金庫） |
@@ -46,7 +44,7 @@
 | hakuou.co.jp | AutoFork | #033（日本トランスシティ株式会社） |
 | helicam.jp | Matrice 350 RTK + SABOT-3 | #031（留萌市） |
 | humanage.co.jp | TG-WEB | #041（株式会社DTS） |
-| ielove-cloud.jp | いえらぶCLOUD | #048（HKホーム株式会社）<br>#057（都市住建株式会社） |
+| ielove-cloud.jp | いえらぶCLOUD | #057（都市住建株式会社） |
 | imagers.co.jp | Dolphin CT30XP | #024（コーナン商事株式会社） |
 | intra-mart.jp | intra-mart、Biz∫・intra-mart | 用語#002（株式会社NTTデータMSE）<br>用語#003（三洋化成工業株式会社、SOMPOホールディングス株式会社（損害保険ジャパン株式会社））<br>用語#008（中部国際空港株式会社）<br>用語#009（東レ・メディカル株式会社） |
 | iot-robot.jp | RPA | #034（社会保険労務士法人 アジア経営革新等支援機関） |
@@ -116,7 +114,6 @@
 | works-hi.co.jp | COMPANY・COMPANY Web Service・COMPANY Identity Management | 用語#007（株式会社ガスワンホールディングス、国立大学法人 神戸大学）<br>用語#008（三建設備工業株式会社） |
 | xeye.jp | Xeye | 用語#001（戸田建設株式会社 成田工場） |
 | yk-yamamoto.co.jp | 溶接伝承マスター | #050（川田工業株式会社（四国工場）） |
-| zendesk.co.jp | Zendesk AI・Zendesk AIエージェント | #048（akippa株式会社、Qantas Loyalty） |
 
 ## 連絡済み・削除依頼なし
 
@@ -129,6 +126,7 @@
 | acuity-inc.co.jp | 2026-11-16 | OptiTrack、SKYCOM・BC-Creation、BC-Detection | 記念日11/21（（非公開））<br>#043（（非公開）） |
 | afi.co.jp | 2026-11-16 | ELESTA PixeeMo・ELESTA® PixeeMo® | #043（アルプスウォーター株式会社、（リンクのみ）） |
 | afrel-robotics.jp | 2026-11-09 | 協働ロボットアーム | #037（ウエルダー北沢） |
+| ai-market.jp | 2026-11-18 | AIエージェント型ボイスボット | #048（SBIいきいき少額短期保険株式会社） |
 | alibaba.co.jp | 2026-10-20（推定） | Alibaba.com | #017（株式会社香月園） |
 | amano.co.jp | 2026-10-02（推定） | TimeP@CK-iC・TimeP@CK-iCⅣ、サッと勤怠・TimeP@CK・TimeP@CK-iCⅣ | #005（株式会社梅林）<br>#034（原口社会保険労務事務所、籏興行株式会社 シネスイッチ銀座） |
 | andpad.jp | 2026-10-01（推定） | ANDPAD請求管理・ANDPAD・ANDPAD遠隔臨場・ANDPAD施工管理、ANDPAD引合粗利管理・ANDPAD / ANDPAD BPO | #004（佐藤工業株式会社、株式会社乃一、不動産SHOPナカジツ）<br>#005（株式会社玄翁、株式会社ビーバーリフォーム）<br>#006（株式会社タカラベ）<br>#007（株式会社大勝）<br>#009（株式会社カスケホーム、東洋冷熱工業株式会社）<br>#013（株式会社ナミキ）<br>#020（株式会社親広産業）<br>用語#007（株式会社CONY JAPAN（リフォーる）） |
@@ -147,7 +145,7 @@
 | ciftr.jp | 2026-11-09 | シフター | #035（溶岩焼肉 牛楽 鶴田町店） |
 | ckd.co.jp | 2026-10-29（推定） | パワフルアーム PAW | #024（髙藏工業株式会社） |
 | classi.jp | 2026-10-26（推定） | Classi | #021（東海大学付属高輪台高等学校・中等部） |
-| cloudpack.jp | 2026-11-18 | AWS | #047（洲本市） |
+| cloudpack.jp | 2026-11-18 | AWS・Gemini Enterprise Agent Platform | #047（洲本市）<br>#048（KDDIアイレット株式会社） |
 | cloudsign.jp | 2026-09-30（推定） | CloudSign by CloudSign・CloudSign・クラウドサイン カンリ・クラウドサイン・クラウドサイン、MAKE for kintone・クラウドサイン、クラウドサインMAKE for kintone | #003（株式会社find、フィードバイエックス株式会社、ディーブイエックス株式会社）<br>#004（株式会社J.フロントプライムスペース）<br>#006（Fast Fitness Japan、株式会社Fast Fitness Japan） |
 | cognex.com | 2026-11-17 | In-Sight 5000シリーズ ビジョンシステム・In-Sight 8000 | 記念日11/21（JST）<br>#046（Drache Umwelttechnik GmbH） |
 | conct.jp | 2026-10-13（推定） | CO-NECT | #012（多生堂、（リンクのみ）） |
@@ -191,6 +189,7 @@
 | hr-prime.jp | 2026-10-15（推定） | HR PRIME | #014（株式会社カスタマーリレーションテレマーケティング） |
 | hrbrain.jp | 2026-10-05（推定） | HRBrain | #006（天白信用農業協同組合）<br>#036（株式会社日比谷花壇、株式会社ヒューマンアジャスト、株式会社デルタインターナショナル） |
 | i-abs.co.jp | 2026-11-18 | CYBER XEED | #045（オーシャル オーシャン シーピング (Japan) 株式会社、（リンクのみ）） |
+| ielove-cloud.jp | 2026-11-18 | いえらぶCLOUD | #048（HKホーム株式会社） |
 | inet.co.jp | 2026-11-16 | Next Generation EASY Cloud | #042（株式会社WorkVision） |
 | info-con.co.jp | 2026-10-20（推定） | ホームページ制作 | #017（有限会社丸井食品三重工場） |
 | info-ligua.jp | 2026-11-02（推定） | Ligoo POS&CRM、EMS-indepth-、Inject Energy | #026（メディカルアース株式会社 だいふく鍼灸整骨院グループ） |
@@ -341,7 +340,7 @@
 | yamanaka-eng.co.jp | 2026-11-10 | PiezoBolt | #040（（非公開）） |
 | yk-yamamoto.co.jp | 2026-11-09 | LIFE SAVER | #038（株式会社岸本建設工業） |
 | yu-jin.co.jp | 2026-10-26（推定） | YouMark | #021（東京都市大学付属中学校） |
-| zendesk.co.jp | 2026-09-29（推定） | Zendesk | #002（株式会社アンドエスティHD）<br>#012（株式会社ジェイアール東日本企画） |
+| zendesk.co.jp | 2026-09-29（推定） | Zendesk・Zendesk AI・Zendesk AIエージェント | #002（株式会社アンドエスティHD）<br>#012（株式会社ジェイアール東日本企画）<br>#048（akippa株式会社、Qantas Loyalty） |
 | クラウドトーマス.jp | 2026-10-06（推定） | クラウドトーマス | #007（株式会社オーレック） |
 
 ## 削除依頼あり（掲載しない）
