@@ -16,10 +16,12 @@ import VideoBadge, { PlayMark } from "../VideoBadge";
 import { hasVideo } from "../../lib/video";
 import { withUtm } from "../../lib/source";
 import { ExternalLink } from "lucide-react";
+import { introSourceName } from "../../lib/introSources";
 
 /* 「選」テンプレート（課題別の事例10選・5選）。順位ではなく並列の選として組む。
    trivia（背景の知識）と compare（比べる表）は旧記事（旧3選・旧5選）向けで、新しい記事では使わない。
-   各項目は〈書き下ろしの見出し＋選んだ理由（あらすじは書かない）〉＋〈事例データから自動で出すカルテと成果数字〉＋〈元記事と事例ページへのリンク〉。
+   各項目は〈書き下ろしの見出し＋選んだ理由（あらすじは書かない）〉＋〈事例データから自動で出すカルテと成果数字〉＋〈事例ページと元記事へのリンク〉。
+   事例ページ（サイト内）と元記事（提供元の外部サイト）は取り違えないよう、上下の段に分け、元記事の段だけ色・「外部サイト」の印・ドメインで外へ出ることを示す。
    事例が linkOnly（掲載元から取り下げ依頼）なら、企業名・規模・数字・画像を出さず、
    item.linkOnly の短い紹介と提供元ロゴつきの元記事リンクだけにする（番号と本数は崩さない）。
    元記事に YouTube 動画がある事例（video あり）は、カルテ行に「動画あり」の印、カードの画像に再生マークを出す。 */
@@ -151,27 +153,38 @@ export default function Sen({ article }: { article: SenArticle }) {
               {/* 事例への導線＝その事例の画像（無ければ提供元ロゴ）つきのカード。
                   物語を読む場所は提供元の元記事なので、元記事への直リンクと、サイト内の事例ページへのリンクを並べる
                   （事例ページは経由必須にしない。検索の着地先と関連事例の回遊のために残す） */}
-              <div className="row mt-4 ml-10 grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 gap-y-2.5 border border-line2 p-2.5 sm:gap-y-2 sm:p-3">
-                <Link href={`/cases/${c.id}`} aria-hidden tabIndex={-1}
-                  className="relative block h-16 w-24 shrink-0 overflow-hidden rounded-[3px] border border-line2 bg-soft sm:row-span-2 sm:h-20 sm:w-32">
-                  {c.image
-                    ? <CoverImg src={c.image} />
-                    : (vendorLogo(c.vendor) && <VendorLogo src={vendorLogo(c.vendor)!} size={34} />)}
-                  {hasVideo(c) && <PlayMark className="bottom-1.5 left-1.5" />}
+              <div className="mt-4 ml-10 border border-line2">
+                {/* 上段：サイト内の事例ページ（画像・タイトルつき。成果の数字と関連事例を見る場所） */}
+                <Link href={`/cases/${c.id}`}
+                  className="row group flex items-center gap-4 p-2.5 no-underline sm:p-3">
+                  <span className="relative block h-16 w-24 shrink-0 overflow-hidden rounded-[3px] border border-line2 bg-soft sm:h-20 sm:w-32">
+                    {c.image
+                      ? <CoverImg src={c.image} />
+                      : (vendorLogo(c.vendor) && <VendorLogo src={vendorLogo(c.vendor)!} size={34} />)}
+                    {hasVideo(c) && <PlayMark className="bottom-1.5 left-1.5" />}
+                  </span>
+                  <span className="min-w-0">
+                    <span className="line-clamp-2 text-[12px] leading-[1.6] text-muted sm:line-clamp-1">{c.title}</span>
+                    <span className="mt-1.5 block text-[13px] font-bold text-ink group-hover:text-brand">
+                      事例ページを見る →
+                    </span>
+                    <span className="mt-0.5 block text-[11px] text-muted">事例マニア内・成果の数字と関連事例</span>
+                  </span>
                 </Link>
-                <span className="line-clamp-2 min-w-0 text-[12px] leading-[1.6] text-muted sm:line-clamp-1 sm:self-end">{c.title}</span>
-                {/* スマホでは画像の下に2つのリンクを横いっぱいで並べる（画像の右は狭く、文言が折り返すため） */}
-                <div className="col-span-2 flex flex-wrap items-center gap-x-5 gap-y-1.5 sm:col-span-1 sm:col-start-2 sm:self-start">
-                  <a href={withUtm(c.sourceUrl, "article", article.slug)} target="_blank" rel="noopener" data-case-src={c.id}
-                    className="inline-flex items-center gap-1 text-[13px] font-bold text-ink no-underline hover:text-brand hover:underline">
-                    元記事を読む（提供元のサイトへ）
-                    <ExternalLink size={13} strokeWidth={2.25} aria-hidden className="shrink-0" />
-                  </a>
-                  <Link href={`/cases/${c.id}`}
-                    className="text-[13px] font-bold text-ink no-underline hover:text-brand hover:underline">
-                    事例ページを見る →
-                  </Link>
-                </div>
+                {/* 下段：提供元の元記事（外部サイト。物語を読む場所）。外へ出ることが一目で分かるよう、色と印を変える */}
+                <a href={withUtm(c.sourceUrl, "article", article.slug)} target="_blank" rel="noopener" data-case-src={c.id}
+                  className="group flex items-center gap-3 border-t border-brand/25 bg-brand-soft px-3 py-2.5 no-underline transition-colors hover:bg-brand/10 sm:px-3.5">
+                  <span className="shrink-0 rounded-[2px] bg-brand px-1.5 py-[1px] text-[10px] font-bold tracking-[.08em] text-white">外部サイト</span>
+                  <span className="min-w-0 flex-1">
+                    <span className="flex items-center gap-1 text-[13px] font-bold text-brand group-hover:underline">
+                      元記事を読む
+                      <ExternalLink size={13} strokeWidth={2.25} aria-hidden className="shrink-0" />
+                    </span>
+                    <span className="mt-0.5 block text-[11px] leading-[1.6] text-muted sm:truncate">
+                      {introSourceName(c.vendor) ? `${introSourceName(c.vendor)}の事例紹介ページ` : "提供元のサイト"}（{sourceHost(c)}）に移動します
+                    </span>
+                  </span>
+                </a>
               </div>
             </section>
           );
@@ -278,4 +291,9 @@ export default function Sen({ article }: { article: SenArticle }) {
       </footer>
     </article>
   );
+}
+
+/** 元記事のドメイン（表示用。www. は外す） */
+function sourceHost(c: { sourceUrl: string; vendor: string }): string {
+  try { return new URL(c.sourceUrl).host.replace(/^www\./, ""); } catch { return c.vendor; }
 }
