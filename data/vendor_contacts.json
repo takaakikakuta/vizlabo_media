@@ -287,7 +287,7 @@
         {
           "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
           "label": "#048",
-          "title": "最初の返事は、人が書かなくてもよかった。問い合わせの一次対応をAIエージェントに任せた事例5選",
+          "title": "まだ問い合わせで消耗しているの？問い合わせの一次対応をAIエージェントに任せた事例5選",
           "publishedAt": "2026-12-02",
           "customers": [
             "SBIいきいき少額短期保険株式会社"
@@ -335,9 +335,9 @@
       "products": [
         "TimeP@CK-iC",
         "TimeP@CK",
-        "TimeP@CK Professional",
         "TimeP@CK-iCⅣ、サッと勤怠",
-        "TimeP@CK-iCⅣ"
+        "TimeP@CK-iCⅣ",
+        "TimeP@CK Professional"
       ],
       "articles": [
         {
@@ -1408,7 +1408,7 @@
         {
           "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
           "label": "#048",
-          "title": "最初の返事は、人が書かなくてもよかった。問い合わせの一次対応をAIエージェントに任せた事例5選",
+          "title": "まだ問い合わせで消耗しているの？問い合わせの一次対応をAIエージェントに任せた事例5選",
           "publishedAt": "2026-12-02",
           "customers": [
             "KDDIアイレット株式会社"
@@ -1542,7 +1542,7 @@
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
           "label": "#046",
-          "title": "設備が止まる前に気づいた事例5選",
+          "title": "設備の異常に気づくのは、いつも止まったあとだった。設備が止まる前に気づいた事例5選",
           "publishedAt": "2026-11-30",
           "customers": [
             "Drache Umwelttechnik GmbH"
@@ -2384,7 +2384,7 @@
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
           "label": "#046",
-          "title": "設備が止まる前に気づいた事例5選",
+          "title": "設備の異常に気づくのは、いつも止まったあとだった。設備が止まる前に気づいた事例5選",
           "publishedAt": "2026-11-30",
           "customers": [
             "オムロン野洲工場"
@@ -2801,7 +2801,8 @@
           "publishedAt": "2026-10-05",
           "customers": [
             "斐紋中央建工株式会社",
-            "（リンクのみ）"
+            "（リンクのみ）",
+            "札幌中野冷機株式会社"
           ],
           "products": [
             "freee人事労務"
@@ -2815,7 +2816,8 @@
           "publishedAt": "2026-11-12",
           "customers": [
             "西老資税理士事務所",
-            "（リンクのみ）"
+            "（リンクのみ）",
+            "西村賀彦税理士事務所"
           ],
           "products": [
             "freee会計、freee給与、freee税務申告",
@@ -2867,7 +2869,7 @@
             "freee人事労務"
           ],
           "notified": true,
-          "skipped": "リンクのみの事例（取り下げ依頼を受けた事例）なので通知しない"
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -3327,7 +3329,7 @@
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
           "label": "#046",
-          "title": "設備が止まる前に気づいた事例5選",
+          "title": "設備の異常に気づくのは、いつも止まったあとだった。設備が止まる前に気づいた事例5選",
           "publishedAt": "2026-11-30",
           "customers": [
             "J社"
@@ -3465,8 +3467,8 @@
     {
       "domain": "i-abs.co.jp",
       "company": "",
-      "status": "no-objection",
-      "notifiedAt": "2026-11-18",
+      "status": "pending",
+      "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
         "CYBER XEED"
@@ -3479,16 +3481,16 @@
           "publishedAt": "2026-11-27",
           "customers": [
             "オーシャル オーシャン シーピング (Japan) 株式会社",
-            "オリエント オーバーシーズ コンテナ ライン リミテッド 日本支社／オー・オー・シー・エル・ロジスティクス（ジャパン）株"
+            "（リンクのみ）"
           ],
           "products": [
             "CYBER XEED"
           ],
           "notified": true,
-          "notifiedAt": "2026-11-18"
+          "skipped": "リンクのみの事例（取り下げ依頼を受けた事例）なので通知しない"
         }
       ],
-      "memo": ""
+      "memo": "2026-11-18 導入事例は自社Webサイトへの掲載についてのみ許諾を得ており、第三者サイトへの掲載は受けていないとして削除依頼（CYBER XEED のほかの事例も同様に）。全4事例を linkOnly（リンクのみ）にした"
     },
     {
       "domain": "i3handy.jp",
@@ -3515,7 +3517,7 @@
         {
           "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
           "label": "#048",
-          "title": "最初の返事は、人が書かなくてもよかった。問い合わせの一次対応をAIエージェントに任せた事例5選",
+          "title": "まだ問い合わせで消耗しているの？問い合わせの一次対応をAIエージェントに任せた事例5選",
           "publishedAt": "2026-12-02",
           "customers": [
             "HKホーム株式会社"
@@ -6662,7 +6664,7 @@
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
           "label": "#046",
-          "title": "設備が止まる前に気づいた事例5選",
+          "title": "設備の異常に気づくのは、いつも止まったあとだった。設備が止まる前に気づいた事例5選",
           "publishedAt": "2026-11-30",
           "customers": [
             "（リンクのみ）"
@@ -7282,7 +7284,6 @@
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "楽楽給与管理",
         "楽楽勤怠"
       ],
       "articles": [
@@ -7292,11 +7293,9 @@
           "title": "給与計算システムとは｜10の事例でわかる",
           "publishedAt": "2026-11-30",
           "customers": [
-            "株式会社文英",
             "株式会社文英堂"
           ],
           "products": [
-            "楽楽給与管理",
             "楽楽勤怠"
           ],
           "notified": false
@@ -8283,9 +8282,9 @@
         "AWS",
         "Amazon Connect",
         "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package",
-        "OneLogin",
         "Amazon Connect、Amazon Bedrock",
-        "クラウドコンタクトセンターパッケージ"
+        "クラウドコンタクトセンターパッケージ",
+        "OneLogin"
       ],
       "articles": [
         {
@@ -8338,7 +8337,6 @@
           "title": "SSO・IDaaSとは｜10の事例でわかる",
           "publishedAt": "2026-12-01",
           "customers": [
-            "株式会社ペイメ",
             "株式会社ペイミー"
           ],
           "products": [
@@ -9235,11 +9233,9 @@
           "title": "長野県りんごの日（記念日ポスト 11/22）",
           "publishedAt": "2026-11-22",
           "customers": [
-            "放鶴製菓株式会社・プロルフェン株式会社",
             "松尾製菓株式会社/チロルチョコ株式会社"
           ],
           "products": [
-            "ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか",
             "カートナー、段ボールケーサー"
           ],
           "notified": false
@@ -9284,7 +9280,7 @@
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
           "label": "#046",
-          "title": "設備が止まる前に気づいた事例5選",
+          "title": "設備の異常に気づくのは、いつも止まったあとだった。設備が止まる前に気づいた事例5選",
           "publishedAt": "2026-11-30",
           "customers": [
             "三島食品株式会社"
@@ -9352,7 +9348,6 @@
           "title": "長野県りんごの日（記念日ポスト 11/22）",
           "publishedAt": "2026-11-22",
           "customers": [
-            "株式会社銘太郎総本店",
             "株式会社榮太樓總本鋪"
           ],
           "products": [
@@ -10592,7 +10587,7 @@
         {
           "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
           "label": "#048",
-          "title": "最初の返事は、人が書かなくてもよかった。問い合わせの一次対応をAIエージェントに任せた事例5選",
+          "title": "まだ問い合わせで消耗しているの？問い合わせの一次対応をAIエージェントに任せた事例5選",
           "publishedAt": "2026-12-02",
           "customers": [
             "akippa株式会社",

@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 213 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 63 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 212 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 64 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 12 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -88,7 +88,7 @@
 | optex.co.jp | OAM-EXPLORER J、LINK-BT2 | #033（（非公開）） |
 | pa-consul.co.jp | タレントパレット | #041（株式会社松屋フーズホールディングス） |
 | quest.co.jp | WinActor | #057（株式会社日本能率協会マネジメントセンター（JMAM）） |
-| rakus.co.jp | 楽楽給与管理・楽楽勤怠 | 用語#007（株式会社文英、株式会社文英堂） |
+| rakus.co.jp | 楽楽勤怠 | 用語#007（株式会社文英堂） |
 | rocketsoftware.co.jp | Micro Focus Visual COBOL / Micro Focus COBOL Server | 用語#002（日建レンタコム株式会社）<br>用語#008（日建レンタコム株式会社） |
 | rolanddg.co.jp | Roland DG Assemble | #032（合資会社菅沼製作所） |
 | ryobi.co.jp | ARCACLAVIS Ways | 用語#008（共立蒲原総合病院） |
@@ -96,7 +96,7 @@
 | scskserviceware.co.jp | SCSKサービスウェア・BPO | 用語#004（DGファイナンシャルテクノロジー、株式会社DGフィナンシャルテクノロジー） |
 | seikotrust.jp | esTIME | #047（岩手県大槌町役場） |
 | senoh.jp | BIG ASS FANS | #031（グラン・スポール 八幡） |
-| serverworks.co.jp | Amazon Connect・Amazon Connect、Amazon Bedrock・Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package・クラウドコンタクトセンターパッケージ・OneLogin | 用語#005（千趣会コールセンター株式会社、株式会社千趣会、千趣会コールセンター株式会社）<br>用語#006（株式会社G-gen、株式会社G-gen（ジージェン））<br>用語#008（株式会社ペイメ、株式会社ペイミー） |
+| serverworks.co.jp | Amazon Connect・Amazon Connect、Amazon Bedrock・Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package・クラウドコンタクトセンターパッケージ・OneLogin | 用語#005（千趣会コールセンター株式会社、株式会社千趣会、千趣会コールセンター株式会社）<br>用語#006（株式会社G-gen、株式会社G-gen（ジージェン））<br>用語#008（株式会社ペイミー） |
 | sg-systems.co.jp | Biz-Fleet | 用語#008（JPロジスティクス） |
 | shachihata.co.jp | Shachihata Cloud | #049（株式会社ストライダーズ） |
 | sheetmetal.amada.co.jp | LC-VALSTER-6225AJ | 記念日11/23（花村産業株式会社） |
@@ -112,9 +112,9 @@
 | supportas.co.jp | FileMaker | #049（農事組合法人ECOマッシュ） |
 | swj.co.jp | LDAP Manager、Microsoft Entra ID | 用語#008（SOMPOひまわり生命保険株式会社） |
 | takachiho-kk.co.jp | RFIDシステム | #008（佐川グローバルロジスティクス株式会社） |
-| tam-tokyo.co.jp | ロボッター・段ボール詰め自動機・フィルム巻き機・ピッキング機械ほか・カートナー、段ボールケーサー | 記念日11/22（放鶴製菓株式会社・プロルフェン株式会社、松尾製菓株式会社/チロルチョコ株式会社） |
+| tam-tokyo.co.jp | カートナー、段ボールケーサー | 記念日11/22（松尾製菓株式会社/チロルチョコ株式会社） |
 | teachme.jp | Teachme Check・Teachme Biz | #046（三島食品株式会社）<br>#050（ハタ コンサルタント株式会社） |
-| techsword.co.jp | TechSword Vision | 記念日11/22（株式会社銘太郎総本店、株式会社榮太樓總本鋪） |
+| techsword.co.jp | TechSword Vision | 記念日11/22（株式会社榮太樓總本鋪） |
 | techvan.co.jp | Okta、Extic・GMOトラスト・ログイン・ソフトウェアテストサービス | 用語#008（慶應義塾、株式会社東北新社）<br>#057（株式会社MIXI） |
 | totec-sangyo.jp | Asprova APS・ASTERIA Warp、MotionBoard | #032（共和薬品工業株式会社）<br>用語#003（宇部エクシモ株式会社） |
 | transact.ne.jp | TransFax | 用語#009（株式会社モレーンコーポレーション） |
@@ -180,7 +180,7 @@
 | focus-cloud.jp | 2026-10-02（推定） | フォーカス給与明細クラウド | #005（株式会社山下商会）<br>#034（税理士法人フィデス会計社） |
 | forbis.jp | 2026-11-13 | Vegas | 用語#005（株式会社DECENCIA） |
 | form.run | 2026-11-03（推定） | formrun | #027（株式会社トモダ企画） |
-| freee.co.jp | 2026-09-30（推定） | freee会計、freee人事労務、freeeカー Unlimited、freee-mcp・freee会計、freee人事労務、freeeカード Unlimited・freee人事労務・freee会計、freee給与、freee税務申告・freee会計、freee人事労務、freee申告・freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理・freee人事労務、freee会計 | #003（レンジャーシステムズ株式会社、（リンクのみ））<br>#006（斐紋中央建工株式会社、（リンクのみ））<br>#034（西老資税理士事務所、（リンクのみ））<br>用語#004（株式会社LIG、（リンクのみ））<br>#045（株式会社ファームシップ、（リンクのみ）） |
+| freee.co.jp | 2026-09-30（推定） | freee会計、freee人事労務、freeeカー Unlimited、freee-mcp・freee会計、freee人事労務、freeeカード Unlimited・freee人事労務・freee会計、freee給与、freee税務申告・freee会計、freee人事労務、freee申告・freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理・freee人事労務、freee会計 | #003（レンジャーシステムズ株式会社、（リンクのみ））<br>#006（斐紋中央建工株式会社、（リンクのみ）、札幌中野冷機株式会社）<br>#034（西老資税理士事務所、（リンクのみ）、西村賀彦税理士事務所）<br>用語#004（株式会社LIG、（リンクのみ））<br>#045（株式会社ファームシップ、（リンクのみ）） |
 | fs-farm.co.jp | 2026-10-02（推定） | 検品君 | #005（株式会社マキノ）<br>#024（株式会社マキノ） |
 | fujimak.co.jp | 2026-10-28（推定） | コンビオーブン iCombi Pro・ニュークックチルシステム | #023（株式会社タケエイ）<br>#028（社会福祉法人 桜ヶ丘社会事業協会 桜ヶ丘記念病院） |
 | funaisoken.co.jp | 2026-11-16 | 経営コンサルティング | #042（ケアシステム株式会社、（リンクのみ）） |
@@ -196,7 +196,6 @@
 | hitachi-systems-es.co.jp | 2026-11-09 | 物品管理システム | 用語#001（JCOM株式会社） |
 | hr-prime.jp | 2026-10-15（推定） | HR PRIME | #014（株式会社カスタマーリレーションテレマーケティング） |
 | hrbrain.jp | 2026-10-05（推定） | HRBrain | #006（天白信用農業協同組合）<br>#036（株式会社日比谷花壇、株式会社ヒューマンアジャスト、株式会社デルタインターナショナル） |
-| i-abs.co.jp | 2026-11-18 | CYBER XEED | #045（オーシャル オーシャン シーピング (Japan) 株式会社、オリエント オーバーシーズ コンテナ ライン リミテッド 日本支社／オー・オー・シー・エル・ロジスティクス（ジャパン）株） |
 | inet.co.jp | 2026-11-16 | Next Generation EASY Cloud | #042（株式会社WorkVision） |
 | info-con.co.jp | 2026-10-20（推定） | ホームページ制作 | #017（有限会社丸井食品三重工場） |
 | info-ligua.jp | 2026-11-02（推定） | Ligoo POS&CRM、EMS-indepth-、Inject Energy | #026（メディカルアース株式会社 だいふく鍼灸整骨院グループ） |
