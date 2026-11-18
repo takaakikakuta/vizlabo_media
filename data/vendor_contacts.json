@@ -1550,7 +1550,8 @@
           "products": [
             "In-Sight 8000"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2392,7 +2393,8 @@
           "products": [
             "現場データ活用サービス i-BELT"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3336,7 +3338,8 @@
           "products": [
             "日立産機システム"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6671,7 +6674,8 @@
           "products": [
             "MU-8000V-L、Connect Plan、MULTUS B300II"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "リンクのみの事例（取り下げ依頼を受けた事例）なので通知しない"
         }
       ],
       "memo": "2026-11-11 第三者メディアへの掲載不可（お客様との取り決めで自社メディアに限り公開）と削除依頼。全事例を linkOnly（リンクのみ）にした"
@@ -9268,8 +9272,8 @@
     {
       "domain": "teachme.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "Teachme Check",
@@ -9287,7 +9291,8 @@
           "products": [
             "Teachme Check"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         },
         {
           "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
