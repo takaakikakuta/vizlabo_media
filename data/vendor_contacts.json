@@ -1384,8 +1384,8 @@
     {
       "domain": "cloudpack.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "AWS",
@@ -1403,7 +1403,8 @@
           "products": [
             "AWS"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         },
         {
           "slug": "79469bc8-ce52-417e-bf36-5e1fdd8aa336",
@@ -1731,8 +1732,8 @@
     {
       "domain": "cybersolutions.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "CYBERMAIL Σ ST"
@@ -1749,7 +1750,8 @@
           "products": [
             "CYBERMAIL Σ ST"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -1824,8 +1826,8 @@
     {
       "domain": "datawise.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "Datawise Area Marketer"
@@ -1842,7 +1844,8 @@
           "products": [
             "Datawise Area Marketer"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -4863,7 +4866,8 @@
           "products": [
             "LANSCOPE エンドポイントマネージャー オンプレミス版、Aurora Protect、Aurora Focus"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5250,8 +5254,8 @@
     {
       "domain": "max-com.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "BPO"
@@ -5268,7 +5272,8 @@
           "products": [
             "BPO"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -5699,7 +5704,8 @@
           "products": [
             "SHIELDEX"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6211,8 +6217,8 @@
     {
       "domain": "nicnet.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "ペーパーレス会議システム Support Session",
@@ -6232,7 +6238,8 @@
             "ペーパーレス会議システム Support Session",
             "スマートセッション"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -8226,8 +8233,8 @@
     {
       "domain": "seikotrust.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "esTIME"
@@ -8244,7 +8251,8 @@
           "products": [
             "esTIME"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -8928,8 +8936,8 @@
     {
       "domain": "subline.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "SUBLINE"
@@ -8946,7 +8954,8 @@
           "products": [
             "SUBLINE"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -10013,7 +10022,8 @@
           "products": [
             "Salesforce、カミレス、帳票DX"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
