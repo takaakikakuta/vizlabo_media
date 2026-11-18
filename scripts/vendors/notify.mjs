@@ -222,8 +222,13 @@ function body({ cust, title, url, short, noUrl, tieup, inv }) {
     lines.push("", "また、貴社の他の導入事例の追加掲載も承っております（無償）。ご興味があればお気軽にご返信ください。" + (tieup ? "比較検討層に届く事例記事のタイアップ制作も承っております。" : ""));
   }
   pushInvite(lines, { inv, short, noUrl });
-  lines.push("", "事例マニア 運営：角田崇明", "https://vizlabo.com", "kakuta@vizlabo.net");
+  lines.push("", ...signature(noUrl));
   return lines.join("\n");
+}
+
+/* 署名。URLなし版（URL を受け付けないフォーム用）はサイトの URL も外す */
+function signature(noUrl) {
+  return noUrl ? ["事例マニア 運営：角田崇明", "kakuta@vizlabo.net"] : ["事例マニア 運営：角田崇明", "https://vizlabo.com", "kakuta@vizlabo.net"];
 }
 
 /* 掲載ポリシー（vizlabo.com/policy）への案内。修正・削除の段落の直後に置く。URLなし版はページ名だけ */
@@ -263,7 +268,7 @@ function dayBody({ cust, title, url, short, noUrl, tieup, inv }) {
     lines.push("", "公開後は、貴社のSNSやお客様へのご案内でご紹介いただくのも大歓迎です。また、貴社の他の導入事例の追加掲載も承っております（無償）。ご興味があればお気軽にご返信ください。" + (tieup ? "比較検討層に届く事例記事のタイアップ制作も承っております。" : ""));
   }
   pushInvite(lines, { inv, short, noUrl });
-  lines.push("", "事例マニア 運営：角田崇明", "https://vizlabo.com", "kakuta@vizlabo.net");
+  lines.push("", ...signature(noUrl));
   return lines.join("\n");
 }
 
