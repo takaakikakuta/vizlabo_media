@@ -58831,7 +58831,8 @@
       "給与計算の手間",
       "老朽化したシステム",
       "法改正への対応"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-i-abs-co-jp-case-introduction03",
@@ -58888,7 +58889,8 @@
       "勤怠管理の手間",
       "月末の残業",
       "数字の集計に時間"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-i-studio-co-jp-casestudy-harekaze-action",
@@ -152939,7 +152941,8 @@
       "給与計算の手間",
       "勤怠管理の手間",
       "月末の残業"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-icds-co-jp-case-jica-helpportal-html",
@@ -269542,7 +269545,8 @@
       "給与計算の手間",
       "月末の残業",
       "多拠点の管理"
-    ]
+    ],
+    "linkOnly": true
   },
   {
     "id": "www-i-cue-jp-case-03-nsg",
