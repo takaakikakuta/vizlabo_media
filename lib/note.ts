@@ -3,7 +3,7 @@ import path from "node:path";
 
 /* note で連載中の「この事例がスゴイ」「事例コラム」の最新回。
    出どころはメルマガの手書き欄 newsletter/YYYY-MM-DD.json（sugoi / column）。
-   いちばん新しい号に URL があればそれを使う。title・image が空なら note の OGP から取る
+   連載ごとに、URL のあるいちばん新しい号を使う。title・image が空なら note の OGP から取る
    （メルマガの build.mjs が取って書き戻しているので、普段は空にならない）。
    次の号の JSON を先に作って URL だけ書いておけば、配信前でもトップに出せる。 */
 
@@ -19,16 +19,17 @@ const DIR = path.join(process.cwd(), "newsletter");
 
 type Manual = { url?: string; title?: string; image?: string; desc?: string };
 
-function newestManual(): { sugoi?: Manual; column?: Manual } | null {
-  if (!fs.existsSync(DIR)) return null;
+/* 連載ごとに、URL が入っているいちばん新しい号を探す（次の号に片方だけ先に書いても、もう片方は前の号のまま出る） */
+function newestManual(kind: NotePost["kind"]): Manual | undefined {
+  if (!fs.existsSync(DIR)) return undefined;
   const files = fs.readdirSync(DIR).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse();
   for (const f of files) {
     try {
       const m = JSON.parse(fs.readFileSync(path.join(DIR, f), "utf-8"));
-      if (m?.sugoi?.url || m?.column?.url) return m;
+      if (m?.[kind]?.url) return m[kind];
     } catch { /* 壊れた号は飛ばす */ }
   }
-  return null;
+  return undefined;
 }
 
 function decode(s: string) {
@@ -119,8 +120,6 @@ export async function allNotePosts(kind: NotePost["kind"]): Promise<NoteEntry[]>
 }
 
 export async function latestNotePosts(): Promise<NotePost[]> {
-  const m = newestManual();
-  if (!m) return [];
-  const posts = await Promise.all([build("sugoi", m.sugoi), build("column", m.column)]);
+  const posts = await Promise.all([build("sugoi", newestManual("sugoi")), build("column", newestManual("column"))]);
   return posts.filter((p): p is NotePost => p !== null);
 }
