@@ -166,9 +166,9 @@ export default function Sen({ article }: { article: SenArticle }) {
                   <span className="min-w-0">
                     <span className="line-clamp-2 text-[12px] leading-[1.6] text-muted sm:line-clamp-1">{c.title}</span>
                     <span className="mt-1.5 block text-[13px] font-bold text-ink group-hover:text-brand">
-                      事例ページを見る →
+                      事例ページで要約を見る →
                     </span>
-                    <span className="mt-0.5 block text-[11px] text-muted">事例マニア内・成果の数字と関連事例</span>
+                    <span className="mt-0.5 block text-[11px] text-muted">事例マニア内・課題と成果のまとめ、関連する事例</span>
                   </span>
                 </Link>
                 {/* 下段：提供元の元記事（外部サイト。物語を読む場所）。外へ出ることが一目で分かるよう、色と印を変える */}
@@ -177,7 +177,7 @@ export default function Sen({ article }: { article: SenArticle }) {
                   <span className="shrink-0 rounded-[2px] bg-brand px-1.5 py-[1px] text-[10px] font-bold tracking-[.08em] text-white">外部サイト</span>
                   <span className="min-w-0 flex-1">
                     <span className="flex items-center gap-1 text-[13px] font-bold text-brand group-hover:underline">
-                      元記事を読む
+                      元記事で詳しく読む
                       <ExternalLink size={13} strokeWidth={2.25} aria-hidden className="shrink-0" />
                     </span>
                     <span className="mt-0.5 block text-[11px] leading-[1.6] text-muted sm:truncate">
