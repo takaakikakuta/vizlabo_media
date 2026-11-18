@@ -2868,8 +2868,7 @@
             "freee人事労務、freee会計",
             "freee人事労務"
           ],
-          "notified": true,
-          "notifiedAt": "2026-11-18"
+          "notified": false
         }
       ],
       "memo": ""
@@ -3467,8 +3466,8 @@
     {
       "domain": "i-abs.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "CYBER XEED"
@@ -3487,7 +3486,7 @@
             "CYBER XEED"
           ],
           "notified": true,
-          "skipped": "リンクのみの事例（取り下げ依頼を受けた事例）なので通知しない"
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": "2026-11-18 導入事例は自社Webサイトへの掲載についてのみ許諾を得ており、第三者サイトへの掲載は受けていないとして削除依頼（CYBER XEED のほかの事例も同様に）。全4事例を linkOnly（リンクのみ）にした"
