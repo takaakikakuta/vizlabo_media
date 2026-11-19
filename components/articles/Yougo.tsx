@@ -16,6 +16,8 @@ import LinkOnlyCard from "../LinkOnlyCard";
 import VideoBadge, { PlayMark } from "../VideoBadge";
 import { hasVideo } from "../../lib/video";
 import { introSourceName } from "../../lib/introSources";
+import { withUtm } from "../../lib/source";
+import { ExternalLink } from "lucide-react";
 
 /* 「事例でわかる技術用語」テンプレート。「〇〇とは」で検索した人向けに、
    用語の説明（何を解決するものか。向き不向きは1〜2文）→ その用語で課題を解いた事例（一言ラベル＋1段落＋読者向けの一言）
@@ -159,22 +161,40 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                   })}
                 </div>
               )}
-              {/* 事例への導線＝その事例の画像（無ければ提供元ロゴ）つきのカード（事例セレクションと同じ。出典URLは事例ページ側に出す） */}
-              <Link href={`/cases/${c.id}`}
-                className="row group mt-4 ml-10 flex items-center gap-4 border border-line2 p-2.5 no-underline sm:p-3">
-                <span className="relative block h-20 w-32 shrink-0 overflow-hidden rounded-[3px] border border-line2 bg-soft">
-                  {c.image
-                    ? <CoverImg src={c.image} />
-                    : (vendorLogo(c.vendor) && <VendorLogo src={vendorLogo(c.vendor)!} size={34} />)}
-                  {hasVideo(c) && <PlayMark className="bottom-1.5 left-1.5" />}
-                </span>
-                <span className="min-w-0">
-                  <span className="block truncate text-[12px] text-muted">{c.title}</span>
-                  <span className="mt-1.5 block text-[13px] font-bold text-ink group-hover:text-brand">
-                    この事例の詳細を読む →
+              {/* 事例への導線（事例セレクションと同じ二段構成）。
+                  上段はサイト内の事例ページ（要約・成果の数字・関連事例）、下段は提供元の元記事（外部サイト）。
+                  取り違えないよう、下段だけ色・「外部サイト」の印・ドメインで外へ出ることを示す */}
+              <div className="mt-4 ml-10 border border-line2">
+                <Link href={`/cases/${c.id}`}
+                  className="row group flex items-center gap-4 p-2.5 no-underline sm:p-3">
+                  <span className="relative block h-16 w-24 shrink-0 overflow-hidden rounded-[3px] border border-line2 bg-soft sm:h-20 sm:w-32">
+                    {c.image
+                      ? <CoverImg src={c.image} />
+                      : (vendorLogo(c.vendor) && <VendorLogo src={vendorLogo(c.vendor)!} size={34} />)}
+                    {hasVideo(c) && <PlayMark className="bottom-1.5 left-1.5" />}
                   </span>
-                </span>
-              </Link>
+                  <span className="min-w-0">
+                    <span className="line-clamp-2 text-[12px] leading-[1.6] text-muted sm:line-clamp-1">{c.title}</span>
+                    <span className="mt-1.5 block text-[13px] font-bold text-ink group-hover:text-brand">
+                      事例ページで要約を見る →
+                    </span>
+                    <span className="mt-0.5 block text-[11px] text-muted">事例マニア内・課題と成果のまとめ、関連する事例</span>
+                  </span>
+                </Link>
+                <a href={withUtm(c.sourceUrl, "article", article.slug)} target="_blank" rel="noopener" data-case-src={c.id}
+                  className="group flex items-center gap-3 border-t border-brand/25 bg-brand-soft px-3 py-2.5 no-underline transition-colors hover:bg-brand/10 sm:px-3.5">
+                  <span className="shrink-0 rounded-[2px] bg-brand px-1.5 py-[1px] text-[10px] font-bold tracking-[.08em] text-white">外部サイト</span>
+                  <span className="min-w-0 flex-1">
+                    <span className="flex items-center gap-1 text-[13px] font-bold text-brand group-hover:underline">
+                      元記事で詳しく読む
+                      <ExternalLink size={13} strokeWidth={2.25} aria-hidden className="shrink-0" />
+                    </span>
+                    <span className="mt-0.5 block text-[11px] leading-[1.6] text-muted sm:truncate">
+                      {introSourceName(c.vendor) ? `${introSourceName(c.vendor)}の事例紹介ページ` : "提供元のサイト"}（{sourceHost(c)}）に移動します
+                    </span>
+                  </span>
+                </a>
+              </div>
             </section>
           );
         })}
@@ -253,4 +273,9 @@ export default function Yougo({ article }: { article: YougoArticle }) {
       </footer>
     </article>
   );
+}
+
+/** 元記事のドメイン（表示用。www. は外す） */
+function sourceHost(c: { sourceUrl: string; vendor: string }): string {
+  try { return new URL(c.sourceUrl).host.replace(/^www\./, ""); } catch { return c.vendor; }
 }
