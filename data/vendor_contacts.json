@@ -376,7 +376,7 @@
           "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
           "label": "用語#007",
           "title": "給与計算システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-30",
+          "publishedAt": "2026-12-01",
           "customers": [
             "林総事株式会社"
           ],
@@ -503,14 +503,15 @@
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
           "label": "用語#002",
           "title": "ERP・基幹システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-23",
+          "publishedAt": "2026-11-24",
           "customers": [
             "株式会社CONY JAPAN（リフォーる）"
           ],
           "products": [
             "ANDPAD"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
@@ -741,7 +742,7 @@
           "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
           "label": "用語#004",
           "title": "BPOとは｜10の事例でわかる",
-          "publishedAt": "2026-11-25",
+          "publishedAt": "2026-11-26",
           "customers": [
             "フィブロ製薬株式会社"
           ],
@@ -755,7 +756,7 @@
           "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
           "label": "用語#005",
           "title": "クラウドPBXとは｜10の事例でわかる",
-          "publishedAt": "2026-11-26",
+          "publishedAt": "2026-11-27",
           "customers": [
             "ピー・シー・エー株式会社",
             "株式会社きちり"
@@ -770,7 +771,7 @@
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
           "label": "用語#006",
           "title": "CTIとは｜10の事例でわかる",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-11-30",
           "customers": [
             "株式会社リンクアカデミー",
             "三菱鉛筆株式会社"
@@ -810,7 +811,7 @@
           "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
           "label": "用語#005",
           "title": "クラウドPBXとは｜10の事例でわかる",
-          "publishedAt": "2026-11-26",
+          "publishedAt": "2026-11-27",
           "customers": [
             "株式会社チェスコムコールセンターソリューションズ"
           ],
@@ -823,7 +824,7 @@
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
           "label": "用語#006",
           "title": "CTIとは｜10の事例でわかる",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-11-30",
           "customers": [
             "株式会社バトン",
             "株式会社SIMPLATT"
@@ -1059,7 +1060,7 @@
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
           "label": "用語#002",
           "title": "ERP・基幹システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-23",
+          "publishedAt": "2026-11-24",
           "customers": [
             "株式会社八天堂",
             "武田レッグウェアー株式会社"
@@ -1132,7 +1133,7 @@
           "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
           "label": "用語#004",
           "title": "BPOとは｜10の事例でわかる",
-          "publishedAt": "2026-11-25",
+          "publishedAt": "2026-11-26",
           "customers": [
             "テージー株式会社"
           ],
@@ -1158,7 +1159,7 @@
           "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
           "label": "用語#007",
           "title": "給与計算システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-30",
+          "publishedAt": "2026-12-01",
           "customers": [
             "株式会社西松屋チェーン"
           ],
@@ -1370,7 +1371,7 @@
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
           "label": "用語#008",
           "title": "SSO・IDaaSとは｜10の事例でわかる",
-          "publishedAt": "2026-12-01",
+          "publishedAt": "2026-12-02",
           "customers": [
             "株式会社AOB慧央グループ（現：株式会社アルソア慧央グループ）"
           ],
@@ -1489,7 +1490,7 @@
           "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
           "label": "用語#003",
           "title": "ローコード・ノーコードとは｜10の事例でわかる",
-          "publishedAt": "2026-11-24",
+          "publishedAt": "2026-11-25",
           "customers": [
             "Fast Fitness Japan",
             "株式会社Fast Fitness Japan"
@@ -1719,7 +1720,7 @@
           "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
           "label": "用語#005",
           "title": "クラウドPBXとは｜10の事例でわかる",
-          "publishedAt": "2026-11-26",
+          "publishedAt": "2026-11-27",
           "customers": [
             "株式会社 池の平ホテル&リゾーツ（白樺リゾート池の平ホテル）"
           ],
@@ -1786,7 +1787,7 @@
           "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
           "label": "用語#003",
           "title": "ローコード・ノーコードとは｜10の事例でわかる",
-          "publishedAt": "2026-11-24",
+          "publishedAt": "2026-11-25",
           "customers": [
             "株式会社京都紋付",
             "株式会社京屋染物店"
@@ -1813,7 +1814,7 @@
           "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
           "label": "用語#005",
           "title": "クラウドPBXとは｜10の事例でわかる",
-          "publishedAt": "2026-11-26",
+          "publishedAt": "2026-11-27",
           "customers": [
             "株式会社シャルレ"
           ],
@@ -1918,7 +1919,7 @@
           "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
           "label": "用語#007",
           "title": "給与計算システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-30",
+          "publishedAt": "2026-12-01",
           "customers": [
             "ホシザキ株式会社"
           ],
@@ -2477,7 +2478,7 @@
           "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
           "label": "用語#004",
           "title": "BPOとは｜10の事例でわかる",
-          "publishedAt": "2026-11-25",
+          "publishedAt": "2026-11-26",
           "customers": [
             "味の素フィナンシャル・ソリューションズ株式会社"
           ],
@@ -2546,7 +2547,7 @@
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
           "label": "用語#006",
           "title": "CTIとは｜10の事例でわかる",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-11-30",
           "customers": [
             "株式会社ジェイエイシーリクルートメント",
             "セック株式会社"
@@ -2585,7 +2586,7 @@
           "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
           "label": "用語#003",
           "title": "ローコード・ノーコードとは｜10の事例でわかる",
-          "publishedAt": "2026-11-24",
+          "publishedAt": "2026-11-25",
           "customers": [
             "ISS山崎機械"
           ],
@@ -2760,14 +2761,15 @@
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
           "label": "用語#002",
           "title": "ERP・基幹システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-23",
+          "publishedAt": "2026-11-24",
           "customers": [
             "株式会社DECENCIA"
           ],
           "products": [
             "Vegas"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3857,14 +3859,15 @@
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
           "label": "用語#002",
           "title": "ERP・基幹システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-23",
+          "publishedAt": "2026-11-24",
           "customers": [
             "株式会社NTTデータMSE"
           ],
           "products": [
             "intra-mart、Biz∫"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
@@ -3884,7 +3887,7 @@
           "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
           "label": "用語#003",
           "title": "ローコード・ノーコードとは｜10の事例でわかる",
-          "publishedAt": "2026-11-24",
+          "publishedAt": "2026-11-25",
           "customers": [
             "三洋化成工業株式会社",
             "SOMPOホールディングス株式会社（損害保険ジャパン株式会社）"
@@ -3978,7 +3981,7 @@
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
           "label": "用語#008",
           "title": "SSO・IDaaSとは｜10の事例でわかる",
-          "publishedAt": "2026-12-01",
+          "publishedAt": "2026-12-02",
           "customers": [
             "近畿労働金庫",
             "株式会社サイゼリヤ"
@@ -4007,7 +4010,7 @@
           "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
           "label": "用語#007",
           "title": "給与計算システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-30",
+          "publishedAt": "2026-12-01",
           "customers": [
             "日野市立病院",
             "社会福祉法人黎明会"
@@ -4232,7 +4235,7 @@
           "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
           "label": "用語#003",
           "title": "ローコード・ノーコードとは｜10の事例でわかる",
-          "publishedAt": "2026-11-24",
+          "publishedAt": "2026-11-25",
           "customers": [
             "西日本旅客鉄道株式会社"
           ],
@@ -4450,7 +4453,7 @@
           "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
           "label": "用語#003",
           "title": "ローコード・ノーコードとは｜10の事例でわかる",
-          "publishedAt": "2026-11-24",
+          "publishedAt": "2026-11-25",
           "customers": [
             "武田病院グループ"
           ],
@@ -4608,19 +4611,6 @@
           "notifiedAt": "2026-11-11"
         },
         {
-          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
-          "label": "用語#002",
-          "title": "ERP・基幹システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-23",
-          "customers": [
-            "株式会社オーディオテクニカ"
-          ],
-          "products": [
-            "SAP S/4HANA、SAP on Azure"
-          ],
-          "notified": false
-        },
-        {
           "slug": "day-2026-11-23",
           "label": "記念日11/23",
           "title": "ワーク・ライフ・バランスの日（記念日ポスト 11/23）",
@@ -4630,6 +4620,20 @@
           ],
           "products": [
             "SAP ERP 産業用機械製造業向けテンプレート: HI-KORT for IM&C"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "株式会社オーディオテクニカ"
+          ],
+          "products": [
+            "SAP S/4HANA、SAP on Azure"
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
@@ -5596,7 +5600,7 @@
           "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
           "label": "用語#004",
           "title": "BPOとは｜10の事例でわかる",
-          "publishedAt": "2026-11-25",
+          "publishedAt": "2026-11-26",
           "customers": [
             "ウシオ電機"
           ],
@@ -5703,14 +5707,15 @@
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
           "label": "用語#002",
           "title": "ERP・基幹システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-23",
+          "publishedAt": "2026-11-24",
           "customers": [
             "株式会社ミヤシゲ"
           ],
           "products": [
             "e2-movE"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
@@ -5774,22 +5779,6 @@
           "notifiedAt": "2026-11-09"
         },
         {
-          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
-          "label": "用語#002",
-          "title": "ERP・基幹システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-23",
-          "customers": [
-            "福留ハム株式会社",
-            "税理士法人近代経営&Kinkei Farm"
-          ],
-          "products": [
-            "Galileopt DX",
-            "ACELINK NX-Pro"
-          ],
-          "notified": true,
-          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
-        },
-        {
           "slug": "8b0bd681-ea46-4b48-a2b8-1d025d95b168",
           "label": "用語#006",
           "title": "ERP・基幹システムとは｜金融・保険の5つの事例でわかる",
@@ -5798,6 +5787,22 @@
             "税理士法人近代経営&Kinkei Farm"
           ],
           "products": [
+            "ACELINK NX-Pro"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "福留ハム株式会社",
+            "税理士法人近代経営&Kinkei Farm"
+          ],
+          "products": [
+            "Galileopt DX",
             "ACELINK NX-Pro"
           ],
           "notified": true,
@@ -5821,7 +5826,7 @@
           "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
           "label": "用語#007",
           "title": "給与計算システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-30",
+          "publishedAt": "2026-12-01",
           "customers": [
             "株式会社AZU"
           ],
@@ -5996,7 +6001,7 @@
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
           "label": "用語#006",
           "title": "CTIとは｜10の事例でわかる",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-11-30",
           "customers": [
             "ホームケルン株式会社"
           ],
@@ -6023,7 +6028,7 @@
           "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
           "label": "用語#004",
           "title": "BPOとは｜10の事例でわかる",
-          "publishedAt": "2026-11-25",
+          "publishedAt": "2026-11-26",
           "customers": [
             "株式会社クラフティア"
           ],
@@ -6374,7 +6379,7 @@
           "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
           "label": "用語#004",
           "title": "BPOとは｜10の事例でわかる",
-          "publishedAt": "2026-11-25",
+          "publishedAt": "2026-11-26",
           "customers": [
             "アメアスポーツジャパン株式会社",
             "株式会社viviON"
@@ -6499,7 +6504,7 @@
           "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
           "label": "用語#005",
           "title": "クラウドPBXとは｜10の事例でわかる",
-          "publishedAt": "2026-11-26",
+          "publishedAt": "2026-11-27",
           "customers": [
             "パナソニック保険サービス株式会社",
             "株式会社博報堂コネクト"
@@ -6513,7 +6518,7 @@
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
           "label": "用語#006",
           "title": "CTIとは｜10の事例でわかる",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-11-30",
           "customers": [
             "日新火災海上保険株式会社"
           ],
@@ -6690,7 +6695,7 @@
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
           "label": "用語#008",
           "title": "SSO・IDaaSとは｜10の事例でわかる",
-          "publishedAt": "2026-12-01",
+          "publishedAt": "2026-12-02",
           "customers": [
             "大阪ガス株式会社"
           ],
@@ -7416,7 +7421,7 @@
           "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
           "label": "用語#007",
           "title": "給与計算システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-30",
+          "publishedAt": "2026-12-01",
           "customers": [
             "株式会社文英堂"
           ],
@@ -7641,14 +7646,15 @@
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
           "label": "用語#002",
           "title": "ERP・基幹システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-23",
+          "publishedAt": "2026-11-24",
           "customers": [
             "日建レンタコム株式会社"
           ],
           "products": [
             "Micro Focus Visual COBOL / Micro Focus COBOL Server"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
@@ -7732,7 +7738,7 @@
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
           "label": "用語#008",
           "title": "SSO・IDaaSとは｜10の事例でわかる",
-          "publishedAt": "2026-12-01",
+          "publishedAt": "2026-12-02",
           "customers": [
             "共立蒲原総合病院"
           ],
@@ -7800,7 +7806,7 @@
           "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
           "label": "用語#004",
           "title": "BPOとは｜10の事例でわかる",
-          "publishedAt": "2026-11-25",
+          "publishedAt": "2026-11-26",
           "customers": [
             "リコージャパン株式会社"
           ],
@@ -8293,7 +8299,7 @@
           "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
           "label": "用語#004",
           "title": "BPOとは｜10の事例でわかる",
-          "publishedAt": "2026-11-25",
+          "publishedAt": "2026-11-26",
           "customers": [
             "DGファイナンシャルテクノロジー",
             "株式会社DGフィナンシャルテクノロジー"
@@ -8446,7 +8452,7 @@
           "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
           "label": "用語#005",
           "title": "クラウドPBXとは｜10の事例でわかる",
-          "publishedAt": "2026-11-26",
+          "publishedAt": "2026-11-27",
           "customers": [
             "千趣会コールセンター株式会社",
             "株式会社千趣会、千趣会コールセンター株式会社"
@@ -8461,7 +8467,7 @@
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
           "label": "用語#006",
           "title": "CTIとは｜10の事例でわかる",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-11-30",
           "customers": [
             "株式会社G-gen",
             "株式会社G-gen（ジージェン）"
@@ -8476,7 +8482,7 @@
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
           "label": "用語#008",
           "title": "SSO・IDaaSとは｜10の事例でわかる",
-          "publishedAt": "2026-12-01",
+          "publishedAt": "2026-12-02",
           "customers": [
             "株式会社ペイミー"
           ],
@@ -8667,7 +8673,7 @@
           "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
           "label": "用語#007",
           "title": "給与計算システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-30",
+          "publishedAt": "2026-12-01",
           "customers": [
             "ヤマトサカナ株式会社"
           ],
@@ -8866,7 +8872,7 @@
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
           "label": "用語#002",
           "title": "ERP・基幹システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-23",
+          "publishedAt": "2026-11-24",
           "customers": [
             "日研フード株式会社",
             "社会福祉法人 聖隷福祉事業団"
@@ -9173,20 +9179,6 @@
           "notified": true
         },
         {
-          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
-          "label": "用語#002",
-          "title": "ERP・基幹システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-23",
-          "customers": [
-            "カルビー株式会社"
-          ],
-          "products": [
-            "SAP Business Suite powered by SAP HANA"
-          ],
-          "notified": true,
-          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
-        },
-        {
           "slug": "day-2026-11-23",
           "label": "記念日11/23",
           "title": "ワーク・ライフ・バランスの日（記念日ポスト 11/23）",
@@ -9196,6 +9188,20 @@
           ],
           "products": [
             "UiPath"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
+          "label": "用語#002",
+          "title": "ERP・基幹システムとは｜10の事例でわかる",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "カルビー株式会社"
+          ],
+          "products": [
+            "SAP Business Suite powered by SAP HANA"
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
@@ -9267,7 +9273,7 @@
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
           "label": "用語#008",
           "title": "SSO・IDaaSとは｜10の事例でわかる",
-          "publishedAt": "2026-12-01",
+          "publishedAt": "2026-12-02",
           "customers": [
             "SOMPOひまわり生命保険株式会社"
           ],
@@ -9534,7 +9540,7 @@
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
           "label": "用語#008",
           "title": "SSO・IDaaSとは｜10の事例でわかる",
-          "publishedAt": "2026-12-01",
+          "publishedAt": "2026-12-02",
           "customers": [
             "慶應義塾",
             "株式会社東北新社"
@@ -9844,7 +9850,7 @@
           "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
           "label": "用語#003",
           "title": "ローコード・ノーコードとは｜10の事例でわかる",
-          "publishedAt": "2026-11-24",
+          "publishedAt": "2026-11-25",
           "customers": [
             "宇部エクシモ株式会社"
           ],
@@ -10136,7 +10142,7 @@
           "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
           "label": "用語#005",
           "title": "クラウドPBXとは｜10の事例でわかる",
-          "publishedAt": "2026-11-26",
+          "publishedAt": "2026-11-27",
           "customers": [
             "株式会社ミスミグループ本社"
           ],
@@ -10149,7 +10155,7 @@
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
           "label": "用語#006",
           "title": "CTIとは｜10の事例でわかる",
-          "publishedAt": "2026-11-27",
+          "publishedAt": "2026-11-30",
           "customers": [
             "株式会社Mizkan"
           ],
@@ -10216,7 +10222,7 @@
           "slug": "e2a1681b-45e2-491e-8c26-6705dfc85825",
           "label": "用語#003",
           "title": "ローコード・ノーコードとは｜10の事例でわかる",
-          "publishedAt": "2026-11-24",
+          "publishedAt": "2026-11-25",
           "customers": [
             "株式会社ジーテクト",
             "株式会社利久"
@@ -10420,7 +10426,7 @@
           "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
           "label": "用語#005",
           "title": "クラウドPBXとは｜10の事例でわかる",
-          "publishedAt": "2026-11-26",
+          "publishedAt": "2026-11-27",
           "customers": [
             "不二ラテックス株式会社"
           ],
@@ -10473,7 +10479,7 @@
           "slug": "e4aaa796-ad2b-4e68-a9d6-55bcb1b2017c",
           "label": "用語#004",
           "title": "BPOとは｜10の事例でわかる",
-          "publishedAt": "2026-11-25",
+          "publishedAt": "2026-11-26",
           "customers": [
             "日本通運株式会社"
           ],
@@ -10558,7 +10564,7 @@
           "slug": "3fd4a0f5-5755-43ac-89ec-71dfe50f1343",
           "label": "用語#007",
           "title": "給与計算システムとは｜10の事例でわかる",
-          "publishedAt": "2026-11-30",
+          "publishedAt": "2026-12-01",
           "customers": [
             "株式会社ガスワンホールディングス",
             "国立大学法人 神戸大学"
@@ -10573,7 +10579,7 @@
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
           "label": "用語#008",
           "title": "SSO・IDaaSとは｜10の事例でわかる",
-          "publishedAt": "2026-12-01",
+          "publishedAt": "2026-12-02",
           "customers": [
             "三建設備工業株式会社"
           ],
