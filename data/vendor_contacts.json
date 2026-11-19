@@ -713,8 +713,8 @@
     {
       "domain": "biztel.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "BIZTEL コールセンター",
@@ -750,7 +750,8 @@
             "BIZTEL コールセンター",
             "BIZTEL コールセンター アウトソーシングオプション"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         },
         {
           "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
@@ -1140,7 +1141,8 @@
           "products": [
             "Cashmo"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2487,7 +2489,8 @@
           "products": [
             "Remota"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5595,8 +5598,8 @@
     {
       "domain": "mimasa.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "M.O.S"
@@ -5613,7 +5616,8 @@
           "products": [
             "M.O.S"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -6022,8 +6026,8 @@
     {
       "domain": "mxmobiling.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "itsmoBPO キッティング",
@@ -6041,7 +6045,8 @@
           "products": [
             "itsmoBPO"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         },
         {
           "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
@@ -6373,8 +6378,8 @@
     {
       "domain": "noc-net.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "給与計算・人事アウトソーシングサービス",
@@ -6394,7 +6399,8 @@
             "給与計算・人事アウトソーシングサービス",
             "経理アウトソーシングサービス"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -7801,8 +7807,8 @@
     {
       "domain": "saleslab.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "オールインワンBPO型営業支援サービス"
@@ -7819,7 +7825,8 @@
           "products": [
             "オールインワンBPO型営業支援サービス"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -8293,8 +8300,8 @@
     {
       "domain": "scskserviceware.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "SCSKサービスウェア",
@@ -8314,7 +8321,8 @@
             "SCSKサービスウェア",
             "BPO"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -10475,8 +10483,8 @@
     {
       "domain": "wanbishi.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "AI-OCR×BPOサービス",
@@ -10495,7 +10503,8 @@
             "AI-OCR×BPOサービス",
             "AI-OCR×BPO"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
