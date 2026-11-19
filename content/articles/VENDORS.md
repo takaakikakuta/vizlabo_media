@@ -42,7 +42,7 @@
 | fastseries.jp | FastHelp | 用語#006（株式会社ジェイエイシーリクルートメント、セック株式会社） |
 | fcs.co.jp | kintone × モジトリ | 用語#003（ISS山崎機械） |
 | forbis.jp | Vegas | 用語#002（株式会社DECENCIA） |
-| freee.co.jp | freee・freee人事労務、freee会計・freee人事労務・freee人事労務、freee勤怠管理Plus | 用語#008（株式会社ダイナミック物流、（リンクのみ））<br>#045（株式会社ファームシップ、（リンクのみ））<br>用語#009（社会福祉法人ハマノ愛生会） |
+| freee.co.jp | freee・freee人事労務、freee会計・freee人事労務・freee人事労務アウトソース・freee人事労務、freee勤怠管理Plus | 用語#008（株式会社ダイナミック物流、（リンクのみ））<br>#045（株式会社ファームシップ、（リンクのみ）、EMオノエ株式会社）<br>用語#009（社会福祉法人ハマノ愛生会） |
 | geekplus.jp | 搬送型AMR・Geek+ Pシリーズ ピッキングロボット・ピッキングロボット | #033（トヨタ自動車、Walmart、Jointown製薬グループ） |
 | goriki.jp | ポストパレット | #057（ナイス（株）相模原市場・相模原営業所） |
 | hakuou.co.jp | AutoFork | #033（日本トランスシティ株式会社） |
