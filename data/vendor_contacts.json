@@ -846,7 +846,8 @@
             "BIZTEL コールセンター",
             "BIZTEL コールセンター / BIZTEL モバイル"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -912,7 +913,8 @@
           "products": [
             "BlueBean"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -1939,8 +1941,8 @@
     {
       "domain": "crotta.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "crotta"
@@ -1957,7 +1959,8 @@
           "products": [
             "crotta"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         }
       ],
       "memo": ""
@@ -2034,8 +2037,8 @@
     {
       "domain": "daiko-xtech.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "Fujitsu テレフォニーソリューション「ソフトウェアPBX」"
@@ -2052,7 +2055,8 @@
           "products": [
             "Fujitsu テレフォニーソリューション「ソフトウェアPBX」"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         }
       ],
       "memo": ""
@@ -6969,7 +6973,8 @@
           "products": [
             "CTBASE/Connect Cloud"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -9053,7 +9058,8 @@
             "Amazon Connect",
             "Amazon Connect、Amazon Bedrock"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -10850,7 +10856,8 @@
           "products": [
             "Amazon Connect"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -11117,8 +11124,8 @@
     {
       "domain": "voicex.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "VoiceX"
@@ -11135,7 +11142,8 @@
           "products": [
             "VoiceX"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         }
       ],
       "memo": ""
