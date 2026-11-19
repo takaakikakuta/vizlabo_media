@@ -1499,7 +1499,8 @@
             "クラウドサイン、MAKE for kintone",
             "クラウドサイン、クラウドサインMAKE for kintone"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -1795,10 +1796,11 @@
           "products": [
             "kintone"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": ""
+      "memo": "2026-11-19 用語#003: 問い合わせフォームに「その他」の用件がなく、送れる窓口がない"
     },
     {
       "domain": "daiko-xtech.co.jp",
@@ -2575,8 +2577,8 @@
     {
       "domain": "fcs.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "kintone × モジトリ"
@@ -2593,7 +2595,8 @@
           "products": [
             "kintone × モジトリ"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -3895,7 +3898,8 @@
           "products": [
             "intra-mart"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
@@ -4242,7 +4246,8 @@
           "products": [
             "Microsoft Power Platform"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
@@ -4442,8 +4447,8 @@
     {
       "domain": "kagoya.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "Forguncyプラン"
@@ -4460,7 +4465,8 @@
           "products": [
             "Forguncyプラン"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -9857,7 +9863,8 @@
           "products": [
             "ASTERIA Warp、MotionBoard"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -10230,7 +10237,8 @@
           "products": [
             "Unifinity"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "day-2026-11-25",
