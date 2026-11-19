@@ -6391,8 +6391,8 @@
     {
       "domain": "nr1.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "NR-1100"
@@ -6409,7 +6409,8 @@
           "products": [
             "NR-1100"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -8620,7 +8621,8 @@
           "products": [
             "EGB-6020ATCe"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -10235,7 +10237,8 @@
           "products": [
             "Unifinity"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
