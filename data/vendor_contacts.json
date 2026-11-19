@@ -2194,7 +2194,8 @@
       "notifiedAt": "2026-10-23",
       "notifiedAtEstimated": true,
       "products": [
-        "オンサイト太陽光発電PPAサービス"
+        "オンサイト太陽光発電PPAサービス",
+        "前川製作所製 空気・水両熱源エコキュート"
       ],
       "articles": [
         {
@@ -2210,6 +2211,19 @@
             "オンサイト太陽光発電PPAサービス"
           ],
           "notified": true
+        },
+        {
+          "slug": "day-2026-11-26",
+          "label": "記念日11/26",
+          "title": "いい風呂の日（記念日ポスト 11/26）",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "ミツワデイリー株式会社"
+          ],
+          "products": [
+            "前川製作所製 空気・水両熱源エコキュート"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2342,7 +2356,8 @@
         "現場データ活用サービス i-BELT、マシンオートメーションコントローラ",
         "現場データ活用サービス i-BELT",
         "i-BELT",
-        "高速CT型X線自動検査装置"
+        "高速CT型X線自動検査装置",
+        "オムロン協調ロボット TMシリーズ"
       ],
       "articles": [
         {
@@ -2386,6 +2401,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "day-2026-11-24",
+          "label": "記念日11/24",
+          "title": "いいつまようじの日（記念日ポスト 11/24）",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "株式会社有川製作所"
+          ],
+          "products": [
+            "オムロン協調ロボット TMシリーズ"
+          ],
+          "notified": false
         },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
@@ -4602,7 +4630,8 @@
           "products": [
             "SAP ERP 産業用機械製造業向けテンプレート: HI-KORT for IM&C"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5864,7 +5893,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作",
-        "ミスターマーケティングのコンサルティング"
+        "ミスターマーケティングのコンサルティング",
+        "ブランディング・マーケティングコンサルティング"
       ],
       "articles": [
         {
@@ -5893,6 +5923,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-16"
+        },
+        {
+          "slug": "day-2026-11-24",
+          "label": "記念日11/24",
+          "title": "いいつまようじの日（記念日ポスト 11/24）",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "株式会社石崎電機製作所"
+          ],
+          "products": [
+            "ブランディング・マーケティングコンサルティング"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6056,6 +6099,32 @@
       "memo": ""
     },
     {
+      "domain": "n-thermo.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "F-nex"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-26",
+          "label": "記念日11/26",
+          "title": "いい風呂の日（記念日ポスト 11/26）",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "キリンビール株式会社 北海道千歳工場"
+          ],
+          "products": [
+            "F-nex"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "naomi.co.jp",
       "company": "",
       "status": "no-objection",
@@ -6064,7 +6133,8 @@
       "products": [
         "パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02",
         "チューブ充填機 6DTZ-T",
-        "チューブ充填機 4DTZK-T"
+        "チューブ充填機 4DTZK-T",
+        "パズル充填機 粉体仕様 RD703+SU01"
       ],
       "articles": [
         {
@@ -6094,6 +6164,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-16"
+        },
+        {
+          "slug": "day-2026-11-26",
+          "label": "記念日11/26",
+          "title": "いい風呂の日（記念日ポスト 11/26）",
+          "publishedAt": "2026-11-26",
+          "customers": [
+            "合同会社にとん屋"
+          ],
+          "products": [
+            "パズル充填機 粉体仕様 RD703+SU01"
+          ],
+          "notified": false
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -6297,6 +6380,32 @@
           "products": [
             "給与計算・人事アウトソーシングサービス",
             "経理アウトソーシングサービス"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "nr1.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "NR-1100"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-25",
+          "label": "記念日11/25",
+          "title": "金型の日（記念日ポスト 11/25）",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "株式会社メガロ静岡"
+          ],
+          "products": [
+            "NR-1100"
           ],
           "notified": false
         }
@@ -7639,7 +7748,8 @@
       "notifiedAt": "2026-11-09",
       "notifiedAtEstimated": false,
       "products": [
-        "Cimatron、Pform"
+        "Cimatron、Pform",
+        "GO2cam、NCSIMUL"
       ],
       "articles": [
         {
@@ -7655,6 +7765,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "day-2026-11-24",
+          "label": "記念日11/24",
+          "title": "いいつまようじの日（記念日ポスト 11/24）",
+          "publishedAt": "2026-11-24",
+          "customers": [
+            "株式会社オオツカハイテック"
+          ],
+          "products": [
+            "GO2cam、NCSIMUL"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -8461,11 +8584,12 @@
     {
       "domain": "sheetmetal.amada.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
-        "LC-VALSTER-6225AJ"
+        "LC-VALSTER-6225AJ",
+        "EGB-6020ATCe"
       ],
       "articles": [
         {
@@ -8478,6 +8602,20 @@
           ],
           "products": [
             "LC-VALSTER-6225AJ"
+          ],
+          "notified": true,
+          "notifiedAt": "2026-11-19"
+        },
+        {
+          "slug": "day-2026-11-25",
+          "label": "記念日11/25",
+          "title": "金型の日（記念日ポスト 11/25）",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "株式会社誠工社"
+          ],
+          "products": [
+            "EGB-6020ATCe"
           ],
           "notified": false
         }
@@ -9054,7 +9192,8 @@
           "products": [
             "UiPath"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -10083,6 +10222,19 @@
           "notified": false
         },
         {
+          "slug": "day-2026-11-25",
+          "label": "記念日11/25",
+          "title": "金型の日（記念日ポスト 11/25）",
+          "publishedAt": "2026-11-25",
+          "customers": [
+            "株式会社ジーテクト"
+          ],
+          "products": [
+            "Unifinity"
+          ],
+          "notified": false
+        },
+        {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
           "label": "#057",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
@@ -10092,6 +10244,32 @@
           ],
           "products": [
             "Unifinity"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "upr-net.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "遠隔監視ソリューション"
+      ],
+      "articles": [
+        {
+          "slug": "fd9e90a8-c654-429f-b11e-afbb4a6ca5c7",
+          "label": "#031",
+          "title": "冬が来るたび止まる仕事を、どう乗り切ったか。現場の冬対策の事例10選",
+          "publishedAt": "2026-11-09",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "遠隔監視ソリューション"
           ],
           "notified": false
         }
