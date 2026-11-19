@@ -114,7 +114,8 @@ for (const f of picked) {
     if (!PROSPECT.test(it.headline + body)) {
       const used = [...new Set(numbers(it.headline + "\n" + body).map((x) => x.value))];
       const src = norm([c.title, c.summary, c.resultsQualitative, ...(c.results ?? []).map((r) => `${r.metric}: ${r.value}`)].join("\n"));
-      const hit = src.split(/[。、\n]/).find((s) => PROSPECT.test(s) && used.some((v) => has(s, v)));
+      /* 括弧でも区切る。「売上（当期見込み）: 5億円（前の2億円から）」の「2億円」は実績なので、見込みの文に含めない */
+      const hit = src.split(/[。、（(\n]/).find((s) => PROSPECT.test(s) && used.some((v) => has(s, v)));
       if (hit) ng.push(`${no} 事例データでは見込み・予定の数字だが、見出しにも body にも断りがない\n     データ: ${hit.trim()}`);
     }
     for (const [where, text] of [["見出し", it.headline], ["body", body]]) {
