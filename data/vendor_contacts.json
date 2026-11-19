@@ -2,6 +2,32 @@
   "note": "提供元への掲載連絡の記録。scripts/vendors/contacts.mjs が公開中の記事から提供元と記事を足す（手で書いた status・notifiedAt・company・memo は上書きしない）。status: pending＝未連絡 / no-objection＝連絡済みで削除依頼なし / removed＝削除依頼あり（blocked_vendors.json から自動）。notifiedAtEstimated が true の日付は記事の公開日からの推定なので、分かれば直す。",
   "vendors": [
     {
+      "domain": "100inc.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "HubSpot CRM"
+      ],
+      "articles": [
+        {
+          "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
+          "label": "用語#010",
+          "title": "CRMとは｜10の事例でわかる",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "京都芸術大学附属高等学校"
+          ],
+          "products": [
+            "HubSpot CRM"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "308-al.co.jp",
       "company": "",
       "status": "no-objection",
@@ -277,8 +303,8 @@
     {
       "domain": "ai-market.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "AIエージェント型ボイスボット"
@@ -295,7 +321,8 @@
           "products": [
             "AIエージェント型ボイスボット"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-18"
         }
       ],
       "memo": ""
@@ -383,7 +410,8 @@
           "products": [
             "TimeP@CK Professional"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "60cae3ad-ff6c-4326-9cb5-d6f1d29b202e",
@@ -524,7 +552,8 @@
           "products": [
             "ANDPAD"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
@@ -599,6 +628,32 @@
           ],
           "notified": true,
           "skipped": "以前の事例セレクションで連絡済みの提供元のため、この記事の通知は省略"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "assemble.rolanddg.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Roland DG Assemble"
+      ],
+      "articles": [
+        {
+          "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
+          "label": "用語#013",
+          "title": "IoTとは｜10の事例でわかる",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "株式会社浜松パルス"
+          ],
+          "products": [
+            "Roland DG Assemble"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -693,6 +748,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
+          "label": "用語#013",
+          "title": "IoTとは｜10の事例でわかる",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "株式会社豊田自動織機"
+          ],
+          "products": [
+            "建物被害モニタリングシステム"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -726,8 +794,8 @@
     {
       "domain": "biztel.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "BIZTEL コールセンター",
@@ -763,7 +831,8 @@
             "BIZTEL コールセンター",
             "BIZTEL コールセンター アウトソーシングオプション"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         },
         {
           "slug": "71a0a817-aa5d-4740-ab17-8ccde9b408f7",
@@ -778,7 +847,8 @@
             "BIZTEL コールセンター",
             "BIZTEL コールセンター / BIZTEL モバイル"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -788,6 +858,20 @@
           "customers": [
             "株式会社リンクアカデミー",
             "三菱鉛筆株式会社"
+          ],
+          "products": [
+            "BIZTEL コールセンター"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
+          "label": "用語#010",
+          "title": "CRMとは｜10の事例でわかる",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "株式会社ニデック"
           ],
           "products": [
             "BIZTEL コールセンター"
@@ -831,7 +915,8 @@
           "products": [
             "BlueBean"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -845,7 +930,8 @@
           "products": [
             "BlueBean"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -872,6 +958,32 @@
             "BORDER"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "buddymarketing.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "SATORI、バディコネクト"
+      ],
+      "articles": [
+        {
+          "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
+          "label": "用語#010",
+          "title": "CRMとは｜10の事例でわかる",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "株式会社レコモット"
+          ],
+          "products": [
+            "SATORI、バディコネクト"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1153,7 +1265,8 @@
           "products": [
             "Cashmo"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -1161,8 +1274,8 @@
     {
       "domain": "casio-human-sys.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "人事統合システム ADPS",
@@ -1180,7 +1293,8 @@
           "products": [
             "人事統合システム ADPS"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         },
         {
           "slug": "60cae3ad-ff6c-4326-9cb5-d6f1d29b202e",
@@ -1192,6 +1306,32 @@
           ],
           "products": [
             "ADPS 勤怠システム"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "casting-one.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "CastingONE"
+      ],
+      "articles": [
+        {
+          "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
+          "label": "用語#010",
+          "title": "CRMとは｜10の事例でわかる",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "ライクワークス株式会社（現：ライクスタッフィング株式会社）"
+          ],
+          "products": [
+            "CastingONE"
           ],
           "notified": false
         }
@@ -1385,6 +1525,35 @@
       "memo": ""
     },
     {
+      "domain": "cloud-ace.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "BigQuery、Looker Studio",
+        "Google Cloud"
+      ],
+      "articles": [
+        {
+          "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
+          "label": "用語#011",
+          "title": "DWHとは｜10の事例でわかる",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "株式会社有隣堂",
+            "関西エアポート株式会社"
+          ],
+          "products": [
+            "BigQuery、Looker Studio",
+            "Google Cloud"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "cloudgate.jp",
       "company": "",
       "status": "pending",
@@ -1445,6 +1614,20 @@
           ],
           "products": [
             "Gemini Enterprise Agent Platform"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
+          "label": "用語#013",
+          "title": "IoTとは｜10の事例でわかる",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "トヨタ自動車株式会社"
+          ],
+          "products": [
+            "AWS"
           ],
           "notified": false
         }
@@ -1525,7 +1708,8 @@
             "クラウドサイン、MAKE for kintone",
             "クラウドサイン、クラウドサインMAKE for kintone"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -1609,6 +1793,32 @@
             "CO-NECT"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "connecty.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "CMS on Demand"
+      ],
+      "articles": [
+        {
+          "slug": "9d67231b-6215-4957-92d3-0eee6dcb7477",
+          "label": "用語#012",
+          "title": "OMOとは｜5つの事例でわかる",
+          "publishedAt": "2026-12-08",
+          "customers": [
+            "株式会社パリミキホールディングス"
+          ],
+          "products": [
+            "CMS on Demand"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1735,8 +1945,8 @@
     {
       "domain": "crotta.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "crotta"
@@ -1753,7 +1963,8 @@
           "products": [
             "crotta"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         }
       ],
       "memo": ""
@@ -1821,16 +2032,17 @@
           "products": [
             "kintone"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": ""
+      "memo": "2026-11-19 用語#003: 問い合わせフォームに「その他」の用件がなく、送れる窓口がない"
     },
     {
       "domain": "daiko-xtech.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "Fujitsu テレフォニーソリューション「ソフトウェアPBX」"
@@ -1847,7 +2059,8 @@
           "products": [
             "Fujitsu テレフォニーソリューション「ソフトウェアPBX」"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         }
       ],
       "memo": ""
@@ -1934,8 +2147,8 @@
     {
       "domain": "dts.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "SAP SuccessFactors"
@@ -1952,7 +2165,8 @@
           "products": [
             "SAP SuccessFactors"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         }
       ],
       "memo": ""
@@ -2440,7 +2654,8 @@
           "products": [
             "オムロン協調ロボット TMシリーズ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "38c6da45-a55e-47a0-b499-7e16b6ce23a4",
@@ -2455,6 +2670,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
+          "label": "用語#013",
+          "title": "IoTとは｜10の事例でわかる",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "株式会社アルバック"
+          ],
+          "products": [
+            "i-BELT"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2510,7 +2738,8 @@
           "products": [
             "Remota"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2580,6 +2809,20 @@
           "products": [
             "FastHelp"
           ],
+          "notified": true,
+          "notifiedAt": "2026-11-20"
+        },
+        {
+          "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
+          "label": "用語#010",
+          "title": "CRMとは｜10の事例でわかる",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "株式会社日立システムズ"
+          ],
+          "products": [
+            "FastHelp, FastAnswer"
+          ],
           "notified": false
         }
       ],
@@ -2600,8 +2843,8 @@
     {
       "domain": "fcs.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "kintone × モジトリ"
@@ -2618,7 +2861,8 @@
           "products": [
             "kintone × モジトリ"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -2792,6 +3036,33 @@
           ],
           "products": [
             "Vegas"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "forecastflow.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "yomiuri ONE"
+      ],
+      "articles": [
+        {
+          "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
+          "label": "用語#011",
+          "title": "DWHとは｜10の事例でわかる",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "読売新聞社"
+          ],
+          "products": [
+            "yomiuri ONE"
           ],
           "notified": false
         }
@@ -3060,6 +3331,32 @@
       "memo": ""
     },
     {
+      "domain": "future-shop.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "futureshop omni-channel"
+      ],
+      "articles": [
+        {
+          "slug": "9d67231b-6215-4957-92d3-0eee6dcb7477",
+          "label": "用語#012",
+          "title": "OMOとは｜5つの事例でわかる",
+          "publishedAt": "2026-12-08",
+          "customers": [
+            "株式会社ソラオブトウキョウ"
+          ],
+          "products": [
+            "futureshop omni-channel"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "geekplus.jp",
       "company": "",
       "status": "no-objection",
@@ -3069,7 +3366,8 @@
         "ピッキングロボット",
         "PopPick",
         "搬送型AMR",
-        "Geek+ Pシリーズ ピッキングロボット"
+        "Geek+ Pシリーズ ピッキングロボット",
+        "skylaa"
       ],
       "articles": [
         {
@@ -3101,6 +3399,19 @@
             "搬送型AMR",
             "Geek+ Pシリーズ ピッキングロボット",
             "ピッキングロボット"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "9d67231b-6215-4957-92d3-0eee6dcb7477",
+          "label": "用語#012",
+          "title": "OMOとは｜5つの事例でわかる",
+          "publishedAt": "2026-12-08",
+          "customers": [
+            "プーマ ジャパン株式会社"
+          ],
+          "products": [
+            "skylaa"
           ],
           "notified": false
         }
@@ -3586,8 +3897,8 @@
     {
       "domain": "ielove-cloud.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-18",
       "notifiedAtEstimated": false,
       "products": [
         "いえらぶCLOUD"
@@ -3600,6 +3911,21 @@
           "publishedAt": "2026-12-02",
           "customers": [
             "HKホーム株式会社"
+          ],
+          "products": [
+            "いえらぶCLOUD"
+          ],
+          "notified": true,
+          "notifiedAt": "2026-11-18"
+        },
+        {
+          "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
+          "label": "用語#010",
+          "title": "CRMとは｜10の事例でわかる",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "株式会社アークス",
+            "都市住建株式会社"
           ],
           "products": [
             "いえらぶCLOUD"
@@ -3642,6 +3968,32 @@
           ],
           "products": [
             "Dolphin CT30XP"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "improve.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Zoho CRM、Zoho Social"
+      ],
+      "articles": [
+        {
+          "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
+          "label": "用語#010",
+          "title": "CRMとは｜10の事例でわかる",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "有限会社前田鉄工所"
+          ],
+          "products": [
+            "Zoho CRM、Zoho Social"
           ],
           "notified": false
         }
@@ -3906,7 +4258,8 @@
           "products": [
             "intra-mart、Biz∫"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
@@ -3934,7 +4287,8 @@
           "products": [
             "intra-mart"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
@@ -4037,12 +4391,13 @@
     {
       "domain": "itecs.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "PRO_STAFF-α人事・給与",
-        "PRO_STAFF-α"
+        "PRO_STAFF-α",
+        "COMPASS"
       ],
       "articles": [
         {
@@ -4057,6 +4412,20 @@
           "products": [
             "PRO_STAFF-α人事・給与",
             "PRO_STAFF-α"
+          ],
+          "notified": true,
+          "notifiedAt": "2026-11-20"
+        },
+        {
+          "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
+          "label": "用語#010",
+          "title": "CRMとは｜10の事例でわかる",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "株式会社ジャフコ"
+          ],
+          "products": [
+            "COMPASS"
           ],
           "notified": false
         }
@@ -4281,7 +4650,8 @@
           "products": [
             "Microsoft Power Platform"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "57081368-0b0f-4a93-b0bf-f9786870bbd1",
@@ -4481,8 +4851,8 @@
     {
       "domain": "kagoya.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "Forguncyプラン"
@@ -4499,7 +4869,8 @@
           "products": [
             "Forguncyプラン"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -4660,7 +5031,8 @@
           "products": [
             "SAP ERP 産業用機械製造業向けテンプレート: HI-KORT for IM&C"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
@@ -4673,7 +5045,8 @@
           "products": [
             "SAP S/4HANA、SAP on Azure"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5124,6 +5497,19 @@
           "publishedAt": "2026-12-03",
           "customers": [
             "株式会社GENDA"
+          ],
+          "products": [
+            "Loglass 経営管理"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
+          "label": "用語#011",
+          "title": "DWHとは｜10の事例でわかる",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "SBペイメントサービス株式会社"
           ],
           "products": [
             "Loglass 経営管理"
@@ -5626,8 +6012,8 @@
     {
       "domain": "mimasa.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "M.O.S"
@@ -5644,7 +6030,8 @@
           "products": [
             "M.O.S"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -5765,7 +6152,8 @@
           "products": [
             "e2-movE"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "c05d9671-8c61-42a0-bcbb-e896bd179376",
@@ -5883,7 +6271,8 @@
           "products": [
             "ACELINK NX-CE 給与"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5991,7 +6380,8 @@
           "products": [
             "ブランディング・マーケティングコンサルティング"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6039,8 +6429,8 @@
     {
       "domain": "mutumi.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "むつみの販売、むつみのCTI、むつみの営業日報"
@@ -6057,7 +6447,8 @@
           "products": [
             "むつみの販売、むつみのCTI、むつみの営業日報"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         }
       ],
       "memo": ""
@@ -6065,8 +6456,8 @@
     {
       "domain": "mxmobiling.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "itsmoBPO キッティング",
@@ -6084,7 +6475,8 @@
           "products": [
             "itsmoBPO"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         },
         {
           "slug": "926360da-7f4c-4a04-aff7-36b2a074d2b9",
@@ -6331,6 +6723,32 @@
       "memo": ""
     },
     {
+      "domain": "necolico.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Airoco"
+      ],
+      "articles": [
+        {
+          "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
+          "label": "用語#013",
+          "title": "IoTとは｜10の事例でわかる",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "学校法人角川ドワンゴ学園"
+          ],
+          "products": [
+            "Airoco"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "nhs.co.jp",
       "company": "",
       "status": "pending",
@@ -6416,8 +6834,8 @@
     {
       "domain": "noc-net.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "給与計算・人事アウトソーシングサービス",
@@ -6437,7 +6855,8 @@
             "給与計算・人事アウトソーシングサービス",
             "経理アウトソーシングサービス"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -6445,8 +6864,8 @@
     {
       "domain": "nr1.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "NR-1100"
@@ -6463,7 +6882,8 @@
           "products": [
             "NR-1100"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -6480,7 +6900,9 @@
         "Yellowfin",
         "ProgOffice Enterprise",
         "CTBASE/Connect Cloud",
-        "Salesforce、CTBASE/JointPro、DataSpider Servista"
+        "Salesforce、CTBASE/JointPro、DataSpider Servista",
+        "Salesforce / SkyOnDemand",
+        "Yellowfin、Amazon Redshift"
       ],
       "articles": [
         {
@@ -6560,7 +6982,8 @@
           "products": [
             "CTBASE/Connect Cloud"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -6572,6 +6995,33 @@
           ],
           "products": [
             "Salesforce、CTBASE/JointPro、DataSpider Servista"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
+          "label": "用語#010",
+          "title": "CRMとは｜10の事例でわかる",
+          "publishedAt": "2026-12-04",
+          "customers": [
+            "旭化成不動産レジデンス株式会社"
+          ],
+          "products": [
+            "Salesforce / SkyOnDemand"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
+          "label": "用語#011",
+          "title": "DWHとは｜10の事例でわかる",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "株式会社NTTドコモ"
+          ],
+          "products": [
+            "Yellowfin、Amazon Redshift"
           ],
           "notified": false
         },
@@ -6585,6 +7035,32 @@
           ],
           "products": [
             "CTBASE/Connect Cloud"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "nttdata-bizsys.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "PentaSenser®"
+      ],
+      "articles": [
+        {
+          "slug": "9d67231b-6215-4957-92d3-0eee6dcb7477",
+          "label": "用語#012",
+          "title": "OMOとは｜5つの事例でわかる",
+          "publishedAt": "2026-12-08",
+          "customers": [
+            "株式会社ツルハホールディングス"
+          ],
+          "products": [
+            "PentaSenser®"
           ],
           "notified": false
         }
@@ -6916,7 +7392,8 @@
       "notifiedAtEstimated": true,
       "products": [
         "WATER it データマネジメントサービス",
-        "OAM-EXPLORER J、LINK-BT2"
+        "OAM-EXPLORER J、LINK-BT2",
+        "冠水クイック・モニタリング"
       ],
       "articles": [
         {
@@ -6960,6 +7437,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
+          "label": "用語#013",
+          "title": "IoTとは｜10の事例でわかる",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "大阪府八尾市"
+          ],
+          "products": [
+            "冠水クイック・モニタリング"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -7287,6 +7777,32 @@
       "memo": ""
     },
     {
+      "domain": "power-pos.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "パワクラ"
+      ],
+      "articles": [
+        {
+          "slug": "9d67231b-6215-4957-92d3-0eee6dcb7477",
+          "label": "用語#012",
+          "title": "OMOとは｜5つの事例でわかる",
+          "publishedAt": "2026-12-08",
+          "customers": [
+            "株式会社ドリームゲート"
+          ],
+          "products": [
+            "パワクラ"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "powercms.jp",
       "company": "",
       "status": "no-objection",
@@ -7371,9 +7887,23 @@
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "WinActor"
+        "WinActor",
+        "Amazon Redshift、軽技Web"
       ],
       "articles": [
+        {
+          "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
+          "label": "用語#011",
+          "title": "DWHとは｜10の事例でわかる",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "東急テックソリューションズ株式会社"
+          ],
+          "products": [
+            "Amazon Redshift、軽技Web"
+          ],
+          "notified": false
+        },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
           "label": "#057",
@@ -7476,7 +8006,8 @@
           "products": [
             "楽楽勤怠"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "60cae3ad-ff6c-4326-9cb5-d6f1d29b202e",
@@ -7493,7 +8024,7 @@
           "notified": false
         }
       ],
-      "memo": ""
+      "memo": "2026-11-20 用語#007: 問い合わせフォームがなく送れない"
     },
     {
       "domain": "re-v.co.jp",
@@ -7715,7 +8246,8 @@
           "products": [
             "Micro Focus Visual COBOL / Micro Focus COBOL Server"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "609d5441-ee0b-4406-8d7b-e3a0353e78d3",
@@ -7847,7 +8379,8 @@
           "products": [
             "GO2cam、NCSIMUL"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -7855,8 +8388,8 @@
     {
       "domain": "saleslab.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "オールインワンBPO型営業支援サービス"
@@ -7873,7 +8406,8 @@
           "products": [
             "オールインワンBPO型営業支援サービス"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -8347,8 +8881,8 @@
     {
       "domain": "scskserviceware.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "SCSKサービスウェア",
@@ -8368,7 +8902,8 @@
             "SCSKサービスウェア",
             "BPO"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -8534,7 +9069,8 @@
             "Amazon Connect",
             "Amazon Connect、Amazon Bedrock"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -8549,7 +9085,8 @@
             "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package",
             "クラウドコンタクトセンターパッケージ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
@@ -8561,6 +9098,19 @@
           ],
           "products": [
             "OneLogin"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
+          "label": "用語#011",
+          "title": "DWHとは｜10の事例でわかる",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "住友重機械ビジネスアソシエイツ株式会社（住友重機械グループ）"
+          ],
+          "products": [
+            "AWS"
           ],
           "notified": false
         }
@@ -8667,8 +9217,8 @@
     {
       "domain": "sheetmetal.amada.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "LC-VALSTER-6225AJ",
@@ -8686,7 +9236,8 @@
           "products": [
             "LC-VALSTER-6225AJ"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         },
         {
           "slug": "day-2026-11-25",
@@ -8699,7 +9250,8 @@
           "products": [
             "EGB-6020ATCe"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -8751,10 +9303,11 @@
           "products": [
             "S-PAYCIAL with 電子給与明細"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": ""
+      "memo": "2026-11-20 用語#007: サイト停止中のため送れず。復旧したら送る"
     },
     {
       "domain": "shippio.io",
@@ -9260,7 +9813,8 @@
           "products": [
             "UiPath"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "4a98fa83-62e9-43ea-b70c-33a3dee7d78f",
@@ -9730,6 +10284,48 @@
       "memo": ""
     },
     {
+      "domain": "tinkermode.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "MODE BizStack",
+        "MODEのIoTプラットフォーム"
+      ],
+      "articles": [
+        {
+          "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
+          "label": "用語#011",
+          "title": "DWHとは｜10の事例でわかる",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "あいおいニッセイ同和損害保険株式会社"
+          ],
+          "products": [
+            "MODE BizStack"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
+          "label": "用語#013",
+          "title": "IoTとは｜10の事例でわかる",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "前田建設工業株式会社",
+            "JR東日本スタートアップ株式会社"
+          ],
+          "products": [
+            "MODEのIoTプラットフォーム",
+            "MODE BizStack"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "tks-gifu.jp",
       "company": "",
       "status": "no-objection",
@@ -9856,6 +10452,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
+          "label": "用語#013",
+          "title": "IoTとは｜10の事例でわかる",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "社会福祉法人杜の村 特別養護老人ホームかむりの里翔裕園"
+          ],
+          "products": [
+            "見守りライフ"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -9871,7 +10480,8 @@
         "Asprova APS",
         "ASTERIA Warp、MotionBoard",
         "ポストモダンTOTEC ERP",
-        "Asprova"
+        "Asprova",
+        "MotionBoard"
       ],
       "articles": [
         {
@@ -9952,6 +10562,20 @@
           ],
           "products": [
             "ASTERIA Warp、MotionBoard"
+          ],
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
+          "label": "用語#011",
+          "title": "DWHとは｜10の事例でわかる",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "芝浦機械株式会社"
+          ],
+          "products": [
+            "MotionBoard"
           ],
           "notified": false
         }
@@ -10245,7 +10869,8 @@
           "products": [
             "Amazon Connect"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -10258,7 +10883,8 @@
           "products": [
             "Agentforce Service"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
@@ -10326,7 +10952,8 @@
           "products": [
             "Unifinity"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "day-2026-11-25",
@@ -10339,7 +10966,8 @@
           "products": [
             "Unifinity"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -10510,8 +11138,8 @@
     {
       "domain": "voicex.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "VoiceX"
@@ -10528,7 +11156,8 @@
           "products": [
             "VoiceX"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         }
       ],
       "memo": ""
@@ -10562,8 +11191,8 @@
     {
       "domain": "wanbishi.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-19",
       "notifiedAtEstimated": false,
       "products": [
         "AI-OCR×BPOサービス",
@@ -10582,7 +11211,8 @@
             "AI-OCR×BPOサービス",
             "AI-OCR×BPO"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-19"
         }
       ],
       "memo": ""
@@ -10668,7 +11298,8 @@
             "COMPANY",
             "COMPANY Web Service"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
@@ -10693,6 +11324,32 @@
           ],
           "products": [
             "COMPANY"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "xcat.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Oracle Cloud Infrastructure"
+      ],
+      "articles": [
+        {
+          "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
+          "label": "用語#011",
+          "title": "DWHとは｜10の事例でわかる",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "ゴダイ株式会社"
+          ],
+          "products": [
+            "Oracle Cloud Infrastructure"
           ],
           "notified": false
         }
@@ -10735,6 +11392,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-17"
+        },
+        {
+          "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
+          "label": "用語#013",
+          "title": "IoTとは｜10の事例でわかる",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "株式会社HondaCars横浜 藤沢センター"
+          ],
+          "products": [
+            "Xeye"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -10912,7 +11582,8 @@
             "Zendesk AI",
             "Zendesk AIエージェント"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
