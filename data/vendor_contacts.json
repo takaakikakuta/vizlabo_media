@@ -410,7 +410,8 @@
           "products": [
             "TimeP@CK Professional"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "60cae3ad-ff6c-4326-9cb5-d6f1d29b202e",
@@ -1273,8 +1274,8 @@
     {
       "domain": "casio-human-sys.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "人事統合システム ADPS",
@@ -1292,7 +1293,8 @@
           "products": [
             "人事統合システム ADPS"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         },
         {
           "slug": "60cae3ad-ff6c-4326-9cb5-d6f1d29b202e",
@@ -2145,8 +2147,8 @@
     {
       "domain": "dts.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "SAP SuccessFactors"
@@ -2163,7 +2165,8 @@
           "products": [
             "SAP SuccessFactors"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         }
       ],
       "memo": ""
@@ -4388,8 +4391,8 @@
     {
       "domain": "itecs.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "PRO_STAFF-α人事・給与",
@@ -4410,7 +4413,8 @@
             "PRO_STAFF-α人事・給与",
             "PRO_STAFF-α"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         },
         {
           "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
@@ -6267,7 +6271,8 @@
           "products": [
             "ACELINK NX-CE 給与"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -8001,7 +8006,8 @@
           "products": [
             "楽楽勤怠"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         },
         {
           "slug": "60cae3ad-ff6c-4326-9cb5-d6f1d29b202e",
@@ -8018,7 +8024,7 @@
           "notified": false
         }
       ],
-      "memo": ""
+      "memo": "2026-11-20 用語#007: 問い合わせフォームがなく送れない"
     },
     {
       "domain": "re-v.co.jp",
@@ -9297,10 +9303,11 @@
           "products": [
             "S-PAYCIAL with 電子給与明細"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": ""
+      "memo": "2026-11-20 用語#007: サイト停止中のため送れず。復旧したら送る"
     },
     {
       "domain": "shippio.io",
@@ -11291,7 +11298,8 @@
             "COMPANY",
             "COMPANY Web Service"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
