@@ -861,7 +861,8 @@
           "products": [
             "BIZTEL コールセンター"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
@@ -928,7 +929,8 @@
           "products": [
             "BlueBean"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2804,7 +2806,8 @@
           "products": [
             "FastHelp"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         },
         {
           "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
@@ -6421,8 +6424,8 @@
     {
       "domain": "mutumi.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-20",
       "notifiedAtEstimated": false,
       "products": [
         "むつみの販売、むつみのCTI、むつみの営業日報"
@@ -6439,7 +6442,8 @@
           "products": [
             "むつみの販売、むつみのCTI、むつみの営業日報"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-20"
         }
       ],
       "memo": ""
@@ -6987,7 +6991,8 @@
           "products": [
             "Salesforce、CTBASE/JointPro、DataSpider Servista"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "178fb24e-82b7-466e-b6dc-b9dc4be05009",
@@ -9074,7 +9079,8 @@
             "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package",
             "クラウドコンタクトセンターパッケージ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "8935555b-3224-46b0-8097-07bcf94b084e",
@@ -10870,7 +10876,8 @@
           "products": [
             "Agentforce Service"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "5e3a738c-b06b-4062-b055-992c20403a35",
