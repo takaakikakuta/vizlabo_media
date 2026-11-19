@@ -1,4 +1,4 @@
-# 事例の棚卸し（2026-11-18 時点）
+# 事例の棚卸し（2026-11-19 時点）
 
 `node scripts/inventory/inventory.mjs` で再生成する（テーマは `scripts/inventory/themes.json`）。選記事を企画する前に、ここでテーマの厚みを見る。
 候補の事例そのものを見るときは `node scripts/inventory/inventory.mjs --theme "停電|非常用電源"`。
@@ -209,7 +209,7 @@
 - 第一三共株式会社（pigeonhearts.co.jp）: #26, #67(draft)
 - 近畿労働金庫（ip3.co.jp）: #28, #8
 - 株式会社AOKIホールディングス（takachiho-kk.co.jp）: #28, #1
-- 西日本旅客鉄道株式会社（jbs.co.jp）: #31(draft), #3
+- 西日本旅客鉄道株式会社（jbs.co.jp）: #31, #3
 - 株式会社京屋染物店（cybozu.co.jp）: #32, #3
 - 税理士法人近代経営&Kinkei Farm（mjs.co.jp）: #34, #2
 - 宇部エクシモ株式会社（totec-sangyo.jp）: #38, #3
