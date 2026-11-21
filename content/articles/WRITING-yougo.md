@@ -49,6 +49,8 @@
 `title`・`lead`・`definition`・`fitNote`・`label` には社名・規模・成果の数字を書かない（事例が `linkOnly` になっても書き直さずに済む水準）。
 事例が `linkOnly` になったら（または最初からリンクのみの事例を選んだら）`items[].linkOnly.body`（企業名・規模・数字を伏せた1〜2文）を書く。確認は `node scripts/link-only/check.mjs --as-if <記事ファイル名>`。
 
+書いた後は `node scripts/verify/yougo-check.mjs <記事番号>` で、body・hitokoto の数字が事例データ（`data/cases.json` の title・summary・課題・施策・results・scale・規模）にあるか、長さ・「」・「唯一」の回数を機械的に照合する（事例セレクションの sen-check と同じ役割）。**数字は事例データにあるものだけを書く。** 元記事を読んだ記憶や計算で出した数字は書かない（2026-11-21 に #7 の旧 body で、データが「2時間半→10分」の成果を「2か月から10日」と書き、データにない「16年使った」を書いていたのが見つかった。あらすじを長く書くほど、データにない事実が混ざる）。
+
 ## 5. 公開手順
 
 1. `python -c "import uuid; print(uuid.uuid4())"` で slug を生成し、`content/articles/yougo-<no>-<用語>.json` を置く（`draft: true` で下書き）。
