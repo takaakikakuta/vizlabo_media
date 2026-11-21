@@ -13,6 +13,8 @@
  *       言い換え（16名→20人に満たない）は許容リストに入れるか、数字を使わない表現に直す
  *   - body・hitokoto に「」（固有名詞以外の強調）
  *   - 「唯一」が記事内で3回以上
+ *   - 読みにくい言い回し（2026-11-21 に全項目から外した）：「記録されて」「として読める」「読みどころ」「出来事で読む」「点がほか」、
+ *     比較を二度言う「〜中で、…ここだけ／ほかにない」
  * 拾えないもの：文の意味、比較（「ここだけ」「01が〜のに対し」）の正しさ、数字のない事実の裏付け。読んで確かめる。 */
 import fs from "node:fs";
 import path from "node:path";
@@ -48,6 +50,8 @@ for (const f of picked) {
     const text = body + "\n" + (it.hitokoto ?? "");
     if (/「/.test(text)) out.push(`[${no}] 「」がある（固有名詞以外は外す）`);
     if (/唯一/.test(body)) yuiitsu++;
+    const meta = [[/記録されて/, "記録されて"], [/として読める/, "として読める"], [/読みどころ/, "読みどころ"], [/出来事で読む/, "出来事で読む"], [/点が、?ほか/, "点がほか"], [/中で[^。]*(ここだけ|ほかにない|唯一)/, "比較の二重"]].filter(([re]) => re.test(body)).map(([, n]) => n);
+    if (meta.length) out.push(`[${no}] 読みにくい言い回し：${meta.join("・")}`);
     const c = byId.get(it.caseId);
     if (!c) { out.push(`[${no}] caseId ${it.caseId} が data/cases.json にない`); return; }
     const hay = norm([c.title, c.summary, c.challengeDetail, c.actions, c.resultsQualitative, c.customer?.size, c.customer?.name, c.product,
