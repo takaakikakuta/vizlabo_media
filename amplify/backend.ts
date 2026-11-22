@@ -59,6 +59,19 @@ const sources = new Table(stack, "TrafficSources", {
   removalPolicy: RemovalPolicy.RETAIN,
 });
 
+/* 事例セレクション・用語記事の「枠」の計測（lib/slots.ts）。広告枠の販売根拠（月間PV・枠位置別の遷移率）を貯める。
+   - PK day = JST の日付、SK k = "slot|記事slug|枠位置|事例ID"（表示・遷移・事例ページへ・元記事へ・経由、vendor）
+     または "ref|記事slug|流入元"（流入元別の閲覧 pv）。個人を特定する値は持たない
+   - 運営画面（/admin/slots）と CSV は日付ごとに Query して集計する
+   - 計測データなので、スタックを消してもテーブルは残す */
+const slots = new Table(stack, "ArticleSlots", {
+  tableName: `jirei-mania-slots-${branch}`,
+  partitionKey: { name: "day", type: AttributeType.STRING },
+  sortKey: { name: "k", type: AttributeType.STRING },
+  billingMode: BillingMode.PAY_PER_REQUEST,
+  removalPolicy: RemovalPolicy.RETAIN,
+});
+
 const policy = new ManagedPolicy(stack, "CaseViewsAccess", {
   managedPolicyName: `jirei-mania-views-${branch}-rw`,
   // 説明文は変えない（IAM の管理ポリシーは説明を変えると作り直しになり、固定名のため失敗する）。会員テーブルの権限もここに足している
@@ -80,6 +93,10 @@ const policy = new ManagedPolicy(stack, "CaseViewsAccess", {
       actions: ["dynamodb:UpdateItem", "dynamodb:Query"],
       resources: [sources.tableArn],
     }),
+    new PolicyStatement({
+      actions: ["dynamodb:UpdateItem", "dynamodb:Query"],
+      resources: [slots.tableArn],
+    }),
   ],
 });
 
@@ -90,4 +107,5 @@ new CfnOutput(stack, "CaseViewsTableName", { value: table.tableName });
 new CfnOutput(stack, "VendorAccountsTableName", { value: accounts.tableName });
 new CfnOutput(stack, "PlannerPlansTableName", { value: plans.tableName });
 new CfnOutput(stack, "TrafficSourcesTableName", { value: sources.tableName });
+new CfnOutput(stack, "ArticleSlotsTableName", { value: slots.tableName });
 new CfnOutput(stack, "CaseViewsPolicyArn", { value: policy.managedPolicyArn });

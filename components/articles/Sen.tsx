@@ -12,6 +12,8 @@ import FeaturedServices from "./FeaturedServices";
 import SuggestForm from "../SuggestForm";
 import { SUGGEST_ENABLED } from "../../lib/flags";
 import LinkOnlyCard from "../LinkOnlyCard";
+import SlotTracker from "../SlotTracker";
+import { slotItem, slotLink } from "../../lib/slotAttrs";
 import VideoBadge, { PlayMark } from "../VideoBadge";
 import { hasVideo } from "../../lib/video";
 import { withUtm } from "../../lib/source";
@@ -40,6 +42,8 @@ export default function Sen({ article }: { article: SenArticle }) {
 
   return (
     <article className="mx-auto max-w-3xl px-5 py-12">
+      {/* 枠の表示・クリックの計測（広告枠の販売根拠。/admin/slots で見る） */}
+      <SlotTracker slug={article.slug} />
       {/* ── 題字 ── */}
       <div className="flex flex-wrap items-baseline justify-between gap-3">
         <div className="flex items-baseline gap-3">
@@ -106,7 +110,7 @@ export default function Sen({ article }: { article: SenArticle }) {
           const c = e.c;
           if (e.linkOnly) {
             return (
-              <section key={e.caseId} id={`item${e.i + 1}`} className="mt-12 scroll-mt-20">
+              <section key={e.caseId} id={`item${e.i + 1}`} className="mt-12 scroll-mt-20" {...slotItem(e.i + 1, c)}>
                 <h2 className="flex items-baseline gap-4 border-t-2 border-ink pt-5">
                   <span className="num shrink-0 text-[22px] leading-none text-muted">{String(e.i + 1).padStart(2, "0")}</span>
                   <span className="font-display text-[20px] leading-[1.5] text-ink">{e.headline}</span>
@@ -116,13 +120,13 @@ export default function Sen({ article }: { article: SenArticle }) {
                   {industryLabel(c.customer.industry)}
                 </p>
                 {e.body && <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>}
-                <div className="mt-4 ml-10"><LinkOnlyCard c={c} campaign="article" content={article.slug} /></div>
+                <div className="mt-4 ml-10"><LinkOnlyCard c={c} campaign="article" content={article.slug} slot={e.i + 1} /></div>
               </section>
             );
           }
           const results = (c.results ?? []).slice(0, 2);
           return (
-            <section key={e.caseId} id={`item${e.i + 1}`} className="mt-12 scroll-mt-20">
+            <section key={e.caseId} id={`item${e.i + 1}`} className="mt-12 scroll-mt-20" {...slotItem(e.i + 1, c)}>
               <h2 className="flex items-baseline gap-4 border-t-2 border-ink pt-5">
                 <span className="num shrink-0 text-[22px] leading-none text-muted">{String(e.i + 1).padStart(2, "0")}</span>
                 <span className="font-display text-[20px] leading-[1.5] text-ink">{e.headline}</span>
@@ -155,7 +159,7 @@ export default function Sen({ article }: { article: SenArticle }) {
                   （事例ページは経由必須にしない。検索の着地先と関連事例の回遊のために残す） */}
               <div className="mt-4 ml-10 border border-line2">
                 {/* 上段：サイト内の事例ページ（画像・タイトルつき。成果の数字と関連事例を見る場所） */}
-                <Link href={`/cases/${c.id}`}
+                <Link href={`/cases/${c.id}`} {...slotLink(e.i + 1, c, "case")}
                   className="row group flex items-center gap-4 p-2.5 no-underline sm:p-3">
                   <span className="relative block h-16 w-24 shrink-0 overflow-hidden rounded-[3px] border border-line2 bg-soft sm:h-20 sm:w-32">
                     {c.image
@@ -172,7 +176,7 @@ export default function Sen({ article }: { article: SenArticle }) {
                   </span>
                 </Link>
                 {/* 下段：提供元の元記事（外部サイト。物語を読む場所）。外へ出ることが一目で分かるよう、色と印を変える */}
-                <a href={withUtm(c.sourceUrl, "article", article.slug)} target="_blank" rel="noopener" data-case-src={c.id}
+                <a href={withUtm(c.sourceUrl, "article", article.slug)} target="_blank" rel="noopener" data-case-src={c.id} {...slotLink(e.i + 1, c, "src")}
                   className="group flex items-center gap-3 border-t border-brand/25 bg-brand-soft px-3 py-2.5 no-underline transition-colors hover:bg-brand/10 sm:px-3.5">
                   <span className="shrink-0 rounded-[2px] bg-brand px-1.5 py-[1px] text-[10px] font-bold tracking-[.08em] text-white">外部サイト</span>
                   <span className="min-w-0 flex-1">
