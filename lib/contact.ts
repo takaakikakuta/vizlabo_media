@@ -3,6 +3,8 @@
 export const TOPICS = [
   { value: "publish", label: "自社の事例を掲載してほしい" },
   { value: "produce", label: "事例の制作を依頼したい" },
+  /* hidden: /tool が非公開の間は、/tool のフォーム以外の選択肢に出さない */
+  { value: "tool", label: "診断・シミュレーターの制作を依頼したい", hidden: true },
   { value: "correction", label: "掲載内容の修正・削除の依頼" },
   { value: "other", label: "その他" },
 ] as const;

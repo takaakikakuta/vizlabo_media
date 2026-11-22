@@ -43,7 +43,8 @@ export default function ContactForm({ topic }: { topic?: string }) {
       <Field name="topic" required error={err.topic}>
         <select name="topic" id="topic" defaultValue={v.topic ?? topic ?? "publish"}
           className="w-full appearance-none border border-line bg-white px-3.5 py-2.5 text-[14px] text-ink outline-none focus:border-ink">
-          {TOPICS.map((t) => <option key={t.value} value={t.value}>{t.label}</option>)}
+          {TOPICS.filter((t) => !("hidden" in t && t.hidden) || t.value === (v.topic ?? topic))
+            .map((t) => <option key={t.value} value={t.value}>{t.label}</option>)}
         </select>
       </Field>
 
