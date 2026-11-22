@@ -76,6 +76,7 @@ export default async function AdminViewsPage({
       <div className="flex flex-wrap items-baseline justify-between gap-3">
         <h1 className="font-display text-[24px] text-ink">事例の閲覧数</h1>
         <div className="flex items-baseline gap-4">
+          <Link href="/admin/slots" className="text-[12.5px]">枠の計測 →</Link>
           <Link href="/admin/sources" className="text-[12.5px]">流入元 →</Link>
           <Link href="/admin/vendors" className="text-[12.5px]">ベンダー会員 →</Link>
           <form action={logout}><button className="text-[12px] text-muted underline">ログアウト</button></form>
