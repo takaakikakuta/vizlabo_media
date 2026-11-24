@@ -13,10 +13,14 @@ const BLOCKED_VENDORS = new Set(blocked.vendors.map((v) => v.domain));
     cases.json の linkOnly の付け忘れに関係なく、ここでリンクのみにする。 */
 const LINK_ONLY_VENDORS = new Set(linkOnlyVendors.vendors.map((v) => v.domain));
 
+/** リンク先を個別の事例ページではなく一覧ページなどにするよう依頼されたベンダー（link_only_vendors.json の linkUrl） */
+const LINK_URLS = new Map(linkOnlyVendors.vendors.flatMap((v) => ("linkUrl" in v && v.linkUrl ? [[v.domain, v.linkUrl as string]] : [])));
+
 /** 公開対象の事例。hidden: true（削除依頼を受けた事例。データは残す）と
     禁止ベンダーの事例は、ここで外すので上位のどの関数からも見えない。 */
 const VISIBLE = (raw as CaseStudy[]).filter((c) => !c.hidden && !BLOCKED_VENDORS.has(c.vendor))
-  .map((c) => (!c.linkOnly && LINK_ONLY_VENDORS.has(c.vendor) ? { ...c, linkOnly: true } : c));
+  .map((c) => (!c.linkOnly && LINK_ONLY_VENDORS.has(c.vendor) ? { ...c, linkOnly: true } : c))
+  .map((c) => (c.linkOnly && LINK_URLS.has(c.vendor) ? { ...c, linkUrl: LINK_URLS.get(c.vendor) } : c));
 
 /** linkOnly: true（取り下げ依頼を受け、リンクだけ残す事例）も外す。事例ページ・一覧・検索・サイトマップ・
     記事末尾のサービス紹介・一括問い合わせには出ない。事例セレクションだけが getLinkOnlyCase で拾う。 */

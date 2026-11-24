@@ -47,4 +47,6 @@ export type CaseStudy = {
   hidden?: boolean;    // 非公開（ベンダーからの削除依頼など）。データは残すがサイトには一切出さない
   linkOnly?: boolean;  // リンクのみ（掲載元から取り下げ依頼を受け、要約をやめた事例）。事例ページ・一覧には出さず、
                        // 事例セレクションでは企業名を伏せた短い紹介と元記事へのリンクだけを出す
+  linkUrl?: string;    // リンクのみの事例のリンク先を、元記事ではなくこのURL（提供元の導入事例一覧など）にする。
+                       // data/link_only_vendors.json の linkUrl から lib/cases.ts で付ける（提供元から個別ページへのリンクも断られたとき）
 };
