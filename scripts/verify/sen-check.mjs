@@ -3,7 +3,7 @@
  * 報告だけを行い、ファイルは書き換えない。基準は content/articles/WRITING-sen.md（2節・4節・7節）。
  *
  *   node scripts/verify/sen-check.mjs 47                         → 記事番号で指定
- *   node scripts/verify/sen-check.mjs sen-47-jichitai-gyosei.json → ファイル名で指定（複数可）
+ *   node scripts/verify/sen-check.mjs sen-48-jichitai-gyosei.json → ファイル名で指定（複数可）
  *   node scripts/verify/sen-check.mjs ./draft/sen-99.json        → パスで指定（「/」を含むもの）
  *   node scripts/verify/sen-check.mjs --all                      → 全記事（hidden を除く）
  *   --quiet  要確認を出さず、NG だけ出す
