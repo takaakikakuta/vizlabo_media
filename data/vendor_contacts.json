@@ -902,8 +902,8 @@
     {
       "domain": "betterbound.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "YARIKIRI"
@@ -920,7 +920,8 @@
           "products": [
             "YARIKIRI"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -6130,7 +6131,8 @@
           "products": [
             "Loglass 経営管理"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
@@ -10434,8 +10436,8 @@
     {
       "domain": "smbc-cloudsign.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "SMBCクラウドサイン"
@@ -10452,7 +10454,8 @@
           "products": [
             "SMBCクラウドサイン"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -10589,7 +10592,8 @@
           "products": [
             "デジタルペーパー"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -10881,8 +10885,8 @@
     {
       "domain": "supportas.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "FileMaker"
@@ -10899,7 +10903,8 @@
           "products": [
             "FileMaker"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
