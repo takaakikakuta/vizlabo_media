@@ -489502,5 +489502,50 @@
       "電話・FAX中心",
       "追客の漏れ"
     ]
+  },
+  {
+    "id": "nock-design-com-nichiyobi-blog-tiktok-recruit-agency",
+    "title": "工場の働く様子をTikTokで発信し、1ヶ月でコメント400件超・プロフィールアクセス2,000回超",
+    "summary": "製造業の工場が、採用への関心を高めるためTikTokで職場の様子を発信した。働く様子を切り取った動画に1ヶ月で400件超のコメントが集まり、プロフィールへのアクセスは2,000回を超えた。",
+    "vendor": "nock-design.com",
+    "product": "TikTok運用代行「ニチヨウビ」",
+    "productCategory": "martech",
+    "sourceUrl": "https://nock-design.com/nichiyobi/blog/tiktok-recruit-agency",
+    "collectedAt": "2026-11-25T00:00:00.000Z",
+    "customer": {
+      "name": "製造業の工場（社名非公開）",
+      "industry": "manufacturing",
+      "size": "",
+      "dept": "採用"
+    },
+    "challenges": [
+      "hr"
+    ],
+    "challengeDetail": "工場の仕事には「単調できつい」というイメージがあり、求職者が企業に関心を持つ前の段階で選択肢から外れやすかった。採用への関心を高めるため、職場の様子を伝える発信が必要だった。",
+    "actions": "ノックデザインのTikTok運用代行「ニチヨウビ」で、工場で働く様子を切り取った動画を発信した。社長の経歴や会社の経営ストーリーなど「人」に焦点を当てた企画にした。運用代行は1ヶ月で、2ヶ月目からは自社で運用している。",
+    "results": [
+      {
+        "metric": "動画へのコメント数（1ヶ月）",
+        "value": "400件超"
+      },
+      {
+        "metric": "プロフィールへのアクセス数（1ヶ月）",
+        "value": "2,000回超"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "運用代行の期間",
+        "value": "1ヶ月（2ヶ月目から自社運用）"
+      }
+    ],
+    "resultsQualitative": "「工場＝単調できつい」というイメージを覆す発信が、企業への関心と求人ページへの流入を生んだ。応募の手前にある関心の段階を数値で確かめられるようになった。",
+    "hasNumbers": true,
+    "sample": false,
+    "image": "https://storage.googleapis.com/studio-design-asset-files/projects/xmaZG7B8WR/s-1548x830_v-fms_webp_3632f39c-d593-4b88-adeb-e43a25eeab96.png",
+    "tags": [
+      "応募が集まらない",
+      "企業情報の伝達不足"
+    ]
   }
 ]
