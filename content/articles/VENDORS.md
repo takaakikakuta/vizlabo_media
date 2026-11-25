@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 244 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 77 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 243 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 78 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 13 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -128,6 +128,7 @@
 | shippio.io | Shippio Cargo | 記念日11/28（株式会社 前田製作所） |
 | sios.jp | DataKeeper、Windows Server Failover Clustering | 用語#009（長野県厚生農業協同組合連合会（JA長野厚生連）） |
 | sizsan.co.jp | BellaBot | #033（株式会社五味八珍） |
+| smbc-cloudsign.co.jp | SMBCクラウドサイン | #049（株式会社伊予銀行） |
 | softes.co.jp | SAP S/4HANA、SAP Analytics Cloud・SAP S/4HANA・SAP ERP | 用語#003（株式会社ニチリン）<br>用語#002（日研フード株式会社、社会福祉法人 聖隷福祉事業団）<br>用語#009（社会福祉法人 聖隷福祉事業団） |
 | spokes-online.jp | SPOKES | 用語#015（株式会社M&A DX） |
 | sunnyltd.co.jp | UNIBLOC サニタリーロータリーローブポンプ | #053（オークリー社） |
@@ -351,7 +352,6 @@
 | shippio.io | 2026-09-28（推定） | Shippio Cargo | #001（株式会社ゴンチャ ジャパン）<br>#009（株式会社TTS） |
 | sinclo.jp | 2026-09-29（推定） | sinclo・チャットボットsinclo | #002（DNA先端医療株式会社）<br>#014（株式会社モード・プランニング・ジャパン） |
 | smart-stage.jp | 2026-10-21（推定） | SmartStage ServiceDesk | #018（株式会社アイネス） |
-| smbc-cloudsign.co.jp | 2026-11-26 | SMBCクラウドサイン | #049（株式会社伊予銀行） |
 | sonar-ats.jp | 2026-10-08（推定） | sonar ATS・sonar ATS by HRMOS | #009（オーエスジー株式会社）<br>#014（株式会社大創産業） |
 | sony.jp | 2026-10-09（推定） | デジタルペーパー | #010（大阪大学 歯学部附属病院）<br>#049（立命館大学 経済学部） |
 | soukei-lab.jp | 2026-11-09 | 経理アウトソーシング | #034（医療法人社団 さんごの海） |
