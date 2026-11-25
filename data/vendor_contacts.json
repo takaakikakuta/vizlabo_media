@@ -167,7 +167,8 @@
       "notifiedAtEstimated": true,
       "products": [
         "人材育成研修・OJT支援サービス",
-        "育成担当者向けOJT研修"
+        "育成担当者向けOJT研修",
+        "若手女性営業研修"
       ],
       "articles": [
         {
@@ -183,6 +184,19 @@
             "育成担当者向けOJT研修"
           ],
           "notified": true
+        },
+        {
+          "slug": "4243cdc9-d9d1-4c01-afb5-48d5cbecaeed",
+          "label": "用語#015",
+          "title": "セールスイネーブルメントとは｜10の事例でわかる",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "積水ハウス株式会社"
+          ],
+          "products": [
+            "若手女性営業研修"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -349,6 +363,35 @@
             "Alibaba.com"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "all-e-support.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "GRONIA plus",
+        "GRONIA plus ハラスメント防止シリーズ"
+      ],
+      "articles": [
+        {
+          "slug": "022f8f74-8a8a-45e9-bf41-627d5dae9b97",
+          "label": "用語#014",
+          "title": "LMS・eラーニングとは｜10の事例でわかる",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "株式会社プラネット",
+            "積水樹脂株式会社"
+          ],
+          "products": [
+            "GRONIA plus",
+            "GRONIA plus ハラスメント防止シリーズ"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -652,6 +695,32 @@
           ],
           "products": [
             "Roland DG Assemble"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "awapaper.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "M-thermo断熱材"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-27",
+          "label": "記念日11/27",
+          "title": "ノーベル賞制定記念日（記念日ポスト 11/27）",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "日昌株式会社"
+          ],
+          "products": [
+            "M-thermo断熱材"
           ],
           "notified": false
         }
@@ -1231,6 +1300,32 @@
       "removedReason": "掲載内容に不適切な点が複数あるとして、ベンダーから自社に関する記事すべて（一覧・メルマガ等を含む）の削除依頼を受けた。いったんリンクのみにしたが、リンクも削除してほしいとの再依頼があった。当方のデータでも、導入企業名が出典URLの社名と食い違っているとみられる事例が複数あった（shimizubank が「渡水銀行」、nomura-re が「遠鉄不動産パートナーズ」、momoya が「枡屋」、noguchi が「関連食糧」）"
     },
     {
+      "domain": "canon-its.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Moodle2.0系"
+      ],
+      "articles": [
+        {
+          "slug": "022f8f74-8a8a-45e9-bf41-627d5dae9b97",
+          "label": "用語#014",
+          "title": "LMS・eラーニングとは｜10の事例でわかる",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "東京理科大学"
+          ],
+          "products": [
+            "Moodle2.0系"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "cashmo.jp",
       "company": "",
       "status": "no-objection",
@@ -1723,7 +1818,8 @@
       "products": [
         "In-Sight 8000",
         "コグネックス マシンビジョンシステム",
-        "In-Sight 5000シリーズ ビジョンシステム"
+        "In-Sight 5000シリーズ ビジョンシステム",
+        "VisionPro"
       ],
       "articles": [
         {
@@ -1766,6 +1862,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "day-2026-11-30",
+          "label": "記念日11/30",
+          "title": "オートフォーカスカメラの日（記念日ポスト 11/30）",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "Laser Cheval"
+          ],
+          "products": [
+            "VisionPro"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1965,6 +2074,33 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-20"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "cstnet.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ALTA"
+      ],
+      "articles": [
+        {
+          "slug": "4243cdc9-d9d1-4c01-afb5-48d5cbecaeed",
+          "label": "用語#015",
+          "title": "セールスイネーブルメントとは｜10の事例でわかる",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "株式会社中村建設",
+            "株式会社四葉建装"
+          ],
+          "products": [
+            "ALTA"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2598,7 +2734,8 @@
         "現場データ活用サービス i-BELT",
         "i-BELT",
         "高速CT型X線自動検査装置",
-        "オムロン協調ロボット TMシリーズ"
+        "オムロン協調ロボット TMシリーズ",
+        "VT-S730"
       ],
       "articles": [
         {
@@ -2670,6 +2807,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "day-2026-11-30",
+          "label": "記念日11/30",
+          "title": "オートフォーカスカメラの日（記念日ポスト 11/30）",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "ジャパン・イーエム・ソリューションズ株式会社"
+          ],
+          "products": [
+            "VT-S730"
+          ],
+          "notified": false
         },
         {
           "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
@@ -3562,6 +3712,32 @@
       "memo": ""
     },
     {
+      "domain": "gsx.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Mina Secure for Medical"
+      ],
+      "articles": [
+        {
+          "slug": "022f8f74-8a8a-45e9-bf41-627d5dae9b97",
+          "label": "用語#014",
+          "title": "LMS・eラーニングとは｜10の事例でわかる",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "独立行政法人地域医療機能推進機構（JCHO）"
+          ],
+          "products": [
+            "Mina Secure for Medical"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "guidablejobs.jp",
       "company": "",
       "status": "no-objection",
@@ -3661,6 +3837,20 @@
             "Handbook"
           ],
           "notified": true
+        },
+        {
+          "slug": "4243cdc9-d9d1-4c01-afb5-48d5cbecaeed",
+          "label": "用語#015",
+          "title": "セールスイネーブルメントとは｜10の事例でわかる",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "三和シヤッター工業株式会社",
+            "日本ミシュランタイヤ"
+          ],
+          "products": [
+            "Handbook"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3942,6 +4132,32 @@
           ],
           "products": [
             "いえらぶCLOUD"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "imagemagic.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ODPS"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-29",
+          "label": "記念日11/29",
+          "title": "いい服の日（記念日ポスト 11/29）",
+          "publishedAt": "2026-11-29",
+          "customers": [
+            "株式会社和光プロセス"
+          ],
+          "products": [
+            "ODPS"
           ],
           "notified": false
         }
@@ -4769,13 +4985,40 @@
       "memo": ""
     },
     {
+      "domain": "jrc.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "VTS管制官育成Eラーニングシステム・VTS System導入支援システム"
+      ],
+      "articles": [
+        {
+          "slug": "022f8f74-8a8a-45e9-bf41-627d5dae9b97",
+          "label": "用語#014",
+          "title": "LMS・eラーニングとは｜10の事例でわかる",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "ASEAN地域訓練センター（MATRAIN）"
+          ],
+          "products": [
+            "VTS管制官育成Eラーニングシステム・VTS System導入支援システム"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "jtekt.co.jp",
       "company": "",
       "status": "no-objection",
       "notifiedAt": "2026-11-17",
       "notifiedAtEstimated": false,
       "products": [
-        "分割型三列複合円筒ころ軸受"
+        "分割型三列複合円筒ころ軸受",
+        "コロガードプロベアリング"
       ],
       "articles": [
         {
@@ -4791,6 +5034,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-17"
+        },
+        {
+          "slug": "day-2026-11-27",
+          "label": "記念日11/27",
+          "title": "ノーベル賞制定記念日（記念日ポスト 11/27）",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "コロガードプロベアリング"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4935,7 +5191,8 @@
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
-        "Forwarder-PRO"
+        "Forwarder-PRO",
+        "藤原輸出自動車管理システムFACES"
       ],
       "articles": [
         {
@@ -4948,6 +5205,19 @@
           ],
           "products": [
             "Forwarder-PRO"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "day-2026-11-28",
+          "label": "記念日11/28",
+          "title": "税関記念日（記念日ポスト 11/28）",
+          "publishedAt": "2026-11-28",
+          "customers": [
+            "藤原運輸株式会社"
+          ],
+          "products": [
+            "藤原輸出自動車管理システムFACES"
           ],
           "notified": false
         }
@@ -5373,6 +5643,32 @@
       "memo": ""
     },
     {
+      "domain": "linx.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "HALCON"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-30",
+          "label": "記念日11/30",
+          "title": "オートフォーカスカメラの日（記念日ポスト 11/30）",
+          "publishedAt": "2026-11-30",
+          "customers": [
+            "新光電気工業"
+          ],
+          "products": [
+            "HALCON"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "liveon.ne.jp",
       "company": "",
       "status": "no-objection",
@@ -5462,6 +5758,19 @@
             "ロジクラ"
           ],
           "notified": true
+        },
+        {
+          "slug": "day-2026-11-29",
+          "label": "記念日11/29",
+          "title": "いい服の日（記念日ポスト 11/29）",
+          "publishedAt": "2026-11-29",
+          "customers": [
+            "株式会社FABRIC TOKYO"
+          ],
+          "products": [
+            "ロジクラ"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -5681,6 +5990,46 @@
             "manebi eラーニング"
           ],
           "notified": true
+        },
+        {
+          "slug": "022f8f74-8a8a-45e9-bf41-627d5dae9b97",
+          "label": "用語#014",
+          "title": "LMS・eラーニングとは｜10の事例でわかる",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "日本交通株式会社",
+            "株式会社 近鉄百貨店"
+          ],
+          "products": [
+            "manebi eラーニング"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "marketvivid.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "営業考動力研修"
+      ],
+      "articles": [
+        {
+          "slug": "4243cdc9-d9d1-4c01-afb5-48d5cbecaeed",
+          "label": "用語#015",
+          "title": "セールスイネーブルメントとは｜10の事例でわかる",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "株式会社ANA Cargo"
+          ],
+          "products": [
+            "営業考動力研修"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6492,7 +6841,7 @@
           "notified": false
         }
       ],
-      "memo": "2026-11-20 導入事例の掲載は取引先企業の担当者の了承を得たうえで公開しているとして、用語#004（クラフティアの事例）の非表示（難しければ削除）を依頼された。掲載の可否は取引先に確認のうえ改めて連絡するとのこと。ベンダー単位でリンクのみ（link_only_vendors.json）にし、用語#004・#050 の項目にリンクのみ用の紹介文を設定した"
+      "memo": "2026-11-20 導入事例の掲載は取引先企業の担当者の了承を得たうえで公開しているとして、用語#004（クラフティアの事例）の非表示（難しければ削除）を依頼された。掲載の可否は取引先に確認のうえ改めて連絡するとのこと。ベンダー単位でリンクのみ（link_only_vendors.json）にし、用語#004・#050 の項目にリンクのみ用の紹介文を設定した。2026-11-24 続報：取引先の確認の結果、他社サイトへの事例掲載は不可。クラフティアの個別事例ページへのリンクだと掲載を許可しているように見えるとの指摘で、リンク先を導入事例一覧（https://biz.mxmobiling.co.jp/case）に変えるよう依頼された。link_only_vendors.json に linkUrl を設定し、全事例のリンク先を一覧ページにした（カードに「提供元のご依頼により一覧ページにリンク」と表示）"
     },
     {
       "domain": "myquick.jp",
@@ -7068,6 +7417,32 @@
       "memo": ""
     },
     {
+      "domain": "nttexc.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ELNO"
+      ],
+      "articles": [
+        {
+          "slug": "022f8f74-8a8a-45e9-bf41-627d5dae9b97",
+          "label": "用語#014",
+          "title": "LMS・eラーニングとは｜10の事例でわかる",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "倉敷市"
+          ],
+          "products": [
+            "ELNO"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "oaland.jp",
       "company": "",
       "status": "no-objection",
@@ -7556,6 +7931,19 @@
           ],
           "notified": false,
           "held": true
+        },
+        {
+          "slug": "022f8f74-8a8a-45e9-bf41-627d5dae9b97",
+          "label": "用語#014",
+          "title": "LMS・eラーニングとは｜10の事例でわかる",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "株式会社三越伊勢丹ホールディングス"
+          ],
+          "products": [
+            "タレントパレット"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -7613,6 +8001,32 @@
             "ClimberCloud"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "patme.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "営業資料制作サービス"
+      ],
+      "articles": [
+        {
+          "slug": "4243cdc9-d9d1-4c01-afb5-48d5cbecaeed",
+          "label": "用語#015",
+          "title": "セールスイネーブルメントとは｜10の事例でわかる",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "一般社団法人日本礼法道協会"
+          ],
+          "products": [
+            "営業資料制作サービス"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -7691,6 +8105,32 @@
             "企業内保育所運営サービス"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "piotec.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Mimaki TxF300-75、DTFフィルムPH100、シェイカーS200"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-29",
+          "label": "記念日11/29",
+          "title": "いい服の日（記念日ポスト 11/29）",
+          "publishedAt": "2026-11-29",
+          "customers": [
+            "M社"
+          ],
+          "products": [
+            "Mimaki TxF300-75、DTFフィルムPH100、シェイカーS200"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -8048,6 +8488,32 @@
             "採用サイト制作・リニューアルサービス"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "recipe.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "recipe.learning"
+      ],
+      "articles": [
+        {
+          "slug": "022f8f74-8a8a-45e9-bf41-627d5dae9b97",
+          "label": "用語#014",
+          "title": "LMS・eラーニングとは｜10の事例でわかる",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "Peach Aviation株式会社"
+          ],
+          "products": [
+            "recipe.learning"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -9039,7 +9505,8 @@
         "Amazon Connect CTI Adapter for Salesforce / Cloud Contact Center Package",
         "Amazon Connect、Amazon Bedrock",
         "クラウドコンタクトセンターパッケージ",
-        "OneLogin"
+        "OneLogin",
+        "AWS構築・移行支援"
       ],
       "articles": [
         {
@@ -9071,6 +9538,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "day-2026-11-27",
+          "label": "記念日11/27",
+          "title": "ノーベル賞制定記念日（記念日ポスト 11/27）",
+          "publishedAt": "2026-11-27",
+          "customers": [
+            "日本ゼオン株式会社"
+          ],
+          "products": [
+            "AWS構築・移行支援"
+          ],
+          "notified": false
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -9190,10 +9670,10 @@
     },
     {
       "domain": "shachihata.co.jp",
-      "company": "",
-      "status": "pending",
-      "notifiedAt": "",
-      "notifiedAtEstimated": false,
+      "company": "シヤチハタ株式会社",
+      "status": "removed",
+      "notifiedAt": "2026-11-25",
+      "notifiedAtEstimated": true,
       "products": [
         "Shachihata Cloud"
       ],
@@ -9204,15 +9684,18 @@
           "title": "会議で一番長かったのは、会議の時間ではなかった。資料づくりから決めたことの追跡まで、会議の前後を変えた事例5選",
           "publishedAt": "2026-12-03",
           "customers": [
-            "株式会社ストライダーズ"
+            "株式会社ストライダーズ",
+            "（リンクのみ）"
           ],
           "products": [
             "Shachihata Cloud"
           ],
-          "notified": false
+          "notified": true
         }
       ],
-      "memo": ""
+      "memo": "2026-11-25 導入事例の制作担当から、事例マニアに掲載中の同社の事例・紹介コンテンツをすべて取り下げ、今後の新規掲載・再掲載も控えるよう依頼された。対応完了の連絡を求められている。全16事例をリンクのみ（link_only_vendors.json）にし、#049 の項目にリンクのみ用の紹介文を設定した / 2026-11-25 記事内に残した公式サイトの事例ページへのリンクも削除するよう依頼された。blocked_vendors.json に移して全事例を hidden にし、#049 の 04 は伊予銀行（SMBCクラウドサイン）の事例に差し替えた",
+      "removedAt": "2026-11-25",
+      "removedReason": "掲載中の事例・紹介コンテンツをすべて取り下げ、今後の新規掲載・再掲載も控えるよう依頼を受けた（2026-11-25）。まずリンクのみにしたが、記事内に残した公式サイトの事例ページへのリンクも削除するよう重ねて依頼された（2026-11-25）。全16事例を hidden にし、#049 の 04 は伊予銀行（SMBCクラウドサイン）の事例に差し替えた"
     },
     {
       "domain": "sheetmetal.amada.co.jp",
@@ -9344,6 +9827,19 @@
             "Shippio Cargo"
           ],
           "notified": true
+        },
+        {
+          "slug": "day-2026-11-28",
+          "label": "記念日11/28",
+          "title": "税関記念日（記念日ポスト 11/28）",
+          "publishedAt": "2026-11-28",
+          "customers": [
+            "株式会社 前田製作所"
+          ],
+          "products": [
+            "Shippio Cargo"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -9462,6 +9958,32 @@
             "SmartStage ServiceDesk"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "smbc-cloudsign.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "SMBCクラウドサイン"
+      ],
+      "articles": [
+        {
+          "slug": "29681d98-3c93-4a49-93a5-a9d16d89b905",
+          "label": "#049",
+          "title": "会議で一番長かったのは、会議の時間ではなかった。資料づくりから決めたことの追跡まで、会議の前後を変えた事例5選",
+          "publishedAt": "2026-12-03",
+          "customers": [
+            "株式会社伊予銀行"
+          ],
+          "products": [
+            "SMBCクラウドサイン"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -9679,6 +10201,19 @@
             "SPOKES"
           ],
           "notified": false
+        },
+        {
+          "slug": "4243cdc9-d9d1-4c01-afb5-48d5cbecaeed",
+          "label": "用語#015",
+          "title": "セールスイネーブルメントとは｜10の事例でわかる",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "株式会社M&A DX"
+          ],
+          "products": [
+            "SPOKES"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -9774,6 +10309,32 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-17"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "sunplan.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "輸出管理システム「TRADING-EX」"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-11-28",
+          "label": "記念日11/28",
+          "title": "税関記念日（記念日ポスト 11/28）",
+          "publishedAt": "2026-11-28",
+          "customers": [
+            "河田トレーディング株式会社"
+          ],
+          "products": [
+            "輸出管理システム「TRADING-EX」"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -11131,6 +11692,35 @@
             "SEOに強い集団ホームページ制作、WEBコンサルティング"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "videotouch.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "VideoTouch",
+        "VideoTouch AIロープレ"
+      ],
+      "articles": [
+        {
+          "slug": "4243cdc9-d9d1-4c01-afb5-48d5cbecaeed",
+          "label": "用語#015",
+          "title": "セールスイネーブルメントとは｜10の事例でわかる",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "ベルシステム24（通信系企業C社）",
+            "イオンフィナンシャルサービス株式会社"
+          ],
+          "products": [
+            "VideoTouch",
+            "VideoTouch AIロープレ"
+          ],
+          "notified": false
         }
       ],
       "memo": ""

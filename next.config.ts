@@ -19,6 +19,8 @@ const nextConfig: NextConfig = {
     VIEWS_TABLE: process.env.VIEWS_TABLE || (process.env.AWS_BRANCH ? `jirei-mania-views-${process.env.AWS_BRANCH}` : ""),
     // 流入元（UTM つきの来訪。lib/sources.ts）。テーブル名は amplify/backend.ts と同じ規則
     SOURCES_TABLE: process.env.SOURCES_TABLE || (process.env.AWS_BRANCH ? `jirei-mania-sources-${process.env.AWS_BRANCH}` : ""),
+    // 事例セレクションの枠の計測（lib/slots.ts）。テーブル名は amplify/backend.ts と同じ規則
+    SLOTS_TABLE: process.env.SLOTS_TABLE || (process.env.AWS_BRANCH ? `jirei-mania-slots-${process.env.AWS_BRANCH}` : ""),
     // ベンダー会員（lib/accounts.ts）。テーブル名は amplify/backend.ts と同じ規則。
     // VENDOR_SECRET はログインコードのハッシュとログイン状態の署名に使う（長いランダム文字列。変えると全員ログアウト）
     ACCOUNTS_TABLE: process.env.ACCOUNTS_TABLE || (process.env.AWS_BRANCH ? `jirei-mania-accounts-${process.env.AWS_BRANCH}` : ""),

@@ -39,7 +39,7 @@ export default async function Dashboard({ user, account, paid, periods, days }: 
   const list: Row[] = cases.map((c) => ({
     id: c.id,
     title: c.title,
-    href: c.linkOnly ? c.sourceUrl : `/cases/${c.id}`,
+    href: c.linkOnly ? c.linkUrl ?? c.sourceUrl : `/cases/${c.id}`,
     external: Boolean(c.linkOnly),
     views: byCase.get(c.id)?.views ?? 0,
     clicks: byCase.get(c.id)?.clicks ?? 0,
