@@ -315,6 +315,32 @@
       "memo": ""
     },
     {
+      "domain": "ags.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "Neuro Watcher"
+      ],
+      "articles": [
+        {
+          "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
+          "label": "#055",
+          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "B社"
+          ],
+          "products": [
+            "Neuro Watcher"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "ai-market.jp",
       "company": "",
       "status": "no-objection",
@@ -337,6 +363,32 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-18"
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "aismiley.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "JAPAN AI AGENT"
+      ],
+      "articles": [
+        {
+          "slug": "32335b1c-d2d3-47c7-8b6b-0add7a96ccb1",
+          "label": "#054",
+          "title": "判断の前に読む仕事を、AIエージェントに渡した。書類を読んで判断する仕事をAIエージェントに任せた事例5選",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "イーモジャパン株式会社"
+          ],
+          "products": [
+            "JAPAN AI AGENT"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -611,6 +663,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
+          "label": "#052",
+          "title": "補助金を使って導入した事例5選",
+          "publishedAt": "2026-12-08",
+          "customers": [
+            "川上塗装工業株式会社"
+          ],
+          "products": [
+            "ANDPAD"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1362,6 +1427,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
+          "label": "#055",
+          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "株式会社立花工業"
+          ],
+          "products": [
+            "Cashmo"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1429,6 +1507,20 @@
             "CastingONE"
           ],
           "notified": false
+        },
+        {
+          "slug": "93cf3349-6642-4f45-8078-7d81091fcab3",
+          "label": "#051",
+          "title": "求人票に書けない職場の様子を、SNSで見せた。SNSで採用を増やした事例10選",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "GAライフケア株式会社",
+            "ライクワークス株式会社（現：ライクスタッフィング株式会社）"
+          ],
+          "products": [
+            "CastingONE"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1466,7 +1558,8 @@
       "notifiedAt": "2026-11-16",
       "notifiedAtEstimated": false,
       "products": [
-        "デジタルマーケティングコンサルティング"
+        "デジタルマーケティングコンサルティング",
+        "採用特化型ホームページ制作・Indeedの新規整備"
       ],
       "articles": [
         {
@@ -1482,6 +1575,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-16"
+        },
+        {
+          "slug": "93cf3349-6642-4f45-8078-7d81091fcab3",
+          "label": "#051",
+          "title": "求人票に書けない職場の様子を、SNSで見せた。SNSで採用を増やした事例10選",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "株式会社髙田鉄工"
+          ],
+          "products": [
+            "採用特化型ホームページ制作・Indeedの新規整備"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -1579,7 +1685,7 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#057",
+          "label": "#056",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
           "publishedAt": "2026-12-14",
           "customers": [
@@ -1682,7 +1788,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "AWS",
-        "Gemini Enterprise Agent Platform"
+        "Gemini Enterprise Agent Platform",
+        "Google Cloud Agent Development Kit / Vertex AI / Cloud Run"
       ],
       "articles": [
         {
@@ -1723,6 +1830,19 @@
           ],
           "products": [
             "AWS"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "32335b1c-d2d3-47c7-8b6b-0add7a96ccb1",
+          "label": "#054",
+          "title": "判断の前に読む仕事を、AIエージェントに渡した。書類を読んで判断する仕事をAIエージェントに任せた事例5選",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "KDDIアイレット株式会社"
+          ],
+          "products": [
+            "Google Cloud Agent Development Kit / Vertex AI / Cloud Run"
           ],
           "notified": false
         }
@@ -2052,6 +2172,32 @@
       "memo": ""
     },
     {
+      "domain": "crack-inc.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "魅力発掘プロジェクト・インナーブランディング支援"
+      ],
+      "articles": [
+        {
+          "slug": "93cf3349-6642-4f45-8078-7d81091fcab3",
+          "label": "#051",
+          "title": "求人票に書けない職場の様子を、SNSで見せた。SNSで採用を増やした事例10選",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "有限会社裕進運輸"
+          ],
+          "products": [
+            "魅力発掘プロジェクト・インナーブランディング支援"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "crotta.jp",
       "company": "",
       "status": "no-objection",
@@ -2074,6 +2220,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-20"
+        },
+        {
+          "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
+          "label": "#052",
+          "title": "補助金を使って導入した事例5選",
+          "publishedAt": "2026-12-08",
+          "customers": [
+            "株式会社アクアイグニス淡路島（AQUAIGNIS Trailer Park）"
+          ],
+          "products": [
+            "crotta"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2276,6 +2435,32 @@
             "Wowza ClearCaster"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "dsk-ec.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "コンビニ収納代行サービス、ゆうちょ振替MT代行サービス"
+      ],
+      "articles": [
+        {
+          "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
+          "label": "#055",
+          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "株式会社日本生物科学"
+          ],
+          "products": [
+            "コンビニ収納代行サービス、ゆうちょ振替MT代行サービス"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -2735,7 +2920,8 @@
         "i-BELT",
         "高速CT型X線自動検査装置",
         "オムロン協調ロボット TMシリーズ",
-        "VT-S730"
+        "VT-S730",
+        "溶接工程向け近接センサ E2EW-Q"
       ],
       "articles": [
         {
@@ -2831,6 +3017,19 @@
           ],
           "products": [
             "i-BELT"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
+          "label": "#053",
+          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "溶接工程向け近接センサ E2EW-Q"
           ],
           "notified": false
         }
@@ -3369,6 +3568,19 @@
             "freee人事労務、freee勤怠管理Plus"
           ],
           "notified": false
+        },
+        {
+          "slug": "32335b1c-d2d3-47c7-8b6b-0add7a96ccb1",
+          "label": "#054",
+          "title": "判断の前に読む仕事を、AIエージェントに渡した。書類を読んで判断する仕事をAIエージェントに任せた事例5選",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "レンジャーシステムズ株式会社"
+          ],
+          "products": [
+            "freee会計、freee人事労務、freeeカード Unlimited"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3448,6 +3660,32 @@
             "ニュークックチルシステム"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "fukudaco.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "イージス® SGR"
+      ],
+      "articles": [
+        {
+          "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
+          "label": "#053",
+          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "イージス® SGR"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3697,7 +3935,7 @@
       "articles": [
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#057",
+          "label": "#056",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
           "publishedAt": "2026-12-14",
           "customers": [
@@ -3705,6 +3943,35 @@
           ],
           "products": [
             "ポストパレット"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "growthseed.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "TikTok運用代行",
+        "GrowthDX"
+      ],
+      "articles": [
+        {
+          "slug": "93cf3349-6642-4f45-8078-7d81091fcab3",
+          "label": "#051",
+          "title": "求人票に書けない職場の様子を、SNSで見せた。SNSで採用を増やした事例10選",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "株式会社BONDSグループ",
+            "イノデン株式会社"
+          ],
+          "products": [
+            "TikTok運用代行",
+            "GrowthDX"
           ],
           "notified": false
         }
@@ -3971,6 +4238,45 @@
             "HR PRIME"
           ],
           "notified": true
+        },
+        {
+          "slug": "93cf3349-6642-4f45-8078-7d81091fcab3",
+          "label": "#051",
+          "title": "求人票に書けない職場の様子を、SNSで見せた。SNSで採用を増やした事例10選",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "税理士法人 総合経営サービス"
+          ],
+          "products": [
+            "HR PRIME"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "hrbase.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "HRbase"
+      ],
+      "articles": [
+        {
+          "slug": "32335b1c-d2d3-47c7-8b6b-0add7a96ccb1",
+          "label": "#054",
+          "title": "判断の前に読む仕事を、AIエージェントに渡した。書類を読んで判断する仕事をAIエージェントに任せた事例5選",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "株式会社真誠"
+          ],
+          "products": [
+            "HRbase"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -4124,7 +4430,7 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#057",
+          "label": "#056",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
           "publishedAt": "2026-12-14",
           "customers": [
@@ -5018,7 +5324,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "分割型三列複合円筒ころ軸受",
-        "コロガードプロベアリング"
+        "コロガードプロベアリング",
+        "鉄鋼圧延機用ドライブシャフト"
       ],
       "articles": [
         {
@@ -5045,6 +5352,19 @@
           ],
           "products": [
             "コロガードプロベアリング"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
+          "label": "#053",
+          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "鉄鋼圧延機用ドライブシャフト"
           ],
           "notified": false
         }
@@ -5898,7 +6218,7 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#057",
+          "label": "#056",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
           "publishedAt": "2026-12-14",
           "customers": [
@@ -6250,7 +6570,7 @@
       "articles": [
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#057",
+          "label": "#056",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
           "publishedAt": "2026-12-14",
           "customers": [
@@ -6536,6 +6856,32 @@
       "memo": ""
     },
     {
+      "domain": "mitsys.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "QuickCRM"
+      ],
+      "articles": [
+        {
+          "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
+          "label": "#055",
+          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "株式会社ベルーナ"
+          ],
+          "products": [
+            "QuickCRM"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "mjs.co.jp",
       "company": "",
       "status": "no-objection",
@@ -6546,7 +6892,8 @@
         "ACELINK NX-Pro",
         "Galileopt DX",
         "ACELINK NX-CE",
-        "ACELINK NX-CE 給与"
+        "ACELINK NX-CE 給与",
+        "ACELINK NX-CE 販売"
       ],
       "articles": [
         {
@@ -6622,6 +6969,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
+          "label": "#052",
+          "title": "補助金を使って導入した事例5選",
+          "publishedAt": "2026-12-08",
+          "customers": [
+            "株式会社中尾商会"
+          ],
+          "products": [
+            "ACELINK NX-CE 販売"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -6776,6 +7136,32 @@
       "memo": ""
     },
     {
+      "domain": "musashi-engineering.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "プランジャポンプ方式ディスペンサー、スクリュー方式ディスペンサー"
+      ],
+      "articles": [
+        {
+          "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
+          "label": "#053",
+          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "プランジャポンプ方式ディスペンサー、スクリュー方式ディスペンサー"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "mutumi.co.jp",
       "company": "",
       "status": "no-objection",
@@ -6838,7 +7224,8 @@
           "products": [
             "itsmoBPO キッティング"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": "2026-11-20 導入事例の掲載は取引先企業の担当者の了承を得たうえで公開しているとして、用語#004（クラフティアの事例）の非表示（難しければ削除）を依頼された。掲載の可否は取引先に確認のうえ改めて連絡するとのこと。ベンダー単位でリンクのみ（link_only_vendors.json）にし、用語#004・#050 の項目にリンクのみ用の紹介文を設定した。2026-11-24 続報：取引先の確認の結果、他社サイトへの事例掲載は不可。クラフティアの個別事例ページへのリンクだと掲載を許可しているように見えるとの指摘で、リンク先を導入事例一覧（https://biz.mxmobiling.co.jp/case）に変えるよう依頼された。link_only_vendors.json に linkUrl を設定し、全事例のリンク先を一覧ページにした（カードに「提供元のご依頼により一覧ページにリンク」と表示）"
@@ -6977,7 +7364,7 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#057",
+          "label": "#056",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
           "publishedAt": "2026-12-14",
           "customers": [
@@ -7211,6 +7598,32 @@
       "memo": ""
     },
     {
+      "domain": "nock-design.com",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "TikTok運用代行「ニチヨウビ」"
+      ],
+      "articles": [
+        {
+          "slug": "93cf3349-6642-4f45-8078-7d81091fcab3",
+          "label": "#051",
+          "title": "求人票に書けない職場の様子を、SNSで見せた。SNSで採用を増やした事例10選",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "製造業の工場（社名非公開）"
+          ],
+          "products": [
+            "TikTok運用代行「ニチヨウビ」"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "nr1.co.jp",
       "company": "",
       "status": "no-objection",
@@ -7376,7 +7789,7 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#057",
+          "label": "#056",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
           "publishedAt": "2026-12-14",
           "customers": [
@@ -7560,7 +7973,8 @@
             "OfficeAI社員",
             "OfficeBot"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -7573,7 +7987,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "クラウド移行支援サービス・システム開発支援",
-        "ThemiStruct-WAM"
+        "ThemiStruct-WAM",
+        "保険査定AIエージェント"
       ],
       "articles": [
         {
@@ -7600,6 +8015,19 @@
           ],
           "products": [
             "ThemiStruct-WAM"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "32335b1c-d2d3-47c7-8b6b-0add7a96ccb1",
+          "label": "#054",
+          "title": "判断の前に読む仕事を、AIエージェントに渡した。書類を読んで判断する仕事をAIエージェントに任せた事例5選",
+          "publishedAt": "2026-12-10",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "保険査定AIエージェント"
           ],
           "notified": false
         }
@@ -7707,13 +8135,40 @@
       "memo": "2026-11-11 第三者メディアへの掲載不可（お客様との取り決めで自社メディアに限り公開）と削除依頼。全事例を linkOnly（リンクのみ）にした"
     },
     {
+      "domain": "olta.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "OLTAクラウドファクタリング"
+      ],
+      "articles": [
+        {
+          "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
+          "label": "#055",
+          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "publishedAt": "2026-12-11",
+          "customers": [
+            "楓成工業"
+          ],
+          "products": [
+            "OLTAクラウドファクタリング"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "onecareer.jp",
       "company": "",
       "status": "no-objection",
       "notifiedAt": "2026-10-12",
       "notifiedAtEstimated": true,
       "products": [
-        "ワンキャリア"
+        "ワンキャリア",
+        "ONE CAREER"
       ],
       "articles": [
         {
@@ -7729,6 +8184,20 @@
             "ワンキャリア"
           ],
           "notified": true
+        },
+        {
+          "slug": "93cf3349-6642-4f45-8078-7d81091fcab3",
+          "label": "#051",
+          "title": "求人票に書けない職場の様子を、SNSで見せた。SNSで採用を増やした事例10選",
+          "publishedAt": "2026-12-07",
+          "customers": [
+            "株式会社毎日放送",
+            "ロート製薬株式会社"
+          ],
+          "products": [
+            "ONE CAREER"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -8346,7 +8815,7 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#057",
+          "label": "#056",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
           "publishedAt": "2026-12-14",
           "customers": [
@@ -10200,7 +10669,8 @@
           "products": [
             "SPOKES"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "4243cdc9-d9d1-4c01-afb5-48d5cbecaeed",
@@ -10279,7 +10749,8 @@
       "notifiedAtEstimated": false,
       "products": [
         "高粘度用サニタリードラムポンプ+リフター",
-        "ATI 過酸化水素水計"
+        "ATI 過酸化水素水計",
+        "UNIBLOC サニタリーロータリーローブポンプ"
       ],
       "articles": [
         {
@@ -10309,6 +10780,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-17"
+        },
+        {
+          "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
+          "label": "#053",
+          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "publishedAt": "2026-12-09",
+          "customers": [
+            "オークリー社"
+          ],
+          "products": [
+            "UNIBLOC サニタリーロータリーローブポンプ"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -10652,7 +11136,8 @@
           "products": [
             "Teachme Biz"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -10738,7 +11223,7 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#057",
+          "label": "#056",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
           "publishedAt": "2026-12-14",
           "customers": [
@@ -10913,6 +11398,32 @@
       "memo": ""
     },
     {
+      "domain": "tojogas.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "太陽光発電システム"
+      ],
+      "articles": [
+        {
+          "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
+          "label": "#052",
+          "title": "補助金を使って導入した事例5選",
+          "publishedAt": "2026-12-08",
+          "customers": [
+            "株式会社奉徳はないけ"
+          ],
+          "products": [
+            "太陽光発電システム"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "tokouav.jp",
       "company": "",
       "status": "no-objection",
@@ -11013,6 +11524,19 @@
           ],
           "notified": true,
           "notifiedAt": "2026-11-09"
+        },
+        {
+          "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
+          "label": "#052",
+          "title": "補助金を使って導入した事例5選",
+          "publishedAt": "2026-12-08",
+          "customers": [
+            "社会福祉法人末広会 特別養護老人ホーム春香苑・第２春香苑"
+          ],
+          "products": [
+            "見守りライフ"
+          ],
+          "notified": false
         },
         {
           "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
@@ -11532,7 +12056,7 @@
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
-          "label": "#057",
+          "label": "#056",
           "title": "忙しい月だけ人が足りない。繁忙期対策の事例10選",
           "publishedAt": "2026-12-14",
           "customers": [
@@ -12090,7 +12614,8 @@
           "products": [
             "溶接伝承マスター"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
