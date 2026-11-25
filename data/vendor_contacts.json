@@ -9671,7 +9671,7 @@
     {
       "domain": "shachihata.co.jp",
       "company": "シヤチハタ株式会社",
-      "status": "no-objection",
+      "status": "removed",
       "notifiedAt": "2026-11-25",
       "notifiedAtEstimated": true,
       "products": [
@@ -9693,7 +9693,9 @@
           "notified": true
         }
       ],
-      "memo": "2026-11-25 導入事例の制作担当から、事例マニアに掲載中の同社の事例・紹介コンテンツをすべて取り下げ、今後の新規掲載・再掲載も控えるよう依頼された。対応完了の連絡を求められている。全16事例をリンクのみ（link_only_vendors.json）にし、#049 の項目にリンクのみ用の紹介文を設定した"
+      "memo": "2026-11-25 導入事例の制作担当から、事例マニアに掲載中の同社の事例・紹介コンテンツをすべて取り下げ、今後の新規掲載・再掲載も控えるよう依頼された。対応完了の連絡を求められている。全16事例をリンクのみ（link_only_vendors.json）にし、#049 の項目にリンクのみ用の紹介文を設定した / 2026-11-25 記事内に残した公式サイトの事例ページへのリンクも削除するよう依頼された。blocked_vendors.json に移して全事例を hidden にし、#049 の 04 は伊予銀行（SMBCクラウドサイン）の事例に差し替えた",
+      "removedAt": "2026-11-25",
+      "removedReason": "掲載中の事例・紹介コンテンツをすべて取り下げ、今後の新規掲載・再掲載も控えるよう依頼を受けた（2026-11-25）。まずリンクのみにしたが、記事内に残した公式サイトの事例ページへのリンクも削除するよう重ねて依頼された（2026-11-25）。全16事例を hidden にし、#049 の 04 は伊予銀行（SMBCクラウドサイン）の事例に差し替えた"
     },
     {
       "domain": "sheetmetal.amada.co.jp",
@@ -9956,6 +9958,32 @@
             "SmartStage ServiceDesk"
           ],
           "notified": true
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "smbc-cloudsign.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "SMBCクラウドサイン"
+      ],
+      "articles": [
+        {
+          "slug": "29681d98-3c93-4a49-93a5-a9d16d89b905",
+          "label": "#049",
+          "title": "会議で一番長かったのは、会議の時間ではなかった。資料づくりから決めたことの追跡まで、会議の前後を変えた事例5選",
+          "publishedAt": "2026-12-03",
+          "customers": [
+            "株式会社伊予銀行"
+          ],
+          "products": [
+            "SMBCクラウドサイン"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
