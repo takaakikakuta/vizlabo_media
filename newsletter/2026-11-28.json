@@ -1,0 +1,25 @@
+{
+  "_note": "この号の手書き欄。空欄の枠はメールに出さない（note の2本は必ず埋める）。書いたら build.mjs をもう一度実行する。",
+  "subject": "",
+  "preheader": "",
+  "intro": "今週も、事例の集積から読み解いた記事をお届けします。",
+  "sugoi": {
+    "title": "",
+    "url": "https://note.com/vizlabo/n/n0209f9b3ee7e",
+    "desc": ""
+  },
+  "column": {
+    "title": "",
+    "url": "",
+    "desc": ""
+  },
+  "selectionNotes": {},
+  "notice": {
+    "label": "AI事例サジェスト（無料）",
+    "title": "今週の事例に、貴社に近いものはありましたか？",
+    "desc": "なければ、貴社のURLを入れるだけで、AIが同じ業界・同じ困りごとの事例を選んでメールでお送りします。",
+    "url": "https://vizlabo.com/suggest",
+    "cta": "近い事例を送ってもらう"
+  },
+  "afterword": ""
+}
