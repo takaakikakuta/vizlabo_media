@@ -96561,7 +96561,7 @@
       "メール中心の連絡",
       "業務の属人化"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-corollamie",
@@ -96613,7 +96613,7 @@
       "紙の書類処理",
       "紙図面の保管"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-dai-nippon-printing",
@@ -96673,7 +96673,7 @@
       "紙の書類処理",
       "テレワーク対応"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-fsastech",
@@ -96724,7 +96724,7 @@
       "押印・承認の遅れ",
       "テレワーク対応"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-handenko",
@@ -96773,7 +96773,7 @@
       "進捗が見えない",
       "セキュリティリスク"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-itayadoken",
@@ -96821,7 +96821,7 @@
       "Excel管理の限界",
       "進捗が見えない"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-jora",
@@ -96870,7 +96870,7 @@
       "Excel管理の限界",
       "二重入力"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-kinsetu",
@@ -96927,7 +96927,7 @@
       "紙の書類処理",
       "多拠点の管理"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-ngas",
@@ -96985,7 +96985,7 @@
       "ペーパーレス化",
       "部署間の情報共有"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-orixbank",
@@ -97041,7 +97041,7 @@
       "押印・承認の遅れ",
       "テレワーク対応"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-shin-hibarigaoka",
@@ -97098,7 +97098,7 @@
       "進捗が見えない",
       "手作業の転記"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-striders",
@@ -97154,7 +97154,7 @@
       "担当者不在で止まる",
       "紙の書類処理"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-tokai-cci",
@@ -97199,7 +97199,7 @@
       "押印・承認の遅れ",
       "システムの乱立"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dx-merrybiz-jp-case",
@@ -319263,7 +319263,7 @@
       "移動時間の多さ",
       "テレワーク対応"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-kitaku-sjc",
@@ -319316,7 +319316,7 @@
       "情報共有の遅れ",
       "紙の書類処理"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dstmp-shachihata-co-jp-case-muroran-it",
@@ -319365,7 +319365,7 @@
       "探し物の時間",
       "担当者不在で止まる"
     ],
-    "linkOnly": true
+    "hidden": true
   },
   {
     "id": "dx-si-jirei-jp-cloud-case-cisco-webex-expressway-totsu-sangy",
