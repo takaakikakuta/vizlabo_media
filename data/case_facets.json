@@ -11044,5 +11044,6 @@
   "zest-jp-case-tensin": {"dept": ["sales", "field"], "effects": ["time", "sales", "visibility"], "size": "unknown", "sizeBasis": "none"},
   "zest-jp-case-tonoka": {"dept": ["ga", "field"], "effects": ["time", "standard"], "size": "s1", "sizeBasis": "stated"},
   "zest-jp-case-uferd": {"dept": ["management", "hr"], "effects": ["sales", "people", "time"], "size": "unknown", "sizeBasis": "none"},
-  "zest-jp-case-yokohamamachidaclinic": {"dept": ["field"], "effects": ["time", "quality"], "size": "s1", "sizeBasis": "stated"}
+  "zest-jp-case-yokohamamachidaclinic": {"dept": ["field"], "effects": ["time", "quality"], "size": "s1", "sizeBasis": "stated"},
+  "nock-design-com-nichiyobi-blog-tiktok-recruit-agency": {"dept": ["hr"], "effects": ["people"], "size": "unknown", "sizeBasis": "none"}
 }
