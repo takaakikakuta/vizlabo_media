@@ -195,7 +195,7 @@
 - 株式会社大創産業（sonar-ats.jp）: #26(hidden), #14
 - 株式会社デイリースポーツ案内広告社（miidas.jp）: #26(hidden), #14
 - 味の素フィナンシャル・ソリューションズ株式会社（fastaccounting.co.jp）: #3, #4
-- レンジャーシステムズ株式会社（freee.co.jp）: #3, #53(draft)
+- レンジャーシステムズ株式会社（freee.co.jp）: #3, #54
 - 株式会社ALFOR（japanpost.jp）: #5, #71(draft)
 - 株式会社マキノ（fs-farm.co.jp）: #5, #24
 - 株式会社Fast Fitness Japan（cloudsign.jp）: #6, #3
@@ -223,9 +223,9 @@
 - 岩手県大槌町役場（seikotrust.jp）: #47, #9
 - 有限会社裕進運輸（crack-inc.co.jp）: #51, #69(draft)
 - ライクワークス株式会社（現：ライクスタッフィング株式会社）（casting-one.jp）: #51, #10
-- 都市住建株式会社（ielove-cloud.jp）: #58, #10
-- 株式会社利久（unifinity.co.jp）: #58, #3
-- パナソニック保険サービス株式会社（ntt-tx.co.jp）: #58, #5
+- 都市住建株式会社（ielove-cloud.jp）: #56, #10
+- 株式会社利久（unifinity.co.jp）: #56, #3
+- パナソニック保険サービス株式会社（ntt-tx.co.jp）: #56, #5
 
 ## 提供元の偏り（記事に出た回数が多い提供元）
 
