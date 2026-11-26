@@ -1999,7 +1999,8 @@
           "products": [
             "VisionPro"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3010,7 +3011,8 @@
           "products": [
             "VT-S730"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
@@ -5975,8 +5977,8 @@
     {
       "domain": "linx.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "HALCON"
@@ -5993,7 +5995,8 @@
           "products": [
             "HALCON"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
