@@ -5515,8 +5515,8 @@
     {
       "domain": "kisnet.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "Forwarder-PRO",
@@ -5547,7 +5547,8 @@
           "products": [
             "藤原輸出自動車管理システムFACES"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -10325,7 +10326,8 @@
           "products": [
             "Shippio Cargo"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -10818,8 +10820,8 @@
     {
       "domain": "sunplan.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "輸出管理システム「TRADING-EX」"
@@ -10836,7 +10838,8 @@
           "products": [
             "輸出管理システム「TRADING-EX」"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""

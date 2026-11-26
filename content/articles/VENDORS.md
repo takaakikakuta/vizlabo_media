@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 248 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 73 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 250 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 71 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 13 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -72,7 +72,7 @@
 | jrc.co.jp | VTS管制官育成Eラーニングシステム・VTS System導入支援システム | 用語#014（ASEAN地域訓練センター（MATRAIN）） |
 | jtekt.co.jp | 鉄鋼圧延機用ドライブシャフト | #053（（非公開）） |
 | keigan-motor.com | KeiganALI | #033（株式会社ホリゾン） |
-| kisnet.co.jp | Forwarder-PRO・藤原輸出自動車管理システムFACES | 用語#008（西久大運輸倉庫株式会社）<br>記念日11/28（藤原運輸株式会社） |
+| kisnet.co.jp | Forwarder-PRO | 用語#008（西久大運輸倉庫株式会社） |
 | kitera-cloud.jp | KiteRa Pro | #034（社会保険労務士　荻生労務研究所） |
 | kobelcosys.co.jp | 現場特化型MESソリューション　実績班長 | #032（田中精密工業株式会社） |
 | kouei.co.jp | 運行管理クラウドサービス | #031（ENEOS株式会社） |
@@ -117,14 +117,12 @@
 | sg-systems.co.jp | Biz-Fleet | 用語#008（JPロジスティクス） |
 | shi.co.jp（住友重機械工業株式会社） | KeiganALI | #033（株式会社ホリゾン） |
 | shinwart.co.jp | S-PAYCIAL with 電子給与明細 | 用語#007（ヤマトサカナ株式会社） |
-| shippio.io | Shippio Cargo | 記念日11/28（株式会社 前田製作所） |
 | sios.jp | DataKeeper、Windows Server Failover Clustering | 用語#009（長野県厚生農業協同組合連合会（JA長野厚生連）） |
 | sizsan.co.jp | BellaBot | #033（株式会社五味八珍） |
 | smbc-cloudsign.co.jp | SMBCクラウドサイン | #049（株式会社伊予銀行） |
 | softes.co.jp | SAP S/4HANA、SAP Analytics Cloud・SAP S/4HANA・SAP ERP | 用語#003（株式会社ニチリン）<br>用語#002（日研フード株式会社、社会福祉法人 聖隷福祉事業団）<br>用語#009（社会福祉法人 聖隷福祉事業団） |
 | spokes-online.jp | SPOKES | 用語#015（株式会社M&A DX） |
 | sunnyltd.co.jp | UNIBLOC サニタリーロータリーローブポンプ | #053（オークリー社） |
-| sunplan.co.jp | 輸出管理システム「TRADING-EX」 | 記念日11/28（河田トレーディング株式会社） |
 | takachiho-kk.co.jp | RFIDシステム | #008（佐川グローバルロジスティクス株式会社） |
 | tam-tokyo.co.jp | カートナー、段ボールケーサー | 記念日11/22（松尾製菓株式会社/チロルチョコ株式会社） |
 | techsword.co.jp | TechSword Vision | 記念日11/22（株式会社榮太樓總本鋪） |
@@ -245,6 +243,7 @@
 | kacoms.co.jp | 2026-11-11 | BeSpice DecERP include iDempiere | 用語#003（港製器工業株式会社） |
 | kagoya.jp | 2026-11-19 | Forguncyプラン | 用語#003（武田病院グループ） |
 | kiscl.co.jp | 2026-10-07（推定） | WMS/400 | #008（サンケン電気株式会社、サンケン ロジスティクス株式会社） |
+| kisnet.co.jp | 2026-11-26 | 藤原輸出自動車管理システムFACES | 記念日11/28（藤原運輸株式会社） |
 | kobelcosys.co.jp | 2026-11-11 | SAP S/4HANA、SAP on Azure・SAP ERP 産業用機械製造業向けテンプレート: HI-KORT for IM&C | 用語#003（株式会社オーディオテクニカ）<br>記念日11/23（本多通信工業株式会社）<br>用語#002（株式会社オーディオテクニカ） |
 | koden-kk.co.jp | 2026-10-23（推定） | 自家消費型太陽光発電システム | #020（サン電子工業株式会社）<br>#044（株式会社右川ゴム製造所） |
 | kpmg.com | 2026-10-26（推定） | UiPath | #021（学校法人 早稲田大学） |
@@ -342,7 +341,7 @@
 | sg-systems.co.jp | 2026-09-28（推定） | Biz-AI×OCR・バックオフィスサポートサービス・RockyOne | #001（株式会社インテック、ガリバー・インターナショナル株式会社、新潟県村上市）<br>#003（株式会社Beso）<br>#038（サンワサプライ株式会社） |
 | sheetmetal.amada.co.jp | 2026-11-19 | LC-VALSTER-6225AJ・EGB-6020ATCe | 記念日11/23（花村産業株式会社）<br>記念日11/25（株式会社誠工社） |
 | shi.co.jp（住友重機械工業株式会社） | 2026-11-11（推定） | — | — |
-| shippio.io | 2026-09-28（推定） | Shippio Cargo | #001（株式会社ゴンチャ ジャパン）<br>#009（株式会社TTS） |
+| shippio.io | 2026-09-28（推定） | Shippio Cargo | #001（株式会社ゴンチャ ジャパン）<br>#009（株式会社TTS）<br>記念日11/28（株式会社 前田製作所） |
 | sinclo.jp | 2026-09-29（推定） | sinclo・チャットボットsinclo | #002（DNA先端医療株式会社）<br>#014（株式会社モード・プランニング・ジャパン） |
 | smart-stage.jp | 2026-10-21（推定） | SmartStage ServiceDesk | #018（株式会社アイネス） |
 | sonar-ats.jp | 2026-10-08（推定） | sonar ATS・sonar ATS by HRMOS | #009（オーエスジー株式会社）<br>#014（株式会社大創産業） |
@@ -352,6 +351,7 @@
 | staple.jp | 2026-11-05（推定） | Staple | #029（株式会社BANQ） |
 | subline.jp | 2026-11-18 | SUBLINE | #047（常滑市役所 国勢調査事務局（企画部企画課内）） |
 | sunnyltd.co.jp | 2026-11-17 | 高粘度用サニタリードラムポンプ+リフター・ATI 過酸化水素水計 | 記念日11/17（（非公開））<br>記念日11/19（（非公開）） |
+| sunplan.co.jp | 2026-11-26 | 輸出管理システム「TRADING-EX」 | 記念日11/28（河田トレーディング株式会社） |
 | sunplanning.co.jp | 2026-10-19（推定） | SAP Business Suite powered by SAP HANA・UiPath | #016（カルビー株式会社）<br>記念日11/23（カルビー株式会社）<br>用語#002（カルビー株式会社） |
 | supportas.co.jp | 2026-11-26 | FileMaker | #049（農事組合法人ECOマッシュ） |
 | swj.co.jp | 2026-11-26 | LDAP Manager、Microsoft Entra ID | 用語#008（SOMPOひまわり生命保険株式会社） |
