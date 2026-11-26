@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 250 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 71 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 252 社（うち連絡日が推定のもの 164 社）
+- 未連絡: 69 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 13 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -61,7 +61,6 @@
 | hrbase.jp | HRbase | #054（株式会社真誠） |
 | humanage.co.jp | TG-WEB | #041（株式会社DTS） |
 | ielove-cloud.jp | いえらぶCLOUD | 用語#010（株式会社アークス、都市住建株式会社）<br>#056（都市住建株式会社） |
-| imagemagic.co.jp | ODPS | 記念日11/29（株式会社和光プロセス） |
 | imagers.co.jp | Dolphin CT30XP | #024（コーナン商事株式会社） |
 | improve.co.jp | Zoho CRM、Zoho Social | 用語#010（有限会社前田鉄工所） |
 | intra-mart.jp | intra-mart | 用語#008（中部国際空港株式会社）<br>用語#009（東レ・メディカル株式会社） |
@@ -77,7 +76,6 @@
 | kobelcosys.co.jp | 現場特化型MESソリューション　実績班長 | #032（田中精密工業株式会社） |
 | kouei.co.jp | 運行管理クラウドサービス | #031（ENEOS株式会社） |
 | linx.jp | HALCON | 記念日11/30（新光電気工業） |
-| logikura.jp | ロジクラ | 記念日11/29（株式会社FABRIC TOKYO） |
 | loglass.jp | Loglass 経営管理 | 用語#011（SBペイメントサービス株式会社） |
 | lucidsoft.jp | リアルトレース | #056（株式会社日本テレメッセージ） |
 | manebi.co.jp | manebi eラーニング | 用語#014（日本交通株式会社、株式会社 近鉄百貨店） |
@@ -105,7 +103,6 @@
 | optex.co.jp | OAM-EXPLORER J、LINK-BT2・冠水クイック・モニタリング | #033（（非公開））<br>用語#013（大阪府八尾市） |
 | pa-consul.co.jp | タレントパレット | #041（株式会社松屋フーズホールディングス）<br>用語#014（株式会社三越伊勢丹ホールディングス） |
 | patme.co.jp | 営業資料制作サービス | 用語#015（一般社団法人日本礼法道協会） |
-| piotec.co.jp | Mimaki TxF300-75、DTFフィルムPH100、シェイカーS200 | 記念日11/29（M社） |
 | power-pos.jp | パワクラ | 用語#012（株式会社ドリームゲート） |
 | quest.co.jp | Amazon Redshift、軽技Web・WinActor | 用語#011（東急テックソリューションズ株式会社）<br>#056（株式会社日本能率協会マネジメントセンター（JMAM）） |
 | rakus.co.jp | 楽楽勤怠 | 用語#007（株式会社文英堂）<br>用語#009（東邦流通システム株式会社、羽田空港サービス株式会社） |
@@ -223,6 +220,7 @@
 | hrbrain.jp | 2026-10-05（推定） | HRBrain | #006（天白信用農業協同組合）<br>#036（株式会社日比谷花壇、株式会社ヒューマンアジャスト、株式会社デルタインターナショナル） |
 | i-abs.co.jp | 2026-11-18 | CYBER XEED | #045（オーシャル オーシャン シーピング (Japan) 株式会社、（リンクのみ）） |
 | ielove-cloud.jp | 2026-11-18 | いえらぶCLOUD | #048（HKホーム株式会社） |
+| imagemagic.co.jp | 2026-11-26 | ODPS | 記念日11/29（株式会社和光プロセス） |
 | inet.co.jp | 2026-11-16 | Next Generation EASY Cloud | #042（株式会社WorkVision） |
 | info-con.co.jp | 2026-10-20（推定） | ホームページ制作 | #017（有限会社丸井食品三重工場） |
 | info-ligua.jp | 2026-11-02（推定） | Ligoo POS&CRM、EMS-indepth-、Inject Energy | #026（メディカルアース株式会社 だいふく鍼灸整骨院グループ） |
@@ -254,7 +252,7 @@
 | lattice.co.jp | 2026-11-09 | XVL | #040（株式会社東海理化） |
 | levii.co.jp | 2026-10-27（推定） | ペジテの自転車 | #022（東日本高速道路株式会社（NEXCO東日本）） |
 | liveon.ne.jp | 2026-10-27（推定） | LiveOn Wearable、LiveOn RecX・LiveOn Wearable | #022（株式会社大西熱学）<br>#024（三重県伊賀市 上下水道部）<br>記念日11/19（三重県伊賀市 上下水道部） |
-| logikura.jp | 2026-10-06（推定） | ロジクラ | #007（株式会社ニタス、株式会社FABRIC TOKYO）<br>#027（株式会社暁の星工芸） |
+| logikura.jp | 2026-10-06（推定） | ロジクラ | #007（株式会社ニタス、株式会社FABRIC TOKYO）<br>#027（株式会社暁の星工芸）<br>記念日11/29（株式会社FABRIC TOKYO） |
 | loglass.jp | 2026-11-13 | Loglass 経営管理 | 用語#007（中央日本土地建物株式会社）<br>#049（株式会社GENDA） |
 | lookjob.jp | 2026-10-05（推定） | Dr.オフィスLookJOB・Dr.オフィスLookJOB2 | #006（株式会社協和プランニング、株式会社協和設計事務所） |
 | lucidsoft.jp | 2026-09-29（推定） | リサーチコム・天然水製造・宅配管理システム | #002（株式会社メディオテック）<br>用語#002（ジェイウォーター株式会社） |
@@ -307,6 +305,7 @@
 | patrolclarice.jp | 2026-11-06（推定） | robostein | #030（ALSOK株式会社） |
 | pcbrain.co.jp | 2026-10-22（推定） | ホームページ制作 | #019（株式会社根上産業） |
 | pigeonhearts.co.jp | 2026-11-02（推定） | 企業内保育所運営サービス | #026（第一三共株式会社） |
+| piotec.co.jp | 2026-11-26 | Mimaki TxF300-75、DTFフィルムPH100、シェイカーS200 | 記念日11/29（M社） |
 | plusline.jp | 2026-10-20（推定） | WordPress CMS構築・ホームページリニューアル | #017（竹下産業株式会社） |
 | plusweb.co.jp | 2026-10-28（推定） | コンストラクション・マネジメント | #023（日本ジッパーチュービング株式会社） |
 | pol-japan.co.jp | 2026-10-14（推定） | MobiControl・SOTI MobiControl | #013（株式会社メディセオ、姫路医療生活協同組合） |

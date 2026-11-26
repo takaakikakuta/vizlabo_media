@@ -4453,8 +4453,8 @@
     {
       "domain": "imagemagic.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "ODPS"
@@ -4471,7 +4471,8 @@
           "products": [
             "ODPS"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -6099,7 +6100,8 @@
           "products": [
             "ロジクラ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -8593,8 +8595,8 @@
     {
       "domain": "piotec.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "Mimaki TxF300-75、DTFフィルムPH100、シェイカーS200"
@@ -8611,7 +8613,8 @@
           "products": [
             "Mimaki TxF300-75、DTFフィルムPH100、シェイカーS200"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
