@@ -770,8 +770,8 @@
     {
       "domain": "awapaper.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "M-thermo断熱材"
@@ -788,7 +788,8 @@
           "products": [
             "M-thermo断熱材"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -5359,7 +5360,8 @@
           "products": [
             "コロガードプロベアリング"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
@@ -10031,7 +10033,8 @@
           "products": [
             "AWS構築・移行支援"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
