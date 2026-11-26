@@ -520,7 +520,8 @@
           "products": [
             "TimePro-VG"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -769,8 +770,8 @@
     {
       "domain": "awapaper.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "M-thermo断熱材"
@@ -787,7 +788,8 @@
           "products": [
             "M-thermo断熱材"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -1481,7 +1483,8 @@
           "products": [
             "ADPS 勤怠システム"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -1996,7 +1999,8 @@
           "products": [
             "VisionPro"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2787,7 +2791,8 @@
           "products": [
             "前川製作所製 空気・水両熱源エコキュート"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3007,7 +3012,8 @@
           "products": [
             "VT-S730"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
@@ -3569,7 +3575,8 @@
           "products": [
             "freee人事労務、freee勤怠管理Plus"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "32335b1c-d2d3-47c7-8b6b-0add7a96ccb1",
@@ -4449,8 +4456,8 @@
     {
       "domain": "imagemagic.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "ODPS"
@@ -4467,7 +4474,8 @@
           "products": [
             "ODPS"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -5356,7 +5364,8 @@
           "products": [
             "コロガードプロベアリング"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
@@ -5510,8 +5519,8 @@
     {
       "domain": "kisnet.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "Forwarder-PRO",
@@ -5542,7 +5551,8 @@
           "products": [
             "藤原輸出自動車管理システムFACES"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -5968,8 +5978,8 @@
     {
       "domain": "linx.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "HALCON"
@@ -5986,7 +5996,8 @@
           "products": [
             "HALCON"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -6093,7 +6104,8 @@
           "products": [
             "ロジクラ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -6744,7 +6756,8 @@
           "products": [
             "MINAGINE勤怠管理"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -7289,8 +7302,8 @@
     {
       "domain": "n-thermo.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "F-nex"
@@ -7307,7 +7320,8 @@
           "products": [
             "F-nex"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -7364,7 +7378,8 @@
           "products": [
             "パズル充填機 粉体仕様 RD703+SU01"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -8586,8 +8601,8 @@
     {
       "domain": "piotec.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "Mimaki TxF300-75、DTFフィルムPH100、シェイカーS200"
@@ -8604,7 +8619,8 @@
           "products": [
             "Mimaki TxF300-75、DTFフィルムPH100、シェイカーS200"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -8935,10 +8951,11 @@
           "products": [
             "楽楽勤怠"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": "2026-11-20 用語#007: 問い合わせフォームがなく送れない"
+      "memo": "2026-11-26 用語#009: 問い合わせフォームなし ／ 2026-11-20 用語#007: 問い合わせフォームがなく送れない"
     },
     {
       "domain": "re-v.co.jp",
@@ -9937,7 +9954,8 @@
           "products": [
             "esTIME"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -10025,7 +10043,8 @@
           "products": [
             "AWS構築・移行支援"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "f3fc29a6-4437-429c-85b0-3593ce0f5d61",
@@ -10316,7 +10335,8 @@
           "products": [
             "Shippio Cargo"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -10809,8 +10829,8 @@
     {
       "domain": "sunplan.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "輸出管理システム「TRADING-EX」"
@@ -10827,7 +10847,8 @@
           "products": [
             "輸出管理システム「TRADING-EX」"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -11482,10 +11503,11 @@
           "products": [
             "勤怠管理システム"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": ""
+      "memo": "2026-11-26 用語#009: サイト停止中"
     },
     {
       "domain": "top-seller.jp",
@@ -12452,7 +12474,8 @@
           "products": [
             "COMPANY"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
