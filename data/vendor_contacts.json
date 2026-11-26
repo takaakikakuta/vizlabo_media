@@ -676,7 +676,8 @@
           "products": [
             "ANDPAD"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2241,7 +2242,8 @@
           "products": [
             "crotta"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -7003,7 +7005,8 @@
           "products": [
             "ACELINK NX-CE 販売"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -11440,8 +11443,8 @@
     {
       "domain": "tojogas.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "太陽光発電システム"
@@ -11458,7 +11461,8 @@
           "products": [
             "太陽光発電システム"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -11577,7 +11581,8 @@
           "products": [
             "見守りライフ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
