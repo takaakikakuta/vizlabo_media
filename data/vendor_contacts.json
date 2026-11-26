@@ -2791,7 +2791,8 @@
           "products": [
             "前川製作所製 空気・水両熱源エコキュート"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -7301,8 +7302,8 @@
     {
       "domain": "n-thermo.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-26",
       "notifiedAtEstimated": false,
       "products": [
         "F-nex"
@@ -7319,7 +7320,8 @@
           "products": [
             "F-nex"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-26"
         }
       ],
       "memo": ""
@@ -7376,7 +7378,8 @@
           "products": [
             "パズル充填機 粉体仕様 RD703+SU01"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
