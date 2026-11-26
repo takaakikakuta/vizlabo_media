@@ -327,7 +327,7 @@
         {
           "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
           "label": "#055",
-          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "title": "黒字なのに、お金がない。キャッシュフローを改善した事例5選",
           "publishedAt": "2026-12-11",
           "customers": [
             "B社"
@@ -668,7 +668,7 @@
         {
           "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
           "label": "#052",
-          "title": "補助金を使って導入した事例5選",
+          "title": "その困りごと、補助金で払えるかもしれない。補助金を使って導入した事例5選",
           "publishedAt": "2026-12-08",
           "customers": [
             "川上塗装工業株式会社"
@@ -1434,7 +1434,7 @@
         {
           "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
           "label": "#055",
-          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "title": "黒字なのに、お金がない。キャッシュフローを改善した事例5選",
           "publishedAt": "2026-12-11",
           "customers": [
             "株式会社立花工業"
@@ -1492,8 +1492,8 @@
     {
       "domain": "casting-one.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "CastingONE"
@@ -1524,7 +1524,8 @@
           "products": [
             "CastingONE"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -1591,7 +1592,8 @@
           "products": [
             "採用特化型ホームページ制作・Indeedの新規整備"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2180,8 +2182,8 @@
     {
       "domain": "crack-inc.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "魅力発掘プロジェクト・インナーブランディング支援"
@@ -2198,7 +2200,8 @@
           "products": [
             "魅力発掘プロジェクト・インナーブランディング支援"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -2230,7 +2233,7 @@
         {
           "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
           "label": "#052",
-          "title": "補助金を使って導入した事例5選",
+          "title": "その困りごと、補助金で払えるかもしれない。補助金を使って導入した事例5選",
           "publishedAt": "2026-12-08",
           "customers": [
             "株式会社アクアイグニス淡路島（AQUAIGNIS Trailer Park）"
@@ -2458,7 +2461,7 @@
         {
           "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
           "label": "#055",
-          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "title": "黒字なのに、お金がない。キャッシュフローを改善した事例5選",
           "publishedAt": "2026-12-11",
           "customers": [
             "株式会社日本生物科学"
@@ -3031,7 +3034,7 @@
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
           "label": "#053",
-          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "title": "また同じ部品が、壊れた。部品や方式を変えて、設備の故障や交換を減らした事例5選",
           "publishedAt": "2026-12-09",
           "customers": [
             "（非公開）"
@@ -3686,7 +3689,7 @@
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
           "label": "#053",
-          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "title": "また同じ部品が、壊れた。部品や方式を変えて、設備の故障や交換を減らした事例5選",
           "publishedAt": "2026-12-09",
           "customers": [
             "（非公開）"
@@ -3961,8 +3964,8 @@
     {
       "domain": "growthseed.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "TikTok運用代行",
@@ -3982,7 +3985,8 @@
             "TikTok運用代行",
             "GrowthDX"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -4259,7 +4263,8 @@
           "products": [
             "HR PRIME"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5370,7 +5375,7 @@
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
           "label": "#053",
-          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "title": "また同じ部品が、壊れた。部品や方式を変えて、設備の故障や交換を減らした事例5選",
           "publishedAt": "2026-12-09",
           "customers": [
             "（非公開）"
@@ -6885,7 +6890,7 @@
         {
           "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
           "label": "#055",
-          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "title": "黒字なのに、お金がない。キャッシュフローを改善した事例5選",
           "publishedAt": "2026-12-11",
           "customers": [
             "株式会社ベルーナ"
@@ -6990,7 +6995,7 @@
         {
           "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
           "label": "#052",
-          "title": "補助金を使って導入した事例5選",
+          "title": "その困りごと、補助金で払えるかもしれない。補助金を使って導入した事例5選",
           "publishedAt": "2026-12-08",
           "customers": [
             "株式会社中尾商会"
@@ -7165,7 +7170,7 @@
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
           "label": "#053",
-          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "title": "また同じ部品が、壊れた。部品や方式を変えて、設備の故障や交換を減らした事例5選",
           "publishedAt": "2026-12-09",
           "customers": [
             "（非公開）"
@@ -7619,7 +7624,7 @@
     {
       "domain": "nock-design.com",
       "company": "",
-      "status": "pending",
+      "status": "no-objection",
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
@@ -7637,10 +7642,11 @@
           "products": [
             "TikTok運用代行「ニチヨウビ」"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "提供元から掲載の依頼を受けた事例のため、掲載通知は不要"
         }
       ],
-      "memo": ""
+      "memo": "2026-11-27 #051: 提供元から掲載の依頼あり（掲載通知は送らない）"
     },
     {
       "domain": "nr1.co.jp",
@@ -8167,7 +8173,7 @@
         {
           "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
           "label": "#055",
-          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "title": "黒字なのに、お金がない。キャッシュフローを改善した事例5選",
           "publishedAt": "2026-12-11",
           "customers": [
             "楓成工業"
@@ -8217,7 +8223,8 @@
           "products": [
             "ONE CAREER"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -10813,7 +10820,7 @@
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
           "label": "#053",
-          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "title": "また同じ部品が、壊れた。部品や方式を変えて、設備の故障や交換を減らした事例5選",
           "publishedAt": "2026-12-09",
           "customers": [
             "オークリー社"
@@ -11443,7 +11450,7 @@
         {
           "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
           "label": "#052",
-          "title": "補助金を使って導入した事例5選",
+          "title": "その困りごと、補助金で払えるかもしれない。補助金を使って導入した事例5選",
           "publishedAt": "2026-12-08",
           "customers": [
             "株式会社奉徳はないけ"
@@ -11562,7 +11569,7 @@
         {
           "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
           "label": "#052",
-          "title": "補助金を使って導入した事例5選",
+          "title": "その困りごと、補助金で払えるかもしれない。補助金を使って導入した事例5選",
           "publishedAt": "2026-12-08",
           "customers": [
             "社会福祉法人末広会 特別養護老人ホーム春香苑・第２春香苑"
