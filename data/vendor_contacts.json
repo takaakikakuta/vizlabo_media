@@ -520,7 +520,8 @@
           "products": [
             "TimePro-VG"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -1481,7 +1482,8 @@
           "products": [
             "ADPS 勤怠システム"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3569,7 +3571,8 @@
           "products": [
             "freee人事労務、freee勤怠管理Plus"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "32335b1c-d2d3-47c7-8b6b-0add7a96ccb1",
@@ -6744,7 +6747,8 @@
           "products": [
             "MINAGINE勤怠管理"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -9938,7 +9942,8 @@
           "products": [
             "esTIME"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -12454,7 +12459,8 @@
           "products": [
             "COMPANY"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
