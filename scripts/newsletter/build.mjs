@@ -76,7 +76,7 @@ const caseById = new Map(publicCases.map((c) => [c.id, c]));
 const artDir = path.join(ROOT, "content", "articles");
 const articles = fs.readdirSync(artDir).filter((f) => f.endsWith(".json"))
   .map((f) => readJson(path.join(artDir, f)))
-  .filter((a) => !a.hidden && !a.draft && a.publishedAt <= issue)
+  .filter((a) => !a.hidden && !a.draft && a.format !== "yougo" && a.publishedAt <= issue) // 「事例でわかる技術用語」は別連載（lib/articles.ts と同じ）
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.no - a.no);
 function articleThumb(a) {
   if (a.thumbnail && a.thumbnail !== "none") return `${SITE}${a.thumbnail}`;
