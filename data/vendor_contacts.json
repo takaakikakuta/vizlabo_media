@@ -8935,10 +8935,11 @@
           "products": [
             "楽楽勤怠"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": "2026-11-20 用語#007: 問い合わせフォームがなく送れない"
+      "memo": "2026-11-26 用語#009: 問い合わせフォームなし ／ 2026-11-20 用語#007: 問い合わせフォームがなく送れない"
     },
     {
       "domain": "re-v.co.jp",
@@ -11482,10 +11483,11 @@
           "products": [
             "勤怠管理システム"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": ""
+      "memo": "2026-11-26 用語#009: サイト停止中"
     },
     {
       "domain": "top-seller.jp",
