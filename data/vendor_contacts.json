@@ -3044,7 +3044,8 @@
           "products": [
             "溶接工程向け近接センサ E2EW-Q"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3681,8 +3682,8 @@
     {
       "domain": "fukudaco.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "イージス® SGR"
@@ -3699,7 +3700,8 @@
           "products": [
             "イージス® SGR"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -5385,7 +5387,8 @@
           "products": [
             "鉄鋼圧延機用ドライブシャフト"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -7163,8 +7166,8 @@
     {
       "domain": "musashi-engineering.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "プランジャポンプ方式ディスペンサー、スクリュー方式ディスペンサー"
@@ -7181,7 +7184,8 @@
           "products": [
             "プランジャポンプ方式ディスペンサー、スクリュー方式ディスペンサー"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -10831,7 +10835,8 @@
           "products": [
             "UNIBLOC サニタリーロータリーローブポンプ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
