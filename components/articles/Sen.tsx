@@ -116,6 +116,7 @@ export default function Sen({ article }: { article: SenArticle }) {
                   <span className="font-display text-[20px] leading-[1.5] text-ink">{e.headline}</span>
                 </h2>
                 <p className="mt-2.5 ml-10 text-[12px] text-muted">
+                  {e.label && <span className="mr-2.5 border border-ink px-1.5 py-0.5 text-[11px] font-bold text-ink">{e.label}</span>}
                   {hasVideo(c) && <span className="mr-2.5"><VideoBadge /></span>}
                   {industryLabel(c.customer.industry)}
                 </p>
@@ -132,7 +133,8 @@ export default function Sen({ article }: { article: SenArticle }) {
                 <span className="font-display text-[20px] leading-[1.5] text-ink">{e.headline}</span>
               </h2>
               <p className="mt-2.5 ml-10 text-[12px] text-muted">
-                {/* 動画ありの印は行頭に置く（スマホで折り返しても位置がずれず、最初に目に入る） */}
+                {/* 一言ラベル（仕事の名前）→ 動画ありの印 → 社名・業種・規模。技術用語（Yougo.tsx）と同じ並び */}
+                {e.label && <span className="mr-2.5 border border-ink px-1.5 py-0.5 text-[11px] font-bold text-ink">{e.label}</span>}
                 {hasVideo(c) && <span className="mr-2.5"><VideoBadge /></span>}
                 {c.customer.name || "導入企業（非公開）"} ・ {industryLabel(c.customer.industry)}
                 {c.customer.size && ` ・ ${c.customer.size}`}

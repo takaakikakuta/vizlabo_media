@@ -167,8 +167,9 @@ export type SenArticle = {
   lead: string;
   items: {
     caseId: string;
+    label?: string;       // 事例の一言ラベル（4〜8字。仕事の名前。例: 請求書の読み取り）。技術用語の label と同じで、読者が本文を読まずに自分に近い事例を選べるように。見出しの下の行に枠付きで出る
     headline: string;     // 見出し
-    body: string;         // 読みどころ2〜3文
+    body: string;         // 選んだ理由と、ほかの項目との違い（2〜3文・80〜130字）
     linkOnly?: {          // 事例が linkOnly（取り下げ依頼でリンクのみ）になったときの差し替え。企業名・規模など会社が分かる情報は書かない
       headline?: string;  // 見出しに会社が分かる情報があるときだけ（無ければ headline をそのまま使う）
       body: string;       // 事例の中身を1〜2文で。未設定なら紹介文は出さない
