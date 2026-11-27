@@ -13621,16 +13621,16 @@
   {
     "id": "fmsolution-supportas-co-jp-case-08",
     "title": "FileMaker導入で年間6,000時間の業務削減と紙文化からの脱却を実現",
-    "summary": "製造現場の紙作業による非効率性と食品安全規格対応が課題だった霧島酒造が、FileMakerを導入し伴走型支援を受けた。年間約6,000時間の業務削減と約2,500枚のペーパーレス化を達成し、データ品質向上と内製化による組織のDX加速を実現した。",
+    "summary": "製造現場の紙作業による非効率性と食品安全規格対応が課題だった酒類メーカーのA社が、FileMakerを導入し伴走型支援を受けた。年間約6,000時間の業務削減と約2,500枚のペーパーレス化を達成し、データ品質向上と内製化による組織のDX加速を実現した。",
     "vendor": "supportas.co.jp",
     "product": "Claris FileMaker",
     "productCategory": "dev",
     "sourceUrl": "https://fmsolution.supportas.co.jp/case/08",
     "collectedAt": "2026-10-05T00:00:00.000Z",
     "customer": {
-      "name": "霧島酒造株式会社",
+      "name": "酒類メーカーA社",
       "industry": "food",
-      "size": "従業員約640名",
+      "size": "",
       "dept": "DX推進本部"
     },
     "challenges": [
@@ -13650,20 +13650,10 @@
         "value": "約2,500枚削減"
       }
     ],
-    "scale": [
-      {
-        "metric": "従業員数",
-        "value": "約640名"
-      },
-      {
-        "metric": "生産部門人員",
-        "value": "300～400名"
-      }
-    ],
+    "scale": [],
     "resultsQualitative": "手書き・Excel管理から脱却し入力ミスや漏れが防止され、データが非常にクリーンに保たれるようになった。従業員は定型業務から解放され、より創造的な業務に注力可能に。内製化支援を受けた社員が新しいアプリ開発から運用までこなし、社内全体のITリテラシー向上とDX推進の牽引につながった。",
     "hasNumbers": true,
     "sample": false,
-    "image": "https://fmsolution.supportas.co.jp/wp-content/uploads/2025/12/CASE_8_top.jpg",
     "tags": [
       "紙の書類処理",
       "手作業の転記",
@@ -104956,16 +104946,16 @@
   {
     "id": "fmsolution-supportas-co-jp-case-11",
     "title": "FileMaker クラウド化で入金処理8割削減・売上118%達成",
-    "summary": "小売業のオフィスバスターズは、Excel依存の入金管理業務とオンプレミスサーバーの課題を抱えていた。既存FileMaker資産を活かしながらクラウド化・システム改修を実施し、入金消込作業を16時間から2時間に短縮、営業のクラウドアクセスにより売上118%を達成。",
+    "summary": "小売業のA社は、Excel依存の入金管理業務とオンプレミスサーバーの課題を抱えていた。既存FileMaker資産を活かしながらクラウド化・システム改修を実施し、入金消込作業を16時間から2時間に短縮、営業のクラウドアクセスにより売上118%を達成。",
     "vendor": "supportas.co.jp",
     "product": "FileMaker（クラウド化・改修）",
     "productCategory": "saas",
     "sourceUrl": "https://fmsolution.supportas.co.jp/case/11",
     "collectedAt": "2026-10-05T00:00:00.000Z",
     "customer": {
-      "name": "株式会社オフィスバスターズ",
+      "name": "小売業A社",
       "industry": "retail",
-      "size": "約540名",
+      "size": "",
       "dept": "ICTソリューション部、経理部門"
     },
     "challenges": [
@@ -104989,12 +104979,7 @@
         "value": "前年比118%"
       }
     ],
-    "scale": [
-      {
-        "metric": "従業員数",
-        "value": "約540名"
-      }
-    ],
+    "scale": [],
     "resultsQualitative": "データ処理の遅延が根本的に改善され即時表示に。営業がクラウドから顧客情報にアクセスでき対応精度が向上。テレワーク環境整備により従業員満足度が向上。現場の心理的負担が大きく軽減。",
     "hasNumbers": true,
     "sample": false,
@@ -221298,16 +221283,16 @@
   {
     "id": "fmsolution-supportas-co-jp-case-05",
     "title": "紙の発注・管理業務をFileMakerでデジタル化し、営業負荷を軽減・店舗評価の見える化を実現",
-    "summary": "サーティワンアイスクリームは、発注書・報告書などを紙で管理していたため入力ミスや営業負担が大きかった。FileMakerを導入し、発注システムと店舗評価システム（ROR）をデジタル化することで、営業の負担を軽減し、店舗評価の見える化と情報共有の効率化を実現した。",
+    "summary": "アイスクリームチェーンのA社は、発注書・報告書などを紙で管理していたため入力ミスや営業負担が大きかった。FileMakerを導入し、発注システムと店舗評価システムをデジタル化することで、営業の負担を軽減し、店舗評価の見える化と情報共有の効率化を実現した。",
     "vendor": "supportas.co.jp",
     "product": "FileMaker",
     "productCategory": "other-product",
     "sourceUrl": "https://fmsolution.supportas.co.jp/case/05",
     "collectedAt": "2026-10-05T00:00:00.000Z",
     "customer": {
-      "name": "B-Rサーティワンアイスクリーム株式会社",
+      "name": "アイスクリームチェーンA社",
       "industry": "food",
-      "size": "売上高193億円（2021年12月末）",
+      "size": "",
       "dept": "営業・マーケティング・マネジメント"
     },
     "challenges": [
@@ -221315,19 +221300,13 @@
       "efficiency",
       "quality"
     ],
-    "challengeDetail": "全国1,000店舗以上からの発注をファックスや電話で受け、紙に記入して管理していたため、営業の負担が大きく、入力ミスや伝達漏れが発生していた。",
-    "actions": "FileMakerを使用して発注依頼システムと店舗評価システム（ROR）をデジタル化し、スモールスタートで段階的に改善を進めた。サポータスのサポートを受けながら、レーダーチャート実装など難度の高い機能を実装。",
+    "challengeDetail": "全国の店舗からの発注をファックスや電話で受け、紙に記入して管理していたため、営業の負担が大きく、入力ミスや伝達漏れが発生していた。",
+    "actions": "FileMakerを使用して発注依頼システムと店舗評価システムをデジタル化し、スモールスタートで段階的に改善を進めた。サポータスのサポートを受けながら、レーダーチャート実装など難度の高い機能を実装。",
     "results": [],
-    "scale": [
-      {
-        "metric": "全国店舗数",
-        "value": "1,000店舗以上"
-      }
-    ],
+    "scale": [],
     "resultsQualitative": "営業の電話対応と発注用紙回収の業務が不要になり、営業が店舗対応に注力できるようになった。店舗評価の見える化により過去の振り返りと情報共有が容易になり、評価基準が明確化され、店舗のサービス向上に大きく影響した。",
     "hasNumbers": false,
     "sample": false,
-    "image": "https://fmsolution.supportas.co.jp/wp-content/uploads/2025/12/CASE_5_top.jpg",
     "tags": [
       "紙の書類処理",
       "電話・FAX中心",
