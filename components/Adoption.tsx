@@ -13,16 +13,17 @@ export function vendorLabel(v?: string): string {
 export default function Adoption({ c, size = "card" }: { c: CaseStudy; size?: "card" | "detail" }) {
   const provider = c.product || vendorLabel(c.vendor);
   const customer = c.customer.name || "導入企業（非公開）";
-  const intro = introSourceName(c.vendor);  // 紹介元（協議会・メディアなど）は提供元として出さない
+  const intro = introSourceName(c.vendor);  // 紹介元（協議会・メディアなど）は製品の会社として出さない。
+  /* 「提供」とは書かない（事例を当方に提供してもらったように読めるため。2026-11 株式会社100 から指摘）。出典として書く */
 
   if (size === "detail") {
     return (
       <div className="grid grid-cols-1 items-stretch border-y border-line sm:grid-cols-[1fr_auto_1fr]">
         <div className="py-5 sm:pr-6">
-          <div className="label">{intro ? "製品" : "提供（製品）"}</div>
+          <div className="label">製品</div>
           <div className="font-display mt-2 text-[19px] leading-snug text-ink">{provider}</div>
           {intro ? <div className="mt-1 text-[12px] text-muted">出典：{intro}の事例紹介</div>
-            : c.vendor && <div className="mt-1 text-[12px] text-muted">{vendorLabel(c.vendor)}</div>}
+            : c.vendor && <div className="mt-1 text-[12px] text-muted">出典：{vendorLabel(c.vendor)}の導入事例</div>}
         </div>
         <div className="flex items-center justify-center border-y border-line py-2 text-muted sm:border-x sm:border-y-0 sm:px-6 sm:py-0">
           <span className="rotate-90 text-[15px] sm:rotate-0">▶</span>

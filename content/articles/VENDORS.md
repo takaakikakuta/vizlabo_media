@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 263 社（うち連絡日が推定のもの 164 社）
-- 未連絡: 59 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 263 社（うち連絡日が推定のもの 165 社）
+- 未連絡: 61 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 13 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -36,9 +36,9 @@
 | cybozu.co.jp | kintone | #032（株式会社京都紋付、株式会社京屋染物店）<br>用語#003（株式会社京都紋付、株式会社京屋染物店） |
 | dsk-ec.jp | コンビニ収納代行サービス、ゆうちょ振替MT代行サービス | #055（株式会社日本生物科学） |
 | enecloud.co.jp | 電気管理クラウド | 記念日12/1（株式会社相良製作所） |
-| energia.co.jp | エネルギー診断 | 記念日12/1（住野工業株式会社） |
+| energia.co.jp | エネルギー診断・エアリークビューアー | 記念日12/1（住野工業株式会社）<br>記念日12/3（広島イーグル株式会社） |
 | ev-charge-enechange.jp | EV充電エネチェンジ | #031（株式会社アスター（盛岡つなぎ温泉 ホテル紫苑）） |
-| fa.omron.co.jp | i-BELT | 記念日12/1（株式会社アルバック）<br>用語#013（株式会社アルバック） |
+| fa.omron.co.jp | i-BELT・現場データ活用サービス i-BELT、マシンオートメーションコントローラ | 記念日12/1（株式会社アルバック）<br>記念日12/3（オムロン株式会社）<br>用語#013（株式会社アルバック） |
 | forecastflow.jp | yomiuri ONE | 用語#011（読売新聞社） |
 | freee.co.jp | freee・freee人事労務、freee会計・freee人事労務・freee人事労務アウトソース・freee会計、freee人事労務、freeeカード Unlimited | 用語#008（株式会社ダイナミック物流、（リンクのみ））<br>#045（株式会社ファームシップ、（リンクのみ）、EMオノエ株式会社）<br>#054（レンジャーシステムズ株式会社） |
 | future-shop.jp | futureshop omni-channel | 用語#012（株式会社ソラオブトウキョウ） |
@@ -51,6 +51,7 @@
 | hrbase.jp | HRbase | #054（株式会社真誠） |
 | humanage.co.jp | TG-WEB | #041（株式会社DTS） |
 | ielove-cloud.jp | いえらぶCLOUD | #056（都市住建株式会社） |
+| ikekin.co.jp | ノルトロックワッシャー | 記念日12/2（キユーピー株式会社） |
 | imagers.co.jp | Dolphin CT30XP | #024（コーナン商事株式会社） |
 | improve.co.jp | Zoho CRM、Zoho Social | 用語#010（有限会社前田鉄工所） |
 | intra-mart.jp | intra-mart | 用語#008（中部国際空港株式会社）<br>用語#009（東レ・メディカル株式会社） |
@@ -72,9 +73,10 @@
 | mitsys.co.jp | QuickCRM | #055（株式会社ベルーナ） |
 | mr-m.co.jp | ミスターマーケティングのコンサルティング | #017（三和ロボティクス株式会社） |
 | mujin.co.jp | 通い箱パレタイズロボット、AGV、WCS・MujinOS搭載通い箱デパレタイズロボット | #033（トヨタ紡織株式会社）<br>#037（株式会社松田電機工業所） |
-| naomi.co.jp | チューブ充填機 6DTZ-T | #056（下呂プリン） |
+| naomi.co.jp | パズル充填機 RD703+RU01 粘体仕様・チューブ充填機 6DTZ-T | 記念日12/2（メリーファーム梨子本）<br>#056（下呂プリン） |
 | narikoma-group.co.jp | ナリコマ | #031（特別養護老人ホーム アルテイル宮町） |
 | necolico.co.jp | Airoco | 用語#013（学校法人角川ドワンゴ学園） |
+| newcom07.jp | dbSheet | 記念日12/2（株式会社永谷園） |
 | nhs.co.jp | Paples | 用語#009（キョーリン製薬ホールディングス株式会社） |
 | ntt-tx.co.jp | Yellowfin、Amazon Redshift・CTBASE/Connect Cloud | 用語#011（株式会社NTTドコモ）<br>#056（パナソニック保険サービス株式会社） |
 | nttdata-bizsys.co.jp | PentaSenser® | 用語#012（株式会社ツルハホールディングス） |
@@ -101,6 +103,7 @@
 | smbc-cloudsign.co.jp | SMBCクラウドサイン | #049（株式会社伊予銀行） |
 | softes.co.jp | SAP S/4HANA、SAP Analytics Cloud・SAP S/4HANA・SAP ERP | 用語#003（株式会社ニチリン）<br>用語#002（日研フード株式会社、社会福祉法人 聖隷福祉事業団）<br>用語#009（社会福祉法人 聖隷福祉事業団） |
 | spokes-online.jp | SPOKES | 用語#015（株式会社M&A DX） |
+| sunnyltd.co.jp | Dynasonics超音波流量計DXN-5P | 記念日12/3（（非公開）） |
 | takachiho-kk.co.jp | RFIDシステム | #008（佐川グローバルロジスティクス株式会社） |
 | tam-tokyo.co.jp | カートナー、段ボールケーサー | 記念日11/22（松尾製菓株式会社/チロルチョコ株式会社） |
 | techsword.co.jp | TechSword Vision | 記念日11/22（株式会社榮太樓總本鋪） |
@@ -120,7 +123,7 @@
 
 | 提供元 | 連絡日 | サービス | 記事（導入企業） |
 |---|---|---|---|
-| 100inc.co.jp | 2026-11-27 | HubSpot CRM | 用語#010（京都芸術大学附属高等学校） |
+| 100inc.co.jp | 2026-11-27（推定） | HubSpot CRM | 用語#010（京都芸術大学附属高等学校） |
 | 308-al.co.jp | 2026-10-23（推定） | 冷えルーフ | #020（シチズン生活協同組合ほか複数）<br>#038（シチズン生活協同組合ほか複数） |
 | 3s-corp.co.jp | 2026-10-28（推定） | 無溶剤UVコーティング | #023（株式会社日本ツクリダス） |
 | ababa.co.jp | 2026-10-12（推定） | ABABA | #011（株式会社TYL）<br>#014（ディップ株式会社、プレミアグループ株式会社） |
@@ -342,7 +345,7 @@
 | sunnyltd.co.jp | 2026-11-17 | 高粘度用サニタリードラムポンプ+リフター・ATI 過酸化水素水計・UNIBLOC サニタリーロータリーローブポンプ | 記念日11/17（（非公開））<br>記念日11/19（（非公開））<br>#053（オークリー社） |
 | sunplan.co.jp | 2026-11-26 | 輸出管理システム「TRADING-EX」 | 記念日11/28（河田トレーディング株式会社） |
 | sunplanning.co.jp | 2026-10-19（推定） | SAP Business Suite powered by SAP HANA・UiPath | #016（カルビー株式会社）<br>記念日11/23（カルビー株式会社）<br>用語#002（カルビー株式会社） |
-| supportas.co.jp | 2026-11-26 | FileMaker | #049（農事組合法人ECOマッシュ） |
+| supportas.co.jp（サポータス（fmsolution.supportas.co.jp）） | 2026-11-26 | FileMaker | #049（農事組合法人ECOマッシュ） |
 | swj.co.jp | 2026-11-26 | LDAP Manager、Microsoft Entra ID | 用語#008（SOMPOひまわり生命保険株式会社） |
 | taashie.co.jp | 2026-10-06（推定） | WinActor | #007（五の橋レディスクリニック） |
 | takachiho-kk.co.jp | 2026-11-04（推定） | TrueVUE hybrid | #028（株式会社AOKIホールディングス）<br>用語#001（株式会社AOKIホールディングス） |
