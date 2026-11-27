@@ -104791,7 +104791,8 @@
       "数字の集計に時間",
       "多拠点の管理",
       "リアルタイムに把握できない"
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "fmsolution-supportas-co-jp-case-04",
