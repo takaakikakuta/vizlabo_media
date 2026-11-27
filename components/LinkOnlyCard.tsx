@@ -21,8 +21,8 @@ export default function LinkOnlyCard({ c, campaign, content, slot }: { c: CaseSt
   const url = c.linkUrl ?? c.sourceUrl;
   let host = c.vendor;
   try { host = new URL(url).host; } catch {}
-  const source = c.linkUrl ? "提供元のご依頼により、導入事例の一覧ページにリンクしています"
-    : introSourceName(c.vendor) ? `${introSourceName(c.vendor)}の事例紹介ページに移動します` : "提供元の事例ページに移動します";
+  const source = c.linkUrl ? "掲載元のご依頼により、導入事例の一覧ページにリンクしています"
+    : introSourceName(c.vendor) ? `${introSourceName(c.vendor)}の事例紹介ページに移動します` : "掲載元の事例ページに移動します";
   return (
     <a href={withUtm(url, campaign, content)} target="_blank" rel="noopener" data-case-src={c.id} {...(slot ? slotLink(slot, c, "src") : {})}
       className="group flex items-center gap-3.5 rounded-[4px] border border-brand/30 bg-brand-soft p-3 no-underline transition-colors hover:border-brand sm:gap-4 sm:p-3.5">
@@ -37,7 +37,7 @@ export default function LinkOnlyCard({ c, campaign, content, slot }: { c: CaseSt
         </span>
         <span className={`mt-1.5 block text-[12.5px] text-body ${c.linkUrl ? "leading-[1.6]" : "truncate"}`}>{source}</span>
         <span className="mt-1 flex items-center gap-1 text-[13.5px] font-bold text-brand group-hover:underline">
-          {c.linkUrl ? "提供元の導入事例一覧を見る" : "掲載元でこの事例を読む"}
+          {c.linkUrl ? "掲載元の導入事例一覧を見る" : "掲載元でこの事例を読む"}
           <ExternalLink size={14} strokeWidth={2.25} aria-hidden className="shrink-0" />
         </span>
       </span>

@@ -185,7 +185,7 @@ export default function Sen({ article }: { article: SenArticle }) {
                       <ExternalLink size={13} strokeWidth={2.25} aria-hidden className="shrink-0" />
                     </span>
                     <span className="mt-0.5 block text-[11px] leading-[1.6] text-muted sm:truncate">
-                      {introSourceName(c.vendor) ? `${introSourceName(c.vendor)}の事例紹介ページ` : "提供元のサイト"}（{sourceHost(c)}）に移動します
+                      {introSourceName(c.vendor) ? `${introSourceName(c.vendor)}の事例紹介ページ` : "掲載元のサイト"}（{sourceHost(c)}）に移動します
                     </span>
                   </span>
                 </a>

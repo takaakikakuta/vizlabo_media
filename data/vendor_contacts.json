@@ -4,9 +4,9 @@
     {
       "domain": "100inc.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
-      "notifiedAtEstimated": false,
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
+      "notifiedAtEstimated": true,
       "products": [
         "HubSpot CRM"
       ],
@@ -22,10 +22,11 @@
           "products": [
             "HubSpot CRM"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
-      "memo": ""
+      "memo": "2026-11-27 GTM本部 若本様より返信。用語#010（京都芸術大学附属高等学校）について、事例は顧客の協力のもと自社サイト掲載前提で制作し、写真・内容の掲載許可も自社サイトに限るとして、要約と画像を削除しリンクのみにするよう依頼（難しければリンクも含め全削除）。また事例を当方に提供した事実はないとして「提供」表記の削除も依頼。ベンダー単位でリンクのみ（link_only_vendors.json）にし、用語#010 の項目にリンクのみ用の紹介文を設定。「提供」表記はサイト全体で「出典」「掲載元」に改めた。連絡日は返信日からの推定"
     },
     {
       "domain": "308-al.co.jp",
@@ -327,7 +328,7 @@
         {
           "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
           "label": "#055",
-          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "title": "黒字なのに、お金がない。キャッシュフローを改善した事例5選",
           "publishedAt": "2026-12-11",
           "customers": [
             "B社"
@@ -668,7 +669,7 @@
         {
           "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
           "label": "#052",
-          "title": "補助金を使って導入した事例5選",
+          "title": "その困りごと、補助金で払えるかもしれない。補助金を使って導入した事例5選",
           "publishedAt": "2026-12-08",
           "customers": [
             "川上塗装工業株式会社"
@@ -1434,7 +1435,7 @@
         {
           "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
           "label": "#055",
-          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "title": "黒字なのに、お金がない。キャッシュフローを改善した事例5選",
           "publishedAt": "2026-12-11",
           "customers": [
             "株式会社立花工業"
@@ -2230,7 +2231,7 @@
         {
           "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
           "label": "#052",
-          "title": "補助金を使って導入した事例5選",
+          "title": "その困りごと、補助金で払えるかもしれない。補助金を使って導入した事例5選",
           "publishedAt": "2026-12-08",
           "customers": [
             "株式会社アクアイグニス淡路島（AQUAIGNIS Trailer Park）"
@@ -2458,7 +2459,7 @@
         {
           "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
           "label": "#055",
-          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "title": "黒字なのに、お金がない。キャッシュフローを改善した事例5選",
           "publishedAt": "2026-12-11",
           "customers": [
             "株式会社日本生物科学"
@@ -2756,6 +2757,32 @@
       "memo": ""
     },
     {
+      "domain": "enecloud.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "電気管理クラウド"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-12-01",
+          "label": "記念日12/1",
+          "title": "冬の省エネ総点検の日（記念日ポスト 12/1）",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "株式会社相良製作所"
+          ],
+          "products": [
+            "電気管理クラウド"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "energia.co.jp",
       "company": "",
       "status": "no-objection",
@@ -2763,7 +2790,9 @@
       "notifiedAtEstimated": true,
       "products": [
         "オンサイト太陽光発電PPAサービス",
-        "前川製作所製 空気・水両熱源エコキュート"
+        "前川製作所製 空気・水両熱源エコキュート",
+        "エネルギー診断",
+        "エアリークビューアー"
       ],
       "articles": [
         {
@@ -2793,6 +2822,32 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "day-2026-12-01",
+          "label": "記念日12/1",
+          "title": "冬の省エネ総点検の日（記念日ポスト 12/1）",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "住野工業株式会社"
+          ],
+          "products": [
+            "エネルギー診断"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "day-2026-12-03",
+          "label": "記念日12/3",
+          "title": "魚群探知機の日（記念日ポスト 12/3）",
+          "publishedAt": "2026-12-03",
+          "customers": [
+            "広島イーグル株式会社"
+          ],
+          "products": [
+            "エアリークビューアー"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3016,6 +3071,32 @@
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
+          "slug": "day-2026-12-01",
+          "label": "記念日12/1",
+          "title": "冬の省エネ総点検の日（記念日ポスト 12/1）",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "株式会社アルバック"
+          ],
+          "products": [
+            "i-BELT"
+          ],
+          "notified": false
+        },
+        {
+          "slug": "day-2026-12-03",
+          "label": "記念日12/3",
+          "title": "魚群探知機の日（記念日ポスト 12/3）",
+          "publishedAt": "2026-12-03",
+          "customers": [
+            "オムロン株式会社"
+          ],
+          "products": [
+            "現場データ活用サービス i-BELT、マシンオートメーションコントローラ"
+          ],
+          "notified": false
+        },
+        {
           "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
           "label": "用語#013",
           "title": "IoTとは｜10の事例でわかる",
@@ -3031,7 +3112,7 @@
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
           "label": "#053",
-          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "title": "また同じ部品が、壊れた。部品や方式を変えて、設備の故障や交換を減らした事例5選",
           "publishedAt": "2026-12-09",
           "customers": [
             "（非公開）"
@@ -3686,7 +3767,7 @@
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
           "label": "#053",
-          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "title": "また同じ部品が、壊れた。部品や方式を変えて、設備の故障や交換を減らした事例5選",
           "publishedAt": "2026-12-09",
           "customers": [
             "（非公開）"
@@ -4447,6 +4528,32 @@
           ],
           "products": [
             "いえらぶCLOUD"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "ikekin.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "ノルトロックワッシャー"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-12-02",
+          "label": "記念日12/2",
+          "title": "ビフィズス菌の日（記念日ポスト 12/2）",
+          "publishedAt": "2026-12-02",
+          "customers": [
+            "キユーピー株式会社"
+          ],
+          "products": [
+            "ノルトロックワッシャー"
           ],
           "notified": false
         }
@@ -5370,7 +5477,7 @@
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
           "label": "#053",
-          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "title": "また同じ部品が、壊れた。部品や方式を変えて、設備の故障や交換を減らした事例5選",
           "publishedAt": "2026-12-09",
           "customers": [
             "（非公開）"
@@ -6885,7 +6992,7 @@
         {
           "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
           "label": "#055",
-          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "title": "黒字なのに、お金がない。キャッシュフローを改善した事例5選",
           "publishedAt": "2026-12-11",
           "customers": [
             "株式会社ベルーナ"
@@ -6990,7 +7097,7 @@
         {
           "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
           "label": "#052",
-          "title": "補助金を使って導入した事例5選",
+          "title": "その困りごと、補助金で払えるかもしれない。補助金を使って導入した事例5選",
           "publishedAt": "2026-12-08",
           "customers": [
             "株式会社中尾商会"
@@ -7165,7 +7272,7 @@
         {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
           "label": "#053",
-          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "title": "また同じ部品が、壊れた。部品や方式を変えて、設備の故障や交換を減らした事例5選",
           "publishedAt": "2026-12-09",
           "customers": [
             "（非公開）"
@@ -7336,7 +7443,8 @@
         "パズル充填機 RD703+RU01 / ロータリー充填機 RX02+RU02",
         "チューブ充填機 6DTZ-T",
         "チューブ充填機 4DTZK-T",
-        "パズル充填機 粉体仕様 RD703+SU01"
+        "パズル充填機 粉体仕様 RD703+SU01",
+        "パズル充填機 RD703+RU01 粘体仕様"
       ],
       "articles": [
         {
@@ -7380,6 +7488,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "day-2026-12-02",
+          "label": "記念日12/2",
+          "title": "ビフィズス菌の日（記念日ポスト 12/2）",
+          "publishedAt": "2026-12-02",
+          "customers": [
+            "メリーファーム梨子本"
+          ],
+          "products": [
+            "パズル充填機 RD703+RU01 粘体仕様"
+          ],
+          "notified": false
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -7497,6 +7618,32 @@
           ],
           "products": [
             "Airoco"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
+      "domain": "newcom07.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "dbSheet"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-12-02",
+          "label": "記念日12/2",
+          "title": "ビフィズス菌の日（記念日ポスト 12/2）",
+          "publishedAt": "2026-12-02",
+          "customers": [
+            "株式会社永谷園"
+          ],
+          "products": [
+            "dbSheet"
           ],
           "notified": false
         }
@@ -8167,7 +8314,7 @@
         {
           "slug": "c27f3468-94c4-41f6-9b8d-b9b6e016d570",
           "label": "#055",
-          "title": "黒字倒産を防げ！！キャッシュフローを改善した事例5選",
+          "title": "黒字なのに、お金がない。キャッシュフローを改善した事例5選",
           "publishedAt": "2026-12-11",
           "customers": [
             "楓成工業"
@@ -10779,7 +10926,8 @@
       "products": [
         "高粘度用サニタリードラムポンプ+リフター",
         "ATI 過酸化水素水計",
-        "UNIBLOC サニタリーロータリーローブポンプ"
+        "UNIBLOC サニタリーロータリーローブポンプ",
+        "Dynasonics超音波流量計DXN-5P"
       ],
       "articles": [
         {
@@ -10811,9 +10959,22 @@
           "notifiedAt": "2026-11-17"
         },
         {
+          "slug": "day-2026-12-03",
+          "label": "記念日12/3",
+          "title": "魚群探知機の日（記念日ポスト 12/3）",
+          "publishedAt": "2026-12-03",
+          "customers": [
+            "（非公開）"
+          ],
+          "products": [
+            "Dynasonics超音波流量計DXN-5P"
+          ],
+          "notified": false
+        },
+        {
           "slug": "af46a79e-1d6d-49c7-b4a5-e644cdb67b58",
           "label": "#053",
-          "title": "部品や方式を変えて、設備の故障や交換を減らした事例5選",
+          "title": "また同じ部品が、壊れた。部品や方式を変えて、設備の故障や交換を減らした事例5選",
           "publishedAt": "2026-12-09",
           "customers": [
             "オークリー社"
@@ -11443,7 +11604,7 @@
         {
           "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
           "label": "#052",
-          "title": "補助金を使って導入した事例5選",
+          "title": "その困りごと、補助金で払えるかもしれない。補助金を使って導入した事例5選",
           "publishedAt": "2026-12-08",
           "customers": [
             "株式会社奉徳はないけ"
@@ -11562,7 +11723,7 @@
         {
           "slug": "3cead5f1-b702-4196-aba5-04dd2a550da8",
           "label": "#052",
-          "title": "補助金を使って導入した事例5選",
+          "title": "その困りごと、補助金で払えるかもしれない。補助金を使って導入した事例5選",
           "publishedAt": "2026-12-08",
           "customers": [
             "社会福祉法人末広会 特別養護老人ホーム春香苑・第２春香苑"

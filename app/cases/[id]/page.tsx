@@ -88,7 +88,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
         </figure>
       )}
 
-      {/* 提供（製品）→ 導入（顧客） */}
+      {/* 製品 → 導入（顧客） */}
       <div className="mt-9">
         <Adoption c={c} size="detail" />
       </div>
