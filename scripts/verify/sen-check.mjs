@@ -11,6 +11,7 @@
  *            （/sen-check の読み手レビューに渡す材料。記事は1本だけ指定する）
  *
  * NG（直す。1件でもあれば終了コード 1）
+ *   - label がない、または長さが 4〜8字の外
  *   - body の長さが 80〜130字の外
  *   - 見出し・body の数字が、事例データでは見込み・予定として書かれているのに、断りがない
  *   - body の結びが「〜1本。」
@@ -105,6 +106,9 @@ for (const f of picked) {
     if (!c) { ng.push(`${no} 事例が data/cases.json にない: ${it.caseId}`); return; }
     const body = it.body ?? "";
     const len = [...body].length;
+    const label = String(it.label ?? "");
+    if (!label) ng.push(`${no} label がない（4〜8字の仕事の名前）`);
+    else if (label.length < 4 || label.length > 8) ng.push(`${no} label が ${label.length}字（4〜8字）: ${label}`);
     if (len < 80 || len > 130) ng.push(`${no} body が ${len}字（80〜130字）`);
     if (/1本。\s*$/.test(body)) ng.push(`${no} body の結びが「〜1本。」`);
 
