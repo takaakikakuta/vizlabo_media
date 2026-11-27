@@ -145,7 +145,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                 {hasVideo(c) && <span className="mr-2.5"><VideoBadge /></span>}
                 {industryLabel(c.customer.industry)}
                 {c.customer.size && ` ・ ${c.customer.size}`}
-                {introSourceName(c.vendor) ? ` ・ 出典：${introSourceName(c.vendor)}の事例紹介` : ` ・ 提供：${vendorLabel(c.vendor)}`}
+                {introSourceName(c.vendor) ? ` ・ 出典：${introSourceName(c.vendor)}の事例紹介` : ` ・ 出典：${vendorLabel(c.vendor)}の導入事例`}
               </p>
               <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>
               <p className="mt-3 ml-10 border-l-2 border-ink pl-4 text-[13.5px] leading-[2.05] text-ink">{e.hitokoto}</p>
@@ -166,7 +166,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                 </div>
               )}
               {/* 事例への導線（事例セレクションと同じ二段構成）。
-                  上段はサイト内の事例ページ（要約・成果の数字・関連事例）、下段は提供元の元記事（外部サイト）。
+                  上段はサイト内の事例ページ（要約・成果の数字・関連事例）、下段は掲載元の元記事（外部サイト）。
                   取り違えないよう、下段だけ色・「外部サイト」の印・ドメインで外へ出ることを示す */}
               <div className="mt-4 ml-10 border border-line2">
                 <Link href={`/cases/${c.id}`} {...slotLink(e.i + 1, c, "case")}
@@ -194,7 +194,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                       <ExternalLink size={13} strokeWidth={2.25} aria-hidden className="shrink-0" />
                     </span>
                     <span className="mt-0.5 block text-[11px] leading-[1.6] text-muted sm:truncate">
-                      {introSourceName(c.vendor) ? `${introSourceName(c.vendor)}の事例紹介ページ` : "提供元のサイト"}（{sourceHost(c)}）に移動します
+                      {introSourceName(c.vendor) ? `${introSourceName(c.vendor)}の事例紹介ページ` : "掲載元のサイト"}（{sourceHost(c)}）に移動します
                     </span>
                   </span>
                 </a>
