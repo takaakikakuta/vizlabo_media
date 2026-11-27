@@ -2765,6 +2765,32 @@
       "memo": ""
     },
     {
+      "domain": "enecloud.co.jp",
+      "company": "",
+      "status": "pending",
+      "notifiedAt": "",
+      "notifiedAtEstimated": false,
+      "products": [
+        "電気管理クラウド"
+      ],
+      "articles": [
+        {
+          "slug": "day-2026-12-01",
+          "label": "記念日12/1",
+          "title": "冬の省エネ総点検の日（記念日ポスト 12/1）",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "株式会社相良製作所"
+          ],
+          "products": [
+            "電気管理クラウド"
+          ],
+          "notified": false
+        }
+      ],
+      "memo": ""
+    },
+    {
       "domain": "energia.co.jp",
       "company": "",
       "status": "no-objection",
@@ -2772,7 +2798,8 @@
       "notifiedAtEstimated": true,
       "products": [
         "オンサイト太陽光発電PPAサービス",
-        "前川製作所製 空気・水両熱源エコキュート"
+        "前川製作所製 空気・水両熱源エコキュート",
+        "エネルギー診断"
       ],
       "articles": [
         {
@@ -2802,6 +2829,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "day-2026-12-01",
+          "label": "記念日12/1",
+          "title": "冬の省エネ総点検の日（記念日ポスト 12/1）",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "住野工業株式会社"
+          ],
+          "products": [
+            "エネルギー診断"
+          ],
+          "notified": false
         }
       ],
       "memo": ""
@@ -3023,6 +3063,19 @@
           ],
           "notified": true,
           "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
+        },
+        {
+          "slug": "day-2026-12-01",
+          "label": "記念日12/1",
+          "title": "冬の省エネ総点検の日（記念日ポスト 12/1）",
+          "publishedAt": "2026-12-01",
+          "customers": [
+            "株式会社アルバック"
+          ],
+          "products": [
+            "i-BELT"
+          ],
+          "notified": false
         },
         {
           "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",
