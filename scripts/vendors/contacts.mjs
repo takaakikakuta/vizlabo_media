@@ -16,7 +16,8 @@
  *
  * 状態（status）: pending＝未連絡 / no-objection＝連絡済みで削除依頼なし / removed＝削除依頼あり（data/blocked_vendors.json から自動）
  *               / intro＝紹介元で提供元ではない（data/intro_sources.json から自動。掲載連絡はしない）
- * 削除依頼を受けたら blocked_vendors.json に足す（この記録は自動で removed になる）。 */
+ * 削除依頼を受けたら blocked_vendors.json に足す（この記録は自動で removed になる）。
+ * 事例1件単位の個別対応（hidden・匿名化など）は、該当ベンダーの memo に「日付 事例ページ: 誰から・どの事例・何をした」を追記して履歴を残す（CLAUDE.md 参照）。 */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -62,7 +63,7 @@ const articles = fs.readdirSync(path.join(ROOT, "content/articles")).filter((f) 
   .sort((x, y) => x.a.publishedAt.localeCompare(y.a.publishedAt) || String(x.a.no).localeCompare(String(y.a.no), undefined, { numeric: true }));
 
 const data = fs.existsSync(path.join(ROOT, FILE)) ? read(FILE) : { note: "", vendors: [] };
-data.note = "提供元への掲載連絡の記録。scripts/vendors/contacts.mjs が公開中の記事から提供元と記事を足す（手で書いた status・notifiedAt・company・memo は上書きしない）。status: pending＝未連絡 / no-objection＝連絡済みで削除依頼なし / removed＝削除依頼あり（blocked_vendors.json から自動）。notifiedAtEstimated が true の日付は記事の公開日からの推定なので、分かれば直す。";
+data.note = "提供元への掲載連絡の記録。scripts/vendors/contacts.mjs が公開中の記事から提供元と記事を足す（手で書いた status・notifiedAt・company・memo は上書きしない）。status: pending＝未連絡 / no-objection＝連絡済みで削除依頼なし / removed＝削除依頼あり（blocked_vendors.json から自動）。notifiedAtEstimated が true の日付は記事の公開日からの推定なので、分かれば直す。memo には、事例1件単位の個別対応（削除依頼で hidden にした・匿名化した・画像や規模を外した等）を「日付 事例ページ: 誰から・どの事例・何をした」の形で追記し、個別対応の履歴として残す。";
 const vmap = new Map(data.vendors.map((v) => [v.domain, v]));
 const init = args.includes("--init-assume-notified");
 const assumeNotified = (a) => init && a.publishedAt <= today;  // 予約公開（公開日が未来）の記事は初回でも未連絡のまま

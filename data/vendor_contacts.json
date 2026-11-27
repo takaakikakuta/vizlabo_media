@@ -1,5 +1,5 @@
 {
-  "note": "提供元への掲載連絡の記録。scripts/vendors/contacts.mjs が公開中の記事から提供元と記事を足す（手で書いた status・notifiedAt・company・memo は上書きしない）。status: pending＝未連絡 / no-objection＝連絡済みで削除依頼なし / removed＝削除依頼あり（blocked_vendors.json から自動）。notifiedAtEstimated が true の日付は記事の公開日からの推定なので、分かれば直す。",
+  "note": "提供元への掲載連絡の記録。scripts/vendors/contacts.mjs が公開中の記事から提供元と記事を足す（手で書いた status・notifiedAt・company・memo は上書きしない）。status: pending＝未連絡 / no-objection＝連絡済みで削除依頼なし / removed＝削除依頼あり（blocked_vendors.json から自動）。notifiedAtEstimated が true の日付は記事の公開日からの推定なので、分かれば直す。memo には、事例1件単位の個別対応（削除依頼で hidden にした・匿名化した・画像や規模を外した等）を「日付 事例ページ: 誰から・どの事例・何をした」の形で追記し、個別対応の履歴として残す。",
   "vendors": [
     {
       "domain": "100inc.co.jp",
