@@ -677,7 +677,8 @@
           "products": [
             "ANDPAD"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -1014,7 +1015,8 @@
           "products": [
             "BIZTEL コールセンター"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -1103,8 +1105,8 @@
     {
       "domain": "buddymarketing.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "SATORI、バディコネクト"
@@ -1121,7 +1123,8 @@
           "products": [
             "SATORI、バディコネクト"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -1493,8 +1496,8 @@
     {
       "domain": "casting-one.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "CastingONE"
@@ -1511,7 +1514,8 @@
           "products": [
             "CastingONE"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "93cf3349-6642-4f45-8078-7d81091fcab3",
@@ -1525,7 +1529,8 @@
           "products": [
             "CastingONE"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -1592,7 +1597,8 @@
           "products": [
             "採用特化型ホームページ制作・Indeedの新規整備"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -2181,8 +2187,8 @@
     {
       "domain": "crack-inc.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "魅力発掘プロジェクト・インナーブランディング支援"
@@ -2199,7 +2205,8 @@
           "products": [
             "魅力発掘プロジェクト・インナーブランディング支援"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -2239,7 +2246,8 @@
           "products": [
             "crotta"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3120,7 +3128,8 @@
           "products": [
             "溶接工程向け近接センサ E2EW-Q"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3261,7 +3270,8 @@
           "products": [
             "FastHelp, FastAnswer"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -3757,8 +3767,8 @@
     {
       "domain": "fukudaco.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "イージス® SGR"
@@ -3775,7 +3785,8 @@
           "products": [
             "イージス® SGR"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -4042,8 +4053,8 @@
     {
       "domain": "growthseed.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "TikTok運用代行",
@@ -4063,7 +4074,8 @@
             "TikTok運用代行",
             "GrowthDX"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -4340,7 +4352,8 @@
           "products": [
             "HR PRIME"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -4516,7 +4529,8 @@
           "products": [
             "いえらぶCLOUD"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "ad1e63df-35fb-4c41-b5da-013ddb7fed91",
@@ -4634,10 +4648,11 @@
           "products": [
             "Zoho CRM、Zoho Social"
           ],
-          "notified": false
+          "notified": false,
+          "held": true
         }
       ],
-      "memo": ""
+      "memo": "2026-11-27 用語#010: 問い合わせフォームなし"
     },
     {
       "domain": "inet.co.jp",
@@ -5067,7 +5082,8 @@
           "products": [
             "COMPASS"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -5485,7 +5501,8 @@
           "products": [
             "鉄鋼圧延機用ドライブシャフト"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -7105,7 +7122,8 @@
           "products": [
             "ACELINK NX-CE 販売"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -7262,8 +7280,8 @@
     {
       "domain": "musashi-engineering.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "プランジャポンプ方式ディスペンサー、スクリュー方式ディスペンサー"
@@ -7280,7 +7298,8 @@
           "products": [
             "プランジャポンプ方式ディスペンサー、スクリュー方式ディスペンサー"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -7766,7 +7785,7 @@
     {
       "domain": "nock-design.com",
       "company": "",
-      "status": "pending",
+      "status": "no-objection",
       "notifiedAt": "",
       "notifiedAtEstimated": false,
       "products": [
@@ -7784,10 +7803,11 @@
           "products": [
             "TikTok運用代行「ニチヨウビ」"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "提供元から掲載の依頼を受けた事例のため、掲載通知は不要"
         }
       ],
-      "memo": ""
+      "memo": "2026-11-27 #051: 提供元から掲載の依頼あり（掲載通知は送らない）"
     },
     {
       "domain": "nr1.co.jp",
@@ -7938,7 +7958,8 @@
           "products": [
             "Salesforce / SkyOnDemand"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "e8c6141f-afb3-4be8-800a-46575659595a",
@@ -8364,7 +8385,8 @@
           "products": [
             "ONE CAREER"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -10982,7 +11004,8 @@
           "products": [
             "UNIBLOC サニタリーロータリーローブポンプ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         }
       ],
       "memo": ""
@@ -11594,8 +11617,8 @@
     {
       "domain": "tojogas.co.jp",
       "company": "",
-      "status": "pending",
-      "notifiedAt": "",
+      "status": "no-objection",
+      "notifiedAt": "2026-11-27",
       "notifiedAtEstimated": false,
       "products": [
         "太陽光発電システム"
@@ -11612,7 +11635,8 @@
           "products": [
             "太陽光発電システム"
           ],
-          "notified": false
+          "notified": true,
+          "notifiedAt": "2026-11-27"
         }
       ],
       "memo": ""
@@ -11731,7 +11755,8 @@
           "products": [
             "見守りライフ"
           ],
-          "notified": false
+          "notified": true,
+          "skipped": "以前の記事で連絡済みの提供元のため、この記事の通知は省略"
         },
         {
           "slug": "9b92efe6-d3cd-45b0-b549-be50e8b1bf00",

@@ -3,8 +3,8 @@
 `node scripts/vendors/contacts.mjs` で公開中の記事から提供元を足し、この一覧を書き直す。連絡したら `node scripts/vendors/contacts.mjs --notified <記事slug|no> [日付]`。削除依頼は `data/blocked_vendors.json` に足せば自動で「削除依頼あり」に移る。
 元データは `data/vendor_contacts.json`（会社名・メモ・正確な連絡日はそこに手で書く）。
 
-- 連絡済み・削除依頼なし: 255 社（うち連絡日が推定のもの 165 社）
-- 未連絡: 69 社（記事単位で未連絡のものは下の表）
+- 連絡済み・削除依頼なし: 263 社（うち連絡日が推定のもの 165 社）
+- 未連絡: 61 社（記事単位で未連絡のものは下の表）
 - 削除依頼あり: 13 社
 - 紹介元（提供元ではないので掲載連絡はしない）: 1 社
 
@@ -18,59 +18,47 @@
 | ags.co.jp | Neuro Watcher | #055（B社） |
 | aismiley.co.jp | JAPAN AI AGENT | #054（イーモジャパン株式会社） |
 | all-e-support.jp | GRONIA plus・GRONIA plus ハラスメント防止シリーズ | 用語#014（株式会社プラネット、積水樹脂株式会社） |
-| andpad.jp | ANDPAD | #052（川上塗装工業株式会社） |
 | assemble.rolanddg.co.jp | Roland DG Assemble | 用語#013（株式会社浜松パルス） |
 | bcp-kke.jp | 建物被害モニタリングシステム | 用語#013（株式会社豊田自動織機） |
-| biztel.jp | BIZTEL コールセンター・BIZTEL コールセンター / BIZTEL モバイル | #031（株式会社池田模範堂、寺田倉庫株式会社）<br>用語#010（株式会社ニデック） |
-| buddymarketing.co.jp | SATORI、バディコネクト | 用語#010（株式会社レコモット） |
+| biztel.jp | BIZTEL コールセンター・BIZTEL コールセンター / BIZTEL モバイル | #031（株式会社池田模範堂、寺田倉庫株式会社） |
 | businessbridge.jp | Business b-ridge | #032（日本ジェネリック株式会社） |
 | businesscoach.co.jp | クラウドコーチング・マイコ・1on1ミーティング導入プログラム・クラウドコーチング | #035（株式会社百十四銀行）<br>#036（クオリサイトテクノロジーズ株式会社）<br>#041（三谷セキサン株式会社、サンヨーエアポートサービス株式会社、藤田観光株式会社（東京ベイ有明ワシントンホテル）） |
 | cammacs.jp | クラウドERP キャムマックス・キャムマックス | 用語#003（武田レッグウェアー株式会社）<br>用語#004（株式会社ガリレオ）<br>用語#005（株式会社イーストボーイ）<br>用語#002（株式会社八天堂、武田レッグウェアー株式会社） |
 | canon-its.co.jp | Moodle2.0系 | 用語#014（東京理科大学） |
 | cashmo.jp | Cashmo | #055（株式会社立花工業） |
-| casting-one.jp | CastingONE | 用語#010（ライクワークス株式会社（現：ライクスタッフィング株式会社））<br>#051（GAライフケア株式会社、ライクワークス株式会社（現：ライクスタッフィング株式会社）） |
-| ccinnovation.co.jp | 採用特化型ホームページ制作・Indeedの新規整備 | #051（株式会社髙田鉄工） |
 | ckd.co.jp | パワフルアーム | #056（因幡電機産業） |
 | cloud-ace.jp | BigQuery、Looker Studio・Google Cloud | 用語#011（株式会社有隣堂、関西エアポート株式会社） |
 | cloudpack.jp | AWS・Google Cloud Agent Development Kit / Vertex AI / Cloud Run | 用語#013（トヨタ自動車株式会社）<br>#054（KDDIアイレット株式会社） |
 | cognex.com | コグネックス マシンビジョンシステム | #007（BorgWarner） |
 | connecty.co.jp | CMS on Demand | 用語#012（株式会社パリミキホールディングス） |
 | correos.co.jp | 債権書類管理システム | #008（多摩信用金庫）<br>用語#001（多摩信用金庫） |
-| crack-inc.co.jp | 魅力発掘プロジェクト・インナーブランディング支援 | #051（有限会社裕進運輸） |
-| crotta.jp | crotta | #052（株式会社アクアイグニス淡路島（AQUAIGNIS Trailer Park）） |
 | cstnet.co.jp | ALTA | 用語#015（株式会社中村建設、株式会社四葉建装） |
 | cybozu.co.jp | kintone | #032（株式会社京都紋付、株式会社京屋染物店）<br>用語#003（株式会社京都紋付、株式会社京屋染物店） |
 | dsk-ec.jp | コンビニ収納代行サービス、ゆうちょ振替MT代行サービス | #055（株式会社日本生物科学） |
 | enecloud.co.jp | 電気管理クラウド | 記念日12/1（株式会社相良製作所） |
 | energia.co.jp | エネルギー診断・エアリークビューアー | 記念日12/1（住野工業株式会社）<br>記念日12/3（広島イーグル株式会社） |
 | ev-charge-enechange.jp | EV充電エネチェンジ | #031（株式会社アスター（盛岡つなぎ温泉 ホテル紫苑）） |
-| fa.omron.co.jp | i-BELT・現場データ活用サービス i-BELT、マシンオートメーションコントローラ・溶接工程向け近接センサ E2EW-Q | 記念日12/1（株式会社アルバック）<br>記念日12/3（オムロン株式会社）<br>用語#013（株式会社アルバック）<br>#053（（非公開）） |
-| fastseries.jp | FastHelp, FastAnswer | 用語#010（株式会社日立システムズ） |
+| fa.omron.co.jp | i-BELT・現場データ活用サービス i-BELT、マシンオートメーションコントローラ | 記念日12/1（株式会社アルバック）<br>記念日12/3（オムロン株式会社）<br>用語#013（株式会社アルバック） |
 | forecastflow.jp | yomiuri ONE | 用語#011（読売新聞社） |
 | freee.co.jp | freee・freee人事労務、freee会計・freee人事労務・freee人事労務アウトソース・freee会計、freee人事労務、freeeカード Unlimited | 用語#008（株式会社ダイナミック物流、（リンクのみ））<br>#045（株式会社ファームシップ、（リンクのみ）、EMオノエ株式会社）<br>#054（レンジャーシステムズ株式会社） |
-| fukudaco.co.jp | イージス® SGR | #053（（非公開）） |
 | future-shop.jp | futureshop omni-channel | 用語#012（株式会社ソラオブトウキョウ） |
 | geekplus.jp | 搬送型AMR・Geek+ Pシリーズ ピッキングロボット・ピッキングロボット・skylaa | #033（トヨタ自動車、Walmart、Jointown製薬グループ）<br>用語#012（プーマ ジャパン株式会社） |
 | goriki.jp | ポストパレット | #056（ナイス（株）相模原市場・相模原営業所） |
-| growthseed.jp | TikTok運用代行・GrowthDX | #051（株式会社BONDSグループ、イノデン株式会社） |
 | gsx.co.jp | Mina Secure for Medical | 用語#014（独立行政法人地域医療機能推進機構（JCHO）） |
 | hakuou.co.jp | AutoFork | #033（日本トランスシティ株式会社） |
 | handbook.jp | Handbook | 用語#015（三和シヤッター工業株式会社、日本ミシュランタイヤ） |
 | helicam.jp | Matrice 350 RTK + SABOT-3 | #031（留萌市） |
-| hr-prime.jp | HR PRIME | #051（税理士法人 総合経営サービス） |
 | hrbase.jp | HRbase | #054（株式会社真誠） |
 | humanage.co.jp | TG-WEB | #041（株式会社DTS） |
-| ielove-cloud.jp | いえらぶCLOUD | 用語#010（株式会社アークス、都市住建株式会社）<br>#056（都市住建株式会社） |
+| ielove-cloud.jp | いえらぶCLOUD | #056（都市住建株式会社） |
 | ikekin.co.jp | ノルトロックワッシャー | 記念日12/2（キユーピー株式会社） |
 | imagers.co.jp | Dolphin CT30XP | #024（コーナン商事株式会社） |
 | improve.co.jp | Zoho CRM、Zoho Social | 用語#010（有限会社前田鉄工所） |
 | intra-mart.jp | intra-mart | 用語#008（中部国際空港株式会社）<br>用語#009（東レ・メディカル株式会社） |
 | iot-robot.jp | RPA | #034（社会保険労務士法人 アジア経営革新等支援機関） |
-| itecs.co.jp | COMPASS | 用語#010（株式会社ジャフコ） |
 | itohdenki.co.jp | 直角・30°分岐コンベア | 記念日11/22（日本農業協同組合（JA）） |
 | jbs.co.jp | Microsoft Power Platform | #031（西日本旅客鉄道株式会社） |
 | jrc.co.jp | VTS管制官育成Eラーニングシステム・VTS System導入支援システム | 用語#014（ASEAN地域訓練センター（MATRAIN）） |
-| jtekt.co.jp | 鉄鋼圧延機用ドライブシャフト | #053（（非公開）） |
 | keigan-motor.com | KeiganALI | #033（株式会社ホリゾン） |
 | kisnet.co.jp | Forwarder-PRO | 用語#008（西久大運輸倉庫株式会社） |
 | kitera-cloud.jp | KiteRa Pro | #034（社会保険労務士　荻生労務研究所） |
@@ -83,23 +71,19 @@
 | meikoshokai.co.jp | MSボイスコールNEO Ver.2 | #056（神奈川県湯河原町役場） |
 | mitani-corp.co.jp | Cosmo Finder | #007（進工業株式会社） |
 | mitsys.co.jp | QuickCRM | #055（株式会社ベルーナ） |
-| mjs.co.jp | ACELINK NX-CE 販売 | #052（株式会社中尾商会） |
 | mr-m.co.jp | ミスターマーケティングのコンサルティング | #017（三和ロボティクス株式会社） |
 | mujin.co.jp | 通い箱パレタイズロボット、AGV、WCS・MujinOS搭載通い箱デパレタイズロボット | #033（トヨタ紡織株式会社）<br>#037（株式会社松田電機工業所） |
-| musashi-engineering.co.jp | プランジャポンプ方式ディスペンサー、スクリュー方式ディスペンサー | #053（（非公開）） |
 | naomi.co.jp | パズル充填機 RD703+RU01 粘体仕様・チューブ充填機 6DTZ-T | 記念日12/2（メリーファーム梨子本）<br>#056（下呂プリン） |
 | narikoma-group.co.jp | ナリコマ | #031（特別養護老人ホーム アルテイル宮町） |
 | necolico.co.jp | Airoco | 用語#013（学校法人角川ドワンゴ学園） |
 | newcom07.jp | dbSheet | 記念日12/2（株式会社永谷園） |
 | nhs.co.jp | Paples | 用語#009（キョーリン製薬ホールディングス株式会社） |
-| nock-design.com | TikTok運用代行「ニチヨウビ」 | #051（製造業の工場（社名非公開）） |
-| ntt-tx.co.jp | Salesforce / SkyOnDemand・Yellowfin、Amazon Redshift・CTBASE/Connect Cloud | 用語#010（旭化成不動産レジデンス株式会社）<br>用語#011（株式会社NTTドコモ）<br>#056（パナソニック保険サービス株式会社） |
+| ntt-tx.co.jp | Yellowfin、Amazon Redshift・CTBASE/Connect Cloud | 用語#011（株式会社NTTドコモ）<br>#056（パナソニック保険サービス株式会社） |
 | nttdata-bizsys.co.jp | PentaSenser® | 用語#012（株式会社ツルハホールディングス） |
 | nttexc.co.jp | ELNO | 用語#014（倉敷市） |
 | ogis-ri.co.jp | 保険査定AIエージェント | #054（（非公開）） |
 | okuma.co.jp（オークマ株式会社） | MULTUS | #031（株式会社しらかわ、（リンクのみ）） |
 | olta.co.jp | OLTAクラウドファクタリング | #055（楓成工業） |
-| onecareer.jp | ONE CAREER | #051（株式会社毎日放送、ロート製薬株式会社） |
 | optex.co.jp | OAM-EXPLORER J、LINK-BT2・冠水クイック・モニタリング | #033（（非公開））<br>用語#013（大阪府八尾市） |
 | pa-consul.co.jp | タレントパレット | #041（株式会社松屋フーズホールディングス）<br>用語#014（株式会社三越伊勢丹ホールディングス） |
 | patme.co.jp | 営業資料制作サービス | 用語#015（一般社団法人日本礼法道協会） |
@@ -119,15 +103,14 @@
 | smbc-cloudsign.co.jp | SMBCクラウドサイン | #049（株式会社伊予銀行） |
 | softes.co.jp | SAP S/4HANA、SAP Analytics Cloud・SAP S/4HANA・SAP ERP | 用語#003（株式会社ニチリン）<br>用語#002（日研フード株式会社、社会福祉法人 聖隷福祉事業団）<br>用語#009（社会福祉法人 聖隷福祉事業団） |
 | spokes-online.jp | SPOKES | 用語#015（株式会社M&A DX） |
-| sunnyltd.co.jp | Dynasonics超音波流量計DXN-5P・UNIBLOC サニタリーロータリーローブポンプ | 記念日12/3（（非公開））<br>#053（オークリー社） |
+| sunnyltd.co.jp | Dynasonics超音波流量計DXN-5P | 記念日12/3（（非公開）） |
 | takachiho-kk.co.jp | RFIDシステム | #008（佐川グローバルロジスティクス株式会社） |
 | tam-tokyo.co.jp | カートナー、段ボールケーサー | 記念日11/22（松尾製菓株式会社/チロルチョコ株式会社） |
 | techsword.co.jp | TechSword Vision | 記念日11/22（株式会社榮太樓總本鋪） |
 | techvan.co.jp | ソフトウェアテストサービス | #056（株式会社MIXI） |
 | tinkermode.jp | MODE BizStack・MODEのIoTプラットフォーム | 用語#011（あいおいニッセイ同和損害保険株式会社）<br>用語#013（前田建設工業株式会社、JR東日本スタートアップ株式会社） |
-| tojogas.co.jp | 太陽光発電システム | #052（株式会社奉徳はないけ） |
 | toma.co.jp | 勤怠管理システム | 用語#009（宮川電気通信工業株式会社） |
-| totec-mlife.jp | 見守りライフ | #052（社会福祉法人末広会 特別養護老人ホーム春香苑・第２春香苑）<br>用語#013（社会福祉法人杜の村 特別養護老人ホームかむりの里翔裕園） |
+| totec-mlife.jp | 見守りライフ | 用語#013（社会福祉法人杜の村 特別養護老人ホームかむりの里翔裕園） |
 | totec-sangyo.jp | Asprova APS・MotionBoard | #032（共和薬品工業株式会社）<br>用語#011（芝浦機械株式会社） |
 | transact.ne.jp | TransFax | 用語#009（株式会社モレーンコーポレーション） |
 | unifinity.co.jp | Unifinity | #056（株式会社利久） |
@@ -151,22 +134,24 @@
 | ai-market.jp | 2026-11-18 | AIエージェント型ボイスボット | #048（SBIいきいき少額短期保険株式会社） |
 | alibaba.co.jp | 2026-10-20（推定） | Alibaba.com | #017（株式会社香月園） |
 | amano.co.jp | 2026-10-02（推定） | TimeP@CK-iC・TimeP@CK-iCⅣ、サッと勤怠・TimeP@CK・TimeP@CK-iCⅣ・TimeP@CK Professional・TimePro-VG | #005（株式会社梅林）<br>#034（原口社会保険労務事務所、籏興行株式会社 シネスイッチ銀座）<br>用語#007（林総事株式会社）<br>用語#009（東京女子医科大学、森永乳業株式会社） |
-| andpad.jp | 2026-10-01（推定） | ANDPAD請求管理・ANDPAD・ANDPAD遠隔臨場・ANDPAD施工管理、ANDPAD引合粗利管理・ANDPAD / ANDPAD BPO | #004（佐藤工業株式会社、株式会社乃一、不動産SHOPナカジツ）<br>#005（株式会社玄翁、株式会社ビーバーリフォーム）<br>#006（株式会社タカラベ）<br>#007（株式会社大勝）<br>#009（株式会社カスケホーム、東洋冷熱工業株式会社）<br>#013（株式会社ナミキ）<br>#020（株式会社親広産業）<br>用語#002（株式会社CONY JAPAN（リフォーる））<br>用語#007（株式会社CONY JAPAN（リフォーる）） |
+| andpad.jp | 2026-10-01（推定） | ANDPAD請求管理・ANDPAD・ANDPAD遠隔臨場・ANDPAD施工管理、ANDPAD引合粗利管理・ANDPAD / ANDPAD BPO | #004（佐藤工業株式会社、株式会社乃一、不動産SHOPナカジツ）<br>#005（株式会社玄翁、株式会社ビーバーリフォーム）<br>#006（株式会社タカラベ）<br>#007（株式会社大勝）<br>#009（株式会社カスケホーム、東洋冷熱工業株式会社）<br>#013（株式会社ナミキ）<br>#020（株式会社親広産業）<br>用語#002（株式会社CONY JAPAN（リフォーる））<br>用語#007（株式会社CONY JAPAN（リフォーる））<br>#052（川上塗装工業株式会社） |
 | armg.jp | 2026-10-01（推定） | アドバンテッジ スマートケア・アドバンテッジ ピディカ・アドバンテッジ ウェルビーイングDXP・アドバンテッジ タフネス｜TOUGHNESS EQ 感情マネジメント力向上研修 | #004（伊藤組土建株式会社）<br>#018（トヨタコネクティッド株式会社）<br>#036（清原株式会社、日本トーター株式会社、株式会社 エフテック） |
 | awapaper.co.jp | 2026-11-26 | M-thermo断熱材 | 記念日11/27（日昌株式会社） |
 | ba-net.co.jp | 2026-11-13 | Plaza-i | 用語#004（SocioFuture株式会社） |
 | basesystem.co.jp | 2026-10-22（推定） | MOTORJIM | #019（株式会社アキヅキ） |
 | bcp-kke.jp | 2026-10-14（推定） | 建物被害モニタリングシステム・制震補強設計・シミュレーション | #013（株式会社豊田自動織機）<br>#044（株式会社豊田自動織機） |
 | betterbound.jp | 2026-11-26 | YARIKIRI | #049（株式会社大林組） |
-| biztel.jp | 2026-11-19 | BIZTEL コールセンター・BIZTEL コールセンター アウトソーシングオプション・BIZTEL コールセンター / BIZTEL モバイル | 用語#004（フィブロ製薬株式会社）<br>用語#005（ピー・シー・エー株式会社、株式会社きちり）<br>用語#006（株式会社リンクアカデミー、三菱鉛筆株式会社） |
+| biztel.jp | 2026-11-19 | BIZTEL コールセンター・BIZTEL コールセンター アウトソーシングオプション・BIZTEL コールセンター / BIZTEL モバイル | 用語#004（フィブロ製薬株式会社）<br>用語#005（ピー・シー・エー株式会社、株式会社きちり）<br>用語#006（株式会社リンクアカデミー、三菱鉛筆株式会社）<br>用語#010（株式会社ニデック） |
 | bluebean365.jp | 2026-10-19（推定） | BlueBean | #016（株式会社チェスコムコールセンターソリューションズ）<br>用語#005（株式会社チェスコムコールセンターソリューションズ）<br>用語#006（株式会社バトン、株式会社SIMPLATT） |
 | border.co.jp | 2026-11-05（推定） | BORDER | #029（株式会社Gengo） |
+| buddymarketing.co.jp | 2026-11-27 | SATORI、バディコネクト | 用語#010（株式会社レコモット） |
 | buildee.jp | 2026-10-01（推定） | Buildee・Buildee3サービス | #004（鹿島建設株式会社、株式会社桑原組） |
 | businessbridge.jp | 2026-10-19（推定） | Business b-ridge | #016（村田機械株式会社） |
 | cashmo.jp | 2026-10-19（推定） | Cashmo | #016（株式会社アウローラ、アップシードビーンズ株式会社）<br>用語#004（テージー株式会社） |
 | casio-human-sys.co.jp | 2026-11-20 | 人事統合システム ADPS・ADPS 勤怠システム | 用語#007（株式会社西松屋チェーン）<br>用語#009（東京センチュリー株式会社） |
+| casting-one.jp | 2026-11-27 | CastingONE | 用語#010（ライクワークス株式会社（現：ライクスタッフィング株式会社））<br>#051（GAライフケア株式会社、ライクワークス株式会社（現：ライクスタッフィング株式会社）） |
 | casty-app.jp | 2026-10-15（推定） | Casty | #014（株式会社ワントゥワン東京） |
-| ccinnovation.co.jp | 2026-11-16 | デジタルマーケティングコンサルティング | #042（城西運輸機工株式会社） |
+| ccinnovation.co.jp | 2026-11-16 | デジタルマーケティングコンサルティング・採用特化型ホームページ制作・Indeedの新規整備 | #042（城西運輸機工株式会社）<br>#051（株式会社髙田鉄工） |
 | ccs1981.jp | 2026-10-26（推定） | 大学の時間割編成ソリューション・大学の時間割 | #021（創価大学） |
 | ciftr.jp | 2026-11-09 | シフター | #035（溶岩焼肉 牛楽 鶴田町店） |
 | ckd.co.jp | 2026-10-29（推定） | パワフルアーム PAW | #024（髙藏工業株式会社） |
@@ -178,7 +163,8 @@
 | conct.jp | 2026-10-13（推定） | CO-NECT | #012（多生堂、（リンクのみ）） |
 | coolex.jp | 2026-10-29（推定） | COOLEX-Pro | #024（日本フルハーフ株式会社 厚木工場）<br>#038（日本フルハーフ株式会社 厚木工場） |
 | coteam.jp | 2026-10-05（推定） | コチーム・1on1・マネジメント研修 | #006（株式会社ジョン）<br>#022（全日本空輸株式会社（ANA）） |
-| crotta.jp | 2026-11-20 | crotta | 用語#005（株式会社 池の平ホテル&リゾーツ（白樺リゾート池の平ホテル）） |
+| crack-inc.co.jp | 2026-11-27 | 魅力発掘プロジェクト・インナーブランディング支援 | #051（有限会社裕進運輸） |
+| crotta.jp | 2026-11-20 | crotta | 用語#005（株式会社 池の平ホテル&リゾーツ（白樺リゾート池の平ホテル））<br>#052（株式会社アクアイグニス淡路島（AQUAIGNIS Trailer Park）） |
 | cybersolutions.co.jp | 2026-11-18 | CYBERMAIL Σ ST | #047（茨城県五霞町） |
 | daiko-xtech.co.jp | 2026-11-20 | Fujitsu テレフォニーソリューション「ソフトウェアPBX」 | 用語#005（株式会社シャルレ） |
 | datawise.co.jp | 2026-11-18 | Datawise Area Marketer | #047（徳島市） |
@@ -193,10 +179,10 @@
 | erecta.co.jp | 2026-11-04（推定） | マルチサーブ | #028（医療法人慈風会 あつち葛飾クリニック） |
 | exawizards.com | 2026-09-29（推定） | exaBase FAQ・AIを活用した水力発電計画最適化システム | #002（住友ファーマ株式会社）<br>#020（中国電力株式会社） |
 | expoline.jp | 2026-11-03（推定） | EXPOLINE | #027（株式会社大塚商会） |
-| fa.omron.co.jp | 2026-11-10 | 現場データ活用サービス i-BELT、マシンオートメーションコントローラ・i-BELT・高速CT型X線自動検査装置・オムロン協調ロボット TMシリーズ・現場データ活用サービス i-BELT・VT-S730 | #040（オムロン株式会社）<br>記念日11/20（YKK AP株式会社）<br>記念日11/21（株式会社ホックス）<br>記念日11/24（株式会社有川製作所）<br>#046（オムロン野洲工場）<br>記念日11/30（ジャパン・イーエム・ソリューションズ株式会社） |
+| fa.omron.co.jp | 2026-11-10 | 現場データ活用サービス i-BELT、マシンオートメーションコントローラ・i-BELT・高速CT型X線自動検査装置・オムロン協調ロボット TMシリーズ・現場データ活用サービス i-BELT・VT-S730・溶接工程向け近接センサ E2EW-Q | #040（オムロン株式会社）<br>記念日11/20（YKK AP株式会社）<br>記念日11/21（株式会社ホックス）<br>記念日11/24（株式会社有川製作所）<br>#046（オムロン野洲工場）<br>記念日11/30（ジャパン・イーエム・ソリューションズ株式会社）<br>#053（（非公開）） |
 | fastaccounting.co.jp | 2026-09-28（推定） | Remota・Remota、Robota | #001（日清食品ホールディングス株式会社）<br>#003（味の素フィナンシャル・ソリューションズ株式会社、株式会社阪急アクトフォー（エイチ・ツー・オー リテイリングのグループ企業向けシェアードサービス提供）、BIPROGY株式会社）<br>用語#004（味の素フィナンシャル・ソリューションズ株式会社） |
 | fastaccounting.jp | 2026-09-28（推定） | 領収書Robota | #001（株式会社エフアンドエム） |
-| fastseries.jp | 2026-09-29（推定） | FastHelp、FastAnswer・FastHelp, FastAnswer・FastHelp | #002（日本コープ共済生活協同組合連合会、株式会社日立システムズ）<br>用語#006（株式会社ジェイエイシーリクルートメント、セック株式会社） |
+| fastseries.jp | 2026-09-29（推定） | FastHelp、FastAnswer・FastHelp, FastAnswer・FastHelp | #002（日本コープ共済生活協同組合連合会、株式会社日立システムズ）<br>用語#006（株式会社ジェイエイシーリクルートメント、セック株式会社）<br>用語#010（株式会社日立システムズ） |
 | fcs.co.jp | 2026-11-19 | kintone × モジトリ | 用語#003（ISS山崎機械） |
 | ferret-one.com | 2026-10-05（推定） | ferret One | #006（株式会社エルテス）<br>#015（株式会社 識学、株式会社新菱）<br>#016（株式会社ネクスウェイ）<br>#017（株式会社キトー） |
 | fielding.co.jp | 2026-11-18 | NECデータセンターサービス・NEC北海道データセンター | #044（道路工業株式会社） |
@@ -206,21 +192,23 @@
 | freee.co.jp | 2026-09-30（推定） | freee会計、freee人事労務、freeeカー Unlimited、freee-mcp・freee会計、freee人事労務、freeeカード Unlimited・freee人事労務・freee会計、freee給与、freee税務申告・freee会計、freee人事労務、freee申告・freee会計、freee人事労務、freee業務委託管理、freee販売、freee工数管理、freeeIT管理・freee人事労務、freee勤怠管理Plus | #003（レンジャーシステムズ株式会社、（リンクのみ））<br>#006（斐紋中央建工株式会社、（リンクのみ）、札幌中野冷機株式会社）<br>#034（西老資税理士事務所、（リンクのみ）、西村賀彦税理士事務所）<br>用語#004（株式会社LIG、（リンクのみ））<br>用語#009（社会福祉法人ハマノ愛生会） |
 | fs-farm.co.jp | 2026-10-02（推定） | 検品君 | #005（株式会社マキノ）<br>#024（株式会社マキノ） |
 | fujimak.co.jp | 2026-10-28（推定） | コンビオーブン iCombi Pro・ニュークックチルシステム | #023（株式会社タケエイ）<br>#028（社会福祉法人 桜ヶ丘社会事業協会 桜ヶ丘記念病院） |
+| fukudaco.co.jp | 2026-11-27 | イージス® SGR | #053（（非公開）） |
 | funaisoken.co.jp | 2026-11-16 | 経営コンサルティング | #042（ケアシステム株式会社、（リンクのみ）） |
 | geekplus.jp | 2026-10-07（推定） | ピッキングロボット・PopPick | #008（Bosideng、アズワン株式会社） |
 | gembahub.co.jp | 2026-10-01（推定） | 現場Hub | #004（株式会社オーテック）<br>#026（株式会社Forward） |
 | gleas.jp | 2026-10-21（推定） | プライベート認証局 Gléas | #018（豊田自動織機） |
 | glory.co.jp | 2026-10-09（推定） | 離院事故予防システム | #010（公立羽咋病院） |
 | good-work-life-toyama.jp | 2026-10-21（推定） | Microsoft365、LINEワークス、グループウェア、クラウドシステム | #018（株式会社アイペック） |
+| growthseed.jp | 2026-11-27 | TikTok運用代行・GrowthDX | #051（株式会社BONDSグループ、イノデン株式会社） |
 | guidablejobs.jp | 2026-11-02（推定） | ガイダブル | #026（林土木建設株式会社） |
 | hammock.jp | 2026-10-14（推定） | AssetView | #013（市原市） |
 | handbook.jp | 2026-10-27（推定） | Handbook | #022（F・O・インターナショナル） |
 | hitachi-ies.co.jp | 2026-10-23（推定） | DSP-NEXT®・日立産機システム | #020（B社（食品製造業））<br>#046（J社） |
 | hitachi-systems-es.co.jp | 2026-11-09 | 物品管理システム | 用語#001（JCOM株式会社） |
-| hr-prime.jp | 2026-10-15（推定） | HR PRIME | #014（株式会社カスタマーリレーションテレマーケティング） |
+| hr-prime.jp | 2026-10-15（推定） | HR PRIME | #014（株式会社カスタマーリレーションテレマーケティング）<br>#051（税理士法人 総合経営サービス） |
 | hrbrain.jp | 2026-10-05（推定） | HRBrain | #006（天白信用農業協同組合）<br>#036（株式会社日比谷花壇、株式会社ヒューマンアジャスト、株式会社デルタインターナショナル） |
 | i-abs.co.jp | 2026-11-18 | CYBER XEED | #045（オーシャル オーシャン シーピング (Japan) 株式会社、（リンクのみ）） |
-| ielove-cloud.jp | 2026-11-18 | いえらぶCLOUD | #048（HKホーム株式会社） |
+| ielove-cloud.jp | 2026-11-18 | いえらぶCLOUD | #048（HKホーム株式会社）<br>用語#010（株式会社アークス、都市住建株式会社） |
 | imagemagic.co.jp | 2026-11-26 | ODPS | 記念日11/29（株式会社和光プロセス） |
 | inet.co.jp | 2026-11-16 | Next Generation EASY Cloud | #042（株式会社WorkVision） |
 | info-con.co.jp | 2026-10-20（推定） | ホームページ制作 | #017（有限会社丸井食品三重工場） |
@@ -229,7 +217,7 @@
 | intercom.co.jp | 2026-10-05（推定） | MaLion | #006（関東商事株式会社） |
 | intra-mart.jp | 2026-10-01（推定） | intra-mart Accel Platform、intra-mart Accel Applications、AWS・Accel-Mart・intra-mart Accel Platform / IM-BPM・BeAd販売管理システム・ECOASクレームマネジメント・intra-mart Accel Platform・imforce/経費精算ソリューション・intra-mart、Biz∫・intra-mart®・intra-mart | #004（地盤ネット株式会社）<br>#008（日本特殊陶業株式会社、大鵬薬品工業株式会社）<br>#009（日精機工株式会社、IDEC株式会社）<br>#021（学校法人 千葉工業大学）<br>#029（ぺんてる株式会社）<br>用語#004（株式会社NTTデータMSE）<br>用語#006（トヨタファイナンス株式会社）<br>用語#002（株式会社NTTデータMSE）<br>用語#007（エクシオグループ株式会社）<br>用語#003（三洋化成工業株式会社、SOMPOホールディングス株式会社（損害保険ジャパン株式会社）） |
 | ip3.co.jp | 2026-11-04（推定） | EntryMaster・CloudLink | #028（近畿労働金庫）<br>用語#008（近畿労働金庫、株式会社サイゼリヤ） |
-| itecs.co.jp | 2026-11-20 | PRO_STAFF-α人事・給与・PRO_STAFF-α | 用語#007（日野市立病院、社会福祉法人黎明会） |
+| itecs.co.jp | 2026-11-20 | PRO_STAFF-α人事・給与・PRO_STAFF-α・COMPASS | 用語#007（日野市立病院、社会福祉法人黎明会）<br>用語#010（株式会社ジャフコ） |
 | itohdenki.co.jp | 2026-11-16 | MDR | #043（シーバス・ブラザーズ社） |
 | itszai.jp | 2026-10-12（推定） | イツザイ | #011（大立工業株式会社、有限会社コン・コース） |
 | japanpost.jp | 2026-10-02（推定） | ゆうパック・ゆうパケット、ロジスティクスサービス・ゆうパケットパフ・ゆうパック・ゆうパケット、拠点受取サービス、指定場所ダイレクト・UGX | #005（株式会社ALFOR）<br>#008（有限会社ワールドアイズ）<br>#012（久米仙酒造株式会社、株式会社Rise UP）<br>#017（株式会社江戸てん） |
@@ -237,7 +225,7 @@
 | jes.ne.jp | 2026-11-02（推定） | EAPサービス | #026（イーソル株式会社） |
 | jfe-eng.co.jp | 2026-10-06（推定） | 橋梁配筋のAI自動検査システム | #007（（非公開）） |
 | jmc-edu.co.jp | 2026-10-26（推定） | 校務支援システム、ICT支援員・and.T学校Webライター・しずおかバーチャルスクール・タブレット端末活用支援 | #021（豊島区教育委員会、湖南市教育研究所・湖南市立水戸小学校、静岡県教育委員会）<br>#024（東京学芸大学附属竹早中学校） |
-| jtekt.co.jp | 2026-11-17 | 分割型三列複合円筒ころ軸受・コロガードプロベアリング | 記念日11/18（（非公開））<br>記念日11/27（（非公開）） |
+| jtekt.co.jp | 2026-11-17 | 分割型三列複合円筒ころ軸受・コロガードプロベアリング・鉄鋼圧延機用ドライブシャフト | 記念日11/18（（非公開））<br>記念日11/27（（非公開））<br>#053（（非公開）） |
 | k-intl.co.jp | 2026-10-30（推定） | みんなの自動翻訳@KI | #025（株式会社メニコン） |
 | kacoms.co.jp | 2026-11-11 | BeSpice DecERP include iDempiere | 用語#003（港製器工業株式会社） |
 | kagoya.jp | 2026-11-19 | Forguncyプラン | 用語#003（武田病院グループ） |
@@ -274,10 +262,11 @@
 | minagine.jp | 2026-11-02（推定） | みんなの人事評価・MINAGINE勤怠管理 | #026（ダイキチカバーオール株式会社）<br>用語#009（株式会社郵便局物販サービス） |
 | minshoku.jp | 2026-10-28（推定） | みんなの社食 | #023（株式会社TVer） |
 | mitani-corp.co.jp | 2026-11-13 | e2-movE・SHIELDEX | 用語#005（株式会社ミヤシゲ）<br>用語#002（株式会社ミヤシゲ）<br>用語#007（瀬戸建設株式会社）<br>#047（坂戸市） |
-| mjs.co.jp | 2026-11-09 | MJSお金の管理、ACELINK NX-Pro・ACELINK NX-Pro・Galileopt DX・ACELINK NX-CE・ACELINK NX-CE 給与 | #034（東京港税理士法人、税理士法人近代経営&Kinkei Farm）<br>用語#006（税理士法人近代経営&Kinkei Farm）<br>用語#002（福留ハム株式会社、税理士法人近代経営&Kinkei Farm）<br>#045（株式会社キムラ電機）<br>用語#007（株式会社AZU） |
+| mjs.co.jp | 2026-11-09 | MJSお金の管理、ACELINK NX-Pro・ACELINK NX-Pro・Galileopt DX・ACELINK NX-CE・ACELINK NX-CE 給与・ACELINK NX-CE 販売 | #034（東京港税理士法人、税理士法人近代経営&Kinkei Farm）<br>用語#006（税理士法人近代経営&Kinkei Farm）<br>用語#002（福留ハム株式会社、税理士法人近代経営&Kinkei Farm）<br>#045（株式会社キムラ電機）<br>用語#007（株式会社AZU）<br>#052（株式会社中尾商会） |
 | mks.jp | 2026-11-10 | eNEN | #034（（非公開）） |
 | mobilus.co.jp | 2026-09-29（推定） | MOBI VOICE | #002（株式会社マイアクア） |
 | mr-m.co.jp | 2026-11-16 | カテゴリーキラーづくりコンサルティング、展示会・新規販路開拓コンサルティング、ブランディングツール制作・ブランディング・マーケティングコンサルティング | #042（ミズタニバルブ工業株式会社）<br>記念日11/24（株式会社石崎電機製作所） |
+| musashi-engineering.co.jp | 2026-11-27 | プランジャポンプ方式ディスペンサー、スクリュー方式ディスペンサー | #053（（非公開）） |
 | mutumi.co.jp | 2026-11-20 | むつみの販売、むつみのCTI、むつみの営業日報 | 用語#006（ホームケルン株式会社） |
 | mxmobiling.co.jp | 2026-11-19 | itsmoBPO・itsmoBPO キッティング | 用語#004（株式会社クラフティア）<br>#050（M社） |
 | myquick.jp | 2026-10-08（推定） | MyQuickクラウド | #009（株式会社マーキュリー） |
@@ -289,8 +278,9 @@
 | nicnet.co.jp | 2026-11-18 | ペーパーレス会議システム Support Session・スマートセッション | #047（仙台市役所（介護保険課）、仙台市役所介護保険課） |
 | nikken-totalsourcing.jp | 2026-11-11 | カスタマイズ研修・技能センター研修 | #041（株式会社デンソー山形） |
 | noc-net.co.jp | 2026-11-19 | 給与計算・人事アウトソーシングサービス・経理アウトソーシングサービス | 用語#004（アメアスポーツジャパン株式会社、株式会社viviON） |
+| nock-design.com |  | TikTok運用代行「ニチヨウビ」 | #051（製造業の工場（社名非公開）） |
 | nr1.co.jp | 2026-11-19 | NR-1100 | 記念日11/25（株式会社メガロ静岡） |
-| ntt-tx.co.jp | 2026-10-06（推定） | BizFront/SmartUI・データブリッジ・Yellowfin・ProgOffice Enterprise・CTBASE/Connect Cloud・Salesforce、CTBASE/JointPro、DataSpider Servista | #007（株式会社TMJ）<br>#010（医療法人篠原湘南クリニック　クローバーホスピタル）<br>#016（株式会社デンソー）<br>#018（日本航空株式会社）<br>#029（株式会社NTT ExCパートナー）<br>用語#005（パナソニック保険サービス株式会社、株式会社博報堂コネクト）<br>用語#006（日新火災海上保険株式会社） |
+| ntt-tx.co.jp | 2026-10-06（推定） | BizFront/SmartUI・データブリッジ・Yellowfin・ProgOffice Enterprise・CTBASE/Connect Cloud・Salesforce、CTBASE/JointPro、DataSpider Servista・Salesforce / SkyOnDemand | #007（株式会社TMJ）<br>#010（医療法人篠原湘南クリニック　クローバーホスピタル）<br>#016（株式会社デンソー）<br>#018（日本航空株式会社）<br>#029（株式会社NTT ExCパートナー）<br>用語#005（パナソニック保険サービス株式会社、株式会社博報堂コネクト）<br>用語#006（日新火災海上保険株式会社）<br>用語#010（旭化成不動産レジデンス株式会社） |
 | oaland.jp | 2026-10-28（推定） | オフィス移転・設計・施工サービス | #023（株式会社ジェイシーエス） |
 | ociete.jp | 2026-10-30（推定） | OCiETe | #025（横河電機株式会社、PROFET AI TECHNOLOGY Co. Ltd.、熊本大学） |
 | odyssey-net.jp | 2026-11-02（推定） | SAP SuccessFactors | #026（日本情報通信株式会社、NTTインテグレーション株式会社） |
@@ -298,7 +288,7 @@
 | ogis-ri.co.jp | 2026-11-13 | クラウド移行支援サービス・システム開発支援・ThemiStruct-WAM | 用語#006（日新火災海上保険株式会社）<br>用語#008（大阪ガス株式会社） |
 | ogs-consulting.co.jp | 2026-11-11 | 人事評価制度構築・運用コンサルティング | #041（株式会社庄内タイヤ） |
 | okuma.co.jp（オークマ株式会社） | 2026-11-09 | MULTUS B300Ⅱ ARMROID・LB3000 EX Ⅱ ARMROID・MU-8000V-L、Connect Plan、MULTUS B300II | #037（株式会社キンレイ、（リンクのみ））<br>記念日11/17（（リンクのみ））<br>#046（（リンクのみ）） |
-| onecareer.jp | 2026-10-12（推定） | ワンキャリア | #011（三信住建株式会社、株式会社トヨタ車体研究所） |
+| onecareer.jp | 2026-10-12（推定） | ワンキャリア・ONE CAREER | #011（三信住建株式会社、株式会社トヨタ車体研究所）<br>#051（株式会社毎日放送、ロート製薬株式会社） |
 | onehr.jp | 2026-10-05（推定） | One人事[タレントマネジメント] | #006（株式会社ハイテックシステムズ） |
 | optex.co.jp | 2026-10-14（推定） | WATER it データマネジメントサービス | #013（高速道路事業者、某高速道路事務所）<br>記念日11/19（高速道路事業者、某高速道路事務所） |
 | orikane.co.jp | 2026-11-16 | 型替え不要の蓋かぶせ機、L型包装機 | #043（（非公開）） |
@@ -352,7 +342,7 @@
 | spokes-online.jp | 2026-10-30（推定） | SPOKES | #025（茨城県土浦市）<br>#045（株式会社ペイロール）<br>#050（株式会社コアコンセプトテクノロジー） |
 | staple.jp | 2026-11-05（推定） | Staple | #029（株式会社BANQ） |
 | subline.jp | 2026-11-18 | SUBLINE | #047（常滑市役所 国勢調査事務局（企画部企画課内）） |
-| sunnyltd.co.jp | 2026-11-17 | 高粘度用サニタリードラムポンプ+リフター・ATI 過酸化水素水計 | 記念日11/17（（非公開））<br>記念日11/19（（非公開）） |
+| sunnyltd.co.jp | 2026-11-17 | 高粘度用サニタリードラムポンプ+リフター・ATI 過酸化水素水計・UNIBLOC サニタリーロータリーローブポンプ | 記念日11/17（（非公開））<br>記念日11/19（（非公開））<br>#053（オークリー社） |
 | sunplan.co.jp | 2026-11-26 | 輸出管理システム「TRADING-EX」 | 記念日11/28（河田トレーディング株式会社） |
 | sunplanning.co.jp | 2026-10-19（推定） | SAP Business Suite powered by SAP HANA・UiPath | #016（カルビー株式会社）<br>記念日11/23（カルビー株式会社）<br>用語#002（カルビー株式会社） |
 | supportas.co.jp（サポータス（fmsolution.supportas.co.jp）） | 2026-11-26 | FileMaker | #049（農事組合法人ECOマッシュ） |
@@ -368,9 +358,10 @@
 | terrasky.co.jp | 2026-10-19（推定） | Salesforce | #016（ゆこゆこホールディングス株式会社） |
 | timerep.jp | 2026-10-30（推定） | TimeRep | #025（株式会社グレープストーン） |
 | tks-gifu.jp | 2026-10-23（推定） | アリアミスト・意地でも節水 | #020（扇野の里 扇芳閣） |
+| tojogas.co.jp | 2026-11-27 | 太陽光発電システム | #052（株式会社奉徳はないけ） |
 | tokouav.jp | 2026-10-29（推定） | 東光鉄工製農業用ドローン | #024（髙橋 和久） |
 | top-seller.jp | 2026-10-13（推定） | TopSeller | #012（（非公開）） |
-| totec-mlife.jp | 2026-11-09 | 見守りライフ | #035（医療法人カワムラメディカル 介護老人保健施設けんこう・ふらの） |
+| totec-mlife.jp | 2026-11-09 | 見守りライフ | #035（医療法人カワムラメディカル 介護老人保健施設けんこう・ふらの）<br>#052（社会福祉法人末広会 特別養護老人ホーム春香苑・第２春香苑） |
 | totec-sangyo.jp | 2026-11-06（推定） | ASTERIA Warp・ASTERIA Warp、MotionBoard・ポストモダンTOTEC ERP・Asprova | #030（東海模型株式会社）<br>#038（宇部エクシモ株式会社）<br>用語#005（東海模型株式会社）<br>記念日11/20（芝浦機械株式会社）<br>用語#003（宇部エクシモ株式会社） |
 | towaeng.co.jp | 2026-10-28（推定） | 会議・同時通訳システム、音響・映像システム、ICTシステム | #023（日鉄興和不動産株式会社） |
 | toyota-lf-okayama.jp | 2026-11-09 | 垂直搬送機、ドックレベラー、充電式フォークリフト | #039（岡山土地倉庫株式会社） |
