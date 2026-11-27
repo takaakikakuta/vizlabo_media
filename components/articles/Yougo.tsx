@@ -105,6 +105,12 @@ export default function Yougo({ article }: { article: YougoArticle }) {
         </h2>
         <p className="mt-4 whitespace-pre-line text-[13.5px] leading-[2.1] text-body">{article.definition}</p>
         <p className="mt-3 text-[13.5px] leading-[2.1] text-body">{article.fitNote}</p>
+        {article.figure && (
+          <figure className="mt-6">
+            <img src={article.figure.src} alt={article.figure.alt} width={article.figure.width} height={article.figure.height}
+              loading="lazy" className="h-auto w-full border border-line" />
+          </figure>
+        )}
       </section>
 
       {/* ── 事例（1段落＋読者向けの一言。詳細は事例ページに任せる） ── */}

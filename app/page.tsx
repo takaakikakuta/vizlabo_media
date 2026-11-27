@@ -42,7 +42,7 @@ function Banner({ file, label, note, href }: (typeof BANNERS)[number]) {
 
 /* ヒーロー右側の入口カード。外部リンクは新しいタブで開く。 */
 function HeroEntry({ href, eyebrow, title, desc, cta, external, image }: {
-  href: string; eyebrow: string; title: string; desc: string; cta: string; external?: boolean;
+  href: string; eyebrow: string; title: string; desc?: string; cta: string; external?: boolean;
   image?: string;  // 右側に小さく出すサムネイル（記念日カードなど）
 }) {
   const cls = "group block border border-ink bg-white px-5 py-4 no-underline transition hover:bg-soft";
@@ -50,7 +50,7 @@ function HeroEntry({ href, eyebrow, title, desc, cta, external, image }: {
     <div className="min-w-0 flex-1">
       <p className="label">{eyebrow}</p>
       <p className="font-display mt-1 text-[16px] leading-snug text-ink group-hover:text-brand sm:text-[17px]">{title}</p>
-      <p className="mt-1.5 text-[12px] leading-[1.8] text-muted">{desc}</p>
+      {desc && <p className="mt-1.5 text-[12px] leading-[1.8] text-muted">{desc}</p>}
       <p className="mt-2 text-[12.5px] font-bold text-ink">{cta} →</p>
     </div>
   );
@@ -150,7 +150,7 @@ export default async function Home() {
             <HeroEntry href={today ? `/days/${today.day.date}` : "/days"}
               eyebrow={today?.when === "today" || today?.when === "lastYear" ? "きょうの記念日" : today?.when === "next" ? "次の記念日" : "記念日ポスト"}
               title={today ? `${dayLabel(today.day.date)}は${today.day.name}` : "事例で読む記念日"}
-              desc={today ? `${today.day.theme}を3本。SNSで配信した記念日ポストを、1日1ページで` : "その日の記念日にちなんで、掲載事例から3本を紹介"}
+              desc={today ? undefined : "その日の記念日にちなんで、掲載事例から3本を紹介"}
               cta="記念日を読む" image={today ? dayImage(today.day) : undefined} />
           </div>
         </div>

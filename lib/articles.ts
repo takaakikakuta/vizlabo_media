@@ -201,8 +201,9 @@ export type YougoArticle = {
   lead: string;         // 2〜3文。検索した人の疑問に最初の3行で答える
   description: string;  // meta description（120字以内）
   thumbLine: string;    // サムネ用の一行要約（SNS・一覧の補助。表には出さない）
-  definition: string;   // 「{用語}とは」本文（150字程度。専門用語を使わず、何を解決するためのものかを中心に）
+  definition: string;   // 「{用語}とは」本文（300字程度・1段落。専門用語を使わず、何を解決するためのものかを中心に）
   fitNote: string;      // 向いている仕事・向かない仕事を1〜2文で（箇条書きにしない）
+  figure?: { src: string; alt: string; width: number; height: number };  // 「一」の末尾に置く解説図（public/terms/yougo-<no>.webp）。alt には図の要点を文で書く
   items: {
     caseId: string;
     label: string;      // 事例の一言ラベル（4〜8字。例: 店舗の棚卸）。読者が本文を読まずに自分に近い事例を選べるように
