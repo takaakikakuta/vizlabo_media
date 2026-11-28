@@ -208,10 +208,11 @@ export type YougoArticle = {
   items: {
     caseId: string;
     label: string;      // 事例の一言ラベル（4〜8字。例: 店舗の棚卸）。読者が本文を読まずに自分に近い事例を選べるように
-    service?: string;   // 見出しの「× サービス名」を製品名から短くしたいときの上書き
-    body: string;       // 何に困り、何をして、どうなったかを1段落（2〜3文）。詳細は事例ページに任せる
-    hitokoto: string;   // 読者が自社に当てはめられる一言（言い切り）
-    linkOnly?: { body: string };  // 事例が linkOnly になったときの差し替え（企業名・規模・数字を書かない）
+    headline: string;   // 見出し。事例セレクションと同じく、数字か出来事の文（2026-11-28 までは「社名 × サービス名」が自動で出ていた）
+    service?: string;   // 旧: 見出しの「× サービス名」の上書き。見出しが headline になったので表示には使わない（互換のため残す）
+    body: string;       // 用語の中でのこの事例の位置づけと、ほかの項目との違い（2〜3文・80〜130字）
+    hitokoto: string;   // 読者が自社に当てはめられる一言（言い切り）。2026-11-28 から試験的に非表示
+    linkOnly?: { headline?: string; body: string };  // 事例が linkOnly になったときの差し替え（企業名・規模・数字を書かない。headline は見出しに会社が分かる情報があるときだけ）
   }[];
   relatedTerms: { label: string; href: string }[];  // 関連する用語（用語記事があればそのURL、無ければ困りごとタグ・製品カテゴリのページ）
   relatedSlugs?: string[];  // 関連する事例セレクション

@@ -6,7 +6,6 @@ import { parseStat } from "../../lib/stat";
 import CoverImg from "../CoverImg";
 import VendorLogo from "../VendorLogo";
 import { vendorLogo } from "../../lib/vendors";
-import { vendorLabel } from "../Adoption";
 import type { YougoArticle } from "../../lib/articles";
 import Toc from "./Toc";
 import FeaturedServices from "./FeaturedServices";
@@ -26,10 +25,6 @@ import { ExternalLink } from "lucide-react";
    → 関連する用語・記事、の順に組む。説明は冒頭だけに置き、事例の後に分かれ目やまとめは置かない。
    事例の見出し（導入企業名 × サービス名）・業種・規模・成果チップ・事例リンクは事例データから自動で出す。
    事例が linkOnly（掲載元から取り下げ依頼）なら、企業名・規模・数字を出さず、item.linkOnly の紹介と元記事リンクだけにする。 */
-
-function serviceName(product: string, vendor: string): string {
-  return (product || vendorLabel(vendor)).split(/[（(]/)[0].trim();
-}
 
 export default function Yougo({ article }: { article: YougoArticle }) {
   const entries = article.items
@@ -93,7 +88,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
         { id: "teigi", no: kan[0], label: `${article.term}とは` },
         ...entries.map((e) => ({
           id: `item${e.i + 1}`, no: String(e.i + 1).padStart(2, "0"),
-          label: e.isLinkOnly ? `導入企業 × ${serviceName(e.c.product, e.c.vendor)}` : `${e.c.customer.name || "導入企業（非公開）"} × ${e.service ?? serviceName(e.c.product, e.c.vendor)}`,
+          label: e.isLinkOnly ? (e.linkOnly?.headline ?? e.headline) : e.headline,
         })),
         { id: "related", no: kan[1], label: "関連する用語・事例セレクション" },
       ]} />
@@ -123,7 +118,7 @@ export default function Yougo({ article }: { article: YougoArticle }) {
               <section key={e.caseId} id={`item${e.i + 1}`} className="mt-12 scroll-mt-20" {...slotItem(e.i + 1, c)}>
                 <h2 className="flex items-baseline gap-4 border-t-2 border-ink pt-5">
                   <span className="num shrink-0 text-[22px] leading-none text-muted">{no}</span>
-                  <span className="font-display text-[20px] leading-[1.5] text-ink">導入企業 × {serviceName(c.product, c.vendor)}</span>
+                  <span className="font-display text-[20px] leading-[1.5] text-ink">{e.linkOnly?.headline ?? e.headline}</span>
                 </h2>
                 <p className="mt-2.5 ml-10 text-[12px] text-muted">
                   <span className="mr-2.5 border border-ink px-1.5 py-0.5 text-[11px] font-bold text-ink">{e.label}</span>
@@ -142,16 +137,14 @@ export default function Yougo({ article }: { article: YougoArticle }) {
             <section key={e.caseId} id={`item${e.i + 1}`} className="mt-12 scroll-mt-20" {...slotItem(e.i + 1, c)}>
               <h2 className="flex items-baseline gap-4 border-t-2 border-ink pt-5">
                 <span className="num shrink-0 text-[22px] leading-none text-muted">{no}</span>
-                <span className="font-display text-[20px] leading-[1.5] text-ink">
-                  {c.customer.name || "導入企業（非公開）"} × {e.service ?? serviceName(c.product, c.vendor)}
-                </span>
+                {/* 見出しは事例セレクションと同じく数字か出来事の文（headline）。社名 × サービス名は 2026-11-28 にやめた（事例カードの題名と事例ページに任せる） */}
+                <span className="font-display text-[20px] leading-[1.5] text-ink">{e.headline}</span>
               </h2>
               <p className="mt-2.5 ml-10 text-[12px] text-muted">
                 <span className="mr-2.5 border border-ink px-1.5 py-0.5 text-[11px] font-bold text-ink">{e.label}</span>
                 {hasVideo(c) && <span className="mr-2.5"><VideoBadge /></span>}
                 {industryLabel(c.customer.industry)}
                 {c.customer.size && ` ・ ${c.customer.size}`}
-                {introSourceName(c.vendor) ? ` ・ 出典：${introSourceName(c.vendor)}の事例紹介` : ` ・ 出典：${vendorLabel(c.vendor)}の導入事例`}
               </p>
               <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>
               {/* hitokoto（読者向けの一言）は 2026-11-28 から試験的に非表示。データと欄は残しているので、戻すときはこの行を生かす。
