@@ -8,7 +8,7 @@
  *
  * NG（直す。1件でもあれば終了コード 1）
  *   - body の長さが 80〜140字の外、または4文以上
- *   - body・hitokoto の「数字」が、その事例のデータ（title・summary・課題・施策・results・scale・規模・製品名）に見つからない
+ *   - headline・body・hitokoto の「数字」が、その事例のデータ（title・summary・課題・施策・results・scale・規模・製品名）に見つからない
  *     → 2026-11-21 に #7 西松屋の旧 body で「2か月→10日」（データは 2時間半→10分）、「16年使った」（データになし）が見つかったため NG 扱い。
  *       言い換え（16名→20人に満たない）は許容リストに入れるか、数字を使わない表現に直す
  *   - body・hitokoto に「」（固有名詞以外の強調）
@@ -47,7 +47,8 @@ for (const f of picked) {
     const body = it.body ?? "";
     const sents = body.split("。").filter(Boolean).length;
     if (body.length < 80 || body.length > 140 || sents > 3) out.push(`[${no}] body ${body.length}字・${sents}文（80〜140字・3文以内）`);
-    const text = body + "\n" + (it.hitokoto ?? "");
+    if (!it.headline) out.push(`[${no}] headline がない（数字か出来事の文）`);
+    const text = (it.headline ?? "") + "\n" + body + "\n" + (it.hitokoto ?? "");
     if (/「/.test(text)) out.push(`[${no}] 「」がある（固有名詞以外は外す）`);
     if (/唯一/.test(body)) yuiitsu++;
     const meta = [[/記録されて/, "記録されて"], [/として読める/, "として読める"], [/読みどころ/, "読みどころ"], [/出来事で読む/, "出来事で読む"], [/点が、?ほか/, "点がほか"], [/中で[^。]*(ここだけ|ほかにない|唯一)/, "比較の二重"]].filter(([re]) => re.test(body)).map(([, n]) => n);
