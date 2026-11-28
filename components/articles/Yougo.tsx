@@ -154,7 +154,8 @@ export default function Yougo({ article }: { article: YougoArticle }) {
                 {introSourceName(c.vendor) ? ` ・ 出典：${introSourceName(c.vendor)}の事例紹介` : ` ・ 出典：${vendorLabel(c.vendor)}の導入事例`}
               </p>
               <p className="mt-3.5 ml-10 text-[13.5px] leading-[2.1] text-body">{e.body}</p>
-              <p className="mt-3 ml-10 border-l-2 border-ink pl-4 text-[13.5px] leading-[2.05] text-ink">{e.hitokoto}</p>
+              {/* hitokoto（読者向けの一言）は 2026-11-28 から試験的に非表示。データと欄は残しているので、戻すときはこの行を生かす。
+                  <p className="mt-3 ml-10 border-l-2 border-ink pl-4 text-[13.5px] leading-[2.05] text-ink">{e.hitokoto}</p> */}
               {results.length > 0 && (
                 <div className="mt-4 ml-10 flex flex-wrap gap-x-8 gap-y-3 border-y border-line py-3.5">
                   {results.map((r, j) => {
